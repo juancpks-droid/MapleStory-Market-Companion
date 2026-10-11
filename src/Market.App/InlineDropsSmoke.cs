@@ -12,14 +12,17 @@ static class InlineDropsSmoke
 public sealed partial class MainForm
 {
  internal async Task CheckInlineDrops(string dir){
-  Width=1024;ShowPage("Item Finder");finderSearch.Text="Snail Shell";RenderItemFinder();
+  Size=new Size(1024,720);ShowPage("Item Finder");finderSearch.Text="Snail Shell";RenderItemFinder();
   void SelectShell(){var row=finderItems.Rows.Cast<DataGridViewRow>().Single(r=>r.Tag is FinderResult f&&f.Name=="Snail Shell");finderItems.ClearSelection();row.Selected=true;}
   SelectShell();finderDetailTabs.SelectedIndex=1;if(!finderDropNote.Text.StartsWith("Offline:"))throw new Exception("Offline state missing");
   features.Offline=false;finderSearch.Text="Red Potion";RenderItemFinder();finderSearch.Text="Snail Shell";RenderItemFinder();SelectShell();
   for(int i=0;i<120&&finderDrops.Rows.Count==0;i++){await Task.Delay(500);if(i is 5 or 10 or 15)RenderItemFinder();if(finderDropNote.Text.StartsWith("Drop reference unavailable"))throw new Exception(finderDropNote.Text);}
   if(!finderDrops.Rows.Cast<DataGridViewRow>().Any(r=>r.Tag is DropMonster m&&m.Name=="Snail"&&m.Locations.Any(l=>l.Name=="Snail Hunting Ground I")))throw new Exception("Inline Snail and map missing: "+finderDropNote.Text);
-  if(!finderDropNote.Text.Contains("NiaMeowDB")||finderDrops.Height<65)throw new Exception("Attribution or layout missing");
+  CapturePreview(Path.Combine(dir,"layout-diagnostic.png"));
+  if(!finderDropNote.Text.Contains("NiaMeowDB")||finderDrops.Height<65)throw new Exception("Attribution or layout missing: height="+finderDrops.Height+"; note="+finderDropNote.Text);
   CapturePreview(Path.Combine(dir,"inline-drops.png"));
   finderSearch.Text="NoSuchItemUnique123";RenderItemFinder();if(finderDrops.Rows.Count!=0||!finderDropNote.Text.StartsWith("Select an item"))throw new Exception("Stale monster results after selection cleared");
  }
 }
+
+

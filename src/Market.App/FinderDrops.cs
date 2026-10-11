@@ -22,13 +22,14 @@ public sealed partial class MainForm
    if(e.ColumnIndex==1&&monster.Locations.Count>0){var menu=new ContextMenuStrip();foreach(var map in monster.Locations)menu.Items.Add(map.Name,null,(_,_)=>OpenDropReference(map.Url));menu.Closed+=(_,_)=>menu.Dispose();menu.Show(Cursor.Position);}
    else if(e.ColumnIndex==0)OpenDropReference(monster.Url);
   };
-  finderDetailTabs.SelectedIndexChanged+=(_,_)=>QueueFinderDrops();
+  finderDetailTabs.SelectedIndexChanged+=(_,_)=>{if(finderDetailTabs.Parent is TableLayoutPanel layout){layout.RowStyles[0].Height=finderDetailTabs.SelectedIndex==1?30:45;layout.RowStyles[1].Height=finderDetailTabs.SelectedIndex==1?70:55;}QueueFinderDrops();};
   FormClosed+=(_,_)=>{dropLookupStop?.Cancel();dropLookupStop?.Dispose();dropReader.Dispose();};
   finderDropNote.Text="Select an item and open this tab to load drop references. No drop rates are inferred.";
   return finderDetailTabs;
  }
  void OpenDropReference(string url){if(!Offline)new WebsiteViewer(new("NiaMeowDB • Drop reference",url,FinderSelection?.Name??"",false,"Community reports and historical references are labelled separately. Check source coverage."),dataDirectory).Show(this);}
  async void QueueFinderDrops(){
+  if(finderDetailTabs.Parent is TableLayoutPanel layout){float top=finderDetailTabs.SelectedIndex==1?30:45;if(layout.RowStyles[0].Height!=top){layout.RowStyles[0].Height=top;layout.RowStyles[1].Height=100-top;}}
   if(finderDetailTabs.SelectedIndex!=1||selected!="Item Finder")return;
   var item=FinderSelection;string key=item is null?"":item.Id+"|"+item.Name;
   if(key==dropItemKey&&key.Length>0)return;
@@ -47,5 +48,7 @@ public sealed partial class MainForm
   catch(Exception){if(!closing&&!IsDisposed&&generation==dropGeneration){dropItemKey="";finderDropNote.Text="Drop reference unavailable. Select Load / retry later, or use the website reference button. This does not mean the item has no drops.";}}
  }
 }
+
+
 
 
