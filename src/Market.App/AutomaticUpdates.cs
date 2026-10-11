@@ -38,7 +38,7 @@ public sealed partial class MainForm
         updateBanner.Controls.Add(updateBannerText);
         updateBanner.Controls.Add(Button("Restart now",()=>ApplyAppUpdate()));
         updateBanner.Controls.Add(Button("Later",()=>{updateDeferred=true;updateBanner.Visible=false;updateStatus.Text="Update downloaded. It will be offered again next launch, or select Check for updates.";}));
-        main.Controls.Add(updateBanner);updateBanner.BringToFront();
+        main.Controls.Add(updateBanner);content.BringToFront();
         try{
             updateManager=new UpdateManager(new GithubSource(UpdateRepository,null,false));
             updateStatus.Text=updateManager.IsInstalled?"Automatic updates are ready. Checking at startup and every 4 hours.":"Install the Setup.exe version once to enable automatic updates.";
@@ -57,7 +57,7 @@ public sealed partial class MainForm
         if(!Environment.GetCommandLineArgs().Any(a=>a.Contains("smoke",StringComparison.OrdinalIgnoreCase)))updateTimer.Start();
     }
 
-    bool CanRestartForUpdate()=>!closing&&!busy&&!checkingUpdate&&Application.OpenForms.Count==1&&selected=="Dashboard"&&!ContainsFocusedEditor(this);
+    bool CanRestartForUpdate()=>!closing&&!busy&&!checkingUpdate&&Application.OpenForms.Count==1&&selected=="Dashboard";
     static bool ContainsFocusedEditor(Control control)=>control.Controls.Cast<Control>().Any(c=>(c.Focused&&c is TextBoxBase or NumericUpDown or ComboBox)||ContainsFocusedEditor(c));
 
     async Task CheckAppUpdates(bool manual)
@@ -94,7 +94,7 @@ public sealed partial class MainForm
         if(readyUpdate is null||updateManager is null)return;
         // Explicit restart still preserves modal edits and in-flight database/network work.
         if(busy||checkingUpdate||Application.OpenForms.Count>1){updateBannerText.Text="Finish the current refresh and close other app windows before restarting.";return;}
-        if(selected!="Dashboard"||ContainsFocusedEditor(content)){
+        if(selected!="Dashboard"){
             updateBannerText.Text="Save your edits and open Dashboard before restarting.";return;
         }
         try{
@@ -109,3 +109,4 @@ public sealed partial class MainForm
         public bool PreFilterMessage(ref Message message){if(message.Msg is 0x100 or 0x104 or 0x201 or 0x204 or 0x207 or 0x20A)activity();return false;}
     }
 }
+

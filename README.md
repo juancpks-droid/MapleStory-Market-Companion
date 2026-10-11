@@ -35,6 +35,7 @@ The bundled test project has optional historical website fixtures that are not i
 
 ## Validation for 1.18
 
-180 core checks passed in the development workspace. Local updater tests passed for finding a newer release, download verification/staging, avoiding reinstalls and downgrades, and rejecting a corrupted package. The complete installed restart cycle has not been validated: automated execution of the isolated test was blocked. Reports accompany the release.
+180 core checks passed in the development workspace. Local updater tests passed for finding a newer release, download verification/staging, avoiding reinstalls and downgrades, and rejecting a corrupted package. The full update/restart cycle was subsequently tested in an isolated copy of the companion using the production updater logic and normal countdown. The test exposed and fixed two issues in 1.18.1: a focused Dashboard search box preventing restart and content obscuring the update banner. The updated process reopened Dashboard, retained a 73-item test inventory, wrote a recovery backup and released the previous process mutex. Settings, active refreshes, editing windows, Later and recent-input delay checks also passed. The lifecycle test used a local release feed and separate app identity/data; unauthenticated public GitHub download/verification was checked separately. This was tested on one Windows computer, not a broad device matrix. Reports accompany the release.
 
 This is independent fan software, not affiliated with Nexon or marketplace operators. Original code is MIT licensed. Game names, artwork served by external services and marketplace content belong to their respective owners. See LICENSE.txt and ThirdPartyLicenses.
+
