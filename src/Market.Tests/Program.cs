@@ -459,6 +459,9 @@ await Test("Unsupported websites keep honest search capabilities",()=>Sync(()=>{
 await Test("Ad blocker matches exact hosts, subdomains, case and trailing dots",()=>Sync(()=>{foreach(var url in new[]{"https://doubleclick.net/ad","https://a.b.doubleclick.net/ad","https://PAGEAD2.GOOGLESYNDICATION.COM./pagead.js","http://ads.pubmatic.com/ad"})Check(WebsiteAdPolicy.IsAdvertisingUrl(url));}));
 await Test("Ad blocker preserves item pages, images, CAPTCHA and host lookalikes",()=>Sync(()=>{foreach(var url in new[]{"https://niameowdb.com/msclassic/item-db/363","https://basilmarket.net/market/sell","https://maplestory.io/api/GMS/83/item/4000011/icon","https://challenges.cloudflare.com/test","https://www.google.com/recaptcha/api.js","https://notdoubleclick.net/ad","https://doubleclick.net.example.com/ad","https://example.com/?next=doubleclick.net","https://doubleclick.net@example.com/ad","data:text/plain,doubleclick.net","invalid"})Check(!WebsiteAdPolicy.IsAdvertisingUrl(url));}));
 
+await Test("Finder excludes removed, buying and sold evidence",()=>Sync(()=>{var rows=new[]{O("ask") with{Kind=EvidenceKind.Asking},O("removed") with{Kind=EvidenceKind.Asking,Available=false},O("buy") with{Kind=EvidenceKind.Buying},O("sale")};var found=ItemFinder.Search([new("4000000","Test ETC")],rows,"test");Check(found.Single().Listings.Count==1&&found[0].Listings[0].ListingId=="ask");}));
+await Test("Finder preserves ambiguous identities and exact variants",()=>Sync(()=>{var rows=new[]{O("one") with{Kind=EvidenceKind.Asking,ItemId="1000000",Equipment=true,Variant="watk=10"},O("two") with{Kind=EvidenceKind.Asking,ItemId="1000001",Equipment=true,Variant="watk=20"}};var found=ItemFinder.Search([new("1000000","Test ETC"),new("1000001","Test ETC")],rows,"test");Check(found.Count==2&&found.All(i=>i.Listings.Count==1)&&found[0].Listings[0].Variant=="watk=10"&&found[1].Listings[0].Variant=="watk=20");}));
+await Test("Finder searches IDs, unknown market items and source/category filters",()=>Sync(()=>{var catalog=new[]{new FinderIdentity("2000000","Red Potion"),new FinderIdentity("1000000","Sword")};var rows=new[]{O("unknown") with{Kind=EvidenceKind.Asking}};Check(ItemFinder.Search(catalog,rows,"2000000").Single().Name=="Red Potion");Check(ItemFinder.Search(catalog,rows,"test","Unknown",listedOnly:true).Single().Listings.Count==1);Check(ItemFinder.Search(catalog,rows,"test",provider:"Other",listedOnly:true).Count==0);Check(ItemFinder.Search(catalog,rows,"","Equipment").Single().Name=="Sword");Check(ItemFinder.Search(catalog,rows,"absent").Count==0);}));
 Directory.CreateDirectory("test-results");File.WriteAllText("test-results/results.json",JsonSerializer.Serialize(new{total=results.Count,failed=failures,results},Json.Options));Console.WriteLine($"{results.Count-failures}/{results.Count} passed");Environment.ExitCode=failures==0?0:1;
 
 
@@ -472,6 +475,7 @@ sealed class Handler(Func<HttpRequestMessage,HttpResponseMessage> fn):HttpMessag
     protected override Task<HttpResponseMessage> SendAsync(HttpRequestMessage request,CancellationToken ct){Calls++;return Task.FromResult(fn(request));}
 
 }
+
 
 
 

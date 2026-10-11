@@ -9,7 +9,7 @@ public sealed partial class MainForm
     readonly Label profitSummary=Info(70);
     FlowLayoutPanel? organizedNav;Form? compactWindow;Label? compactText;bool usabilityReady;
     readonly HashSet<string> collapsedGroups=["Inventory","Trading","Settings"];
-    string PageGroup(string page)=>page switch{"Dashboard" or "Price Checker" or "Deal Finder" or "FM Tracker" or "Item Catalog" or "Compare" or "Market Activity" or "Price History" or "Price Changes" or "Seller Comparison" or "Websites"=>"Market","Inventory" or "Characters" or "Transfers" or "Equipment" or "Item Notes" or "Restock" or "Undo Center"=>"Inventory","Settings" or "Backups" or "Getting Started" or "Market Health"=>"Settings",_=>"Trading"};
+    string PageGroup(string page)=>page switch{"Dashboard" or "Item Finder" or "Price Checker" or "Deal Finder" or "FM Tracker" or "Item Catalog" or "Compare" or "Market Activity" or "Price History" or "Price Changes" or "Seller Comparison" or "Websites"=>"Market","Inventory" or "Characters" or "Transfers" or "Equipment" or "Item Notes" or "Restock" or "Undo Center"=>"Inventory","Settings" or "Backups" or "Getting Started" or "Market Health"=>"Settings",_=>"Trading"};
     void BuildUsabilityTools()
     {
         void Page(string name,DataGridView grid,string explanation,params (string,Action)[] actions){var bar=Toolbar();foreach(var (label,action) in actions)bar.Controls.Add(Button(label,action));var note=Info(72);note.Text=explanation;pages[name].Controls.Add(grid);pages[name].Controls.Add(note);pages[name].Controls.Add(bar);}
@@ -69,3 +69,4 @@ public sealed partial class MainForm
         store.SaveItem(new("Usability test item",2,false,false));var change=store.InventoryChanges().First();store.UndoInventory(change.Id);if(store.Items().Any(i=>i.Name=="Usability test item"))throw new Exception("Undo failed");Workspace.PinnedPages=["Inventory","Price Checker"];RebuildNavigation();if(organizedNav!.Controls.OfType<Button>().First()!=navigation["Inventory"])throw new Exception("Pinned navigation wrong");sellerQuery.Text="Green Mushroom Cap";RenderUsability();foreach(var page in new[]{"Price Changes","Seller Comparison","Undo Center","Profit Breakdown","Inventory"}){ShowPage(page);CapturePreview(Path.Combine(dataDirectory,page.Replace(" ","-").ToLowerInvariant()+"-13.png"));}ShowCompact();using(var bitmap=new Bitmap(compactWindow!.Width,compactWindow.Height)){compactWindow.DrawToBitmap(bitmap,new Rectangle(Point.Empty,compactWindow.Size));bitmap.Save(Path.Combine(dataDirectory,"compact-13.png"));}compactWindow.Close();RestorePersonal(before);RebuildNavigation();await Task.CompletedTask;
     }
 }
+

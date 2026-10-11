@@ -2,7 +2,7 @@ using Market.Core;
 namespace Market.App;
 public sealed partial class MainForm
 {
-    readonly HashSet<string> essentialPages=["Dashboard","Price Checker","Deal Finder","Inventory","Characters","Transfers","Watchlist","Trade Journal","Alert Inbox","Settings","Backups"];
+    readonly HashSet<string> essentialPages=["Dashboard","Item Finder","Price Checker","Deal Finder","Inventory","Characters","Transfers","Watchlist","Trade Journal","Alert Inbox","Settings","Backups"];
     readonly HashSet<string> expandedTools=[];
     bool fullNavigation,reliabilityReady;
     void BuildReliabilityPolish()
@@ -27,3 +27,4 @@ public sealed partial class MainForm
         var before=Snapshot();var a=new SavedItem("Reliability Sword",2,false,false){Variant="watk=42"};var b=a with{Variant="watk=48"};store.SaveItem(a);store.SaveItem(b);Render();universalQuery.Text="Reliability Sword";RenderUniversal();var row=universalGrid.Rows.Cast<DataGridViewRow>().Single(r=>r.Tag is SearchHit h&&h.Page=="Inventory"&&h.Variant==b.Variant);universalGrid.ClearSelection();row.Selected=true;OpenUniversal();if(CurrentInventory()?.Variant!=b.Variant)throw new Exception("Search navigation lost exact variant");using(var editor=CreateItemEditor(b,false)){editor.Show(this);var fields=editor.Controls.OfType<FlowLayoutPanel>().Single();if(fields.Controls.OfType<ComboBox>().Single().Text!=b.Variant)throw new Exception("Editing lost cached variant text");fields.Controls.OfType<Button>().Single(x=>x.Text=="Save stack").PerformClick();if(store.Items().Any(i=>i.Name==b.Name&&i.Variant==""))throw new Exception("Editing created a blank variant");}if(organizedNav!.Controls.OfType<Button>().Count()>18)throw new Exception("Simple navigation unexpectedly expanded");CapturePreview(Path.Combine(dataDirectory,"inventory-15.png"));ShowPage("Price Checker");CapturePreview(Path.Combine(dataDirectory,"freshness-15.png"));ShowPage("Dashboard");CapturePreview(Path.Combine(dataDirectory,"dashboard-15.png"));RestorePersonal(before);await Task.CompletedTask;
     }
 }
+

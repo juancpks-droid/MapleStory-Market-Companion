@@ -71,7 +71,7 @@ public sealed partial class MainForm : Form
 
         var nav=new FlowLayoutPanel(){Dock=DockStyle.Fill,FlowDirection=FlowDirection.TopDown,WrapContents=false,AutoScroll=true,Padding=new Padding(0,12,0,0)}; sidebar.Controls.Add(nav); nav.BringToFront();
 
-        foreach(string name in new[]{"Dashboard","Price Checker","Deal Finder","Watchlist","Inventory","FM Tracker","Item Catalog","Compare","Equipment","Price Alerts","Trade Journal","Market Activity","Backups","Characters","Alert Inbox","Market Health","Websites","Settings","Merchant Goals","Restock","Gear Wishlist","Item Notes","Trading Sessions","Price History","Getting Started","Transfers","Shopping List","Selling Planner","Search Everything","Price Changes","Seller Comparison","Undo Center","Profit Breakdown","Duplicate Review"})
+        foreach(string name in new[]{"Dashboard","Item Finder","Price Checker","Deal Finder","Watchlist","Inventory","FM Tracker","Item Catalog","Compare","Equipment","Price Alerts","Trade Journal","Market Activity","Backups","Characters","Alert Inbox","Market Health","Websites","Settings","Merchant Goals","Restock","Gear Wishlist","Item Notes","Trading Sessions","Price History","Getting Started","Transfers","Shopping List","Selling Planner","Search Everything","Price Changes","Seller Comparison","Undo Center","Profit Breakdown","Duplicate Review"})
 
         {
 
@@ -85,7 +85,7 @@ public sealed partial class MainForm : Form
 
         var main=new Panel(){Dock=DockStyle.Fill,Padding=new Padding(0)}; main.Controls.Add(content); main.Controls.Add(title); main.Controls.Add(footer); title.Padding=new Padding(20,10,0,0); Controls.Add(main); Controls.Add(sidebar);
 
-        ConfigureIcons(); BuildDashboard(); BuildPrices(); BuildDeals(); BuildWatch(); BuildInventory(); BuildFm(); BuildWebsites(); BuildSettings(); BuildCatalog(); BuildComparison(); BuildCompleteUpgrade(); BuildDailyTools(); BuildMerchantTools(); BuildWorkspaceTools(); BuildUsabilityTools(); BuildPolishTools(); BuildReliabilityPolish(); ConfigureTradingTools(); BuildCompanionUpgrade(); BuildPlanningUpgrade(); BuildWebsiteLookup(); ApplyTextSize();
+        ConfigureIcons(); BuildDashboard(); BuildPrices(); BuildDeals(); BuildWatch(); BuildInventory(); BuildFm(); BuildWebsites(); BuildSettings(); BuildCatalog(); BuildComparison(); BuildCompleteUpgrade(); BuildDailyTools(); BuildMerchantTools(); BuildWorkspaceTools(); BuildUsabilityTools(); BuildPolishTools(); BuildReliabilityPolish(); ConfigureTradingTools(); BuildCompanionUpgrade(); BuildPlanningUpgrade(); BuildWebsiteLookup(); BuildItemFinder(); ApplyTextSize();
 
         var menu=new ContextMenuStrip(); menu.Items.Add("Open Market Companion",null,(_,_)=>{Show();WindowState=FormWindowState.Normal;Activate();}); menu.Items.Add("Snooze alerts for 30 minutes",null,(_,_)=>Snooze()); menu.Items.Add("Exit",null,(_,_)=>ExitApplication());
 
@@ -281,7 +281,7 @@ public sealed partial class MainForm : Form
 
     {
 
-        EnsureNavigation(name);if(name=="Duplicate Review")RenderDuplicates();if(usabilityReady&&new[]{"Price Changes","Seller Comparison","Undo Center","Profit Breakdown"}.Contains(name))RenderUsability();if(features.MenuSounds&&selected!=name)System.Media.SystemSounds.Asterisk.Play();selected=name;title.Text=name+" • "+store.Characters().Single(c=>c.Id==store.Profile).Name;foreach(var (n,p) in pages){p.Visible=n==name;if(p.Visible)p.BringToFront();navigation[n].ForeColor=n==name?Accent:TextColor;navigation[n].BackColor=n==name?Accent:Surface;}if(navigation[name].Parent is ScrollableControl navScroll)navScroll.ScrollControlIntoView(navigation[name]);if(workspaceReady&&new[]{"Transfers","Shopping List","Selling Planner","Search Everything"}.Contains(name))RenderWorkspace();if(name=="Price Checker")RenderPrices();if(name=="Dashboard"){RenderDashboard();ApplyDashboardPanels();}if(name=="Compare")RenderComparison();if(name=="Item Catalog")LoadCatalogImages();if(name=="Equipment")RenderEquipment();if(name=="Inventory")RenderInventorySlots();if(name=="Market Activity")RenderActivity();if(name=="Settings")menuSoundCheck.Checked=features.MenuSounds;if(name=="Characters"||name=="Alert Inbox"||name=="Market Health")RenderDailyTools();
+        EnsureNavigation(name);if(name=="Duplicate Review")RenderDuplicates();if(usabilityReady&&new[]{"Price Changes","Seller Comparison","Undo Center","Profit Breakdown"}.Contains(name))RenderUsability();if(features.MenuSounds&&selected!=name)System.Media.SystemSounds.Asterisk.Play();selected=name;title.Text=name+" • "+store.Characters().Single(c=>c.Id==store.Profile).Name;foreach(var (n,p) in pages){p.Visible=n==name;if(p.Visible)p.BringToFront();navigation[n].ForeColor=n==name?Accent:TextColor;navigation[n].BackColor=n==name?Accent:Surface;}if(navigation[name].Parent is ScrollableControl navScroll)navScroll.ScrollControlIntoView(navigation[name]);if(workspaceReady&&new[]{"Transfers","Shopping List","Selling Planner","Search Everything"}.Contains(name))RenderWorkspace();if(name=="Item Finder")RenderItemFinder();if(name=="Price Checker")RenderPrices();if(name=="Dashboard"){RenderDashboard();ApplyDashboardPanels();}if(name=="Compare")RenderComparison();if(name=="Item Catalog")LoadCatalogImages();if(name=="Equipment")RenderEquipment();if(name=="Inventory")RenderInventorySlots();if(name=="Market Activity")RenderActivity();if(name=="Settings")menuSoundCheck.Checked=features.MenuSounds;if(name=="Characters"||name=="Alert Inbox"||name=="Market Health")RenderDailyTools();
 
     }
 
@@ -352,7 +352,7 @@ public sealed partial class MainForm : Form
 
         foreach(var (source,reason) in new[]{("NiaMeowDB","Not connected: provider permission required"),("MESOLANE","Not connected: approved price feed needed"),("Meso Scout","Not connected: live coverage not verified")})sourcesGrid.Rows.Add(source,reason,"Not connected");
 
-        RenderPrices();RenderDeals();RenderItems();RenderFm();RenderDashboard();RenderInventorySlots();RenderFeatures();RenderDailyTools();RenderMerchantTools();RenderWorkspace();RenderUsability();RenderDuplicates();ApplyAccessibility();
+        RenderPrices();RenderDeals();RenderItems();RenderFm();RenderDashboard();RenderInventorySlots();RenderFeatures();RenderDailyTools();RenderMerchantTools();RenderWorkspace();RenderUsability();RenderDuplicates();ApplyAccessibility();RenderItemFinder();
 
     }
 
@@ -532,6 +532,7 @@ public sealed class HistoryPlot:Control
     }
 
 }
+
 
 
 
