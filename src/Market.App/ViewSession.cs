@@ -48,7 +48,7 @@ public sealed partial class MainForm
                 var area=Screen.FromControl(this).WorkingArea;
                 Size=new Size(Math.Clamp(state.Width,MinimumSize.Width,Math.Max(MinimumSize.Width,area.Width)),Math.Clamp(state.Height,MinimumSize.Height,Math.Max(MinimumSize.Height,area.Height)));
                 if(state.Maximized)WindowState=FormWindowState.Maximized;
-                if(features.SetupComplete&&state.Page is not null&&pages.ContainsKey(state.Page))ShowPage(state.Page);
+                if(state.Page is not null&&pages.ContainsKey(state.Page))ShowPage(state.Page);
             }
         }catch(Exception e) when(e is IOException or JsonException or UnauthorizedAccessException){footer.Text="Previous view could not be restored. Your saved player data is still available.";}
         sessionTimer.Tick+=(_,_)=>{try{SaveViewSession();}catch(Exception){footer.Text="Could not save your current view. Check data-folder access before restarting.";}};
@@ -56,3 +56,4 @@ public sealed partial class MainForm
         FormClosed+=(_,_)=>{sessionTimer.Stop();sessionTimer.Dispose();};
     }
 }
+

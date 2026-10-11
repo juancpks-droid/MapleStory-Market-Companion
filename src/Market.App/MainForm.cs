@@ -255,6 +255,13 @@ public sealed partial class MainForm : Form
 
         Note("Website audit: 10 Oct 2026. Other destinations are browser shortcuts: permission restrictions, no verified public live feed, or reference-only data. See Reports/price-source-audit-1.8.txt in the download.",50);
 
+        string SettingsDraft()=>System.Text.Json.JsonSerializer.Serialize(new {
+            Interval=interval.Value,Fresh=fresh.Value,Discount=discount.Value,Profit=profit.Value,Confidence=confidence.Value,
+            Notifications=notifications.Checked,Sound=sound.Checked,BasilDone=basilDone.Checked,WatchOnly=watchOnly.Checked,TrayClose=trayClose.Checked,
+            Sources=controls.Select(c=>new{Enabled=c.enabled.Checked,Reference=c.reference.Text,Minutes=c.minutes.Value,Url=c.url.Text}).ToArray()
+        });
+        var savedSettingsDraft=SettingsDraft();
+        hasUnsavedSettings=()=>SettingsDraft()!=savedSettingsDraft;
         var actions=new FlowLayoutPanel(){Width=850,Height=48};actions.Controls.Add(Button("Save settings",()=>
 
         {
@@ -269,7 +276,7 @@ public sealed partial class MainForm : Form
 
             foreach(var c in controls){c.config.Enabled=c.enabled.Checked;c.config.PermissionReference=c.reference.Text.Trim();c.config.IntervalMinutes=(int)c.minutes.Value;c.config.FeedUrl=c.url.Text.Trim();}
 
-            store.SaveSettings(settings);interval.Value=settings.LocalSeconds;timer.Interval=settings.LocalSeconds*1000;Render();footer.Text="Settings saved. External requests respect each source's next allowed time.";
+            store.SaveSettings(settings);interval.Value=settings.LocalSeconds;savedSettingsDraft=SettingsDraft();timer.Interval=settings.LocalSeconds*1000;Render();footer.Text="Settings saved. External requests respect each source's next allowed time.";
 
         }));actions.Controls.Add(Button("Test notification",TestNotification));actions.Controls.Add(Button("Clear market cache",()=>{if(busy){MessageBox.Show("Wait for refresh to finish.");return;}store.ClearMarket();observations=[];fmSummaries=[];Render();footer.Text="Market history cleared. Watchlist, inventory and settings retained.";}));form.Controls.Add(actions);
 
@@ -495,6 +502,7 @@ public sealed partial class MainForm : Form
     }
 
 }
+
 
 
 

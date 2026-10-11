@@ -16,7 +16,7 @@ public sealed partial class MainForm
     VelopackAsset? readyUpdate;
     bool checkingUpdate,updateDeferred;
     string declinedUpdateVersion="";
-    int restartSeconds=30;
+    Func<bool> hasUnsavedSettings=()=>false;
     DateTimeOffset nextUpdateCheck=DateTimeOffset.MinValue;
 
     string UpdatePreferencePath=>Path.Combine(dataDirectory,"automatic-updates.txt");
@@ -28,12 +28,12 @@ public sealed partial class MainForm
         automaticUpdates.CheckedChanged+=(_,_)=>{
             try{File.WriteAllText(UpdatePreferencePath,automaticUpdates.Checked?"on":"off");}
             catch(Exception){updateStatus.Text="Could not save the update preference. Check data-folder access.";}
-            restartSeconds=30;
+
         };
         form.Controls.Add(automaticUpdates);form.Controls.Add(updateStatus);
         form.Controls.Add(Button("Check for updates",async ()=>await CheckAppUpdates(true)));
         form.Controls.Add(Button("Create desktop shortcut",()=>{try{DesktopShortcut.CreateOnDesktop();updateStatus.Text="Desktop shortcut created: MapleStory Market Companion.";}catch(Exception e){MessageBox.Show("Could not create the desktop shortcut: "+e.Message,"Desktop shortcut");}}));
-        form.Controls.Add(new Label(){Text="A pop-up asks before downloading and restarting. Yes installs the update without an idle wait. No keeps this version running. Active refreshes, other app windows and unsaved Settings/Trading Sessions pages must finish first.",Width=820,Height=48});
+        form.Controls.Add(new Label(){Text="A pop-up asks before downloading and restarting. Yes installs the update without an idle wait. No keeps this version running. Active refreshes, other app windows and unsaved Settings edits must finish first.",Width=820,Height=48});
     }
 
     void InitializeUpdates(Panel main)
@@ -59,7 +59,7 @@ public sealed partial class MainForm
         if(!Environment.GetCommandLineArgs().Any(a=>a.Contains("smoke",StringComparison.OrdinalIgnoreCase)))updateTimer.Start();
     }
 
-    bool CanRestartForUpdate()=>!closing&&!busy&&!checkingUpdate&&Application.OpenForms.Count==1&&selected is not ("Settings" or "Trading Sessions");
+    bool CanRestartForUpdate()=>!closing&&!busy&&!checkingUpdate&&Application.OpenForms.Count==1&&!hasUnsavedSettings();
     static bool ContainsFocusedEditor(Control control)=>control.Controls.Cast<Control>().Any(c=>(c.Focused&&c is TextBoxBase or NumericUpDown or ComboBox)||ContainsFocusedEditor(c));
     bool ConfirmAppUpdate(string version)=>MessageBox.Show(this,$"A new update ({version}) is available.\n\nDo you want to download the update and restart now?\nYour saved inventory and settings will be kept.","New update available",MessageBoxButtons.YesNo,MessageBoxIcon.Information)==DialogResult.Yes;
 
@@ -88,7 +88,7 @@ public sealed partial class MainForm
                 readyUpdate=update.TargetFullRelease;
             }
             else if(!ConfirmAppUpdate(readyUpdate.Version.ToString())){updateDeferred=true;return;}
-            restartSeconds=30;
+
             restartUpdateButton!.Enabled=true;
             updateStatus.Text="Update ready to restart. Finish any refresh or edits and close other app windows, or choose Later.";
             updateBannerText.Text=updateStatus.Text;updateBanner.Visible=!updateDeferred;
@@ -101,11 +101,11 @@ public sealed partial class MainForm
 
     void ApplyAppUpdate()
     {
-        if(readyUpdate is null||updateManager is null)return;
+        if(closing||readyUpdate is null||updateManager is null)return;
         // Explicit restart still preserves modal edits and in-flight database/network work.
         if(busy||checkingUpdate||Application.OpenForms.Count>1){updateBannerText.Text="Finish the current refresh and close other app windows before restarting.";return;}
-        if(selected is "Settings" or "Trading Sessions"){
-            updateBannerText.Text="Save your edits and leave this page before restarting.";return;
+        if(hasUnsavedSettings()){
+            updateBannerText.Text="Open Settings and select Save settings before restarting.";return;
         }
         try{
             SaveViewSession();SaveFeatures();store.SaveSettings(settings);WriteRecoveryBackup("before-app-update");
@@ -115,5 +115,6 @@ public sealed partial class MainForm
     }
 
 }
+
 
 

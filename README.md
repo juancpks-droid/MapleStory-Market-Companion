@@ -10,7 +10,7 @@ The app is currently unsigned; Windows may show an unknown-publisher warning.
 
 ## Automatic updates
 
-Version 1.20.3 checks this repository's stable releases at startup and every hour while online. A popup asks whether to download the update and restart now. Yes downloads and verifies the package, then restarts without an idle wait or countdown. Active refreshes, other app windows, and Settings/Trading Sessions pages must finish first. No keeps the app running and suppresses automatic prompts for that version for the rest of the session; Check for updates can offer it again. Automatic checks can be disabled in Settings. Offline mode prevents new checks.
+Version 1.20.3 checks this repository's stable releases at startup and every hour while online. A popup asks whether to download the update and restart now. Yes downloads and verifies the package, then restarts without an idle wait or countdown. Active refreshes and other app windows must finish first. From v1.20.7, unsaved Settings edits block restart until saved; clean Settings and Trading Sessions pages allow restart. Saved views restore even when setup was never marked complete. No keeps the app running and suppresses automatic prompts for that version for the rest of the session; Check for updates can offer it again. Automatic checks can be disabled in Settings. Offline mode prevents new checks.
 
 Older ZIP versions need this installer once. Saved data stays in `%LOCALAPPDATA%\MapleStoryClassicMarketCompanion`; the updater does not upload your inventory or journal. A personal recovery backup is written before an update. Do not run old and new copies together.
 
@@ -45,4 +45,5 @@ This is independent fan software, not affiliated with Nexon or marketplace opera
 ## Resume after restart
 
 Version 1.20.4 saves your last tab, browsing searches and filters, chart range, bag category, and window size every five seconds and before closing or updating. Existing saved player records and dashboard customizations remain local. Unfinished trades remain drafts. This view-saving behavior starts after installing 1.20.4.
+
 
