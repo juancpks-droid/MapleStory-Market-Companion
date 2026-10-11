@@ -81,7 +81,7 @@ public sealed partial class MainForm : Form
 
         }
 
-        var sideNote=new Label(){Dock=DockStyle.Bottom,Height=130,Text="YOUR MARKET COMPANION\n\nBrowse the Free Market.\nTrack your favorite items.\nIndependent fan-made tool.",ForeColor=Color.FromArgb(55,37,23),Font=new Font("Segoe UI",9)}; sidebar.Controls.Add(sideNote);
+        sidebar.Controls.Add(BuildSidebarUpdates());nav.BringToFront();
 
         var main=new Panel(){Dock=DockStyle.Fill,Padding=new Padding(0)}; main.Controls.Add(content); main.Controls.Add(title); main.Controls.Add(footer); title.Padding=new Padding(20,10,0,0); Controls.Add(main); Controls.Add(sidebar);
 

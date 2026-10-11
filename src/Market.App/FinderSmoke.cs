@@ -29,6 +29,18 @@ public sealed partial class MainForm
   finderSearch.Text="NoSuchItemUniqueFinderTest";RenderItemFinder();Check(finderItems.Rows.Count==0&&finderListings.Rows.Count==0,"Empty search clears previous item and listing selections");
   finderSource.SelectedItem="All";finderSearch.Text="Red Potion";RenderItemFinder();
   Check(finderItems.Width>300&&finderListings.Height>60,"Both results panels are visible at the default window size");
-  PresentationChecks(checks);return checks;
+  PresentationChecks(checks);
+  Size=new Size(1024,720);
+  foreach(var page in new[]{"Dashboard","Item Finder","Settings"}){
+   ShowPage(page);PerformLayout();
+   Check(sidebarUpdateButton.Visible&&sidebarVersion.Visible&&sidebarUpdateButton.Parent!.ClientRectangle.Contains(sidebarUpdateButton.Bounds),"Sidebar update controls visible on "+page+" at minimum window size");
+  }
+  ShowPage("Item Finder");sidebarUpdateButton.PerformClick();
+  Check(selected=="Item Finder"&&sidebarUpdateStatus.Text.Contains("Offline mode"),"Sidebar button checks updates without changing tabs");
+  Check(sidebarVersion.Text=="Installed: v"+Application.ProductVersion.Split('+')[0],"Sidebar shows installed version");
+  updateStatus.Text="Update v99.0.0 available. Choose Check for updates when ready.";
+  Check(sidebarUpdateStatus.Text.Contains("v99.0.0"),"Available update version appears in sidebar");
+  sidebarUpdateButton.PerformClick();
+  return checks;
  }
 }

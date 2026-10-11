@@ -41,7 +41,7 @@ public sealed partial class MainForm
         updateBanner.Controls.Add(updateBannerText);
         var updateActions=new FlowLayoutPanel(){Dock=DockStyle.Right,Width=265,WrapContents=false,Padding=new Padding(0,5,0,0)};
         restartUpdateButton=Button("Restart now",()=>ApplyAppUpdate());restartUpdateButton.Enabled=false;restartUpdateButton.BackColor=Accent;updateActions.Controls.Add(restartUpdateButton);
-        updateActions.Controls.Add(Button("Later",()=>{updateDeferred=true;updateBanner.Visible=false;updateStatus.Text="Update downloaded. It will be offered again next launch, or select Check for updates.";}));
+        updateActions.Controls.Add(Button("Later",()=>{updateDeferred=true;updateBanner.Visible=false;updateStatus.Text=$"Update v{readyUpdate?.Version} downloaded. Choose Check for updates when ready.";}));
         updateBanner.Controls.Add(updateActions);
         main.Controls.Add(updateBanner);content.BringToFront();
         try{
@@ -79,10 +79,10 @@ public sealed partial class MainForm
                 if(update is null){updateStatus.Text="You're up to date. Last checked "+DateTime.Now.ToString("g");return;}
                 string version=update.TargetFullRelease.Version.ToString();
                 if(!manual&&declinedUpdateVersion==version)return;
-                if(!ConfirmAppUpdate(version)){declinedUpdateVersion=version;updateDeferred=true;updateStatus.Text="Update skipped. Use Check for updates whenever you're ready.";return;}
+                if(!ConfirmAppUpdate(version)){declinedUpdateVersion=version;updateDeferred=true;updateStatus.Text=$"Update v{version} available. Choose Check for updates when ready.";return;}
                 declinedUpdateVersion="";updateDeferred=false;
-                updateBanner.Visible=true;updateBannerText.Text="A new version is available. Downloading in the background…";
-                var progress=new Progress<int>(p=>{if(!closing&&!IsDisposed){updateStatus.Text=$"Downloading update: {p}%";updateBannerText.Text=updateStatus.Text;}});
+                updateBanner.Visible=true;updateBannerText.Text=$"Downloading v{version} in the background…";
+                var progress=new Progress<int>(p=>{if(!closing&&!IsDisposed){updateStatus.Text=$"Downloading v{version}: {p}%";updateBannerText.Text=updateStatus.Text;}});
                 await updateManager.DownloadUpdatesAsync(update,p=>((IProgress<int>)progress).Report(p),stop.Token);
                 if(closing||IsDisposed)return;
                 readyUpdate=update.TargetFullRelease;
@@ -90,7 +90,7 @@ public sealed partial class MainForm
             else if(!ConfirmAppUpdate(readyUpdate.Version.ToString())){updateDeferred=true;return;}
 
             restartUpdateButton!.Enabled=true;
-            updateStatus.Text="Update ready to restart. Finish any refresh or edits and close other app windows, or choose Later.";
+            updateStatus.Text=$"Update v{readyUpdate.Version} ready. Finish refreshes and save edits, then restart.";
             updateBannerText.Text=updateStatus.Text;updateBanner.Visible=!updateDeferred;
         }catch(OperationCanceledException){}
         catch(Exception e){
