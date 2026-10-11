@@ -41,3 +41,8 @@ This is independent fan software, not affiliated with Nexon or marketplace opera
 
 
 
+
+## Resume after restart
+
+Version 1.20.4 saves your last tab, browsing searches and filters, chart range, bag category, and window size every five seconds and before closing or updating. Existing saved player records and dashboard customizations remain local. Unfinished trades remain drafts. This view-saving behavior starts after installing 1.20.4.
+

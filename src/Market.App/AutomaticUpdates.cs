@@ -108,11 +108,12 @@ public sealed partial class MainForm
             updateBannerText.Text="Save your edits and leave this page before restarting.";return;
         }
         try{
-            SaveFeatures();store.SaveSettings(settings);WriteRecoveryBackup("before-app-update");
+            SaveViewSession();SaveFeatures();store.SaveSettings(settings);WriteRecoveryBackup("before-app-update");
             updateManager.WaitExitThenApplyUpdates(readyUpdate,silent:false,restart:true);
             ExitApplication();
         }catch(Exception e){updateDeferred=true;updateStatus.Text="Could not prepare the update. Current version kept; retry using Check for updates.";updateBannerText.Text=updateStatus.Text;try{File.AppendAllText(Path.Combine(dataDirectory,"diagnostics.log"),e.ToString());}catch{}}
     }
 
 }
+
 

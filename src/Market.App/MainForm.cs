@@ -94,13 +94,13 @@ public sealed partial class MainForm : Form
 
         tray.NotificationClick+=(_,_)=>{if(notificationUrl.Length>0)Open(notificationUrl);else{Show();WindowState=FormWindowState.Normal;ShowPage("Alert Inbox");}};
 
-        FormClosing+=(_,e)=>{if(!closing && settings.CloseToTray && e.CloseReason==CloseReason.UserClosing){e.Cancel=true;Hide();}else{stop.Cancel();timer.Stop();tray.Visible=false;}};
+        FormClosing+=(_,e)=>{try{SaveViewSession();SaveFeatures();store.SaveSettings(settings);}catch(Exception){e.Cancel=true;closing=false;MessageBox.Show("Could not save before closing. Please check data-folder access and try again.","Save failed");return;}if(!closing && settings.CloseToTray && e.CloseReason==CloseReason.UserClosing){e.Cancel=true;Hide();}else{stop.Cancel();timer.Stop();tray.Visible=false;}};
 
         FormClosed+=(_,_)=>{timer.Dispose();tray.Dispose();fetcher.Dispose();stop.Dispose();};
 
         timer.Interval=settings.LocalSeconds*1000; timer.Tick+=async (_,_)=>{TimerTicks.Add(DateTimeOffset.UtcNow);if(TimerTicks.Count>1000)TimerTicks.RemoveAt(0);Analyze(); if(!Offline && !busy && settings.Sources.Any(s=>s.Authorized && DateTimeOffset.UtcNow>=s.NextAllowed)) await RefreshSources();}; timer.Start();
 
-        Shown+=async (_,_)=>{Render();AutomaticBackup();if(File.Exists(DraftPath)&&!Environment.GetCommandLineArgs().Contains("--smoke"))MessageBox.Show("An unfinished trade is available. Press Ctrl+R or choose Resume draft in Trade Journal to review it. Nothing has been recorded automatically.","Trade draft recovered");await RefreshSources();}; ShowPage(features.SetupComplete||Environment.GetCommandLineArgs().Contains("--smoke")?"Dashboard":"Getting Started");
+        Shown+=async (_,_)=>{Render();AutomaticBackup();if(File.Exists(DraftPath)&&!Environment.GetCommandLineArgs().Contains("--smoke"))MessageBox.Show("An unfinished trade is available. Press Ctrl+R or choose Resume draft in Trade Journal to review it. Nothing has been recorded automatically.","Trade draft recovered");await RefreshSources();}; ShowPage(features.SetupComplete||Environment.GetCommandLineArgs().Contains("--smoke")?"Dashboard":"Getting Started"); InitializeViewSession();
 
     }
 
@@ -495,6 +495,7 @@ public sealed partial class MainForm : Form
     }
 
 }
+
 
 
 

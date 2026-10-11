@@ -20,6 +20,7 @@ static class Program
 
         Velopack.VelopackApp.Build().SetAutoApplyOnStartup(false).Run();
         ApplicationConfiguration.Initialize();
+        if(args.Contains("--session-smoke")){SessionSmoke.Run();return;}
         if(args.Contains("--shortcut-smoke")){DesktopShortcut.Smoke();return;}
         if(args.Contains("--drops-smoke")){DropReferenceSmoke.Run();return;}
         if(args.Contains("--finder-smoke")){FinderSmoke.Run();return;}
@@ -103,4 +104,5 @@ static class Program
     }
 
 }
+
 
