@@ -13,9 +13,10 @@ Copy-Item settings-defaults.json $publish
 Copy-Item LICENSE.txt $publish
 Copy-Item ThirdPartyLicenses $publish -Recurse -Force
 $releases="Releases/$Version"
-& .tools/vpk.exe pack -u MapleStoryMarketCompanion -v $Version -p $publish -e MapleStoryClassicMarketCompanion.exe --packTitle 'MapleStory Market Companion' --packAuthors juancpks-droid -o $releases
+& .tools/vpk.exe pack -u MapleStoryMarketCompanion -v $Version -p $publish -e MapleStoryClassicMarketCompanion.exe --packTitle 'MapleStory Market Companion' --packAuthors juancpks-droid --shortcuts Desktop,StartMenuRoot -o $releases
 Assert-Success
 $assets=Get-ChildItem $releases -File | Where-Object Name -ne 'assets.win.json' | ForEach-Object FullName
 gh release create "v$Version" @assets --repo juancpks-droid/MapleStory-Market-Companion --draft --title "MapleStory Market Companion $Version" --notes 'Windows update. Review the changes and test the installer before publishing.'
 Assert-Success
 Write-Host 'Draft uploaded. Review and publish it on GitHub to make it available to players.'
+

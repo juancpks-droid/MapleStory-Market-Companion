@@ -31,6 +31,7 @@ public sealed partial class MainForm
         };
         form.Controls.Add(automaticUpdates);form.Controls.Add(updateStatus);
         form.Controls.Add(Button("Check for updates",async ()=>await CheckAppUpdates(true)));
+        form.Controls.Add(Button("Create desktop shortcut",()=>{try{DesktopShortcut.CreateOnDesktop();updateStatus.Text="Desktop shortcut created: MapleStory Market Companion.";}catch(Exception e){MessageBox.Show("Could not create the desktop shortcut: "+e.Message,"Desktop shortcut");}}));
         form.Controls.Add(new Label(){Text="Automatic restart waits until Dashboard is open, you stop typing or clicking, and other app windows are closed. Choose Later to keep using this version until the next launch. Internet access is required.",Width=820,Height=48});
     }
 

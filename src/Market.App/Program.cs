@@ -20,6 +20,7 @@ static class Program
 
         Velopack.VelopackApp.Build().SetAutoApplyOnStartup(false).Run();
         ApplicationConfiguration.Initialize();
+        if(args.Contains("--shortcut-smoke")){DesktopShortcut.Smoke();return;}
         if(args.Contains("--drops-smoke")){DropReferenceSmoke.Run();return;}
         if(args.Contains("--finder-smoke")){FinderSmoke.Run();return;}
         if(args.Length==3&&args[0]=="--updater-smoke"){UpdaterSmoke.Run(args[1],args[2]).GetAwaiter().GetResult();return;}
@@ -39,6 +40,7 @@ static class Program
         using var single=new Mutex(true,smoke?"Local\\MapleClassicMarketCompanionSmoke":"Local\\MapleClassicMarketCompanion",out bool first);
 
         if(!first) { MessageBox.Show("Market Companion is already running. Check the system tray."); return; }
+        if(!smoke)DesktopShortcut.EnsureOnce(directory);
 
         try
 
