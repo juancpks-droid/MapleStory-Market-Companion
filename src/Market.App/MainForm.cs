@@ -63,7 +63,7 @@ public sealed partial class MainForm : Form
 
         if(settings.AccessVersion<5){var source=settings.Sources.FirstOrDefault(s=>s.Id=="BasilMarket");if(source is not null&&source.BlockedUntil<=DateTimeOffset.UtcNow){source.NextAllowed=default;source.PageChecked.Clear();}settings.AccessVersion=5;store.SaveSettings(settings);}
 
-        Text="MapleStory Classic Market Companion"; BackColor=Back; ForeColor=TextColor; Font=new Font("Tahoma",9); Size=new Size(1220,840); MinimumSize=new Size(1024,720); StartPosition=FormStartPosition.CenterScreen; Icon=SystemIcons.Application;
+        Text="MapleStory Classic Market Companion"; BackColor=Back; ForeColor=TextColor; Font=new Font("Tahoma",9); Size=new Size(1220,840); MinimumSize=new Size(1024,720); StartPosition=FormStartPosition.CenterScreen; Icon=AppArtwork.Icon;
 
         var sidebar=new Panel(){Dock=DockStyle.Left,Width=215,Padding=new Padding(12,12,12,15),BackColor=Color.FromArgb(121,151,172)};
 
@@ -495,6 +495,7 @@ public sealed partial class MainForm : Form
     }
 
 }
+
 
 
 

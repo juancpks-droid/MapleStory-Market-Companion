@@ -26,7 +26,7 @@ sealed class WebsiteViewer : Form
     public string ViewerStatus=>status.Text;
     public WebsiteViewer(WebsiteLookup lookup,string dataDirectory)
     {
-        this.lookup=lookup;this.dataDirectory=dataDirectory;
+        this.lookup=lookup;this.dataDirectory=dataDirectory;Icon=AppArtwork.Icon;
         Text=lookup.Name+" • "+(lookup.ItemName.Length>0?lookup.ItemName:"Website");Size=new(1120,800);MinimumSize=new(800,600);StartPosition=FormStartPosition.CenterParent;
         var bar=new FlowLayoutPanel(){Dock=DockStyle.Top,Height=42,AutoScroll=true,WrapContents=false,Padding=new Padding(5)};
         void Add(string label,Action action){var b=new Button(){Text=label,AutoSize=true};b.Click+=(_,_)=>action();bar.Controls.Add(b);}
@@ -152,4 +152,5 @@ public sealed partial class MainForm
         bar.Controls.Add(Button("View on NiaMeowDB",()=>Lookup(true)));bar.Controls.Add(Button("Other websites",()=>Lookup(false)));
     }
 }
+
 

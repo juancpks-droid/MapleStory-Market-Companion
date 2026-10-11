@@ -29,7 +29,7 @@ sealed class DesktopTray : NativeWindow, IDisposable
     public DesktopTray()
     {
         CreateHandle(new CreateParams(){Caption="Maple Market notifications"});
-        data=new(){cbSize=(uint)Marshal.SizeOf<Data>(),hWnd=Handle,uID=1,uFlags=1|2|4,uCallbackMessage=Callback,hIcon=SystemIcons.Application.Handle,szTip="MapleStory Classic Market Companion",szInfo="",szInfoTitle=""};Visible=true;
+        data=new(){cbSize=(uint)Marshal.SizeOf<Data>(),hWnd=Handle,uID=1,uFlags=1|2|4,uCallbackMessage=Callback,hIcon=AppArtwork.Icon.Handle,szTip="MapleStory Classic Market Companion",szInfo="",szInfoTitle=""};Visible=true;
     }
     public bool ShowBalloonTip(int milliseconds)
     {
@@ -42,3 +42,4 @@ sealed class DesktopTray : NativeWindow, IDisposable
     }
     public void Dispose(){Visible=false;ContextMenuStrip?.Dispose();DestroyHandle();}
 }
+
