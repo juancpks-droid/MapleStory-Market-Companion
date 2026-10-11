@@ -29,6 +29,9 @@ public sealed partial class MainForm
   finderSearch.Text="NoSuchItemUniqueFinderTest";RenderItemFinder();Check(finderItems.Rows.Count==0&&finderListings.Rows.Count==0,"Empty search clears previous item and listing selections");
   finderSource.SelectedItem="All";finderSearch.Text="Red Potion";RenderItemFinder();
   Check(finderItems.Width>300&&finderListings.Height>60,"Both results panels are visible at the default window size");
+  var originalTheme=features.Theme;var seen=new HashSet<int>();
+  foreach(var theme in MerchantTools.Themes){themeChoice.SelectedItem=theme;Check(seen.Add(GuidePalette.Gold.ToArgb()),theme+" has a distinct accent");Check(finderDrops.ColumnHeadersDefaultCellStyle.ForeColor==GuidePalette.Gold,theme+" applies to item reference tables");CapturePreview(Path.Combine(dataDirectory,"theme-"+theme.Replace(" ","-")+".png"));}
+  themeChoice.SelectedItem=originalTheme;
   PresentationChecks(checks);
   Size=new Size(1024,720);
   foreach(var page in new[]{"Dashboard","Item Finder","Settings"}){

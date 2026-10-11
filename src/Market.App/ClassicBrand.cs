@@ -7,9 +7,9 @@ public sealed class ClassicBrand : Control
   if(Width<2||Height<2)return;
   var g=e.Graphics;g.SmoothingMode=SmoothingMode.AntiAlias;
   var saved=g.Save();g.ScaleTransform(Width/191f,Height/180f);
-  using var bg=new LinearGradientBrush(new Rectangle(0,0,191,180),Color.FromArgb(28,27,24),Color.FromArgb(15,15,18),90);g.FillRectangle(bg,0,0,191,180);
+  using var bg=new LinearGradientBrush(new Rectangle(0,0,191,180),GuidePalette.Raised,GuidePalette.Surface,90);g.FillRectangle(bg,0,0,191,180);
   using var glow=new SolidBrush(Color.FromArgb(22,255,220,140));g.FillEllipse(glow,25,14,145,145);g.FillEllipse(glow,46,33,103,106);
-  using var gold=new Pen(Color.FromArgb(221,177,99),1.3f);g.DrawRectangle(gold,3,3,185,173);
+  using var gold=new Pen(GuidePalette.Gold,1.3f);g.DrawRectangle(gold,3,3,185,173);
   using var inner=new Pen(Color.FromArgb(76,121,123));g.DrawRectangle(inner,7,7,177,165);
   foreach(float x in new[]{3f,188f})foreach(float y in new[]{3f,176f}){using var stud=new SolidBrush(Color.FromArgb(255,223,151));g.FillEllipse(stud,x-2,y-2,4,4);}
   void Leaf(float x,float y,float scale,float angle){var s=g.Save();g.TranslateTransform(x,y);g.RotateTransform(angle);g.ScaleTransform(scale,scale);PointF[] p=[new(0,-15),new(5,-6),new(10,-9),new(9,-2),new(16,0),new(9,6),new(10,11),new(2,9),new(0,17),new(-2,9),new(-10,11),new(-9,6),new(-16,0),new(-9,-2),new(-10,-9),new(-5,-6)];using var b=new SolidBrush(Color.FromArgb(233,152,62));g.FillPolygon(b,p);g.DrawLine(gold,0,-7,0,17);g.Restore(s);}

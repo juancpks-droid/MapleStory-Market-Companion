@@ -14,7 +14,7 @@ public sealed class ClassicButton : Button
   shape.AddArc(r.Left,r.Top,radius,radius,180,90);shape.AddArc(r.Right-radius,r.Top,radius,radius,270,90);
   shape.AddArc(r.Right-radius,r.Bottom-radius,radius,radius,0,90);shape.AddArc(r.Left,r.Bottom-radius,radius,radius,90,90);shape.CloseFigure();
   g.Clear(Parent?.BackColor??GuidePalette.Back);
-  using var fill=new SolidBrush(selected?Color.FromArgb(54,46,27):hover?GuidePalette.Raised:GuidePalette.Surface);
+  using var fill=new SolidBrush(selected?ControlPaint.Light(GuidePalette.Raised,.12f):hover?GuidePalette.Raised:GuidePalette.Surface);
   g.FillPath(fill,shape);using var border=new Pen(selected?GuidePalette.Gold:GuidePalette.Line);g.DrawPath(border,shape);
   if(Badge is not null)NavigationBadges.Paint(g,Badge,new Rectangle(7,(Height-24)/2,24,24));
   TextRenderer.DrawText(g,Text,Font,new Rectangle(Badge is null?10:40,2,Width-(Badge is null?20:44),Height-4),!Enabled?GuidePalette.Muted:selected?GuidePalette.Gold:GuidePalette.Text,TextFormatFlags.EndEllipsis|TextFormatFlags.NoPrefix|TextFormatFlags.VerticalCenter|(TextAlign==ContentAlignment.MiddleLeft?TextFormatFlags.Left:TextFormatFlags.HorizontalCenter));

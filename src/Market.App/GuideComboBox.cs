@@ -12,7 +12,7 @@ sealed class GuideComboBox : ComboBox
  }
  protected override void OnSelectedIndexChanged(EventArgs e){base.OnSelectedIndexChanged(e);Invalidate();}
  protected override void OnDrawItem(DrawItemEventArgs e){
-  using var fill=new SolidBrush((e.State&DrawItemState.Selected)!=0?Color.FromArgb(68,59,35):GuidePalette.Raised);e.Graphics.FillRectangle(fill,e.Bounds);
+  using var fill=new SolidBrush((e.State&DrawItemState.Selected)!=0?ControlPaint.Light(GuidePalette.Raised,.12f):GuidePalette.Raised);e.Graphics.FillRectangle(fill,e.Bounds);
   if(e.Index>=0)TextRenderer.DrawText(e.Graphics,GetItemText(Items[e.Index]),Font,e.Bounds,GuidePalette.Text,TextFormatFlags.VerticalCenter|TextFormatFlags.NoPrefix);
  }
 }

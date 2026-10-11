@@ -2,18 +2,25 @@ using System.Drawing.Drawing2D;
 namespace Market.App;
 internal static class GuidePalette
 {
- internal static readonly Color Back=Color.FromArgb(8,8,10),Surface=Color.FromArgb(19,19,23),Raised=Color.FromArgb(29,29,34),Line=Color.FromArgb(49,49,55),Text=Color.FromArgb(240,239,235),Muted=Color.FromArgb(166,166,175),Gold=Color.FromArgb(241,203,100);
+ internal static Color Back=Color.FromArgb(8,8,10),Surface=Color.FromArgb(19,19,23),Raised=Color.FromArgb(29,29,34),Line=Color.FromArgb(49,49,55),Text=Color.FromArgb(240,239,235),Muted=Color.FromArgb(166,166,175),Gold=Color.FromArgb(241,203,100);
 }
 public sealed partial class MainForm
 {
  void ApplyGuideStyle(){
+  var tint=features.Theme switch{
+   "Ellinia"=>Color.FromArgb(151,211,158),
+   "Kerning City"=>Color.FromArgb(166,185,247),
+   "Perion"=>Color.FromArgb(240,164,113),
+   _=>Color.FromArgb(241,203,100)};
+  Color Shade(double strength)=>Color.FromArgb((int)(tint.R*strength),(int)(tint.G*strength),(int)(tint.B*strength));
+  GuidePalette.Gold=tint;GuidePalette.Back=Shade(.055);GuidePalette.Surface=Shade(.095);GuidePalette.Raised=Shade(.15);GuidePalette.Line=Shade(.26);
   void Paint(Control c){
    c.ForeColor=GuidePalette.Text;
    if(c is DataGridView grid){
     grid.BackgroundColor=GuidePalette.Back;grid.GridColor=GuidePalette.Line;
     grid.DefaultCellStyle.BackColor=GuidePalette.Surface;grid.DefaultCellStyle.ForeColor=GuidePalette.Text;
-    grid.DefaultCellStyle.SelectionBackColor=Color.FromArgb(68,59,35);grid.DefaultCellStyle.SelectionForeColor=GuidePalette.Text;
-    grid.AlternatingRowsDefaultCellStyle.BackColor=Color.FromArgb(23,23,27);
+    grid.DefaultCellStyle.SelectionBackColor=ControlPaint.Light(GuidePalette.Raised,.12f);grid.DefaultCellStyle.SelectionForeColor=GuidePalette.Text;grid.RowsDefaultCellStyle.SelectionBackColor=grid.DefaultCellStyle.SelectionBackColor;foreach(DataGridViewColumn column in grid.Columns)column.DefaultCellStyle.SelectionBackColor=grid.DefaultCellStyle.SelectionBackColor;
+    grid.AlternatingRowsDefaultCellStyle.BackColor=GuidePalette.Raised;
     grid.ColumnHeadersDefaultCellStyle.BackColor=GuidePalette.Raised;grid.ColumnHeadersDefaultCellStyle.ForeColor=GuidePalette.Gold;
     grid.ColumnHeadersDefaultCellStyle.SelectionBackColor=GuidePalette.Raised;
     grid.CellBorderStyle=DataGridViewCellBorderStyle.SingleHorizontal;grid.ColumnHeadersBorderStyle=DataGridViewHeaderBorderStyle.None;

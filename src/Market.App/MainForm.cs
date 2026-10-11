@@ -45,7 +45,7 @@ public sealed partial class MainForm : Form
 
     public List<DateTimeOffset> TimerTicks {get;}=[];
 
-    static readonly Color Back=GuidePalette.Back,Surface=GuidePalette.Surface,TextColor=GuidePalette.Text,Accent=Color.FromArgb(185,99,35),Muted=GuidePalette.Muted;
+    static Color Back=>GuidePalette.Back; static Color Surface=>GuidePalette.Surface; static Color TextColor=>GuidePalette.Text; static readonly Color Accent=Color.FromArgb(185,99,35); static Color Muted=>GuidePalette.Muted;
 
 
 
