@@ -7,6 +7,7 @@ public sealed partial class MainForm
         public string Page {get;set;}="Dashboard";
         public Dictionary<string,string> Values {get;set;}=[];
         public int Days {get;set;}=7;
+        public int FinderDetailTab {get;set;}
         public string Bag {get;set;}="ALL";
         public int Width {get;set;}=1220;
         public int Height {get;set;}=840;
@@ -23,7 +24,7 @@ public sealed partial class MainForm
     void SaveViewSession()
     {
         var bounds=WindowState==FormWindowState.Normal?Bounds:RestoreBounds;
-        var state=new ViewSession{Page=selected,Days=historyDays,Bag=inventoryCategory,Width=bounds.Width,Height=bounds.Height,Maximized=WindowState==FormWindowState.Maximized};
+        var state=new ViewSession{Page=selected,FinderDetailTab=finderDetailTabs.SelectedIndex,Days=historyDays,Bag=inventoryCategory,Width=bounds.Width,Height=bounds.Height,Maximized=WindowState==FormWindowState.Maximized};
         foreach(var (key,control) in SessionControls())state.Values[key]=control is CheckBox check?check.Checked.ToString():control.Text;
         var json=JsonSerializer.Serialize(state);
         if(json==lastSessionJson)return;
@@ -49,6 +50,7 @@ public sealed partial class MainForm
                 Size=new Size(Math.Clamp(state.Width,MinimumSize.Width,Math.Max(MinimumSize.Width,area.Width)),Math.Clamp(state.Height,MinimumSize.Height,Math.Max(MinimumSize.Height,area.Height)));
                 if(state.Maximized)WindowState=FormWindowState.Maximized;
                 if(state.Page is not null&&pages.ContainsKey(state.Page))ShowPage(state.Page);
+                finderDetailTabs.SelectedIndex=Math.Clamp(state.FinderDetailTab,0,1);
             }
         }catch(Exception e) when(e is IOException or JsonException or UnauthorizedAccessException){footer.Text="Previous view could not be restored. Your saved player data is still available.";}
         sessionTimer.Tick+=(_,_)=>{try{SaveViewSession();}catch(Exception){footer.Text="Could not save your current view. Check data-folder access before restarting.";}};
@@ -56,4 +58,5 @@ public sealed partial class MainForm
         FormClosed+=(_,_)=>{sessionTimer.Stop();sessionTimer.Dispose();};
     }
 }
+
 

@@ -18,7 +18,8 @@ static class SessionSmoke
 }
 public sealed partial class MainForm
 {
- internal void SetSessionFixture(){quickSearch.Text="Red Potion";search.Text="Snail Shell";finderSearch.Text="Potion";finderCategory.SelectedItem="Use";finderListed.Checked=true;historyDays=14;inventoryCategory="USE";Size=new Size(1100,760);ShowPage("Item Finder");}
- internal void CheckSessionFixture(){if(selected!="Item Finder"||quickSearch.Text!="Red Potion"||search.Text!="Snail Shell"||finderSearch.Text!="Potion"||finderCategory.Text!="Use"||!finderListed.Checked||historyDays!=14||inventoryCategory!="USE"||Width!=1100||Height!=760)throw new Exception("View session did not round-trip");}
+ internal void SetSessionFixture(){quickSearch.Text="Red Potion";search.Text="Snail Shell";finderSearch.Text="Potion";finderCategory.SelectedItem="Use";finderListed.Checked=true;historyDays=14;inventoryCategory="USE";Size=new Size(1100,760);ShowPage("Item Finder");finderDetailTabs.SelectedIndex=1;}
+ internal void CheckSessionFixture(){if(finderDetailTabs.SelectedIndex!=1||selected!="Item Finder"||quickSearch.Text!="Red Potion"||search.Text!="Snail Shell"||finderSearch.Text!="Potion"||finderCategory.Text!="Use"||!finderListed.Checked||historyDays!=14||inventoryCategory!="USE"||Width!=1100||Height!=760)throw new Exception("View session did not round-trip");}
 }
+
 

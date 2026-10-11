@@ -8,7 +8,7 @@ public sealed partial class MainForm
     readonly CheckBox finderListed=new(){Text="With listings",Width=115,Height=32};
     readonly DataGridView finderItems=Grid(),finderListings=Grid();
     readonly Label finderStatus=Info(55),finderEvidence=Info(65);
-    bool finderReady;int finderGeneration;
+    bool finderReady,renderingFinderRows;int finderGeneration;
     FinderResult? FinderSelection=>finderItems.SelectedRows.Count>0?finderItems.SelectedRows[0].Tag as FinderResult:null;
     object? FinderActionItem=>finderListings.SelectedRows.Count>0?finderListings.SelectedRows[0].Tag:FinderSelection is {} item?new IconCatalog.Entry(item.Id,item.Name):null;
     void BuildItemFinder()
@@ -31,10 +31,10 @@ public sealed partial class MainForm
         actions.Controls.Add(Button("Item websites",()=>{if(FinderActionItem is {} item)ShowItemWebsites(ItemName(item),item);}));
         actions.Controls.Add(Button("Refresh sources",async ()=>{await RefreshSources();RenderItemFinder();}));
         var body=new TableLayoutPanel(){Dock=DockStyle.Fill,RowCount=2,ColumnCount=1};body.RowStyles.Add(new(SizeType.Percent,45));body.RowStyles.Add(new(SizeType.Percent,55));
-        body.Controls.Add(finderItems,0,0);var lower=new Panel(){Dock=DockStyle.Fill};lower.Controls.Add(finderListings);lower.Controls.Add(finderEvidence);body.Controls.Add(lower,0,1);
+        body.Controls.Add(finderItems,0,0);var lower=new Panel(){Dock=DockStyle.Fill};lower.Controls.Add(finderListings);lower.Controls.Add(finderEvidence);body.Controls.Add(BuildFinderDetails(lower),0,1);
         var page=pages["Item Finder"];page.Controls.Add(body);page.Controls.Add(actions);page.Controls.Add(finderStatus);page.Controls.Add(bar);
         finderSearch.TextChanged+=(_,_)=>DebounceSearch(RenderItemFinder);finderCategory.SelectedIndexChanged+=(_,_)=>RenderItemFinder();finderSource.SelectedIndexChanged+=(_,_)=>RenderItemFinder();finderListed.CheckedChanged+=(_,_)=>RenderItemFinder();
-        finderItems.SelectionChanged+=(_,_)=>RenderFinderListings();finderListings.CellDoubleClick+=(_,e)=>{if(e.RowIndex>=0&&finderListings.Rows[e.RowIndex].Tag is Observation o)ShowItemDetails(o);};
+        finderItems.SelectionChanged+=(_,_)=>{if(!renderingFinderRows){RenderFinderListings();QueueFinderDrops();}};finderListings.CellDoubleClick+=(_,e)=>{if(e.RowIndex>=0&&finderListings.Rows[e.RowIndex].Tag is Observation o)ShowItemDetails(o);};
         finderItems.Scroll+=(_,_)=>{if(finderReady)_=LoadFinderIcons(finderGeneration);};
         finderReady=true;
     }
@@ -43,12 +43,14 @@ public sealed partial class MainForm
         if(!finderReady||selected!="Item Finder")return;
         var previous=FinderSelection;
         var results=ItemFinder.Search(iconCatalog.Entries.Select(e=>new FinderIdentity(e.Id,e.Name)),observations,finderSearch.Text,finderCategory.Text,finderSource.Text,finderListed.Checked);
+        renderingFinderRows=true;
         finderItems.Columns.Clear();finderItems.Columns.Add(new DataGridViewImageColumn(){Name="Icon",HeaderText="",ImageLayout=DataGridViewImageCellLayout.Normal,Width=44,AutoSizeMode=DataGridViewAutoSizeColumnMode.None,DefaultCellStyle=new(){NullValue=null}});
         foreach(var name in new[]{"Item","Category","Classic ID","Known asks"})finderItems.Columns.Add(name,name);
         foreach(var item in results.Take(200)){int row=finderItems.Rows.Add(icons.Peek(item.Id)!,item.Name,item.Category,item.Id,item.Listings.Count);finderItems.Rows[row].Tag=item;}
         if(previous is not null){var row=finderItems.Rows.Cast<DataGridViewRow>().FirstOrDefault(r=>r.Tag is FinderResult item&&item.Id==previous.Id&&item.Name==previous.Name);if(row is not null){finderItems.ClearSelection();row.Selected=true;}}
-        finderStatus.Text=$"{results.Count:N0} matching items • showing {Math.Min(200,results.Count):N0}; refine your search for more.\nSelect an item, then Monster drops & maps for NiaMeowDB’s in-app reference. English names only. Catalog: GMS 83; reference: Classic World. No known listings does not mean unavailable everywhere.";
-        RenderFinderListings();_ = LoadFinderIcons(++finderGeneration);
+        renderingFinderRows=false;
+        finderStatus.Text=$"{results.Count:N0} matching items • showing {Math.Min(200,results.Count):N0}; refine your search for more.\nSelect an item, then the Monster drops & locations tab below for drop references. English names only. Catalog: GMS 83; reference: Classic World. No known listings does not mean unavailable everywhere.";
+        RenderFinderListings();QueueFinderDrops();_ = LoadFinderIcons(++finderGeneration);
     }
     async Task LoadFinderIcons(int generation)
     {
@@ -69,4 +71,6 @@ public sealed partial class MainForm
         }
     }
 }
+
+
 

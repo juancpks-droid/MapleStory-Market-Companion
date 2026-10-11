@@ -47,3 +47,8 @@ This is independent fan software, not affiliated with Nexon or marketplace opera
 Version 1.20.4 saves your last tab, browsing searches and filters, chart range, bag category, and window size every five seconds and before closing or updating. Existing saved player records and dashboard customizations remain local. Unfinished trades remain drafts. This view-saving behavior starts after installing 1.20.4.
 
 
+
+## Item drop references
+
+From v1.20.8, select an item in Item Finder and open Monster drops & locations below the results. On-demand exact-name lookups show up to five monsters and three recorded maps each, credited and linked to NiaMeowDB. Community reports and historical MapleSEA evidence are labelled separately and may differ from your server. Missing information does not prove an item has no drops. The reference cache stays in memory for one hour; no drop database is bundled.
+
