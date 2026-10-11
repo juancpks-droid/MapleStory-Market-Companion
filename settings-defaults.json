@@ -1,0 +1,30 @@
+{
+  "AccessVersion": 5,
+  "LocalSeconds": 10,
+  "FreshHours": 72,
+  "Confidence": 50,
+  "Discount": 25,
+  "MinimumProfit": 1000,
+  "Notifications": true,
+  "Sound": false,
+  "WatchOnly": true,
+  "CloseToTray": false,
+  "Sources": [
+    {
+      "Id": "BasilMarket",
+      "Enabled": true,
+      "PermissionReference": "https://basilmarket.net/terms - public listings reviewed 2026-10-10; robots checked each batch"
+    },
+    {
+      "Id": "Kerning Exchange",
+      "Enabled": true,
+      "PermissionReference": "https://kerning.gg/robots.txt \u2014 public pages allowed; checked each batch",
+      "IntervalMinutes": 15
+    },
+    {
+      "Id": "Approved JSON feed",
+      "Enabled": false
+    }
+  ],
+  "BasilCompletionNotifications": true
+}

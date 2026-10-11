@@ -1,0 +1,15 @@
+**/bin/
+**/obj/
+build/
+Releases/
+.tools/
+work/
+test-results/
+*.db
+*.db-*
+*.log
+*-smoke-data/
+.vs/
+.env*
+*.pfx
+*.key

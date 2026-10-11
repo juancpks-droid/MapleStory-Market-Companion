@@ -1,0 +1,10 @@
+THIRD-PARTY COMPONENTS
+
+.NET Windows Desktop / .NET Runtime 10.0.12 — Microsoft and contributors — MIT; runtime third-party notices apply.
+Microsoft.Data.Sqlite and Microsoft.Data.Sqlite.Core 10.0.12 — Microsoft Corporation — MIT.
+HtmlAgilityPack 1.13.0 — Copyright © ZZZ Projects Inc. — MIT.
+SQLitePCLRaw 3.0.5 components — Copyright 2014–2026 SourceGear, LLC — Apache-2.0.
+SQLite native components — SQLite public domain dedication; see included license notices.
+
+Package metadata and exact versions: MapleStoryClassicMarketCompanion.deps.json and Source/Market.Core/Market.Core.csproj.
+No game sprites or marketplace databases are redistributed.

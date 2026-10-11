@@ -1,0 +1,4 @@
+Microsoft.Windows.SDK.NET.Ref 10.0.19041.57
+Includes Microsoft.Windows.SDK.NET.dll and WinRT.Runtime.dll.
+Copyright Microsoft Corporation.
+Package license: https://aka.ms/WinSDKLicenseURL
