@@ -10,7 +10,7 @@ The app is currently unsigned; Windows may show an unknown-publisher warning.
 
 ## Automatic updates
 
-Version 1.20 checks this repository's stable releases at startup and every hour while online. It downloads and verifies a newer package, then offers Restart now or Later. Automatic restart waits for Dashboard, no other app windows, no active refresh, and 30 seconds without typing or clicking, followed by a 30-second countdown. Updates can be disabled in Settings. Offline mode prevents new checks.
+Version 1.20.3 checks this repository's stable releases at startup and every hour while online. A popup asks whether to download the update and restart now. Yes downloads and verifies the package, then restarts without an idle wait or countdown. Active refreshes, other app windows, and Settings/Trading Sessions pages must finish first. No keeps the app running and suppresses automatic prompts for that version for the rest of the session; Check for updates can offer it again. Automatic checks can be disabled in Settings. Offline mode prevents new checks.
 
 Older ZIP versions need this installer once. Saved data stays in `%LOCALAPPDATA%\MapleStoryClassicMarketCompanion`; the updater does not upload your inventory or journal. A personal recovery backup is written before an update. Do not run old and new copies together.
 
@@ -38,5 +38,6 @@ The bundled test project has optional historical website fixtures that are not i
 180 core checks passed in the development workspace. Local updater tests passed for finding a newer release, download verification/staging, avoiding reinstalls and downgrades, and rejecting a corrupted package. The full update/restart cycle was subsequently tested in an isolated copy of the companion using the production updater logic and normal countdown. The test exposed and fixed two issues in 1.18.1: a focused Dashboard search box preventing restart and content obscuring the update banner. The updated process reopened Dashboard, retained a 73-item test inventory, wrote a recovery backup and released the previous process mutex. Settings, active refreshes, editing windows, Later and recent-input delay checks also passed. The lifecycle test used a local release feed and separate app identity/data; unauthenticated public GitHub download/verification was checked separately. This was tested on one Windows computer, not a broad device matrix. Reports accompany the release.
 
 This is independent fan software, not affiliated with Nexon or marketplace operators. Original code is MIT licensed. Game names, artwork served by external services and marketplace content belong to their respective owners. See LICENSE.txt and ThirdPartyLicenses.
+
 
 

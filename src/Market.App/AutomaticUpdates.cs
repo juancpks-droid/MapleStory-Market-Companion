@@ -8,16 +8,17 @@ public sealed partial class MainForm
     internal const string UpdateRepository="https://github.com/juancpks-droid/MapleStory-Market-Companion";
     readonly System.Windows.Forms.Timer updateTimer=new(){Interval=1000};
     readonly Label updateStatus=new(){Width=820,Height=48};
-    readonly CheckBox automaticUpdates=new(){Text="Automatically download updates and restart when idle",Width=800,Height=30};
+    readonly CheckBox automaticUpdates=new(){Text="Automatically check for updates (ask before downloading and restarting)",Width=800,Height=30};
     readonly Panel updateBanner=new(){Dock=DockStyle.Bottom,Height=82,Visible=false,Padding=new Padding(12),BackColor=Color.FromArgb(255,235,181)};
     readonly Label updateBannerText=new(){Dock=DockStyle.Fill,Padding=new Padding(0,8,8,0)};
     Button? restartUpdateButton;
     UpdateManager? updateManager;
     VelopackAsset? readyUpdate;
     bool checkingUpdate,updateDeferred;
+    string declinedUpdateVersion="";
     int restartSeconds=30;
     DateTimeOffset nextUpdateCheck=DateTimeOffset.MinValue;
-    DateTimeOffset lastUpdateActivity=DateTimeOffset.UtcNow;
+
     string UpdatePreferencePath=>Path.Combine(dataDirectory,"automatic-updates.txt");
 
     void BuildUpdateSettings(FlowLayoutPanel form)
@@ -32,7 +33,7 @@ public sealed partial class MainForm
         form.Controls.Add(automaticUpdates);form.Controls.Add(updateStatus);
         form.Controls.Add(Button("Check for updates",async ()=>await CheckAppUpdates(true)));
         form.Controls.Add(Button("Create desktop shortcut",()=>{try{DesktopShortcut.CreateOnDesktop();updateStatus.Text="Desktop shortcut created: MapleStory Market Companion.";}catch(Exception e){MessageBox.Show("Could not create the desktop shortcut: "+e.Message,"Desktop shortcut");}}));
-        form.Controls.Add(new Label(){Text="Automatic restart waits until Dashboard is open, you stop typing or clicking, and other app windows are closed. Choose Later to keep using this version until the next launch. Internet access is required.",Width=820,Height=48});
+        form.Controls.Add(new Label(){Text="A pop-up asks before downloading and restarting. Yes installs the update without an idle wait. No keeps this version running. Active refreshes, other app windows and unsaved Settings/Trading Sessions pages must finish first.",Width=820,Height=48});
     }
 
     void InitializeUpdates(Panel main)
@@ -47,22 +48,20 @@ public sealed partial class MainForm
             updateManager=new UpdateManager(new GithubSource(UpdateRepository,null,false));
             updateStatus.Text=updateManager.IsInstalled?"Automatic updates are ready. Checking at startup and every hour.":"Install the Setup.exe version once to enable automatic updates.";
         }catch(Exception){updateStatus.Text="Updater could not start. You can reinstall from the GitHub releases page.";}
-        var activity=new UpdateActivityFilter(()=>lastUpdateActivity=DateTimeOffset.UtcNow);
-        Application.AddMessageFilter(activity);
-        FormClosed+=(_,_)=>{updateTimer.Stop();updateTimer.Dispose();Application.RemoveMessageFilter(activity);};
+
+
+        FormClosed+=(_,_)=>{updateTimer.Stop();updateTimer.Dispose();};
         updateTimer.Tick+=async (_,_)=>{
             if(closing)return;
-            if(readyUpdate is not null&&!updateDeferred&&automaticUpdates.Checked){
-                if(!CanRestartForUpdate()||DateTimeOffset.UtcNow-lastUpdateActivity<TimeSpan.FromSeconds(30)){restartSeconds=30;updateBannerText.Text="Update ready. Waiting until you're idle to restart (or choose Later).";return;}
-                updateBannerText.Text=$"Update ready. Restarting automatically in {restartSeconds} seconds…";
-                if(--restartSeconds<0)ApplyAppUpdate();
-            }else if(automaticUpdates.Checked&&!checkingUpdate&&readyUpdate is null&&DateTimeOffset.UtcNow>=nextUpdateCheck&&!Offline)await CheckAppUpdates(false);
+            if(readyUpdate is not null&&!updateDeferred&&CanRestartForUpdate())ApplyAppUpdate();
+            else if(automaticUpdates.Checked&&!checkingUpdate&&readyUpdate is null&&DateTimeOffset.UtcNow>=nextUpdateCheck&&!Offline)await CheckAppUpdates(false);
         };
         if(!Environment.GetCommandLineArgs().Any(a=>a.Contains("smoke",StringComparison.OrdinalIgnoreCase)))updateTimer.Start();
     }
 
-    bool CanRestartForUpdate()=>!closing&&!busy&&!checkingUpdate&&Application.OpenForms.Count==1&&selected=="Dashboard";
+    bool CanRestartForUpdate()=>!closing&&!busy&&!checkingUpdate&&Application.OpenForms.Count==1&&selected is not ("Settings" or "Trading Sessions");
     static bool ContainsFocusedEditor(Control control)=>control.Controls.Cast<Control>().Any(c=>(c.Focused&&c is TextBoxBase or NumericUpDown or ComboBox)||ContainsFocusedEditor(c));
+    bool ConfirmAppUpdate(string version)=>MessageBox.Show(this,$"A new update ({version}) is available.\n\nDo you want to download the update and restart now?\nYour saved inventory and settings will be kept.","New update available",MessageBoxButtons.YesNo,MessageBoxIcon.Information)==DialogResult.Yes;
 
     async Task CheckAppUpdates(bool manual)
     {
@@ -78,20 +77,26 @@ public sealed partial class MainForm
                 var update=await updateManager.CheckForUpdatesAsync();
                 if(closing||IsDisposed)return;
                 if(update is null){updateStatus.Text="You're up to date. Last checked "+DateTime.Now.ToString("g");return;}
+                string version=update.TargetFullRelease.Version.ToString();
+                if(!manual&&declinedUpdateVersion==version)return;
+                if(!ConfirmAppUpdate(version)){declinedUpdateVersion=version;updateDeferred=true;updateStatus.Text="Update skipped. Use Check for updates whenever you're ready.";return;}
+                declinedUpdateVersion="";updateDeferred=false;
                 updateBanner.Visible=true;updateBannerText.Text="A new version is available. Downloading in the background…";
                 var progress=new Progress<int>(p=>{if(!closing&&!IsDisposed){updateStatus.Text=$"Downloading update: {p}%";updateBannerText.Text=updateStatus.Text;}});
                 await updateManager.DownloadUpdatesAsync(update,p=>((IProgress<int>)progress).Report(p),stop.Token);
                 if(closing||IsDisposed)return;
                 readyUpdate=update.TargetFullRelease;
             }
+            else if(!ConfirmAppUpdate(readyUpdate.Version.ToString())){updateDeferred=true;return;}
             restartSeconds=30;
             restartUpdateButton!.Enabled=true;
-            updateStatus.Text="Update ready. Restart now? Choose Restart now or Later. Your saved data will be kept.";
+            updateStatus.Text="Update ready to restart. Finish any refresh or edits and close other app windows, or choose Later.";
             updateBannerText.Text=updateStatus.Text;updateBanner.Visible=!updateDeferred;
         }catch(OperationCanceledException){}
         catch(Exception e){
             if(!closing&&!IsDisposed){updateStatus.Text="Update check or download failed. Your current version still works. Retry here later.";updateBanner.Visible=false;try{File.AppendAllText(Path.Combine(dataDirectory,"diagnostics.log"),$"{DateTimeOffset.UtcNow:O} Update: {e.GetType().Name}: {e.Message}\n");}catch{}}
         }finally{checkingUpdate=false;}
+        if(readyUpdate is not null&&!updateDeferred)ApplyAppUpdate();
     }
 
     void ApplyAppUpdate()
@@ -99,8 +104,8 @@ public sealed partial class MainForm
         if(readyUpdate is null||updateManager is null)return;
         // Explicit restart still preserves modal edits and in-flight database/network work.
         if(busy||checkingUpdate||Application.OpenForms.Count>1){updateBannerText.Text="Finish the current refresh and close other app windows before restarting.";return;}
-        if(selected is not ("Dashboard" or "Item Finder")){
-            updateBannerText.Text="Save your edits and open Dashboard before restarting.";return;
+        if(selected is "Settings" or "Trading Sessions"){
+            updateBannerText.Text="Save your edits and leave this page before restarting.";return;
         }
         try{
             SaveFeatures();store.SaveSettings(settings);WriteRecoveryBackup("before-app-update");
@@ -109,10 +114,5 @@ public sealed partial class MainForm
         }catch(Exception e){updateDeferred=true;updateStatus.Text="Could not prepare the update. Current version kept; retry using Check for updates.";updateBannerText.Text=updateStatus.Text;try{File.AppendAllText(Path.Combine(dataDirectory,"diagnostics.log"),e.ToString());}catch{}}
     }
 
-    sealed class UpdateActivityFilter(Action activity):IMessageFilter
-    {
-        public bool PreFilterMessage(ref Message message){if(message.Msg is 0x100 or 0x104 or 0x201 or 0x204 or 0x207 or 0x20A)activity();return false;}
-    }
 }
-
 
