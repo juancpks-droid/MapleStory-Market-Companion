@@ -75,7 +75,7 @@ public sealed partial class MainForm : Form
 
         {
 
-            var button=Button(name,()=>ShowPage(name)); button.Width=164; button.Height=38; button.TextAlign=ContentAlignment.MiddleLeft; navigation[name]=button; nav.Controls.Add(button);
+            var button=Button(name,()=>ShowPage(name)); ((ClassicButton)button).Badge=name;button.AccessibleName=name; button.Width=164; button.Height=38; button.TextAlign=ContentAlignment.MiddleLeft; navigation[name]=button; nav.Controls.Add(button);
 
             var page=new Panel(){Dock=DockStyle.Fill,Visible=false}; pages[name]=page; content.Controls.Add(page);
 
@@ -495,6 +495,8 @@ public sealed partial class MainForm : Form
     }
 
 }
+
+
 
 
 
