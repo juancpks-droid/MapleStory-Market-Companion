@@ -18,7 +18,7 @@ public sealed partial class MainForm
     string lastSessionJson="";
     Dictionary<string,Control> SessionControls()=>new(){
         ["dashboardSearch"]=quickSearch,["priceSearch"]=search,["fmSearch"]=fmSearch,
-        ["finderSearch"]=finderSearch,["finderCategory"]=finderCategory,["finderSource"]=finderSource,["finderListed"]=finderListed,
+        ["finderDropSource"]=finderDropSource,["finderSearch"]=finderSearch,["finderCategory"]=finderCategory,["finderSource"]=finderSource,["finderListed"]=finderListed,
         ["inventorySearch"]=inventorySearch,["inventorySort"]=inventorySort,["catalogSearch"]=catalogSearch,["catalogCategory"]=catalogCategory
     };
     void SaveViewSession()

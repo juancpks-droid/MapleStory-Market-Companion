@@ -465,6 +465,17 @@ await Test("Finder hides untranslated names from catalog and market-only results
 await Test("Finder excludes removed, buying and sold evidence",()=>Sync(()=>{var rows=new[]{O("ask") with{Kind=EvidenceKind.Asking},O("removed") with{Kind=EvidenceKind.Asking,Available=false},O("buy") with{Kind=EvidenceKind.Buying},O("sale")};var found=ItemFinder.Search([new("4000000","Test ETC")],rows,"test");Check(found.Single().Listings.Count==1&&found[0].Listings[0].ListingId=="ask");}));
 await Test("Finder preserves ambiguous identities and exact variants",()=>Sync(()=>{var rows=new[]{O("one") with{Kind=EvidenceKind.Asking,ItemId="1000000",Equipment=true,Variant="watk=10"},O("two") with{Kind=EvidenceKind.Asking,ItemId="1000001",Equipment=true,Variant="watk=20"}};var found=ItemFinder.Search([new("1000000","Test ETC"),new("1000001","Test ETC")],rows,"test");Check(found.Count==2&&found.All(i=>i.Listings.Count==1)&&found[0].Listings[0].Variant=="watk=10"&&found[1].Listings[0].Variant=="watk=20");}));
 await Test("Finder searches IDs, unknown market items and source/category filters",()=>Sync(()=>{var catalog=new[]{new FinderIdentity("2000000","Red Potion"),new FinderIdentity("1000000","Sword")};var rows=new[]{O("unknown") with{Kind=EvidenceKind.Asking}};Check(ItemFinder.Search(catalog,rows,"2000000").Single().Name=="Red Potion");Check(ItemFinder.Search(catalog,rows,"test","Unknown",listedOnly:true).Single().Listings.Count==1);Check(ItemFinder.Search(catalog,rows,"test",provider:"Other",listedOnly:true).Count==0);Check(ItemFinder.Search(catalog,rows,"","Equipment").Single().Name=="Sword");Check(ItemFinder.Search(catalog,rows,"absent").Count==0);}));
+await Test("CCPLZ exact identity and historical evidence",()=>Sync(()=>{
+ Check(CcplzReader.ItemUrl("Snail Shell")=="https://ccplz.cc/items/snail-shell");
+ Check(CcplzReader.MatchesItem("<h1>Snail Shell</h1>","Snail Shell"));
+ Check(!CcplzReader.MatchesItem("<h1>Blue Snail Shell</h1>","Snail Shell"));
+ var refs=CcplzReader.ReadReferences("<h1>Snail Shell</h1><section id='dropped-by'><a href='/monsters/snail'>Snail</a></section><section id='older-dropped-by'><a href='/monsters/mano'>Mano</a></section>","Snail Shell");
+ Check(refs.Count==2&&refs[1].Evidence.Contains("Older-version"));
+ var monster=CcplzReader.ReadMaps("<h1>Snail</h1><section id='maps'><a href='/maps/one'>Map A</a><a href='/maps/two'>Map B</a><a href='/maps/three'>Map C</a><a href='/maps/four'>Map D</a><a href='https://example.org/'>External</a></section>",refs[0]);
+ Check(monster.Locations.Count==3&&monster.Locations[0].Url=="https://ccplz.cc/maps/one");
+ Check(CcplzReader.ReadMaps("<h1>Snail</h1>",refs[0]).Locations.Count==0);
+ bool rejected=false;try{CcplzReader.ReadReferences("<h1>Blue Snail Shell</h1>","Snail Shell");}catch(FormatException){rejected=true;}Check(rejected);
+}));
 Directory.CreateDirectory("test-results");File.WriteAllText("test-results/results.json",JsonSerializer.Serialize(new{total=results.Count,failed=failures,results},Json.Options));Console.WriteLine($"{results.Count-failures}/{results.Count} passed");Environment.ExitCode=failures==0?0:1;
 
 

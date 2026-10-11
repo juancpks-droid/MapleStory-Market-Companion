@@ -32,7 +32,7 @@ public sealed partial class MainForm
   PresentationChecks(checks);
   Size=new Size(1024,720);
   foreach(var page in new[]{"Dashboard","Item Finder","Settings"}){
-   ShowPage(page);PerformLayout();
+   ShowPage(page);PerformLayout();CapturePreview(Path.Combine(dataDirectory,page+"-guide.png"));
    Check(sidebarUpdateButton.Visible&&sidebarVersion.Visible&&sidebarUpdateButton.Parent!.ClientRectangle.Contains(sidebarUpdateButton.Bounds),"Sidebar update controls visible on "+page+" at minimum window size");
   }
   ShowPage("Item Finder");sidebarUpdateButton.PerformClick();

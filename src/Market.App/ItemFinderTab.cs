@@ -3,8 +3,8 @@ namespace Market.App;
 public sealed partial class MainForm
 {
     readonly TextBox finderSearch=new(){Width=250,PlaceholderText="Item name or classic item ID",AccessibleName="Find an item"};
-    readonly ComboBox finderCategory=new(){Width=125,DropDownStyle=ComboBoxStyle.DropDownList};
-    readonly ComboBox finderSource=new(){Width=150,DropDownStyle=ComboBoxStyle.DropDownList};
+    readonly ComboBox finderCategory=new GuideComboBox(){Width=125,DropDownStyle=ComboBoxStyle.DropDownList};
+    readonly ComboBox finderSource=new GuideComboBox(){Width=150,DropDownStyle=ComboBoxStyle.DropDownList};
     readonly CheckBox finderListed=new(){Text="With listings",Width=115,Height=32};
     readonly DataGridView finderItems=Grid(),finderListings=Grid();
     readonly Label finderStatus=Info(55),finderEvidence=Info(65);
@@ -16,7 +16,7 @@ public sealed partial class MainForm
         finderCategory.AccessibleName="Item category";finderSource.AccessibleName="Listing source";
         foreach(var box in new[]{finderCategory,finderSource}){
             box.BackColor=Surface;box.ForeColor=TextColor;box.DrawMode=DrawMode.OwnerDrawFixed;box.ItemHeight=20;
-            box.DrawItem+=(_,e)=>{e.DrawBackground();int index=e.Index>=0?e.Index:box.SelectedIndex;if(index>=0)TextRenderer.DrawText(e.Graphics,box.Items[index]?.ToString(),box.Font,e.Bounds,e.ForeColor,TextFormatFlags.Left|TextFormatFlags.VerticalCenter|TextFormatFlags.NoPrefix);e.DrawFocusRectangle();};
+            box.DrawItem+=(_,e)=>{using(var fill=new SolidBrush(GuidePalette.Raised))e.Graphics.FillRectangle(fill,e.Bounds);int index=e.Index>=0?e.Index:box.SelectedIndex;if(index>=0)TextRenderer.DrawText(e.Graphics,box.Items[index]?.ToString(),box.Font,e.Bounds,GuidePalette.Text,TextFormatFlags.Left|TextFormatFlags.VerticalCenter|TextFormatFlags.NoPrefix);e.DrawFocusRectangle();};
         }
         finderCategory.Items.AddRange(["All","Equipment","Use","Set-up","Etc","Cash","Unknown"]);finderCategory.SelectedIndex=0;
         finderSource.Items.Add("All");finderSource.Items.AddRange(settings.Sources.Select(s=>s.Id).Concat(observations.Select(o=>o.Provider)).Distinct().Cast<object>().ToArray());finderSource.SelectedIndex=0;
@@ -29,6 +29,7 @@ public sealed partial class MainForm
         actions.Controls.Add(Button("Compare",()=>{if(FinderActionItem is {} item)PinComparison(item);}));
         actions.Controls.Add(Button("Open listing",()=>{if(finderListings.SelectedRows.Count>0&&finderListings.SelectedRows[0].Tag is Observation o)Open(o.Url);}));
         actions.Controls.Add(Button("Item websites",()=>{if(FinderActionItem is {} item)ShowItemWebsites(ItemName(item),item);}));
+        actions.Controls.Add(Button("Open in CCPLZ",async ()=>await OpenCcplzItem()));
         actions.Controls.Add(Button("Refresh sources",async ()=>{await RefreshSources();RenderItemFinder();}));
         var body=new TableLayoutPanel(){Dock=DockStyle.Fill,RowCount=2,ColumnCount=1};body.RowStyles.Add(new(SizeType.Percent,45));body.RowStyles.Add(new(SizeType.Percent,55));
         body.Controls.Add(finderItems,0,0);var lower=new Panel(){Dock=DockStyle.Fill};lower.Controls.Add(finderListings);lower.Controls.Add(finderEvidence);body.Controls.Add(BuildFinderDetails(lower),0,1);

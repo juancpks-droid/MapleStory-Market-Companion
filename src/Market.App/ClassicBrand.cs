@@ -7,7 +7,7 @@ public sealed class ClassicBrand : Control
   if(Width<2||Height<2)return;
   var g=e.Graphics;g.SmoothingMode=SmoothingMode.AntiAlias;
   var saved=g.Save();g.ScaleTransform(Width/191f,Height/180f);
-  using var bg=new LinearGradientBrush(new Rectangle(0,0,191,180),Color.FromArgb(29,74,84),Color.FromArgb(10,34,47),90);g.FillRectangle(bg,0,0,191,180);
+  using var bg=new LinearGradientBrush(new Rectangle(0,0,191,180),Color.FromArgb(28,27,24),Color.FromArgb(15,15,18),90);g.FillRectangle(bg,0,0,191,180);
   using var glow=new SolidBrush(Color.FromArgb(22,255,220,140));g.FillEllipse(glow,25,14,145,145);g.FillEllipse(glow,46,33,103,106);
   using var gold=new Pen(Color.FromArgb(221,177,99),1.3f);g.DrawRectangle(gold,3,3,185,173);
   using var inner=new Pen(Color.FromArgb(76,121,123));g.DrawRectangle(inner,7,7,177,165);
@@ -24,7 +24,7 @@ public sealed class ClassicBrand : Control
   using var face=new SolidBrush(Color.FromArgb(75,52,39));g.FillEllipse(face,85,88,4,7);g.FillEllipse(face,104,88,4,7);g.DrawArc(rim,92,94,9,6,5,165);
   using var cheek=new SolidBrush(Color.FromArgb(217,137,92));g.FillEllipse(cheek,80,97,7,3);g.FillEllipse(cheek,109,97,7,3);
   for(int i=0;i<3;i++){using var coin=new SolidBrush(Color.FromArgb(239+i*5,175+i*12,56));g.FillEllipse(coin,128+i*4,106-i*5,20,8);g.DrawEllipse(gold,128+i*4,106-i*5,20,8);}
-  void Title(string text,float size,float y,Color color){using var path=new GraphicsPath();using var f=new FontFamily("Georgia");using var format=new StringFormat(){Alignment=StringAlignment.Center};path.AddString(text,f,(int)FontStyle.Bold,size,new RectangleF(8,y,175,35),format);using var outline=new Pen(Color.FromArgb(7,25,31),3){LineJoin=LineJoin.Round};g.DrawPath(outline,path);using var brush=new SolidBrush(color);g.FillPath(brush,path);}
+  void Title(string text,float size,float y,Color color){using var path=new GraphicsPath();using var f=new FontFamily("Segoe UI");using var format=new StringFormat(){Alignment=StringAlignment.Center};path.AddString(text,f,(int)FontStyle.Bold,size,new RectangleF(8,y,175,35),format);using var outline=new Pen(Color.FromArgb(7,25,31),3){LineJoin=LineJoin.Round};g.DrawPath(outline,path);using var brush=new SolidBrush(color);g.FillPath(brush,path);}
   Title("MAPLE MARKET",15,124,Color.FromArgb(255,225,164));
   using var small=new Font("Tahoma",7,FontStyle.Bold,GraphicsUnit.Pixel);using var ink=new SolidBrush(Color.FromArgb(175,211,201));using var center=new StringFormat(){Alignment=StringAlignment.Center};g.DrawString("C L A S S I C   W O R L D",small,ink,new RectangleF(15,151,161,14),center);
   g.DrawLine(gold,20,157,33,157);g.DrawLine(gold,158,157,171,157);g.Restore(saved);

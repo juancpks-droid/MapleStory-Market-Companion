@@ -21,7 +21,7 @@ public sealed class HistoryPlot:Control
     protected override void OnPaint(PaintEventArgs e){
         base.OnPaint(e);hits.Clear();var g=e.Graphics;g.SmoothingMode=SmoothingMode.AntiAlias;
         var points=Points.Where(p=>p.ObservedAt.HasValue&&p.UnitPrice>0).OrderBy(p=>p.ObservedAt).ToArray();
-        using var ink=new SolidBrush(ForeColor);using var muted=new SolidBrush(Color.FromArgb(93,109,118));
+        using var ink=new SolidBrush(ForeColor);using var muted=new SolidBrush(GuidePalette.Muted);
         if(points.Length==0){g.DrawString("No dated price history yet",Font,ink,18,18);g.DrawString("Choose an item listing and a date range.\nHistory builds as dated observations are collected; missing prices are never invented.",Font,muted,new RectangleF(18,45,Math.Max(1,Width-36),Math.Max(1,Height-50)));return;}
         if(Width<250||Height<125){g.DrawString($"{points.Length} observations • enlarge the chart to explore",Font,ink,new RectangleF(8,8,Width-16,Height-16));return;}
         decimal min=points.Min(p=>p.UnitPrice),max=points.Max(p=>p.UnitPrice),median=ValuationEngine.Median(points.Select(p=>p.UnitPrice));
@@ -29,7 +29,7 @@ public sealed class HistoryPlot:Control
         var start=points[0].ObservedAt!.Value;var end=points[^1].ObservedAt!.Value;
         var plot=new Rectangle(90,48,Math.Max(10,Width-112),Math.Max(10,Height-102));
         TextRenderer.DrawText(g,$"PRICE HISTORY  •  {points.Length:N0} observations  •  Sample median {TextKey.Mesos(median)} mesos",Font,new Rectangle(12,9,Width-24,28),ForeColor,TextFormatFlags.EndEllipsis);
-        using var grid=new Pen(Color.FromArgb(222,222,208));using var axis=new Pen(Color.FromArgb(148,162,163));
+        using var grid=new Pen(GuidePalette.Line);using var axis=new Pen(Color.FromArgb(148,162,163));
         for(int i=0;i<=4;i++){float y=plot.Top+plot.Height*i/4f;g.DrawLine(grid,plot.Left,y,plot.Right,y);var value=high-(high-low)*i/4;TextRenderer.DrawText(g,TextKey.Mesos(value),Font,new Rectangle(1,(int)y-9,82,20),ForeColor,TextFormatFlags.Right|TextFormatFlags.VerticalCenter|TextFormatFlags.EndEllipsis);}
         g.DrawLine(axis,plot.Left,plot.Top,plot.Left,plot.Bottom);
         float Y(decimal p)=>plot.Bottom-(float)((p-low)/(high-low))*plot.Height;

@@ -45,7 +45,7 @@ public sealed partial class MainForm : Form
 
     public List<DateTimeOffset> TimerTicks {get;}=[];
 
-    static readonly Color Back=Color.FromArgb(225,233,232),Surface=Color.FromArgb(255,249,229),TextColor=Color.FromArgb(52,62,65),Accent=Color.FromArgb(185,99,35),Muted=Color.FromArgb(83,99,106);
+    static readonly Color Back=GuidePalette.Back,Surface=GuidePalette.Surface,TextColor=GuidePalette.Text,Accent=Color.FromArgb(185,99,35),Muted=GuidePalette.Muted;
 
 
 
@@ -63,9 +63,9 @@ public sealed partial class MainForm : Form
 
         if(settings.AccessVersion<5){var source=settings.Sources.FirstOrDefault(s=>s.Id=="BasilMarket");if(source is not null&&source.BlockedUntil<=DateTimeOffset.UtcNow){source.NextAllowed=default;source.PageChecked.Clear();}settings.AccessVersion=5;store.SaveSettings(settings);}
 
-        Text="MapleStory Classic Market Companion"; BackColor=Back; ForeColor=TextColor; Font=new Font("Tahoma",9); Size=new Size(1220,840); MinimumSize=new Size(1024,720); StartPosition=FormStartPosition.CenterScreen; Icon=AppArtwork.Icon;
+        Text="MapleStory Classic Market Companion"; BackColor=Back; ForeColor=TextColor; Font=new Font("Segoe UI",9); Size=new Size(1220,840); MinimumSize=new Size(1024,720); StartPosition=FormStartPosition.CenterScreen; Icon=AppArtwork.Icon;
 
-        var sidebar=new Panel(){Dock=DockStyle.Left,Width=215,Padding=new Padding(12,12,12,15),BackColor=Color.FromArgb(121,151,172)};
+        var sidebar=new Panel(){Dock=DockStyle.Left,Width=215,Padding=new Padding(12,12,12,15),BackColor=GuidePalette.Back};
 
         var brand=new ClassicBrand(); sidebar.Controls.Add(brand);
 
@@ -85,7 +85,7 @@ public sealed partial class MainForm : Form
 
         var main=new Panel(){Dock=DockStyle.Fill,Padding=new Padding(0)}; main.Controls.Add(content); main.Controls.Add(title); main.Controls.Add(footer); title.Padding=new Padding(20,10,0,0); Controls.Add(main); Controls.Add(sidebar);
 
-        ConfigureIcons(); BuildDashboard(); BuildPrices(); BuildDeals(); BuildWatch(); BuildInventory(); BuildFm(); BuildWebsites(); BuildSettings(); BuildCatalog(); BuildComparison(); BuildCompleteUpgrade(); BuildDailyTools(); BuildMerchantTools(); BuildWorkspaceTools(); BuildUsabilityTools(); BuildPolishTools(); BuildReliabilityPolish(); ConfigureTradingTools(); BuildCompanionUpgrade(); BuildPlanningUpgrade(); BuildWebsiteLookup(); BuildItemFinder(); ApplyTextSize();
+        ConfigureIcons(); BuildDashboard(); BuildPrices(); BuildDeals(); BuildWatch(); BuildInventory(); BuildFm(); BuildWebsites(); BuildSettings(); BuildCatalog(); BuildComparison(); BuildCompleteUpgrade(); BuildDailyTools(); BuildMerchantTools(); BuildWorkspaceTools(); BuildUsabilityTools(); BuildPolishTools(); BuildReliabilityPolish(); ConfigureTradingTools(); BuildCompanionUpgrade(); BuildPlanningUpgrade(); BuildWebsiteLookup(); BuildItemFinder(); ApplyTextSize(); ApplyGuideStyle();
 
         var menu=new ContextMenuStrip(); menu.Items.Add("Open Market Companion",null,(_,_)=>{Show();WindowState=FormWindowState.Normal;Activate();}); menu.Items.Add("Snooze alerts for 30 minutes",null,(_,_)=>Snooze()); menu.Items.Add("Exit",null,(_,_)=>ExitApplication());
 
@@ -114,11 +114,11 @@ public sealed partial class MainForm : Form
 
         var g=new DataGridView(){Dock=DockStyle.Fill,ReadOnly=true,AllowUserToAddRows=false,AllowUserToDeleteRows=false,AutoSizeColumnsMode=DataGridViewAutoSizeColumnsMode.Fill,BackgroundColor=Back,BorderStyle=BorderStyle.None,RowHeadersVisible=false,SelectionMode=DataGridViewSelectionMode.FullRowSelect,MultiSelect=false,EnableHeadersVisualStyles=false,AllowUserToResizeRows=false};
 
-        g.DefaultCellStyle=new DataGridViewCellStyle(){BackColor=Surface,ForeColor=TextColor,SelectionBackColor=Color.FromArgb(77,133,166),SelectionForeColor=Color.White,Padding=new Padding(5)};
+        g.DefaultCellStyle=new DataGridViewCellStyle(){BackColor=Surface,ForeColor=TextColor,SelectionBackColor=Color.FromArgb(68,59,35),SelectionForeColor=Color.White,Padding=new Padding(5)};
 
-        g.ColumnHeadersDefaultCellStyle=new DataGridViewCellStyle(){BackColor=Color.FromArgb(193,211,217),ForeColor=TextColor,Padding=new Padding(5),Font=new Font("Tahoma",9,FontStyle.Bold)};
+        g.ColumnHeadersDefaultCellStyle=new DataGridViewCellStyle(){BackColor=GuidePalette.Raised,ForeColor=TextColor,Padding=new Padding(5),Font=new Font("Segoe UI",9,FontStyle.Bold)};
 
-        g.AlternatingRowsDefaultCellStyle.BackColor=Color.FromArgb(245,246,235);g.ColumnHeadersHeight=38;g.RowTemplate.Height=44;g.GridColor=Color.FromArgb(226,211,178);return g;
+        g.AlternatingRowsDefaultCellStyle.BackColor=Color.FromArgb(23,23,27);g.ColumnHeadersHeight=38;g.RowTemplate.Height=44;g.GridColor=GuidePalette.Line;return g;
 
     }
 

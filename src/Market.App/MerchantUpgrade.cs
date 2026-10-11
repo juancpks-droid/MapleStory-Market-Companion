@@ -9,7 +9,7 @@ public sealed partial class MainForm
     readonly HistoryPlot merchantChart=new(){Dock=DockStyle.Fill};
     readonly ComboBox chartItem=new(){Width=300,DropDownStyle=ComboBoxStyle.DropDownList},chartPeriod=new(){Width=110,DropDownStyle=ComboBoxStyle.DropDownList};
     readonly TextBox memoSearch=new(){Width=260,PlaceholderText="Search notes, tags or item names"};
-    readonly ComboBox themeChoice=new(){Width=250,DropDownStyle=ComboBoxStyle.DropDownList};
+    readonly ComboBox themeChoice=new GuideComboBox(){Width=250,DropDownStyle=ComboBoxStyle.DropDownList};
     bool merchantReady;
     void BuildMerchantTools()
     {
@@ -77,7 +77,7 @@ public sealed partial class MainForm
     void ApplyTownTheme()
     {
         var palette=features.Theme switch{"Ellinia"=>(Color.FromArgb(83,125,88),Color.FromArgb(222,237,207)),"Kerning City"=>(Color.FromArgb(93,104,129),Color.FromArgb(225,228,237)),"Perion"=>(Color.FromArgb(155,105,70),Color.FromArgb(244,225,195)),_=>(Color.FromArgb(112,153,176),Color.FromArgb(255,249,229))};ClassicPalette.Town=palette.Item1;ClassicPalette.Paper=palette.Item2;
-        void Paint(Control c){if(c is DataGridView g){g.DefaultCellStyle.BackColor=palette.Item2;g.AlternatingRowsDefaultCellStyle.BackColor=ControlPaint.Light(palette.Item2);g.ColumnHeadersDefaultCellStyle.BackColor=ControlPaint.Light(palette.Item1);}else if(c is Panel&&c.Dock==DockStyle.Left)c.BackColor=palette.Item1;else if(c is HistoryPlot)c.BackColor=palette.Item2;c.Invalidate();foreach(Control child in c.Controls)Paint(child);}foreach(Control child in Controls)Paint(child);
+        void Paint(Control c){if(c is DataGridView g){g.DefaultCellStyle.BackColor=palette.Item2;g.AlternatingRowsDefaultCellStyle.BackColor=ControlPaint.Light(palette.Item2);g.ColumnHeadersDefaultCellStyle.BackColor=ControlPaint.Light(palette.Item1);}else if(c is Panel&&c.Dock==DockStyle.Left)c.BackColor=palette.Item1;else if(c is HistoryPlot)c.BackColor=palette.Item2;c.Invalidate();foreach(Control child in c.Controls)Paint(child);}foreach(Control child in Controls)Paint(child);ApplyGuideStyle();
     }
     void BuildSetupGuide()
     {
