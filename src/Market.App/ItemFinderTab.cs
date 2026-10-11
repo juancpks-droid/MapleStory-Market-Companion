@@ -21,7 +21,8 @@ public sealed partial class MainForm
         finderCategory.Items.AddRange(["All","Equipment","Use","Set-up","Etc","Cash","Unknown"]);finderCategory.SelectedIndex=0;
         finderSource.Items.Add("All");finderSource.Items.AddRange(settings.Sources.Select(s=>s.Id).Concat(observations.Select(o=>o.Provider)).Distinct().Cast<object>().ToArray());finderSource.SelectedIndex=0;
         var bar=Toolbar();bar.Height=48;bar.Controls.Add(finderSearch);bar.Controls.Add(finderCategory);bar.Controls.Add(finderSource);bar.Controls.Add(finderListed);
-        var actions=Toolbar();actions.Height=92;
+        var actions=Toolbar();actions.Height=92;actions.WrapContents=true;actions.AutoScroll=false;
+        actions.Controls.Add(Button("Monster drops & maps",()=>{if(FinderSelection is {} item){if(Offline){MessageBox.Show("Turn off Work offline to look up monster drops and maps.","Offline");return;}var viewer=new WebsiteViewer(MonsterReference.ForItem(item.Name),dataDirectory);viewer.Show(this);}}));
         actions.Controls.Add(Button("Check prices",()=>{if(FinderSelection is {} item){search.Text=item.Name;ShowPage("Price Checker");}}));
         actions.Controls.Add(Button("Watch item",()=>{if(FinderActionItem is {} item)WatchObject(item);}));
         actions.Controls.Add(Button("Price alert",()=>{if(FinderActionItem is {} item)EditRule(null,item);}));
@@ -46,7 +47,7 @@ public sealed partial class MainForm
         foreach(var name in new[]{"Item","Category","Classic ID","Known asks"})finderItems.Columns.Add(name,name);
         foreach(var item in results.Take(200)){int row=finderItems.Rows.Add(icons.Peek(item.Id)!,item.Name,item.Category,item.Id,item.Listings.Count);finderItems.Rows[row].Tag=item;}
         if(previous is not null){var row=finderItems.Rows.Cast<DataGridViewRow>().FirstOrDefault(r=>r.Tag is FinderResult item&&item.Id==previous.Id&&item.Name==previous.Name);if(row is not null){finderItems.ClearSelection();row.Selected=true;}}
-        finderStatus.Text=$"{results.Count:N0} matching items • showing {Math.Min(200,results.Count):N0}; refine your search for more.\nGMS 83 catalog + cached asking listings. No known listings does not mean unavailable everywhere. Drop/NPC and level/job data are not verified here.";
+        finderStatus.Text=$"{results.Count:N0} matching items • showing {Math.Min(200,results.Count):N0}; refine your search for more.\nSelect an item, then Monster drops & maps for NiaMeowDB’s in-app reference. Catalog: GMS 83; reference: Classic World. No known listings does not mean unavailable everywhere.";
         RenderFinderListings();_ = LoadFinderIcons(++finderGeneration);
     }
     async Task LoadFinderIcons(int generation)

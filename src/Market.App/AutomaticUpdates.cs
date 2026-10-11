@@ -9,8 +9,9 @@ public sealed partial class MainForm
     readonly System.Windows.Forms.Timer updateTimer=new(){Interval=1000};
     readonly Label updateStatus=new(){Width=820,Height=48};
     readonly CheckBox automaticUpdates=new(){Text="Automatically download updates and restart when idle",Width=800,Height=30};
-    readonly FlowLayoutPanel updateBanner=new(){Dock=DockStyle.Bottom,Height=92,Visible=false,BackColor=Color.FromArgb(255,235,181)};
-    readonly Label updateBannerText=new(){Width=800,Height=30};
+    readonly Panel updateBanner=new(){Dock=DockStyle.Bottom,Height=82,Visible=false,Padding=new Padding(12),BackColor=Color.FromArgb(255,235,181)};
+    readonly Label updateBannerText=new(){Dock=DockStyle.Fill,Padding=new Padding(0,8,8,0)};
+    Button? restartUpdateButton;
     UpdateManager? updateManager;
     VelopackAsset? readyUpdate;
     bool checkingUpdate,updateDeferred;
@@ -36,12 +37,14 @@ public sealed partial class MainForm
     void InitializeUpdates(Panel main)
     {
         updateBanner.Controls.Add(updateBannerText);
-        updateBanner.Controls.Add(Button("Restart now",()=>ApplyAppUpdate()));
-        updateBanner.Controls.Add(Button("Later",()=>{updateDeferred=true;updateBanner.Visible=false;updateStatus.Text="Update downloaded. It will be offered again next launch, or select Check for updates.";}));
+        var updateActions=new FlowLayoutPanel(){Dock=DockStyle.Right,Width=265,WrapContents=false,Padding=new Padding(0,5,0,0)};
+        restartUpdateButton=Button("Restart now",()=>ApplyAppUpdate());restartUpdateButton.Enabled=false;restartUpdateButton.BackColor=Accent;updateActions.Controls.Add(restartUpdateButton);
+        updateActions.Controls.Add(Button("Later",()=>{updateDeferred=true;updateBanner.Visible=false;updateStatus.Text="Update downloaded. It will be offered again next launch, or select Check for updates.";}));
+        updateBanner.Controls.Add(updateActions);
         main.Controls.Add(updateBanner);content.BringToFront();
         try{
             updateManager=new UpdateManager(new GithubSource(UpdateRepository,null,false));
-            updateStatus.Text=updateManager.IsInstalled?"Automatic updates are ready. Checking at startup and every 4 hours.":"Install the Setup.exe version once to enable automatic updates.";
+            updateStatus.Text=updateManager.IsInstalled?"Automatic updates are ready. Checking at startup and every hour.":"Install the Setup.exe version once to enable automatic updates.";
         }catch(Exception){updateStatus.Text="Updater could not start. You can reinstall from the GitHub releases page.";}
         var activity=new UpdateActivityFilter(()=>lastUpdateActivity=DateTimeOffset.UtcNow);
         Application.AddMessageFilter(activity);
@@ -63,7 +66,7 @@ public sealed partial class MainForm
     async Task CheckAppUpdates(bool manual)
     {
         if(checkingUpdate||closing)return;
-        nextUpdateCheck=DateTimeOffset.UtcNow.AddHours(4);
+        nextUpdateCheck=DateTimeOffset.UtcNow.AddHours(1);
         if(Offline){updateStatus.Text="Offline mode is on. Turn it off to check for updates.";return;}
         if(updateManager is null||!updateManager.IsInstalled){updateStatus.Text="Install Setup.exe from GitHub Releases once to enable automatic updates.";return;}
         checkingUpdate=true;
@@ -81,7 +84,8 @@ public sealed partial class MainForm
                 readyUpdate=update.TargetFullRelease;
             }
             restartSeconds=30;
-            updateStatus.Text="Update downloaded and verified. Restart now, or leave the app idle for automatic installation.";
+            restartUpdateButton!.Enabled=true;
+            updateStatus.Text="Update ready. Restart now? Choose Restart now or Later. Your saved data will be kept.";
             updateBannerText.Text=updateStatus.Text;updateBanner.Visible=!updateDeferred;
         }catch(OperationCanceledException){}
         catch(Exception e){
@@ -94,7 +98,7 @@ public sealed partial class MainForm
         if(readyUpdate is null||updateManager is null)return;
         // Explicit restart still preserves modal edits and in-flight database/network work.
         if(busy||checkingUpdate||Application.OpenForms.Count>1){updateBannerText.Text="Finish the current refresh and close other app windows before restarting.";return;}
-        if(selected!="Dashboard"){
+        if(selected is not ("Dashboard" or "Item Finder")){
             updateBannerText.Text="Save your edits and open Dashboard before restarting.";return;
         }
         try{
@@ -109,4 +113,5 @@ public sealed partial class MainForm
         public bool PreFilterMessage(ref Message message){if(message.Msg is 0x100 or 0x104 or 0x201 or 0x204 or 0x207 or 0x20A)activity();return false;}
     }
 }
+
 

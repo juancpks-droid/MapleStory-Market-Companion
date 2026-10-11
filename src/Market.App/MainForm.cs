@@ -498,42 +498,4 @@ public sealed partial class MainForm : Form
 
 
 
-public sealed class HistoryPlot:Control
-
-{
-
-    [System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-
-    public List<Observation> Points {get;set;}=[];
-
-    public HistoryPlot(){DoubleBuffered=true;BackColor=Color.FromArgb(255,249,229);ForeColor=Color.FromArgb(105,87,65);}
-
-    protected override void OnPaint(PaintEventArgs e)
-
-    {
-
-        base.OnPaint(e);var g=e.Graphics;g.SmoothingMode=System.Drawing.Drawing2D.SmoothingMode.AntiAlias;
-
-        if(Points.Count==0){g.DrawString("No timestamped observations in this period.\nMissing history is never filled with invented prices.",Font,Brushes.Sienna,18,45);return;}
-
-        var min=Points.Min(o=>o.UnitPrice);var max=Points.Max(o=>o.UnitPrice);var start=Points.Min(o=>o.ObservedAt!.Value);var end=Points.Max(o=>o.ObservedAt!.Value);var plot=new Rectangle(80,38,Math.Max(20,Width-105),Math.Max(20,Height-94));
-
-        var median=ValuationEngine.Median(Points.Select(o=>o.UnitPrice));var spread=median==0?0:ValuationEngine.Median(Points.Select(o=>Math.Abs(o.UnitPrice-median)))/median*100;
-        g.DrawString($"{Points.Count} observations • Median {TextKey.Mesos(median)} • Range {TextKey.Mesos(min)}–{TextKey.Mesos(max)} • Spread (MAD/median) {spread:N1}%",Font,Brushes.Sienna,12,8);
-
-        using var pen=new Pen(Color.FromArgb(180,146,101));g.DrawRectangle(pen,plot);g.DrawString(TextKey.Mesos(max),Font,Brushes.Sienna,3,plot.Top);g.DrawString(TextKey.Mesos(min),Font,Brushes.Sienna,3,plot.Bottom-15);
-
-        foreach(var p in Points){float x=plot.Left+(end==start?.5f:(float)((p.ObservedAt!.Value-start).TotalSeconds/(end-start).TotalSeconds))*plot.Width;float y=plot.Bottom-(max==min?.5f:(float)((p.UnitPrice-min)/(max-min)))*plot.Height;var brush=p.Kind switch{EvidenceKind.ConfirmedSale=>Brushes.MediumAquamarine,EvidenceKind.ReportedSale=>Brushes.Orange,EvidenceKind.Asking=>Brushes.CornflowerBlue,_=>Brushes.Gray};g.FillEllipse(brush,x-3,y-3,6,6);}
-
-        g.DrawString(start.ToLocalTime().ToString("MMM d HH:mm"),Font,Brushes.Sienna,plot.Left,plot.Bottom+2);
-        var endLabel=end.ToLocalTime().ToString("MMM d HH:mm");g.DrawString(endLabel,Font,Brushes.Sienna,plot.Right-g.MeasureString(endLabel,Font).Width,plot.Bottom+2);
-        g.DrawString("Blue: asks   Orange: reported sales   Green: confirmed sales   Gray: other evidence   •   No interpolation",Font,Brushes.Sienna,12,Height-26);
-
-    }
-
-}
-
-
-
-
 

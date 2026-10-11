@@ -29,6 +29,6 @@ public sealed partial class MainForm
   finderSearch.Text="NoSuchItemUniqueFinderTest";RenderItemFinder();Check(finderItems.Rows.Count==0&&finderListings.Rows.Count==0,"Empty search clears previous item and listing selections");
   finderSource.SelectedItem="All";finderSearch.Text="Red Potion";RenderItemFinder();
   Check(finderItems.Width>300&&finderListings.Height>60,"Both results panels are visible at the default window size");
-  return checks;
+  PresentationChecks(checks);return checks;
  }
 }

@@ -20,6 +20,7 @@ static class Program
 
         Velopack.VelopackApp.Build().SetAutoApplyOnStartup(false).Run();
         ApplicationConfiguration.Initialize();
+        if(args.Contains("--drops-smoke")){DropReferenceSmoke.Run();return;}
         if(args.Contains("--finder-smoke")){FinderSmoke.Run();return;}
         if(args.Length==3&&args[0]=="--updater-smoke"){UpdaterSmoke.Run(args[1],args[2]).GetAwaiter().GetResult();return;}
         if(args.Contains("--adblock-smoke")){AdBlockSmoke.Run();return;}

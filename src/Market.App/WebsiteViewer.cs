@@ -72,6 +72,11 @@ sealed class WebsiteViewer : Form
                 if(IsDisposed)return;
                 status.Text=e.IsSuccess?"Website loaded. Prices, sign-in requirements and availability are controlled by this website.":"Page could not load. Try Reload or Open in browser. "+e.WebErrorStatus;
                 if(e.IsSuccess&&lookup.Mode!=WebsiteSearchMode.None&&!searched&&lookup.AtSearchPage(core.Source)){searched=true;await LookupItem();}
+                if(e.IsSuccess&&lookup.Name=="NiaMeowDB • Monster drops & maps"&&!searched&&lookup.AtSearchPage(core.Source)){
+                    searched=true;
+                    for(int i=0;i<20&&!IsDisposed;i++){var result=await ReadMonsterReferences(true);using var parsed=JsonDocument.Parse(result);if(parsed.RootElement.GetProperty("query").GetString()==lookup.ItemName)break;await Task.Delay(250);}
+                    status.Text="Monster results can match names or dropped items. Open a monster, verify its drop list, then use Locations to see maps.";
+                }
                 Ready.TrySetResult(e.IsSuccess);
             };
             core.Navigate(lookup.Url);
@@ -112,6 +117,7 @@ sealed class WebsiteViewer : Form
         catch{if(!IsDisposed){LookupResult="unavailable";status.Text="Use the website search or Open in browser. No price was imported.";}}
     }
     internal Task<string> ReadHeadings()=>web.ExecuteScriptAsync("[...document.querySelectorAll('h1,h2,h3,[role=dialog]')].filter(e=>e.getClientRects().length).map(e=>e.getAttribute('aria-label')||e.textContent)");
+    internal async Task<string> ReadMonsterReferences(bool scroll=false){var raw=await web.ExecuteScriptAsync("(()=>{const input=document.querySelector('input[placeholder=\"Search by name or item dropped...\"]');"+(scroll?"input?.scrollIntoView({block:'start'});":"")+"return JSON.stringify({query:input?.value||'',monsters:[...document.querySelectorAll('a[href]')].filter(a=>/^\\/msclassic\\/monsters\\/\\d+$/.test(a.getAttribute('href'))).map(a=>a.textContent),locations:[...document.querySelectorAll('a[href]')].filter(a=>/^\\/msclassic\\/monsters\\/\\d+#locations$/.test(a.getAttribute('href'))).length});})()");return JsonSerializer.Deserialize<string>(raw)??"{}";}
     internal Task<string> InspectPage()=>web.ExecuteScriptAsync("JSON.stringify({text:document.body.innerText,inputs:[...document.querySelectorAll('input')].map(x=>({label:x.getAttribute('aria-label'),value:x.value})),links:[...document.querySelectorAll('a[href]')].filter(a=>a.textContent.includes('Blue Mushroom')).map(a=>({text:a.textContent,href:a.getAttribute('href')}))})");
     internal async Task CapturePage(string path)
     {
@@ -146,3 +152,4 @@ public sealed partial class MainForm
         bar.Controls.Add(Button("View on NiaMeowDB",()=>Lookup(true)));bar.Controls.Add(Button("Other websites",()=>Lookup(false)));
     }
 }
+
