@@ -8,8 +8,8 @@ public sealed class IconCatalog
 {
     public sealed record Entry(string Id,string Name);
     readonly Dictionary<string,Entry[]> names;
-    public IEnumerable<string> Names=>names.Values.SelectMany(v=>v).Select(e=>e.Name).Distinct();
-    public IEnumerable<Entry> Entries=>names.Values.SelectMany(v=>v);
+    public IEnumerable<string> Names=>Entries.Select(e=>e.Name).Distinct();
+    public IEnumerable<Entry> Entries=>names.Values.SelectMany(v=>v).Where(e=>ItemFinder.HasEnglishDisplayName(e.Name));
     public IconCatalog(){var entries=JsonSerializer.Deserialize<Entry[]>(File.ReadAllText(Path.Combine(AppContext.BaseDirectory,"icon-catalog-gms83.json")))??[];names=entries.GroupBy(e=>TextKey.Search(e.Name)).ToDictionary(g=>g.Key,g=>g.ToArray());}
     public string Resolve(string id,string name){if(!names.TryGetValue(TextKey.Search(name),out var matches))return "";return matches.FirstOrDefault(e=>e.Id==id)?.Id??(matches.Length==1?matches[0].Id:"");}
 }
@@ -95,3 +95,4 @@ public sealed partial class MainForm
     }
     async Task LoadIcon(string id,DataGridView grid){var image=await icons.Get(id);if(image is not null&&!grid.IsDisposed&&!IsDisposed)grid.InvalidateColumn(0);}
 }
+

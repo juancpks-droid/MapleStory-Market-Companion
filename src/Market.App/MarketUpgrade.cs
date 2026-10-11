@@ -28,7 +28,7 @@ public sealed partial class MainForm
     void RenderCatalog()
     {
         var entries=CatalogResults();int pageCount=Math.Max(1,(entries.Length+35)/36);catalogPage=Math.Clamp(catalogPage,0,pageCount-1);
-        catalogStatus.Text=$"{entries.Length:N0} classic items • Page {catalogPage+1} / {pageCount}\nCatalog entries are item identities, not proof of live market coverage. Click a tile for details; right-click for actions.";
+        catalogStatus.Text=$"{entries.Length:N0} classic items with English names • Page {catalogPage+1} / {pageCount}\nCatalog entries are item identities, not proof of live market coverage. Click a tile for details; right-click for actions.";
         catalogPrevious.Enabled=catalogPage>0;catalogNext.Enabled=catalogPage<pageCount-1;
         catalogTiles.SuspendLayout();while(catalogTiles.Controls.Count>0)catalogTiles.Controls[0].Dispose();
         foreach(var entry in entries.Skip(catalogPage*36).Take(36))
@@ -78,3 +78,4 @@ public sealed partial class MainForm
         ShowPage("Item Catalog");await Task.WhenAll(CatalogResults().Select(e=>icons.Get(e.Id)));RenderCatalog();await Task.Delay(200);CapturePreview(Path.Combine(dataDirectory,"catalog.png"));catalogSearch.Clear();ShowPage("Dashboard");
     }
 }
+

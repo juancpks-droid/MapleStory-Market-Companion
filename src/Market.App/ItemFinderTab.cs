@@ -47,7 +47,7 @@ public sealed partial class MainForm
         foreach(var name in new[]{"Item","Category","Classic ID","Known asks"})finderItems.Columns.Add(name,name);
         foreach(var item in results.Take(200)){int row=finderItems.Rows.Add(icons.Peek(item.Id)!,item.Name,item.Category,item.Id,item.Listings.Count);finderItems.Rows[row].Tag=item;}
         if(previous is not null){var row=finderItems.Rows.Cast<DataGridViewRow>().FirstOrDefault(r=>r.Tag is FinderResult item&&item.Id==previous.Id&&item.Name==previous.Name);if(row is not null){finderItems.ClearSelection();row.Selected=true;}}
-        finderStatus.Text=$"{results.Count:N0} matching items • showing {Math.Min(200,results.Count):N0}; refine your search for more.\nSelect an item, then Monster drops & maps for NiaMeowDB’s in-app reference. Catalog: GMS 83; reference: Classic World. No known listings does not mean unavailable everywhere.";
+        finderStatus.Text=$"{results.Count:N0} matching items • showing {Math.Min(200,results.Count):N0}; refine your search for more.\nSelect an item, then Monster drops & maps for NiaMeowDB’s in-app reference. English names only. Catalog: GMS 83; reference: Classic World. No known listings does not mean unavailable everywhere.";
         RenderFinderListings();_ = LoadFinderIcons(++finderGeneration);
     }
     async Task LoadFinderIcons(int generation)
@@ -69,3 +69,4 @@ public sealed partial class MainForm
         }
     }
 }
+
