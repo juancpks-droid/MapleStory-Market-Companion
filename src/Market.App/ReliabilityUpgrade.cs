@@ -20,7 +20,11 @@ public sealed partial class MainForm
     }
     void CompactGroups(string name)
     {
-        if(!reliabilityReady)return;var group=PageGroup(name);foreach(var other in new[]{"Market","Inventory","Trading","Settings"})if(other!=group)collapsedGroups.Add(other);collapsedGroups.Remove(group);expandedTools.Clear();if(!essentialPages.Contains(name))expandedTools.Add(group);RebuildNavigation();
+        if(!reliabilityReady)return;
+        var beforeCollapsed=collapsedGroups.ToHashSet();var beforeExpanded=expandedTools.ToHashSet();
+        var group=PageGroup(name);foreach(var other in new[]{"Market","Inventory","Trading","Settings"})if(other!=group)collapsedGroups.Add(other);
+        collapsedGroups.Remove(group);expandedTools.Clear();if(!essentialPages.Contains(name))expandedTools.Add(group);
+        if(!beforeCollapsed.SetEquals(collapsedGroups)||!beforeExpanded.SetEquals(expandedTools))RebuildNavigation();
     }
     async Task SmokeReliability()
     {

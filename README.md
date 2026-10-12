@@ -83,6 +83,10 @@ Additional source review: Sleepywood database failed to load and API docs return
 - Long map lists show five names and a remaining count; clicking opens the full map menu. Monster names and evidence remain aligned at the top.
 - Verified live references for Orange Mushroom Cap, Red Potion and Blue Moonlight, including monster maps and empty drops. Added display regression checks; session recovery and isolated package update/restart tested again.
 
+### 1.25.9 — Stable titles and sidebar
+
+Navigation no longer removes and re-adds every sidebar button when the menu structure is unchanged. When a group changes, the navigation redraw is held until the menu has been rebuilt. Titles paint their opaque background and text together, and the main window composites the title, sidebar and page in one paint pass. Repeated navigation, all four themes, saved sessions and the packaged update/restart path are covered by regression checks.
+
 ### 1.25.8 — Smoother tab switching
 
 Pages prepare their content before becoming visible. Buffered content and sidebar painting prevents child controls from drawing in separate stages. Clicking the selected sidebar page keeps its selection and scroll position instead of rebuilding it. Nested tabs and grids share buffered drawing. Update and session saving behavior remains unchanged.

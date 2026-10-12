@@ -31,6 +31,7 @@ public sealed partial class MainForm
    if(c is ComboBox combo){combo.FlatStyle=FlatStyle.Flat;if(combo is not GuideComboBox){combo.BackColor=Color.White;combo.ForeColor=Color.Black;return;}}
    if(c is TextBoxBase or ComboBox or NumericUpDown or ListBox){c.BackColor=GuidePalette.Raised;}
    else if(c is HistoryPlot){c.BackColor=GuidePalette.Surface;}
+   else if(c is ClassicTitle){c.BackColor=GuidePalette.Back;c.ForeColor=GuidePalette.Text;}
    else if(c is StableStatusLabel){c.BackColor=GuidePalette.Back;c.ForeColor=GuidePalette.Muted;}
    else if(c is Label){c.BackColor=Color.Transparent;c.ForeColor=c is ClassicTitle?GuidePalette.Text:GuidePalette.Muted;}
    else if(c is TabPage)c.BackColor=GuidePalette.Surface;

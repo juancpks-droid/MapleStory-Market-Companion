@@ -1,11 +1,15 @@
 using Market.Core;
 namespace Market.App;
 static class NavigationSmoke{
- public static void Run(){string dir=Path.Combine(AppContext.BaseDirectory,"navigation-smoke");Directory.CreateDirectory(dir);new CompanionFeatures{SetupComplete=true,Offline=true}.Save(Path.Combine(dir,"companion-features.json"));using var store=new Store(Path.Combine(dir,"market.db"));var settings=store.LoadSettings();settings.CloseToTray=false;settings.AccessVersion=5;foreach(var source in settings.Sources)source.Enabled=false;store.SaveSettings(settings);using var form=new MainForm(store,dir);form.Shown+=async(_,_)=>{try{await form.CheckNavigation(dir);File.WriteAllText(Path.Combine(dir,"results.txt"),"PASS: 4 themes at 9/13pt; 160 page switches; 80 nested tab switches; page content prepared before visibility; one visible page; repeated navigation keeps row identity, selection, scroll and filters; fresh Finder rows; session data retained.");}catch(Exception e){File.WriteAllText(Path.Combine(dir,"results.txt"),"FAIL: "+e);Environment.ExitCode=1;}finally{form.ExitApplication();}};Application.Run(form);}
+ public static void Run(){string dir=Path.Combine(AppContext.BaseDirectory,"navigation-smoke");Directory.CreateDirectory(dir);new CompanionFeatures{SetupComplete=true,Offline=true}.Save(Path.Combine(dir,"companion-features.json"));using var store=new Store(Path.Combine(dir,"market.db"));var settings=store.LoadSettings();settings.CloseToTray=false;settings.AccessVersion=5;foreach(var source in settings.Sources)source.Enabled=false;store.SaveSettings(settings);using var form=new MainForm(store,dir);form.Shown+=async(_,_)=>{try{await form.CheckNavigation(dir);File.WriteAllText(Path.Combine(dir,"results.txt"),"PASS: no sidebar controls removed during same-group switches; opaque title; 4 themes at 9/13pt; 160 page switches; 80 nested tab switches; page content prepared before visibility; one visible page; repeated navigation keeps row identity, selection, scroll and filters; fresh Finder rows; session data retained.");}catch(Exception e){File.WriteAllText(Path.Combine(dir,"results.txt"),"FAIL: "+e);Environment.ExitCode=1;}finally{form.ExitApplication();}};Application.Run(form);}
 }
 public sealed partial class MainForm{
  internal async Task CheckNavigation(string dir){
   timer.Stop();await Task.Delay(300);finderSearch.Text="Potion";
+  ShowPage("Item Finder");int removed=0;organizedNav!.ControlRemoved+=(_,_)=>removed++;
+  foreach(var page in new[]{"Price Checker","FM Tracker","Deal Finder","Dashboard","Item Finder"})ShowPage(page);
+  if(removed!=0)throw new Exception("Sidebar detached controls while switching within the same menu");
+  if(title.BackColor.A!=255)throw new Exception("Title must have an opaque background");
   bool unprepared=false;pages["Item Finder"].VisibleChanged+=(_,_)=>{if(pages["Item Finder"].Visible&&finderItems.Rows.Count==0)unprepared=true;};
   foreach(var theme in MerchantTools.Themes)foreach(var size in new[]{9,13}){
    features.Theme=theme;features.TextSize=size;ApplyTextSize();ApplyGuideStyle();Size=new Size(1100,760);

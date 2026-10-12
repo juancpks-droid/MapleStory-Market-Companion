@@ -25,8 +25,10 @@ public sealed class ClassicButton : Button
 public sealed class ClassicTitle : Label
 {
  public Func<string>? PriceStatus;
- public ClassicTitle(){DoubleBuffered=true;Font=new Font("Segoe UI",21,FontStyle.Bold);ForeColor=GuidePalette.Text;}
+ public ClassicTitle(){SetStyle(ControlStyles.UserPaint|ControlStyles.AllPaintingInWmPaint|ControlStyles.OptimizedDoubleBuffer|ControlStyles.Opaque,true);Font=new Font("Segoe UI",21,FontStyle.Bold);ForeColor=GuidePalette.Text;}
  protected override void OnPaint(PaintEventArgs e){
+  e.Graphics.Clear(GuidePalette.Back);
+  using var line=new Pen(GuidePalette.Line);e.Graphics.DrawLine(line,0,Height-1,Width,Height-1);
   TextRenderer.DrawText(e.Graphics,Text,Font,new Rectangle(24,9,Math.Max(1,Width-220),35),GuidePalette.Text,TextFormatFlags.EndEllipsis);
   string description=Text switch{
    "Dashboard"=>"Your market at a glance • Explore listings, demand and watched items",
@@ -42,7 +44,6 @@ public sealed class ClassicTitle : Label
   using var small=new Font("Segoe UI",9);TextRenderer.DrawText(e.Graphics,description,small,new Rectangle(26,47,Math.Max(1,Width-220),22),GuidePalette.Muted,TextFormatFlags.EndEllipsis);
  }
  protected override void OnPaintBackground(PaintEventArgs e){
-  e.Graphics.Clear(GuidePalette.Back);
-  using var line=new Pen(GuidePalette.Line);e.Graphics.DrawLine(line,0,Height-1,Width,Height-1);
+  // Background and title are drawn together in the buffered OnPaint pass.
  }
 }
