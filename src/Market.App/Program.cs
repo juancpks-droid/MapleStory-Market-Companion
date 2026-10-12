@@ -20,6 +20,7 @@ static class Program
 
         Velopack.VelopackApp.Build().SetAutoApplyOnStartup(false).Run();
         ApplicationConfiguration.Initialize();
+        if(args.Contains("--status-smoke")){StatusBarSmoke.Run();return;}
         if(args.Contains("--reference-sources-smoke")){ReferenceSourcesSmoke.Run();return;}
         if(args.Contains("--lookup-smoke")){PriceLookupSmoke.Run();return;}
         if(args.Contains("--session-smoke")){SessionSmoke.Run();return;}

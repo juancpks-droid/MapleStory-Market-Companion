@@ -27,7 +27,7 @@ public sealed partial class MainForm : Form
 
     readonly Label title=new ClassicTitle(){Text="Dashboard",Dock=DockStyle.Top,Height=76};
 
-    readonly Label footer=new(){Dock=DockStyle.Bottom,Height=30,Padding=new Padding(18,6,0,0),Text="Ready • Local analysis every 10 seconds"};
+    readonly StableStatusBar footer=new(){Dock=DockStyle.Bottom,Text="Ready • Local analysis every 10 seconds"};
 
     readonly TextBox search=new(){Width=340,PlaceholderText="Search an item by name",BackColor=Surface,ForeColor=TextColor};
 
@@ -339,7 +339,7 @@ public sealed partial class MainForm : Form
 
         if(!Offline)RecordDealInbox();
 
-        if(!Offline){CheckBasilCompletionInbox();CheckPriceTargets();CheckPriorityAlerts();CheckMerchantAlerts();DispatchWorkspaceAlerts();}UpdateConnectionStatus();UpdateCompact();AutomaticBackup();if(!busy)footer.Text=$"Local analysis: {lastAnalysis.ToLocalTime():T} • Every {settings.LocalSeconds}s • {deals.Count} eligible opportunities • External feeds follow separate limits";
+        if(!Offline){CheckBasilCompletionInbox();CheckPriceTargets();CheckPriorityAlerts();CheckMerchantAlerts();DispatchWorkspaceAlerts();}UpdateConnectionStatus();UpdateCompact();AutomaticBackup();if(!busy)footer.ShowAnalysis($"Local analysis: every {settings.LocalSeconds}s • {deals.Count} eligible opportunities • External feeds follow separate limits");
 
     }
 

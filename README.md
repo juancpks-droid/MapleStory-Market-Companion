@@ -82,3 +82,9 @@ Additional source review: Sleepywood database failed to load and API docs return
 - Corrects garbled separators in item/drop reference messages.
 - Long map lists show five names and a remaining count; clicking opens the full map menu. Monster names and evidence remain aligned at the top.
 - Verified live references for Orange Mushroom Cap, Red Potion and Blue Moonlight, including monster maps and empty drops. Added display regression checks; session recovery and isolated package update/restart tested again.
+
+### 1.25.7 — Stable status bar
+- Status messages and connection/offline controls now live in separate buffered controls, with opaque theme backgrounds. Updating a message no longer repaints the connection row.
+- Duplicate messages do not repaint. Routine local analysis no longer replaces source backoff or user-action messages.
+- Offline control sizes to its text, including larger fonts.
+- Validation: status stress test (100 changes, duplicate-message invalidation checks), all four themes at 9/13 point text, 186 core tests, close/reopen state recovery and isolated local-feed package update/restart.

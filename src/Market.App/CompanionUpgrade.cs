@@ -8,13 +8,13 @@ namespace Market.App;
 public sealed partial class MainForm
 {
     CancellationTokenSource? refreshStop;
-    readonly Label connectionStatus=new(){Dock=DockStyle.Fill,TextAlign=ContentAlignment.MiddleLeft,AutoEllipsis=true};
-    readonly CheckBox offlineToggle=new(){Text="Work offline",Dock=DockStyle.Right,Width=115};
+    readonly StableStatusLabel connectionStatus=new(){Dock=DockStyle.Fill,TextAlign=ContentAlignment.MiddleLeft,AutoEllipsis=true};
+    readonly CheckBox offlineToggle=new(){Text="Work offline",Dock=DockStyle.Right,AutoSize=true,Width=115};
     string DraftPath=>Path.Combine(dataDirectory,"trade-draft.json");
     bool Offline=>features.Offline;
     void BuildCompanionUpgrade()
     {
-        var strip=new Panel(){Dock=DockStyle.Bottom,Height=30,Padding=new Padding(18,0,8,0),BackColor=Surface};strip.Controls.Add(connectionStatus);strip.Controls.Add(offlineToggle);footer.Height=66;footer.Padding=new Padding(18,36,0,0);strip.Dock=DockStyle.Top;footer.Controls.Add(strip);
+        var strip=new Panel(){Dock=DockStyle.Bottom,Height=30,Padding=new Padding(18,0,8,0),BackColor=Surface};strip.Controls.Add(connectionStatus);strip.Controls.Add(offlineToggle);strip.Dock=DockStyle.Top;footer.Controls.Add(strip);footer.Message.BringToFront();
         offlineToggle.Checked=Offline;icons.Offline=Offline;offlineToggle.CheckedChanged+=(_,_)=>{features.Offline=offlineToggle.Checked;icons.Offline=Offline;if(Offline){pendingSearch=false;refreshStop?.Cancel();}SaveFeatures();UpdateConnectionStatus();RenderDashboard();};
         var journalBar=pages["Trade Journal"].Controls.OfType<FlowLayoutPanel>().First();journalBar.Controls.Add(Button("Resume draft",ResumeTradeDraft));journalBar.Height=92;journalBar.WrapContents=true;journalBar.Controls.Add(Button("Discard saved draft",()=>{if(!File.Exists(DraftPath)){MessageBox.Show("No unfinished draft is saved.");return;}if(MessageBox.Show("Discard the unfinished draft? Recorded trades are unchanged. A recovery copy will be kept.","Discard draft",MessageBoxButtons.YesNo)!=DialogResult.Yes)return;try{File.Move(DraftPath,Path.Combine(dataDirectory,"discarded-draft-"+DateTime.Now.ToString("yyyyMMdd-HHmmss-fff")+".json"));}catch(Exception e){MessageBox.Show(e.Message);}}));
         var sessionBar=pages["Trading Sessions"].Controls.OfType<FlowLayoutPanel>().First();sessionBar.Controls.Add(Button("Session recap",()=>{if(SelectedMerchant(sessionGrid) is MerchantSession s)ShowSessionRecap(s);else footer.Text="Select a session to see its recap.";}));
