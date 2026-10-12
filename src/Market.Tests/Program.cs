@@ -192,7 +192,7 @@ using(var db=new Store(path)){Check(db.Summaries().Count==rows.Count);db.ClearMa
 }));
 await Test("FM stale label uses original sighting, not retrieval",()=>Sync(()=>{var row=FmTracker.Parse(File.ReadAllText(Path.Combine(args[fixtureIndex+1],"fm-tracker-current.html")),now).First();Check((row with{LastSeen=now.AddDays(-10),RetrievedAt=now}).Quality(now,72)=="Stale data");}));
 }
-await Test("Website directory distinguishes browser shortcuts from automatic imports",()=>Sync(()=>{Check(WebsiteDirectory.All.Length==12);Check(WebsiteDirectory.All.Count(w=>w.Connection.StartsWith("Automatic"))==3);Check(WebsiteDirectory.All.All(w=>new Uri(w.Url).Scheme=="https"));Check(WebsiteDirectory.All.Single(w=>w.Name=="MesoWatch").Connection=="Open website");}));
+await Test("Website directory distinguishes browser shortcuts from automatic imports",()=>Sync(()=>{Check(WebsiteDirectory.All.Length==14);Check(WebsiteDirectory.All.Single(w=>w.Name=="MapleClassic Wiki").Connection=="Item reference");Check(WebsiteDirectory.All.Single(w=>w.Name=="MapleStory.io").Connection=="Historical item reference");Check(WebsiteDirectory.All.Count(w=>w.Connection.StartsWith("Automatic"))==3);Check(WebsiteDirectory.All.All(w=>new Uri(w.Url).Scheme=="https"));Check(WebsiteDirectory.All.Single(w=>w.Name=="MesoWatch").Connection=="Open website");}));
 await Test("Target thresholds exclude stale, unavailable, sale and unknown-time observations",()=>Sync(()=>{
 var rule=new PriceRule(Guid.NewGuid().ToString(),"Test ETC","",1000);var ask=O("target",1000,EvidenceKind.Asking);Check(CompanionFeatures.Matches(rule,ask,now,72));Check(!CompanionFeatures.Matches(rule,ask with{UnitPrice=1001},now,72));Check(!CompanionFeatures.Matches(rule,ask with{Available=false},now,72));Check(!CompanionFeatures.Matches(rule,ask with{Kind=EvidenceKind.ConfirmedSale},now,72));Check(!CompanionFeatures.Matches(rule,ask with{ObservedAt=null},now,72));Check(!CompanionFeatures.Matches(rule,ask with{RetrievedAt=now.AddMinutes(-31)},now,72));Check(!CompanionFeatures.Matches(rule,ask with{ObservedAt=now.AddDays(-8)},now,72));Check(!CompanionFeatures.Matches(rule with{Enabled=false},ask,now,72));
 }));
@@ -553,6 +553,42 @@ await Test("Kerning publishes item offers before FM request and respects cancell
   return new HttpResponseMessage(HttpStatusCode.OK){Content=new StringContent(body)};
  }));
  bool stopped=false;try{await new KerningReader(fetch).Refresh(new SourceConfig(),["Green Mushroom Cap"],true,cancel.Token,r=>{Check(r.Rows.Count>0&&r.SnapshotItems.Single()=="4000013");published=true;cancel.Cancel();return Task.CompletedTask;});}catch(OperationCanceledException){stopped=true;}Check(published&&stopped);
+});
+
+await Test("Wiki reference rejects wrong item and non-item pages",()=>Sync(()=>{
+ var html="<h1>Red Potion</h1><a href='/wiki/Category:Items'>Items</a>";
+ Throws(()=>WikiReferenceReader.ReadItem(html,"Blue Potion"));Throws(()=>WikiReferenceReader.ReadItem("<h1>Red Potion</h1>","Red Potion"));
+}));
+await Test("Wiki drop tables exclude recipe links and absent tables",()=>Sync(()=>{
+ var html="<h1>Test Item</h1><a href='/wiki/Category:Items'>Items</a><h2><span id='Dropped_by'>Dropped by</span></h2><table><tr><td><a href='/wiki/Snail'><img /></a><a href='/wiki/Snail'>Snail</a></td></tr><tr><td><a href='https://example.com'>Other</a></td></tr></table><h2><span id='Used_in_recipes'>Recipes</span></h2><table><tr><td><a href='/wiki/Sword'>Sword</a></td></tr></table>";
+ Check(WikiReferenceReader.ReadDrops(html,"Test Item").Single().Name=="Snail");
+ Check(WikiReferenceReader.ReadDrops(html.Replace("id='Dropped_by'","id='Other'"),"Test Item").Count==0);
+}));
+await Test("Wiki maps select location column, not regions or unrelated links",()=>Sync(()=>{
+ var html="<h1>Snail</h1><h2><span id='Spawns'>Spawns</span></h2><table><tr><th>Location</th><th>Region</th></tr><tr><td><a href='/wiki/Map'>Map</a></td><td><a href='/wiki/Region'>Region</a></td></tr></table>";
+ var monster=new DropMonster("Snail","https://mapleclassic.wiki/wiki/Snail","",[]);Check(WikiReferenceReader.ReadMaps(html,monster).Locations.Single().Name=="Map");Throws(()=>WikiReferenceReader.ReadMaps(html,monster with{Name="Pig"}));
+}));
+await Test("Wiki NPC prices preserve zero and distinguish missing prices",()=>Sync(()=>{
+ string html="<h1>Test Item</h1><a href='/wiki/Category:Items'>Items</a><div class='infobox-row'><div class='infobox-label'>Sell price</div><div class='infobox-value'>0 mesos</div></div><h2><span id='Sold_by'>Sold by</span></h2><table><tr><th>Operator</th><th>Price</th></tr><tr><td>Shop</td><td>1,200</td></tr><tr><td>Shop</td><td>50</td></tr></table>";
+ var result=WikiReferenceReader.ReadNpcPrices(html,"Test Item");Check(result.Sell==0&&result.BuyMin==50&&result.BuyMax==1200&&result.Note.Contains("CC BY-NC-SA"));Check(WikiReferenceReader.ReadNpcPrices(html.Replace("Sell price","Unknown"),"Test Item").Sell==null);
+}));
+await Test("Historical API checks ID and name and does not turn base price into NPC price",()=>Sync(()=>{
+ const string json="{\"id\":2000000,\"description\":{\"name\":\"Red Potion\",\"description\":\"Recovers 50 HP\"},\"metaInfo\":{\"price\":25,\"reqLevel\":1}}";
+ var item=IoItemReferenceReader.Read(json,"Red Potion","2000000");Check(item.Notice.Contains("NOT Classic")&&!item.Fields.Any(x=>x.Key.Contains("price")));Throws(()=>IoItemReferenceReader.Read(json,"Blue Potion","2000000"));Throws(()=>IoItemReferenceReader.Read(json,"Red Potion","1"));
+}));
+await Test("New reference fallback skips failures and empty results",async()=>{
+ var empty=new ItemDrops("Item","","",[],now);int calls=0;
+ var result=await ReferenceFallback.Drops("Item",[("broken",c=>throw new HttpRequestException()),("empty",c=>Task.FromResult(empty)),("working",c=>{calls++;return Task.FromResult(empty with{Monsters=[new("Snail","","",[])]});})],CancellationToken.None);
+ Check(result.Source=="working"&&result.Drops.Monsters.Count==1&&calls==1);
+});
+await Test("New reference fallback honors caller cancellation",async()=>{
+ using var cts=new CancellationTokenSource();bool called=false,stopped=false;try{await ReferenceFallback.Drops("Item",[("first",c=>{cts.Cancel();throw new OperationCanceledException(c);}), ("second",c=>{called=true;return Task.FromResult(new ItemDrops("Item","","",[],now));})],cts.Token);}catch(OperationCanceledException){stopped=true;}Check(stopped&&!called);
+});
+await Test("Public reference reader caches and enforces source host and robots",async()=>{
+ var handler=new Handler(req=>new HttpResponseMessage(HttpStatusCode.OK){Content=new StringContent(req.RequestUri!.AbsolutePath=="/robots.txt"?"User-agent: *\nDisallow: /wiki/Blocked":"page")});
+ using var client=new PublicReferenceClient("https://example.org",true,handler);Check(await client.Get("https://example.org/wiki/Item",CancellationToken.None)=="page");int calls=handler.Calls;await client.Get("https://example.org/wiki/Item",CancellationToken.None);Check(handler.Calls==calls);
+ bool blocked=false;try{await client.Get("https://example.org/wiki/Blocked",CancellationToken.None);}catch(HttpRequestException){blocked=true;}Check(blocked&&handler.Calls==calls);
+ bool host=false;try{await client.Get("https://other.org/wiki/Item",CancellationToken.None);}catch(FormatException){host=true;}Check(host);
 });
 Directory.CreateDirectory("test-results");File.WriteAllText("test-results/results.json",JsonSerializer.Serialize(new{total=results.Count,failed=failures,results},Json.Options));Console.WriteLine($"{results.Count-failures}/{results.Count} passed");Environment.ExitCode=failures==0?0:1;
 

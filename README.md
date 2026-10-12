@@ -65,3 +65,15 @@ Price Checker now includes Listing tools. Search players or location notes, filt
 ## Watchlist shortcuts (1.24.0)
 
 Search watched names and variants, filter by muted state or recent-price availability, and jump to Price Checker or Item Finder. Double-click or Enter checks the selected item's prices. Search and filter preferences survive restarting; selections stay on the same item when rows refresh. Recent-price filters require source freshness and retrieval within 30 minutes. Alert counts show per-item mute preferences; global notification settings still apply.
+
+
+### 1.25.5 — Direct item references
+- Item Finder > Item details loads MapleClassic Wiki facts inside the app, with an explicitly historical GMS 83 MapleStory.io fallback when a matching Wiki page is unavailable.
+- Monster drops & locations has MapleClassic Wiki and Automatic sources. Automatic tries Wiki, CCPLZ, then MapleStory Quest; the source selector retains existing saved choices.
+- Wiki NPC sell/shop prices are a third fallback after CCPLZ and Quest. Reference values never enter player-market history or estimates.
+- Item details tab selection survives restart. Requests are on demand, cached for an hour, spaced, bounded, and cancellable; unavailable/mismatched data stays unknown.
+- Wiki-derived content: MapleClassic Wiki contributors, CC BY-NC-SA 4.0. Selected facts reformatted; no drop rates inferred. See ThirdPartyLicenses/MapleClassic-Wiki.txt. GMS 83 is historical, not confirmed Classic World data.
+
+Validation: 186 core tests; live Orange Mushroom Cap, Red Potion and Blue Moonlight reference checks; Wiki monster/map rendering and empty-result handling; close/reopen session test; isolated real package update 1.25.4 -> 1.25.5 with saved state, backup, graph and NPC lookup verified. The updater test uses a local feed and scripted confirmation; it does not modify the player's profile.
+
+Additional source review: Sleepywood database failed to load and API docs returned 404; Planet Helper terms prohibit unauthorized scraping. Neither was enabled as an automatic provider.

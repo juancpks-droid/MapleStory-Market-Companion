@@ -13,7 +13,7 @@ public sealed partial class MainForm
  }
  void ShowNpcPrices(NpcPrices prices){
    UpdateNpcPriceMetrics(prices);
-   npcPriceNote.Text=prices.Sell is null&&prices.BuyMin is null?"No NPC prices recorded by "+prices.Source+". Try again later.":"NPC reference from "+prices.Source+" • Separate from player prices and market history.";
+   npcPriceNote.Text=prices.Sell is null&&prices.BuyMin is null?"No NPC prices recorded by "+prices.Source+". Try again later.":"NPC reference from "+prices.Source+" • Separate from player prices and market history."+(prices.Source=="MapleClassic Wiki"?"\n"+WikiReferenceReader.Credit:"");
  }
  async void QueueNpcPrices(){
   var selectedItem=SelectedPriceItem();var query=features.Polish.Resolve(search.Text).Trim();
@@ -25,9 +25,9 @@ public sealed partial class MainForm
   if(Offline){npcPriceNote.Text="NPC reference: unavailable offline. Turn off Work offline to look up NPC prices.";return;}
   npcPriceNote.Text=name+" • Looking up NPC reference prices…";
   try{
-   await Task.Delay(650,ct);var prices=await NpcPriceFallback.Lookup(c=>ccplzReader.LookupNpcPrices(name,id,c),c=>questDropReader.LookupNpcPrices(name,c),ct,()=>{if(!closing&&!IsDisposed&&generation==npcGeneration)npcPriceNote.Text=name+" • Trying MapleStory Quest NPC prices…";});
+   await Task.Delay(650,ct);var prices=await NpcPriceFallback.Lookup(c=>ccplzReader.LookupNpcPrices(name,id,c),c=>NpcPriceFallback.Lookup(q=>questDropReader.LookupNpcPrices(name,q),q=>wikiReader.LookupNpcPrices(name,q),c,()=>{if(!closing&&!IsDisposed&&generation==npcGeneration)npcPriceNote.Text=name+" • Trying MapleClassic Wiki NPC prices…";}),ct,()=>{if(!closing&&!IsDisposed&&generation==npcGeneration)npcPriceNote.Text=name+" • Trying MapleStory Quest NPC prices…";});
    if(closing||IsDisposed||generation!=npcGeneration||Offline)return;npcUrl=prices.Url;
    ShowNpcPrices(prices);
-  }catch(OperationCanceledException){if(!closing&&!IsDisposed&&generation==npcGeneration&&!Offline){npcKey="";npcPriceNote.Text="NPC lookup timed out. Use Retry NPC prices.";}}catch(Exception){if(!closing&&!IsDisposed&&generation==npcGeneration){npcKey="";npcPriceNote.Text="NPC prices: unavailable from CCPLZ and MapleStory Quest. No verified matching price was received. Use Retry NPC prices.";}}
+  }catch(OperationCanceledException){if(!closing&&!IsDisposed&&generation==npcGeneration&&!Offline){npcKey="";npcPriceNote.Text="NPC lookup timed out. Use Retry NPC prices.";}}catch(Exception){if(!closing&&!IsDisposed&&generation==npcGeneration){npcKey="";npcPriceNote.Text="NPC prices: unavailable from CCPLZ, MapleStory Quest and MapleClassic Wiki. No verified matching price was received. Use Retry NPC prices.";}}
  }
 }

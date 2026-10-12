@@ -1,0 +1,10 @@
+MapleClassic Wiki reference content
+Source: https://mapleclassic.wiki/
+Attribution: MapleClassic Wiki contributors (individual article histories identify authors).
+License: Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International
+https://creativecommons.org/licenses/by-nc-sa/4.0/
+
+This free companion retrieves selected item facts on demand. Fields and tables are reformatted, drop rates are omitted, and the first five recorded monsters are shown. This adapted reference content remains under CC BY-NC-SA 4.0, separate from the app's MIT source-code license. Source article URLs are retained in the app. Neither the Wiki nor Nexon endorses this app. Game assets and trademarks remain subject to their owners' rights.
+
+Historical item fallback: https://maplestory.io/api/gms/83/item/{id}
+MapleStory.io provides game-file references. GMS 83 is historical and may differ from Classic World. Its numeric base price is deliberately not imported as an NPC or market price. Game data belongs to Nexon.

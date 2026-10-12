@@ -52,7 +52,7 @@ public sealed partial class MainForm
                 if(state.Maximized)WindowState=FormWindowState.Maximized;
                 if(state.Page is not null&&pages.ContainsKey(state.Page))ShowPage(state.Page);
                 if(priceItemChoice.Items.Contains(state.PriceItem))priceItemChoice.SelectedItem=state.PriceItem;priceDetails.SelectedIndex=Math.Clamp(state.PriceDetailTab,0,3);
-                finderDetailTabs.SelectedIndex=Math.Clamp(state.FinderDetailTab,0,1);settingsSections.SelectedIndex=Math.Clamp(state.SettingsSection,0,1);
+                finderDetailTabs.SelectedIndex=Math.Clamp(state.FinderDetailTab,0,finderDetailTabs.TabPages.Count-1);settingsSections.SelectedIndex=Math.Clamp(state.SettingsSection,0,1);
             }
         }catch(Exception e) when(e is IOException or JsonException or UnauthorizedAccessException){footer.Text="Previous view could not be restored. Your saved player data is still available.";}
         sessionTimer.Tick+=(_,_)=>{try{SaveViewSession();}catch(Exception){footer.Text="Could not save your current view. Check data-folder access before restarting.";}};

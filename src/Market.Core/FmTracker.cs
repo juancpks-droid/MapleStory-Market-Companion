@@ -65,6 +65,8 @@ public static class WebsiteDirectory
         new("MapleClassicBase","https://mapleclassicbase.com/","Open website","Price edits stored in browser; no shared feed verified"),
         new("Metaroad","https://metaroad.gg/maplestory-classic/market-prices","Open website","Automated collection requires permission; no public feed verified"),
         new("GameMargins","https://gamemargins.com/maplestory-classic","Open website","Terms prohibit scraping and bulk price collection"),
-        new("MesoWatch","https://meso.watch/","Open website","Automatic scraping and bulk copying prohibited")
-    ];
+        new("MesoWatch","https://meso.watch/","Open website","Automatic scraping and bulk copying prohibited"),
+ new("MapleClassic Wiki","https://mapleclassic.wiki/","Item reference","Item details, reported drops/maps and NPC fallback; CC BY-NC-SA 4.0"),
+ new("MapleStory.io","https://maplestory.io/","Historical item reference","GMS 83 details fallback; not Classic World confirmation or market prices"),
+ ];
 }
