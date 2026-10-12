@@ -128,7 +128,7 @@ public sealed partial class MainForm : Form
 
     {
 
-        var p=pages["Price Checker"];var bar=Toolbar();bar.AutoSize=true;bar.AutoSizeMode=AutoSizeMode.GrowAndShrink;bar.MinimumSize=new Size(0,48);bar.WrapContents=true;bar.AutoScroll=false;search.Margin=new Padding(3,9,10,3);InitializeItemLookup();search.TextChanged+=(_,_)=>{RenderPrices();QueueItemLookup(search.Text);};bar.Controls.Add(search);
+        var p=pages["Price Checker"];var bar=Toolbar();bar.AutoSize=true;bar.AutoSizeMode=AutoSizeMode.GrowAndShrink;bar.MinimumSize=new Size(0,48);bar.WrapContents=true;bar.AutoScroll=false;search.Margin=new Padding(3,9,10,3);InitializeItemLookup();search.TextChanged+=(_,_)=>{QueuePriceRender();QueueItemLookup(search.Text);};bar.Controls.Add(search);
 
         bar.Controls.Add(Button("Get prices",async()=>await LookupPricesNow()));search.KeyDown+=async (_,e)=>{if(e.KeyCode==Keys.Enter){e.SuppressKeyPress=true;await LookupPricesNow();}};bar.Controls.Add(Button("Refresh now",async()=>await RefreshSources()));priceWatchButton=Button("Watch item",()=>ToggleItemWatch(PriceWatchName));bar.Controls.Add(priceWatchButton);bar.Controls.Add(Button("Filters",EditListingFilters));bar.Controls.Add(Button("View in FM Tracker",OpenPriceInFm));bar.Controls.Add(Button("Price explanation",()=>priceSummary.Visible=!priceSummary.Visible));
 
@@ -138,7 +138,7 @@ public sealed partial class MainForm : Form
 
         chartBar.Controls.Add(new Label(){AutoSize=true,Text="History • actual source timestamps only",ForeColor=Muted,Padding=new Padding(5,12,0,0)});bottom.Controls.Add(history);bottom.Controls.Add(chartBar);
 
-        p.Controls.Add(priceGrid);p.Controls.Add(bottom);p.Controls.Add(priceSummary);p.Controls.Add(fmContext);p.Controls.Add(bar);priceGrid.CellDoubleClick+=(_,e)=>{if(e.RowIndex>=0 && priceGrid.Rows[e.RowIndex].Tag is Observation o)MessageBox.Show(this,ListingDetails(o),o.Name,MessageBoxButtons.OK,MessageBoxIcon.Information);};priceGrid.SelectionChanged+=(_,_)=>{RenderValuation();RenderHistory();};BuildPriceDetails(p,bottom);
+        p.Controls.Add(priceGrid);p.Controls.Add(bottom);p.Controls.Add(priceSummary);p.Controls.Add(fmContext);p.Controls.Add(bar);priceGrid.CellDoubleClick+=(_,e)=>{if(e.RowIndex>=0 && priceGrid.Rows[e.RowIndex].Tag is Observation o)ShowListingDetails(o);};priceGrid.SelectionChanged+=(_,_)=>{if(!renderingPriceRows){RenderValuation();RenderHistory();}};BuildPriceDetails(p,bottom);BuildPriceSuggestions(p,bar);
 
     }
 
@@ -296,7 +296,7 @@ public sealed partial class MainForm : Form
 
     {
 
-        if(Offline){lookupStatus.Text="Offline • showing saved prices";UpdateConnectionStatus();footer.Text="Offline: searching saved evidence. Turn off Work offline to request new data.";RenderPrices();return;}if(busy){if(onlineSearch){pendingSearch=true;pendingLookup=lookupQuery??ResolvePriceQuery(search.Text);footer.Text="Search queued after the current market refresh.";lookupStatus.Text="Queued • "+pendingLookup;}return;}busy=true;lookupStatus.Text="Checking Kerning first, then other enabled sources • "+(lookupQuery??search.Text);refreshStop=CancellationTokenSource.CreateLinkedTokenSource(stop.Token);footer.Text="Checking source access and refreshing eligible sources…";
+        if(Offline){lookupStatus.Text="Offline • showing saved prices";UpdateConnectionStatus();footer.Text="Offline: searching saved evidence. Turn off Work offline to request new data.";RenderPrices();return;}if(busy){if(onlineSearch){pendingSearch=true;pendingLookup=lookupQuery??ResolvePriceQuery(search.Text);footer.Text="Search queued after the current market refresh.";lookupStatus.Text="Queued • "+pendingLookup;}return;}busy=true;activePriceSearch=onlineSearch;activeSearchQuery=lookupQuery??ResolvePriceQuery(search.Text);int refreshGeneration=++priceRefreshGeneration;bool refreshSucceeded=false;lookupStatus.Text="Checking Kerning first, then other enabled sources • "+(lookupQuery??search.Text);refreshStop=CancellationTokenSource.CreateLinkedTokenSource(stop.Token);footer.Text="Checking source access and refreshing eligible sources…";
 
         try
 
@@ -304,12 +304,12 @@ public sealed partial class MainForm : Form
 
             var names=onlineSearch?new[]{lookupQuery??ResolvePriceQuery(search.Text)}:store.Items().Select(i=>i.Name).ToArray();
 
-            sourceResults=await Task.Run(()=>collector.Refresh(settings,refreshStop.Token,names,onlineSearch,observations.ToArray()),refreshStop.Token);
+            var refreshToken=refreshStop.Token;sourceResults=await Task.Run(()=>collector.Refresh(settings,refreshToken,names,onlineSearch,observations.ToArray(),result=>InvokeAsync(()=>{if(!closing&&!IsDisposed&&!Offline&&refreshGeneration==priceRefreshGeneration){ApplySourceResult(result);sourceResults.RemoveAll(r=>r.Provider==result.Provider);sourceResults.Add(result);observations=store.Observations();fmSummaries=store.Summaries();RenderPrices();lookupStatus.Text=result.Provider+": "+result.Status+" • Checking remaining sources…";}},refreshToken),source=>{if(!closing&&!IsDisposed)BeginInvoke(()=>{if(refreshGeneration==priceRefreshGeneration)lookupStatus.Text="Checking "+source+" • Saved prices remain visible";});}),refreshToken);
 
-            if(Offline)return;
-            if(collector.Catalog.Count>0){var choices=new AutoCompleteStringCollection();choices.AddRange(collector.Catalog.Select(i=>CultureInfo.CurrentCulture.TextInfo.ToTitleCase(i.Name)).ToArray());search.AutoCompleteCustomSource=choices;search.AutoCompleteMode=AutoCompleteMode.Suggest;search.AutoCompleteSource=AutoCompleteSource.CustomSource;}
+            refreshSucceeded=true;if(Offline)return;
+            if(collector.Catalog.Count>0){var choices=new AutoCompleteStringCollection();choices.AddRange(collector.Catalog.Select(i=>CultureInfo.CurrentCulture.TextInfo.ToTitleCase(i.Name)).ToArray());search.AutoCompleteCustomSource=choices;search.AutoCompleteMode=AutoCompleteMode.None;search.AutoCompleteSource=AutoCompleteSource.CustomSource;}
 
-            foreach(var result in sourceResults)if(result.Updated){if(result.Provider=="Approved JSON feed")store.ExpireMissingFromSnapshot(result.Provider,result.Rows);if(result.SnapshotItems.Count>0)store.ExpireMissingFromSnapshot(result.Provider,result.Rows,result.SnapshotItems);if(result.Rows.Count>0)store.Save(result.Rows.Where(r=>!(r.Provider=="BasilMarket"&&r.PriceApproximate&&observations.Any(old=>old.Key==r.Key&&!old.PriceApproximate))).ToList());if(result.FmSummaries is not null)store.ReplaceSummaries(result.FmSummaries);}
+
 
             observations=store.Observations();var basilScan=settings.Sources.FirstOrDefault(s=>s.Id=="BasilMarket");if(basilScan is not null&&sourceResults.Any(r=>r.Provider=="BasilMarket"&&r.Updated))BasilCompletion.Observe(observations,basilScan,DateTimeOffset.UtcNow);store.SaveSettings(settings);fmSummaries=store.Summaries();Render();
 
@@ -321,7 +321,7 @@ public sealed partial class MainForm : Form
 
         catch(Exception e){Log(e);footer.Text="Refresh could not finish. Existing data retained; see source status.";}
 
-        finally{lookupStatus.Text=Offline?"Offline • showing saved prices":"Last check "+DateTime.Now.ToString("t")+" • "+(lookupQuery??search.Text)+" • See Sources for availability and cache limits";busy=false;refreshStop?.Dispose();refreshStop=null;UpdateConnectionStatus();}
+        finally{if(refreshSucceeded&&onlineSearch&&refreshStop?.IsCancellationRequested!=true&&sourceResults.Any(r=>r.Updated))RememberLookupComplete(lookupQuery??search.Text);lookupStatus.Text=Offline?"Offline • showing saved prices":refreshStop?.IsCancellationRequested==true?"Previous lookup cancelled • ready for your next search":"Checked "+DateTime.Now.ToString("t")+" • "+string.Join(" | ",sourceResults.Select(r=>r.Provider+": "+r.Status));activePriceSearch=false;busy=false;refreshStop?.Dispose();refreshStop=null;UpdateConnectionStatus();}
 
         if(pendingSearch&&!stop.IsCancellationRequested){pendingSearch=false;var queued=pendingLookup;pendingLookup="";await RefreshSources(true,queued);}
 
@@ -369,13 +369,13 @@ public sealed partial class MainForm : Form
 
     {
 
-        if(priceGrid.IsDisposed)return;var query=TextKey.Search(features.Polish.Resolve(search.Text));var rows=observations.Where(o=>(query.Length==0||TextKey.Search(o.Name).Contains(query)||o.ItemId==search.Text.Trim())&&listingFilter.Matches(o,DateTimeOffset.UtcNow,settings.FreshHours)).OrderByDescending(o=>o.RetrievedAt).ToList();
+        if(priceGrid.IsDisposed)return;var renderWatch=System.Diagnostics.Stopwatch.StartNew();renderingPriceRows=true;priceGrid.SuspendLayout();try{var query=TextKey.Search(features.Polish.Resolve(search.Text));var rows=observations.Where(o=>(query.Length==0||TextKey.Search(o.Name).Contains(query)||o.ItemId==search.Text.Trim())&&listingFilter.Matches(o,DateTimeOffset.UtcNow,settings.FreshHours)).OrderByDescending(o=>o.RetrievedAt).ToList();
 
         SetPriceChoices(rows);SetColumns(priceGrid,["Item","Price / unit","Type","Source","Data observed","Retrieved","Quality"]);priceGrid.Columns[0].FillWeight=130;priceGrid.Columns[6].FillWeight=180;
 
         foreach(var o in rows.Take(1000)){int i=priceGrid.Rows.Add(o.Name+(o.Equipment?" • equipment":""),TextKey.Mesos(o.UnitPrice)+(o.PriceApproximate?" ≈":""),o.Kind,o.Provider,o.ObservedAt?.ToLocalTime().ToString("g")??o.SourceAge+" (unverified)",o.RetrievedAt.ToLocalTime().ToString("g"),ReliabilityTools.EvidenceStatus(o,settings.Sources.Any(s=>s.Id==o.Provider&&s.Authorized),DateTimeOffset.UtcNow,settings.FreshHours));priceGrid.Rows[i].Tag=o;priceGrid.Rows[i].Cells[0].ToolTipText=o.Variant;}
 
-        RenderValuation();RenderHistory();
+        }finally{renderingPriceRows=false;priceGrid.ResumeLayout();}RenderValuation();RenderHistory();lastPriceRenderMs=renderWatch.ElapsedMilliseconds;
 
     }
 

@@ -17,6 +17,7 @@ public sealed partial class MainForm
  internal List<string> RunFinderChecks(){
   var checks=new List<string>();void Check(bool ok,string note){if(!ok)throw new Exception(note);checks.Add(note);}
   observations=[new(){Provider="BasilMarket",ListingId="finder-test",ItemId="2000000",Name="Red Potion",Kind=EvidenceKind.Asking,Available=true,UnitPrice=51,Quantity=73,Seller="Test seller",RetrievedAt=DateTimeOffset.UtcNow,PriceApproximate=true,Url="https://example.org/test"}];
+  CheckSearchPerformance(checks);
   ShowPage("Item Finder");finderSearch.Text="Red Potion";RenderItemFinder();
   Check(navigation["Item Finder"].Visible,"Item Finder is available in the simple Market menu");
   Check(finderItems.Rows.Count>0,"Catalog search returns matching items");

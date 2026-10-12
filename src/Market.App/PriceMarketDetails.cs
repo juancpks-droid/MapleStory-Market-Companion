@@ -68,7 +68,7 @@ public sealed partial class MainForm
     Line("Posted: "+(o.ObservedAt?.ToLocalTime().ToString("g")??"Unknown")+" • Checked: "+o.RetrievedAt.ToLocalTime().ToString("g"));}
     Line(ReliabilityTools.EvidenceStatus(o,settings.Sources.Any(s=>s.Id==o.Provider&&s.Authorized),now,settings.FreshHours));
     var actions=new FlowLayoutPanel(){AutoSize=true,MaximumSize=new Size(Math.Max(130,card.Width-22),0),Width=Math.Max(130,card.Width-22),WrapContents=true};
-    actions.Controls.Add(Button("Details",()=>MessageBox.Show(this,ListingDetails(o),o.Name,MessageBoxButtons.OK,MessageBoxIcon.Information)));actions.Controls.Add(Button("Website fallback",()=>Open(o.Url)));
+    actions.Controls.Add(Button("Details",()=>ShowListingDetails(o)));actions.Controls.Add(Button("Website fallback",()=>Open(o.Url)));
     void Copy(string value){try{Clipboard.SetText(value);}catch{footer.Text="Clipboard busy. Try again.";}}
     if(!string.IsNullOrWhiteSpace(o.Seller))actions.Controls.Add(Button("Copy name",()=>Copy(o.Seller)));
     actions.Controls.Add(Button("Copy link",()=>Copy(o.Url)));actions.Controls.Add(Button("Copy details",()=>Copy(ListingDetails(o))));card.Controls.Add(actions);flow.Controls.Add(card);

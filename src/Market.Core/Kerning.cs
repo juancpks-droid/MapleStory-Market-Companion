@@ -93,7 +93,7 @@ public sealed class KerningReader(Fetcher fetcher)
         if(config.RequestTimes.Count>0){var wait=TimeSpan.FromSeconds(3)-(now-config.RequestTimes.Max());if(wait>TimeSpan.Zero)await Task.Delay(wait,ct);}
         config.RequestTimes.Add(DateTimeOffset.UtcNow);return await fetcher.Get(new Uri(url),ct);
     }
-    public async Task<SourceResult> Refresh(SourceConfig config,IEnumerable<string> names,bool search,CancellationToken ct)
+    public async Task<SourceResult> Refresh(SourceConfig config,IEnumerable<string> names,bool search,CancellationToken ct,Func<SourceResult,Task>? publish=null)
     {
         var now=DateTimeOffset.UtcNow;
         var robots=await Get("https://kerning.gg/robots.txt",config,ct);
@@ -114,7 +114,7 @@ public sealed class KerningReader(Fetcher fetcher)
             try
             {
                 var page=await Get(item.Url,config,ct);var snapshot=KerningPages.Parse(page,item.Url,DateTimeOffset.UtcNow);
-                rows.AddRange(snapshot.Rows);snapshots.Add(snapshot.ItemId);config.PageChecked[item.Url]=DateTimeOffset.UtcNow;
+                rows.AddRange(snapshot.Rows);snapshots.Add(snapshot.ItemId);config.PageChecked[item.Url]=DateTimeOffset.UtcNow; if(publish is not null)await publish(new SourceResult("Kerning Exchange",snapshot.Rows,$"{snapshot.Name}: {snapshot.Rows.Count} listing records loaded",DateTimeOffset.UtcNow,true){SnapshotItems=[snapshot.ItemId]});
             }
             catch(HttpRequestException){failed++;config.PageChecked[item.Url]=DateTimeOffset.UtcNow;}
             catch(FormatException){failed++;config.PageChecked[item.Url]=DateTimeOffset.UtcNow;}

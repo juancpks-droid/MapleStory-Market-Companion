@@ -538,6 +538,22 @@ await Test("Kerning is requested before secondary sources and failures preserve 
  var results=await new SourceCollector(fetch).Refresh(settings,CancellationToken.None);
  Check(hosts.SequenceEqual(new[]{"kerning.gg","feed.example.org"})&&results.Count==2&&results[0].Provider=="Kerning Exchange");
 });
+await Test("Search suggestions handle partial names, IDs and typos without choosing an item",()=>Sync(()=>{
+ var index=new ItemSearchIndex([new("1","Snail Shell"),new("2","Blue Snail Shell"),new("3","Red Potion"),new("4","帽子")]);
+ Check(index.Suggest("snail").First().Name=="Snail Shell");Check(index.Suggest("snail shel").First().Name=="Snail Shell");Check(index.Suggest("Red Potoin").Single().Name=="Red Potion");Check(index.Suggest("xx").Count==0);Check(index.Suggest("帽子").Count==0);
+}));
+await Test("Kerning publishes item offers before FM request and respects cancellation",async()=>{
+ bool published=false;using var cancel=new CancellationTokenSource();
+ var data=new{item=new{id="4000013",name="Green Mushroom Cap",type="Etc",slots=0},forSale=new[]{new{id=Guid.NewGuid().ToString(),price=20,used=0,passed=0,stats=new{},at=DateTimeOffset.UtcNow.ToString("O"),quantity=10,ign="Player",sold=false}},wanted=Array.Empty<object>(),sold=Array.Empty<object>()};
+ var itemHtml="<script>self.__next_f.push([1,"+JsonSerializer.Serialize("0:"+JsonSerializer.Serialize(data))+ "])</script>";
+ using var fetch=new Fetcher(new Handler(req=>{
+  string path=req.RequestUri!.AbsolutePath;
+  if(path=="/fm-tracker")throw new Exception("Cancelled lookup must not reach FM");
+  string body=path=="/robots.txt"?"User-agent: *\nAllow: /":path=="/sitemap.xml"?"<urlset xmlns='http://www.sitemaps.org/schemas/sitemap/0.9'><url><loc>https://kerning.gg/item/4000013-green-mushroom-cap</loc></url></urlset>":itemHtml;
+  return new HttpResponseMessage(HttpStatusCode.OK){Content=new StringContent(body)};
+ }));
+ bool stopped=false;try{await new KerningReader(fetch).Refresh(new SourceConfig(),["Green Mushroom Cap"],true,cancel.Token,r=>{Check(r.Rows.Count>0&&r.SnapshotItems.Single()=="4000013");published=true;cancel.Cancel();return Task.CompletedTask;});}catch(OperationCanceledException){stopped=true;}Check(published&&stopped);
+});
 Directory.CreateDirectory("test-results");File.WriteAllText("test-results/results.json",JsonSerializer.Serialize(new{total=results.Count,failed=failures,results},Json.Options));Console.WriteLine($"{results.Count-failures}/{results.Count} passed");Environment.ExitCode=failures==0?0:1;
 
 

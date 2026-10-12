@@ -19,6 +19,7 @@ public sealed class Fetcher : IDisposable
     public async Task<string> Get(Uri uri, CancellationToken ct)
     {
         if (uri.Scheme != "https" || !string.IsNullOrEmpty(uri.UserInfo)) throw new InvalidOperationException("Only HTTPS URLs without embedded credentials are supported.");
+        using var deadline=CancellationTokenSource.CreateLinkedTokenSource(ct);deadline.CancelAfter(TimeSpan.FromSeconds(30));ct=deadline.Token;
         using var response = await client.GetAsync(uri, HttpCompletionOption.ResponseHeadersRead, ct);
         if (response.StatusCode == HttpStatusCode.TooManyRequests || response.StatusCode == HttpStatusCode.ServiceUnavailable)
         {
@@ -115,34 +116,34 @@ public sealed class SourceCollector(Fetcher fetcher)
     readonly KerningReader kerning=new(fetcher);
     readonly BasilReader basil=new(fetcher);
     public IReadOnlyList<CatalogItem> Catalog=>kerning.Catalog;
-    public async Task<List<SourceResult>> Refresh(Settings settings,CancellationToken ct,IEnumerable<string>? names=null,bool search=false,IEnumerable<Observation>? cached=null)
+    public async Task<List<SourceResult>> Refresh(Settings settings,CancellationToken ct,IEnumerable<string>? names=null,bool search=false,IEnumerable<Observation>? cached=null,Func<SourceResult,Task>? publish=null,Action<string>? checking=null)
     {
         if(!await mutex.WaitAsync(0,ct)) return [];
         try
         {
-            var results=new List<SourceResult>();
+            var results=new List<SourceResult>(); async Task Add(SourceResult result){results.Add(result);if(publish is not null)await publish(result);}
             foreach(var config in settings.Sources.OrderBy(s=>s.Id=="Kerning Exchange"?0:1))
             {
                 if(search && config.Id is not ("Kerning Exchange" or "BasilMarket"))continue;
-                var now=DateTimeOffset.UtcNow;
-                if(!config.Authorized) { results.Add(new(config.Id,[],"Permission required — disabled",config.LastChecked)); continue; }
-                if(now<config.BlockedUntil){results.Add(new(config.Id,[],"Provider backoff until "+config.BlockedUntil.ToLocalTime().ToString("g"),config.LastChecked));continue;}
-                if(now<config.NextAllowed && (!search || config.Id=="BasilMarket" || config.NextAllowed>config.LastChecked.AddMinutes(Math.Max(15,config.IntervalMinutes)))) { results.Add(new(config.Id,[],"Cached; next fetch " + config.NextAllowed.ToLocalTime().ToString("g"),config.LastChecked)); continue; }
+                ct.ThrowIfCancellationRequested();checking?.Invoke(config.Id);var now=DateTimeOffset.UtcNow;
+                if(!config.Authorized) { await Add(new(config.Id,[],"Permission required — disabled",config.LastChecked)); continue; }
+                if(now<config.BlockedUntil){await Add(new(config.Id,[],"Provider backoff until "+config.BlockedUntil.ToLocalTime().ToString("g"),config.LastChecked));continue;}
+                if(now<config.NextAllowed && (!search || config.Id=="BasilMarket" || config.NextAllowed>config.LastChecked.AddMinutes(Math.Max(15,config.IntervalMinutes)))) { await Add(new(config.Id,[],"Cached; next fetch " + config.NextAllowed.ToLocalTime().ToString("g"),config.LastChecked)); continue; }
                 config.LastChecked=now;
                 config.NextAllowed=now.AddMinutes(Math.Max(15,config.IntervalMinutes));
                 try
                 {
-                    if(config.Id=="Kerning Exchange") { results.Add(await kerning.Refresh(config,names??[],search,ct));continue; }
-                    if(config.Id=="BasilMarket") { results.Add(await basil.Refresh(config,ct,names,cached));continue; }
+                    if(config.Id=="Kerning Exchange") { await Add(await kerning.Refresh(config,names??[],search,ct,publish));continue; }
+                    if(config.Id=="BasilMarket") { await Add(await basil.Refresh(config,ct,names,cached));continue; }
                     List<Observation> rows=[];int rejected=0;
                     if(config.Id=="Approved JSON feed") rows=ApprovedFeed.Parse(await fetcher.Get(new Uri(config.FeedUrl),ct),now);
                     else throw new FormatException("Unsupported provider");
-                    results.Add(new(config.Id,rows,(rows.Count==0?"No observations returned":$"{rows.Count} observations; " + (config.Id=="Approved JSON feed"?"provider feed":"latest-page coverage only; source time unknown"))+(rejected>0?$"; {rejected} unsupported listing pages excluded":""),now,true));
+                    await Add(new(config.Id,rows,(rows.Count==0?"No observations returned":$"{rows.Count} observations; " + (config.Id=="Approved JSON feed"?"provider feed":"latest-page coverage only; source time unknown"))+(rejected>0?$"; {rejected} unsupported listing pages excluded":""),now,true));
                 }
-                catch(OperationCanceledException) when(ct.IsCancellationRequested) { throw; }
-                catch(RateLimitException e) { config.NextAllowed=DateTimeOffset.UtcNow+e.Retry;config.BlockedUntil=config.NextAllowed; results.Add(new(config.Id,[],"Rate limited; next fetch " + config.NextAllowed.ToLocalTime().ToString("g"),now)); }
+                catch(OperationCanceledException) when(ct.IsCancellationRequested) {config.NextAllowed=default;throw; }
+                catch(RateLimitException e) { config.NextAllowed=DateTimeOffset.UtcNow+e.Retry;config.BlockedUntil=config.NextAllowed; await Add(new(config.Id,[],"Rate limited; next fetch " + config.NextAllowed.ToLocalTime().ToString("g"),now)); }
                 catch(Exception e)
-                { config.NextAllowed=DateTimeOffset.UtcNow.AddMinutes(Math.Max(30,config.IntervalMinutes));config.BlockedUntil=config.NextAllowed; results.Add(new(config.Id,[],"Unavailable: " + e.GetType().Name + "; retry after " + config.NextAllowed.ToLocalTime().ToString("g"),now)); }
+                { config.NextAllowed=DateTimeOffset.UtcNow.AddMinutes(Math.Max(30,config.IntervalMinutes));config.BlockedUntil=config.NextAllowed; await Add(new(config.Id,[],"Unavailable: " + e.GetType().Name + "; retry after " + config.NextAllowed.ToLocalTime().ToString("g"),now)); }
             }
             return results;
         }
