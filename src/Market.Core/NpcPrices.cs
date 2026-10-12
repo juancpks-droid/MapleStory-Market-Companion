@@ -1,7 +1,7 @@
 using System.Globalization;
 using System.Text.Json;
 namespace Market.Core;
-public sealed record NpcPrices(string Item,string Url,decimal? Sell,decimal? BuyMin,decimal? BuyMax,DateTimeOffset CheckedAt);
+public sealed record NpcPrices(string Item,string Url,decimal? Sell,decimal? BuyMin,decimal? BuyMax,DateTimeOffset CheckedAt){public string Source {get;init;}="CCPLZ";public string Note {get;init;}="";}
 public sealed partial class CcplzReader
 {
  public static NpcPrices ReadNpcPrices(string html,string name,string id,DateTimeOffset at){

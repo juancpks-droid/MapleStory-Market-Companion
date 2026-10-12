@@ -519,6 +519,19 @@ await Test("Quest uses source name lookup, rejects ambiguity and preserves histo
  var monster=QuestDropReader.ReadReferences(html,"Wooden Club").Single();Check(monster.Name=="Stump"&&monster.Evidence.Contains("Historical"));Throws(()=>QuestDropReader.ReadReferences(html,"Sword"));
  var maps=QuestDropReader.ReadMaps("<h1>Stump</h1><section><header><h2>Where it spawns (1)</h2></header><a href='/maps/1/Forest'>Forest</a><a href='https://evil.test/maps/2'>Unsafe</a></section>",monster);Check(maps.Locations.Single().Name=="Forest");Throws(()=>QuestDropReader.ReadMaps("<h1>Slime</h1>",monster));
 }));
+await Test("Quest NPC prices distinguish sell-back, purchase and missing values",()=>Sync(()=>{
+ string Card(string label,string value)=>$"<div><div><div><span class='stat-tag'>{label}</span></div></div><div class='num text-lg'>{value}</div></div>";
+ string html="<h1>Cap</h1>"+Card("NPC pays","8")+Card("NPC charges","1,200");var p=QuestDropReader.ReadNpcPrices(html,"Cap","https://maplestory.quest/items/1/Cap",now);Check(p.Sell==8&&p.BuyMin==1200&&p.Source=="MapleStory Quest");
+ var empty=QuestDropReader.ReadNpcPrices("<h1>Cap</h1>"+Card("NPC pays","-"),"Cap",p.Url,now);Check(empty.Sell is null&&empty.BuyMin is null);Throws(()=>QuestDropReader.ReadNpcPrices(html,"Sword",p.Url,now));
+}));
+await Test("NPC fallback handles identity failure and empty source without swallowing cancellation",async()=>{
+ var empty=new NpcPrices("Cap","",null,null,null,now);var found=empty with{Sell=8,Source="MapleStory Quest"};int calls=0;
+ Task<NpcPrices> Fallback(CancellationToken ct){calls++;return Task.FromResult(found);}
+ var p=await NpcPriceFallback.Lookup(_=>throw new FormatException("ID mismatch"),Fallback,CancellationToken.None);Check(p.Sell==8&&calls==1);
+ p=await NpcPriceFallback.Lookup(_=>Task.FromResult(empty),Fallback,CancellationToken.None);Check(p.Sell==8&&calls==2);
+ p=await NpcPriceFallback.Lookup(_=>Task.FromResult(found),Fallback,CancellationToken.None);Check(p.Sell==8&&calls==2);
+ using var cancel=new CancellationTokenSource();cancel.Cancel();bool cancelled=false;try{await NpcPriceFallback.Lookup(c=>Task.FromCanceled<NpcPrices>(c),Fallback,cancel.Token);}catch(OperationCanceledException){cancelled=true;}Check(cancelled&&calls==2);
+});
 Directory.CreateDirectory("test-results");File.WriteAllText("test-results/results.json",JsonSerializer.Serialize(new{total=results.Count,failed=failures,results},Json.Options));Console.WriteLine($"{results.Count-failures}/{results.Count} passed");Environment.ExitCode=failures==0?0:1;
 
 

@@ -149,7 +149,7 @@ public sealed partial class MainForm
         object? Current()=>priceGrid.SelectedRows.Count>0?priceGrid.SelectedRows[0].Tag:null;
         string Name()=>Current() is {} item?ItemName(item):search.Text.Trim();
         void Lookup(bool nia){var name=Name();if(name.Length==0){footer.Text="Search for or select an item first.";return;}if(nia)ShowWebsite("NiaMeowDB",name,Current());else ShowItemWebsites(name,Current());}
-        bar.Controls.Add(Button("View on NiaMeowDB",()=>Lookup(true)));bar.Controls.Add(Button("Other websites",()=>Lookup(false)));
+        bar.Controls.Add(Button("Website fallback…",()=>Lookup(false)));
     }
 }
 

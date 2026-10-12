@@ -130,7 +130,7 @@ public sealed partial class MainForm : Form
 
         var p=pages["Price Checker"];var bar=Toolbar();bar.AutoSize=true;bar.AutoSizeMode=AutoSizeMode.GrowAndShrink;bar.MinimumSize=new Size(0,48);bar.WrapContents=true;bar.AutoScroll=false;search.Margin=new Padding(3,9,10,3);InitializeItemLookup();search.TextChanged+=(_,_)=>{RenderPrices();QueueItemLookup(search.Text);};bar.Controls.Add(search);
 
-        bar.Controls.Add(Button("Search online",async()=>await LookupPricesNow()));search.KeyDown+=async (_,e)=>{if(e.KeyCode==Keys.Enter){e.SuppressKeyPress=true;await LookupPricesNow();}};bar.Controls.Add(Button("Refresh now",async()=>await RefreshSources()));priceWatchButton=Button("Watch item",()=>ToggleItemWatch(PriceWatchName));bar.Controls.Add(priceWatchButton);bar.Controls.Add(Button("Filters",EditListingFilters));bar.Controls.Add(Button("View in FM Tracker",OpenPriceInFm));bar.Controls.Add(Button("Price explanation",()=>priceSummary.Visible=!priceSummary.Visible));
+        bar.Controls.Add(Button("Get prices",async()=>await LookupPricesNow()));search.KeyDown+=async (_,e)=>{if(e.KeyCode==Keys.Enter){e.SuppressKeyPress=true;await LookupPricesNow();}};bar.Controls.Add(Button("Refresh now",async()=>await RefreshSources()));priceWatchButton=Button("Watch item",()=>ToggleItemWatch(PriceWatchName));bar.Controls.Add(priceWatchButton);bar.Controls.Add(Button("Filters",EditListingFilters));bar.Controls.Add(Button("View in FM Tracker",OpenPriceInFm));bar.Controls.Add(Button("Price explanation",()=>priceSummary.Visible=!priceSummary.Visible));
 
         var bottom=new Panel(){Dock=DockStyle.Bottom,Height=225};var chartBar=Toolbar();chartBar.Height=54;
 
@@ -138,7 +138,7 @@ public sealed partial class MainForm : Form
 
         chartBar.Controls.Add(new Label(){AutoSize=true,Text="History • actual source timestamps only",ForeColor=Muted,Padding=new Padding(5,12,0,0)});bottom.Controls.Add(history);bottom.Controls.Add(chartBar);
 
-        p.Controls.Add(priceGrid);p.Controls.Add(bottom);p.Controls.Add(priceSummary);p.Controls.Add(fmContext);p.Controls.Add(bar);priceGrid.CellDoubleClick+=(_,e)=>{if(e.RowIndex>=0 && priceGrid.Rows[e.RowIndex].Tag is Observation o)Open(o.Url);};priceGrid.SelectionChanged+=(_,_)=>{RenderValuation();RenderHistory();};BuildPriceDetails(p,bottom);
+        p.Controls.Add(priceGrid);p.Controls.Add(bottom);p.Controls.Add(priceSummary);p.Controls.Add(fmContext);p.Controls.Add(bar);priceGrid.CellDoubleClick+=(_,e)=>{if(e.RowIndex>=0 && priceGrid.Rows[e.RowIndex].Tag is Observation o)MessageBox.Show(this,ListingDetails(o),o.Name,MessageBoxButtons.OK,MessageBoxIcon.Information);};priceGrid.SelectionChanged+=(_,_)=>{RenderValuation();RenderHistory();};BuildPriceDetails(p,bottom);
 
     }
 

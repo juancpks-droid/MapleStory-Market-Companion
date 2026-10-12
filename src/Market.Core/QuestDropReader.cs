@@ -2,7 +2,7 @@ using System.Net;
 using System.Text.RegularExpressions;
 using HtmlAgilityPack;
 namespace Market.Core;
-public sealed class QuestDropReader : IDisposable
+public sealed partial class QuestDropReader : IDisposable
 {
  const string Host="https://maplestory.quest";
  readonly HttpClient client=new(new HttpClientHandler{AllowAutoRedirect=false,AutomaticDecompression=DecompressionMethods.All}){Timeout=TimeSpan.FromSeconds(25)};

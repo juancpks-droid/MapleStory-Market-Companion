@@ -56,7 +56,7 @@ public sealed partial class MainForm
    var matches=candidates.Where(o=>o.UnitPrice>=listingMin.Value&&(listingMax.Value==0||o.UnitPrice<=listingMax.Value)&&(listingSource.SelectedIndex<=0||o.Provider==listingSource.Text)&&(!listingRecent.Checked||eligible.Contains(o)));
    matches=listingSort.SelectedIndex switch{1=>matches.OrderBy(o=>o.UnitPrice),2=>matches.OrderByDescending(o=>o.UnitPrice),_=>matches.OrderByDescending(o=>o.ObservedAt??o.RetrievedAt)};
    var rows=matches.Take(100).ToList();label.Text=$"{heading} ({candidates.Count}) • showing {rows.Count}";
-   if(rows.Count==0)flow.Controls.Add(new Label(){Text=candidates.Count>0?"No listings match these filters. Try Reset filters to see cached listings.":"No matching cached listings. Search online to check available public data. NPC prices remain separate below.",AutoSize=true,MaximumSize=new Size(Math.Max(150,flow.ClientSize.Width-24),0),Padding=new Padding(10)});
+   if(rows.Count==0)flow.Controls.Add(new Label(){Text=candidates.Count>0?"No listings match these filters. Try Reset filters to see cached listings.":"No matching cached listings. Choose Get prices to retrieve available public data here. NPC prices remain separate below.",AutoSize=true,MaximumSize=new Size(Math.Max(150,flow.ClientSize.Width-24),0),Padding=new Padding(10)});
    foreach(var o in rows){
     var card=new MarketListingCard(){Width=Math.Max(150,flow.ClientSize.Width-24),MaximumSize=new Size(Math.Max(150,flow.ClientSize.Width-24),0),AutoSize=true,AutoSizeMode=AutoSizeMode.GrowAndShrink,FlowDirection=FlowDirection.TopDown,WrapContents=false,Padding=new Padding(12),Margin=new Padding(2,3,2,10),BackColor=GuidePalette.Surface,Tag=o};
     void Line(string text,bool strong=false){card.Controls.Add(new Label(){Text=text,AutoSize=true,MaximumSize=new Size(Math.Max(130,card.Width-22),0),ForeColor=strong?GuidePalette.Gold:GuidePalette.Muted,Font=new Font("Segoe UI",strong?12:9,strong?FontStyle.Bold:FontStyle.Regular),Margin=new Padding(0,2,0,3)});}
@@ -68,7 +68,7 @@ public sealed partial class MainForm
     Line("Posted: "+(o.ObservedAt?.ToLocalTime().ToString("g")??"Unknown")+" • Checked: "+o.RetrievedAt.ToLocalTime().ToString("g"));}
     Line(ReliabilityTools.EvidenceStatus(o,settings.Sources.Any(s=>s.Id==o.Provider&&s.Authorized),now,settings.FreshHours));
     var actions=new FlowLayoutPanel(){AutoSize=true,MaximumSize=new Size(Math.Max(130,card.Width-22),0),Width=Math.Max(130,card.Width-22),WrapContents=true};
-    actions.Controls.Add(Button("Open listing",()=>Open(o.Url)));if(listingCompact.Checked)actions.Controls.Add(Button("Details",()=>MessageBox.Show(this,ListingDetails(o),o.Name,MessageBoxButtons.OK,MessageBoxIcon.Information)));
+    actions.Controls.Add(Button("Details",()=>MessageBox.Show(this,ListingDetails(o),o.Name,MessageBoxButtons.OK,MessageBoxIcon.Information)));actions.Controls.Add(Button("Website fallback",()=>Open(o.Url)));
     void Copy(string value){try{Clipboard.SetText(value);}catch{footer.Text="Clipboard busy. Try again.";}}
     if(!string.IsNullOrWhiteSpace(o.Seller))actions.Controls.Add(Button("Copy name",()=>Copy(o.Seller)));
     actions.Controls.Add(Button("Copy link",()=>Copy(o.Url)));actions.Controls.Add(Button("Copy details",()=>Copy(ListingDetails(o))));card.Controls.Add(actions);flow.Controls.Add(card);
