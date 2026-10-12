@@ -11,7 +11,7 @@ public sealed partial class MainForm
  readonly ComboBox listingSource=new GuideComboBox(){Width=150,DropDownStyle=ComboBoxStyle.DropDownList,AccessibleName="Listing source"};
  readonly CheckBox listingRecent=new(){Text="Recent only",AutoSize=true},listingCompact=new(){Text="Compact cards",AutoSize=true};
  void ResetMarketFilters(){listingMin.Value=0;listingMax.Value=0;listingSort.SelectedIndex=3;listingSource.SelectedIndex=0;listingRecent.Checked=false;}
- Observation? marketTarget; bool fillingPriceChoices; readonly ComboBox priceItemChoice=new GuideComboBox(){Width=195,DropDownStyle=ComboBoxStyle.DropDownList,AccessibleName="Matching item"};
+ Observation? marketTarget; bool fillingPriceChoices; readonly ComboBox priceItemChoice=new GuideComboBox(){Width=195,DropDownStyle=ComboBoxStyle.DropDownList,AccessibleName="Matching item",Visible=false};
  void BuildPriceDetails(Panel page,Control chart){
   page.Controls.Remove(priceGrid);page.Controls.Remove(chart);
   var listings=new TabPage("For sale & looking to buy");
@@ -37,7 +37,7 @@ public sealed partial class MainForm
  Observation? SelectedPriceItem()=>priceDetails.SelectedIndex==2&&priceGrid.SelectedRows.Count>0?priceGrid.SelectedRows[0].Tag as Observation:observations.FirstOrDefault(o=>o.Name==priceItemChoice.Text);
  void SetPriceChoices(List<Observation> rows){
   var previous=priceItemChoice.Text;var query=features.Polish.Resolve(search.Text).Trim();fillingPriceChoices=true;
-  priceItemChoice.Items.Clear();var names=rows.Select(o=>o.Name).Distinct().Order().ToArray();priceItemChoice.Items.AddRange(names);
+  priceItemChoice.Items.Clear();var names=rows.Select(o=>o.Name).Distinct().Order().ToArray();priceItemChoice.Items.AddRange(names);priceItemChoice.Visible=names.Length>1;
   var exact=names.FirstOrDefault(n=>TextKey.Search(n)==TextKey.Search(query));
   priceItemChoice.SelectedItem=exact??(names.Contains(previous)?previous:names.FirstOrDefault());
   fillingPriceChoices=false;
