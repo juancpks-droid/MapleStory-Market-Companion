@@ -17,9 +17,20 @@ public sealed partial class MainForm
      }
     }
    }
-   ShowPage("Dashboard");CapturePreview(Path.Combine(dataDirectory,"redesign-"+theme.Replace(" ","-")+".png"));
+   CheckQuickJump();ShowPage("Dashboard");CapturePreview(Path.Combine(dataDirectory,"redesign-"+theme.Replace(" ","-")+".png"));
   }
   features.TextSize=text;themeChoice.SelectedItem=original;ApplyTextSize();Size=new Size(1024,720);ShowPage("Settings");CapturePreview(Path.Combine(dataDirectory,"responsive-settings.png"));
   checks.Add("Seven primary screens opened in all four themes at compact/large sizes and larger text; Settings needs no horizontal scroll");
+  checks.Add("Go to dialog filters pages and Enter opens the selected destination in all four themes");
+ }
+ void CheckQuickJump(){
+  Exception? failure=null;using var probe=new System.Windows.Forms.Timer(){Interval=100};
+  probe.Tick+=(_,_)=>{probe.Stop();var dialog=Application.OpenForms.Cast<Form>().First(f=>f.Text.StartsWith("Go to"));try{
+   var input=dialog.Controls.OfType<TextBox>().Single();var list=dialog.Controls.OfType<ListBox>().Single();input.Text="Price Checker";
+   if(list.Items.Count!=1||!list.Items[0].ToString()!.Contains("Price Checker"))throw new Exception("Go to page filtering failed");
+   using var shot=new Bitmap(dialog.Width,dialog.Height);dialog.DrawToBitmap(shot,dialog.ClientRectangle);shot.Save(Path.Combine(dataDirectory,"go-to-"+features.Theme.Replace(" ","-")+".png"));
+   typeof(Form).GetMethod("OnKeyDown",System.Reflection.BindingFlags.Instance|System.Reflection.BindingFlags.NonPublic)!.Invoke(dialog,[new KeyEventArgs(Keys.Enter)]);
+  }catch(Exception e){failure=e;}finally{dialog.Close();}};
+  ShowPage("Dashboard");probe.Start();ShowQuickJump();if(failure is not null)throw failure;if(selected!="Price Checker")throw new Exception("Go to Enter navigation failed");
  }
 }

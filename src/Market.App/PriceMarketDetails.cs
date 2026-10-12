@@ -8,6 +8,9 @@ public sealed partial class MainForm
  readonly Label sellCount=Info(32),buyCount=Info(32),marketHeadline=Info(30);
  readonly ComboBox listingSort=new GuideComboBox(){Width=145,DropDownStyle=ComboBoxStyle.DropDownList};
  readonly NumericUpDown listingMin=Amount(0),listingMax=Amount(0);
+ readonly ComboBox listingSource=new GuideComboBox(){Width=150,DropDownStyle=ComboBoxStyle.DropDownList,AccessibleName="Listing source"};
+ readonly CheckBox listingRecent=new(){Text="Recent only",AutoSize=true},listingCompact=new(){Text="Compact cards",AutoSize=true};
+ void ResetMarketFilters(){listingMin.Value=0;listingMax.Value=0;listingSort.SelectedIndex=0;listingSource.SelectedIndex=0;listingRecent.Checked=false;}
  Observation? marketTarget; bool fillingPriceChoices; readonly ComboBox priceItemChoice=new GuideComboBox(){Width=195,DropDownStyle=ComboBoxStyle.DropDownList,AccessibleName="Matching item"};
  void BuildPriceDetails(Panel page,Control chart){
   page.Controls.Remove(priceGrid);page.Controls.Remove(chart);
@@ -17,8 +20,11 @@ public sealed partial class MainForm
   listingMin.Width=75;listingMax.Width=75;
   filters.Controls.Add(listingSort);filters.Controls.Add(new Label(){Text="Min mesos",AutoSize=true,Padding=new Padding(0,8,0,0)});filters.Controls.Add(listingMin);
   filters.Controls.Add(new Label(){Text="Max (0 = any)",AutoSize=true,Padding=new Padding(0,8,0,0)});filters.Controls.Add(listingMax);
+  listingSource.Items.Add("All sources");listingSource.Items.AddRange(settings.Sources.Select(s=>s.Id).Distinct().Cast<object>().ToArray());listingSource.SelectedIndex=0;
+  filters.Controls.Add(listingSource);filters.Controls.Add(listingRecent);filters.Controls.Add(listingCompact);filters.Controls.Add(Button("Reset filters",ResetMarketFilters));
+  listingSource.SelectedIndexChanged+=(_,_)=>RenderMarketCards(marketTarget);listingRecent.CheckedChanged+=(_,_)=>RenderMarketCards(marketTarget);listingCompact.CheckedChanged+=(_,_)=>RenderMarketCards(marketTarget);
   var columns=new TableLayoutPanel(){Dock=DockStyle.Fill,ColumnCount=2,RowCount=1};columns.ColumnStyles.Add(new(SizeType.Percent,50));columns.ColumnStyles.Add(new(SizeType.Percent,50));
-  Panel Side(FlowLayoutPanel cards,Label count){var panel=new Panel(){Dock=DockStyle.Fill,Padding=new Padding(3)};panel.Controls.Add(cards);panel.Controls.Add(count);cards.SizeChanged+=(_,_)=>{foreach(Control card in cards.Controls)card.Width=Math.Max(150,cards.ClientSize.Width-24);};return panel;}
+  Panel Side(FlowLayoutPanel cards,Label count){var panel=new Panel(){Dock=DockStyle.Fill,Padding=new Padding(3)};panel.Controls.Add(cards);panel.Controls.Add(count);cards.SizeChanged+=(_,_)=>{foreach(Control card in cards.Controls){int width=Math.Max(150,cards.ClientSize.Width-24);card.MaximumSize=new Size(width,0);card.Width=width;foreach(Control child in card.Controls){child.MaximumSize=new Size(Math.Max(130,width-24),0);if(child is FlowLayoutPanel)child.Width=Math.Max(130,width-24);}}};return panel;}
   columns.Controls.Add(Side(sellCards,sellCount));columns.Controls.Add(Side(buyCards,buyCount));listings.Controls.Add(columns);listings.Controls.Add(filters);
   priceDetails.TabPages.Add(listings);
   var timeline=new TabPage("Price over time");chart.Dock=DockStyle.Fill;timeline.Controls.Add(chart);priceDetails.TabPages.Add(timeline);
@@ -46,10 +52,10 @@ public sealed partial class MainForm
   void Fill(FlowLayoutPanel flow,Label label,EvidenceKind kind,string heading){
    flow.SuspendLayout();foreach(Control c in flow.Controls.Cast<Control>().ToArray())c.Dispose();flow.Controls.Clear();
    var candidates=all.Where(o=>o.Kind==kind).ToList();
-   var matches=candidates.Where(o=>o.UnitPrice>=listingMin.Value&&(listingMax.Value==0||o.UnitPrice<=listingMax.Value));
+   var matches=candidates.Where(o=>o.UnitPrice>=listingMin.Value&&(listingMax.Value==0||o.UnitPrice<=listingMax.Value)&&(listingSource.SelectedIndex<=0||o.Provider==listingSource.Text)&&(!listingRecent.Checked||eligible.Contains(o)));
    matches=listingSort.SelectedIndex switch{1=>matches.OrderBy(o=>o.UnitPrice),2=>matches.OrderByDescending(o=>o.UnitPrice),_=>matches.OrderByDescending(o=>o.ObservedAt??o.RetrievedAt)};
    var rows=matches.Take(100).ToList();label.Text=$"{heading} ({candidates.Count}) • showing {rows.Count}";
-   if(rows.Count==0)flow.Controls.Add(new Label(){Text="No matching cached listings. Refresh sources to check available public data.",AutoSize=true,MaximumSize=new Size(Math.Max(150,flow.ClientSize.Width-24),0),Padding=new Padding(10)});
+   if(rows.Count==0)flow.Controls.Add(new Label(){Text=candidates.Count>0?"No listings match these filters. Try Reset filters to see cached listings.":"No matching cached listings. Search online to check available public data. NPC prices remain separate below.",AutoSize=true,MaximumSize=new Size(Math.Max(150,flow.ClientSize.Width-24),0),Padding=new Padding(10)});
    foreach(var o in rows){
     var card=new MarketListingCard(){Width=Math.Max(150,flow.ClientSize.Width-24),MaximumSize=new Size(Math.Max(150,flow.ClientSize.Width-24),0),AutoSize=true,AutoSizeMode=AutoSizeMode.GrowAndShrink,FlowDirection=FlowDirection.TopDown,WrapContents=false,Padding=new Padding(12),Margin=new Padding(2,3,2,10),BackColor=GuidePalette.Surface,Tag=o};
     void Line(string text,bool strong=false){card.Controls.Add(new Label(){Text=text,AutoSize=true,MaximumSize=new Size(Math.Max(130,card.Width-22),0),ForeColor=strong?GuidePalette.Gold:GuidePalette.Muted,Font=new Font("Segoe UI",strong?12:9,strong?FontStyle.Bold:FontStyle.Regular),Margin=new Padding(0,2,0,3)});}
@@ -57,19 +63,20 @@ public sealed partial class MainForm
     Line("Qty: "+(o.Quantity?.ToString("N0")??"Unknown")+" • "+o.Provider);
     Line((kind==EvidenceKind.Buying?"Buyer: ":"Seller: ")+(string.IsNullOrWhiteSpace(o.Seller)?"Not provided":o.Seller));
     if(o.Equipment)Line("Variant: "+(o.VariantComplete?o.Variant:"Incomplete details — check source"));
-    Line(string.IsNullOrWhiteSpace(o.Note)?"Location / seller notes: not provided":o.Note);
-    Line("Posted: "+(o.ObservedAt?.ToLocalTime().ToString("g")??"Unknown")+" • Checked: "+o.RetrievedAt.ToLocalTime().ToString("g"));
+    if(!listingCompact.Checked){Line(string.IsNullOrWhiteSpace(o.Note)?"Location / seller notes: not provided":o.Note);
+    Line("Posted: "+(o.ObservedAt?.ToLocalTime().ToString("g")??"Unknown")+" • Checked: "+o.RetrievedAt.ToLocalTime().ToString("g"));}
     Line(ReliabilityTools.EvidenceStatus(o,settings.Sources.Any(s=>s.Id==o.Provider&&s.Authorized),now,settings.FreshHours));
     var actions=new FlowLayoutPanel(){AutoSize=true,MaximumSize=new Size(Math.Max(130,card.Width-22),0),Width=Math.Max(130,card.Width-22),WrapContents=true};
-    actions.Controls.Add(Button("Open listing",()=>Open(o.Url)));
+    actions.Controls.Add(Button("Open listing",()=>Open(o.Url)));if(listingCompact.Checked)actions.Controls.Add(Button("Details",()=>MessageBox.Show(this,ListingDetails(o),o.Name,MessageBoxButtons.OK,MessageBoxIcon.Information)));
     void Copy(string value){try{Clipboard.SetText(value);}catch{footer.Text="Clipboard busy. Try again.";}}
     if(!string.IsNullOrWhiteSpace(o.Seller))actions.Controls.Add(Button("Copy name",()=>Copy(o.Seller)));
-    actions.Controls.Add(Button("Copy link",()=>Copy(o.Url)));card.Controls.Add(actions);flow.Controls.Add(card);
+    actions.Controls.Add(Button("Copy link",()=>Copy(o.Url)));actions.Controls.Add(Button("Copy details",()=>Copy(ListingDetails(o))));card.Controls.Add(actions);flow.Controls.Add(card);
    }
    flow.ResumeLayout();
   }
   Fill(sellCards,sellCount,EvidenceKind.Asking,"FOR SALE");Fill(buyCards,buyCount,EvidenceKind.Buying,"LOOKING TO BUY");
  }
+ static string ListingDetails(Observation o)=>string.Join(Environment.NewLine,o.Name,(o.Kind==EvidenceKind.Buying?"BUY":"SELL")+" • "+(o.PriceApproximate?"approximately ":"")+TextKey.Mesos(o.UnitPrice)+" mesos / unit","Quantity: "+(o.Quantity?.ToString("N0")??"Unknown"),"Player: "+(string.IsNullOrWhiteSpace(o.Seller)?"Not provided":o.Seller),"Source: "+o.Provider,"Details: "+o.Note,"Checked: "+o.RetrievedAt.ToLocalTime().ToString("g"),o.Url);
 }
 
 

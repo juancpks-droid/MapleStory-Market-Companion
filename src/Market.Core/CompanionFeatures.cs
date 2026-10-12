@@ -9,6 +9,7 @@ public sealed record TradeOutcome(string Id,decimal MatchedProfit,long Unmatched
 public sealed record ActivityRow(string Name,string Variant,DateTimeOffset First,DateTimeOffset Last,decimal EarlierMedian,decimal LatestMedian,int EarlierCount,int LatestCount);
 public sealed class CompanionFeatures
 {
+    public List<string> RecentItems {get;set;}=[];
     public PlanningOptions Planning {get;set;}=new();
     public PolishOptions Polish {get;set;}=new();
     public WorkspaceOptions Workspace {get;set;}=new();
@@ -36,6 +37,7 @@ public sealed class CompanionFeatures
     public static CompanionFeatures Read(string text){var data=JsonSerializer.Deserialize<CompanionFeatures>(text,Json.Options)??throw new FormatException("Missing companion data");data.Validate();return data;}
     public void Validate()
     {
+        RecentItems=(RecentItems??[]).Where(x=>!string.IsNullOrWhiteSpace(x)&&x.Length<=200).Distinct(StringComparer.OrdinalIgnoreCase).Take(12).ToList();
         if(Planning is null)throw new FormatException("Missing planning preferences");Planning.Validate();
         if(Polish is null)throw new FormatException("Missing polish settings");Polish.Validate();if(Workspace is null)throw new FormatException("Missing workspace options");Workspace.Validate();ValidateMerchant();
         if(CharacterEquipment is null||Inbox is null||Inbox.Count>2000||TextSize is <9 or >13)throw new FormatException("Invalid interface preferences");

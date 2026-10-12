@@ -24,9 +24,10 @@ public sealed class ClassicButton : Button
 }
 public sealed class ClassicTitle : Label
 {
+ public Func<string>? PriceStatus;
  public ClassicTitle(){DoubleBuffered=true;Font=new Font("Segoe UI",21,FontStyle.Bold);ForeColor=GuidePalette.Text;}
  protected override void OnPaint(PaintEventArgs e){
-  TextRenderer.DrawText(e.Graphics,Text,Font,new Rectangle(24,9,Width-48,35),GuidePalette.Text,TextFormatFlags.EndEllipsis);
+  TextRenderer.DrawText(e.Graphics,Text,Font,new Rectangle(24,9,Math.Max(1,Width-220),35),GuidePalette.Text,TextFormatFlags.EndEllipsis);
   string description=Text switch{
    "Dashboard"=>"Your market at a glance • Explore listings, demand and watched items",
    "Price Checker"=>"Find an item • Compare player offers and NPC reference prices",
@@ -37,7 +38,8 @@ public sealed class ClassicTitle : Label
    "Settings"=>"Make it yours • Themes, data sources, updates and backups",
    "Deal Finder"=>"Compare opportunities using recent, comparable market evidence",
    _=>"Maple Market • Your classic world companion"};
-  using var small=new Font("Segoe UI",9);TextRenderer.DrawText(e.Graphics,description,small,new Rectangle(26,47,Width-52,22),GuidePalette.Muted,TextFormatFlags.EndEllipsis);
+  if(Text=="Price Checker"&&PriceStatus is not null)description=PriceStatus();
+  using var small=new Font("Segoe UI",9);TextRenderer.DrawText(e.Graphics,description,small,new Rectangle(26,47,Math.Max(1,Width-220),22),GuidePalette.Muted,TextFormatFlags.EndEllipsis);
  }
  protected override void OnPaintBackground(PaintEventArgs e){
   e.Graphics.Clear(GuidePalette.Back);

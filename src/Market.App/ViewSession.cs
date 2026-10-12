@@ -17,7 +17,7 @@ public sealed partial class MainForm
     string SessionPath=>Path.Combine(dataDirectory,"view-session.json");
     string lastSessionJson="";
     Dictionary<string,Control> SessionControls()=>new(){
-        ["listingSort"]=listingSort,["listingMin"]=listingMin,["listingMax"]=listingMax,["dashboardSearch"]=quickSearch,["priceSearch"]=search,["fmSearch"]=fmSearch,
+        ["listingSource"]=listingSource,["listingRecent"]=listingRecent,["listingCompact"]=listingCompact,["listingSort"]=listingSort,["listingMin"]=listingMin,["listingMax"]=listingMax,["dashboardSearch"]=quickSearch,["priceSearch"]=search,["fmSearch"]=fmSearch,
         ["finderDropSource"]=finderDropSource,["finderSearch"]=finderSearch,["finderCategory"]=finderCategory,["finderSource"]=finderSource,["finderListed"]=finderListed,
         ["inventorySearch"]=inventorySearch,["inventorySort"]=inventorySort,["catalogSearch"]=catalogSearch,["catalogCategory"]=catalogCategory
     };

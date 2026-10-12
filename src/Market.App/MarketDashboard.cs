@@ -8,7 +8,7 @@ public sealed partial class MainForm
  void BuildMarketDashboard(){
   var page=pages["Dashboard"];page.Controls.Clear();
   var bar=Toolbar();bar.Height=45;bar.Controls.Add(Button("Find an item",()=>ShowPage("Price Checker")));bar.Controls.Add(Button("Refresh market",async()=>await RefreshSources()));bar.Controls.Add(Button("Watchlist",()=>ShowPage("Watchlist")));bar.Controls.Add(Button("Alert Inbox",()=>ShowPage("Alert Inbox")));
-  var columns=new TableLayoutPanel(){Dock=DockStyle.Fill,ColumnCount=2};columns.ColumnStyles.Add(new(SizeType.Percent,50));columns.ColumnStyles.Add(new(SizeType.Percent,50));
+  AddSavedShortcuts(bar);var columns=new TableLayoutPanel(){Dock=DockStyle.Fill,ColumnCount=2};columns.ColumnStyles.Add(new(SizeType.Percent,50));columns.ColumnStyles.Add(new(SizeType.Percent,50));
   Panel Section(string title,DataGridView grid){var panel=new Panel(){Dock=DockStyle.Fill,Padding=new Padding(4)};var label=Info(36);label.Text=title;panel.Controls.Add(grid);panel.Controls.Add(label);grid.CellDoubleClick+=(_,e)=>{if(e.RowIndex>=0&&grid.Rows[e.RowIndex].Tag is string name){search.Text=name;ShowPage("Price Checker");}};return panel;}
   columns.Controls.Add(Section("HOT LISTINGS • Most listed for sale",hotMarket));columns.Controls.Add(Section("WANTED • Most buy requests",wantedMarket));
   var metrics=new TableLayoutPanel(){Dock=DockStyle.Top,Height=116,ColumnCount=4,RowCount=1};

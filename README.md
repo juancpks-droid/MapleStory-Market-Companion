@@ -1,6 +1,6 @@
 # MapleStory Market Companion
 
-An unofficial Windows companion for MapleStory players: market observations, inventory slots, watchlists, trading records, item reference websites and in-app ad blocking.
+An unofficial Windows companion for MapleStory players: market listings, watchlists, price graphs, monster drops, item reference websites and in-app ad blocking.
 
 ## Install
 
@@ -14,7 +14,7 @@ Version 1.20.3 checks this repository's stable releases at startup and every hou
 
 Older ZIP versions need this installer once. Saved data stays in `%LOCALAPPDATA%\MapleStoryClassicMarketCompanion`; the updater does not upload your inventory or journal. A personal recovery backup is written before an update. Do not run old and new copies together.
 
-If an update cannot be downloaded, the current version remains usable. Settings has a manual retry button. If installation fails, download and run the latest Setup again. Use the Backups page to export important personal records.
+If an update cannot be downloaded, the current version remains usable. Settings has a manual retry button. If installation fails, download and run the latest Setup again. Use Backups inside Settings to export important personal records.
 
 ## Price limitations
 
@@ -26,7 +26,7 @@ Install .NET SDK 10 and GitHub CLI. Sign into GitHub CLI as the repository owner
 
 ```powershell
 dotnet run --project src/Market.Tests -c Release
-./Release.ps1 -Version 1.18.1
+./Release.ps1 -Version 1.22.0
 ```
 
 The release script tests, builds and packages the Windows app and creates a **draft** GitHub release. Review it on GitHub and publish when ready. Publishing makes that version available to all clients with automatic updates enabled. Versions must increase. No access token is embedded in the application.
@@ -52,3 +52,9 @@ Version 1.20.4 saves your last tab, browsing searches and filters, chart range, 
 
 From v1.20.8, select an item in Item Finder and open Monster drops & locations below the results. On-demand exact-name lookups show up to five monsters and three recorded maps each, credited and linked to NiaMeowDB. Community reports and historical MapleSEA evidence are labelled separately and may differ from your server. Missing information does not prove an item has no drops. The reference cache stays in memory for one hour; no drop database is bundled.
 
+
+## Faster navigation and listing tools (1.22.0)
+
+Use the header arrows (Alt+Left / Alt+Right) to revisit pages. Go to (Ctrl+Shift+P) finds pages, watched items, and recent searches. The Dashboard also has Recent items and Watched items menus. Recent searches keep the last 12 distinct queries and can be cleared from their menu.
+
+Price Checker adds source and recent-only filters, compact cards with a Details button, Reset filters, and Copy details for listing price, quantity, player, notes, source and link. Recent-only requires an enabled source, fresh evidence and a retrieval within 30 minutes. These controls filter displayed listings; they do not change valuation rules. Filters, compact mode and recent searches are saved across restarts. The header shows lookup and offline status.

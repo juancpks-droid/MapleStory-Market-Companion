@@ -85,7 +85,7 @@ public sealed partial class MainForm : Form
 
         var main=new Panel(){Dock=DockStyle.Fill,Padding=new Padding(0)}; main.Controls.Add(content); main.Controls.Add(title); main.Controls.Add(footer); title.Padding=new Padding(20,10,0,0); Controls.Add(main); Controls.Add(sidebar);
 
-        ConfigureIcons(); BuildDashboard(); BuildPrices(); BuildDeals(); BuildWatch(); BuildInventory(); BuildFm(); BuildWebsites(); BuildSettings(); BuildCatalog(); BuildComparison(); BuildCompleteUpgrade(); BuildDailyTools(); BuildMerchantTools(); BuildWorkspaceTools(); BuildUsabilityTools(); BuildPolishTools(); BuildReliabilityPolish(); ConfigureTradingTools(); BuildCompanionUpgrade(); BuildPlanningUpgrade(); BuildWebsiteLookup(); BuildItemFinder(); BuildSettingsSections();BuildMarketDashboard(); ApplyTextSize(); ApplyGuideStyle();ApplyMarketFocus();
+        ConfigureIcons(); BuildDashboard(); BuildPrices(); BuildDeals(); BuildWatch(); BuildInventory(); BuildFm(); BuildWebsites(); BuildSettings(); BuildCatalog(); BuildComparison(); BuildCompleteUpgrade(); BuildDailyTools(); BuildMerchantTools(); BuildWorkspaceTools(); BuildUsabilityTools(); BuildPolishTools(); BuildReliabilityPolish(); ConfigureTradingTools(); BuildCompanionUpgrade(); BuildPlanningUpgrade(); BuildWebsiteLookup(); BuildItemFinder(); BuildSettingsSections();BuildMarketDashboard();BuildMarketShortcuts(); ApplyTextSize(); ApplyGuideStyle();ApplyMarketFocus();
 
         var menu=new ContextMenuStrip(); menu.Items.Add("Open Market Companion",null,(_,_)=>{Show();WindowState=FormWindowState.Normal;Activate();}); menu.Items.Add("Snooze alerts for 30 minutes",null,(_,_)=>Snooze()); menu.Items.Add("Exit",null,(_,_)=>ExitApplication());
 
@@ -288,7 +288,7 @@ public sealed partial class MainForm : Form
 
     {
 
-        if(!MarketPage(name))name="Dashboard";if(name=="Backups"){name="Settings";settingsSections.SelectedIndex=1;}EnsureNavigation(name);if(name=="Duplicate Review")RenderDuplicates();if(usabilityReady&&new[]{"Price Changes","Seller Comparison","Undo Center","Profit Breakdown"}.Contains(name))RenderUsability();if(features.MenuSounds&&selected!=name)System.Media.SystemSounds.Asterisk.Play();selected=name;title.Text=name;foreach(var (n,p) in pages){p.Visible=n==name;if(p.Visible)p.BringToFront();navigation[n].ForeColor=n==name?Accent:TextColor;navigation[n].BackColor=n==name?Accent:Surface;}if(navigation[name].Parent is ScrollableControl navScroll)navScroll.ScrollControlIntoView(navigation[name]);if(workspaceReady&&new[]{"Transfers","Shopping List","Selling Planner","Search Everything"}.Contains(name))RenderWorkspace();if(name=="Item Finder")RenderItemFinder();if(name=="Price Checker")RenderPrices();if(name=="Dashboard"){RenderDashboard();ApplyDashboardPanels();RenderMarketDashboard();}if(name=="Compare")RenderComparison();if(name=="Item Catalog")LoadCatalogImages();if(name=="Equipment")RenderEquipment();if(name=="Inventory")RenderInventorySlots();if(name=="Market Activity")RenderActivity();if(name=="Settings")menuSoundCheck.Checked=features.MenuSounds;if(name=="Characters"||name=="Alert Inbox"||name=="Market Health")RenderDailyTools();
+        if(!MarketPage(name))name="Dashboard";if(name=="Backups"){name="Settings";settingsSections.SelectedIndex=1;}EnsureNavigation(name);if(name=="Duplicate Review")RenderDuplicates();if(usabilityReady&&new[]{"Price Changes","Seller Comparison","Undo Center","Profit Breakdown"}.Contains(name))RenderUsability();if(features.MenuSounds&&selected!=name)System.Media.SystemSounds.Asterisk.Play();TrackPage(name);selected=name;title.Text=name;foreach(var (n,p) in pages){p.Visible=n==name;if(p.Visible)p.BringToFront();navigation[n].ForeColor=n==name?Accent:TextColor;navigation[n].BackColor=n==name?Accent:Surface;}if(navigation[name].Parent is ScrollableControl navScroll)navScroll.ScrollControlIntoView(navigation[name]);if(workspaceReady&&new[]{"Transfers","Shopping List","Selling Planner","Search Everything"}.Contains(name))RenderWorkspace();if(name=="Item Finder")RenderItemFinder();if(name=="Price Checker")RenderPrices();if(name=="Dashboard"){RenderDashboard();ApplyDashboardPanels();RenderMarketDashboard();}if(name=="Compare")RenderComparison();if(name=="Item Catalog")LoadCatalogImages();if(name=="Equipment")RenderEquipment();if(name=="Inventory")RenderInventorySlots();if(name=="Market Activity")RenderActivity();if(name=="Settings")menuSoundCheck.Checked=features.MenuSounds;if(name=="Characters"||name=="Alert Inbox"||name=="Market Health")RenderDailyTools();
 
     }
 
@@ -296,7 +296,7 @@ public sealed partial class MainForm : Form
 
     {
 
-        if(Offline){UpdateConnectionStatus();footer.Text="Offline: searching saved evidence. Turn off Work offline to request new data.";RenderPrices();return;}if(busy){if(onlineSearch){pendingSearch=true;pendingLookup=lookupQuery??ResolvePriceQuery(search.Text);footer.Text="Search queued after the current market refresh.";}return;}busy=true;refreshStop=CancellationTokenSource.CreateLinkedTokenSource(stop.Token);footer.Text="Checking source access and refreshing eligible sources…";
+        if(Offline){lookupStatus.Text="Offline • showing saved prices";UpdateConnectionStatus();footer.Text="Offline: searching saved evidence. Turn off Work offline to request new data.";RenderPrices();return;}if(busy){if(onlineSearch){pendingSearch=true;pendingLookup=lookupQuery??ResolvePriceQuery(search.Text);footer.Text="Search queued after the current market refresh.";lookupStatus.Text="Queued • "+pendingLookup;}return;}busy=true;lookupStatus.Text="Checking public sources • "+(lookupQuery??search.Text);refreshStop=CancellationTokenSource.CreateLinkedTokenSource(stop.Token);footer.Text="Checking source access and refreshing eligible sources…";
 
         try
 
@@ -321,7 +321,7 @@ public sealed partial class MainForm : Form
 
         catch(Exception e){Log(e);footer.Text="Refresh could not finish. Existing data retained; see source status.";}
 
-        finally{busy=false;refreshStop?.Dispose();refreshStop=null;UpdateConnectionStatus();}
+        finally{lookupStatus.Text=Offline?"Offline • showing saved prices":"Last check "+DateTime.Now.ToString("t")+" • "+(lookupQuery??search.Text)+" • See Sources for availability and cache limits";busy=false;refreshStop?.Dispose();refreshStop=null;UpdateConnectionStatus();}
 
         if(pendingSearch&&!stop.IsCancellationRequested){pendingSearch=false;var queued=pendingLookup;pendingLookup="";await RefreshSources(true,queued);}
 
