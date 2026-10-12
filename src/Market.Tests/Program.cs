@@ -502,6 +502,23 @@ await Test("All item names accept trailing level metadata and retain both drop e
  Check(rows.Count==2&&rows.Single(r=>r.Id==38).Evidence.Contains("Dropped By")&&rows.Single(r=>r.Id==38).Evidence.Contains("MSEA Reference Drops"));
  Throws(()=>DropReferenceReader.ReferenceMonsters(html,"Red Moonlight"));
 }));
+await Test("Drop fallback handles failure, empty results, deadline and user cancellation",async()=>{
+ var empty=new ItemDrops("Shell","","",[],now);var found=empty with{Monsters=[new("Snail","https://ccplz.cc/monsters/snail","Historical",[])]};int calls=0;
+ Task<ItemDrops> Backup(string n,CancellationToken c){calls++;return Task.FromResult(found);}
+ var result=await DropFallback.Lookup("Shell",(_,_)=>throw new HttpRequestException(),Backup,CancellationToken.None);Check(result.Source=="CCPLZ"&&calls==1);
+ result=await DropFallback.Lookup("Shell",(_,_)=>Task.FromResult(empty),Backup,CancellationToken.None);Check(result.Source=="CCPLZ"&&calls==2);
+ result=await DropFallback.Lookup("Shell",(_,_)=>Task.FromResult(found),Backup,CancellationToken.None);Check(result.Source=="NiaMeowDB"&&calls==2);
+ result=await DropFallback.Lookup("Shell",async(_,c)=>{await Task.Delay(10000,c);return empty;},Backup,CancellationToken.None,primaryTimeout:TimeSpan.FromMilliseconds(20));Check(result.Source=="CCPLZ"&&calls==3);
+ using var cancel=new CancellationTokenSource();cancel.Cancel();bool cancelled=false;try{await DropFallback.Lookup("Shell",(_,c)=>Task.FromCanceled<ItemDrops>(c),Backup,cancel.Token);}catch(OperationCanceledException){cancelled=true;}Check(cancelled&&calls==3);
+ result=await DropFallback.Lookup("Shell",(_,_)=>throw new HttpRequestException(),(_,_)=>throw new HttpRequestException(),CancellationToken.None);Check(result.Drops.Monsters.Count==0&&result.Notice.Contains("also could not load"));
+});
+await Test("Quest uses source name lookup, rejects ambiguity and preserves historical evidence",()=>Sync(()=>{
+ const string index="<a href='/items/1051019/Blue-Moonlight'>Blue Moonlight</a><a href='/items/1051025/Dark-Calaf'>Dark Calaf</a>";
+ Check(QuestDropReader.ResolveItem(index,"Blue Moonlight")=="https://maplestory.quest/items/1051019/Blue-Moonlight");Check(QuestDropReader.ResolveItem(index+"<a href='/items/2/Blue-Moonlight'>Blue Moonlight</a>","Blue Moonlight") is null);
+ const string html="<h1>Wooden Club</h1><section><header><h3>Dropped by</h3><span>an older version of the game, rates differ</span></header><a href='/monsters/6/Stump'><span class='truncate'>Stump</span></a></section><a href='/monsters/7/Slime'>Unrelated</a>";
+ var monster=QuestDropReader.ReadReferences(html,"Wooden Club").Single();Check(monster.Name=="Stump"&&monster.Evidence.Contains("Historical"));Throws(()=>QuestDropReader.ReadReferences(html,"Sword"));
+ var maps=QuestDropReader.ReadMaps("<h1>Stump</h1><section><header><h2>Where it spawns (1)</h2></header><a href='/maps/1/Forest'>Forest</a><a href='https://evil.test/maps/2'>Unsafe</a></section>",monster);Check(maps.Locations.Single().Name=="Forest");Throws(()=>QuestDropReader.ReadMaps("<h1>Slime</h1>",monster));
+}));
 Directory.CreateDirectory("test-results");File.WriteAllText("test-results/results.json",JsonSerializer.Serialize(new{total=results.Count,failed=failures,results},Json.Options));Console.WriteLine($"{results.Count-failures}/{results.Count} passed");Environment.ExitCode=failures==0?0:1;
 
 

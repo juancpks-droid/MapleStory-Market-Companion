@@ -24,6 +24,7 @@ static class Program
         if(args.Contains("--session-smoke")){SessionSmoke.Run();return;}
         if(args.Contains("--shortcut-smoke")){DesktopShortcut.Smoke();return;}
         if(args.Contains("--inline-drops-smoke")){InlineDropsSmoke.Run();return;}
+        if(args.Contains("--quest-drops-smoke")){QuestDropsSmoke.Run();return;}
         if(args.Contains("--drops-smoke")){DropReferenceSmoke.Run();return;}
         if(args.Contains("--finder-smoke")){FinderSmoke.Run();return;}
         if(args.Length==3&&args[0]=="--updater-smoke"){UpdaterSmoke.Run(args[1],args[2]).GetAwaiter().GetResult();return;}
