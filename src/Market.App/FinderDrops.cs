@@ -11,7 +11,7 @@ public sealed partial class MainForm
  readonly CcplzReader ccplzReader=new();
  readonly ComboBox finderDropSource=new GuideComboBox(){Width=125,DropDownStyle=ComboBoxStyle.DropDownList,AccessibleName="Drop reference source"};
  CancellationTokenSource? dropLookupStop;
- string dropItemKey="",dropSourceUrl="";int dropGeneration;
+ string dropItemKey="",dropSourceUrl="";int dropGeneration;TimeSpan dropLookupTimeout=TimeSpan.FromMinutes(2);
  Control BuildFinderDetails(Control listings){
   var asks=new TabPage("Market listings");asks.Controls.Add(listings);finderDetailTabs.TabPages.Add(asks);
   var drops=new TabPage("Monster drops & locations");
@@ -50,20 +50,24 @@ public sealed partial class MainForm
   if(finderDetailTabs.SelectedIndex!=1||selected!="Item Finder")return;
   var item=FinderSelection;string source=finderDropSource.Text;string key=item is null?"":source+"|"+item.Id+"|"+item.Name;
   if(key==dropItemKey&&key.Length>0)return;
-  dropItemKey=key;int generation=++dropGeneration;dropLookupStop?.Cancel();dropLookupStop?.Dispose();dropLookupStop=CancellationTokenSource.CreateLinkedTokenSource(stop.Token);var ct=dropLookupStop.Token;
+  dropItemKey=key;int generation=++dropGeneration;dropLookupStop?.Cancel();dropLookupStop?.Dispose();dropLookupStop=CancellationTokenSource.CreateLinkedTokenSource(stop.Token);dropLookupStop.CancelAfter(dropLookupTimeout);var ct=dropLookupStop.Token;
   finderDrops.Rows.Clear();dropSourceUrl="";ShowDropSuggestions([]);
   if(item is null){finderDropNote.Text="Select an item to see monster drops and locations.";return;}
   if(Offline){dropItemKey="";finderDropNote.Text="Offline: turn off Work offline, then select Load / retry to look up drop references.";return;}
   finderDropNote.Text="Looking up "+item.Name+"… Checking the item and related references; source requests are spaced.";
+  var started=DateTimeOffset.UtcNow;using var progress=new System.Windows.Forms.Timer(){Interval=1000};
+  progress.Tick+=(_,_)=>{if(!closing&&!IsDisposed&&generation==dropGeneration)finderDropNote.Text=$"Looking up {item.Name}… {(int)(DateTimeOffset.UtcNow-started).TotalSeconds}s elapsed • Waiting for item, monster and map details. Requests are spaced; maximum wait 2 minutes.";};progress.Start();
   try{
    await Task.Delay(500,ct);var result=source=="CCPLZ"?await ccplzReader.Lookup(item.Name,ct):await dropReader.Lookup(item.Name,ct);
    if(closing||IsDisposed||generation!=dropGeneration||Offline)return;
    ShowDropSuggestions(result.Suggestions);dropSourceUrl=result.SourceUrl;finderDropNote.Text=result.Item+" • "+source+" • Checked "+result.CheckedAt.ToLocalTime().ToString("g")+"\n"+result.Message;
    foreach(var monster in result.Monsters){int row=finderDrops.Rows.Add(monster.Name,monster.Locations.Count==0?"No recorded map information":string.Join("\n",monster.Locations.Select(m=>m.Name)),monster.Evidence);finderDrops.Rows[row].Tag=monster;}
    finderDrops.AutoResizeRows(DataGridViewAutoSizeRowsMode.AllCells);
-  }catch(OperationCanceledException){}
+  }catch(OperationCanceledException){ShowDropTimeout(generation);}
   catch(Exception){if(!closing&&!IsDisposed&&generation==dropGeneration){dropItemKey="";finderDropNote.Text="Drop reference unavailable. Select Load / retry later, or use the website reference button. This does not mean the item has no drops.";}}
+  finally{progress.Stop();}
  }
+ void ShowDropTimeout(int generation){if(closing||IsDisposed||generation!=dropGeneration||Offline)return;dropItemKey="";finderDropNote.Text="The drop lookup timed out. No completed result was received. Select Load / retry, or switch to the other reference source.";}
 }
 
 

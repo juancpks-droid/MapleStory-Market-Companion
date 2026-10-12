@@ -16,7 +16,7 @@ public sealed partial class MainForm
   Size=new Size(1024,720);ShowPage("Item Finder");finderSearch.Text="Snail Shell";RenderItemFinder();
   void SelectShell(){var row=finderItems.Rows.Cast<DataGridViewRow>().Single(r=>r.Tag is FinderResult f&&f.Name=="Snail Shell");finderItems.ClearSelection();row.Selected=true;}
   SelectShell();finderDetailTabs.SelectedIndex=1;QueueFinderDrops();if(!finderDropNote.Text.StartsWith("Offline:"))throw new Exception("Offline state missing");
-  features.Offline=false;finderSearch.Text="Red Potion";RenderItemFinder();finderSearch.Text="Snail Shell";RenderItemFinder();SelectShell();
+  features.Offline=false;dropLookupTimeout=TimeSpan.FromMilliseconds(50);dropItemKey="";QueueFinderDrops();await Task.Delay(200);if(!finderDropNote.Text.Contains("timed out")||dropItemKey.Length!=0)throw new Exception("Cancelled lookup remained stuck");dropLookupTimeout=TimeSpan.FromMinutes(2);finderSearch.Text="Red Potion";RenderItemFinder();finderSearch.Text="Snail Shell";RenderItemFinder();SelectShell();
   for(int i=0;i<120&&finderDrops.Rows.Count==0;i++){await Task.Delay(500);if(i is 5 or 10 or 15)RenderItemFinder();if(finderDropNote.Text.StartsWith("Drop reference unavailable"))throw new Exception(finderDropNote.Text);}
   if(!finderDrops.Rows.Cast<DataGridViewRow>().Any(r=>r.Tag is DropMonster m&&m.Name=="Snail"&&m.Locations.Any(l=>l.Name=="Snail Hunting Ground I")))throw new Exception("Inline Snail and map missing: "+finderDropNote.Text);
   CapturePreview(Path.Combine(dir,"layout-diagnostic.png"));
