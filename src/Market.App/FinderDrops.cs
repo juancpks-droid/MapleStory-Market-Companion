@@ -20,11 +20,11 @@ public sealed partial class MainForm
   finderDropSource.Items.AddRange(["NiaMeowDB","CCPLZ","MapleStory Quest","MapleClassic Wiki","Automatic"]);finderDropSource.SelectedItem="Automatic";finderDropSource.SelectedIndexChanged+=(_,_)=>{dropItemKey="";QueueFinderDrops();};actions.Controls.Add(finderDropSource);
   actions.Controls.Add(Button("Load / retry",()=>{dropItemKey="";QueueFinderDrops();}));
   actions.Controls.Add(Button("Open source item",()=>{if(dropSourceUrl.Length>0&&!Offline)OpenDropReference(dropSourceUrl);}));
-  relatedDropPanel.Controls.Add(new Label(){Text="Related items (unconfirmed)",AutoSize=true,Padding=new Padding(3,8,3,0)});relatedDropPanel.Controls.Add(relatedDropChoice);relatedDropPanel.Controls.Add(Button("View related item",()=>{if(!Offline&&relatedDropChoice.SelectedItem is DropItemSuggestion suggestion)new WebsiteViewer(new("NiaMeowDB â€¢ "+suggestion.Name,suggestion.Url,suggestion.Name,false,"Related suggestion, not a confirmed match for the selected item. Check its identity and drop evidence."),dataDirectory).Show(this);}));
+  relatedDropPanel.Controls.Add(new Label(){Text="Related items (unconfirmed)",AutoSize=true,Padding=new Padding(3,8,3,0)});relatedDropPanel.Controls.Add(relatedDropChoice);relatedDropPanel.Controls.Add(Button("View related item",()=>{if(!Offline&&relatedDropChoice.SelectedItem is DropItemSuggestion suggestion)new WebsiteViewer(new("NiaMeowDB • "+suggestion.Name,suggestion.Url,suggestion.Name,false,"Related suggestion, not a confirmed match for the selected item. Check its identity and drop evidence."),dataDirectory).Show(this);}));
   drops.Controls.Add(finderDrops);drops.Controls.Add(relatedDropPanel);FitPriceText(finderDropNote);drops.Controls.Add(finderDropNote);drops.Controls.Add(actions);finderDetailTabs.TabPages.Add(drops);BuildItemReferenceTab();
   finderDrops.DefaultCellStyle.WrapMode=DataGridViewTriState.True;finderDrops.AutoSizeRowsMode=DataGridViewAutoSizeRowsMode.AllCells;
   SetColumns(finderDrops,["Monster","Where to find it (click for maps)","Evidence"]);
-  finderDrops.Columns[0].FillWeight=22;finderDrops.Columns[1].FillWeight=48;finderDrops.Columns[2].FillWeight=30;foreach(DataGridViewColumn column in finderDrops.Columns)column.DefaultCellStyle.WrapMode=DataGridViewTriState.True;
+  finderDrops.Columns[0].FillWeight=22;finderDrops.Columns[1].FillWeight=48;finderDrops.Columns[2].FillWeight=30;foreach(DataGridViewColumn column in finderDrops.Columns){column.DefaultCellStyle.WrapMode=DataGridViewTriState.True;column.DefaultCellStyle.Alignment=DataGridViewContentAlignment.TopLeft;}
   finderDrops.CellClick+=(_,e)=>{if(Offline||e.RowIndex<0||finderDrops.Rows[e.RowIndex].Tag is not DropMonster monster)return;
    if(e.ColumnIndex==1&&monster.Locations.Count>0){var menu=new ContextMenuStrip();foreach(var map in monster.Locations)menu.Items.Add(map.Name,null,(_,_)=>OpenDropReference(map.Url));menu.Closed+=(_,_)=>menu.Dispose();menu.Show(Cursor.Position);}
    else if(e.ColumnIndex==0)OpenDropReference(monster.Url);
@@ -35,7 +35,7 @@ public sealed partial class MainForm
   return finderDetailTabs;
  }
  void ShowDropSuggestions(IReadOnlyList<DropItemSuggestion> suggestions){relatedDropChoice.Items.Clear();relatedDropChoice.Items.AddRange(suggestions.Cast<object>().ToArray());relatedDropPanel.Visible=suggestions.Count>0;if(suggestions.Count>0)relatedDropChoice.SelectedIndex=0;}
- void OpenDropReference(string url){if(!Offline)new WebsiteViewer(new((new Uri(url).Host=="mapleclassic.wiki"?"MapleClassic Wiki":new Uri(url).Host=="ccplz.cc"?"CCPLZ":new Uri(url).Host=="maplestory.quest"?"MapleStory Quest":"NiaMeowDB")+" â€¢ Drop reference",url,FinderSelection?.Name??"",false,"Community reports and historical references are labelled separately. Check source coverage."),dataDirectory).Show(this);}
+ void OpenDropReference(string url){if(!Offline)new WebsiteViewer(new((new Uri(url).Host=="mapleclassic.wiki"?"MapleClassic Wiki":new Uri(url).Host=="ccplz.cc"?"CCPLZ":new Uri(url).Host=="maplestory.quest"?"MapleStory Quest":"NiaMeowDB")+" • Drop reference",url,FinderSelection?.Name??"",false,"Community reports and historical references are labelled separately. Check source coverage."),dataDirectory).Show(this);}
  async Task OpenCcplzItem(){
   var item=FinderSelection;if(item is null)return;
   if(Offline){MessageBox.Show(this,"Turn off Work offline to open CCPLZ.","Offline");return;}
@@ -43,7 +43,7 @@ public sealed partial class MainForm
    var url=await ccplzReader.Resolve(item.Name,stop.Token);
    if(closing||IsDisposed||Offline)return;
    if(url is null){MessageBox.Show(this,"No exact CCPLZ page was verified for "+item.Name+". It may have a different name or be missing from the reference.","CCPLZ item lookup");return;}
-   new WebsiteViewer(new("CCPLZ â€¢ "+item.Name,url,item.Name,false,"CCPLZ reference. Reported and historical data can differ from your server."),dataDirectory).Show(this);
+   new WebsiteViewer(new("CCPLZ • "+item.Name,url,item.Name,false,"CCPLZ reference. Reported and historical data can differ from your server."),dataDirectory).Show(this);
   }catch(OperationCanceledException){}catch(Exception){if(!closing&&!IsDisposed)MessageBox.Show(this,"CCPLZ could not be reached. Please try again later.","CCPLZ item lookup");}
  }
  async void QueueFinderDrops(){
@@ -56,9 +56,9 @@ public sealed partial class MainForm
   finderDrops.Rows.Clear();dropSourceUrl="";ShowDropSuggestions([]);
   if(item is null){finderDropNote.Text="Select an item to see monster drops and locations.";return;}
   if(Offline){dropItemKey="";finderDropNote.Text="Offline: turn off Work offline, then select Load / retry to look up drop references.";return;}
-  finderDropNote.Text="Looking up "+item.Name+"â€¦ Checking the item and related references; source requests are spaced.";
+  finderDropNote.Text="Looking up "+item.Name+"… Checking the item and related references; source requests are spaced.";
   string stage=source;var started=DateTimeOffset.UtcNow;using var progress=new System.Windows.Forms.Timer(){Interval=1000};
-  progress.Tick+=(_,_)=>{if(!closing&&!IsDisposed&&generation==dropGeneration)finderDropNote.Text=$"Looking up {item.Name}â€¦ {(int)(DateTimeOffset.UtcNow-started).TotalSeconds}s elapsed â€¢ {stage} â€¢ Waiting for item, monster and map details. Requests are spaced; maximum wait 2 minutes.";};progress.Start();
+  progress.Tick+=(_,_)=>{if(!closing&&!IsDisposed&&generation==dropGeneration)finderDropNote.Text=$"Looking up {item.Name}… {(int)(DateTimeOffset.UtcNow-started).TotalSeconds}s elapsed • {stage} • Waiting for item, monster and map details. Requests are spaced; maximum wait 2 minutes.";};progress.Start();
   try{
    await Task.Delay(500,ct);
    DropLookupResult lookup;
@@ -67,8 +67,8 @@ public sealed partial class MainForm
    else lookup=new(source=="MapleClassic Wiki"?await wikiReader.Lookup(item.Name,ct):source=="CCPLZ"?await ccplzReader.Lookup(item.Name,ct):await questDropReader.Lookup(item.Name,ct),source,"");
    var result=lookup.Drops;
    if(closing||IsDisposed||generation!=dropGeneration||Offline)return;
-   ShowDropSuggestions(result.Suggestions);dropSourceUrl=result.SourceUrl;finderDropNote.Text=result.Item+" â€¢ "+lookup.Source+" â€¢ Checked "+result.CheckedAt.ToLocalTime().ToString("g")+"\n"+lookup.Notice+result.Message;
-   foreach(var monster in result.Monsters){int row=finderDrops.Rows.Add(monster.Name,monster.Locations.Count==0?"No recorded map information":string.Join("\n",monster.Locations.Select(m=>m.Name)),monster.Evidence);finderDrops.Rows[row].Tag=monster;}
+   ShowDropSuggestions(result.Suggestions);dropSourceUrl=result.SourceUrl;finderDropNote.Text=result.Item+" • "+lookup.Source+" • Checked "+result.CheckedAt.ToLocalTime().ToString("g")+"\n"+lookup.Notice+result.Message;
+   foreach(var monster in result.Monsters){int row=finderDrops.Rows.Add(monster.Name,monster.Locations.Count==0?"No recorded map information":string.Join("\n",monster.Locations.Take(5).Select(m=>m.Name))+(monster.Locations.Count>5?$"\n+ {monster.Locations.Count-5} more maps (click to see all)":""),monster.Evidence);finderDrops.Rows[row].Tag=monster;}
    finderDrops.AutoResizeRows(DataGridViewAutoSizeRowsMode.AllCells);
   }catch(OperationCanceledException){ShowDropTimeout(generation);}
   catch(Exception){if(!closing&&!IsDisposed&&generation==dropGeneration){dropItemKey="";finderDropNote.Text="Drop reference unavailable. Select Load / retry later, or use the website reference button. This does not mean the item has no drops.";}}

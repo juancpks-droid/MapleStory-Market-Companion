@@ -77,3 +77,8 @@ Search watched names and variants, filter by muted state or recent-price availab
 Validation: 186 core tests; live Orange Mushroom Cap, Red Potion and Blue Moonlight reference checks; Wiki monster/map rendering and empty-result handling; close/reopen session test; isolated real package update 1.25.4 -> 1.25.5 with saved state, backup, graph and NPC lookup verified. The updater test uses a local feed and scripted confirmation; it does not modify the player's profile.
 
 Additional source review: Sleepywood database failed to load and API docs returned 404; Planet Helper terms prohibit unauthorized scraping. Neither was enabled as an automatic provider.
+
+### 1.25.6 — Item reference display correction
+- Corrects garbled separators in item/drop reference messages.
+- Long map lists show five names and a remaining count; clicking opens the full map menu. Monster names and evidence remain aligned at the top.
+- Verified live references for Orange Mushroom Cap, Red Potion and Blue Moonlight, including monster maps and empty drops. Added display regression checks; session recovery and isolated package update/restart tested again.

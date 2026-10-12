@@ -22,6 +22,7 @@ public sealed partial class MainForm
   ShowPage("Item Finder");finderSearch.Text="Orange Mushroom Cap";RenderItemFinder();finderDropSource.SelectedItem="MapleClassic Wiki";features.Offline=false;finderDetailTabs.SelectedIndex=1;dropItemKey="";QueueFinderDrops();
   for(int i=0;i<100&&finderDrops.Rows.Count==0;i++)await Task.Delay(300);
   if(!finderDrops.Rows.Cast<DataGridViewRow>().Any(r=>r.Tag is DropMonster m&&m.Name=="Orange Mushroom"&&m.Locations.Any(l=>l.Name.Contains("Mushroom Garden"))))throw new Exception(finderDropNote.Text);
+  if(finderDropNote.Text.Contains("â")||finderDrops.Rows.Cast<DataGridViewRow>().Any(r=>r.Cells[1].Value?.ToString()?.Split('\n').Length>6)||finderDrops.Columns[0].DefaultCellStyle.Alignment!=DataGridViewContentAlignment.TopLeft)throw new Exception("Drop display regression");
   CapturePreview(Path.Combine(dir,"wiki-drops.png"));finderDetailTabs.SelectedIndex=2;
   for(int i=0;i<100&&itemReferenceGrid.Rows.Count==0;i++)await Task.Delay(300);
   if(itemReferenceGrid.Rows.Count<3||!itemReferenceNote.Text.Contains("MapleClassic Wiki"))throw new Exception(itemReferenceNote.Text);
