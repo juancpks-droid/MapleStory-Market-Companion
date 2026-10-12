@@ -296,7 +296,7 @@ public sealed partial class MainForm : Form
 
     {
 
-        if(Offline){lookupStatus.Text="Offline • showing saved prices";UpdateConnectionStatus();footer.Text="Offline: searching saved evidence. Turn off Work offline to request new data.";RenderPrices();return;}if(busy){if(onlineSearch){pendingSearch=true;pendingLookup=lookupQuery??ResolvePriceQuery(search.Text);footer.Text="Search queued after the current market refresh.";lookupStatus.Text="Queued • "+pendingLookup;}return;}busy=true;lookupStatus.Text="Checking public sources • "+(lookupQuery??search.Text);refreshStop=CancellationTokenSource.CreateLinkedTokenSource(stop.Token);footer.Text="Checking source access and refreshing eligible sources…";
+        if(Offline){lookupStatus.Text="Offline • showing saved prices";UpdateConnectionStatus();footer.Text="Offline: searching saved evidence. Turn off Work offline to request new data.";RenderPrices();return;}if(busy){if(onlineSearch){pendingSearch=true;pendingLookup=lookupQuery??ResolvePriceQuery(search.Text);footer.Text="Search queued after the current market refresh.";lookupStatus.Text="Queued • "+pendingLookup;}return;}busy=true;lookupStatus.Text="Checking Kerning first, then other enabled sources • "+(lookupQuery??search.Text);refreshStop=CancellationTokenSource.CreateLinkedTokenSource(stop.Token);footer.Text="Checking source access and refreshing eligible sources…";
 
         try
 
@@ -357,7 +357,7 @@ public sealed partial class MainForm : Form
 
         foreach(var s in settings.Sources){var r=sourceResults.FirstOrDefault(r=>r.Provider==s.Id);sourcesGrid.Rows.Add(s.Id,s.Authorized?r?.Status??"Awaiting first fetch":"Disabled — see Settings",r is null||r.CheckedAt==DateTimeOffset.MinValue?"Not fetched":r.CheckedAt.ToLocalTime().ToString("g"));}
 
-        foreach(var (source,reason) in new[]{("NiaMeowDB","Not connected: provider permission required"),("MESOLANE","Not connected: approved price feed needed"),("Meso Scout","Not connected: live coverage not verified")})sourcesGrid.Rows.Add(source,reason,"Not connected");
+        foreach(var (source,reason) in new[]{("NiaMeowDB","Listings not connected: automated access blocked in latest check"),("MESOLANE","Not connected: approved price feed needed"),("Meso Scout","Not connected: live coverage not verified")})sourcesGrid.Rows.Add(source,reason,"Not connected");
 
         RenderPrices();RenderDeals();RenderItems();RenderFm();RenderDashboard();RenderMarketDashboard();RenderInventorySlots();RenderFeatures();RenderDailyTools();RenderMerchantTools();RenderWorkspace();RenderUsability();RenderDuplicates();ApplyAccessibility();RenderItemFinder();
 

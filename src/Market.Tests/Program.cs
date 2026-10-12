@@ -532,6 +532,12 @@ await Test("NPC fallback handles identity failure and empty source without swall
  p=await NpcPriceFallback.Lookup(_=>Task.FromResult(found),Fallback,CancellationToken.None);Check(p.Sell==8&&calls==2);
  using var cancel=new CancellationTokenSource();cancel.Cancel();bool cancelled=false;try{await NpcPriceFallback.Lookup(c=>Task.FromCanceled<NpcPrices>(c),Fallback,cancel.Token);}catch(OperationCanceledException){cancelled=true;}Check(cancelled&&calls==2);
 });
+await Test("Kerning is requested before secondary sources and failures preserve secondary coverage",async()=>{
+ var hosts=new List<string>();using var fetch=new Fetcher(new Handler(request=>{hosts.Add(request.RequestUri!.Host);return new System.Net.Http.HttpResponseMessage(System.Net.HttpStatusCode.NotFound);}));
+ var settings=new Settings{Sources=[new(){Id="Approved JSON feed",Enabled=true,PermissionReference="test",FeedUrl="https://feed.example.org/data"},new(){Id="Kerning Exchange",Enabled=true,PermissionReference="test"}]};
+ var results=await new SourceCollector(fetch).Refresh(settings,CancellationToken.None);
+ Check(hosts.SequenceEqual(new[]{"kerning.gg","feed.example.org"})&&results.Count==2&&results[0].Provider=="Kerning Exchange");
+});
 Directory.CreateDirectory("test-results");File.WriteAllText("test-results/results.json",JsonSerializer.Serialize(new{total=results.Count,failed=failures,results},Json.Options));Console.WriteLine($"{results.Count-failures}/{results.Count} passed");Environment.ExitCode=failures==0?0:1;
 
 

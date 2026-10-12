@@ -121,7 +121,7 @@ public sealed class SourceCollector(Fetcher fetcher)
         try
         {
             var results=new List<SourceResult>();
-            foreach(var config in settings.Sources)
+            foreach(var config in settings.Sources.OrderBy(s=>s.Id=="Kerning Exchange"?0:1))
             {
                 if(search && config.Id is not ("Kerning Exchange" or "BasilMarket"))continue;
                 var now=DateTimeOffset.UtcNow;

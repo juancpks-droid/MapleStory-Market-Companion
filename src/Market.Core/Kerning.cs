@@ -99,14 +99,6 @@ public sealed class KerningReader(Fetcher fetcher)
         var robots=await Get("https://kerning.gg/robots.txt",config,ct);
         if(!KerningPages.RobotsAllows(robots,"/sitemap.xml")||!KerningPages.RobotsAllows(robots,"/item/"))throw new InvalidOperationException("Provider crawl policy blocks item access");
         if(catalog.Count==0||now-catalogAt>TimeSpan.FromDays(1)){catalog=KerningPages.Catalog(await Get("https://kerning.gg/sitemap.xml",config,ct));catalogAt=now;}
-        List<FmSummary>? summaries=null;string fmStatus="";
-        const string fmUrl="https://kerning.gg/fm-tracker";
-        if(!config.PageChecked.TryGetValue(fmUrl,out var fmChecked)||now-fmChecked>=TimeSpan.FromMinutes(Math.Max(15,config.IntervalMinutes)))
-        {
-            if(!KerningPages.RobotsAllows(robots,"/fm-tracker"))fmStatus="; FM tracker blocked by provider policy";
-            else try{summaries=FmTracker.Parse(await Get(fmUrl,config,ct),DateTimeOffset.UtcNow);config.PageChecked[fmUrl]=DateTimeOffset.UtcNow;fmStatus=$"; {summaries.Count} FM item summaries updated";}
-            catch(Exception e) when(e is HttpRequestException or FormatException or JsonException or KeyNotFoundException or InvalidOperationException){config.PageChecked[fmUrl]=DateTimeOffset.UtcNow;fmStatus="; FM tracker unavailable; cached summaries retained";}
-        }
         var wanted=new List<CatalogItem>();
         foreach(var name in names.Where(n=>!string.IsNullOrWhiteSpace(n)).Distinct())
         {
@@ -126,6 +118,14 @@ public sealed class KerningReader(Fetcher fetcher)
             }
             catch(HttpRequestException){failed++;config.PageChecked[item.Url]=DateTimeOffset.UtcNow;}
             catch(FormatException){failed++;config.PageChecked[item.Url]=DateTimeOffset.UtcNow;}
+        }
+        List<FmSummary>? summaries=null;string fmStatus="";
+        const string fmUrl="https://kerning.gg/fm-tracker";
+        if(!config.PageChecked.TryGetValue(fmUrl,out var fmChecked)||now-fmChecked>=TimeSpan.FromMinutes(Math.Max(15,config.IntervalMinutes)))
+        {
+            if(!KerningPages.RobotsAllows(robots,"/fm-tracker"))fmStatus="; FM tracker blocked by provider policy";
+            else try{summaries=FmTracker.Parse(await Get(fmUrl,config,ct),DateTimeOffset.UtcNow);config.PageChecked[fmUrl]=DateTimeOffset.UtcNow;fmStatus=$"; {summaries.Count} FM item summaries updated";}
+            catch(Exception e) when(e is HttpRequestException or FormatException or JsonException or KeyNotFoundException or InvalidOperationException){config.PageChecked[fmUrl]=DateTimeOffset.UtcNow;fmStatus="; FM tracker unavailable; cached summaries retained";}
         }
         string status=candidates.Count==0?"No matching item in the provider catalog":$"{snapshots.Count} item pages updated; {rows.Count} genuine listings; {catalog.Count} catalog items";
         if(snapshots.Count==0&&candidates.Count>0)status="Using cached item pages; external refresh interval applies";
