@@ -1,0 +1,1250 @@
+[
+  {
+    "Name": "Bottomwear DEF Scroll: Lesser",
+    "ClassicId": "2040600",
+    "Rate": 100,
+    "Source": "https://ccplz.cc/items/bottomwear-def-scroll-lesser"
+  },
+  {
+    "Name": "Bottomwear DEF Scroll: Intermediate",
+    "ClassicId": "2040601",
+    "Rate": 60,
+    "Source": "https://ccplz.cc/items/bottomwear-def-scroll-lesser"
+  },
+  {
+    "Name": "Bottomwear DEF Scroll: Greater",
+    "ClassicId": "2040602",
+    "Rate": 10,
+    "Source": "https://ccplz.cc/items/bottomwear-def-scroll-lesser"
+  },
+  {
+    "Name": "Bottomwear DEF Scroll: Chaos",
+    "ClassicId": "2040603",
+    "Rate": 10,
+    "Source": "https://ccplz.cc/items/bottomwear-def-scroll-lesser"
+  },
+  {
+    "Name": "Bottomwear HP Scroll: Lesser",
+    "ClassicId": "2040604",
+    "Rate": 100,
+    "Source": "https://ccplz.cc/items/bottomwear-hp-scroll-lesser"
+  },
+  {
+    "Name": "Bottomwear HP Scroll: Intermediate",
+    "ClassicId": "2040605",
+    "Rate": 60,
+    "Source": "https://ccplz.cc/items/bottomwear-hp-scroll-lesser"
+  },
+  {
+    "Name": "Bottomwear HP Scroll: Greater",
+    "ClassicId": "2040606",
+    "Rate": 10,
+    "Source": "https://ccplz.cc/items/bottomwear-hp-scroll-lesser"
+  },
+  {
+    "Name": "Bottomwear HP Scroll: Chaos",
+    "ClassicId": "2040607",
+    "Rate": 10,
+    "Source": "https://ccplz.cc/items/bottomwear-hp-scroll-lesser"
+  },
+  {
+    "Name": "Bottomwear MP Scroll: Lesser",
+    "ClassicId": "2040608",
+    "Rate": 100,
+    "Source": "https://ccplz.cc/items/bottomwear-mp-scroll-lesser"
+  },
+  {
+    "Name": "Bottomwear MP Scroll: Intermediate",
+    "ClassicId": "2040609",
+    "Rate": 60,
+    "Source": "https://ccplz.cc/items/bottomwear-mp-scroll-lesser"
+  },
+  {
+    "Name": "Bottomwear MP Scroll: Greater",
+    "ClassicId": "2040610",
+    "Rate": 10,
+    "Source": "https://ccplz.cc/items/bottomwear-mp-scroll-lesser"
+  },
+  {
+    "Name": "Bottomwear MP Scroll: Chaos",
+    "ClassicId": "2040611",
+    "Rate": 10,
+    "Source": "https://ccplz.cc/items/bottomwear-mp-scroll-lesser"
+  },
+  {
+    "Name": "Bow Attack Scroll: Lesser",
+    "ClassicId": "2044500",
+    "Rate": 100,
+    "Source": "https://ccplz.cc/items/bow-attack-scroll-lesser"
+  },
+  {
+    "Name": "Bow Attack Scroll: Intermediate",
+    "ClassicId": "2044501",
+    "Rate": 60,
+    "Source": "https://ccplz.cc/items/bow-attack-scroll-lesser"
+  },
+  {
+    "Name": "Bow Attack Scroll: Greater",
+    "ClassicId": "2044502",
+    "Rate": 10,
+    "Source": "https://ccplz.cc/items/bow-attack-scroll-lesser"
+  },
+  {
+    "Name": "Bow Attack Scroll: Chaos",
+    "ClassicId": "2044503",
+    "Rate": 10,
+    "Source": "https://ccplz.cc/items/bow-attack-scroll-lesser"
+  },
+  {
+    "Name": "Cape Accuracy Scroll: Lesser",
+    "ClassicId": "2041024",
+    "Rate": 100,
+    "Source": "https://ccplz.cc/items/cape-accuracy-scroll-lesser"
+  },
+  {
+    "Name": "Cape Accuracy Scroll: Intermediate",
+    "ClassicId": "2041025",
+    "Rate": 60,
+    "Source": "https://ccplz.cc/items/cape-accuracy-scroll-lesser"
+  },
+  {
+    "Name": "Cape Accuracy Scroll: Greater",
+    "ClassicId": "2041026",
+    "Rate": 10,
+    "Source": "https://ccplz.cc/items/cape-accuracy-scroll-lesser"
+  },
+  {
+    "Name": "Cape Accuracy Scroll: Chaos",
+    "ClassicId": "2041027",
+    "Rate": 10,
+    "Source": "https://ccplz.cc/items/cape-accuracy-scroll-lesser"
+  },
+  {
+    "Name": "Cape DEX Scroll: Lesser",
+    "ClassicId": "2041012",
+    "Rate": 100,
+    "Source": "https://ccplz.cc/items/cape-dex-scroll-lesser"
+  },
+  {
+    "Name": "Cape DEX Scroll: Intermediate",
+    "ClassicId": "2041013",
+    "Rate": 60,
+    "Source": "https://ccplz.cc/items/cape-dex-scroll-lesser"
+  },
+  {
+    "Name": "Cape DEX Scroll: Greater",
+    "ClassicId": "2041014",
+    "Rate": 10,
+    "Source": "https://ccplz.cc/items/cape-dex-scroll-lesser"
+  },
+  {
+    "Name": "Cape DEX Scroll: Chaos",
+    "ClassicId": "2041015",
+    "Rate": 10,
+    "Source": "https://ccplz.cc/items/cape-dex-scroll-lesser"
+  },
+  {
+    "Name": "Cape INT Scroll: Lesser",
+    "ClassicId": "2041016",
+    "Rate": 100,
+    "Source": "https://ccplz.cc/items/cape-int-scroll-lesser"
+  },
+  {
+    "Name": "Cape INT Scroll: Intermediate",
+    "ClassicId": "2041017",
+    "Rate": 60,
+    "Source": "https://ccplz.cc/items/cape-int-scroll-lesser"
+  },
+  {
+    "Name": "Cape INT Scroll: Greater",
+    "ClassicId": "2041018",
+    "Rate": 10,
+    "Source": "https://ccplz.cc/items/cape-int-scroll-lesser"
+  },
+  {
+    "Name": "Cape INT Scroll: Chaos",
+    "ClassicId": "2041019",
+    "Rate": 10,
+    "Source": "https://ccplz.cc/items/cape-int-scroll-lesser"
+  },
+  {
+    "Name": "Cape LUK Scroll: Lesser",
+    "ClassicId": "2041020",
+    "Rate": 100,
+    "Source": "https://ccplz.cc/items/cape-luk-scroll-lesser"
+  },
+  {
+    "Name": "Cape LUK Scroll: Intermediate",
+    "ClassicId": "2041021",
+    "Rate": 60,
+    "Source": "https://ccplz.cc/items/cape-luk-scroll-lesser"
+  },
+  {
+    "Name": "Cape LUK Scroll: Greater",
+    "ClassicId": "2041022",
+    "Rate": 10,
+    "Source": "https://ccplz.cc/items/cape-luk-scroll-lesser"
+  },
+  {
+    "Name": "Cape LUK Scroll: Chaos",
+    "ClassicId": "2041023",
+    "Rate": 10,
+    "Source": "https://ccplz.cc/items/cape-luk-scroll-lesser"
+  },
+  {
+    "Name": "Cape Magic Def. Scroll: Lesser",
+    "ClassicId": "2041004",
+    "Rate": 100,
+    "Source": "https://ccplz.cc/items/cape-magic-def-scroll-lesser"
+  },
+  {
+    "Name": "Cape Magic Def. Scroll: Intermediate",
+    "ClassicId": "2041005",
+    "Rate": 60,
+    "Source": "https://ccplz.cc/items/cape-magic-def-scroll-lesser"
+  },
+  {
+    "Name": "Cape Magic Def. Scroll: Greater",
+    "ClassicId": "2041006",
+    "Rate": 10,
+    "Source": "https://ccplz.cc/items/cape-magic-def-scroll-lesser"
+  },
+  {
+    "Name": "Cape Magic Def. Scroll: Chaos",
+    "ClassicId": "2041007",
+    "Rate": 10,
+    "Source": "https://ccplz.cc/items/cape-magic-def-scroll-lesser"
+  },
+  {
+    "Name": "Cape STR Scroll: Lesser",
+    "ClassicId": "2041008",
+    "Rate": 100,
+    "Source": "https://ccplz.cc/items/cape-str-scroll-lesser"
+  },
+  {
+    "Name": "Cape STR Scroll: Intermediate",
+    "ClassicId": "2041009",
+    "Rate": 60,
+    "Source": "https://ccplz.cc/items/cape-str-scroll-lesser"
+  },
+  {
+    "Name": "Cape STR Scroll: Greater",
+    "ClassicId": "2041010",
+    "Rate": 10,
+    "Source": "https://ccplz.cc/items/cape-str-scroll-lesser"
+  },
+  {
+    "Name": "Cape STR Scroll: Chaos",
+    "ClassicId": "2041011",
+    "Rate": 10,
+    "Source": "https://ccplz.cc/items/cape-str-scroll-lesser"
+  },
+  {
+    "Name": "Cape Weapon Def. Scroll: Lesser",
+    "ClassicId": "2041000",
+    "Rate": 100,
+    "Source": "https://ccplz.cc/items/cape-weapon-def-scroll-lesser"
+  },
+  {
+    "Name": "Cape Weapon Def. Scroll: Intermediate",
+    "ClassicId": "2041001",
+    "Rate": 60,
+    "Source": "https://ccplz.cc/items/cape-weapon-def-scroll-lesser"
+  },
+  {
+    "Name": "Cape Weapon Def. Scroll: Greater",
+    "ClassicId": "2041002",
+    "Rate": 10,
+    "Source": "https://ccplz.cc/items/cape-weapon-def-scroll-lesser"
+  },
+  {
+    "Name": "Cape Weapon Def. Scroll: Chaos",
+    "ClassicId": "2041003",
+    "Rate": 10,
+    "Source": "https://ccplz.cc/items/cape-weapon-def-scroll-lesser"
+  },
+  {
+    "Name": "Claw Attack Scroll: Lesser",
+    "ClassicId": "2044700",
+    "Rate": 100,
+    "Source": "https://ccplz.cc/items/claw-attack-scroll-lesser"
+  },
+  {
+    "Name": "Claw Attack Scroll: Intermediate",
+    "ClassicId": "2044701",
+    "Rate": 60,
+    "Source": "https://ccplz.cc/items/claw-attack-scroll-lesser"
+  },
+  {
+    "Name": "Claw Attack Scroll: Greater",
+    "ClassicId": "2044702",
+    "Rate": 10,
+    "Source": "https://ccplz.cc/items/claw-attack-scroll-lesser"
+  },
+  {
+    "Name": "Claw Attack Scroll: Chaos",
+    "ClassicId": "2044703",
+    "Rate": 10,
+    "Source": "https://ccplz.cc/items/claw-attack-scroll-lesser"
+  },
+  {
+    "Name": "Crossbow Attack Scroll: Lesser",
+    "ClassicId": "2044600",
+    "Rate": 100,
+    "Source": "https://ccplz.cc/items/crossbow-attack-scroll-lesser"
+  },
+  {
+    "Name": "Crossbow Attack Scroll: Intermediate",
+    "ClassicId": "2044601",
+    "Rate": 60,
+    "Source": "https://ccplz.cc/items/crossbow-attack-scroll-lesser"
+  },
+  {
+    "Name": "Crossbow Attack Scroll: Greater",
+    "ClassicId": "2044602",
+    "Rate": 10,
+    "Source": "https://ccplz.cc/items/crossbow-attack-scroll-lesser"
+  },
+  {
+    "Name": "Crossbow Attack Scroll: Chaos",
+    "ClassicId": "2044603",
+    "Rate": 10,
+    "Source": "https://ccplz.cc/items/crossbow-attack-scroll-lesser"
+  },
+  {
+    "Name": "Dagger Attack Scroll: Lesser",
+    "ClassicId": "2043300",
+    "Rate": 100,
+    "Source": "https://ccplz.cc/items/dagger-attack-scroll-lesser"
+  },
+  {
+    "Name": "Dagger Attack Scroll: Intermediate",
+    "ClassicId": "2043301",
+    "Rate": 60,
+    "Source": "https://ccplz.cc/items/dagger-attack-scroll-lesser"
+  },
+  {
+    "Name": "Dagger Attack Scroll: Greater",
+    "ClassicId": "2043302",
+    "Rate": 10,
+    "Source": "https://ccplz.cc/items/dagger-attack-scroll-lesser"
+  },
+  {
+    "Name": "Dagger Attack Scroll: Chaos",
+    "ClassicId": "2043303",
+    "Rate": 10,
+    "Source": "https://ccplz.cc/items/dagger-attack-scroll-lesser"
+  },
+  {
+    "Name": "Earring Crit. Damage Scroll: Lesser",
+    "ClassicId": "2040316",
+    "Rate": 100,
+    "Source": "https://ccplz.cc/items/earring-crit-damage-scroll-lesser"
+  },
+  {
+    "Name": "Earring Crit. Damage Scroll: Intermediate",
+    "ClassicId": "2040317",
+    "Rate": 60,
+    "Source": "https://ccplz.cc/items/earring-crit-damage-scroll-lesser"
+  },
+  {
+    "Name": "Earring Crit. Damage Scroll: Greater",
+    "ClassicId": "2040318",
+    "Rate": 10,
+    "Source": "https://ccplz.cc/items/earring-crit-damage-scroll-lesser"
+  },
+  {
+    "Name": "Earring Crit. Damage Scroll: Chaos",
+    "ClassicId": "2040319",
+    "Rate": 10,
+    "Source": "https://ccplz.cc/items/earring-crit-damage-scroll-lesser"
+  },
+  {
+    "Name": "Earring DEX Scroll: Lesser",
+    "ClassicId": "2040304",
+    "Rate": 100,
+    "Source": "https://ccplz.cc/items/earring-dex-scroll-lesser"
+  },
+  {
+    "Name": "Earring DEX Scroll: Intermediate",
+    "ClassicId": "2040305",
+    "Rate": 60,
+    "Source": "https://ccplz.cc/items/earring-dex-scroll-lesser"
+  },
+  {
+    "Name": "Earring DEX Scroll: Greater",
+    "ClassicId": "2040306",
+    "Rate": 10,
+    "Source": "https://ccplz.cc/items/earring-dex-scroll-lesser"
+  },
+  {
+    "Name": "Earring DEX Scroll: Chaos",
+    "ClassicId": "2040307",
+    "Rate": 10,
+    "Source": "https://ccplz.cc/items/earring-dex-scroll-lesser"
+  },
+  {
+    "Name": "Earring Evasion Scroll: Lesser",
+    "ClassicId": "2040320",
+    "Rate": 100,
+    "Source": "https://ccplz.cc/items/earring-evasion-scroll-lesser"
+  },
+  {
+    "Name": "Earring Evasion Scroll: Intermediate",
+    "ClassicId": "2040321",
+    "Rate": 60,
+    "Source": "https://ccplz.cc/items/earring-evasion-scroll-lesser"
+  },
+  {
+    "Name": "Earring Evasion Scroll: Greater",
+    "ClassicId": "2040322",
+    "Rate": 10,
+    "Source": "https://ccplz.cc/items/earring-evasion-scroll-lesser"
+  },
+  {
+    "Name": "Earring Evasion Scroll: Chaos",
+    "ClassicId": "2040323",
+    "Rate": 10,
+    "Source": "https://ccplz.cc/items/earring-evasion-scroll-lesser"
+  },
+  {
+    "Name": "Earring INT Scroll: Lesser",
+    "ClassicId": "2040308",
+    "Rate": 100,
+    "Source": "https://ccplz.cc/items/earring-int-scroll-lesser"
+  },
+  {
+    "Name": "Earring INT Scroll: Intermediate",
+    "ClassicId": "2040309",
+    "Rate": 60,
+    "Source": "https://ccplz.cc/items/earring-int-scroll-lesser"
+  },
+  {
+    "Name": "Earring INT Scroll: Greater",
+    "ClassicId": "2040310",
+    "Rate": 10,
+    "Source": "https://ccplz.cc/items/earring-int-scroll-lesser"
+  },
+  {
+    "Name": "Earring INT Scroll: Chaos",
+    "ClassicId": "2040311",
+    "Rate": 10,
+    "Source": "https://ccplz.cc/items/earring-int-scroll-lesser"
+  },
+  {
+    "Name": "Earring LUK Scroll: Lesser",
+    "ClassicId": "2040312",
+    "Rate": 100,
+    "Source": "https://ccplz.cc/items/earring-luk-scroll-lesser"
+  },
+  {
+    "Name": "Earring LUK Scroll: Intermediate",
+    "ClassicId": "2040313",
+    "Rate": 60,
+    "Source": "https://ccplz.cc/items/earring-luk-scroll-lesser"
+  },
+  {
+    "Name": "Earring LUK Scroll: Greater",
+    "ClassicId": "2040314",
+    "Rate": 10,
+    "Source": "https://ccplz.cc/items/earring-luk-scroll-lesser"
+  },
+  {
+    "Name": "Earring LUK Scroll: Chaos",
+    "ClassicId": "2040315",
+    "Rate": 10,
+    "Source": "https://ccplz.cc/items/earring-luk-scroll-lesser"
+  },
+  {
+    "Name": "Earring STR Scroll: Lesser",
+    "ClassicId": "2040300",
+    "Rate": 100,
+    "Source": "https://ccplz.cc/items/earring-str-scroll-lesser"
+  },
+  {
+    "Name": "Earring STR Scroll: Intermediate",
+    "ClassicId": "2040301",
+    "Rate": 60,
+    "Source": "https://ccplz.cc/items/earring-str-scroll-lesser"
+  },
+  {
+    "Name": "Earring STR Scroll: Greater",
+    "ClassicId": "2040302",
+    "Rate": 10,
+    "Source": "https://ccplz.cc/items/earring-str-scroll-lesser"
+  },
+  {
+    "Name": "Earring STR Scroll: Chaos",
+    "ClassicId": "2040303",
+    "Rate": 10,
+    "Source": "https://ccplz.cc/items/earring-str-scroll-lesser"
+  },
+  {
+    "Name": "Gloves Accuracy Scroll: Lesser",
+    "ClassicId": "2040808",
+    "Rate": 100,
+    "Source": "https://ccplz.cc/items/gloves-accuracy-scroll-lesser"
+  },
+  {
+    "Name": "Gloves Accuracy Scroll: Intermediate",
+    "ClassicId": "2040809",
+    "Rate": 60,
+    "Source": "https://ccplz.cc/items/gloves-accuracy-scroll-lesser"
+  },
+  {
+    "Name": "Gloves Accuracy Scroll: Greater",
+    "ClassicId": "2040810",
+    "Rate": 10,
+    "Source": "https://ccplz.cc/items/gloves-accuracy-scroll-lesser"
+  },
+  {
+    "Name": "Gloves Accuracy Scroll: Chaos",
+    "ClassicId": "2040811",
+    "Rate": 10,
+    "Source": "https://ccplz.cc/items/gloves-accuracy-scroll-lesser"
+  },
+  {
+    "Name": "Gloves Attack Scroll: Lesser",
+    "ClassicId": "2040800",
+    "Rate": 100,
+    "Source": "https://ccplz.cc/items/gloves-attack-scroll-lesser"
+  },
+  {
+    "Name": "Gloves Attack Scroll: Intermediate",
+    "ClassicId": "2040801",
+    "Rate": 60,
+    "Source": "https://ccplz.cc/items/gloves-attack-scroll-lesser"
+  },
+  {
+    "Name": "Gloves Attack Scroll: Greater",
+    "ClassicId": "2040802",
+    "Rate": 10,
+    "Source": "https://ccplz.cc/items/gloves-attack-scroll-lesser"
+  },
+  {
+    "Name": "Gloves Attack Scroll: Chaos",
+    "ClassicId": "2040803",
+    "Rate": 10,
+    "Source": "https://ccplz.cc/items/gloves-attack-scroll-lesser"
+  },
+  {
+    "Name": "Gloves Crit. Rate Scroll: Lesser",
+    "ClassicId": "2040812",
+    "Rate": 100,
+    "Source": "https://ccplz.cc/items/gloves-crit-rate-scroll-lesser"
+  },
+  {
+    "Name": "Gloves Crit. Rate Scroll: Intermediate",
+    "ClassicId": "2040813",
+    "Rate": 60,
+    "Source": "https://ccplz.cc/items/gloves-crit-rate-scroll-lesser"
+  },
+  {
+    "Name": "Gloves Crit. Rate Scroll: Greater",
+    "ClassicId": "2040814",
+    "Rate": 10,
+    "Source": "https://ccplz.cc/items/gloves-crit-rate-scroll-lesser"
+  },
+  {
+    "Name": "Gloves Crit. Rate Scroll: Chaos",
+    "ClassicId": "2040815",
+    "Rate": 10,
+    "Source": "https://ccplz.cc/items/gloves-crit-rate-scroll-lesser"
+  },
+  {
+    "Name": "Gloves Magic Attack Scroll: Lesser",
+    "ClassicId": "2040804",
+    "Rate": 100,
+    "Source": "https://ccplz.cc/items/gloves-magic-attack-scroll-lesser"
+  },
+  {
+    "Name": "Gloves Magic Attack Scroll: Intermediate",
+    "ClassicId": "2040805",
+    "Rate": 60,
+    "Source": "https://ccplz.cc/items/gloves-magic-attack-scroll-lesser"
+  },
+  {
+    "Name": "Gloves Magic Attack Scroll: Greater",
+    "ClassicId": "2040806",
+    "Rate": 10,
+    "Source": "https://ccplz.cc/items/gloves-magic-attack-scroll-lesser"
+  },
+  {
+    "Name": "Gloves Magic Attack Scroll: Chaos",
+    "ClassicId": "2040807",
+    "Rate": 10,
+    "Source": "https://ccplz.cc/items/gloves-magic-attack-scroll-lesser"
+  },
+  {
+    "Name": "Hat Accuracy Scroll: Lesser",
+    "ClassicId": "2040000",
+    "Rate": 100,
+    "Source": "https://ccplz.cc/items/hat-accuracy-scroll-lesser"
+  },
+  {
+    "Name": "Hat Accuracy Scroll: Intermediate",
+    "ClassicId": "2040001",
+    "Rate": 60,
+    "Source": "https://ccplz.cc/items/hat-accuracy-scroll-lesser"
+  },
+  {
+    "Name": "Hat Accuracy Scroll: Greater",
+    "ClassicId": "2040002",
+    "Rate": 10,
+    "Source": "https://ccplz.cc/items/hat-accuracy-scroll-lesser"
+  },
+  {
+    "Name": "Hat Accuracy Scroll: Chaos",
+    "ClassicId": "2040003",
+    "Rate": 10,
+    "Source": "https://ccplz.cc/items/hat-accuracy-scroll-lesser"
+  },
+  {
+    "Name": "Hat HP Scroll: Lesser",
+    "ClassicId": "2040004",
+    "Rate": 100,
+    "Source": "https://ccplz.cc/items/hat-hp-scroll-lesser"
+  },
+  {
+    "Name": "Hat HP Scroll: Intermediate",
+    "ClassicId": "2040005",
+    "Rate": 60,
+    "Source": "https://ccplz.cc/items/hat-hp-scroll-lesser"
+  },
+  {
+    "Name": "Hat HP Scroll: Greater",
+    "ClassicId": "2040006",
+    "Rate": 10,
+    "Source": "https://ccplz.cc/items/hat-hp-scroll-lesser"
+  },
+  {
+    "Name": "Hat HP Scroll: Chaos",
+    "ClassicId": "2040007",
+    "Rate": 10,
+    "Source": "https://ccplz.cc/items/hat-hp-scroll-lesser"
+  },
+  {
+    "Name": "Hat MP Scroll: Lesser",
+    "ClassicId": "2040008",
+    "Rate": 100,
+    "Source": "https://ccplz.cc/items/hat-mp-scroll-lesser"
+  },
+  {
+    "Name": "Hat MP Scroll: Intermediate",
+    "ClassicId": "2040009",
+    "Rate": 60,
+    "Source": "https://ccplz.cc/items/hat-mp-scroll-lesser"
+  },
+  {
+    "Name": "Hat MP Scroll: Greater",
+    "ClassicId": "2040010",
+    "Rate": 10,
+    "Source": "https://ccplz.cc/items/hat-mp-scroll-lesser"
+  },
+  {
+    "Name": "Hat MP Scroll: Chaos",
+    "ClassicId": "2040011",
+    "Rate": 10,
+    "Source": "https://ccplz.cc/items/hat-mp-scroll-lesser"
+  },
+  {
+    "Name": "One-Handed Axe Attack Scroll: Lesser",
+    "ClassicId": "2043100",
+    "Rate": 100,
+    "Source": "https://ccplz.cc/items/one-handed-axe-attack-scroll-lesser"
+  },
+  {
+    "Name": "One-Handed Axe Attack Scroll: Intermediate",
+    "ClassicId": "2043101",
+    "Rate": 60,
+    "Source": "https://ccplz.cc/items/one-handed-axe-attack-scroll-lesser"
+  },
+  {
+    "Name": "One-Handed Axe Attack Scroll: Greater",
+    "ClassicId": "2043102",
+    "Rate": 10,
+    "Source": "https://ccplz.cc/items/one-handed-axe-attack-scroll-lesser"
+  },
+  {
+    "Name": "One-Handed Axe Attack Scroll: Chaos",
+    "ClassicId": "2043103",
+    "Rate": 10,
+    "Source": "https://ccplz.cc/items/one-handed-axe-attack-scroll-lesser"
+  },
+  {
+    "Name": "One-Handed Blunt Weapon Attack Scroll: Lesser",
+    "ClassicId": "2043200",
+    "Rate": 100,
+    "Source": "https://ccplz.cc/items/one-handed-blunt-weapon-attack-scroll-lesser"
+  },
+  {
+    "Name": "One-Handed Blunt Weapon Attack Scroll: Intermediate",
+    "ClassicId": "2043201",
+    "Rate": 60,
+    "Source": "https://ccplz.cc/items/one-handed-blunt-weapon-attack-scroll-lesser"
+  },
+  {
+    "Name": "One-Handed Blunt Weapon Attack Scroll: Greater",
+    "ClassicId": "2043202",
+    "Rate": 10,
+    "Source": "https://ccplz.cc/items/one-handed-blunt-weapon-attack-scroll-lesser"
+  },
+  {
+    "Name": "One-Handed Blunt Weapon Attack Scroll: Chaos",
+    "ClassicId": "2043203",
+    "Rate": 10,
+    "Source": "https://ccplz.cc/items/one-handed-blunt-weapon-attack-scroll-lesser"
+  },
+  {
+    "Name": "One-Handed Sword Attack Scroll: Lesser",
+    "ClassicId": "2043000",
+    "Rate": 100,
+    "Source": "https://ccplz.cc/items/one-handed-sword-attack-scroll-lesser"
+  },
+  {
+    "Name": "One-Handed Sword Attack Scroll: Intermediate",
+    "ClassicId": "2043001",
+    "Rate": 60,
+    "Source": "https://ccplz.cc/items/one-handed-sword-attack-scroll-lesser"
+  },
+  {
+    "Name": "One-Handed Sword Attack Scroll: Greater",
+    "ClassicId": "2043002",
+    "Rate": 10,
+    "Source": "https://ccplz.cc/items/one-handed-sword-attack-scroll-lesser"
+  },
+  {
+    "Name": "One-Handed Sword Attack Scroll: Chaos",
+    "ClassicId": "2043003",
+    "Rate": 10,
+    "Source": "https://ccplz.cc/items/one-handed-sword-attack-scroll-lesser"
+  },
+  {
+    "Name": "Overall Armor DEF Scroll: Lesser",
+    "ClassicId": "2040500",
+    "Rate": 100,
+    "Source": "https://ccplz.cc/items/overall-armor-def-scroll-lesser"
+  },
+  {
+    "Name": "Overall Armor DEF Scroll: Intermediate",
+    "ClassicId": "2040501",
+    "Rate": 60,
+    "Source": "https://ccplz.cc/items/overall-armor-def-scroll-lesser"
+  },
+  {
+    "Name": "Overall Armor DEF Scroll: Greater",
+    "ClassicId": "2040502",
+    "Rate": 10,
+    "Source": "https://ccplz.cc/items/overall-armor-def-scroll-lesser"
+  },
+  {
+    "Name": "Overall Armor DEF Scroll: Chaos",
+    "ClassicId": "2040503",
+    "Rate": 10,
+    "Source": "https://ccplz.cc/items/overall-armor-def-scroll-lesser"
+  },
+  {
+    "Name": "Overall Armor DEX Scroll: Lesser",
+    "ClassicId": "2040508",
+    "Rate": 100,
+    "Source": "https://ccplz.cc/items/overall-armor-dex-scroll-lesser"
+  },
+  {
+    "Name": "Overall Armor DEX Scroll: Intermediate",
+    "ClassicId": "2040509",
+    "Rate": 60,
+    "Source": "https://ccplz.cc/items/overall-armor-dex-scroll-lesser"
+  },
+  {
+    "Name": "Overall Armor DEX Scroll: Greater",
+    "ClassicId": "2040510",
+    "Rate": 10,
+    "Source": "https://ccplz.cc/items/overall-armor-dex-scroll-lesser"
+  },
+  {
+    "Name": "Overall Armor DEX Scroll: Chaos",
+    "ClassicId": "2040511",
+    "Rate": 10,
+    "Source": "https://ccplz.cc/items/overall-armor-dex-scroll-lesser"
+  },
+  {
+    "Name": "Overall Armor INT Scroll: Lesser",
+    "ClassicId": "2040512",
+    "Rate": 100,
+    "Source": "https://ccplz.cc/items/overall-armor-int-scroll-lesser"
+  },
+  {
+    "Name": "Overall Armor INT Scroll: Intermediate",
+    "ClassicId": "2040513",
+    "Rate": 60,
+    "Source": "https://ccplz.cc/items/overall-armor-int-scroll-lesser"
+  },
+  {
+    "Name": "Overall Armor INT Scroll: Greater",
+    "ClassicId": "2040514",
+    "Rate": 10,
+    "Source": "https://ccplz.cc/items/overall-armor-int-scroll-lesser"
+  },
+  {
+    "Name": "Overall Armor INT Scroll: Chaos",
+    "ClassicId": "2040515",
+    "Rate": 10,
+    "Source": "https://ccplz.cc/items/overall-armor-int-scroll-lesser"
+  },
+  {
+    "Name": "Overall Armor LUK Scroll: Lesser",
+    "ClassicId": "2040516",
+    "Rate": 100,
+    "Source": "https://ccplz.cc/items/overall-armor-luk-scroll-lesser"
+  },
+  {
+    "Name": "Overall Armor LUK Scroll: Intermediate",
+    "ClassicId": "2040517",
+    "Rate": 60,
+    "Source": "https://ccplz.cc/items/overall-armor-luk-scroll-lesser"
+  },
+  {
+    "Name": "Overall Armor LUK Scroll: Greater",
+    "ClassicId": "2040518",
+    "Rate": 10,
+    "Source": "https://ccplz.cc/items/overall-armor-luk-scroll-lesser"
+  },
+  {
+    "Name": "Overall Armor LUK Scroll: Chaos",
+    "ClassicId": "2040519",
+    "Rate": 10,
+    "Source": "https://ccplz.cc/items/overall-armor-luk-scroll-lesser"
+  },
+  {
+    "Name": "Overall Armor STR Scroll: Lesser",
+    "ClassicId": "2040504",
+    "Rate": 100,
+    "Source": "https://ccplz.cc/items/overall-armor-str-scroll-lesser"
+  },
+  {
+    "Name": "Overall Armor STR Scroll: Intermediate",
+    "ClassicId": "2040505",
+    "Rate": 60,
+    "Source": "https://ccplz.cc/items/overall-armor-str-scroll-lesser"
+  },
+  {
+    "Name": "Overall Armor STR Scroll: Greater",
+    "ClassicId": "2040506",
+    "Rate": 10,
+    "Source": "https://ccplz.cc/items/overall-armor-str-scroll-lesser"
+  },
+  {
+    "Name": "Overall Armor STR Scroll: Chaos",
+    "ClassicId": "2040507",
+    "Rate": 10,
+    "Source": "https://ccplz.cc/items/overall-armor-str-scroll-lesser"
+  },
+  {
+    "Name": "Pet Equip Jump Scroll: Lesser",
+    "ClassicId": "2048004",
+    "Rate": 100,
+    "Source": "https://ccplz.cc/items/pet-equip-jump-scroll-lesser"
+  },
+  {
+    "Name": "Pet Equip Jump Scroll: Intermediate",
+    "ClassicId": "2048005",
+    "Rate": 60,
+    "Source": "https://ccplz.cc/items/pet-equip-jump-scroll-lesser"
+  },
+  {
+    "Name": "Pet Equip Jump Scroll: Greater",
+    "ClassicId": "2048006",
+    "Rate": 10,
+    "Source": "https://ccplz.cc/items/pet-equip-jump-scroll-lesser"
+  },
+  {
+    "Name": "Pet Equip Jump Scroll: Chaos",
+    "ClassicId": "2048007",
+    "Rate": 10,
+    "Source": "https://ccplz.cc/items/pet-equip-jump-scroll-lesser"
+  },
+  {
+    "Name": "Pet Equip Speed Scroll: Lesser",
+    "ClassicId": "2048000",
+    "Rate": 100,
+    "Source": "https://ccplz.cc/items/pet-equip-speed-scroll-lesser"
+  },
+  {
+    "Name": "Pet Equip Speed Scroll: Intermediate",
+    "ClassicId": "2048001",
+    "Rate": 60,
+    "Source": "https://ccplz.cc/items/pet-equip-speed-scroll-lesser"
+  },
+  {
+    "Name": "Pet Equip Speed Scroll: Greater",
+    "ClassicId": "2048002",
+    "Rate": 10,
+    "Source": "https://ccplz.cc/items/pet-equip-speed-scroll-lesser"
+  },
+  {
+    "Name": "Pet Equip Speed Scroll: Chaos",
+    "ClassicId": "2048003",
+    "Rate": 10,
+    "Source": "https://ccplz.cc/items/pet-equip-speed-scroll-lesser"
+  },
+  {
+    "Name": "Polearm Attack Scroll: Lesser",
+    "ClassicId": "2044400",
+    "Rate": 100,
+    "Source": "https://ccplz.cc/items/polearm-attack-scroll-lesser"
+  },
+  {
+    "Name": "Polearm Attack Scroll: Intermediate",
+    "ClassicId": "2044401",
+    "Rate": 60,
+    "Source": "https://ccplz.cc/items/polearm-attack-scroll-lesser"
+  },
+  {
+    "Name": "Polearm Attack Scroll: Greater",
+    "ClassicId": "2044402",
+    "Rate": 10,
+    "Source": "https://ccplz.cc/items/polearm-attack-scroll-lesser"
+  },
+  {
+    "Name": "Polearm Attack Scroll: Chaos",
+    "ClassicId": "2044403",
+    "Rate": 10,
+    "Source": "https://ccplz.cc/items/polearm-attack-scroll-lesser"
+  },
+  {
+    "Name": "Shield Accuracy Scroll: Lesser",
+    "ClassicId": "2040904",
+    "Rate": 100,
+    "Source": "https://ccplz.cc/items/shield-accuracy-scroll-lesser"
+  },
+  {
+    "Name": "Shield Accuracy Scroll: Intermediate",
+    "ClassicId": "2040905",
+    "Rate": 60,
+    "Source": "https://ccplz.cc/items/shield-accuracy-scroll-lesser"
+  },
+  {
+    "Name": "Shield Accuracy Scroll: Greater",
+    "ClassicId": "2040906",
+    "Rate": 10,
+    "Source": "https://ccplz.cc/items/shield-accuracy-scroll-lesser"
+  },
+  {
+    "Name": "Shield Accuracy Scroll: Chaos",
+    "ClassicId": "2040907",
+    "Rate": 10,
+    "Source": "https://ccplz.cc/items/shield-accuracy-scroll-lesser"
+  },
+  {
+    "Name": "Shield DEF Scroll: Lesser",
+    "ClassicId": "2040900",
+    "Rate": 100,
+    "Source": "https://ccplz.cc/items/shield-def-scroll-lesser"
+  },
+  {
+    "Name": "Shield DEF Scroll: Intermediate",
+    "ClassicId": "2040901",
+    "Rate": 60,
+    "Source": "https://ccplz.cc/items/shield-def-scroll-lesser"
+  },
+  {
+    "Name": "Shield DEF Scroll: Greater",
+    "ClassicId": "2040902",
+    "Rate": 10,
+    "Source": "https://ccplz.cc/items/shield-def-scroll-lesser"
+  },
+  {
+    "Name": "Shield DEF Scroll: Chaos",
+    "ClassicId": "2040903",
+    "Rate": 10,
+    "Source": "https://ccplz.cc/items/shield-def-scroll-lesser"
+  },
+  {
+    "Name": "Shoes Evasion Scroll: Lesser",
+    "ClassicId": "2040708",
+    "Rate": 100,
+    "Source": "https://ccplz.cc/items/shoes-evasion-scroll-lesser"
+  },
+  {
+    "Name": "Shoes Evasion Scroll: Intermediate",
+    "ClassicId": "2040709",
+    "Rate": 60,
+    "Source": "https://ccplz.cc/items/shoes-evasion-scroll-lesser"
+  },
+  {
+    "Name": "Shoes Evasion Scroll: Greater",
+    "ClassicId": "2040710",
+    "Rate": 10,
+    "Source": "https://ccplz.cc/items/shoes-evasion-scroll-lesser"
+  },
+  {
+    "Name": "Shoes Evasion Scroll: Chaos",
+    "ClassicId": "2040711",
+    "Rate": 10,
+    "Source": "https://ccplz.cc/items/shoes-evasion-scroll-lesser"
+  },
+  {
+    "Name": "Shoes Jump Scroll: Lesser",
+    "ClassicId": "2040700",
+    "Rate": 100,
+    "Source": "https://ccplz.cc/items/shoes-jump-scroll-lesser"
+  },
+  {
+    "Name": "Shoes Jump Scroll: Intermediate",
+    "ClassicId": "2040701",
+    "Rate": 60,
+    "Source": "https://ccplz.cc/items/shoes-jump-scroll-lesser"
+  },
+  {
+    "Name": "Shoes Jump Scroll: Greater",
+    "ClassicId": "2040702",
+    "Rate": 10,
+    "Source": "https://ccplz.cc/items/shoes-jump-scroll-lesser"
+  },
+  {
+    "Name": "Shoes Jump Scroll: Chaos",
+    "ClassicId": "2040703",
+    "Rate": 10,
+    "Source": "https://ccplz.cc/items/shoes-jump-scroll-lesser"
+  },
+  {
+    "Name": "Shoes Speed Scroll: Lesser",
+    "ClassicId": "2040704",
+    "Rate": 100,
+    "Source": "https://ccplz.cc/items/shoes-speed-scroll-lesser"
+  },
+  {
+    "Name": "Shoes Speed Scroll: Intermediate",
+    "ClassicId": "2040705",
+    "Rate": 60,
+    "Source": "https://ccplz.cc/items/shoes-speed-scroll-lesser"
+  },
+  {
+    "Name": "Shoes Speed Scroll: Greater",
+    "ClassicId": "2040706",
+    "Rate": 10,
+    "Source": "https://ccplz.cc/items/shoes-speed-scroll-lesser"
+  },
+  {
+    "Name": "Shoes Speed Scroll: Chaos",
+    "ClassicId": "2040707",
+    "Rate": 10,
+    "Source": "https://ccplz.cc/items/shoes-speed-scroll-lesser"
+  },
+  {
+    "Name": "Spear Attack Scroll: Lesser",
+    "ClassicId": "2044300",
+    "Rate": 100,
+    "Source": "https://ccplz.cc/items/spear-attack-scroll-lesser"
+  },
+  {
+    "Name": "Spear Attack Scroll: Intermediate",
+    "ClassicId": "2044301",
+    "Rate": 60,
+    "Source": "https://ccplz.cc/items/spear-attack-scroll-lesser"
+  },
+  {
+    "Name": "Spear Attack Scroll: Greater",
+    "ClassicId": "2044302",
+    "Rate": 10,
+    "Source": "https://ccplz.cc/items/spear-attack-scroll-lesser"
+  },
+  {
+    "Name": "Spear Attack Scroll: Chaos",
+    "ClassicId": "2044303",
+    "Rate": 10,
+    "Source": "https://ccplz.cc/items/spear-attack-scroll-lesser"
+  },
+  {
+    "Name": "Staff Magic Attack Scroll: Lesser",
+    "ClassicId": "2043800",
+    "Rate": 100,
+    "Source": "https://ccplz.cc/items/staff-magic-attack-scroll-lesser"
+  },
+  {
+    "Name": "Staff Magic Attack Scroll: Intermediate",
+    "ClassicId": "2043801",
+    "Rate": 60,
+    "Source": "https://ccplz.cc/items/staff-magic-attack-scroll-lesser"
+  },
+  {
+    "Name": "Staff Magic Attack Scroll: Greater",
+    "ClassicId": "2043802",
+    "Rate": 10,
+    "Source": "https://ccplz.cc/items/staff-magic-attack-scroll-lesser"
+  },
+  {
+    "Name": "Staff Magic Attack Scroll: Chaos",
+    "ClassicId": "2043803",
+    "Rate": 10,
+    "Source": "https://ccplz.cc/items/staff-magic-attack-scroll-lesser"
+  },
+  {
+    "Name": "Topwear DEF Scroll: Lesser",
+    "ClassicId": "2040400",
+    "Rate": 100,
+    "Source": "https://ccplz.cc/items/topwear-def-scroll-lesser"
+  },
+  {
+    "Name": "Topwear DEF Scroll: Intermediate",
+    "ClassicId": "2040401",
+    "Rate": 60,
+    "Source": "https://ccplz.cc/items/topwear-def-scroll-lesser"
+  },
+  {
+    "Name": "Topwear DEF Scroll: Greater",
+    "ClassicId": "2040402",
+    "Rate": 10,
+    "Source": "https://ccplz.cc/items/topwear-def-scroll-lesser"
+  },
+  {
+    "Name": "Topwear DEF Scroll: Chaos",
+    "ClassicId": "2040403",
+    "Rate": 10,
+    "Source": "https://ccplz.cc/items/topwear-def-scroll-lesser"
+  },
+  {
+    "Name": "Topwear HP Scroll: Lesser",
+    "ClassicId": "2040404",
+    "Rate": 100,
+    "Source": "https://ccplz.cc/items/topwear-hp-scroll-lesser"
+  },
+  {
+    "Name": "Topwear HP Scroll: Intermediate",
+    "ClassicId": "2040405",
+    "Rate": 60,
+    "Source": "https://ccplz.cc/items/topwear-hp-scroll-lesser"
+  },
+  {
+    "Name": "Topwear HP Scroll: Greater",
+    "ClassicId": "2040406",
+    "Rate": 10,
+    "Source": "https://ccplz.cc/items/topwear-hp-scroll-lesser"
+  },
+  {
+    "Name": "Topwear HP Scroll: Chaos",
+    "ClassicId": "2040407",
+    "Rate": 10,
+    "Source": "https://ccplz.cc/items/topwear-hp-scroll-lesser"
+  },
+  {
+    "Name": "Topwear MP Scroll: Lesser",
+    "ClassicId": "2040408",
+    "Rate": 100,
+    "Source": "https://ccplz.cc/items/topwear-mp-scroll-lesser"
+  },
+  {
+    "Name": "Topwear MP Scroll: Intermediate",
+    "ClassicId": "2040409",
+    "Rate": 60,
+    "Source": "https://ccplz.cc/items/topwear-mp-scroll-lesser"
+  },
+  {
+    "Name": "Topwear MP Scroll: Greater",
+    "ClassicId": "2040410",
+    "Rate": 10,
+    "Source": "https://ccplz.cc/items/topwear-mp-scroll-lesser"
+  },
+  {
+    "Name": "Topwear MP Scroll: Chaos",
+    "ClassicId": "2040411",
+    "Rate": 10,
+    "Source": "https://ccplz.cc/items/topwear-mp-scroll-lesser"
+  },
+  {
+    "Name": "Two-handed Axe Attack Scroll: Lesser",
+    "ClassicId": "2044100",
+    "Rate": 100,
+    "Source": "https://ccplz.cc/items/two-handed-axe-attack-scroll-lesser"
+  },
+  {
+    "Name": "Two-handed Axe Attack Scroll: Intermediate",
+    "ClassicId": "2044101",
+    "Rate": 60,
+    "Source": "https://ccplz.cc/items/two-handed-axe-attack-scroll-lesser"
+  },
+  {
+    "Name": "Two-handed Axe Attack Scroll: Greater",
+    "ClassicId": "2044102",
+    "Rate": 10,
+    "Source": "https://ccplz.cc/items/two-handed-axe-attack-scroll-lesser"
+  },
+  {
+    "Name": "Two-handed Axe Attack Scroll: Chaos",
+    "ClassicId": "2044103",
+    "Rate": 10,
+    "Source": "https://ccplz.cc/items/two-handed-axe-attack-scroll-lesser"
+  },
+  {
+    "Name": "Two-handed Blunt Weapon Attack Scroll: Lesser",
+    "ClassicId": "2044200",
+    "Rate": 100,
+    "Source": "https://ccplz.cc/items/two-handed-blunt-weapon-attack-scroll-lesser"
+  },
+  {
+    "Name": "Two-handed Blunt Weapon Attack Scroll: Intermediate",
+    "ClassicId": "2044201",
+    "Rate": 60,
+    "Source": "https://ccplz.cc/items/two-handed-blunt-weapon-attack-scroll-lesser"
+  },
+  {
+    "Name": "Two-handed Blunt Weapon Attack Scroll: Greater",
+    "ClassicId": "2044202",
+    "Rate": 10,
+    "Source": "https://ccplz.cc/items/two-handed-blunt-weapon-attack-scroll-lesser"
+  },
+  {
+    "Name": "Two-handed Blunt Weapon Attack Scroll: Chaos",
+    "ClassicId": "2044203",
+    "Rate": 10,
+    "Source": "https://ccplz.cc/items/two-handed-blunt-weapon-attack-scroll-lesser"
+  },
+  {
+    "Name": "Two-handed Sword Attack Scroll: Lesser",
+    "ClassicId": "2044000",
+    "Rate": 100,
+    "Source": "https://ccplz.cc/items/two-handed-sword-attack-scroll-lesser"
+  },
+  {
+    "Name": "Two-handed Sword Attack Scroll: Intermediate",
+    "ClassicId": "2044001",
+    "Rate": 60,
+    "Source": "https://ccplz.cc/items/two-handed-sword-attack-scroll-lesser"
+  },
+  {
+    "Name": "Two-handed Sword Attack Scroll: Greater",
+    "ClassicId": "2044002",
+    "Rate": 10,
+    "Source": "https://ccplz.cc/items/two-handed-sword-attack-scroll-lesser"
+  },
+  {
+    "Name": "Two-handed Sword Attack Scroll: Chaos",
+    "ClassicId": "2044003",
+    "Rate": 10,
+    "Source": "https://ccplz.cc/items/two-handed-sword-attack-scroll-lesser"
+  },
+  {
+    "Name": "Wand Magic Attack Scroll: Lesser",
+    "ClassicId": "2043700",
+    "Rate": 100,
+    "Source": "https://ccplz.cc/items/wand-magic-attack-scroll-lesser"
+  },
+  {
+    "Name": "Wand Magic Attack Scroll: Intermediate",
+    "ClassicId": "2043701",
+    "Rate": 60,
+    "Source": "https://ccplz.cc/items/wand-magic-attack-scroll-lesser"
+  },
+  {
+    "Name": "Wand Magic Attack Scroll: Greater",
+    "ClassicId": "2043702",
+    "Rate": 10,
+    "Source": "https://ccplz.cc/items/wand-magic-attack-scroll-lesser"
+  },
+  {
+    "Name": "Wand Magic Attack Scroll: Chaos",
+    "ClassicId": "2043703",
+    "Rate": 10,
+    "Source": "https://ccplz.cc/items/wand-magic-attack-scroll-lesser"
+  }
+]

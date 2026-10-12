@@ -590,6 +590,31 @@ await Test("Public reference reader caches and enforces source host and robots",
  bool blocked=false;try{await client.Get("https://example.org/wiki/Blocked",CancellationToken.None);}catch(HttpRequestException){blocked=true;}Check(blocked&&handler.Calls==calls);
  bool host=false;try{await client.Get("https://other.org/wiki/Item",CancellationToken.None);}catch(FormatException){host=true;}Check(host);
 });
+await Test("Scroll aliases select the verified success rate",()=>Sync(()=>{
+ foreach(var (query,expected) in new[]{("Scroll for Gloves for ATT 60%","Gloves Attack Scroll: Intermediate"),("Scroll for Gloves for ATT 100%","Gloves Attack Scroll: Lesser"),("Scroll for Gloves for ATT 10%","Gloves Attack Scroll: Greater"),("Scroll for Overall Armor for DEX 60%","Overall Armor DEX Scroll: Intermediate"),("Scroll for Overall Armor for DEX 10%","Overall Armor DEX Scroll: Greater"),("Scroll for Claw for ATT 60%","Claw Attack Scroll: Intermediate"),("Scroll for One-Handed Sword for ATT 60%","One-Handed Sword Attack Scroll: Intermediate")})Check(ScrollNames.Query(query)==expected,query);
+}));
+await Test("Scroll rate filters reject other percentages and Chaos",()=>Sync(()=>{
+ Check(ScrollNames.Matches("Gloves Attack Scroll: Intermediate","Scroll for Gloves for ATT 60%"));
+ Check(!ScrollNames.Matches("Gloves Attack Scroll: Greater","Scroll for Gloves for ATT 60%"));
+ Check(!ScrollNames.Matches("Gloves Attack Scroll: Chaos","Scroll for Gloves for ATT 10%"));
+ Check(!ScrollNames.Matches("Gloves Attack Scroll: Intermediate","Scroll for Gloves for ATT 70%"));
+ Check(ScrollNames.Resolve("Gloves Attack Scroll Intermediate 10%") is null);
+ Check(ScrollNames.Resolve("Gloves Attack Scroll Chaos 10%")?.Name=="Gloves Attack Scroll: Chaos");
+ Check(ScrollNames.Resolve("Scroll for Gloves for ATT 60 percent")?.Rate==60);
+}));
+await Test("GMS scroll IDs retain rates without becoming Classic IDs",()=>Sync(()=>{
+ Check(ScrollNames.LegacyName("2040804","Scroll for Gloves for ATT")=="Scroll for Gloves for ATT 60%");
+ Check(ScrollNames.Resolve(ScrollNames.LegacyName("2040804",""))?.ClassicId=="2040801");
+ Check(ScrollNames.Resolve(ScrollNames.LegacyName("2040501",""))?.Name=="Overall Armor DEX Scroll: Intermediate");
+ Check(!ScrollNames.HasVerifiedLegacyRate("2049999","Scroll for Gloves for ATT"));
+ Check(!ScrollNames.Matches("Gloves Attack Scroll: Intermediate","Scroll for Gloves for ATT (unverified success rate; choose a percentage)"));
+}));
+await Test("All bundled Classic scrolls round-trip without mixing variants",()=>Sync(()=>{
+ Check(ScrollNames.References.Length>=180);
+ foreach(var r in ScrollNames.References){Check(ScrollNames.Resolve(r.Name)==r,r.Name);Check(ScrollNames.Resolve(ScrollNames.Display(r.Name))==r,r.Name+" display");Check(ScrollNames.References.Count(x=>ScrollNames.Matches(x.Name,ScrollNames.Display(r.Name)))==1,r.Name+" uniqueness");}
+ Check(ScrollNames.Matches("Red Potion","red pot"));Check(!ScrollNames.Matches("Gloves Magic Attack Scroll: Intermediate","Scroll for Gloves for ATT 60%"));
+}));
+
 Directory.CreateDirectory("test-results");File.WriteAllText("test-results/results.json",JsonSerializer.Serialize(new{total=results.Count,failed=failures,results},Json.Options));Console.WriteLine($"{results.Count-failures}/{results.Count} passed");Environment.ExitCode=failures==0?0:1;
 
 

@@ -83,6 +83,14 @@ Additional source review: Sleepywood database failed to load and API docs return
 - Long map lists show five names and a remaining count; clicking opens the full map menu. Monster names and evidence remain aligned at the top.
 - Verified live references for Orange Mushroom Cap, Red Potion and Blue Moonlight, including monster maps and empty drops. Added display regression checks; session recovery and isolated package update/restart tested again.
 
+### 1.25.10 — Scroll names and success rates
+
+Price Checker recognizes traditional percentage names such as “Scroll for Gloves for ATT 60%” and matches the corresponding Classic name. Search suggestions and listing cards show verified success rates. The bundled reference covers 208 Classic scroll variants from 52 families; Chaos remains distinct from ordinary scrolls with the same percentage. Rates unsupported by the reference never silently select a different tier.
+
+Verified GMS scroll IDs preserve their percentages before searching Classic listings. Unverified rate-less legacy IDs require choosing a named percentage instead of joining incompatible game-version IDs. NPC lookups use the matching Classic reference ID. Market listings, sold advertisements and NPC prices retain their separate meanings.
+
+Validation: 190 automated checks; nine live Price Checker searches covering Gloves 10/60/100%, Claw 60%, Overall DEX 10/60%, One-Handed Sword 60%, legacy ID 2040804 and unsupported Gloves 70%. An isolated packaged update/restart test checks saved settings, views, filters, watchlist and market history.
+
 ### 1.25.9 — Stable titles and sidebar
 
 Navigation no longer removes and re-adds every sidebar button when the menu structure is unchanged. When a group changes, the navigation redraw is held until the menu has been rebuilt. Titles paint their opaque background and text together, and the main window composites the title, sidebar and page in one paint pass. Repeated navigation, all four themes, saved sessions and the packaged update/restart path are covered by regression checks.

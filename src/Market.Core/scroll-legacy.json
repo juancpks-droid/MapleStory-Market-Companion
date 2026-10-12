@@ -1,0 +1,77 @@
+[
+  {
+    "Id": "2040800",
+    "Name": "Scroll for Gloves for DEX",
+    "Rate": 100
+  },
+  {
+    "Id": "2040801",
+    "Name": "Scroll for Gloves for DEX",
+    "Rate": 60
+  },
+  {
+    "Id": "2040802",
+    "Name": "Scroll for Gloves for DEX",
+    "Rate": 10
+  },
+  {
+    "Id": "2040803",
+    "Name": "Scroll for Gloves for ATT",
+    "Rate": 100
+  },
+  {
+    "Id": "2040804",
+    "Name": "Scroll for Gloves for ATT",
+    "Rate": 60
+  },
+  {
+    "Id": "2040805",
+    "Name": "Scroll for Gloves for ATT",
+    "Rate": 10
+  },
+  {
+    "Id": "2040500",
+    "Name": "Scroll for Overall Armor for DEX",
+    "Rate": 100
+  },
+  {
+    "Id": "2040501",
+    "Name": "Scroll for Overall Armor for DEX",
+    "Rate": 60
+  },
+  {
+    "Id": "2040502",
+    "Name": "Scroll for Overall Armor for DEX",
+    "Rate": 10
+  },
+  {
+    "Id": "2044700",
+    "Name": "Scroll for Claw for ATT",
+    "Rate": 100
+  },
+  {
+    "Id": "2044701",
+    "Name": "Scroll for Claw for ATT",
+    "Rate": 60
+  },
+  {
+    "Id": "2044702",
+    "Name": "Scroll for Claw for ATT",
+    "Rate": 10
+  },
+  {
+    "Id": "2043000",
+    "Name": "Scroll for One-Handed Sword for ATT",
+    "Rate": 100
+  },
+  {
+    "Id": "2043001",
+    "Name": "Scroll for One-Handed Sword for ATT",
+    "Rate": 60
+  },
+  {
+    "Id": "2043002",
+    "Name": "Scroll for One-Handed Sword for ATT",
+    "Rate": 10
+  }
+]

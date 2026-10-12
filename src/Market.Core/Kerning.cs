@@ -102,8 +102,8 @@ public sealed class KerningReader(Fetcher fetcher)
         var wanted=new List<CatalogItem>();
         foreach(var name in names.Where(n=>!string.IsNullOrWhiteSpace(n)).Distinct())
         {
-            var key=SearchKey(name);var exact=catalog.Where(i=>SearchKey(i.Name)==key).ToList();
-            wanted.AddRange(exact.Count>0?exact:catalog.Where(i=>SearchKey(i.Name).Contains(key)).Take(5));
+            var key=SearchKey(ScrollNames.Query(name));var exact=catalog.Where(i=>SearchKey(i.Name)==key).ToList();
+            wanted.AddRange(exact.Count>0?exact:catalog.Where(i=>ScrollNames.Matches(i.Name,name)).Take(5));
         }
         if(!search)wanted.AddRange(catalog.OrderByDescending(i=>i.Changed).Take(20));
         var candidates=wanted.DistinctBy(i=>i.Id).OrderBy(i=>config.PageChecked.GetValueOrDefault(i.Url)).ToList();

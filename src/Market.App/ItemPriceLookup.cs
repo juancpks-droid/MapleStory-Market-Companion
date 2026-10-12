@@ -9,7 +9,9 @@ public sealed partial class MainForm
  string queuedLookup="",pendingLookup="",lastLookup="";DateTimeOffset lastLookupAt;
  string ResolvePriceQuery(string query){
   query=features.Polish.Resolve(query).Trim();
-  return iconCatalog.Entries.FirstOrDefault(e=>e.Id==query)?.Name??query;
+  var entry=iconCatalog.Entries.FirstOrDefault(e=>e.Id==query);
+  if(entry is not null&&ScrollNames.IsScroll(entry.Name)&&!ScrollNames.HasVerifiedLegacyRate(entry.Id,entry.Name))return entry.Name+" (unverified success rate; choose a percentage)";
+  return ScrollNames.Query(entry?.Name??query);
  }
  void InitializeItemLookup(){priceRenderTimer.Tick+=(_,_)=>{priceRenderTimer.Stop();if(!closing)RenderPrices();};
   itemLookupTimer.Tick+=async(_,_)=>{itemLookupTimer.Stop();var query=queuedLookup;queuedLookup="";if(query.Length<3||closing)return;npcKey="";QueueNpcPrices();RememberPriceSearch(query);lastLookup=query;lastLookupAt=DateTimeOffset.UtcNow;await RefreshSources(true,query);};

@@ -10,7 +10,7 @@ public sealed class IconCatalog
     readonly Dictionary<string,Entry[]> names;
     public IEnumerable<string> Names=>Entries.Select(e=>e.Name).Distinct();
     public IEnumerable<Entry> Entries=>names.Values.SelectMany(v=>v).Where(e=>ItemFinder.HasEnglishDisplayName(e.Name));
-    public IconCatalog(){var entries=JsonSerializer.Deserialize<Entry[]>(File.ReadAllText(Path.Combine(AppContext.BaseDirectory,"icon-catalog-gms83.json")))??[];names=entries.GroupBy(e=>TextKey.Search(e.Name)).ToDictionary(g=>g.Key,g=>g.ToArray());}
+    public IconCatalog(){var entries=JsonSerializer.Deserialize<Entry[]>(File.ReadAllText(Path.Combine(AppContext.BaseDirectory,"icon-catalog-gms83.json")))??[];entries=entries.Select(e=>e with{Name=ScrollNames.LegacyName(e.Id,e.Name)}).ToArray();names=entries.GroupBy(e=>TextKey.Search(e.Name)).ToDictionary(g=>g.Key,g=>g.ToArray());}
     public string Resolve(string id,string name){if(!names.TryGetValue(TextKey.Search(name),out var matches))return "";return matches.FirstOrDefault(e=>e.Id==id)?.Id??(matches.Length==1?matches[0].Id:"");}
 }
 

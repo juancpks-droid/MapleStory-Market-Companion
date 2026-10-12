@@ -19,6 +19,10 @@ public sealed partial class MainForm
   var selectedItem=SelectedPriceItem();var query=features.Polish.Resolve(search.Text).Trim();
   var catalog=iconCatalog.Entries.FirstOrDefault(e=>e.Id==query||TextKey.Search(e.Name)==TextKey.Search(query));
   string name=selectedItem?.Name??catalog?.Name??"",id=selectedItem?.ItemId??catalog?.Id??"";
+  var scroll=ScrollNames.Resolve(ResolvePriceQuery(search.Text));
+  if(selectedItem is not null)scroll=ScrollNames.Resolve(selectedItem.Name)??scroll;
+  if(scroll is not null){name=scroll.Name;id=scroll.ClassicId;}
+  else if(ScrollNames.IsScroll(name)){name="";id="";}
   string key=name+"|"+id+"|"+Offline;if(key==npcKey)return;npcKey=key;npcUrl="";UpdateNpcPriceMetrics(null);int generation=++npcGeneration;
   npcStop?.Cancel();npcStop?.Dispose();npcStop=CancellationTokenSource.CreateLinkedTokenSource(stop.Token);npcStop.CancelAfter(TimeSpan.FromSeconds(90));var ct=npcStop.Token;
   if(name.Length==0){npcPriceNote.Text="NPC reference: select an item or enter its exact name / ID. Player listings may be unavailable.";return;}

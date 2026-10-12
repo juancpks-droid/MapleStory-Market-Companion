@@ -13,6 +13,7 @@ public sealed partial class MainForm
  void ResetMarketFilters(){listingMin.Value=0;listingMax.Value=0;listingSort.SelectedIndex=3;listingSource.SelectedIndex=0;listingRecent.Checked=false;}
  Observation? marketTarget; bool fillingPriceChoices; readonly ComboBox priceItemChoice=new GuideComboBox(){Width=195,DropDownStyle=ComboBoxStyle.DropDownList,AccessibleName="Matching item",Visible=false};
  void BuildPriceDetails(Panel page,Control chart){
+  priceItemChoice.FormattingEnabled=true;priceItemChoice.Format+=(_,e)=>{if(e.ListItem is string name)e.Value=ScrollNames.Display(name);};
   page.Controls.Remove(priceGrid);page.Controls.Remove(chart);
   var listings=new TabPage("For sale & looking to buy");
   var filters=Toolbar();filters.Height=42;filters.WrapContents=true;filters.AutoScroll=false;filters.Controls.Add(priceItemChoice);priceItemChoice.SelectedIndexChanged+=(_,_)=>{if(!fillingPriceChoices){RenderValuation();RenderHistory();QueueItemLookup(priceItemChoice.Text);}};
@@ -34,9 +35,9 @@ public sealed partial class MainForm
   FitPriceText(fmContext);FitPriceText(priceSummary);FitPriceText(marketHeadline);BuildNpcReference(page);BuildPriceOverview(page);
   listingSort.SelectedIndexChanged+=(_,_)=>RenderMarketCards(marketTarget);listingMin.ValueChanged+=(_,_)=>RenderMarketCards(marketTarget);listingMax.ValueChanged+=(_,_)=>RenderMarketCards(marketTarget);
  }
- Observation? SelectedPriceItem()=>priceDetails.SelectedIndex==2&&priceGrid.SelectedRows.Count>0?priceGrid.SelectedRows[0].Tag as Observation:observations.FirstOrDefault(o=>o.Name==priceItemChoice.Text);
+ Observation? SelectedPriceItem()=>priceDetails.SelectedIndex==2&&priceGrid.SelectedRows.Count>0?priceGrid.SelectedRows[0].Tag as Observation:observations.FirstOrDefault(o=>o.Name==priceItemChoice.SelectedItem as string);
  void SetPriceChoices(List<Observation> rows){
-  var previous=priceItemChoice.Text;var query=features.Polish.Resolve(search.Text).Trim();fillingPriceChoices=true;
+  var previous=priceItemChoice.SelectedItem as string;var query=ResolvePriceQuery(search.Text);fillingPriceChoices=true;
   priceItemChoice.Items.Clear();var names=rows.Select(o=>o.Name).Distinct().Order().ToArray();priceItemChoice.Items.AddRange(names);priceItemChoice.Visible=names.Length>1;
   var exact=names.FirstOrDefault(n=>TextKey.Search(n)==TextKey.Search(query));
   priceItemChoice.SelectedItem=exact??(names.Contains(previous)?previous:names.FirstOrDefault());
@@ -60,7 +61,7 @@ public sealed partial class MainForm
    foreach(var o in rows){
     var card=new MarketListingCard(){Width=Math.Max(150,flow.ClientSize.Width-24),MaximumSize=new Size(Math.Max(150,flow.ClientSize.Width-24),0),AutoSize=true,AutoSizeMode=AutoSizeMode.GrowAndShrink,FlowDirection=FlowDirection.TopDown,WrapContents=false,Padding=new Padding(12),Margin=new Padding(2,3,2,10),BackColor=GuidePalette.Surface,Tag=o};
     void Line(string text,bool strong=false){card.Controls.Add(new Label(){Text=text,AutoSize=true,MaximumSize=new Size(Math.Max(130,card.Width-22),0),ForeColor=strong?GuidePalette.Gold:GuidePalette.Muted,Font=new Font("Segoe UI",strong?12:9,strong?FontStyle.Bold:FontStyle.Regular),Margin=new Padding(0,2,0,3)});}
-    Line(o.Name,true);Line((o.PriceApproximate?"~ ":"")+TextKey.Mesos(o.UnitPrice)+" mesos / unit",true);
+    Line(ScrollNames.Display(o.Name),true);Line((o.PriceApproximate?"~ ":"")+TextKey.Mesos(o.UnitPrice)+" mesos / unit",true);
     Line("Qty: "+(o.Quantity?.ToString("N0")??"Unknown")+" • "+o.Provider);
     Line((kind==EvidenceKind.Buying?"Buyer: ":"Seller: ")+(string.IsNullOrWhiteSpace(o.Seller)?"Not provided":o.Seller));
     if(o.Equipment)Line("Variant: "+(o.VariantComplete?o.Variant:"Incomplete details — check source"));

@@ -409,11 +409,11 @@ public sealed partial class MainForm : Form
 
     {
 
-        if(priceGrid.IsDisposed)return;var renderWatch=System.Diagnostics.Stopwatch.StartNew();renderingPriceRows=true;priceGrid.SuspendLayout();try{var query=TextKey.Search(features.Polish.Resolve(search.Text));var rows=observations.Where(o=>(query.Length==0||TextKey.Search(o.Name).Contains(query)||o.ItemId==search.Text.Trim())&&listingFilter.Matches(o,DateTimeOffset.UtcNow,settings.FreshHours)).OrderByDescending(o=>o.RetrievedAt).ToList();
+        if(priceGrid.IsDisposed)return;var renderWatch=System.Diagnostics.Stopwatch.StartNew();renderingPriceRows=true;priceGrid.SuspendLayout();try{var query=ResolvePriceQuery(search.Text);var rows=observations.Where(o=>(query.Length==0||ScrollNames.Matches(o.Name,query)||(!ScrollNames.IsScroll(query)&&o.ItemId==search.Text.Trim()))&&listingFilter.Matches(o,DateTimeOffset.UtcNow,settings.FreshHours)).OrderByDescending(o=>o.RetrievedAt).ToList();
 
         SetPriceChoices(rows);SetColumns(priceGrid,["Item","Price / unit","Type","Source","Data observed","Retrieved","Quality"]);priceGrid.Columns[0].FillWeight=130;priceGrid.Columns[6].FillWeight=180;
 
-        foreach(var o in rows.Take(1000)){int i=priceGrid.Rows.Add(o.Name+(o.Equipment?" • equipment":""),TextKey.Mesos(o.UnitPrice)+(o.PriceApproximate?" ≈":""),o.Kind,o.Provider,o.ObservedAt?.ToLocalTime().ToString("g")??o.SourceAge+" (unverified)",o.RetrievedAt.ToLocalTime().ToString("g"),ReliabilityTools.EvidenceStatus(o,settings.Sources.Any(s=>s.Id==o.Provider&&s.Authorized),DateTimeOffset.UtcNow,settings.FreshHours));priceGrid.Rows[i].Tag=o;priceGrid.Rows[i].Cells[0].ToolTipText=o.Variant;}
+        foreach(var o in rows.Take(1000)){int i=priceGrid.Rows.Add(ScrollNames.Display(o.Name)+(o.Equipment?" • equipment":""),TextKey.Mesos(o.UnitPrice)+(o.PriceApproximate?" ≈":""),o.Kind,o.Provider,o.ObservedAt?.ToLocalTime().ToString("g")??o.SourceAge+" (unverified)",o.RetrievedAt.ToLocalTime().ToString("g"),ReliabilityTools.EvidenceStatus(o,settings.Sources.Any(s=>s.Id==o.Provider&&s.Authorized),DateTimeOffset.UtcNow,settings.FreshHours));priceGrid.Rows[i].Tag=o;priceGrid.Rows[i].Cells[0].ToolTipText=o.Variant;}
 
         }finally{renderingPriceRows=false;priceGrid.ResumeLayout();}RenderValuation();RenderHistory();lastPriceRenderMs=renderWatch.ElapsedMilliseconds;
 
@@ -437,7 +437,7 @@ public sealed partial class MainForm : Form
         UpdatePriceOverview(asks.Count==0?null:asks.Min(o=>o.UnitPrice),buyers.Count==0?null:buyers.Max(o=>o.UnitPrice),v);
         string lead=target is null?"Search an item online to retrieve its market listings.":target.Name+" • Lowest recently checked ask: "+TextKey.Mesos(asks.Count==0?null:asks.Min(o=>o.UnitPrice))+" • "+asks.Count+" recent asks";
 
-        RenderMarketCards(target);UpdateWatchButtons();QueueNpcPrices();var fm=fmSummaries.FirstOrDefault(x=>TextKey.Search(x.Name)==TextKey.Search(target?.Name??search.Text));
+        RenderMarketCards(target);UpdateWatchButtons();QueueNpcPrices();var fm=fmSummaries.FirstOrDefault(x=>TextKey.Search(x.Name)==TextKey.Search(target?.Name??ResolvePriceQuery(search.Text)));
         fmContext.Visible=false;
         bool fmEnabled=settings.Sources.Any(x=>x.Id=="Kerning Exchange"&&x.Authorized);
         UpdateFmPriceMetrics(fm,fmEnabled);fmContext.Text=fm is null?"FM summaries: search an exact item name or open FM Tracker for broader coverage.":$"Kerning FM • 7-day median {TextKey.Mesos(fm.Median7)} • Lowest observed ask {TextKey.Mesos(fm.LowestAsk)} • {fm.Sightings} sightings\nLast seen {fm.LastSeen.ToLocalTime():g} • {(fmEnabled?fm.Quality(DateTimeOffset.UtcNow,settings.FreshHours):"Source disabled — cached only")} • Summary only; excluded from bargain alerts.";
@@ -449,7 +449,7 @@ public sealed partial class MainForm : Form
 
     {
 
-        var item=SelectedPriceItem();var name=item?.ItemKey??TextKey.Normalize(search.Text);
+        var item=SelectedPriceItem();var name=item?.ItemKey??TextKey.Normalize(ResolvePriceQuery(search.Text));
 
         int days=historyDays;var now=DateTimeOffset.UtcNow;
 

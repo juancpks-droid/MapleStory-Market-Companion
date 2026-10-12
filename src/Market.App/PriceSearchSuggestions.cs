@@ -6,7 +6,7 @@ public sealed partial class MainForm
  readonly System.Windows.Forms.Timer suggestionTimer=new(){Interval=200};
  ItemSearchIndex? priceSearchIndex;int suggestionGeneration;
  void BuildPriceSuggestions(Panel page,Control bar){
-  priceSearchIndex=new(iconCatalog.Entries.Select(e=>new FinderIdentity(e.Id,e.Name)));
+  priceSearchIndex=new(iconCatalog.Entries.Select(e=>new FinderIdentity(e.Id,e.Name)).Concat(ScrollNames.References.Select(e=>new FinderIdentity("",ScrollNames.Display(e.Name)))));
   page.Controls.Add(priceSuggestions);page.Controls.SetChildIndex(priceSuggestions,page.Controls.GetChildIndex(bar));
   ConfigurePriceAutocomplete();
   search.TextChanged+=(_,_)=>{suggestionGeneration++;suggestionTimer.Stop();priceSuggestions.Visible=false;if(search.Focused)suggestionTimer.Start();};
@@ -16,7 +16,7 @@ public sealed partial class MainForm
  }
  void ConfigurePriceAutocomplete(){
   var names=new AutoCompleteStringCollection();
-  names.AddRange(iconCatalog.Names.Distinct(StringComparer.OrdinalIgnoreCase).Order().ToArray());
+  names.AddRange(iconCatalog.Names.Concat(ScrollNames.References.Select(e=>ScrollNames.Display(e.Name))).Distinct(StringComparer.OrdinalIgnoreCase).Order().ToArray());
   search.AutoCompleteCustomSource=names;
   search.AutoCompleteSource=AutoCompleteSource.CustomSource;
   search.AutoCompleteMode=AutoCompleteMode.Suggest;
