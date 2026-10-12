@@ -1,6 +1,7 @@
 namespace Market.App;
 sealed class MarketGrid:DataGridView
 {
+ public MarketGrid(){DoubleBuffered=true;}
  protected override void OnPaint(PaintEventArgs e){
   base.OnPaint(e);if(Rows.Count!=0||Width<180||Height<110)return;
   int y=Math.Max(ColumnHeadersHeight+22,Height/2-24);

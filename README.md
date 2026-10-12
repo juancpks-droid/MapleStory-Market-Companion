@@ -83,6 +83,10 @@ Additional source review: Sleepywood database failed to load and API docs return
 - Long map lists show five names and a remaining count; clicking opens the full map menu. Monster names and evidence remain aligned at the top.
 - Verified live references for Orange Mushroom Cap, Red Potion and Blue Moonlight, including monster maps and empty drops. Added display regression checks; session recovery and isolated package update/restart tested again.
 
+### 1.25.8 — Smoother tab switching
+
+Pages prepare their content before becoming visible. Buffered content and sidebar painting prevents child controls from drawing in separate stages. Clicking the selected sidebar page keeps its selection and scroll position instead of rebuilding it. Nested tabs and grids share buffered drawing. Update and session saving behavior remains unchanged.
+
 ### 1.25.7 — Stable status bar
 - Status messages and connection/offline controls now live in separate buffered controls, with opaque theme backgrounds. Updating a message no longer repaints the connection row.
 - Duplicate messages do not repaint. Routine local analysis no longer replaces source backoff or user-action messages.

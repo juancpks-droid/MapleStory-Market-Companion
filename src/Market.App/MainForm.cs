@@ -23,7 +23,7 @@ public sealed partial class MainForm : Form
 
     readonly Dictionary<string,Panel> pages=[]; readonly Dictionary<string,Button> navigation=[];
 
-    readonly Panel content=new(){Dock=DockStyle.Fill,Padding=new Padding(22,16,22,14)};
+    readonly Panel content=new StablePageHost(){Dock=DockStyle.Fill,Padding=new Padding(22,16,22,14)};
 
     readonly Label title=new ClassicTitle(){Text="Dashboard",Dock=DockStyle.Top,Height=76};
 
@@ -65,7 +65,7 @@ public sealed partial class MainForm : Form
 
         Text="MapleStory Classic Market Companion"; BackColor=Back; ForeColor=TextColor; Font=new Font("Segoe UI",9); Size=new Size(1380,920); MinimumSize=new Size(1024,720); StartPosition=FormStartPosition.CenterScreen; Icon=AppArtwork.Icon;
 
-        var sidebar=new Panel(){Dock=DockStyle.Left,Width=215,Padding=new Padding(12,12,12,12),BackColor=GuidePalette.Back};
+        var sidebar=new StablePageHost(){Dock=DockStyle.Left,Width=215,Padding=new Padding(12,12,12,12),BackColor=GuidePalette.Back};
 
         var brand=new ClassicBrand(); sidebar.Controls.Add(brand);
 
@@ -75,7 +75,7 @@ public sealed partial class MainForm : Form
 
         {
 
-            var button=Button(name,()=>ShowPage(name)); ((ClassicButton)button).Badge=name;button.AccessibleName=name; button.Width=164; button.Height=38; button.TextAlign=ContentAlignment.MiddleLeft; navigation[name]=button; nav.Controls.Add(button);
+            var button=Button(name,()=>NavigatePage(name)); ((ClassicButton)button).Badge=name;button.AccessibleName=name; button.Width=164; button.Height=38; button.TextAlign=ContentAlignment.MiddleLeft; navigation[name]=button; nav.Controls.Add(button);
 
             var page=new Panel(){Dock=DockStyle.Fill,Visible=false}; pages[name]=page; content.Controls.Add(page);
 
@@ -284,11 +284,51 @@ public sealed partial class MainForm : Form
 
     }
 
+    void NavigatePage(string name){
+        // Navigation clicks are idempotent; programmatic ShowPage still refreshes data.
+        if(selected==name&&pages.TryGetValue(name,out var page)&&page.Visible)return;
+        ShowPage(name);
+    }
+
     public void ShowPage(string name)
 
     {
 
-        if(!MarketPage(name))name="Dashboard";if(name=="Backups"){name="Settings";settingsSections.SelectedIndex=1;}EnsureNavigation(name);if(name=="Duplicate Review")RenderDuplicates();if(usabilityReady&&new[]{"Price Changes","Seller Comparison","Undo Center","Profit Breakdown"}.Contains(name))RenderUsability();if(features.MenuSounds&&selected!=name)System.Media.SystemSounds.Asterisk.Play();TrackPage(name);selected=name;title.Text=name;foreach(var (n,p) in pages){p.Visible=n==name;if(p.Visible)p.BringToFront();navigation[n].ForeColor=n==name?Accent:TextColor;navigation[n].BackColor=n==name?Accent:Surface;}if(navigation[name].Parent is ScrollableControl navScroll)navScroll.ScrollControlIntoView(navigation[name]);if(workspaceReady&&new[]{"Transfers","Shopping List","Selling Planner","Search Everything"}.Contains(name))RenderWorkspace();if(name=="Item Finder")RenderItemFinder();if(name=="Price Checker")RenderPrices();if(name=="Dashboard"){RenderDashboard();ApplyDashboardPanels();RenderMarketDashboard();}if(name=="Compare")RenderComparison();if(name=="Item Catalog")LoadCatalogImages();if(name=="Equipment")RenderEquipment();if(name=="Inventory")RenderInventorySlots();if(name=="Market Activity")RenderActivity();if(name=="Settings")menuSoundCheck.Checked=features.MenuSounds;if(name=="Characters"||name=="Alert Inbox"||name=="Market Health")RenderDailyTools();
+        if(!MarketPage(name))name="Dashboard";
+        if(name=="Backups"){name="Settings";settingsSections.SelectedIndex=1;}
+        var target=pages[name];
+        content.SuspendLayout();target.SuspendLayout();
+        try{
+            EnsureNavigation(name);
+            if(features.MenuSounds&&selected!=name)System.Media.SystemSounds.Asterisk.Play();
+            TrackPage(name);selected=name;
+            // Populate the destination while the previous page still covers the host.
+            if(name=="Duplicate Review")RenderDuplicates();
+            if(usabilityReady&&new[]{"Price Changes","Seller Comparison","Undo Center","Profit Breakdown"}.Contains(name))RenderUsability();
+            if(workspaceReady&&new[]{"Transfers","Shopping List","Selling Planner","Search Everything"}.Contains(name))RenderWorkspace();
+            if(name=="Item Finder")RenderItemFinder();
+            if(name=="Price Checker")RenderPrices();
+            if(name=="Dashboard"){RenderDashboard();ApplyDashboardPanels();RenderMarketDashboard();}
+            if(name=="Compare")RenderComparison();
+            if(name=="Item Catalog")LoadCatalogImages();
+            if(name=="Equipment")RenderEquipment();
+            if(name=="Inventory")RenderInventorySlots();
+            if(name=="Market Activity")RenderActivity();
+            if(name=="Settings")menuSoundCheck.Checked=features.MenuSounds;
+            if(name=="Characters"||name=="Alert Inbox"||name=="Market Health")RenderDailyTools();
+            target.ResumeLayout(true);
+            target.BringToFront();target.Visible=true;
+            foreach(var (n,p) in pages){
+                if(n!=name&&p.Visible)p.Visible=false;
+                var button=navigation[n];var foreground=n==name?Accent:TextColor;var background=n==name?Accent:Surface;
+                if(button.ForeColor!=foreground)button.ForeColor=foreground;
+                if(button.BackColor!=background)button.BackColor=background;
+            }
+            if(title.Text!=name)title.Text=name;
+            if(navigation[name].Parent is ScrollableControl navScroll)navScroll.ScrollControlIntoView(navigation[name]);
+        }finally{target.ResumeLayout(true);content.ResumeLayout(true);}
+        // Hidden grids have no displayed rows; request icons after the final layout.
+        if(name=="Item Finder")_ = LoadFinderIcons(finderGeneration);
 
     }
 
