@@ -128,9 +128,9 @@ public sealed partial class MainForm : Form
 
     {
 
-        var p=pages["Price Checker"];var bar=Toolbar();bar.Height=92;bar.WrapContents=true;bar.AutoScroll=false;search.Margin=new Padding(3,9,10,3);search.TextChanged+=(_,_)=>RenderPrices();bar.Controls.Add(search);
+        var p=pages["Price Checker"];var bar=Toolbar();bar.Height=92;bar.WrapContents=true;bar.AutoScroll=false;search.Margin=new Padding(3,9,10,3);InitializeItemLookup();search.TextChanged+=(_,_)=>{RenderPrices();QueueItemLookup(search.Text);};bar.Controls.Add(search);
 
-        bar.Controls.Add(Button("Search online",async()=>await RefreshSources(true)));search.KeyDown+=async (_,e)=>{if(e.KeyCode==Keys.Enter){e.SuppressKeyPress=true;await RefreshSources(true);}};bar.Controls.Add(Button("Refresh now",async()=>await RefreshSources()));priceWatchButton=Button("Watch item",()=>ToggleItemWatch(PriceWatchName));bar.Controls.Add(priceWatchButton);bar.Controls.Add(Button("Filters",EditListingFilters));bar.Controls.Add(Button("View in FM Tracker",OpenPriceInFm));
+        bar.Controls.Add(Button("Search online",async()=>await LookupPricesNow()));search.KeyDown+=async (_,e)=>{if(e.KeyCode==Keys.Enter){e.SuppressKeyPress=true;await LookupPricesNow();}};bar.Controls.Add(Button("Refresh now",async()=>await RefreshSources()));priceWatchButton=Button("Watch item",()=>ToggleItemWatch(PriceWatchName));bar.Controls.Add(priceWatchButton);bar.Controls.Add(Button("Filters",EditListingFilters));bar.Controls.Add(Button("View in FM Tracker",OpenPriceInFm));
 
         var bottom=new Panel(){Dock=DockStyle.Bottom,Height=225};var chartBar=Toolbar();chartBar.Height=54;
 
@@ -292,17 +292,17 @@ public sealed partial class MainForm : Form
 
     }
 
-    async Task RefreshSources(bool onlineSearch=false)
+    async Task RefreshSources(bool onlineSearch=false,string? lookupQuery=null)
 
     {
 
-        if(Offline){UpdateConnectionStatus();footer.Text="Offline: searching saved evidence. Turn off Work offline to request new data.";RenderPrices();return;}if(busy){if(onlineSearch){pendingSearch=true;footer.Text="Search queued after the current market refresh.";}return;}busy=true;refreshStop=CancellationTokenSource.CreateLinkedTokenSource(stop.Token);footer.Text="Checking source access and refreshing eligible sources…";
+        if(Offline){UpdateConnectionStatus();footer.Text="Offline: searching saved evidence. Turn off Work offline to request new data.";RenderPrices();return;}if(busy){if(onlineSearch){pendingSearch=true;pendingLookup=lookupQuery??ResolvePriceQuery(search.Text);footer.Text="Search queued after the current market refresh.";}return;}busy=true;refreshStop=CancellationTokenSource.CreateLinkedTokenSource(stop.Token);footer.Text="Checking source access and refreshing eligible sources…";
 
         try
 
         {
 
-            var names=onlineSearch?new[]{features.Polish.Resolve(search.Text)}:store.Items().Select(i=>i.Name).ToArray();
+            var names=onlineSearch?new[]{lookupQuery??ResolvePriceQuery(search.Text)}:store.Items().Select(i=>i.Name).ToArray();
 
             sourceResults=await Task.Run(()=>collector.Refresh(settings,refreshStop.Token,names,onlineSearch,observations.ToArray()),refreshStop.Token);
 
@@ -323,7 +323,7 @@ public sealed partial class MainForm : Form
 
         finally{busy=false;refreshStop?.Dispose();refreshStop=null;UpdateConnectionStatus();}
 
-        if(pendingSearch&&!stop.IsCancellationRequested){pendingSearch=false;await RefreshSources(true);}
+        if(pendingSearch&&!stop.IsCancellationRequested){pendingSearch=false;var queued=pendingLookup;pendingLookup="";await RefreshSources(true,queued);}
 
     }
 

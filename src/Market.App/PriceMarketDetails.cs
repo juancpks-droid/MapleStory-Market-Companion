@@ -12,7 +12,7 @@ public sealed partial class MainForm
  void BuildPriceDetails(Panel page,Control chart){
   page.Controls.Remove(priceGrid);page.Controls.Remove(chart);
   var listings=new TabPage("For sale & looking to buy");
-  var filters=Toolbar();filters.Height=42;filters.WrapContents=true;filters.AutoScroll=false;filters.Controls.Add(priceItemChoice);priceItemChoice.SelectedIndexChanged+=(_,_)=>{if(!fillingPriceChoices){RenderValuation();RenderHistory();}};
+  var filters=Toolbar();filters.Height=42;filters.WrapContents=true;filters.AutoScroll=false;filters.Controls.Add(priceItemChoice);priceItemChoice.SelectedIndexChanged+=(_,_)=>{if(!fillingPriceChoices){RenderValuation();RenderHistory();QueueItemLookup(priceItemChoice.Text);}};
   listingSort.Items.AddRange(["Newest first","Price: low to high","Price: high to low"]);listingSort.SelectedIndex=0;
   listingMin.Width=75;listingMax.Width=75;
   filters.Controls.Add(listingSort);filters.Controls.Add(new Label(){Text="Min mesos",AutoSize=true,Padding=new Padding(0,8,0,0)});filters.Controls.Add(listingMin);

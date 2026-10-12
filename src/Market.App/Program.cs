@@ -20,6 +20,7 @@ static class Program
 
         Velopack.VelopackApp.Build().SetAutoApplyOnStartup(false).Run();
         ApplicationConfiguration.Initialize();
+        if(args.Contains("--lookup-smoke")){PriceLookupSmoke.Run();return;}
         if(args.Contains("--session-smoke")){SessionSmoke.Run();return;}
         if(args.Contains("--shortcut-smoke")){DesktopShortcut.Smoke();return;}
         if(args.Contains("--inline-drops-smoke")){InlineDropsSmoke.Run();return;}

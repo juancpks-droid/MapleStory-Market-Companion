@@ -23,7 +23,7 @@ public sealed partial class MainForm
         var bar=Toolbar();bar.Height=48;bar.Controls.Add(finderSearch);bar.Controls.Add(finderCategory);bar.Controls.Add(finderSource);bar.Controls.Add(finderListed);
         var actions=Toolbar();actions.Height=92;actions.WrapContents=true;actions.AutoScroll=false;
         actions.Controls.Add(Button("Monster drops & maps",()=>{if(FinderSelection is {} item){if(Offline){MessageBox.Show("Turn off Work offline to look up monster drops and maps.","Offline");return;}var viewer=new WebsiteViewer(MonsterReference.ForItem(item.Name),dataDirectory);viewer.Show(this);}}));
-        actions.Controls.Add(Button("Check prices",()=>{if(FinderSelection is {} item){search.Text=item.Name;ShowPage("Price Checker");}}));
+        actions.Controls.Add(Button("Check prices",async()=>{if(FinderSelection is {} item){search.Text=item.Name;ShowPage("Price Checker");await LookupPricesNow();}}));
         finderWatchButton=Button("Watch item",()=>ToggleItemWatch(FinderWatchName));actions.Controls.Add(finderWatchButton);
         actions.Controls.Add(Button("Price alert",()=>{if(FinderActionItem is {} item)EditRule(null,item);}));
         actions.Controls.Add(Button("Compare",()=>{if(FinderActionItem is {} item)PinComparison(item);}));
@@ -64,7 +64,7 @@ public sealed partial class MainForm
     void RenderFinderListings()
     {
         SetColumns(finderListings,["Unit mesos","Quantity","Seller","Source","Last checked","Evidence / age","Variant"]);
-        UpdateWatchButtons();var item=FinderSelection;if(item is null){finderEvidence.Text="Select an item above to see known asking listings.";return;}
+        UpdateWatchButtons();var item=FinderSelection;if(selected=="Item Finder")QueueItemLookup(item?.Name??"");if(item is null){finderEvidence.Text="Select an item above to see known asking listings.";return;}
         finderEvidence.Text=item.Listings.Count==0?$"{item.Name}: no known available asking listings in the selected source. Try Check prices or Item websites.":$"{item.Name} • {item.Listings.Count} known asks (first 500 shown), cheapest first. Variants may differ.\nAvailability was recorded at the last check; asking prices are not completed sales. ~ means a rounded price.";
         foreach(var o in item.Listings.Take(500)){
             bool enabled=settings.Sources.Any(s=>s.Id==o.Provider&&s.Authorized);
