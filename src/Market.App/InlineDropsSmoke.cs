@@ -31,6 +31,14 @@ public sealed partial class MainForm
    if(viewer.CurrentUrl!=url)throw new Exception("Viewer changed exact item URL");
    await viewer.CapturePage(Path.Combine(dir,"ccplz-website.png"));viewer.Close();
   }
+  if(source=="NiaMeowDB"){
+   finderSearch.Text="Blue Moonlight";RenderItemFinder();var blue=finderItems.Rows.Cast<DataGridViewRow>().Single(r=>r.Tag is FinderResult f&&f.Name=="Blue Moonlight");finderItems.ClearSelection();blue.Selected=true;RenderFinderListings();QueueFinderDrops();
+   for(int i=0;i<120&&finderDrops.Rows.Count==0;i++)await Task.Delay(500);
+   var monsters=finderDrops.Rows.Cast<DataGridViewRow>().Select(r=>r.Tag).OfType<DropMonster>().ToArray();
+   if(!new[]{"Toy Trojan","Zombie Lupin","Dark Nependeath"}.All(n=>monsters.Any(m=>m.Name==n)))throw new Exception("Blue Moonlight drop references missing: "+finderDropNote.Text);
+   var zombie=monsters.Single(m=>m.Name=="Zombie Lupin");if(!zombie.Evidence.Contains("Dropped By")||!zombie.Evidence.Contains("MSEA Reference Drops")||zombie.Locations.Count==0)throw new Exception("Combined evidence or maps missing");
+   CapturePreview(Path.Combine(dir,"blue-moonlight-inline.png"));File.WriteAllText(Path.Combine(dir,"blue-moonlight.txt"),string.Join(Environment.NewLine,monsters.Select(m=>m.Name+": "+m.Evidence+" | Maps: "+string.Join(", ",m.Locations.Select(l=>l.Name)))));
+  }
   finderSearch.Text="NoSuchItemUnique123";RenderItemFinder();if(finderDrops.Rows.Count!=0||!finderDropNote.Text.StartsWith("Select an item"))throw new Exception("Stale monster results after selection cleared");
  }
 }

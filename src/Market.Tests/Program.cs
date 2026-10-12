@@ -492,6 +492,16 @@ await Test("Related drop items rank relevant English references without replacin
  Check(DropReferenceReader.RelatedItems(html,"Snail-Shell").First().Name=="Snail Shell");Check(DropReferenceReader.ResolveItem(html,"snail shel") is null);
  Check(DropReferenceReader.RelatedItems(html,"Snail Shell").All(i=>i.Url.StartsWith("https://meowdb.com/msclassic/item-db/")));
 }));
+await Test("All item names accept trailing level metadata and retain both drop evidence types",()=>Sync(()=>{
+ foreach(var name in new[]{"Blue Moonlight","Red Moonlight","Snail Shell","Mystic Scroll"}){
+  string index=$"<a href='/msclassic/item-db/1'>{name} (Lv 40)</a>";Check(DropReferenceReader.ResolveItem(index,name)=="https://meowdb.com/msclassic/item-db/1");
+  Check(DropReferenceReader.ResolveItem(index+$"<a href='/msclassic/item-db/2'>{name} (Lv 50)</a>",name) is null);
+ }
+ const string html="<h1>Blue Moonlight</h1><section><header><h2>Dropped By</h2></header><a href='/msclassic/monsters/38'>Zombie Lupin</a></section><section><header><h2>MSEA Reference Drops</h2></header><a href='/msclassic/monsters/38'>Zombie Lupin</a><a href='/msclassic/monsters/10'>Toy Trojan</a></section>";
+ var rows=DropReferenceReader.MergeDropEvidence(DropReferenceReader.CommunityMonsters(html,"Blue Moonlight").Concat(DropReferenceReader.ReferenceMonsters(html,"Blue Moonlight")));
+ Check(rows.Count==2&&rows.Single(r=>r.Id==38).Evidence.Contains("Dropped By")&&rows.Single(r=>r.Id==38).Evidence.Contains("MSEA Reference Drops"));
+ Throws(()=>DropReferenceReader.ReferenceMonsters(html,"Red Moonlight"));
+}));
 Directory.CreateDirectory("test-results");File.WriteAllText("test-results/results.json",JsonSerializer.Serialize(new{total=results.Count,failed=failures,results},Json.Options));Console.WriteLine($"{results.Count-failures}/{results.Count} passed");Environment.ExitCode=failures==0?0:1;
 
 

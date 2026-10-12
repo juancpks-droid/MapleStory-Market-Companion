@@ -16,9 +16,10 @@ public sealed class DropReferenceReader : IDisposable
  string? robots;string? index;DateTimeOffset indexAt,nextRequest;readonly Queue<DateTimeOffset> requests=[];
  public DropReferenceReader(){client.DefaultRequestHeaders.UserAgent.ParseAdd("MapleMarketCompanion/1.20.8 (on-demand item reference)");}
  static string Key(string value)=>Regex.Replace(value.Normalize().Replace('’','\''),@"\s+"," ").Trim().ToLowerInvariant();
+ static string ItemLabelKey(string value)=>Key(Regex.Replace(value,@"\s*\(\s*Lv\.?\s*\d+\s*\)\s*$","",RegexOptions.IgnoreCase));
  public static string? ResolveItem(string html,string name){
   var links=PublicPages.Document(html).DocumentNode.SelectNodes("//a[@href]")??new HtmlNodeCollection(null);
-  var matches=links.Where(a=>Regex.IsMatch(a.GetAttributeValue("href",""),@"^/msclassic/item-db/\d+$")&&Key(PublicPages.Text(a))==Key(name)).Select(a=>a.GetAttributeValue("href","")).Distinct().ToArray();
+  var matches=links.Where(a=>Regex.IsMatch(a.GetAttributeValue("href",""),@"^/msclassic/item-db/\d+$")&&ItemLabelKey(PublicPages.Text(a))==ItemLabelKey(name)).Select(a=>a.GetAttributeValue("href","")).Distinct().ToArray();
   return matches.Length==1?Host+matches[0]:null;
  }
  public static IReadOnlyList<DropItemSuggestion> RelatedItems(string html,string name){
@@ -34,13 +35,18 @@ public sealed class DropReferenceReader : IDisposable
    .Select(a=>(Item:a,Rank:Score(a.Name))).Where(a=>a.Rank>0).OrderByDescending(a=>a.Rank).ThenBy(a=>a.Item.Name).Take(5).Select(a=>a.Item).ToArray();
  }
  public static IReadOnlyList<(int Id,string Evidence)> ReferenceMonsters(string html,string name){
+  return SectionMonsters(html,name,"MSEA Reference Drops","MSEA Reference Drops • Historical MapleSEA reference");
+ }
+ public static IReadOnlyList<(int Id,string Evidence)> CommunityMonsters(string html,string name)=>SectionMonsters(html,name,"Dropped By","Dropped By • Community report (not independently verified)");
+ static IReadOnlyList<(int Id,string Evidence)> SectionMonsters(string html,string name,string title,string evidence){
   var root=PublicPages.Document(html).DocumentNode;
-  if(Key(PublicPages.Text(root.SelectSingleNode("//h1")))!=Key(name))throw new FormatException("Source item name does not match the selected item.");
-  var heading=root.SelectNodes("//h2")?.FirstOrDefault(h=>PublicPages.Text(h)=="MSEA Reference Drops");
+  if(ItemLabelKey(PublicPages.Text(root.SelectSingleNode("//h1")))!=ItemLabelKey(name))throw new FormatException("Source item name does not match the selected item.");
+  var heading=root.SelectNodes("//h2")?.FirstOrDefault(h=>PublicPages.Text(h)==title);
   return (heading?.ParentNode?.ParentNode?.SelectNodes(".//a[@href]")?.ToArray()??[])
    .Select(a=>Regex.Match(a.GetAttributeValue("href",""),@"^/msclassic/monsters/(\d+)$"))
-   .Where(m=>m.Success).Select(m=>(int.Parse(m.Groups[1].Value),"Historical MapleSEA reference")).Distinct().ToArray();
+   .Where(m=>m.Success).Select(m=>(int.Parse(m.Groups[1].Value),evidence)).Distinct().ToArray();
  }
+ public static IReadOnlyList<(int Id,string Evidence)> MergeDropEvidence(IEnumerable<(int Id,string Evidence)> rows)=>rows.GroupBy(r=>r.Id).Select(g=>(g.Key,string.Join("\n",g.Select(r=>r.Evidence).Distinct()))).ToArray();
  public static DropMonster ReadMonster(string html,string url,string evidence){
   var root=PublicPages.Document(html).DocumentNode;var name=PublicPages.Text(root.SelectSingleNode("//h1"));
   if(string.IsNullOrWhiteSpace(name)||name.Length>150)throw new FormatException("Monster heading unavailable.");
@@ -70,17 +76,18 @@ public sealed class DropReferenceReader : IDisposable
    if(index is null||indexAt<DateTimeOffset.UtcNow.AddHours(-1)){robots=await Get(Host+"/robots.txt",ct);index=await Get(Host+"/msclassic/item-db/all",ct);indexAt=DateTimeOffset.UtcNow;}
    var url=ResolveItem(index,name);
    if(url is null){var suggestions=RelatedItems(index,name);return new(name,Host+"/msclassic/item-db/all",suggestions.Count>0?"No confirmed match. Related items are available below; choose one to inspect its reference. Their drops are not assigned to your selected item.":"No confirmed match or relevant suggestions found. Try another drop source or search the website.",[],DateTimeOffset.UtcNow){Suggestions=suggestions};}
-   var references=ReferenceMonsters(await Get(url,ct),name).ToList();
+   var html=await Get(url,ct);var references=CommunityMonsters(html,name).Concat(ReferenceMonsters(html,name)).ToList();
    string note="";
    try{using var json=JsonDocument.Parse(await Get(Host+"/msclassic/api/drops?itemId="+url.Split('/').Last(),ct));
-    var reports=json.RootElement.GetProperty("drops").EnumerateArray().Select(d=>(Id:d.GetProperty("monsterId").GetInt32(),Evidence:"Community report (not independently verified)")).Where(d=>d.Id>0).Distinct().ToArray();
-    references=reports.Concat(references).DistinctBy(r=>r.Id).ToList();
-   }catch(Exception e) when(e is HttpRequestException or JsonException or KeyNotFoundException){note="Community reports unavailable; historical references only. ";}
+    var reports=json.RootElement.GetProperty("drops").EnumerateArray().Select(d=>(Id:d.GetProperty("monsterId").GetInt32(),Evidence:"Dropped By • Community report (not independently verified)")).Where(d=>d.Id>0).Distinct().ToArray();
+    references=reports.Concat(references).ToList();
+   }catch(Exception e) when(e is HttpRequestException or JsonException or KeyNotFoundException){note="Live community reports unavailable; showing the page's recorded references. ";}
+   references=MergeDropEvidence(references).ToList();
    var monsters=new List<DropMonster>();foreach(var reference in references.Take(5)){
     try{var monsterUrl=Host+"/msclassic/monsters/"+reference.Id;monsters.Add(ReadMonster(await Get(monsterUrl,ct),monsterUrl,reference.Evidence));}
     catch(Exception e) when(e is HttpRequestException or FormatException){note="Some monster details could not load. ";}
    }
-   var result=new ItemDrops(name,url,note+(references.Count==0?"No drop sources recorded on this reference. This does not prove that nothing drops it.":$"Showing {monsters.Count} of {references.Count} reference monsters, up to 3 recorded maps each. Classic World / historical MapleSEA coverage can differ from your server."),monsters,DateTimeOffset.UtcNow);
+   var result=new ItemDrops(name,url,note+(references.Count==0?"No drop sources recorded on this reference. This does not prove that nothing drops it.":$"Showing {monsters.Count} of {references.Count} reference monsters, up to 3 recorded maps each. MSEA references are likely sources, not confirmed Classic drops."),monsters,DateTimeOffset.UtcNow);
    if(cache.Count>=100)cache.Clear();cache[Key(name)]=result;return result;
   }finally{gate.Release();}
  }
