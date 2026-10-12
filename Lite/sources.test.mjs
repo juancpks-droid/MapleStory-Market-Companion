@@ -1,5 +1,5 @@
 import assert from 'node:assert/strict';
-import {parseOffers,parseNpc,parseCcDrops,robotsAllows,key} from './lib/sources.ts';
+import {parseOffers,parseNpc,parseCcDrops,robotsAllows,key,resolveQuestItem} from './lib/sources.ts';
 assert.equal(key('Blue Moonlight (Lv 40)'),key('Blue Moonlight'));
 assert.equal(robotsAllows('User-agent: *\nAllow: /\nDisallow: /private','/private/foo'),false);
 const node={item:{id:1,name:'Red Potion',type:'Use'},forSale:[{id:'a',price:51,quantity:3,ign:'Tester',at:new Date().toISOString(),sold:false},{id:'closed',price:1,at:new Date().toISOString(),sold:true}],wanted:[{id:'b',price:40,at:new Date().toISOString(),sold:false}]};
@@ -11,3 +11,9 @@ const npc='<h1>Red Potion</h1><script id="ccplz-entity">'+JSON.stringify({item:{
 assert.equal(parseNpc(npc,'Red Potion','2000000').sell,5);assert.throws(()=>parseNpc(npc,'Red Potion','123'));
 assert.equal(parseCcDrops('<h1>Red Potion</h1><section id="older-dropped-by"><a href="/monsters/snail">Snail</a></section>','Red Potion')[0].evidence.includes('Older-version'),true);
 console.log('PASS: exact market identity, closed offer exclusion, buy/sell separation, NPC ID mismatch protection, historical evidence and robots paths.');
+
+const duplicatePotions='<a href="/items/2000007/Red-Potion">Red Potion</a><a href="/items/2000000/Red-Potion">Red Potion</a>';
+assert.equal(resolveQuestItem(duplicatePotions,'Red Potion','2000000'),'https://maplestory.quest/items/2000000/Red-Potion');
+assert.throws(()=>resolveQuestItem(duplicatePotions,'Red Potion','999'));
+assert.throws(()=>resolveQuestItem(duplicatePotions,'Blue Potion','2000000'));
+console.log('PASS: duplicate reference names resolved by matching item ID; ambiguous or wrong-name references rejected.');
