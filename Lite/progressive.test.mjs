@@ -1,0 +1,6 @@
+import assert from 'node:assert/strict';
+import {drops} from './lib/sources.ts';
+const requests=[];globalThis.fetch=async(url)=>{requests.push(String(url));let body='User-agent: *\nAllow: /';if(String(url).endsWith('/item-db/all'))body='<a href="/msclassic/item-db/1138">Blue Moonlight (Lv 40)</a>';else if(String(url).endsWith('/item-db/1138'))body='<h1>Blue Moonlight</h1><section><div><h2>MSEA Reference Drops</h2></div><a href="/msclassic/monsters/38"><img alt="Zombie Lupin">Zombie Lupin Lv 41</a></section>';else if(String(url).endsWith('/monsters/38'))body='<h1>Zombie Lupin</h1><div id="locations"><a href="/msclassic/maps/123">Monkey Swamp III</a></div>';return new Response(body)};
+const quick=await drops('Blue Moonlight',true);assert.equal(quick.monsters[0].name,'Zombie Lupin');assert.equal(quick.monsters[0].mapsPending,true);assert.equal(requests.some(x=>x.includes('/monsters/')),false);
+const full=await drops('Blue Moonlight');assert.equal(full.monsters[0].maps[0].name,'Monkey Swamp III');assert.equal(full.monsters[0].mapsPending,undefined);assert.equal(requests.filter(x=>x.endsWith('/item-db/1138')).length,1);
+console.log('PASS: monsters returned without map requests; second stage enriches maps and reuses source pages.');
