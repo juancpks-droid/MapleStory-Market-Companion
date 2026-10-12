@@ -6,8 +6,17 @@ public sealed partial class MainForm
   ShowPage("Price Checker");search.Text="Snail Shell";RenderPrices();
   if(priceGrid.Rows.Count!=0)throw new Exception("Expected no market listings for NPC fixture");
   ShowNpcPrices(new("Snail Shell","https://ccplz.cc/items/snail-shell",1,null,null,DateTimeOffset.UtcNow));
-  if(!npcPriceNote.Text.Contains("Sell to NPC: 1 mesos")||!npcPriceNote.Text.Contains("Buy from NPC: Not available"))throw new Exception("NPC reference labels mixed");
+  if(npcSellMetric.Value!="1 mesos"||npcBuyMetric.Tag is true)throw new Exception("NPC reference labels mixed");
   checks.Add("NPC reference remains separate when no player listings exist; missing shop price stays unavailable");
+  UpdatePriceOverview(null,null,null);UpdateFmPriceMetrics(null,true);
+  if(lowestPriceMetric.Visible||wantedPriceMetric.Visible||estimatePriceMetric.Visible||!npcSellMetric.Visible)throw new Exception("Empty market cards were not hidden");
+  var fm=new FmSummary("1","Snail Shell",false,53,20,null,16,0,1,DateTimeOffset.UtcNow.AddDays(-10),DateTimeOffset.UtcNow,"https://kerning.gg/fm-tracker");
+  UpdateFmPriceMetrics(fm,true);
+  if(!fmMedianMetric.Visible||!fmAskMetric.Visible||!fmMedianMetric.Detail.Contains("Stale data")||fmMedianMetric.Value!="53 mesos"||fmAskMetric.Value!="20 mesos")throw new Exception("FM reference cards or stale label missing");
+  CapturePreview(Path.Combine(dataDirectory,"reference-price-cards.png"));
+  UpdatePriceOverview(100,null,null);if(!lowestPriceMetric.Visible||wantedPriceMetric.Visible||estimatePriceMetric.Visible)throw new Exception("Partially available market cards incorrect");
+  UpdatePriceOverview(null,null,null);UpdateFmPriceMetrics(null,true);UpdateNpcPriceMetrics(null);if(priceMetricStrip.Visible)throw new Exception("Old reference cards remained after clearing");
+  checks.Add("Empty and partial market cards, NPC-only layout, FM median/ask stale labels and clearing references passed");
   priceDetails.SelectedIndex=1;RenderHistory();
   ShowNpcPrices(new("Snail Shell","https://ccplz.cc/items/snail-shell",1,null,null,DateTimeOffset.UtcNow));
   if(history.Points.Count!=0||!history.Visible)throw new Exception("NPC reference polluted market chart or chart hidden");

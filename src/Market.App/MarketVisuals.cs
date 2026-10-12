@@ -27,13 +27,13 @@ public sealed class MarketTabs:TabControl
 }
 sealed class MarketMetric:Control
 {
- public string Value="—",Caption="",Detail="";
+ public string Value="—",Caption="",Detail=""; public bool Detailed;
  public MarketMetric(){DoubleBuffered=true;Dock=DockStyle.Fill;Margin=new Padding(0,4,10,10);}
  protected override void OnPaint(PaintEventArgs e){
   e.Graphics.Clear(GuidePalette.Surface);using var border=new Pen(GuidePalette.Line);e.Graphics.DrawRectangle(border,0,0,Width-1,Height-1);
   using var reference=new Font("Segoe UI",23,FontStyle.Bold);float scale=Math.Min(1f,(Width-24f)/Math.Max(1,TextRenderer.MeasureText(Value,reference).Width));using var number=new Font("Segoe UI",Math.Max(12,23*scale),FontStyle.Bold);using var caption=new Font("Segoe UI",Math.Max(9,Font.Size),FontStyle.Bold);using var detail=new Font("Segoe UI",Math.Max(8.5f,Font.Size-.5f));
   TextRenderer.DrawText(e.Graphics,Caption,caption,new Rectangle(14,12,Width-28,20),GuidePalette.Muted,TextFormatFlags.EndEllipsis);
   TextRenderer.DrawText(e.Graphics,Value,number,new Rectangle(12,33,Width-24,40),GuidePalette.Gold,TextFormatFlags.EndEllipsis);
-  TextRenderer.DrawText(e.Graphics,Detail,detail,new Rectangle(14,78,Width-28,22),GuidePalette.Muted,TextFormatFlags.EndEllipsis);
+  TextRenderer.DrawText(e.Graphics,Detail,detail,new Rectangle(14,78,Width-28,Detailed?Math.Max(22,Height-84):22),GuidePalette.Muted,Detailed?TextFormatFlags.WordBreak|TextFormatFlags.EndEllipsis:TextFormatFlags.EndEllipsis);
  }
 }

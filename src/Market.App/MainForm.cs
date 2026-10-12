@@ -398,9 +398,9 @@ public sealed partial class MainForm : Form
         string lead=target is null?"Search an item online to retrieve its market listings.":target.Name+" • Lowest recently checked ask: "+TextKey.Mesos(asks.Count==0?null:asks.Min(o=>o.UnitPrice))+" • "+asks.Count+" recent asks";
 
         RenderMarketCards(target);UpdateWatchButtons();QueueNpcPrices();var fm=fmSummaries.FirstOrDefault(x=>TextKey.Search(x.Name)==TextKey.Search(target?.Name??search.Text));
-        fmContext.Visible=fm is not null;
+        fmContext.Visible=false;
         bool fmEnabled=settings.Sources.Any(x=>x.Id=="Kerning Exchange"&&x.Authorized);
-        fmContext.Text=fm is null?"FM summaries: search an exact item name or open FM Tracker for broader coverage.":$"Kerning FM • 7-day median {TextKey.Mesos(fm.Median7)} • Lowest observed ask {TextKey.Mesos(fm.LowestAsk)} • {fm.Sightings} sightings\nLast seen {fm.LastSeen.ToLocalTime():g} • {(fmEnabled?fm.Quality(DateTimeOffset.UtcNow,settings.FreshHours):"Source disabled — cached only")} • Summary only; excluded from bargain alerts.";
+        UpdateFmPriceMetrics(fm,fmEnabled);fmContext.Text=fm is null?"FM summaries: search an exact item name or open FM Tracker for broader coverage.":$"Kerning FM • 7-day median {TextKey.Mesos(fm.Median7)} • Lowest observed ask {TextKey.Mesos(fm.LowestAsk)} • {fm.Sightings} sightings\nLast seen {fm.LastSeen.ToLocalTime():g} • {(fmEnabled?fm.Quality(DateTimeOffset.UtcNow,settings.FreshHours):"Source disabled — cached only")} • Summary only; excluded from bargain alerts.";
         priceSummary.Text=lead+"\n"+(v is null?"Estimated value: Price unavailable — needs 3 comparable recent asks from 3 sellers, or sufficient sale evidence.":$"Estimated value: {TextKey.Mesos(v.Value)} • Confidence {v.Confidence}/100 • {v.Count} observations • {v.Basis}\nQuick {TextKey.Mesos(v.Quick)}   Normal {TextKey.Mesos(v.Normal)}   Higher {TextKey.Mesos(v.High)}   Max buy {TextKey.Mesos(v.MaxBuy)}")+"\n"+(target?.Equipment==true?"Selected variant: "+target.Variant:"Double-click a listing to open its source. Posted time is not a completed-sale time.");
 
     }
