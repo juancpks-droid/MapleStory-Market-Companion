@@ -29,6 +29,11 @@ public sealed partial class MainForm
   finderSearch.Text="NoSuchItemUniqueFinderTest";RenderItemFinder();Check(finderItems.Rows.Count==0&&finderListings.Rows.Count==0,"Empty search clears previous item and listing selections");
   finderSource.SelectedItem="All";finderSearch.Text="Red Potion";RenderItemFinder();
   Check(finderItems.Width>300&&finderListings.Height>60,"Both results panels are visible at the default window size");
+  Check(organizedNav!.Controls.Contains(navigation["Settings"])&&!organizedNav.Controls.Contains(navigation["Backups"]),"Settings is direct; Backups is absent from sidebar");
+  Check(!organizedNav.Controls.OfType<Button>().Any(b=>b.Text is "+ Settings" or "− Settings"),"No duplicate expandable Settings menu");
+  navigation["Settings"].PerformClick();Check(selected=="Settings","Direct Settings entry opens Settings");
+  ShowPage("Backups");Check(selected=="Settings"&&settingsSections.SelectedIndex==1&&settingsSections.TabPages[1].Controls.Count>0,"Backup shortcuts open backup tools inside Settings");CapturePreview(Path.Combine(dataDirectory,"Backups-settings.png"));settingsSections.SelectedIndex=0;Check(themeChoice.Visible&&themeChoice.Parent!.Bottom<=settingsSections.Height,"Theme controls remain visible in Settings");
+  ShowPage("Item Finder");
   var originalTheme=features.Theme;var seen=new HashSet<int>();
   foreach(var theme in MerchantTools.Themes){themeChoice.SelectedItem=theme;Check(seen.Add(GuidePalette.Gold.ToArgb()),theme+" has a distinct accent");Check(finderDrops.ColumnHeadersDefaultCellStyle.ForeColor==GuidePalette.Gold,theme+" applies to item reference tables");CapturePreview(Path.Combine(dataDirectory,"theme-"+theme.Replace(" ","-")+".png"));}
   themeChoice.SelectedItem=originalTheme;
