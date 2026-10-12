@@ -1,0 +1,13 @@
+import assert from 'node:assert/strict';
+import {parseOffers,parseNpc,parseCcDrops,robotsAllows,key} from './lib/sources.ts';
+assert.equal(key('Blue Moonlight (Lv 40)'),key('Blue Moonlight'));
+assert.equal(robotsAllows('User-agent: *\nAllow: /\nDisallow: /private','/private/foo'),false);
+const node={item:{id:1,name:'Red Potion',type:'Use'},forSale:[{id:'a',price:51,quantity:3,ign:'Tester',at:new Date().toISOString(),sold:false},{id:'closed',price:1,at:new Date().toISOString(),sold:true}],wanted:[{id:'b',price:40,at:new Date().toISOString(),sold:false}]};
+const html='self.__next_f.push([1,'+JSON.stringify('1:'+JSON.stringify(node)+'\n')+'])';
+assert.equal(parseOffers(html,'https://kerning.gg/item/1-red-potion','Red Potion').length,2);
+assert.throws(()=>parseOffers(html,'https://kerning.gg/item/2-other','Red Potion'));
+assert.throws(()=>parseOffers(html,'https://kerning.gg/item/1-red-potion','Blue Potion'));
+const npc='<h1>Red Potion</h1><script id="ccplz-entity">'+JSON.stringify({item:{client_id:2000000,graph:{incoming:[]}}})+'</script><dl class="server-facts"><dt>NPC sell price</dt><dd>5 mesos</dd></dl>';
+assert.equal(parseNpc(npc,'Red Potion','2000000').sell,5);assert.throws(()=>parseNpc(npc,'Red Potion','123'));
+assert.equal(parseCcDrops('<h1>Red Potion</h1><section id="older-dropped-by"><a href="/monsters/snail">Snail</a></section>','Red Potion')[0].evidence.includes('Older-version'),true);
+console.log('PASS: exact market identity, closed offer exclusion, buy/sell separation, NPC ID mismatch protection, historical evidence and robots paths.');
