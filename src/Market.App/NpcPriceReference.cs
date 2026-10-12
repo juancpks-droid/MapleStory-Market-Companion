@@ -7,7 +7,7 @@ public sealed partial class MainForm
  CancellationTokenSource? npcStop;
  void BuildNpcReference(Panel page){
   var panel=new Panel(){Dock=DockStyle.Top,Height=58};npcPriceNote.Dock=DockStyle.Fill;panel.Controls.Add(npcPriceNote);
-  var button=Button("NPC source / retry",()=>{if(npcUrl.Length>0&&!Offline)Open(npcUrl);else{npcKey="";QueueNpcPrices();}});button.Dock=DockStyle.Right;button.Width=130;panel.Controls.Add(button);npcPriceNote.BringToFront();
+  var button=Button("NPC source / retry",()=>{if(npcUrl.Length>0&&!Offline)Open(npcUrl);else{npcKey="";QueueNpcPrices();}});button.Dock=DockStyle.Right;button.Width=130;panel.Controls.Add(button);npcPriceNote.BringToFront();FitPriceText(npcPriceNote,panel);
   page.Controls.Add(panel);panel.BringToFront();priceDetails.BringToFront();
   FormClosed+=(_,_)=>{npcStop?.Cancel();npcStop?.Dispose();};
  }
