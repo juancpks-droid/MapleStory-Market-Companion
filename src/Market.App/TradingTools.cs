@@ -31,7 +31,7 @@ public sealed partial class MainForm
             box.DrawItem+=(_,e)=>{e.DrawBackground();int index=e.Index>=0?e.Index:box.SelectedIndex;if(index>=0)TextRenderer.DrawText(e.Graphics,box.Items[index]?.ToString(),box.Font,e.Bounds,e.ForeColor,TextFormatFlags.Left|TextFormatFlags.VerticalCenter|TextFormatFlags.NoPrefix);e.DrawFocusRectangle();};
         }
         var suggestions=new AutoCompleteStringCollection();suggestions.AddRange(iconCatalog.Names.Concat(fmSummaries.Select(s=>s.Name)).Concat(observations.Select(s=>s.Name)).Distinct().Order().ToArray());
-        foreach(var field in new[]{search,quickSearch,fmSearch}){field.AutoCompleteMode=AutoCompleteMode.SuggestAppend;field.AutoCompleteSource=AutoCompleteSource.CustomSource;field.AutoCompleteCustomSource=suggestions;}
+        foreach(var field in new[]{quickSearch,fmSearch}){field.AutoCompleteMode=AutoCompleteMode.SuggestAppend;field.AutoCompleteSource=AutoCompleteSource.CustomSource;field.AutoCompleteCustomSource=suggestions;}
         KeyPreview=true;KeyDown+=(_,e)=>{if(e.Control&&e.KeyCode==Keys.F){ShowPage("Price Checker");search.Focus();search.SelectAll();e.SuppressKeyPress=true;}};
         foreach(var grid in new[]{priceGrid,dealsGrid,watchGrid,inventoryGrid,fmGrid,dashboardWatch,dashboardDeals,dashboardMarket})
         {

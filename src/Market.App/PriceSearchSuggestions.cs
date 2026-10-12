@@ -8,14 +8,24 @@ public sealed partial class MainForm
  void BuildPriceSuggestions(Panel page,Control bar){
   priceSearchIndex=new(iconCatalog.Entries.Select(e=>new FinderIdentity(e.Id,e.Name)));
   page.Controls.Add(priceSuggestions);page.Controls.SetChildIndex(priceSuggestions,page.Controls.GetChildIndex(bar));
-  search.AutoCompleteMode=AutoCompleteMode.None;
+  ConfigurePriceAutocomplete();
   search.TextChanged+=(_,_)=>{suggestionGeneration++;suggestionTimer.Stop();priceSuggestions.Visible=false;if(search.Focused)suggestionTimer.Start();};
   search.KeyDown+=(_,e)=>{if(e.KeyCode==Keys.Escape){suggestionTimer.Stop();priceSuggestions.Visible=false;e.SuppressKeyPress=true;}};
   suggestionTimer.Tick+=(_,_)=>{suggestionTimer.Stop();ShowPriceSuggestions();};
   FormClosed+=(_,_)=>suggestionTimer.Dispose();
  }
+ void ConfigurePriceAutocomplete(){
+  var names=new AutoCompleteStringCollection();
+  names.AddRange(iconCatalog.Names.Distinct(StringComparer.OrdinalIgnoreCase).Order().ToArray());
+  search.AutoCompleteCustomSource=names;
+  search.AutoCompleteSource=AutoCompleteSource.CustomSource;
+  search.AutoCompleteMode=AutoCompleteMode.Suggest;
+ }
  async void ShowPriceSuggestions(bool requireFocus=true){
   if(closing||IsDisposed||(requireFocus&&!search.Focused)||priceSearchIndex is null)return;
+  // Native suggestions stay anchored beneath the input. Keep related/typo
+  // buttons only when there is no prefix match, avoiding two competing lists.
+  if(string.IsNullOrWhiteSpace(search.Text)||search.AutoCompleteCustomSource.Cast<string>().Any(n=>n.StartsWith(search.Text.Trim(),StringComparison.OrdinalIgnoreCase))){priceSuggestions.Visible=false;return;}
   int generation=suggestionGeneration;var items=priceSearchIndex.Suggest(search.Text);
   if(items.Count==1&&TextKey.Search(items[0].Name)==TextKey.Search(search.Text)){priceSuggestions.Visible=false;return;}
   foreach(Control old in priceSuggestions.Controls.Cast<Control>().ToArray())old.Dispose();priceSuggestions.Controls.Clear();

@@ -307,7 +307,7 @@ public sealed partial class MainForm : Form
             var refreshToken=refreshStop.Token;sourceResults=await Task.Run(()=>collector.Refresh(settings,refreshToken,names,onlineSearch,observations.ToArray(),result=>InvokeAsync(()=>{if(!closing&&!IsDisposed&&!Offline&&refreshGeneration==priceRefreshGeneration){ApplySourceResult(result);sourceResults.RemoveAll(r=>r.Provider==result.Provider);sourceResults.Add(result);observations=store.Observations();fmSummaries=store.Summaries();RenderPrices();lookupStatus.Text=result.Provider+": "+result.Status+" • Checking remaining sources…";}},refreshToken),source=>{if(!closing&&!IsDisposed)BeginInvoke(()=>{if(refreshGeneration==priceRefreshGeneration)lookupStatus.Text="Checking "+source+" • Saved prices remain visible";});}),refreshToken);
 
             refreshSucceeded=true;if(Offline)return;
-            if(collector.Catalog.Count>0){var choices=new AutoCompleteStringCollection();choices.AddRange(collector.Catalog.Select(i=>CultureInfo.CurrentCulture.TextInfo.ToTitleCase(i.Name)).ToArray());search.AutoCompleteCustomSource=choices;search.AutoCompleteMode=AutoCompleteMode.None;search.AutoCompleteSource=AutoCompleteSource.CustomSource;}
+            // Keep the complete local autocomplete catalog across source refreshes.
 
 
 
