@@ -130,7 +130,7 @@ public sealed partial class MainForm : Form
 
         var p=pages["Price Checker"];var bar=Toolbar();bar.Height=92;bar.WrapContents=true;bar.AutoScroll=false;search.Margin=new Padding(3,9,10,3);search.TextChanged+=(_,_)=>RenderPrices();bar.Controls.Add(search);
 
-        bar.Controls.Add(Button("Search online",async()=>await RefreshSources(true)));search.KeyDown+=async (_,e)=>{if(e.KeyCode==Keys.Enter){e.SuppressKeyPress=true;await RefreshSources(true);}};bar.Controls.Add(Button("Refresh now",async()=>await RefreshSources()));bar.Controls.Add(Button("Watch item",()=>SaveSearchItem()));bar.Controls.Add(Button("Filters",EditListingFilters));bar.Controls.Add(Button("View in FM Tracker",OpenPriceInFm));
+        bar.Controls.Add(Button("Search online",async()=>await RefreshSources(true)));search.KeyDown+=async (_,e)=>{if(e.KeyCode==Keys.Enter){e.SuppressKeyPress=true;await RefreshSources(true);}};bar.Controls.Add(Button("Refresh now",async()=>await RefreshSources()));priceWatchButton=Button("Watch item",()=>ToggleItemWatch(PriceWatchName));bar.Controls.Add(priceWatchButton);bar.Controls.Add(Button("Filters",EditListingFilters));bar.Controls.Add(Button("View in FM Tracker",OpenPriceInFm));
 
         var bottom=new Panel(){Dock=DockStyle.Bottom,Height=225};var chartBar=Toolbar();chartBar.Height=54;
 
@@ -395,7 +395,7 @@ public sealed partial class MainForm : Form
 
         string lead=target is null?"Search an item online to retrieve its market listings.":target.Name+" • Lowest recently checked ask: "+TextKey.Mesos(asks.Count==0?null:asks.Min(o=>o.UnitPrice))+" • "+asks.Count+" recent asks";
 
-        RenderMarketCards(target);var fm=fmSummaries.FirstOrDefault(x=>TextKey.Search(x.Name)==TextKey.Search(target?.Name??search.Text));
+        RenderMarketCards(target);UpdateWatchButtons();var fm=fmSummaries.FirstOrDefault(x=>TextKey.Search(x.Name)==TextKey.Search(target?.Name??search.Text));
         bool fmEnabled=settings.Sources.Any(x=>x.Id=="Kerning Exchange"&&x.Authorized);
         fmContext.Text=fm is null?"FM summaries: search an exact item name or open FM Tracker for broader coverage.":$"Kerning FM • 7-day median {TextKey.Mesos(fm.Median7)} • Lowest observed ask {TextKey.Mesos(fm.LowestAsk)} • {fm.Sightings} sightings\nLast seen {fm.LastSeen.ToLocalTime():g} • {(fmEnabled?fm.Quality(DateTimeOffset.UtcNow,settings.FreshHours):"Source disabled — cached only")} • Summary only; excluded from bargain alerts.";
         priceSummary.Text=lead+"\n"+(v is null?"Estimated value: Price unavailable — needs 3 comparable recent asks from 3 sellers, or sufficient sale evidence.":$"Estimated value: {TextKey.Mesos(v.Value)} • Confidence {v.Confidence}/100 • {v.Count} observations • {v.Basis}\nQuick {TextKey.Mesos(v.Quick)}   Normal {TextKey.Mesos(v.Normal)}   Higher {TextKey.Mesos(v.High)}   Max buy {TextKey.Mesos(v.MaxBuy)}")+"\n"+(target?.Equipment==true?"Selected variant: "+target.Variant:"Double-click a listing to open its source. Posted time is not a completed-sale time.");
@@ -430,7 +430,7 @@ public sealed partial class MainForm : Form
 
     {
 
-        SetColumns(watchGrid,["Item","Latest ask","Est. value","Change","Confidence","Freshness","Alerts"]);SetColumns(inventoryGrid,["Item","Quantity","Est. unit","Est. stack","Source","Freshness"]);
+        UpdateWatchButtons();SetColumns(watchGrid,["Item","Latest ask","Est. value","Change","Confidence","Freshness","Alerts"]);SetColumns(inventoryGrid,["Item","Quantity","Est. unit","Est. stack","Source","Freshness"]);
 
         var storedHistory=store.History();decimal total=0;int missing=0;foreach(var i in store.Items())
 
