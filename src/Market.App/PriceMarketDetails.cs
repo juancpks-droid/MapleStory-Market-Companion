@@ -28,8 +28,8 @@ public sealed partial class MainForm
   columns.Controls.Add(Side(sellCards,sellCount));columns.Controls.Add(Side(buyCards,buyCount));listings.Controls.Add(columns);listings.Controls.Add(filters);
   priceDetails.TabPages.Add(listings);
   var timeline=new TabPage("Price over time");chart.Dock=DockStyle.Fill;timeline.Controls.Add(chart);priceDetails.TabPages.Add(timeline);
-  var evidence=new TabPage("All price evidence");evidence.Controls.Add(priceGrid);priceDetails.TabPages.Add(evidence);
-  priceDetails.SelectedIndexChanged+=(_,_)=>{RenderValuation();RenderHistory();};page.Controls.Add(priceDetails);priceDetails.BringToFront();
+  var evidence=new TabPage("All price evidence");evidence.Controls.Add(priceGrid);priceDetails.TabPages.Add(evidence);BuildListingWorkbench();
+  priceDetails.SelectedIndexChanged+=(_,_)=>{RenderValuation();RenderHistory();ApplyWorkbenchFocus();};page.Controls.Add(priceDetails);priceDetails.BringToFront();
   page.Controls.Add(marketHeadline);marketHeadline.BringToFront();priceDetails.BringToFront();marketHeadline.Font=new Font("Segoe UI",10,FontStyle.Bold);
   FitPriceText(fmContext);FitPriceText(priceSummary);FitPriceText(marketHeadline);BuildNpcReference(page);BuildPriceOverview(page);
   listingSort.SelectedIndexChanged+=(_,_)=>RenderMarketCards(marketTarget);listingMin.ValueChanged+=(_,_)=>RenderMarketCards(marketTarget);listingMax.ValueChanged+=(_,_)=>RenderMarketCards(marketTarget);
@@ -47,6 +47,7 @@ public sealed partial class MainForm
   var name=target?.Name??search.Text.Trim();
   var all=observations.Where(o=>TextKey.Normalize(o.Name)==TextKey.Normalize(name)&&(!o.Equipment||(target is not null&&o.MatchKey==target.MatchKey))&&o.Available&&o.Kind is EvidenceKind.Asking or EvidenceKind.Buying).DistinctBy(o=>o.Key).ToList();
   var eligible=all.Where(o=>settings.Sources.Any(s=>s.Id==o.Provider&&s.Authorized)&&o.Fresh(now,TimeSpan.FromHours(settings.FreshHours))&&o.RetrievedAt>=now.AddMinutes(-30)).ToList();
+  RenderListingWorkbench(all.Where(o=>o.UnitPrice>=listingMin.Value&&(listingMax.Value==0||o.UnitPrice<=listingMax.Value)&&(listingSource.SelectedIndex<=0||o.Provider==listingSource.Text)&&(!listingRecent.Checked||eligible.Contains(o))));
   var asks=eligible.Where(o=>o.Kind==EvidenceKind.Asking).ToList();var buys=eligible.Where(o=>o.Kind==EvidenceKind.Buying).ToList();
   marketHeadline.Text=(name.Length==0?"Select or search for an item":name)+"  •  Lowest recent ask: "+TextKey.Mesos(asks.Count==0?null:asks.Min(o=>o.UnitPrice))+"  •  Best recent buy offer: "+TextKey.Mesos(buys.Count==0?null:buys.Max(o=>o.UnitPrice));
   void Fill(FlowLayoutPanel flow,Label label,EvidenceKind kind,string heading){

@@ -8,7 +8,7 @@ public sealed partial class MainForm
   observations=[Row("a","Red Potion",600,EvidenceKind.Asking),Row("b","Red Potion",700,EvidenceKind.Asking),Row("c","Red Potion",400,EvidenceKind.Buying),Row("d","Red Potion",500,EvidenceKind.Buying),Row("e","Red Potion",100,EvidenceKind.Asking,false),Row("f","Blue Potion",5,EvidenceKind.Asking)];
   int Count(FlowLayoutPanel panel)=>panel.Controls.Cast<Control>().Count(c=>c.Tag is Observation);
   ShowPage("Price Checker");priceDetails.SelectedIndex=0;search.Text="Red Potion";RenderPrices();
-  Check(Count(sellCards)==2&&Count(buyCards)==2,"Separate sale/buy cards exclude closed listings");
+  Check(Count(sellCards)==2&&Count(buyCards)==2,"Separate sale/buy cards exclude closed listings");CheckListingWorkbench(checks);
   listingSource.SelectedItem="BasilMarket";Check(Count(sellCards)==0&&Count(buyCards)==0,"Source filter excludes other providers");
   ResetMarketFilters();listingRecent.Checked=true;Check(Count(sellCards)==0,"Recent-only filter excludes disabled sources");
   ResetMarketFilters();listingCompact.Checked=true;Check(Count(sellCards)==2&&!sellCards.Controls[0].Controls.OfType<Label>().Any(l=>l.Text.Contains("player note")),"Compact cards keep prices while collapsing long notes");

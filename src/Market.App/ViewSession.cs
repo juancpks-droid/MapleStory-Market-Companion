@@ -17,7 +17,7 @@ public sealed partial class MainForm
     string SessionPath=>Path.Combine(dataDirectory,"view-session.json");
     string lastSessionJson="";
     Dictionary<string,Control> SessionControls()=>new(){
-        ["listingSource"]=listingSource,["listingRecent"]=listingRecent,["listingCompact"]=listingCompact,["listingSort"]=listingSort,["listingMin"]=listingMin,["listingMax"]=listingMax,["dashboardSearch"]=quickSearch,["priceSearch"]=search,["fmSearch"]=fmSearch,
+        ["listingFocus"]=listingFocus,["listingText"]=listingText,["listingSide"]=listingSide,["listingQuantity"]=listingQuantity,["listingExact"]=listingExact,["listingSource"]=listingSource,["listingRecent"]=listingRecent,["listingCompact"]=listingCompact,["listingSort"]=listingSort,["listingMin"]=listingMin,["listingMax"]=listingMax,["dashboardSearch"]=quickSearch,["priceSearch"]=search,["fmSearch"]=fmSearch,
         ["finderDropSource"]=finderDropSource,["finderSearch"]=finderSearch,["finderCategory"]=finderCategory,["finderSource"]=finderSource,["finderListed"]=finderListed,
         ["inventorySearch"]=inventorySearch,["inventorySort"]=inventorySort,["catalogSearch"]=catalogSearch,["catalogCategory"]=catalogCategory
     };
@@ -51,7 +51,7 @@ public sealed partial class MainForm
                 Size=new Size(Math.Clamp(state.Width,MinimumSize.Width,Math.Max(MinimumSize.Width,area.Width)),Math.Clamp(state.Height,MinimumSize.Height,Math.Max(MinimumSize.Height,area.Height)));
                 if(state.Maximized)WindowState=FormWindowState.Maximized;
                 if(state.Page is not null&&pages.ContainsKey(state.Page))ShowPage(state.Page);
-                if(priceItemChoice.Items.Contains(state.PriceItem))priceItemChoice.SelectedItem=state.PriceItem;priceDetails.SelectedIndex=Math.Clamp(state.PriceDetailTab,0,2);
+                if(priceItemChoice.Items.Contains(state.PriceItem))priceItemChoice.SelectedItem=state.PriceItem;priceDetails.SelectedIndex=Math.Clamp(state.PriceDetailTab,0,3);
                 finderDetailTabs.SelectedIndex=Math.Clamp(state.FinderDetailTab,0,1);settingsSections.SelectedIndex=Math.Clamp(state.SettingsSection,0,1);
             }
         }catch(Exception e) when(e is IOException or JsonException or UnauthorizedAccessException){footer.Text="Previous view could not be restored. Your saved player data is still available.";}
