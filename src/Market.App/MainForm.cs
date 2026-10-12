@@ -25,9 +25,9 @@ public sealed partial class MainForm : Form
 
     readonly Panel content=new(){Dock=DockStyle.Fill,Padding=new Padding(22,16,22,14)};
 
-    readonly Label title=new ClassicTitle(){Text="Dashboard",Dock=DockStyle.Top,Height=48};
+    readonly Label title=new ClassicTitle(){Text="Dashboard",Dock=DockStyle.Top,Height=76};
 
-    readonly Label footer=new(){Dock=DockStyle.Bottom,Height=36,Padding=new Padding(18,8,0,0),Text="Ready • Local analysis every 10 seconds"};
+    readonly Label footer=new(){Dock=DockStyle.Bottom,Height=30,Padding=new Padding(18,6,0,0),Text="Ready • Local analysis every 10 seconds"};
 
     readonly TextBox search=new(){Width=340,PlaceholderText="Search an item by name",BackColor=Surface,ForeColor=TextColor};
 
@@ -63,9 +63,9 @@ public sealed partial class MainForm : Form
 
         if(settings.AccessVersion<5){var source=settings.Sources.FirstOrDefault(s=>s.Id=="BasilMarket");if(source is not null&&source.BlockedUntil<=DateTimeOffset.UtcNow){source.NextAllowed=default;source.PageChecked.Clear();}settings.AccessVersion=5;store.SaveSettings(settings);}
 
-        Text="MapleStory Classic Market Companion"; BackColor=Back; ForeColor=TextColor; Font=new Font("Segoe UI",9); Size=new Size(1220,840); MinimumSize=new Size(1024,720); StartPosition=FormStartPosition.CenterScreen; Icon=AppArtwork.Icon;
+        Text="MapleStory Classic Market Companion"; BackColor=Back; ForeColor=TextColor; Font=new Font("Segoe UI",9); Size=new Size(1380,920); MinimumSize=new Size(1024,720); StartPosition=FormStartPosition.CenterScreen; Icon=AppArtwork.Icon;
 
-        var sidebar=new Panel(){Dock=DockStyle.Left,Width=215,Padding=new Padding(12,12,12,15),BackColor=GuidePalette.Back};
+        var sidebar=new Panel(){Dock=DockStyle.Left,Width=215,Padding=new Padding(12,12,12,12),BackColor=GuidePalette.Back};
 
         var brand=new ClassicBrand(); sidebar.Controls.Add(brand);
 
@@ -112,7 +112,7 @@ public sealed partial class MainForm : Form
 
     {
 
-        var g=new DataGridView(){Dock=DockStyle.Fill,ReadOnly=true,AllowUserToAddRows=false,AllowUserToDeleteRows=false,AutoSizeColumnsMode=DataGridViewAutoSizeColumnsMode.Fill,BackgroundColor=Back,BorderStyle=BorderStyle.None,RowHeadersVisible=false,SelectionMode=DataGridViewSelectionMode.FullRowSelect,MultiSelect=false,EnableHeadersVisualStyles=false,AllowUserToResizeRows=false};
+        var g=new MarketGrid(){Dock=DockStyle.Fill,ReadOnly=true,AllowUserToAddRows=false,AllowUserToDeleteRows=false,AutoSizeColumnsMode=DataGridViewAutoSizeColumnsMode.Fill,BackgroundColor=Back,BorderStyle=BorderStyle.None,RowHeadersVisible=false,SelectionMode=DataGridViewSelectionMode.FullRowSelect,MultiSelect=false,EnableHeadersVisualStyles=false,AllowUserToResizeRows=false};
 
         g.DefaultCellStyle=new DataGridViewCellStyle(){BackColor=Surface,ForeColor=TextColor,SelectionBackColor=Color.FromArgb(68,59,35),SelectionForeColor=Color.White,Padding=new Padding(5)};
 
@@ -122,15 +122,15 @@ public sealed partial class MainForm : Form
 
     }
 
-    static FlowLayoutPanel Toolbar()=>new(){Dock=DockStyle.Top,Height=48,WrapContents=false,AutoScroll=true};
+    static FlowLayoutPanel Toolbar()=>new(){Dock=DockStyle.Top,Height=48,MinimumSize=new Size(0,44),AutoSize=true,AutoSizeMode=AutoSizeMode.GrowAndShrink,WrapContents=true,AutoScroll=false};
 
     void BuildPrices()
 
     {
 
-        var p=pages["Price Checker"];var bar=Toolbar();bar.Height=92;bar.WrapContents=true;bar.AutoScroll=false;search.Margin=new Padding(3,9,10,3);InitializeItemLookup();search.TextChanged+=(_,_)=>{RenderPrices();QueueItemLookup(search.Text);};bar.Controls.Add(search);
+        var p=pages["Price Checker"];var bar=Toolbar();bar.AutoSize=true;bar.AutoSizeMode=AutoSizeMode.GrowAndShrink;bar.MinimumSize=new Size(0,48);bar.WrapContents=true;bar.AutoScroll=false;search.Margin=new Padding(3,9,10,3);InitializeItemLookup();search.TextChanged+=(_,_)=>{RenderPrices();QueueItemLookup(search.Text);};bar.Controls.Add(search);
 
-        bar.Controls.Add(Button("Search online",async()=>await LookupPricesNow()));search.KeyDown+=async (_,e)=>{if(e.KeyCode==Keys.Enter){e.SuppressKeyPress=true;await LookupPricesNow();}};bar.Controls.Add(Button("Refresh now",async()=>await RefreshSources()));priceWatchButton=Button("Watch item",()=>ToggleItemWatch(PriceWatchName));bar.Controls.Add(priceWatchButton);bar.Controls.Add(Button("Filters",EditListingFilters));bar.Controls.Add(Button("View in FM Tracker",OpenPriceInFm));
+        bar.Controls.Add(Button("Search online",async()=>await LookupPricesNow()));search.KeyDown+=async (_,e)=>{if(e.KeyCode==Keys.Enter){e.SuppressKeyPress=true;await LookupPricesNow();}};bar.Controls.Add(Button("Refresh now",async()=>await RefreshSources()));priceWatchButton=Button("Watch item",()=>ToggleItemWatch(PriceWatchName));bar.Controls.Add(priceWatchButton);bar.Controls.Add(Button("Filters",EditListingFilters));bar.Controls.Add(Button("View in FM Tracker",OpenPriceInFm));bar.Controls.Add(Button("Price explanation",()=>priceSummary.Visible=!priceSummary.Visible));
 
         var bottom=new Panel(){Dock=DockStyle.Bottom,Height=225};var chartBar=Toolbar();chartBar.Height=54;
 
@@ -203,7 +203,7 @@ public sealed partial class MainForm : Form
 
     {
 
-        var page=pages["Settings"];page.Controls.Clear();var scroller=new Panel(){Dock=DockStyle.Fill,AutoScroll=true};var form=new FlowLayoutPanel(){AutoSize=true,FlowDirection=FlowDirection.TopDown,WrapContents=false,Width=880,Padding=new Padding(3)};scroller.Controls.Add(form);page.Controls.Add(scroller);
+        var page=pages["Settings"];page.Controls.Clear();var scroller=new Panel(){Dock=DockStyle.Fill,AutoScroll=true};var form=new FlowLayoutPanel(){AutoSize=true,FlowDirection=FlowDirection.TopDown,WrapContents=false,Width=880,Padding=new Padding(3)};scroller.Controls.Add(form);page.Controls.Add(scroller);ResponsiveSettings(scroller,form);
 
         void Note(string text,int h=50)=>form.Controls.Add(new Label(){Text=text,Width=850,Height=h,ForeColor=Muted,Margin=new Padding(3,6,3,6)});
 
@@ -227,7 +227,7 @@ public sealed partial class MainForm : Form
 
         var confidence=Number(settings.Confidence,1,100);Row("Minimum confidence score",confidence);
 
-        var notifications=Check("Desktop notifications",settings.Notifications);form.Controls.Add(notifications);var basilDone=Check("Notify when the BasilMarket scan finishes",settings.BasilCompletionNotifications);form.Controls.Add(basilDone);var sound=Check("Notification sound",settings.Sound);form.Controls.Add(sound);menuSoundCheck.Checked=features.MenuSounds;menuSoundCheck.CheckedChanged+=(_,_)=>{features.MenuSounds=menuSoundCheck.Checked;SaveFeatures();};form.Controls.Add(menuSoundCheck);var textSize=Number(features.TextSize,9,13);textSize.ValueChanged+=(_,_)=>{features.TextSize=(int)textSize.Value;SaveFeatures();ApplyTextSize();};Row("Interface text size",textSize);Note("Shortcuts: Ctrl+F search • Ctrl+I inventory • Ctrl+J journal • Ctrl+B backups • Ctrl+L catalog • F5 refresh eligible sources",46);
+        var notifications=Check("Desktop notifications",settings.Notifications);form.Controls.Add(notifications);var basilDone=Check("Notify when the BasilMarket scan finishes",settings.BasilCompletionNotifications);form.Controls.Add(basilDone);var sound=Check("Notification sound",settings.Sound);form.Controls.Add(sound);menuSoundCheck.Checked=features.MenuSounds;menuSoundCheck.CheckedChanged+=(_,_)=>{features.MenuSounds=menuSoundCheck.Checked;SaveFeatures();};form.Controls.Add(menuSoundCheck);var textSize=Number(features.TextSize,9,13);textSize.ValueChanged+=(_,_)=>{features.TextSize=(int)textSize.Value;SaveFeatures();ApplyTextSize();};Row("Interface text size",textSize);Note("Shortcuts: Ctrl+F search • Ctrl+B backups • Ctrl+L catalog • F5 refresh eligible sources",46);
 
         var watchOnly=Check("Only alert for watched items",settings.WatchOnly);form.Controls.Add(watchOnly);var trayClose=Check("Keep running in the tray when closing",settings.CloseToTray);form.Controls.Add(trayClose);
 
@@ -262,7 +262,7 @@ public sealed partial class MainForm : Form
         });
         var savedSettingsDraft=SettingsDraft();
         hasUnsavedSettings=()=>SettingsDraft()!=savedSettingsDraft;
-        var actions=new FlowLayoutPanel(){Width=850,Height=48};actions.Controls.Add(Button("Save settings",()=>
+        var actions=new FlowLayoutPanel(){Width=850,Height=76};actions.Controls.Add(Button("Save settings",()=>
 
         {
 
@@ -393,9 +393,12 @@ public sealed partial class MainForm : Form
 
         var asks=target is null?[]:EligibleObservations().Where(o=>o.MatchKey==target.MatchKey&&o.Kind==EvidenceKind.Asking&&o.Available&&o.Fresh(DateTimeOffset.UtcNow,TimeSpan.FromHours(settings.FreshHours))&&o.RetrievedAt>=DateTimeOffset.UtcNow.AddMinutes(-30)).ToList();
 
+        var buyers=target is null?[]:EligibleObservations().Where(o=>o.MatchKey==target.MatchKey&&o.Kind==EvidenceKind.Buying&&o.Available&&o.Fresh(DateTimeOffset.UtcNow,TimeSpan.FromHours(settings.FreshHours))&&o.RetrievedAt>=DateTimeOffset.UtcNow.AddMinutes(-30)).ToList();
+        UpdatePriceOverview(asks.Count==0?null:asks.Min(o=>o.UnitPrice),buyers.Count==0?null:buyers.Max(o=>o.UnitPrice),v);
         string lead=target is null?"Search an item online to retrieve its market listings.":target.Name+" • Lowest recently checked ask: "+TextKey.Mesos(asks.Count==0?null:asks.Min(o=>o.UnitPrice))+" • "+asks.Count+" recent asks";
 
         RenderMarketCards(target);UpdateWatchButtons();QueueNpcPrices();var fm=fmSummaries.FirstOrDefault(x=>TextKey.Search(x.Name)==TextKey.Search(target?.Name??search.Text));
+        fmContext.Visible=fm is not null;
         bool fmEnabled=settings.Sources.Any(x=>x.Id=="Kerning Exchange"&&x.Authorized);
         fmContext.Text=fm is null?"FM summaries: search an exact item name or open FM Tracker for broader coverage.":$"Kerning FM • 7-day median {TextKey.Mesos(fm.Median7)} • Lowest observed ask {TextKey.Mesos(fm.LowestAsk)} • {fm.Sightings} sightings\nLast seen {fm.LastSeen.ToLocalTime():g} • {(fmEnabled?fm.Quality(DateTimeOffset.UtcNow,settings.FreshHours):"Source disabled — cached only")} • Summary only; excluded from bargain alerts.";
         priceSummary.Text=lead+"\n"+(v is null?"Estimated value: Price unavailable — needs 3 comparable recent asks from 3 sellers, or sufficient sale evidence.":$"Estimated value: {TextKey.Mesos(v.Value)} • Confidence {v.Confidence}/100 • {v.Count} observations • {v.Basis}\nQuick {TextKey.Mesos(v.Quick)}   Normal {TextKey.Mesos(v.Normal)}   Higher {TextKey.Mesos(v.High)}   Max buy {TextKey.Mesos(v.MaxBuy)}")+"\n"+(target?.Equipment==true?"Selected variant: "+target.Variant:"Double-click a listing to open its source. Posted time is not a completed-sale time.");

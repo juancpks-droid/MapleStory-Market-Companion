@@ -1,7 +1,7 @@
 namespace Market.App;
 public sealed partial class MainForm
 {
- readonly TabControl settingsSections=new(){Dock=DockStyle.Fill};
+ readonly TabControl settingsSections=new MarketTabs(){Dock=DockStyle.Fill};
  void BuildSettingsSections(){
   var preferences=new TabPage("Preferences");var backups=new TabPage("Backups");
   foreach(Control control in pages["Settings"].Controls.Cast<Control>().ToArray())preferences.Controls.Add(control);

@@ -2,7 +2,7 @@ using Market.Core;
 namespace Market.App;
 public sealed partial class MainForm
 {
- readonly TabControl finderDetailTabs=new(){Dock=DockStyle.Fill};
+ readonly TabControl finderDetailTabs=new MarketTabs(){Dock=DockStyle.Fill};
  readonly DataGridView finderDrops=Grid();
  readonly Label finderDropNote=Info(75);
  readonly DropReferenceReader dropReader=new();

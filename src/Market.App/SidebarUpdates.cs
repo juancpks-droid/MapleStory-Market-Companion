@@ -8,7 +8,7 @@ public sealed partial class MainForm
 
     Control BuildSidebarUpdates()
     {
-        var panel=new Panel(){Dock=DockStyle.Bottom,Height=155,Padding=new Padding(0,8,0,0)};
+        var panel=new Panel(){Dock=DockStyle.Bottom,Height=128,Padding=new Padding(0,8,0,0)};
         sidebarVersion.Text="Installed: v"+Application.ProductVersion.Split('+')[0];
         sidebarVersion.AccessibleName="Installed app version";
         sidebarUpdateButton=Button("Check for updates",async ()=>{

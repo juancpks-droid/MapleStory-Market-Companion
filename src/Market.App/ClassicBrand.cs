@@ -2,10 +2,11 @@ using System.Drawing.Drawing2D;
 namespace Market.App;
 public sealed class ClassicBrand : Control
 {
- public ClassicBrand(){DoubleBuffered=true;Height=180;Dock=DockStyle.Top;AccessibleName="Maple Market, Classic World";}
+ public ClassicBrand(){DoubleBuffered=true;Height=82;Dock=DockStyle.Top;AccessibleName="Maple Market, Classic World";}
  protected override void OnPaint(PaintEventArgs e){
   if(Width<2||Height<2)return;
   var g=e.Graphics;g.SmoothingMode=SmoothingMode.AntiAlias;
+  if(Height<100){g.Clear(GuidePalette.Back);g.DrawIcon(AppArtwork.Icon,new Rectangle(2,12,46,46));using var name=new Font("Segoe UI",12,FontStyle.Bold);using var sub=new Font("Segoe UI",8);TextRenderer.DrawText(g,"MAPLE MARKET",name,new Rectangle(56,17,Width-56,24),GuidePalette.Text,TextFormatFlags.EndEllipsis);TextRenderer.DrawText(g,"CLASSIC WORLD",sub,new Rectangle(58,43,Width-58,20),GuidePalette.Gold);using var divider=new Pen(GuidePalette.Line);g.DrawLine(divider,0,Height-1,Width,Height-1);return;}
   var saved=g.Save();g.ScaleTransform(Width/191f,Height/180f);
   using var bg=new LinearGradientBrush(new Rectangle(0,0,191,180),GuidePalette.Raised,GuidePalette.Surface,90);g.FillRectangle(bg,0,0,191,180);
   using var glow=new SolidBrush(Color.FromArgb(22,255,220,140));g.FillEllipse(glow,25,14,145,145);g.FillEllipse(glow,46,33,103,106);

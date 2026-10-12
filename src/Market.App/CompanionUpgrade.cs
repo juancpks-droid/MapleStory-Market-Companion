@@ -46,7 +46,7 @@ public sealed partial class MainForm
     void AddCommandCenter(Form dialog,Control frame,Control evidence,object item)
     {
         dialog.Text=ItemName(item)+" • Item command center";dialog.Size=new Size(840,700);
-        var tabs=new TabControl(){Dock=DockStyle.Fill};frame.Controls.Remove(evidence);var summary=TextTab("Item notes",CommandCenterText(item));tabs.TabPages.Add(summary);var prices=new TabPage("Price evidence");prices.Controls.Add(evidence);tabs.TabPages.Add(prices);
+        var tabs=new MarketTabs(){Dock=DockStyle.Fill};frame.Controls.Remove(evidence);var summary=TextTab("Item notes",CommandCenterText(item));tabs.TabPages.Add(summary);var prices=new TabPage("Price evidence");prices.Controls.Add(evidence);tabs.TabPages.Add(prices);
         if(item is Deal deal)tabs.TabPages.Add(DealTab(deal));frame.Controls.Add(tabs);
         dialog.Activated+=(_,_)=>{if(!summary.IsDisposed)summary.Controls.OfType<RichTextBox>().Single().Text=CommandCenterText(item);};
     }

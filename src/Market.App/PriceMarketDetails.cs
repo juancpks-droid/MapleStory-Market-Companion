@@ -2,7 +2,7 @@ using Market.Core;
 namespace Market.App;
 public sealed partial class MainForm
 {
- readonly TabControl priceDetails=new(){Dock=DockStyle.Fill};
+ readonly TabControl priceDetails=new MarketTabs(){Dock=DockStyle.Fill};
  readonly FlowLayoutPanel sellCards=new(){Dock=DockStyle.Fill,FlowDirection=FlowDirection.TopDown,WrapContents=false,AutoScroll=true};
  readonly FlowLayoutPanel buyCards=new(){Dock=DockStyle.Fill,FlowDirection=FlowDirection.TopDown,WrapContents=false,AutoScroll=true};
  readonly Label sellCount=Info(32),buyCount=Info(32),marketHeadline=Info(30);
@@ -25,7 +25,7 @@ public sealed partial class MainForm
   var evidence=new TabPage("All price evidence");evidence.Controls.Add(priceGrid);priceDetails.TabPages.Add(evidence);
   priceDetails.SelectedIndexChanged+=(_,_)=>{RenderValuation();RenderHistory();};page.Controls.Add(priceDetails);priceDetails.BringToFront();
   page.Controls.Add(marketHeadline);marketHeadline.BringToFront();priceDetails.BringToFront();marketHeadline.Font=new Font("Segoe UI",10,FontStyle.Bold);
-  FitPriceText(fmContext);FitPriceText(priceSummary);FitPriceText(marketHeadline);BuildNpcReference(page);
+  FitPriceText(fmContext);FitPriceText(priceSummary);FitPriceText(marketHeadline);BuildNpcReference(page);BuildPriceOverview(page);
   listingSort.SelectedIndexChanged+=(_,_)=>RenderMarketCards(marketTarget);listingMin.ValueChanged+=(_,_)=>RenderMarketCards(marketTarget);listingMax.ValueChanged+=(_,_)=>RenderMarketCards(marketTarget);
  }
  Observation? SelectedPriceItem()=>priceDetails.SelectedIndex==2&&priceGrid.SelectedRows.Count>0?priceGrid.SelectedRows[0].Tag as Observation:observations.FirstOrDefault(o=>o.Name==priceItemChoice.Text);
@@ -51,8 +51,8 @@ public sealed partial class MainForm
    var rows=matches.Take(100).ToList();label.Text=$"{heading} ({candidates.Count}) • showing {rows.Count}";
    if(rows.Count==0)flow.Controls.Add(new Label(){Text="No matching cached listings. Refresh sources to check available public data.",AutoSize=true,MaximumSize=new Size(Math.Max(150,flow.ClientSize.Width-24),0),Padding=new Padding(10)});
    foreach(var o in rows){
-    var card=new FlowLayoutPanel(){Width=Math.Max(150,flow.ClientSize.Width-24),MaximumSize=new Size(Math.Max(150,flow.ClientSize.Width-24),0),AutoSize=true,AutoSizeMode=AutoSizeMode.GrowAndShrink,FlowDirection=FlowDirection.TopDown,WrapContents=false,Padding=new Padding(9),Margin=new Padding(2,3,2,7),BackColor=GuidePalette.Surface,Tag=o};
-    void Line(string text,bool strong=false){card.Controls.Add(new Label(){Text=text,AutoSize=true,MaximumSize=new Size(Math.Max(130,card.Width-22),0),ForeColor=strong?GuidePalette.Gold:GuidePalette.Muted,Font=new Font("Segoe UI",strong?10:9,strong?FontStyle.Bold:FontStyle.Regular),Margin=new Padding(0,2,0,3)});}
+    var card=new MarketListingCard(){Width=Math.Max(150,flow.ClientSize.Width-24),MaximumSize=new Size(Math.Max(150,flow.ClientSize.Width-24),0),AutoSize=true,AutoSizeMode=AutoSizeMode.GrowAndShrink,FlowDirection=FlowDirection.TopDown,WrapContents=false,Padding=new Padding(12),Margin=new Padding(2,3,2,10),BackColor=GuidePalette.Surface,Tag=o};
+    void Line(string text,bool strong=false){card.Controls.Add(new Label(){Text=text,AutoSize=true,MaximumSize=new Size(Math.Max(130,card.Width-22),0),ForeColor=strong?GuidePalette.Gold:GuidePalette.Muted,Font=new Font("Segoe UI",strong?12:9,strong?FontStyle.Bold:FontStyle.Regular),Margin=new Padding(0,2,0,3)});}
     Line(o.Name,true);Line((o.PriceApproximate?"~ ":"")+TextKey.Mesos(o.UnitPrice)+" mesos / unit",true);
     Line("Qty: "+(o.Quantity?.ToString("N0")??"Unknown")+" • "+o.Provider);
     Line((kind==EvidenceKind.Buying?"Buyer: ":"Seller: ")+(string.IsNullOrWhiteSpace(o.Seller)?"Not provided":o.Seller));

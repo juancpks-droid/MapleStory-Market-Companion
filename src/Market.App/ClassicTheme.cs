@@ -15,7 +15,8 @@ public sealed class ClassicButton : Button
   shape.AddArc(r.Right-radius,r.Bottom-radius,radius,radius,0,90);shape.AddArc(r.Left,r.Bottom-radius,radius,radius,90,90);shape.CloseFigure();
   g.Clear(Parent?.BackColor??GuidePalette.Back);
   using var fill=new SolidBrush(selected?ControlPaint.Light(GuidePalette.Raised,.12f):hover?GuidePalette.Raised:GuidePalette.Surface);
-  g.FillPath(fill,shape);using var border=new Pen(selected?GuidePalette.Gold:GuidePalette.Line);g.DrawPath(border,shape);
+  g.FillPath(fill,shape);using var border=new Pen(selected?GuidePalette.Gold:hover?GuidePalette.Muted:GuidePalette.Line);g.DrawPath(border,shape);
+  if(selected){using var marker=new SolidBrush(GuidePalette.Gold);g.FillRectangle(marker,3,10,3,Height-20);}
   if(Badge is not null)NavigationBadges.Paint(g,Badge,new Rectangle(7,(Height-24)/2,24,24));
   TextRenderer.DrawText(g,Text,Font,new Rectangle(Badge is null?10:40,2,Width-(Badge is null?20:44),Height-4),!Enabled?GuidePalette.Muted:selected?GuidePalette.Gold:GuidePalette.Text,TextFormatFlags.EndEllipsis|TextFormatFlags.NoPrefix|TextFormatFlags.VerticalCenter|(TextAlign==ContentAlignment.MiddleLeft?TextFormatFlags.Left:TextFormatFlags.HorizontalCenter));
   if(Focused&&ShowFocusCues)ControlPaint.DrawFocusRectangle(g,new Rectangle(5,5,Width-11,Height-11),GuidePalette.Gold,GuidePalette.Surface);
@@ -23,7 +24,21 @@ public sealed class ClassicButton : Button
 }
 public sealed class ClassicTitle : Label
 {
- public ClassicTitle(){DoubleBuffered=true;Font=new Font("Segoe UI",16,FontStyle.Bold);ForeColor=GuidePalette.Text;}
+ public ClassicTitle(){DoubleBuffered=true;Font=new Font("Segoe UI",21,FontStyle.Bold);ForeColor=GuidePalette.Text;}
+ protected override void OnPaint(PaintEventArgs e){
+  TextRenderer.DrawText(e.Graphics,Text,Font,new Rectangle(24,9,Width-48,35),GuidePalette.Text,TextFormatFlags.EndEllipsis);
+  string description=Text switch{
+   "Dashboard"=>"Your market at a glance • Explore listings, demand and watched items",
+   "Price Checker"=>"Find an item • Compare player offers and NPC reference prices",
+   "Item Finder"=>"Discover classic items, monster drops and places to explore",
+   "FM Tracker"=>"Explore Free Market sightings and recent source summaries",
+   "Watchlist"=>"Your saved items • Follow prices and manage notifications",
+   "Alert Inbox"=>"Review your market notifications and price alerts",
+   "Settings"=>"Make it yours • Themes, data sources, updates and backups",
+   "Deal Finder"=>"Compare opportunities using recent, comparable market evidence",
+   _=>"Maple Market • Your classic world companion"};
+  using var small=new Font("Segoe UI",9);TextRenderer.DrawText(e.Graphics,description,small,new Rectangle(26,47,Width-52,22),GuidePalette.Muted,TextFormatFlags.EndEllipsis);
+ }
  protected override void OnPaintBackground(PaintEventArgs e){
   e.Graphics.Clear(GuidePalette.Back);
   using var line=new Pen(GuidePalette.Line);e.Graphics.DrawLine(line,0,Height-1,Width,Height-1);

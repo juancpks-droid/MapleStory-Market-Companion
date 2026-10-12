@@ -12,15 +12,15 @@ public sealed partial class MainForm
    "Kerning City"=>Color.FromArgb(166,185,247),
    "Perion"=>Color.FromArgb(240,164,113),
    _=>Color.FromArgb(241,203,100)};
-  Color Shade(double strength)=>Color.FromArgb((int)(tint.R*strength),(int)(tint.G*strength),(int)(tint.B*strength));
-  GuidePalette.Gold=tint;GuidePalette.Back=Shade(.055);GuidePalette.Surface=Shade(.095);GuidePalette.Raised=Shade(.15);GuidePalette.Line=Shade(.26);
+  Color Shade(double strength)=>Color.FromArgb((int)(18+tint.R*strength),(int)(22+tint.G*strength),(int)(30+tint.B*strength));
+  GuidePalette.Gold=tint;GuidePalette.Back=Shade(.015);GuidePalette.Surface=Shade(.04);GuidePalette.Raised=Shade(.085);GuidePalette.Line=Shade(.19);
   void Paint(Control c){
    c.ForeColor=GuidePalette.Text;
    if(c is DataGridView grid){
     grid.BackgroundColor=GuidePalette.Back;grid.GridColor=GuidePalette.Line;
     grid.DefaultCellStyle.BackColor=GuidePalette.Surface;grid.DefaultCellStyle.ForeColor=GuidePalette.Text;
     grid.DefaultCellStyle.SelectionBackColor=ControlPaint.Light(GuidePalette.Raised,.12f);grid.DefaultCellStyle.SelectionForeColor=GuidePalette.Text;grid.RowsDefaultCellStyle.SelectionBackColor=grid.DefaultCellStyle.SelectionBackColor;foreach(DataGridViewColumn column in grid.Columns)column.DefaultCellStyle.SelectionBackColor=grid.DefaultCellStyle.SelectionBackColor;
-    grid.AlternatingRowsDefaultCellStyle.BackColor=GuidePalette.Raised;
+    grid.AlternatingRowsDefaultCellStyle.BackColor=GuidePalette.Back;grid.DefaultCellStyle.Padding=new Padding(10,8,10,8);grid.ColumnHeadersDefaultCellStyle.Padding=new Padding(10,8,10,8);grid.ColumnHeadersDefaultCellStyle.Font=new Font("Segoe UI",9,FontStyle.Bold);
     grid.ColumnHeadersDefaultCellStyle.BackColor=GuidePalette.Raised;grid.ColumnHeadersDefaultCellStyle.ForeColor=GuidePalette.Gold;
     grid.ColumnHeadersDefaultCellStyle.SelectionBackColor=GuidePalette.Raised;
     grid.CellBorderStyle=DataGridViewCellBorderStyle.SingleHorizontal;grid.ColumnHeadersBorderStyle=DataGridViewHeaderBorderStyle.None;
@@ -32,7 +32,8 @@ public sealed partial class MainForm
    if(c is TextBoxBase or ComboBox or NumericUpDown or ListBox){c.BackColor=GuidePalette.Raised;}
    else if(c is HistoryPlot){c.BackColor=GuidePalette.Surface;}
    else if(c is Label){c.BackColor=Color.Transparent;c.ForeColor=c is ClassicTitle?GuidePalette.Text:GuidePalette.Muted;}
-   else if(c is Panel or TabPage or TabControl or GroupBox or CheckBox or RadioButton or Form)c.BackColor=GuidePalette.Back;
+   else if(c is TabPage)c.BackColor=GuidePalette.Surface;
+   else if(c is Panel or TabControl or GroupBox or CheckBox or RadioButton or Form)c.BackColor=GuidePalette.Back;
    foreach(Control child in c.Controls)Paint(child);
   }
   Paint(this);
