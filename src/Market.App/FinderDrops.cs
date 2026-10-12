@@ -4,6 +4,8 @@ public sealed partial class MainForm
 {
  readonly TabControl finderDetailTabs=new MarketTabs(){Dock=DockStyle.Fill};
  readonly DataGridView finderDrops=Grid();
+ readonly FlowLayoutPanel relatedDropPanel=new(){Dock=DockStyle.Top,AutoSize=true,WrapContents=true,Visible=false};
+ readonly ComboBox relatedDropChoice=new GuideComboBox(){Width=270,DropDownStyle=ComboBoxStyle.DropDownList,AccessibleName="Related source items (unconfirmed)"};
  readonly Label finderDropNote=Info(75);
  readonly DropReferenceReader dropReader=new();
  readonly CcplzReader ccplzReader=new();
@@ -17,7 +19,8 @@ public sealed partial class MainForm
   finderDropSource.Items.AddRange(["NiaMeowDB","CCPLZ"]);finderDropSource.SelectedIndex=0;finderDropSource.SelectedIndexChanged+=(_,_)=>{dropItemKey="";QueueFinderDrops();};actions.Controls.Add(finderDropSource);
   actions.Controls.Add(Button("Load / retry",()=>{dropItemKey="";QueueFinderDrops();}));
   actions.Controls.Add(Button("Open source item",()=>{if(dropSourceUrl.Length>0&&!Offline)OpenDropReference(dropSourceUrl);}));
-  drops.Controls.Add(finderDrops);drops.Controls.Add(finderDropNote);drops.Controls.Add(actions);finderDetailTabs.TabPages.Add(drops);
+  relatedDropPanel.Controls.Add(new Label(){Text="Related items (unconfirmed)",AutoSize=true,Padding=new Padding(3,8,3,0)});relatedDropPanel.Controls.Add(relatedDropChoice);relatedDropPanel.Controls.Add(Button("View related item",()=>{if(!Offline&&relatedDropChoice.SelectedItem is DropItemSuggestion suggestion)new WebsiteViewer(new("NiaMeowDB • "+suggestion.Name,suggestion.Url,suggestion.Name,false,"Related suggestion, not a confirmed match for the selected item. Check its identity and drop evidence."),dataDirectory).Show(this);}));
+  drops.Controls.Add(finderDrops);drops.Controls.Add(relatedDropPanel);FitPriceText(finderDropNote);drops.Controls.Add(finderDropNote);drops.Controls.Add(actions);finderDetailTabs.TabPages.Add(drops);
   finderDrops.DefaultCellStyle.WrapMode=DataGridViewTriState.True;finderDrops.AutoSizeRowsMode=DataGridViewAutoSizeRowsMode.AllCells;
   SetColumns(finderDrops,["Monster","Where to find it (click for maps)","Evidence"]);
   finderDrops.Columns[0].FillWeight=22;finderDrops.Columns[1].FillWeight=48;finderDrops.Columns[2].FillWeight=30;foreach(DataGridViewColumn column in finderDrops.Columns)column.DefaultCellStyle.WrapMode=DataGridViewTriState.True;
@@ -30,6 +33,7 @@ public sealed partial class MainForm
   finderDropNote.Text="Select an item and open this tab to load drop references. No drop rates are inferred.";
   return finderDetailTabs;
  }
+ void ShowDropSuggestions(IReadOnlyList<DropItemSuggestion> suggestions){relatedDropChoice.Items.Clear();relatedDropChoice.Items.AddRange(suggestions.Cast<object>().ToArray());relatedDropPanel.Visible=suggestions.Count>0;if(suggestions.Count>0)relatedDropChoice.SelectedIndex=0;}
  void OpenDropReference(string url){if(!Offline)new WebsiteViewer(new((new Uri(url).Host=="ccplz.cc"?"CCPLZ":"NiaMeowDB")+" • Drop reference",url,FinderSelection?.Name??"",false,"Community reports and historical references are labelled separately. Check source coverage."),dataDirectory).Show(this);}
  async Task OpenCcplzItem(){
   var item=FinderSelection;if(item is null)return;
@@ -47,14 +51,14 @@ public sealed partial class MainForm
   var item=FinderSelection;string source=finderDropSource.Text;string key=item is null?"":source+"|"+item.Id+"|"+item.Name;
   if(key==dropItemKey&&key.Length>0)return;
   dropItemKey=key;int generation=++dropGeneration;dropLookupStop?.Cancel();dropLookupStop?.Dispose();dropLookupStop=CancellationTokenSource.CreateLinkedTokenSource(stop.Token);var ct=dropLookupStop.Token;
-  finderDrops.Rows.Clear();dropSourceUrl="";
+  finderDrops.Rows.Clear();dropSourceUrl="";ShowDropSuggestions([]);
   if(item is null){finderDropNote.Text="Select an item to see monster drops and locations.";return;}
   if(Offline){dropItemKey="";finderDropNote.Text="Offline: turn off Work offline, then select Load / retry to look up drop references.";return;}
-  finderDropNote.Text="Looking up "+item.Name+"… Exact-name matching; source requests are spaced to avoid overloading the website.";
+  finderDropNote.Text="Looking up "+item.Name+"… Checking the item and related references; source requests are spaced.";
   try{
    await Task.Delay(500,ct);var result=source=="CCPLZ"?await ccplzReader.Lookup(item.Name,ct):await dropReader.Lookup(item.Name,ct);
    if(closing||IsDisposed||generation!=dropGeneration||Offline)return;
-   dropSourceUrl=result.SourceUrl;finderDropNote.Text=result.Item+" • "+source+" • Checked "+result.CheckedAt.ToLocalTime().ToString("g")+"\n"+result.Message;
+   ShowDropSuggestions(result.Suggestions);dropSourceUrl=result.SourceUrl;finderDropNote.Text=result.Item+" • "+source+" • Checked "+result.CheckedAt.ToLocalTime().ToString("g")+"\n"+result.Message;
    foreach(var monster in result.Monsters){int row=finderDrops.Rows.Add(monster.Name,monster.Locations.Count==0?"No recorded map information":string.Join("\n",monster.Locations.Select(m=>m.Name)),monster.Evidence);finderDrops.Rows[row].Tag=monster;}
    finderDrops.AutoResizeRows(DataGridViewAutoSizeRowsMode.AllCells);
   }catch(OperationCanceledException){}

@@ -5,7 +5,8 @@ using HtmlAgilityPack;
 namespace Market.Core;
 public sealed record DropLocation(string Name,string Url);
 public sealed record DropMonster(string Name,string Url,string Evidence,IReadOnlyList<DropLocation> Locations);
-public sealed record ItemDrops(string Item,string SourceUrl,string Message,IReadOnlyList<DropMonster> Monsters,DateTimeOffset CheckedAt);
+public sealed record DropItemSuggestion(string Name,string Url){public override string ToString()=>Name;}
+public sealed record ItemDrops(string Item,string SourceUrl,string Message,IReadOnlyList<DropMonster> Monsters,DateTimeOffset CheckedAt){public IReadOnlyList<DropItemSuggestion> Suggestions {get;init;}=[];}
 public sealed class DropReferenceReader : IDisposable
 {
  const string Host="https://meowdb.com";
@@ -19,6 +20,18 @@ public sealed class DropReferenceReader : IDisposable
   var links=PublicPages.Document(html).DocumentNode.SelectNodes("//a[@href]")??new HtmlNodeCollection(null);
   var matches=links.Where(a=>Regex.IsMatch(a.GetAttributeValue("href",""),@"^/msclassic/item-db/\d+$")&&Key(PublicPages.Text(a))==Key(name)).Select(a=>a.GetAttributeValue("href","")).Distinct().ToArray();
   return matches.Length==1?Host+matches[0]:null;
+ }
+ public static IReadOnlyList<DropItemSuggestion> RelatedItems(string html,string name){
+  string Normalize(string text)=>Regex.Replace(Key(text),"[^a-z0-9]+"," ").Trim();
+  var query=Normalize(name);if(query.Length<3||query.Length>150)return [];
+  var words=query.Split(' ',StringSplitOptions.RemoveEmptyEntries);
+  int Distance(string a,string b){var previous=Enumerable.Range(0,b.Length+1).ToArray();for(int i=1;i<=a.Length;i++){var current=new int[b.Length+1];current[0]=i;for(int j=1;j<=b.Length;j++)current[j]=Math.Min(Math.Min(current[j-1]+1,previous[j]+1),previous[j-1]+(a[i-1]==b[j-1]?0:1));previous=current;}return previous[b.Length];}
+  int Score(string text){var value=Normalize(text);if(value==query)return 1000;if(value.Contains(query)||query.Contains(value)&&value.Length>=3)return 800-Math.Abs(value.Length-query.Length);var tokens=value.Split(' ',StringSplitOptions.RemoveEmptyEntries);int common=words.Count(w=>tokens.Contains(w));int near=words.Count(w=>w.Length>=4&&tokens.Any(t=>t.Length>=4&&Math.Abs(t.Length-w.Length)<=1&&Distance(w,t)<=1));return common*100+near*25;}
+  var links=PublicPages.Document(html).DocumentNode.SelectNodes("//a[@href]")??new HtmlNodeCollection(null);
+  return links.Where(a=>Regex.IsMatch(a.GetAttributeValue("href",""),@"^/msclassic/item-db/\d+$"))
+   .Select(a=>new DropItemSuggestion(PublicPages.Text(a),Host+a.GetAttributeValue("href","")))
+   .Where(a=>a.Name.Length is >0 and <=150&&ItemFinder.HasEnglishDisplayName(a.Name)).DistinctBy(a=>a.Url)
+   .Select(a=>(Item:a,Rank:Score(a.Name))).Where(a=>a.Rank>0).OrderByDescending(a=>a.Rank).ThenBy(a=>a.Item.Name).Take(5).Select(a=>a.Item).ToArray();
  }
  public static IReadOnlyList<(int Id,string Evidence)> ReferenceMonsters(string html,string name){
   var root=PublicPages.Document(html).DocumentNode;
@@ -56,7 +69,7 @@ public sealed class DropReferenceReader : IDisposable
    if(nextRequest>DateTimeOffset.UtcNow.AddMinutes(1))throw new HttpRequestException("Source is busy. Try again later.");
    if(index is null||indexAt<DateTimeOffset.UtcNow.AddHours(-1)){robots=await Get(Host+"/robots.txt",ct);index=await Get(Host+"/msclassic/item-db/all",ct);indexAt=DateTimeOffset.UtcNow;}
    var url=ResolveItem(index,name);
-   if(url is null)return new(name,Host+"/msclassic/item-db/all","No unique exact-name match in NiaMeowDB. No drop information can be confirmed for this item.",[],DateTimeOffset.UtcNow);
+   if(url is null){var suggestions=RelatedItems(index,name);return new(name,Host+"/msclassic/item-db/all",suggestions.Count>0?"No confirmed match. Related items are available below; choose one to inspect its reference. Their drops are not assigned to your selected item.":"No confirmed match or relevant suggestions found. Try another drop source or search the website.",[],DateTimeOffset.UtcNow){Suggestions=suggestions};}
    var references=ReferenceMonsters(await Get(url,ct),name).ToList();
    string note="";
    try{using var json=JsonDocument.Parse(await Get(Host+"/msclassic/api/drops?itemId="+url.Split('/').Last(),ct));

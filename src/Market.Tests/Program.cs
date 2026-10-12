@@ -485,6 +485,13 @@ await Test("NPC reference distinguishes sell-back and shop purchase prices",()=>
  Throws(()=>CcplzReader.ReadNpcPrices(html,"Red Potion","2000001",now));Throws(()=>CcplzReader.ReadNpcPrices(html,"Red Potion","",now));
  var missing=CcplzReader.ReadNpcPrices("<h1>Stone</h1><script id='ccplz-entity'>{\"item\":{\"client_id\":\"1\"}}</script>","Stone","1",now);Check(missing.Sell is null&&missing.BuyMin is null);
 }));
+await Test("Related drop items rank relevant English references without replacing exact identity",()=>Sync(()=>{
+ const string html="<a href='/msclassic/item-db/1'>Snail Shell</a><a href='/msclassic/item-db/2'>Blue Snail Shell</a><a href='/msclassic/item-db/3'>Red Potion</a><a href='https://evil.test'>Snail Shell</a><a href='/msclassic/item-db/4'>달팽이 Shell</a>";
+ Check(DropReferenceReader.RelatedItems(html,"snail shel").First().Name=="Snail Shell");
+ Check(DropReferenceReader.RelatedItems(html,"Shell").Count==2);Check(DropReferenceReader.RelatedItems(html,"Sword").Count==0);
+ Check(DropReferenceReader.RelatedItems(html,"Snail-Shell").First().Name=="Snail Shell");Check(DropReferenceReader.ResolveItem(html,"snail shel") is null);
+ Check(DropReferenceReader.RelatedItems(html,"Snail Shell").All(i=>i.Url.StartsWith("https://meowdb.com/msclassic/item-db/")));
+}));
 Directory.CreateDirectory("test-results");File.WriteAllText("test-results/results.json",JsonSerializer.Serialize(new{total=results.Count,failed=failures,results},Json.Options));Console.WriteLine($"{results.Count-failures}/{results.Count} passed");Environment.ExitCode=failures==0?0:1;
 
 
