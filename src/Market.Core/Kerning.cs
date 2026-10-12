@@ -56,7 +56,7 @@ public static class KerningPages
                         if(!DateTimeOffset.TryParse(row.GetProperty("at").GetString(),CultureInfo.InvariantCulture,DateTimeStyles.RoundtripKind,out var at)||at>retrieved.AddMinutes(2))throw new FormatException("Invalid source timestamp");
                         var o=new Observation{Provider="Kerning Exchange",ListingId=listing,ItemId=id,Name=name,Equipment=equipment,Variant=signature,VariantComplete=complete,UnitPrice=price,Quantity=row.GetProperty("quantity").GetInt64(),
                             Kind=group=="wanted"?EvidenceKind.Buying:group=="sold"?EvidenceKind.HistoricalAsk:EvidenceKind.Asking,ObservedAt=at,RetrievedAt=retrieved,Seller=row.GetProperty("ign").GetString()??"",Url="https://kerning.gg/listing/"+listing,
-                            Available=group=="forSale"&&!row.GetProperty("sold").GetBoolean(),Verification=group=="sold"?"Seller marked sold; advertised price retained, actual transaction price/time unverified":"Public listing; source posting timestamp; availability observed on page, not verified in game"};
+                            Available=group!="sold"&&!row.GetProperty("sold").GetBoolean(),Note=row.TryGetProperty("note",out var note)&&note.ValueKind==JsonValueKind.String?(note.GetString()??""):"",Verification=group=="sold"?"Seller marked sold; advertised price retained, actual transaction price/time unverified":"Public listing; source posting timestamp; availability observed on page, not verified in game"};
                         o.Validate();rows.Add(o);
                     }
                 }

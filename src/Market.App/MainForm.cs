@@ -85,7 +85,7 @@ public sealed partial class MainForm : Form
 
         var main=new Panel(){Dock=DockStyle.Fill,Padding=new Padding(0)}; main.Controls.Add(content); main.Controls.Add(title); main.Controls.Add(footer); title.Padding=new Padding(20,10,0,0); Controls.Add(main); Controls.Add(sidebar);
 
-        ConfigureIcons(); BuildDashboard(); BuildPrices(); BuildDeals(); BuildWatch(); BuildInventory(); BuildFm(); BuildWebsites(); BuildSettings(); BuildCatalog(); BuildComparison(); BuildCompleteUpgrade(); BuildDailyTools(); BuildMerchantTools(); BuildWorkspaceTools(); BuildUsabilityTools(); BuildPolishTools(); BuildReliabilityPolish(); ConfigureTradingTools(); BuildCompanionUpgrade(); BuildPlanningUpgrade(); BuildWebsiteLookup(); BuildItemFinder(); BuildSettingsSections(); ApplyTextSize(); ApplyGuideStyle();
+        ConfigureIcons(); BuildDashboard(); BuildPrices(); BuildDeals(); BuildWatch(); BuildInventory(); BuildFm(); BuildWebsites(); BuildSettings(); BuildCatalog(); BuildComparison(); BuildCompleteUpgrade(); BuildDailyTools(); BuildMerchantTools(); BuildWorkspaceTools(); BuildUsabilityTools(); BuildPolishTools(); BuildReliabilityPolish(); ConfigureTradingTools(); BuildCompanionUpgrade(); BuildPlanningUpgrade(); BuildWebsiteLookup(); BuildItemFinder(); BuildSettingsSections();BuildMarketDashboard(); ApplyTextSize(); ApplyGuideStyle();ApplyMarketFocus();
 
         var menu=new ContextMenuStrip(); menu.Items.Add("Open Market Companion",null,(_,_)=>{Show();WindowState=FormWindowState.Normal;Activate();}); menu.Items.Add("Snooze alerts for 30 minutes",null,(_,_)=>Snooze()); menu.Items.Add("Exit",null,(_,_)=>ExitApplication());
 
@@ -138,7 +138,7 @@ public sealed partial class MainForm : Form
 
         chartBar.Controls.Add(new Label(){AutoSize=true,Text="History • actual source timestamps only",ForeColor=Muted,Padding=new Padding(5,12,0,0)});bottom.Controls.Add(history);bottom.Controls.Add(chartBar);
 
-        p.Controls.Add(priceGrid);p.Controls.Add(bottom);p.Controls.Add(priceSummary);p.Controls.Add(fmContext);p.Controls.Add(bar);priceGrid.CellDoubleClick+=(_,e)=>{if(e.RowIndex>=0 && priceGrid.Rows[e.RowIndex].Tag is Observation o)Open(o.Url);};priceGrid.SelectionChanged+=(_,_)=>{RenderValuation();RenderHistory();};
+        p.Controls.Add(priceGrid);p.Controls.Add(bottom);p.Controls.Add(priceSummary);p.Controls.Add(fmContext);p.Controls.Add(bar);priceGrid.CellDoubleClick+=(_,e)=>{if(e.RowIndex>=0 && priceGrid.Rows[e.RowIndex].Tag is Observation o)Open(o.Url);};priceGrid.SelectionChanged+=(_,_)=>{RenderValuation();RenderHistory();};BuildPriceDetails(p,bottom);
 
     }
 
@@ -288,7 +288,7 @@ public sealed partial class MainForm : Form
 
     {
 
-        if(name=="Backups"){name="Settings";settingsSections.SelectedIndex=1;}EnsureNavigation(name);if(name=="Duplicate Review")RenderDuplicates();if(usabilityReady&&new[]{"Price Changes","Seller Comparison","Undo Center","Profit Breakdown"}.Contains(name))RenderUsability();if(features.MenuSounds&&selected!=name)System.Media.SystemSounds.Asterisk.Play();selected=name;title.Text=name+" • "+store.Characters().Single(c=>c.Id==store.Profile).Name;foreach(var (n,p) in pages){p.Visible=n==name;if(p.Visible)p.BringToFront();navigation[n].ForeColor=n==name?Accent:TextColor;navigation[n].BackColor=n==name?Accent:Surface;}if(navigation[name].Parent is ScrollableControl navScroll)navScroll.ScrollControlIntoView(navigation[name]);if(workspaceReady&&new[]{"Transfers","Shopping List","Selling Planner","Search Everything"}.Contains(name))RenderWorkspace();if(name=="Item Finder")RenderItemFinder();if(name=="Price Checker")RenderPrices();if(name=="Dashboard"){RenderDashboard();ApplyDashboardPanels();}if(name=="Compare")RenderComparison();if(name=="Item Catalog")LoadCatalogImages();if(name=="Equipment")RenderEquipment();if(name=="Inventory")RenderInventorySlots();if(name=="Market Activity")RenderActivity();if(name=="Settings")menuSoundCheck.Checked=features.MenuSounds;if(name=="Characters"||name=="Alert Inbox"||name=="Market Health")RenderDailyTools();
+        if(!MarketPage(name))name="Dashboard";if(name=="Backups"){name="Settings";settingsSections.SelectedIndex=1;}EnsureNavigation(name);if(name=="Duplicate Review")RenderDuplicates();if(usabilityReady&&new[]{"Price Changes","Seller Comparison","Undo Center","Profit Breakdown"}.Contains(name))RenderUsability();if(features.MenuSounds&&selected!=name)System.Media.SystemSounds.Asterisk.Play();selected=name;title.Text=name;foreach(var (n,p) in pages){p.Visible=n==name;if(p.Visible)p.BringToFront();navigation[n].ForeColor=n==name?Accent:TextColor;navigation[n].BackColor=n==name?Accent:Surface;}if(navigation[name].Parent is ScrollableControl navScroll)navScroll.ScrollControlIntoView(navigation[name]);if(workspaceReady&&new[]{"Transfers","Shopping List","Selling Planner","Search Everything"}.Contains(name))RenderWorkspace();if(name=="Item Finder")RenderItemFinder();if(name=="Price Checker")RenderPrices();if(name=="Dashboard"){RenderDashboard();ApplyDashboardPanels();RenderMarketDashboard();}if(name=="Compare")RenderComparison();if(name=="Item Catalog")LoadCatalogImages();if(name=="Equipment")RenderEquipment();if(name=="Inventory")RenderInventorySlots();if(name=="Market Activity")RenderActivity();if(name=="Settings")menuSoundCheck.Checked=features.MenuSounds;if(name=="Characters"||name=="Alert Inbox"||name=="Market Health")RenderDailyTools();
 
     }
 
@@ -359,7 +359,7 @@ public sealed partial class MainForm : Form
 
         foreach(var (source,reason) in new[]{("NiaMeowDB","Not connected: provider permission required"),("MESOLANE","Not connected: approved price feed needed"),("Meso Scout","Not connected: live coverage not verified")})sourcesGrid.Rows.Add(source,reason,"Not connected");
 
-        RenderPrices();RenderDeals();RenderItems();RenderFm();RenderDashboard();RenderInventorySlots();RenderFeatures();RenderDailyTools();RenderMerchantTools();RenderWorkspace();RenderUsability();RenderDuplicates();ApplyAccessibility();RenderItemFinder();
+        RenderPrices();RenderDeals();RenderItems();RenderFm();RenderDashboard();RenderMarketDashboard();RenderInventorySlots();RenderFeatures();RenderDailyTools();RenderMerchantTools();RenderWorkspace();RenderUsability();RenderDuplicates();ApplyAccessibility();RenderItemFinder();
 
     }
 
@@ -369,9 +369,9 @@ public sealed partial class MainForm : Form
 
     {
 
-        if(priceGrid.IsDisposed)return;var query=TextKey.Search(features.Polish.Resolve(search.Text));var rows=observations.Where(o=>(query.Length==0||TextKey.Search(o.Name).Contains(query))&&listingFilter.Matches(o,DateTimeOffset.UtcNow,settings.FreshHours)).OrderByDescending(o=>o.RetrievedAt).ToList();
+        if(priceGrid.IsDisposed)return;var query=TextKey.Search(features.Polish.Resolve(search.Text));var rows=observations.Where(o=>(query.Length==0||TextKey.Search(o.Name).Contains(query)||o.ItemId==search.Text.Trim())&&listingFilter.Matches(o,DateTimeOffset.UtcNow,settings.FreshHours)).OrderByDescending(o=>o.RetrievedAt).ToList();
 
-        SetColumns(priceGrid,["Item","Price / unit","Type","Source","Data observed","Retrieved","Quality"]);priceGrid.Columns[0].FillWeight=130;priceGrid.Columns[6].FillWeight=180;
+        SetPriceChoices(rows);SetColumns(priceGrid,["Item","Price / unit","Type","Source","Data observed","Retrieved","Quality"]);priceGrid.Columns[0].FillWeight=130;priceGrid.Columns[6].FillWeight=180;
 
         foreach(var o in rows.Take(1000)){int i=priceGrid.Rows.Add(o.Name+(o.Equipment?" • equipment":""),TextKey.Mesos(o.UnitPrice)+(o.PriceApproximate?" ≈":""),o.Kind,o.Provider,o.ObservedAt?.ToLocalTime().ToString("g")??o.SourceAge+" (unverified)",o.RetrievedAt.ToLocalTime().ToString("g"),ReliabilityTools.EvidenceStatus(o,settings.Sources.Any(s=>s.Id==o.Provider&&s.Authorized),DateTimeOffset.UtcNow,settings.FreshHours));priceGrid.Rows[i].Tag=o;priceGrid.Rows[i].Cells[0].ToolTipText=o.Variant;}
 
@@ -387,7 +387,7 @@ public sealed partial class MainForm : Form
 
         var selectedRow=priceGrid.SelectedRows.Count>0?priceGrid.SelectedRows[0].Tag as Observation:null;
 
-        var target=selectedRow??exact.FirstOrDefault();
+        var target=SelectedPriceItem();
 
         var v=target is null?null:ValuationEngine.Estimate(EligibleObservations(),target,DateTimeOffset.UtcNow,TimeSpan.FromHours(settings.FreshHours),settings.Discount);
 
@@ -395,7 +395,7 @@ public sealed partial class MainForm : Form
 
         string lead=target is null?"Search an item online to retrieve its market listings.":target.Name+" • Lowest recently checked ask: "+TextKey.Mesos(asks.Count==0?null:asks.Min(o=>o.UnitPrice))+" • "+asks.Count+" recent asks";
 
-        var fm=fmSummaries.FirstOrDefault(x=>TextKey.Search(x.Name)==query);
+        RenderMarketCards(target);var fm=fmSummaries.FirstOrDefault(x=>TextKey.Search(x.Name)==TextKey.Search(target?.Name??search.Text));
         bool fmEnabled=settings.Sources.Any(x=>x.Id=="Kerning Exchange"&&x.Authorized);
         fmContext.Text=fm is null?"FM summaries: search an exact item name or open FM Tracker for broader coverage.":$"Kerning FM • 7-day median {TextKey.Mesos(fm.Median7)} • Lowest observed ask {TextKey.Mesos(fm.LowestAsk)} • {fm.Sightings} sightings\nLast seen {fm.LastSeen.ToLocalTime():g} • {(fmEnabled?fm.Quality(DateTimeOffset.UtcNow,settings.FreshHours):"Source disabled — cached only")} • Summary only; excluded from bargain alerts.";
         priceSummary.Text=lead+"\n"+(v is null?"Estimated value: Price unavailable — needs 3 comparable recent asks from 3 sellers, or sufficient sale evidence.":$"Estimated value: {TextKey.Mesos(v.Value)} • Confidence {v.Confidence}/100 • {v.Count} observations • {v.Basis}\nQuick {TextKey.Mesos(v.Quick)}   Normal {TextKey.Mesos(v.Normal)}   Higher {TextKey.Mesos(v.High)}   Max buy {TextKey.Mesos(v.MaxBuy)}")+"\n"+(target?.Equipment==true?"Selected variant: "+target.Variant:"Double-click a listing to open its source. Posted time is not a completed-sale time.");
@@ -406,7 +406,7 @@ public sealed partial class MainForm : Form
 
     {
 
-        var item=priceGrid.SelectedRows.Count>0?priceGrid.SelectedRows[0].Tag as Observation:null;var name=item?.ItemKey??TextKey.Normalize(search.Text);
+        var item=SelectedPriceItem();var name=item?.ItemKey??TextKey.Normalize(search.Text);
 
         int days=historyDays;var now=DateTimeOffset.UtcNow;
 
@@ -467,7 +467,7 @@ public sealed partial class MainForm : Form
         void Fill(){variant.Items.Clear();variant.Items.Add("");foreach(var v in observations.Where(o=>TextKey.Search(o.Name)==TextKey.Search(name.Text)&&o.Equipment&&o.VariantComplete).Select(o=>o.Variant).Distinct())variant.Items.Add(v);}name.TextChanged+=(_,_)=>Fill();Fill();variant.Text=item?.Variant??"";Field(fields,"Item name",name);Field(fields,"Quantity (0 = watch only)",qty);Field(fields,"Exact variant (blank for stackable; add a new stack for different stats)",variant);fields.Controls.Add(Button("Save stack",()=>{try{var exact=variant.Text.Trim();var previous=store.Items().FirstOrDefault(i=>ItemIdentity.Key(i)==ItemIdentity.Key(name.Text,exact));var saved=new SavedItem(name.Text.Trim(),(long)qty.Value,watch||previous?.Watch==true||qty.Value==0,previous?.Muted??false){Variant=exact};new PersonalBackup(3,[saved],new()){Characters=[new(new("main","Main",0),[saved])]}.Validate();store.SaveItem(saved);Render();dialog.Close();}catch(Exception e){MessageBox.Show(e.Message);}}));return dialog;
     }
 
-    void SaveSearchItem(){var name=features.Polish.Resolve(search.Text.Trim());if(name.Length==0){EditItem(null,true);return;}var existing=store.Items().FirstOrDefault(i=>TextKey.Normalize(i.Name)==TextKey.Normalize(name));store.SaveItem(existing is null?new(name,0,true,false):existing with{Watch=true});RenderItems();RenderDashboard();footer.Text="Saved to watchlist: " + name;}
+    void SaveSearchItem(){if(SelectedPriceItem() is {} selectedPrice){WatchObject(selectedPrice);return;}var name=features.Polish.Resolve(search.Text.Trim());if(name.Length==0){EditItem(null,true);return;}var existing=store.Items().FirstOrDefault(i=>TextKey.Normalize(i.Name)==TextKey.Normalize(name));store.SaveItem(existing is null?new(name,0,true,false):existing with{Watch=true});RenderItems();RenderDashboard();footer.Text="Saved to watchlist: " + name;}
 
     string AlertKey(Deal d)=>store.Profile+":"+d.Listing.Key+"|"+d.Listing.UnitPrice.ToString(CultureInfo.InvariantCulture);
 
@@ -502,12 +502,3 @@ public sealed partial class MainForm : Form
     }
 
 }
-
-
-
-
-
-
-
-
-

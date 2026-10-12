@@ -476,6 +476,7 @@ await Test("CCPLZ exact identity and historical evidence",()=>Sync(()=>{
  Check(CcplzReader.ReadMaps("<h1>Snail</h1>",refs[0]).Locations.Count==0);
  bool rejected=false;try{CcplzReader.ReadReferences("<h1>Blue Snail Shell</h1>","Snail Shell");}catch(FormatException){rejected=true;}Check(rejected);
 }));
+await Test("Buy requests preserve notes and expire with item snapshot",()=>Sync(()=>{var path=Path.Combine("work","transfer-tests",Guid.NewGuid()+".db");try{using var db=new Store(path);db.Save([O("buyer",500,EvidenceKind.Buying) with{ItemId="A",Available=true,Note="CH 2 FM 3"},O("otherbuyer",300,EvidenceKind.Buying) with{ItemId="B",Available=true}]);Check(db.Observations().Single(o=>o.ItemId=="A").Note=="CH 2 FM 3");db.ExpireMissingFromSnapshot("Test only",[],["A"]);Check(!db.Observations().Single(o=>o.ItemId=="A").Available&&db.Observations().Single(o=>o.ItemId=="B").Available);}finally{Microsoft.Data.Sqlite.SqliteConnection.ClearAllPools();File.Delete(path);}}));
 Directory.CreateDirectory("test-results");File.WriteAllText("test-results/results.json",JsonSerializer.Serialize(new{total=results.Count,failed=failures,results},Json.Options));Console.WriteLine($"{results.Count-failures}/{results.Count} passed");Environment.ExitCode=failures==0?0:1;
 
 
@@ -489,9 +490,3 @@ sealed class Handler(Func<HttpRequestMessage,HttpResponseMessage> fn):HttpMessag
     protected override Task<HttpResponseMessage> SendAsync(HttpRequestMessage request,CancellationToken ct){Calls++;return Task.FromResult(fn(request));}
 
 }
-
-
-
-
-
-

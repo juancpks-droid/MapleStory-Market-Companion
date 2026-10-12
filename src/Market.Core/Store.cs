@@ -34,7 +34,7 @@ public sealed partial class Store : IDisposable
     {
         var keys=current.Select(o=>o.Key).ToHashSet();
         var ids=itemIds?.ToHashSet();
-        foreach(var old in Observations().Where(o=>o.Provider==provider && (ids is null||ids.Contains(o.ItemId)) && o.Kind==EvidenceKind.Asking && o.Available && !keys.Contains(o.Key)))
+        foreach(var old in Observations().Where(o=>o.Provider==provider && (ids is null||ids.Contains(o.ItemId)) && (o.Kind==EvidenceKind.Asking||o.Kind==EvidenceKind.Buying) && o.Available && !keys.Contains(o.Key)))
             Run("UPDATE observations SET payload=$p WHERE key=$k",("$p",JsonSerializer.Serialize(old with{Available=false},Json.Options)),("$k",old.Key));
     }
     public List<FmSummary> Summaries()=>Read<FmSummary>("SELECT payload FROM fm_summaries");
@@ -54,4 +54,3 @@ public sealed partial class Store : IDisposable
     public void ClearMarket(){Run("DELETE FROM observations; DELETE FROM history; DELETE FROM fm_summaries;");historyCache=null;}
     public void Dispose() => db.Dispose();
 }
-

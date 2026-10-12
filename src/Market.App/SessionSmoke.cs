@@ -18,8 +18,6 @@ static class SessionSmoke
 }
 public sealed partial class MainForm
 {
- internal void SetSessionFixture(){features.Theme="Ellinia";ApplyTownTheme();quickSearch.Text="Red Potion";search.Text="Snail Shell";finderSearch.Text="Potion";finderCategory.SelectedItem="Use";finderListed.Checked=true;historyDays=14;inventoryCategory="USE";Size=new Size(1100,760);ShowPage("Item Finder");finderDropSource.SelectedItem="CCPLZ";finderDetailTabs.SelectedIndex=1;}
- internal void CheckSessionFixture(){if(features.Theme!="Ellinia"||finderDropSource.Text!="CCPLZ"||finderDetailTabs.SelectedIndex!=1||selected!="Item Finder"||quickSearch.Text!="Red Potion"||search.Text!="Snail Shell"||finderSearch.Text!="Potion"||finderCategory.Text!="Use"||!finderListed.Checked||historyDays!=14||inventoryCategory!="USE"||Width!=1100||Height!=760)throw new Exception("View session did not round-trip");}
+ internal void SetSessionFixture(){features.Theme="Ellinia";ApplyTownTheme();quickSearch.Text="Red Potion";search.Text="Snail Shell";finderSearch.Text="Potion";finderCategory.SelectedItem="Use";finderListed.Checked=true;listingSort.SelectedIndex=2;listingMin.Value=12;listingMax.Value=900;priceDetails.SelectedIndex=1;historyDays=14;inventoryCategory="USE";Size=new Size(1100,760);ShowPage("Item Finder");finderDropSource.SelectedItem="CCPLZ";finderDetailTabs.SelectedIndex=1;}
+ internal void CheckSessionFixture(){if(listingSort.SelectedIndex!=2||listingMin.Value!=12||listingMax.Value!=900||priceDetails.SelectedIndex!=1||features.Theme!="Ellinia"||finderDropSource.Text!="CCPLZ"||finderDetailTabs.SelectedIndex!=1||selected!="Item Finder"||quickSearch.Text!="Red Potion"||search.Text!="Snail Shell"||finderSearch.Text!="Potion"||finderCategory.Text!="Use"||!finderListed.Checked||historyDays!=14||inventoryCategory!="USE"||Width!=1100||Height!=760)throw new Exception("View session did not round-trip");}
 }
-
-

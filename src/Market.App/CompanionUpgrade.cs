@@ -39,14 +39,14 @@ public sealed partial class MainForm
         var stocks=store.Items().Where(i=>TextKey.Search(i.Name)==TextKey.Search(name)&&(!exact||i.Variant==variant)).ToList();
         var trades=features.Trades.Where(t=>t.Profile==store.Profile&&TextKey.Search(t.Name)==TextKey.Search(name)&&(!exact||t.Variant==variant)).OrderByDescending(t=>t.At).Take(8);
         var notes=features.Memos.Where(m=>m.Profile==store.Profile&&TextKey.Search(m.Name)==TextKey.Search(name));
-        return "YOUR STOCK • "+store.Characters().Single(c=>c.Id==store.Profile).Name+"\n"+(stocks.Count==0?"No matching stack saved.":string.Join("\n",stocks.Select(i=>$"{i.Quantity:N0} owned • {(i.Variant.Length==0?"No equipment variant":i.Variant)}")))+"\n\nRECENT RECORDED TRADES"+(exact?" • exact variant":" • all variants")+"\n"+(trades.Any()?string.Join("\n",trades.Select(t=>$"{t.At.LocalDateTime:g} • {(t.Buy?"Bought":"Sold")} {t.Quantity:N0} × {TextKey.Mesos(t.UnitPrice)} • fees {TextKey.Mesos(t.Fees)} • {t.Variant}")):"No matching trades recorded.")+"\n\nPERSONAL NOTES • shared by item name\n"+(notes.Any()?string.Join("\n",notes.Select(m=>m.Tag+": "+m.Notes)):"No notes saved.");
+        return "PERSONAL NOTES\n"+(notes.Any()?string.Join("\n",notes.Select(m=>m.Tag+": "+m.Notes)):"No notes saved.");
     }
     TabPage TextTab(string title,string text)
     {var p=new TabPage(title){BackColor=Surface};p.Controls.Add(new RichTextBox(){Dock=DockStyle.Fill,Text=text,ReadOnly=true,BackColor=Surface,ForeColor=TextColor,BorderStyle=BorderStyle.None,Font=new Font("Tahoma",10),Padding=new Padding(12)});return p;}
     void AddCommandCenter(Form dialog,Control frame,Control evidence,object item)
     {
         dialog.Text=ItemName(item)+" • Item command center";dialog.Size=new Size(840,700);
-        var tabs=new TabControl(){Dock=DockStyle.Fill};frame.Controls.Remove(evidence);var summary=TextTab("My stock & trades",CommandCenterText(item));tabs.TabPages.Add(summary);var prices=new TabPage("Price evidence");prices.Controls.Add(evidence);tabs.TabPages.Add(prices);
+        var tabs=new TabControl(){Dock=DockStyle.Fill};frame.Controls.Remove(evidence);var summary=TextTab("Item notes",CommandCenterText(item));tabs.TabPages.Add(summary);var prices=new TabPage("Price evidence");prices.Controls.Add(evidence);tabs.TabPages.Add(prices);
         if(item is Deal deal)tabs.TabPages.Add(DealTab(deal));frame.Controls.Add(tabs);
         dialog.Activated+=(_,_)=>{if(!summary.IsDisposed)summary.Controls.OfType<RichTextBox>().Single().Text=CommandCenterText(item);};
     }

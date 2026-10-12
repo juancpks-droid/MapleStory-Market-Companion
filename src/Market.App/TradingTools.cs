@@ -43,7 +43,7 @@ public sealed partial class MainForm
             menu.Items.Add("Item details",null,(_,_)=>{if(Current() is {} item)ShowItemDetails(item);});
             menu.Items.Add("Watch this item",null,(_,_)=>{if(Current() is {} item)WatchObject(item);});
             menu.Items.Add("Search listings",null,(_,_)=>{if(Current() is {} item){search.Text=ItemName(item);ShowPage("Price Checker");}});
-            menu.Items.Add("Edit inventory quantity",null,(_,_)=>{if(Current() is {} item){search.Text=ItemName(item);EditItem(FindSaved(item),false);}});
+
             ExtendItemCommands(menu,Current);menu.Opening+=(_,e)=>e.Cancel=Current() is null;
             grid.ContextMenuStrip=menu;grid.Disposed+=(_,_)=>menu.Dispose();
             grid.CellMouseDown+=(_,e)=>{if(e.Button==MouseButtons.Right){grid.ClearSelection();if(e.RowIndex>=0){grid.Rows[e.RowIndex].Selected=true;grid.CurrentCell=grid.Rows[e.RowIndex].Cells[Math.Max(0,e.ColumnIndex)];}}};
@@ -60,7 +60,7 @@ public sealed partial class MainForm
         var actions=new FlowLayoutPanel(){Dock=DockStyle.Bottom,Height=92,Padding=new Padding(8),WrapContents=true};
         var watch=Button("Watch item",()=>{WatchObject(item);});actions.Controls.Add(watch);var commandMenu=ItemCommandMenu(()=>item);var commands=Button("Item actions",()=>commandMenu.Show(Cursor.Position));actions.Controls.Add(commands);dialog.Disposed+=(_,_)=>commandMenu.Dispose();
         actions.Controls.Add(Button("View listings",()=>{search.Text=name;ShowPage("Price Checker");dialog.Close();}));
-        actions.Controls.Add(Button("Inventory quantity",()=>{search.Text=name;EditItem(FindSaved(item),false);}));
+
         var url=listing?.Url??fm?.Url;if(url is not null)actions.Controls.Add(Button("Open source",()=>Open(url)));
         actions.Height=132;actions.Controls.Add(Button("View on NiaMeowDB",()=>ShowWebsite("NiaMeowDB",name,item)));actions.Controls.Add(Button("Other websites",()=>ShowItemWebsites(name,item)));
         actions.Controls.Add(Button("Price alert",()=>{EditRule(null,item);}));
@@ -72,7 +72,7 @@ public sealed partial class MainForm
             bool enabled=settings.Sources.Any(s=>s.Id==listing.Provider&&s.Authorized);var estimate=enabled?ValuationEngine.Estimate(EligibleObservations(),listing,DateTimeOffset.UtcNow,TimeSpan.FromHours(settings.FreshHours),settings.Discount):null;
             details=$"{(Listing(item) is null?"LATEST CACHED MATCHING LISTING":"SELECTED LISTING")}\n{TextKey.Mesos(listing.UnitPrice)} mesos per unit • {listing.Kind}\nSeller: {listing.Seller}\nProvider: {listing.Provider}\nObserved: {listing.ObservedAt?.ToLocalTime().ToString("g")??"Unknown"}\nRetrieved: {listing.RetrievedAt.LocalDateTime:g}\n{ReliabilityTools.EvidenceStatus(listing,enabled,DateTimeOffset.UtcNow,settings.FreshHours)} • {(listing.Available?"Listed available at last retrieval":"No longer listed available")}\n\nCOMPARABLE VALUE\n"+(estimate is null?"Not enough eligible comparable evidence.":$"{TextKey.Mesos(estimate.Value)} mesos • confidence {estimate.Confidence}/100\n{estimate.Count} observations • {estimate.Basis}\nQuick sale {TextKey.Mesos(estimate.Quick)} • Maximum buy {TextKey.Mesos(estimate.MaxBuy)}")+"\n\nVARIANT\n"+(listing.Equipment?listing.Variant:"Stackable item");
         }
-        else details="ITEM OVERVIEW\nOpen View listings to inspect individual offers.\nUse Search online there to request current coverage.\n"+(item is SavedItem saved?$"\nYour quantity: {saved.Quantity:N0}\nWatch alerts: {(saved.Watch?(saved.Muted?"Muted":"Enabled"):"Not watched")}\n":"");
+        else details="ITEM OVERVIEW\nOpen View listings to inspect individual offers.\nUse Search online there to request current coverage.\n"+(item is SavedItem saved?$"\nWatch alerts: {(saved.Watch?(saved.Muted?"Muted":"Enabled"):"Not watched")}\n":"");
         if(fm is not null)details+=$"\n\nFM REFERENCE • NOT A VERIFIED SALE PRICE\n7-day median: {TextKey.Mesos(fm.Median7)} mesos\nLowest observed ask: {TextKey.Mesos(fm.LowestAsk)} mesos\n{fm.Sightings:N0} sightings • {fm.Sellers:N0} players\nLast seen: {fm.LastSeen.ToLocalTime():g}\n{(settings.Sources.Any(s=>s.Id=="Kerning Exchange"&&s.Authorized)?fm.Quality(DateTimeOffset.UtcNow,settings.FreshHours):"Source disabled — cached only")}\nAggregates may mix ages and equipment variants.";
         var body=new RichTextBox(){Text=details,Dock=DockStyle.Fill,ReadOnly=true,BorderStyle=BorderStyle.None,BackColor=Surface,ForeColor=TextColor,Font=new Font("Tahoma",10),ScrollBars=RichTextBoxScrollBars.Vertical};
         var frame=new Panel(){Dock=DockStyle.Fill,Padding=new Padding(16),BackColor=Surface};frame.Controls.Add(body);dialog.Controls.Add(frame);dialog.Controls.Add(actions);dialog.Controls.Add(head);AddCommandCenter(dialog,frame,body,item);

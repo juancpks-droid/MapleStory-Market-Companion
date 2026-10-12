@@ -49,6 +49,7 @@ public sealed record Observation
     public string SourceAge { get; init; } = "Unknown";
 
     public string Seller { get; init; } = "";
+    public string Note { get; init; } = "";
 
     public string Url { get; init; } = "";
 
@@ -205,4 +206,3 @@ public static class Json
     public static readonly JsonSerializerOptions Options = new() { WriteIndented = true, PropertyNameCaseInsensitive = true, Converters = { new JsonStringEnumConverter() } };
 
 }
-

@@ -34,7 +34,7 @@ public sealed partial class MainForm
         foreach(var entry in entries.Skip(catalogPage*36).Take(36))
         {
             var tile=new Button(){Width=142,Height=92,Text=entry.Name,TextAlign=ContentAlignment.BottomCenter,ImageAlign=ContentAlignment.TopCenter,FlatStyle=FlatStyle.Flat,BackColor=Surface,ForeColor=TextColor,Padding=new Padding(3),Margin=new Padding(4),AccessibleName=entry.Name};
-            tile.Click+=(_,_)=>ShowItemDetails(entry);var menu=new ContextMenuStrip();menu.Items.Add("Watch item",null,(_,_)=>WatchObject(entry));menu.Items.Add("Add to inventory",null,(_,_)=>{search.Text=entry.Name;EditItem(ItemIdentity.Resolve(store.Items(),entry.Name),false);});menu.Items.Add("Compare",null,(_,_)=>PinComparison(entry));menu.Items.Add("Search listings",null,(_,_)=>{search.Text=entry.Name;ShowPage("Price Checker");});ExtendItemCommands(menu,()=>entry);menu.Items.Add("Add item note",null,(_,_)=>EditMerchant("memo",new ItemMemo(Guid.NewGuid().ToString(),store.Profile,entry.Name,"Keep","")));tile.ContextMenuStrip=menu;tile.Disposed+=(_,_)=>menu.Dispose();catalogTiles.Controls.Add(tile);
+            tile.Click+=(_,_)=>ShowItemDetails(entry);var menu=new ContextMenuStrip();menu.Items.Add("Watch item",null,(_,_)=>WatchObject(entry));menu.Items.Add("Compare",null,(_,_)=>PinComparison(entry));menu.Items.Add("Search listings",null,(_,_)=>{search.Text=entry.Name;ShowPage("Price Checker");});ExtendItemCommands(menu,()=>entry);menu.Items.Add("Add item note",null,(_,_)=>EditMerchant("memo",new ItemMemo(Guid.NewGuid().ToString(),store.Profile,entry.Name,"Keep","")));tile.ContextMenuStrip=menu;tile.Disposed+=(_,_)=>menu.Dispose();catalogTiles.Controls.Add(tile);
         }
         catalogTiles.ResumeLayout();if(selected=="Item Catalog")LoadCatalogImages();
     }
@@ -78,4 +78,3 @@ public sealed partial class MainForm
         ShowPage("Item Catalog");await Task.WhenAll(CatalogResults().Select(e=>icons.Get(e.Id)));RenderCatalog();await Task.Delay(200);CapturePreview(Path.Combine(dataDirectory,"catalog.png"));catalogSearch.Clear();ShowPage("Dashboard");
     }
 }
-
