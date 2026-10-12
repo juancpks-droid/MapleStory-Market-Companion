@@ -15,9 +15,9 @@ public sealed partial class MainForm
 {
  internal async Task CheckPriceLookup(){
   void Check(bool ok,string message){if(!ok)throw new Exception(message);}
-  timer.Stop();ShowPage("Price Checker");search.Text="Red Potion";Check(!itemLookupTimer.Enabled,"Offline search started network timer");
+  timer.Stop();ShowPage("Price Checker");search.Text="Red Potion";Check(!busy,"Offline search started network work");await Task.Delay(850);Check(DisplayedPriceQuery=="Red Potion"&&!busy,"Offline debounce failed");
   features.Offline=false;search.Text="Blue Potion";Check(itemLookupTimer.Enabled&&queuedLookup=="Blue Potion","Typing did not queue automatic price lookup");
-  search.Text="2000000";Check(queuedLookup=="Red Potion","Item ID not resolved before source lookup");search.Clear();Check(!itemLookupTimer.Enabled,"Clearing query failed to cancel lookup");
+  search.Text="2000000";Check(queuedLookup=="Red Potion","Item ID not resolved before source lookup");search.Clear();Check(itemLookupTimer.Enabled&&queuedLookup=="","Clearing query did not debounce");await Task.Delay(850);Check(!itemLookupTimer.Enabled&&DisplayedPriceQuery=="","Clearing query failed to commit");
   busy=true;await RefreshSources(true,"Snail Shell");Check(pendingSearch&&pendingLookup=="Snail Shell","Busy refresh lost requested item");busy=false;pendingSearch=false;pendingLookup="";
   var source=settings.Sources.Single(s=>s.Id=="Kerning Exchange");source.Enabled=true;store.SaveSettings(settings);
   var before=DateTimeOffset.UtcNow;search.Text="Green Mushroom Cap";

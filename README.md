@@ -83,6 +83,14 @@ Additional source review: Sleepywood database failed to load and API docs return
 - Long map lists show five names and a remaining count; clicking opens the full map menu. Monster names and evidence remain aligned at the top.
 - Verified live references for Orange Mushroom Cap, Red Potion and Blue Moonlight, including monster maps and empty drops. Added display regression checks; session recovery and isolated package update/restart tested again.
 
+### 1.25.11 — Steadier Price Checker searches
+
+Typing changes the suggestions without rebuilding the visible price results. The lookup starts after a 700 ms pause, Enter, Get prices, Refresh now or a related-item selection. Existing listings, cards and graph remain visible while a different search loads; the completed search updates the Price Checker once instead of redrawing the entire application for every source batch. A newer edit cancels and invalidates the previous search, including pending NPC lookups.
+
+Related suggestions float below the input without shifting the results. Cached/offline results use the same debounce. The session stores both draft search text and the item whose results are currently displayed. Scroll name and success-rate matching is retained.
+
+Validation: stable row/card identity during rapid typing and queued loads; suggestion placement in all four themes; offline and cached lookup; immediate explicit search; cancellation and newest-input queue handling; 190 core checks; live targeted Kerning lookup; full UI regression and isolated packaged update/restart with saved data and view restoration.
+
 ### 1.25.10 — Scroll names and success rates
 
 Price Checker recognizes traditional percentage names such as “Scroll for Gloves for ATT 60%” and matches the corresponding Classic name. Search suggestions and listing cards show verified success rates. The bundled reference covers 208 Classic scroll variants from 52 families; Chaos remains distinct from ordinary scrolls with the same percentage. Rates unsupported by the reference never silently select a different tier.

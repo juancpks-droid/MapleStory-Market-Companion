@@ -37,7 +37,7 @@ public sealed partial class MainForm
  }
  Observation? SelectedPriceItem()=>priceDetails.SelectedIndex==2&&priceGrid.SelectedRows.Count>0?priceGrid.SelectedRows[0].Tag as Observation:observations.FirstOrDefault(o=>o.Name==priceItemChoice.SelectedItem as string);
  void SetPriceChoices(List<Observation> rows){
-  var previous=priceItemChoice.SelectedItem as string;var query=ResolvePriceQuery(search.Text);fillingPriceChoices=true;
+  var previous=priceItemChoice.SelectedItem as string;var query=DisplayedPriceQuery;fillingPriceChoices=true;
   priceItemChoice.Items.Clear();var names=rows.Select(o=>o.Name).Distinct().Order().ToArray();priceItemChoice.Items.AddRange(names);priceItemChoice.Visible=names.Length>1;
   var exact=names.FirstOrDefault(n=>TextKey.Search(n)==TextKey.Search(query));
   priceItemChoice.SelectedItem=exact??(names.Contains(previous)?previous:names.FirstOrDefault());
@@ -45,7 +45,7 @@ public sealed partial class MainForm
  }
  void RenderMarketCards(Observation? target){
   marketTarget=target;var now=DateTimeOffset.UtcNow;
-  var name=target?.Name??search.Text.Trim();
+  var name=target?.Name??DisplayedPriceQuery;
   var all=observations.Where(o=>TextKey.Normalize(o.Name)==TextKey.Normalize(name)&&(!o.Equipment||(target is not null&&o.MatchKey==target.MatchKey))&&o.Available&&o.Kind is EvidenceKind.Asking or EvidenceKind.Buying).DistinctBy(o=>o.Key).ToList();
   var eligible=all.Where(o=>settings.Sources.Any(s=>s.Id==o.Provider&&s.Authorized)&&o.Fresh(now,TimeSpan.FromHours(settings.FreshHours))&&o.RetrievedAt>=now.AddMinutes(-30)).ToList();
   RenderListingWorkbench(all.Where(o=>o.UnitPrice>=listingMin.Value&&(listingMax.Value==0||o.UnitPrice<=listingMax.Value)&&(listingSource.SelectedIndex<=0||o.Provider==listingSource.Text)&&(!listingRecent.Checked||eligible.Contains(o))));

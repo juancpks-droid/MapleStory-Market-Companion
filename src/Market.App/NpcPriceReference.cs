@@ -16,10 +16,11 @@ public sealed partial class MainForm
    npcPriceNote.Text=prices.Sell is null&&prices.BuyMin is null?"No NPC prices recorded by "+prices.Source+". Try again later.":"NPC reference from "+prices.Source+" • Separate from player prices and market history."+(prices.Source=="MapleClassic Wiki"?"\n"+WikiReferenceReader.Credit:"");
  }
  async void QueueNpcPrices(){
-  var selectedItem=SelectedPriceItem();var query=features.Polish.Resolve(search.Text).Trim();
+  if(HoldPriceResults)return;
+  var selectedItem=SelectedPriceItem();var query=DisplayedPriceQuery;
   var catalog=iconCatalog.Entries.FirstOrDefault(e=>e.Id==query||TextKey.Search(e.Name)==TextKey.Search(query));
   string name=selectedItem?.Name??catalog?.Name??"",id=selectedItem?.ItemId??catalog?.Id??"";
-  var scroll=ScrollNames.Resolve(ResolvePriceQuery(search.Text));
+  var scroll=ScrollNames.Resolve(DisplayedPriceQuery);
   if(selectedItem is not null)scroll=ScrollNames.Resolve(selectedItem.Name)??scroll;
   if(scroll is not null){name=scroll.Name;id=scroll.ClassicId;}
   else if(ScrollNames.IsScroll(name)){name="";id="";}

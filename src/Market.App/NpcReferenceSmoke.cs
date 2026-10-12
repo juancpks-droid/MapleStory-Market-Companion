@@ -3,7 +3,7 @@ namespace Market.App;
 public sealed partial class MainForm
 {
  internal void CheckNpcReference(List<string> checks){
-  ShowPage("Price Checker");search.Text="Snail Shell";RenderPrices();
+  ShowPage("Price Checker");search.Text="Snail Shell";RenderPrices(false);
   if(priceGrid.Rows.Count!=0)throw new Exception("Expected no market listings for NPC fixture");
   ShowNpcPrices(new("Snail Shell","https://ccplz.cc/items/snail-shell",1,null,null,DateTimeOffset.UtcNow));
   if(npcSellMetric.Value!="1 mesos"||npcBuyMetric.Tag is true)throw new Exception("NPC reference labels mixed");

@@ -128,9 +128,9 @@ public sealed partial class MainForm : Form
 
     {
 
-        var p=pages["Price Checker"];var bar=Toolbar();bar.AutoSize=true;bar.AutoSizeMode=AutoSizeMode.GrowAndShrink;bar.MinimumSize=new Size(0,48);bar.WrapContents=true;bar.AutoScroll=false;search.Margin=new Padding(3,9,10,3);InitializeItemLookup();search.TextChanged+=(_,_)=>{QueuePriceRender();QueueItemLookup(search.Text);};bar.Controls.Add(search);
+        var p=pages["Price Checker"];var bar=Toolbar();bar.AutoSize=true;bar.AutoSizeMode=AutoSizeMode.GrowAndShrink;bar.MinimumSize=new Size(0,48);bar.WrapContents=true;bar.AutoScroll=false;search.Margin=new Padding(3,9,10,3);InitializeItemLookup();search.TextChanged+=(_,_)=>{QueueItemLookup(search.Text);};bar.Controls.Add(search);
 
-        bar.Controls.Add(Button("Get prices",async()=>await LookupPricesNow()));search.KeyDown+=async (_,e)=>{if(e.KeyCode==Keys.Enter){e.SuppressKeyPress=true;await LookupPricesNow();}};bar.Controls.Add(Button("Refresh now",async()=>await RefreshSources()));priceWatchButton=Button("Watch item",()=>ToggleItemWatch(PriceWatchName));bar.Controls.Add(priceWatchButton);bar.Controls.Add(Button("Filters",EditListingFilters));bar.Controls.Add(Button("View in FM Tracker",OpenPriceInFm));bar.Controls.Add(Button("Price explanation",()=>priceSummary.Visible=!priceSummary.Visible));
+        bar.Controls.Add(Button("Get prices",async()=>await LookupPricesNow()));search.KeyDown+=async (_,e)=>{if(e.KeyCode==Keys.Enter){e.SuppressKeyPress=true;await LookupPricesNow();}};bar.Controls.Add(Button("Refresh now",async()=>await LookupPricesNow()));priceWatchButton=Button("Watch item",()=>ToggleItemWatch(PriceWatchName));bar.Controls.Add(priceWatchButton);bar.Controls.Add(Button("Filters",EditListingFilters));bar.Controls.Add(Button("View in FM Tracker",OpenPriceInFm));bar.Controls.Add(Button("Price explanation",()=>priceSummary.Visible=!priceSummary.Visible));
 
         var bottom=new Panel(){Dock=DockStyle.Bottom,Height=225};var chartBar=Toolbar();chartBar.Height=54;
 
@@ -333,38 +333,52 @@ public sealed partial class MainForm : Form
     }
 
     async Task RefreshSources(bool onlineSearch=false,string? lookupQuery=null)
-
     {
-
-        if(Offline){lookupStatus.Text="Offline • showing saved prices";UpdateConnectionStatus();footer.Text="Offline: searching saved evidence. Turn off Work offline to request new data.";RenderPrices();return;}if(busy){if(onlineSearch){pendingSearch=true;pendingLookup=lookupQuery??ResolvePriceQuery(search.Text);footer.Text="Search queued after the current market refresh.";lookupStatus.Text="Queued • "+pendingLookup;}return;}busy=true;activePriceSearch=onlineSearch;activeSearchQuery=lookupQuery??ResolvePriceQuery(search.Text);int refreshGeneration=++priceRefreshGeneration;bool refreshSucceeded=false;lookupStatus.Text="Checking Kerning first, then other enabled sources • "+(lookupQuery??search.Text);refreshStop=CancellationTokenSource.CreateLinkedTokenSource(stop.Token);footer.Text="Checking source access and refreshing eligible sources…";
-
-        try
-
-        {
-
-            var names=onlineSearch?new[]{lookupQuery??ResolvePriceQuery(search.Text)}:store.Items().Select(i=>i.Name).ToArray();
-
-            var refreshToken=refreshStop.Token;sourceResults=await Task.Run(()=>collector.Refresh(settings,refreshToken,names,onlineSearch,observations.ToArray(),result=>InvokeAsync(()=>{if(!closing&&!IsDisposed&&!Offline&&refreshGeneration==priceRefreshGeneration){ApplySourceResult(result);sourceResults.RemoveAll(r=>r.Provider==result.Provider);sourceResults.Add(result);observations=store.Observations();fmSummaries=store.Summaries();RenderPrices();lookupStatus.Text=result.Provider+": "+result.Status+" • Checking remaining sources…";}},refreshToken),source=>{if(!closing&&!IsDisposed)BeginInvoke(()=>{if(refreshGeneration==priceRefreshGeneration)lookupStatus.Text="Checking "+source+" • Saved prices remain visible";});}),refreshToken);
-
-            refreshSucceeded=true;if(Offline)return;
-            // Keep the complete local autocomplete catalog across source refreshes.
-
-
-
-            observations=store.Observations();var basilScan=settings.Sources.FirstOrDefault(s=>s.Id=="BasilMarket");if(basilScan is not null&&sourceResults.Any(r=>r.Provider=="BasilMarket"&&r.Updated))BasilCompletion.Observe(observations,basilScan,DateTimeOffset.UtcNow);store.SaveSettings(settings);fmSummaries=store.Summaries();Render();
-
-            footer.Text=settings.Sources.Any(s=>s.Authorized)?string.Join(" • ",sourceResults.Where(r=>settings.Sources.Any(s=>s.Id==r.Provider&&s.Authorized)).Select(r=>r.Status)):"Market data unavailable • No permitted source enabled. See Settings and the source report.";
-
+        var requestedQuery=lookupQuery??ResolvePriceQuery(search.Text);
+        if(Offline){
+            if(onlineSearch)CommitPriceView(requestedQuery);else RenderPrices();
+            lookupStatus.Text="Offline • showing saved prices";UpdateConnectionStatus();return;
         }
-
+        if(busy){
+            if(onlineSearch){pendingSearch=true;pendingLookup=requestedQuery;lookupStatus.Text="Search queued • Previous results stay visible";}
+            return;
+        }
+        busy=true;activePriceSearch=onlineSearch;activeSearchQuery=requestedQuery;
+        int inputGeneration=priceInputGeneration,refreshGeneration=++priceRefreshGeneration;
+        bool refreshSucceeded=false;
+        refreshStop=CancellationTokenSource.CreateLinkedTokenSource(stop.Token);var refreshToken=refreshStop.Token;
+        bool CanPresent()=>!closing&&!IsDisposed&&!Offline&&!refreshToken.IsCancellationRequested&&inputGeneration==priceInputGeneration&&refreshGeneration==priceRefreshGeneration;
+        if(onlineSearch){priceLookupLoading=true;lookupStatus.Text="Searching for "+requestedQuery+" • Previous results stay visible";}
+        footer.Text="Checking sources • Existing results stay visible";
+        try{
+            var names=onlineSearch?new[]{requestedQuery}:store.Items().Select(i=>i.Name).ToArray();
+            var results=await Task.Run(()=>collector.Refresh(settings,refreshToken,names,onlineSearch,observations.ToArray(),result=>InvokeAsync(()=>{
+                // Cache verified batches, but publish the visible search only once at completion.
+                if(!closing&&!IsDisposed&&!Offline)ApplySourceResult(result);
+            })),refreshToken);
+            refreshSucceeded=true;
+            if(CanPresent()){
+                sourceResults=results;observations=store.Observations();fmSummaries=store.Summaries();
+                var basilScan=settings.Sources.FirstOrDefault(s=>s.Id=="BasilMarket");
+                if(basilScan is not null&&sourceResults.Any(r=>r.Provider=="BasilMarket"&&r.Updated))BasilCompletion.Observe(observations,basilScan,DateTimeOffset.UtcNow);
+                store.SaveSettings(settings);
+                if(onlineSearch)CommitPriceView(requestedQuery);
+                else if(selected=="Price Checker")RenderPrices();
+                else Render();
+                footer.Text=settings.Sources.Any(s=>s.Authorized)?string.Join(" • ",sourceResults.Where(r=>settings.Sources.Any(s=>s.Id==r.Provider&&s.Authorized)).Select(r=>r.Status)):"Market data unavailable • Enable a source in Settings.";
+            }
+        }
         catch(OperationCanceledException){}
-
-        catch(Exception e){Log(e);footer.Text="Refresh could not finish. Existing data retained; see source status.";}
-
-        finally{if(refreshSucceeded&&onlineSearch&&refreshStop?.IsCancellationRequested!=true&&sourceResults.Any(r=>r.Updated))RememberLookupComplete(lookupQuery??search.Text);lookupStatus.Text=Offline?"Offline • showing saved prices":refreshStop?.IsCancellationRequested==true?"Previous lookup cancelled • ready for your next search":"Checked "+DateTime.Now.ToString("t")+" • "+string.Join(" | ",sourceResults.Select(r=>r.Provider+": "+r.Status));activePriceSearch=false;busy=false;refreshStop?.Dispose();refreshStop=null;UpdateConnectionStatus();}
-
+        catch(Exception e){Log(e);if(CanPresent())footer.Text="Refresh could not finish. Existing data retained; see source status.";}
+        finally{
+            if(CanPresent()){
+                priceLookupLoading=false;
+                if(refreshSucceeded&&onlineSearch&&sourceResults.Any(r=>r.Updated))RememberLookupComplete(requestedQuery);
+                lookupStatus.Text=refreshSucceeded?"Checked "+DateTime.Now.ToString("t")+" • "+requestedQuery:"Search unavailable • Previous results retained; try again";
+            }
+            activePriceSearch=false;busy=false;refreshStop?.Dispose();refreshStop=null;UpdateConnectionStatus();
+        }
         if(pendingSearch&&!stop.IsCancellationRequested){pendingSearch=false;var queued=pendingLookup;pendingLookup="";await RefreshSources(true,queued);}
-
     }
 
     void Log(Exception e)=>File.AppendAllText(Path.Combine(dataDirectory,"diagnostics.log"),$"{DateTimeOffset.UtcNow:O} {e.GetType().Name}\n");
@@ -405,11 +419,11 @@ public sealed partial class MainForm : Form
 
     static void SetColumns(DataGridView grid,string[] names) {grid.Rows.Clear();if(grid.Columns.Count==names.Length)return;grid.Columns.Clear();foreach(var n in names)grid.Columns.Add(n,n);}
 
-    void RenderPrices()
+    void RenderPrices(bool keepSearch=true)
 
     {
 
-        if(priceGrid.IsDisposed)return;var renderWatch=System.Diagnostics.Stopwatch.StartNew();renderingPriceRows=true;priceGrid.SuspendLayout();try{var query=ResolvePriceQuery(search.Text);var rows=observations.Where(o=>(query.Length==0||ScrollNames.Matches(o.Name,query)||(!ScrollNames.IsScroll(query)&&o.ItemId==search.Text.Trim()))&&listingFilter.Matches(o,DateTimeOffset.UtcNow,settings.FreshHours)).OrderByDescending(o=>o.RetrievedAt).ToList();
+        if(!keepSearch){displayedPriceQuery=ResolvePriceQuery(search.Text);priceInputPending=false;priceLookupLoading=false;}if(priceGrid.IsDisposed||HoldPriceResults)return;var renderWatch=System.Diagnostics.Stopwatch.StartNew();renderingPriceRows=true;priceGrid.SuspendLayout();try{var query=DisplayedPriceQuery;var rows=observations.Where(o=>(query.Length==0||ScrollNames.Matches(o.Name,query)||(!ScrollNames.IsScroll(query)&&o.ItemId==DisplayedPriceQuery.Trim()))&&listingFilter.Matches(o,DateTimeOffset.UtcNow,settings.FreshHours)).OrderByDescending(o=>o.RetrievedAt).ToList();
 
         SetPriceChoices(rows);SetColumns(priceGrid,["Item","Price / unit","Type","Source","Data observed","Retrieved","Quality"]);priceGrid.Columns[0].FillWeight=130;priceGrid.Columns[6].FillWeight=180;
 
@@ -422,6 +436,7 @@ public sealed partial class MainForm : Form
     void RenderValuation()
 
     {
+        if(HoldPriceResults)return;
 
         var query=TextKey.Search(features.Polish.Resolve(search.Text));var exact=observations.Where(o=>TextKey.Search(o.Name)==query).ToList();
 
@@ -437,7 +452,7 @@ public sealed partial class MainForm : Form
         UpdatePriceOverview(asks.Count==0?null:asks.Min(o=>o.UnitPrice),buyers.Count==0?null:buyers.Max(o=>o.UnitPrice),v);
         string lead=target is null?"Search an item online to retrieve its market listings.":target.Name+" • Lowest recently checked ask: "+TextKey.Mesos(asks.Count==0?null:asks.Min(o=>o.UnitPrice))+" • "+asks.Count+" recent asks";
 
-        RenderMarketCards(target);UpdateWatchButtons();QueueNpcPrices();var fm=fmSummaries.FirstOrDefault(x=>TextKey.Search(x.Name)==TextKey.Search(target?.Name??ResolvePriceQuery(search.Text)));
+        RenderMarketCards(target);UpdateWatchButtons();QueueNpcPrices();var fm=fmSummaries.FirstOrDefault(x=>TextKey.Search(x.Name)==TextKey.Search(target?.Name??DisplayedPriceQuery));
         fmContext.Visible=false;
         bool fmEnabled=settings.Sources.Any(x=>x.Id=="Kerning Exchange"&&x.Authorized);
         UpdateFmPriceMetrics(fm,fmEnabled);fmContext.Text=fm is null?"FM summaries: search an exact item name or open FM Tracker for broader coverage.":$"Kerning FM • 7-day median {TextKey.Mesos(fm.Median7)} • Lowest observed ask {TextKey.Mesos(fm.LowestAsk)} • {fm.Sightings} sightings\nLast seen {fm.LastSeen.ToLocalTime():g} • {(fmEnabled?fm.Quality(DateTimeOffset.UtcNow,settings.FreshHours):"Source disabled — cached only")} • Summary only; excluded from bargain alerts.";
@@ -448,8 +463,9 @@ public sealed partial class MainForm : Form
     void RenderHistory()
 
     {
+        if(HoldPriceResults)return;
 
-        var item=SelectedPriceItem();var name=item?.ItemKey??TextKey.Normalize(ResolvePriceQuery(search.Text));
+        var item=SelectedPriceItem();var name=item?.ItemKey??TextKey.Normalize(DisplayedPriceQuery);
 
         int days=historyDays;var now=DateTimeOffset.UtcNow;
 

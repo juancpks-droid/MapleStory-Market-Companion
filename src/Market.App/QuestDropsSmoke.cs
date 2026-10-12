@@ -12,7 +12,7 @@ static class QuestDropsSmoke
 public sealed partial class MainForm
 {
  internal async Task CheckLiveNpcFallback(string dir){
-  ShowPage("Price Checker");search.Text="Orange Mushroom Cap";RenderPrices();features.Offline=false;npcKey="";QueueNpcPrices();
+  ShowPage("Price Checker");search.Text="Orange Mushroom Cap";RenderPrices(false);features.Offline=false;npcKey="";QueueNpcPrices();
   for(int i=0;i<180&&npcSellMetric.Tag is not true;i++)await Task.Delay(500);
   if(npcSellMetric.Value!="8 mesos"||!npcPriceNote.Text.Contains("MapleStory Quest"))throw new Exception(npcPriceNote.Text);
   priceDetails.SelectedIndex=1;RenderHistory();if(history.Points.Count!=0||!history.Visible)throw new Exception("NPC price polluted market graph");CapturePreview(Path.Combine(dir,"npc-fallback.png"));

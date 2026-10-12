@@ -18,7 +18,7 @@ public sealed partial class MainForm
   priceWatchButton.PerformClick();
   Check(store.Items().Count(i=>i.Name=="Red Potion")==1&&IsWatching("Red Potion"),"Rewatching reuses saved item without duplicates");
   var saved=store.Items().Single(i=>i.Name=="Red Potion");Check(saved.Quantity==73&&saved.Muted,"Watch toggles preserve existing quantity and mute preference");
-  search.Text="NoSuchItemWatchToggle";RenderPrices();Check(!priceWatchButton.Enabled,"Unmatched price search disables watch button");
+  search.Text="NoSuchItemWatchToggle";RenderPrices(false);Check(!priceWatchButton.Enabled,"Unmatched price search disables watch button");
   ShowPage("Item Finder");finderSearch.Text="NoSuchItemWatchToggle";RenderItemFinder();Check(!finderWatchButton.Enabled,"Empty Finder results disable watch button");
   finderSearch.Text="Red Potion";RenderItemFinder();finderWatchButton.PerformClick();Check(!IsWatching("Red Potion"),"Finder can remove a Price Checker watch");
   finderWatchButton.PerformClick();CapturePreview(Path.Combine(dataDirectory,"watch-toggle.png"));

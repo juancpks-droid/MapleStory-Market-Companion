@@ -5,9 +5,9 @@ public sealed partial class MainForm
  void CheckSearchPerformance(List<string> checks){
   var original=observations;bool offline=features.Offline;features.Offline=true;ShowPage("Price Checker");
   observations=Enumerable.Range(0,1000).Select(i=>new Observation{Provider="Kerning Exchange",ListingId="perf-"+i,ItemId="perf-"+i,Name="Performance item "+i,Kind=EvidenceKind.Asking,Available=true,UnitPrice=100+i,RetrievedAt=DateTimeOffset.UtcNow,ObservedAt=DateTimeOffset.UtcNow,Url="https://example.org/"+i}).ToList();
-  search.Text="Performance item";RenderPrices();long initial=lastPriceRenderMs;RenderPrices();long repeat=lastPriceRenderMs;if(priceGrid.Rows.Count!=1000)throw new Exception("Performance rows missing");
+  search.Text="Performance item";RenderPrices(false);long initial=lastPriceRenderMs;RenderPrices(false);long repeat=lastPriceRenderMs;if(priceGrid.Rows.Count!=1000)throw new Exception("Performance rows missing");
   checks.Add($"Measured 1,000 saved rows: initial {initial} ms, repeat {repeat} ms; one final valuation/graph rebuild");
-  observations=original;search.Text="Red Potion";RenderPrices();features.Offline=false;RememberLookupComplete("Red Potion");QueueItemLookup("Red Potion");if(itemLookupTimer.Enabled||!lookupStatus.Text.StartsWith("Cached"))throw new Exception("Recent search requested network again");
+  observations=original;search.Text="Red Potion";RenderPrices(false);features.Offline=false;RememberLookupComplete("Red Potion");QueueItemLookup("Red Potion");BeginPriceLookup("Red Potion",false).GetAwaiter().GetResult();if(itemLookupTimer.Enabled||!lookupStatus.Text.StartsWith("Cached"))throw new Exception("Recent search requested network again");
   refreshStop=CancellationTokenSource.CreateLinkedTokenSource(stop.Token);activePriceSearch=true;activeSearchQuery="Red Potion";QueueItemLookup("Blue Potion");if(!refreshStop.IsCancellationRequested)throw new Exception("Superseded request not cancelled");refreshStop.Dispose();refreshStop=null;activePriceSearch=false;itemLookupTimer.Stop();queuedLookup="";features.Offline=offline;
   if(search.AutoCompleteMode!=AutoCompleteMode.Suggest||search.AutoCompleteSource!=AutoCompleteSource.CustomSource)throw new Exception("Price autocomplete disabled");
   foreach(var pair in new[]{("blue mus","Blue Mushroom Cap"),("red po","Red Potion"),("orange mush","Orange Mushroom Cap")}){

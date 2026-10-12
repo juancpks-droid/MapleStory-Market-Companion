@@ -7,6 +7,7 @@ public sealed partial class MainForm
         public string Page {get;set;}="Dashboard";
         public Dictionary<string,string> Values {get;set;}=[];
         public int Days {get;set;}=7;
+        public string? DisplayedPriceQuery {get;set;}
         public int PriceDetailTab {get;set;} public string PriceItem {get;set;}=""; public int FinderDetailTab {get;set;} public int SettingsSection {get;set;}
         public string Bag {get;set;}="ALL";
         public int Width {get;set;}=1220;
@@ -24,7 +25,7 @@ public sealed partial class MainForm
     void SaveViewSession()
     {
         var bounds=WindowState==FormWindowState.Normal?Bounds:RestoreBounds;
-        var state=new ViewSession{Page=selected,PriceDetailTab=priceDetails.SelectedIndex,PriceItem=priceItemChoice.Text,SettingsSection=settingsSections.SelectedIndex,FinderDetailTab=finderDetailTabs.SelectedIndex,Days=historyDays,Bag=inventoryCategory,Width=bounds.Width,Height=bounds.Height,Maximized=WindowState==FormWindowState.Maximized};
+        var state=new ViewSession{Page=selected,PriceDetailTab=priceDetails.SelectedIndex,PriceItem=priceItemChoice.SelectedItem as string??"",DisplayedPriceQuery=displayedPriceQuery,SettingsSection=settingsSections.SelectedIndex,FinderDetailTab=finderDetailTabs.SelectedIndex,Days=historyDays,Bag=inventoryCategory,Width=bounds.Width,Height=bounds.Height,Maximized=WindowState==FormWindowState.Maximized};
         foreach(var (key,control) in SessionControls())state.Values[key]=control is CheckBox check?check.Checked.ToString():control.Text;
         var json=JsonSerializer.Serialize(state);
         if(json==lastSessionJson)return;
@@ -44,6 +45,7 @@ public sealed partial class MainForm
                     else if(control is NumericUpDown number){if(decimal.TryParse(value,out var parsed))number.Value=Math.Clamp(parsed,number.Minimum,number.Maximum);}
                     else control.Text=value[..Math.Min(value.Length,1000)];
                 }
+                displayedPriceQuery=state.DisplayedPriceQuery??ResolvePriceQuery(search.Text);priceInputPending=false;priceLookupLoading=false;
                 historyDays=new[]{1,7,14,30}.Contains(state.Days)?state.Days:7;
                 foreach(var (days,button) in historyButtons)button.ForeColor=days==historyDays?Accent:TextColor;
                 if(inventoryTabs.ContainsKey(state.Bag??""))inventoryCategory=state.Bag!;

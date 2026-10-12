@@ -20,6 +20,7 @@ static class Program
 
         Velopack.VelopackApp.Build().SetAutoApplyOnStartup(false).Run();
         ApplicationConfiguration.Initialize();
+        if(args.Contains("--stable-search-smoke")){StableSearchSmoke.Run();return;}
         if(args.Contains("--navigation-smoke")){NavigationSmoke.Run();return;}
         if(args.Contains("--status-smoke")){StatusBarSmoke.Run();return;}
         if(args.Contains("--reference-sources-smoke")){ReferenceSourcesSmoke.Run();return;}
