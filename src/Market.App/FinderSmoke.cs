@@ -34,6 +34,17 @@ public sealed partial class MainForm
   navigation["Settings"].PerformClick();Check(selected=="Settings","Direct Settings entry opens Settings");
   ShowPage("Backups");Check(selected=="Settings"&&settingsSections.SelectedIndex==1&&settingsSections.TabPages[1].Controls.Count>0,"Backup shortcuts open backup tools inside Settings");CapturePreview(Path.Combine(dataDirectory,"Backups-settings.png"));settingsSections.SelectedIndex=0;Check(themeChoice.Visible&&themeChoice.Parent!.Bottom<=settingsSections.Height,"Theme controls remain visible in Settings");
   ShowPage("Item Finder");
+  ShowPage("Price Checker");search.Text="Potion";RenderPrices();priceGrid.ClearSelection();priceGrid.Rows.Cast<DataGridViewRow>().Single(r=>r.Tag is Observation o&&o.Name=="Red Potion").Selected=true;
+  var fmButton=pages["Price Checker"].Controls.OfType<FlowLayoutPanel>().SelectMany(p=>p.Controls.OfType<Button>()).Single(b=>b.Text=="View in FM Tracker");
+  fmFilter.SelectedIndex=2;fmButton.PerformClick();
+  Check(selected=="FM Tracker"&&fmSearch.Text=="Red Potion"&&fmFilter.SelectedIndex==0,"FM button carries selected item instead of broad query and clears restrictive filter");
+  Check(PageGroup("FM Tracker")=="Market"&&essentialPages.Contains("FM Tracker")&&navigation["FM Tracker"].Visible,"FM Tracker stays visible under Market in simple menu");
+  ShowPage("Price Checker");search.Text="NoSuchItemUnique";RenderPrices();fmButton.PerformClick();
+  Check(selected=="FM Tracker"&&fmSearch.Text=="NoSuchItemUnique","FM button falls back to search text when no listing is selected");
+  ShowPage("Price Checker");search.Clear();priceGrid.ClearSelection();fmButton.PerformClick();
+  Check(selected=="Price Checker","Empty selection stays on Price Checker with guidance");
+  Size=new Size(1024,720);PerformLayout();Check(fmButton.Parent!.ClientRectangle.Contains(fmButton.Bounds),"FM shortcut fits at minimum window size");CapturePreview(Path.Combine(dataDirectory,"price-fm-button.png"));
+  ShowPage("Item Finder");
   var originalTheme=features.Theme;var seen=new HashSet<int>();
   foreach(var theme in MerchantTools.Themes){themeChoice.SelectedItem=theme;Check(seen.Add(GuidePalette.Gold.ToArgb()),theme+" has a distinct accent");Check(finderDrops.ColumnHeadersDefaultCellStyle.ForeColor==GuidePalette.Gold,theme+" applies to item reference tables");CapturePreview(Path.Combine(dataDirectory,"theme-"+theme.Replace(" ","-")+".png"));}
   themeChoice.SelectedItem=originalTheme;

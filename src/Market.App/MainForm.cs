@@ -128,9 +128,9 @@ public sealed partial class MainForm : Form
 
     {
 
-        var p=pages["Price Checker"];var bar=Toolbar();search.Margin=new Padding(3,9,10,3);search.TextChanged+=(_,_)=>RenderPrices();bar.Controls.Add(search);
+        var p=pages["Price Checker"];var bar=Toolbar();bar.Height=92;bar.WrapContents=true;bar.AutoScroll=false;search.Margin=new Padding(3,9,10,3);search.TextChanged+=(_,_)=>RenderPrices();bar.Controls.Add(search);
 
-        bar.Controls.Add(Button("Search online",async()=>await RefreshSources(true)));search.KeyDown+=async (_,e)=>{if(e.KeyCode==Keys.Enter){e.SuppressKeyPress=true;await RefreshSources(true);}};bar.Controls.Add(Button("Refresh now",async()=>await RefreshSources()));bar.Controls.Add(Button("Watch item",()=>SaveSearchItem()));bar.Controls.Add(Button("Filters",EditListingFilters));
+        bar.Controls.Add(Button("Search online",async()=>await RefreshSources(true)));search.KeyDown+=async (_,e)=>{if(e.KeyCode==Keys.Enter){e.SuppressKeyPress=true;await RefreshSources(true);}};bar.Controls.Add(Button("Refresh now",async()=>await RefreshSources()));bar.Controls.Add(Button("Watch item",()=>SaveSearchItem()));bar.Controls.Add(Button("Filters",EditListingFilters));bar.Controls.Add(Button("View in FM Tracker",OpenPriceInFm));
 
         var bottom=new Panel(){Dock=DockStyle.Bottom,Height=225};var chartBar=Toolbar();chartBar.Height=54;
 
