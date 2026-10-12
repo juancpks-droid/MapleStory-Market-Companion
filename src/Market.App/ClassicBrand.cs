@@ -2,11 +2,26 @@ using System.Drawing.Drawing2D;
 namespace Market.App;
 public sealed class ClassicBrand : Control
 {
- public ClassicBrand(){DoubleBuffered=true;Height=82;Dock=DockStyle.Top;AccessibleName="Maple Market, Classic World";}
+ public ClassicBrand(){DoubleBuffered=true;Height=108;Dock=DockStyle.Top;AccessibleName="Maple Market, Classic World";}
  protected override void OnPaint(PaintEventArgs e){
   if(Width<2||Height<2)return;
   var g=e.Graphics;g.SmoothingMode=SmoothingMode.AntiAlias;
-  if(Height<100){g.Clear(GuidePalette.Back);g.DrawIcon(AppArtwork.Icon,new Rectangle(2,12,46,46));using var name=new Font("Segoe UI",12,FontStyle.Bold);using var sub=new Font("Segoe UI",8);TextRenderer.DrawText(g,"MAPLE MARKET",name,new Rectangle(56,17,Width-56,24),GuidePalette.Text,TextFormatFlags.EndEllipsis);TextRenderer.DrawText(g,"CLASSIC WORLD",sub,new Rectangle(58,43,Width-58,20),GuidePalette.Gold);using var divider=new Pen(GuidePalette.Line);g.DrawLine(divider,0,Height-1,Width,Height-1);return;}
+  if(Height<150){
+   g.Clear(GuidePalette.Back);var state=g.Save();g.ScaleTransform(Width/204f,Height/108f);
+   using var panel=new LinearGradientBrush(new Rectangle(0,0,204,100),GuidePalette.Raised,GuidePalette.Surface,90);
+   using var frame=new GraphicsPath();frame.AddArc(1,3,16,16,180,90);frame.AddArc(187,3,16,16,270,90);frame.AddArc(187,81,16,16,0,90);frame.AddArc(1,81,16,16,90,90);frame.CloseFigure();g.FillPath(panel,frame);
+   using var edge=new Pen(Color.FromArgb(130,GuidePalette.Gold),1);g.DrawPath(edge,frame);
+   using var brandGlow=new SolidBrush(Color.FromArgb(22,GuidePalette.Gold));g.FillEllipse(brandGlow,4,14,72,72);
+   using var disk=new LinearGradientBrush(new Rectangle(11,21,58,58),GuidePalette.Raised,GuidePalette.Back,60);g.FillEllipse(disk,11,21,58,58);g.DrawEllipse(edge,11,21,58,58);
+   using var leaf=new GraphicsPath();leaf.AddPolygon(new PointF[]{new(40,24),new(46,38),new(53,32),new(52,44),new(64,42),new(58,52),new(63,57),new(45,61),new(43,74),new(38,74),new(39,61),new(20,57),new(25,51),new(18,41),new(30,44),new(28,32),new(35,38)});
+   using var amber=new LinearGradientBrush(new Rectangle(18,24,46,50),Color.FromArgb(255,209,101),Color.FromArgb(226,100,37),90);g.FillPath(amber,leaf);using var highlight=new Pen(Color.FromArgb(255,226,150),1.2f);g.DrawPath(highlight,leaf);
+   using var vein=new Pen(Color.FromArgb(150,128,56,22),1.2f);g.DrawLine(vein,41,36,41,64);g.DrawLine(vein,41,55,29,46);g.DrawLine(vein,41,55,53,46);
+   using var title=new Font("Georgia",17,FontStyle.Bold,GraphicsUnit.Pixel);using var subtitle=new Font("Segoe UI",8,FontStyle.Bold,GraphicsUnit.Pixel);
+   using var brandInk=new SolidBrush(GuidePalette.Text);using var goldInk=new SolidBrush(GuidePalette.Gold);
+   g.DrawString("MAPLE",title,brandInk,78,20);g.DrawString("MARKET",title,goldInk,78,40);
+   g.DrawLine(edge,81,66,187,66);g.DrawString("C L A S S I C  W O R L D",subtitle,brandInk,79,73);
+   g.Restore(state);return;
+  }
   var saved=g.Save();g.ScaleTransform(Width/191f,Height/180f);
   using var bg=new LinearGradientBrush(new Rectangle(0,0,191,180),GuidePalette.Raised,GuidePalette.Surface,90);g.FillRectangle(bg,0,0,191,180);
   using var glow=new SolidBrush(Color.FromArgb(22,255,220,140));g.FillEllipse(glow,25,14,145,145);g.FillEllipse(glow,46,33,103,106);
