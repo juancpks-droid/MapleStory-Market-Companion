@@ -42,6 +42,14 @@ export function resolveQuestItem(html:string,name:string,id:string){
  return 'https://maplestory.quest'+candidates[0];
 }
 
-// Shared edge cache is available in production; local preview uses the in-memory cache.
-export async function readShared(url:string):Promise<Response|undefined>{try{return await (globalThis as any).caches?.default?.match(new Request(url))}catch{return undefined}}
-export async function writeShared(url:string,response:Response){try{await (globalThis as any).caches?.default?.put(new Request(url),response)}catch{/* Cache failure must not break a lookup. */}}
+// D1 shares completed public drop references across players and worker instances.
+// Cache API remains an optional optimization for individual source pages.
+async function sharedDb(){try{return (await import('cloudflare:workers')).env.DB}catch{return undefined}}
+export async function readShared(url:string):Promise<Response|undefined>{try{
+ if(url.includes('/api/reference-cache/')){const db=await sharedDb();if(!db)return undefined;const row=await db.prepare('SELECT body FROM reference_cache WHERE key = ? AND expires > ?').bind(new URL(url).pathname,Date.now()).first<{body:string}>();return row?new Response(row.body,{headers:{'Content-Type':'application/json','Cache-Control':'private, max-age=60'}}):undefined}
+ return await (globalThis as any).caches?.default?.match(new Request(url))
+ }catch{return undefined}}
+export async function writeShared(url:string,response:Response){try{
+ if(url.includes('/api/reference-cache/')){const db=await sharedDb();if(!db)return;await db.batch([db.prepare('DELETE FROM reference_cache WHERE expires <= ?').bind(Date.now()),db.prepare('INSERT INTO reference_cache (key,body,expires) VALUES (?,?,?) ON CONFLICT(key) DO UPDATE SET body=excluded.body,expires=excluded.expires').bind(new URL(url).pathname,await response.text(),Date.now()+86400000)]);return}
+ await (globalThis as any).caches?.default?.put(new Request(url),response)
+ }catch{/* Cache failure must not break a lookup. */}}
