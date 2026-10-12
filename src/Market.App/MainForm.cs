@@ -160,7 +160,7 @@ public sealed partial class MainForm : Form
 
         var p=pages["Watchlist"];var bar=Toolbar();bar.Controls.Add(Button("Add item",()=>EditItem(null,true)));bar.Controls.Add(Button("Edit selected",()=>EditSelected(watchGrid,true)));bar.Controls.Add(Button("Remove selected",()=>Remove(watchGrid,true)));bar.Controls.Add(Button("Mute / unmute",()=>{if(SelectedItem(watchGrid) is {} i){store.SaveItem(i with {Muted=!i.Muted});Render();}}));
 
-        var note=Info(58);note.Text="Saved items persist locally. Name matching is exact after case and spacing normalization. Missing prices remain unavailable.";
+        BuildWatchlistHub(bar);var note=watchStatus;
 
         p.Controls.Add(watchGrid);p.Controls.Add(note);p.Controls.Add(bar);
 
@@ -433,7 +433,7 @@ public sealed partial class MainForm : Form
 
     {
 
-        UpdateWatchButtons();SetColumns(watchGrid,["Item","Latest ask","Est. value","Change","Confidence","Freshness","Alerts"]);SetColumns(inventoryGrid,["Item","Quantity","Est. unit","Est. stack","Source","Freshness"]);
+        var previousWatchSelection=SelectedItem(watchGrid);UpdateWatchButtons();SetColumns(watchGrid,["Item","Latest ask","Est. value","Change","Confidence","Freshness","Alerts"]);SetColumns(inventoryGrid,["Item","Quantity","Est. unit","Est. stack","Source","Freshness"]);
 
         var storedHistory=store.History();decimal total=0;int missing=0;foreach(var i in store.Items())
 
@@ -443,15 +443,15 @@ public sealed partial class MainForm : Form
 
             string freshness=row?.Freshness(DateTimeOffset.UtcNow,TimeSpan.FromHours(settings.FreshHours))??"Market data unavailable";
 
-            var previous=row is null?null:storedHistory.Where(o=>o.MatchKey==row.MatchKey&&o.Kind==EvidenceKind.Asking&&o.ObservedAt<row.ObservedAt).OrderByDescending(o=>o.ObservedAt).FirstOrDefault();string change=previous is null||row is null?"Unavailable":$"{(row.UnitPrice/previous.UnitPrice-1)*100:+0.0;-0.0;0}% ask";
+            var previous=row is null?null:storedHistory.Where(o=>o.MatchKey==row.MatchKey&&o.Kind==EvidenceKind.Asking&&o.ObservedAt<row.ObservedAt).OrderByDescending(o=>o.ObservedAt).FirstOrDefault();string change=previous is null||previous.UnitPrice<=0||row is null?"Unavailable":$"{(row.UnitPrice/previous.UnitPrice-1)*100:+0.0;-0.0;0}% ask";
 
-            if(i.Watch){int n=watchGrid.Rows.Add(i.Name,TextKey.Mesos(row?.UnitPrice),TextKey.Mesos(v?.Value),change,v?.Confidence.ToString()??"Insufficient evidence",freshness,i.Muted?"Muted":"Enabled");watchGrid.Rows[n].Tag=i;}
+            if(i.Watch&&ShowWatchedItem(i,row)){int n=watchGrid.Rows.Add(i.Name,(row?.PriceApproximate==true?"~ ":"")+TextKey.Mesos(row?.UnitPrice),TextKey.Mesos(v?.Value),change,v?.Confidence.ToString()??"Insufficient evidence",freshness,i.Muted?"Muted":"Enabled");watchGrid.Rows[n].Tag=i;}
 
             if(i.Quantity>0){decimal? stack=v?.Value*i.Quantity;int n=inventoryGrid.Rows.Add(i.Name,i.Quantity,TextKey.Mesos(v?.Value),TextKey.Mesos(stack),row?.Provider??"Unavailable",freshness);inventoryGrid.Rows[n].Tag=i;if(stack is {} amount)total+=amount;else missing++;}
 
         }
 
-        inventorySummary.Text=$"Valued subtotal: {(missing>0&&missing==store.Items().Count(i=>i.Quantity>0)?"Unavailable":TextKey.Mesos(total)+" mesos")} • {missing} inventory entries have unavailable values.\nUnpriced items are excluded, not treated as worthless. Quantities are the only inventory numbers you enter.";
+        RestoreWatchSelection(previousWatchSelection);inventorySummary.Text=$"Valued subtotal: {(missing>0&&missing==store.Items().Count(i=>i.Quantity>0)?"Unavailable":TextKey.Mesos(total)+" mesos")} • {missing} inventory entries have unavailable values.\nUnpriced items are excluded, not treated as worthless. Quantities are the only inventory numbers you enter.";
 
     }
 

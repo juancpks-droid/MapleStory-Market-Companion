@@ -61,3 +61,7 @@ Price Checker adds source and recent-only filters, compact cards with a Details 
 ## Listing tools (1.23.0)
 
 Price Checker now includes Listing tools. Search players or location notes, filter by listing side, minimum quantity or exact prices, sort columns, and compare two same-side listings with Ctrl+click. Unknown quantities do not produce stack totals. Approximate prices stay labelled. More room hides the overview cards while this tab is active. Double-click or Enter opens a selected source listing; Export CSV saves the filtered table. Source, price-range and recent-only filters from the listings tab also apply. The new filters and active tab restore after restarting.
+
+## Watchlist shortcuts (1.24.0)
+
+Search watched names and variants, filter by muted state or recent-price availability, and jump to Price Checker or Item Finder. Double-click or Enter checks the selected item's prices. Search and filter preferences survive restarting; selections stay on the same item when rows refresh. Recent-price filters require source freshness and retrieval within 30 minutes. Alert counts show per-item mute preferences; global notification settings still apply.
