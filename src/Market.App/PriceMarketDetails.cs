@@ -25,6 +25,7 @@ public sealed partial class MainForm
   var evidence=new TabPage("All price evidence");evidence.Controls.Add(priceGrid);priceDetails.TabPages.Add(evidence);
   priceDetails.SelectedIndexChanged+=(_,_)=>{RenderValuation();RenderHistory();};page.Controls.Add(priceDetails);priceDetails.BringToFront();
   page.Controls.Add(marketHeadline);marketHeadline.BringToFront();priceDetails.BringToFront();priceSummary.Height=62;fmContext.Height=35;marketHeadline.Font=new Font("Segoe UI",10,FontStyle.Bold);
+  BuildNpcReference(page);
   listingSort.SelectedIndexChanged+=(_,_)=>RenderMarketCards(marketTarget);listingMin.ValueChanged+=(_,_)=>RenderMarketCards(marketTarget);listingMax.ValueChanged+=(_,_)=>RenderMarketCards(marketTarget);
  }
  Observation? SelectedPriceItem()=>priceDetails.SelectedIndex==2&&priceGrid.SelectedRows.Count>0?priceGrid.SelectedRows[0].Tag as Observation:observations.FirstOrDefault(o=>o.Name==priceItemChoice.Text);

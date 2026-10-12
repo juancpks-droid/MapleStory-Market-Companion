@@ -3,7 +3,7 @@ using System.Text.RegularExpressions;
 namespace Market.Core;
 
 // On-demand facts only: no search crawling or bundled copy of the source database.
-public sealed class CcplzReader : IDisposable
+public sealed partial class CcplzReader : IDisposable
 {
  const string Host="https://ccplz.cc";
  readonly HttpClient client=new(new HttpClientHandler{AllowAutoRedirect=false,AutomaticDecompression=DecompressionMethods.All}){Timeout=TimeSpan.FromSeconds(25)};

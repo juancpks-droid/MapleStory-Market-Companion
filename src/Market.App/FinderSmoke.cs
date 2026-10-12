@@ -60,6 +60,6 @@ public sealed partial class MainForm
   updateStatus.Text="Update v99.0.0 available. Choose Check for updates when ready.";
   Check(sidebarUpdateStatus.Text.Contains("v99.0.0"),"Available update version appears in sidebar");
   sidebarUpdateButton.PerformClick();
-  CheckMarketDetails(checks);CheckWatchToggles(checks);return checks;
+  CheckMarketDetails(checks);CheckWatchToggles(checks);CheckNpcReference(checks);return checks;
  }
 }

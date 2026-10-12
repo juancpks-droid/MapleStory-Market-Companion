@@ -22,7 +22,7 @@ public sealed class HistoryPlot:Control
         base.OnPaint(e);hits.Clear();var g=e.Graphics;g.SmoothingMode=SmoothingMode.AntiAlias;
         var points=Points.Where(p=>p.ObservedAt.HasValue&&p.UnitPrice>0).OrderBy(p=>p.ObservedAt).ToArray();
         using var ink=new SolidBrush(ForeColor);using var muted=new SolidBrush(GuidePalette.Muted);
-        if(points.Length==0){g.DrawString("No dated price history yet",Font,ink,18,18);g.DrawString("Choose an item listing and a date range.\nHistory builds as dated observations are collected; missing prices are never invented.",Font,muted,new RectangleF(18,45,Math.Max(1,Width-36),Math.Max(1,Height-50)));return;}
+        if(points.Length==0){g.DrawString("No market price history yet",Font,ink,18,18);g.DrawString("Choose an item and a date range.\nHistory builds from recorded market observations. NPC reference prices are separate and never plotted as market history.",Font,muted,new RectangleF(18,45,Math.Max(1,Width-36),Math.Max(1,Height-50)));return;}
         if(Width<250||Height<125){g.DrawString($"{points.Length} observations • enlarge the chart to explore",Font,ink,new RectangleF(8,8,Width-16,Height-16));return;}
         decimal min=points.Min(p=>p.UnitPrice),max=points.Max(p=>p.UnitPrice),median=ValuationEngine.Median(points.Select(p=>p.UnitPrice));
         decimal pad=Math.Max(1,(max-min)*.08m),low=Math.Max(0,min-pad),high=max+pad;
