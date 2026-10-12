@@ -22,7 +22,7 @@ static class Program
         ApplicationConfiguration.Initialize();
         if(args.Contains("--lookup-smoke")){PriceLookupSmoke.Run();return;}
         if(args.Contains("--session-smoke")){SessionSmoke.Run();return;}
-        if(args.Contains("--shortcut-smoke")){DesktopShortcut.Smoke();return;}
+        if(args.Contains("--shortcut-smoke")){DesktopShortcut.Smoke();ShellIconRefresh.Smoke();return;}
         if(args.Contains("--inline-drops-smoke")){InlineDropsSmoke.Run();return;}
         if(args.Contains("--quest-drops-smoke")){QuestDropsSmoke.Run();return;}
         if(args.Contains("--npc-fallback-smoke")){QuestDropsSmoke.Run(true);return;}
@@ -45,7 +45,7 @@ static class Program
         using var single=new Mutex(true,smoke?"Local\\MapleClassicMarketCompanionSmoke":"Local\\MapleClassicMarketCompanion",out bool first);
 
         if(!first) { MessageBox.Show("Market Companion is already running. Check the system tray."); return; }
-        if(!smoke)DesktopShortcut.EnsureOnce(directory);
+        if(!smoke){DesktopShortcut.EnsureOnce(directory);ShellIconRefresh.Run();}
 
         try
 
@@ -108,6 +108,3 @@ static class Program
     }
 
 }
-
-
-

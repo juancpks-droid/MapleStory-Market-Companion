@@ -12,7 +12,7 @@ internal static class DesktopShortcut
         try{
             shell=Activator.CreateInstance(Type.GetTypeFromProgID("WScript.Shell")??throw new InvalidOperationException("Windows shortcut support is unavailable."));
             dynamic host=shell!;shortcut=host.CreateShortcut(path);dynamic link=shortcut;
-            link.TargetPath=Path.GetFullPath(target);link.WorkingDirectory=Path.GetDirectoryName(target);var artwork=Path.Combine(Path.GetDirectoryName(target)!,"Assets","app.ico");link.IconLocation=(File.Exists(artwork)?artwork:target)+",0";
+            link.TargetPath=Path.GetFullPath(target);link.WorkingDirectory=Path.GetDirectoryName(target);var artwork=Path.Combine(Path.GetDirectoryName(target)!,"Assets","maple-crest-v3.ico");link.IconLocation=(File.Exists(artwork)?artwork:target)+",0";
             link.Description="MapleStory Market Companion";link.Arguments="";link.Save();return path;
         }finally{if(shortcut is not null)Marshal.FinalReleaseComObject(shortcut);if(shell is not null)Marshal.FinalReleaseComObject(shell);}
     }
@@ -35,4 +35,3 @@ internal static class DesktopShortcut
         }catch(Exception e){Environment.ExitCode=1;File.WriteAllText(Path.Combine(folder,"result.txt"),"FAIL: "+e);}
     }
 }
-
