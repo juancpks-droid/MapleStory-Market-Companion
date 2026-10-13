@@ -1,0 +1,84 @@
+{
+  "schemaVersion": 1,
+  "path": "/quests/biggs-s-collection-of-items",
+  "kind": "quest",
+  "name": "Biggs's Collection of Items",
+  "source": "CCPLZ",
+  "sourceUrl": "https://ccplz.cc/quests/biggs-s-collection-of-items",
+  "checkedAt": "2026-10-13T15:38:06.212Z",
+  "notice": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial.",
+  "fields": [
+    {
+      "label": "Minimum level",
+      "value": "3"
+    },
+    {
+      "label": "Category",
+      "value": "Maple Island"
+    },
+    {
+      "label": "EXP reward",
+      "value": "120"
+    },
+    {
+      "label": "Starts with",
+      "value": "Biggs"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Quest NPCs",
+      "links": [
+        {
+          "name": "Biggs",
+          "path": "/npcs/biggs",
+          "detail": "Starts the quest"
+        }
+      ],
+      "total": 1
+    },
+    {
+      "title": "Items to bring",
+      "links": [
+        {
+          "name": "Blue Snail Shell",
+          "path": "/items/blue-snail-shell",
+          "detail": "x10"
+        },
+        {
+          "name": "Orange Mushroom Cap",
+          "path": "/items/orange-mushroom-cap",
+          "detail": "x1"
+        }
+      ],
+      "total": 2
+    },
+    {
+      "title": "Item rewards",
+      "links": [
+        {
+          "name": "Fruit Knife",
+          "path": "/items/fruit-knife",
+          "detail": ""
+        },
+        {
+          "name": "Razor",
+          "path": "/items/razor",
+          "detail": ""
+        }
+      ],
+      "total": 2
+    },
+    {
+      "title": "Where it takes place",
+      "links": [
+        {
+          "name": "Southperry",
+          "path": "/maps/southperry",
+          "detail": ""
+        }
+      ],
+      "total": 1
+    }
+  ]
+}

@@ -1,0 +1,104 @@
+{
+  "schemaVersion": 1,
+  "path": "/quests/maya-s-first-collection",
+  "kind": "quest",
+  "name": "Collecting For Maya (Maya's First Collection)",
+  "source": "CCPLZ",
+  "sourceUrl": "https://ccplz.cc/quests/maya-s-first-collection",
+  "checkedAt": "2026-10-13T15:38:09.239Z",
+  "notice": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial.",
+  "fields": [
+    {
+      "label": "Minimum level",
+      "value": "30"
+    },
+    {
+      "label": "Category",
+      "value": "Henesys"
+    },
+    {
+      "label": "EXP reward",
+      "value": "4,780"
+    },
+    {
+      "label": "Meso reward",
+      "value": "965"
+    },
+    {
+      "label": "Starts with",
+      "value": "Maya"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Quest NPCs",
+      "links": [
+        {
+          "name": "Maya",
+          "path": "/npcs/maya",
+          "detail": "Starts the quest"
+        }
+      ],
+      "total": 1
+    },
+    {
+      "title": "Complete first",
+      "links": [
+        {
+          "name": "Maya and the Weird Medicine (Delivering the Weird Medicine)",
+          "path": "/quests/delivering-the-weird-medicine",
+          "detail": ""
+        }
+      ],
+      "total": 1
+    },
+    {
+      "title": "Items to bring",
+      "links": [
+        {
+          "name": "Blue Mushroom Cap",
+          "path": "/items/blue-mushroom-cap",
+          "detail": "x20"
+        },
+        {
+          "name": "Green Mushroom Cap",
+          "path": "/items/green-mushroom-cap",
+          "detail": "x20"
+        },
+        {
+          "name": "Horny Mushroom Cap",
+          "path": "/items/horny-mushroom-cap",
+          "detail": "x20"
+        },
+        {
+          "name": "Orange Mushroom Cap",
+          "path": "/items/orange-mushroom-cap",
+          "detail": "x20"
+        }
+      ],
+      "total": 4
+    },
+    {
+      "title": "Item rewards",
+      "links": [
+        {
+          "name": "Orange Potion",
+          "path": "/items/orange-potion",
+          "detail": ""
+        }
+      ],
+      "total": 1
+    },
+    {
+      "title": "Where it takes place",
+      "links": [
+        {
+          "name": "Henesys",
+          "path": "/maps/henesys",
+          "detail": ""
+        }
+      ],
+      "total": 1
+    }
+  ]
+}

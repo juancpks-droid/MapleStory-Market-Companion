@@ -1,0 +1,129 @@
+{
+  "schemaVersion": 1,
+  "path": "/items/brown-moonlight",
+  "kind": "item",
+  "name": "Brown Moonlight",
+  "source": "CCPLZ",
+  "sourceUrl": "https://ccplz.cc/items/brown-moonlight",
+  "checkedAt": "2026-10-13T15:37:36.252Z",
+  "notice": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial.",
+  "fields": [
+    {
+      "label": "Type",
+      "value": "Overall"
+    },
+    {
+      "label": "Required level",
+      "value": "40"
+    },
+    {
+      "label": "Class",
+      "value": "Magician"
+    },
+    {
+      "label": "Weapon defense",
+      "value": "+57"
+    },
+    {
+      "label": "Magic defense",
+      "value": "+66"
+    },
+    {
+      "label": "LUK",
+      "value": "+8"
+    },
+    {
+      "label": "Upgrade slots",
+      "value": "10"
+    },
+    {
+      "label": "NPC sell price",
+      "value": "12,600 mesos"
+    },
+    {
+      "label": "Required STR",
+      "value": "0"
+    },
+    {
+      "label": "Required DEX",
+      "value": "0"
+    },
+    {
+      "label": "Required INT",
+      "value": "70"
+    },
+    {
+      "label": "Required LUK",
+      "value": "30"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Dropped by",
+      "links": [
+        {
+          "name": "Dark Nependeath",
+          "path": "/monsters/dark-nependeath",
+          "detail": "Level 47, 0.07% historical rate"
+        },
+        {
+          "name": "Green Trixter",
+          "path": "/monsters/green-trixter",
+          "detail": "Level 28, 0.08% historical rate"
+        },
+        {
+          "name": "Star Pixie",
+          "path": "/monsters/star-pixie",
+          "detail": "Level 35, 0.07% historical rate"
+        }
+      ],
+      "total": 3
+    },
+    {
+      "title": "Similar equipment",
+      "links": [
+        {
+          "name": "Blue Moonlight",
+          "path": "/items/blue-moonlight",
+          "detail": "Level 40"
+        },
+        {
+          "name": "Blue Starlight",
+          "path": "/items/blue-starlight",
+          "detail": "Level 40"
+        },
+        {
+          "name": "Brown Starlight",
+          "path": "/items/brown-starlight",
+          "detail": "Level 40"
+        },
+        {
+          "name": "Dark Moonlight",
+          "path": "/items/dark-moonlight",
+          "detail": "Level 40"
+        },
+        {
+          "name": "Dark Starlight",
+          "path": "/items/dark-starlight",
+          "detail": "Level 40"
+        },
+        {
+          "name": "Green Starlight",
+          "path": "/items/green-starlight",
+          "detail": "Level 40"
+        },
+        {
+          "name": "Purple Moonlight",
+          "path": "/items/purple-moonlight",
+          "detail": "Level 40"
+        },
+        {
+          "name": "Red Moonlight",
+          "path": "/items/red-moonlight",
+          "detail": "Level 40"
+        }
+      ],
+      "total": 8
+    }
+  ]
+}

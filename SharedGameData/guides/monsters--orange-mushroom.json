@@ -1,0 +1,325 @@
+{
+  "schemaVersion": 1,
+  "path": "/monsters/orange-mushroom",
+  "kind": "monster",
+  "name": "Orange Mushroom",
+  "source": "CCPLZ",
+  "sourceUrl": "https://ccplz.cc/monsters/orange-mushroom",
+  "checkedAt": "2026-10-13T15:38:03.222Z",
+  "notice": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial.",
+  "fields": [
+    {
+      "label": "Level",
+      "value": "8"
+    },
+    {
+      "label": "HP",
+      "value": "142"
+    },
+    {
+      "label": "EXP",
+      "value": "15"
+    },
+    {
+      "label": "MP",
+      "value": "30"
+    },
+    {
+      "label": "Attack",
+      "value": "17"
+    },
+    {
+      "label": "Defense",
+      "value": "0"
+    },
+    {
+      "label": "Accuracy",
+      "value": "62"
+    },
+    {
+      "label": "Avoidability",
+      "value": "0"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Where it spawns",
+      "links": [
+        {
+          "name": "Mushroom Garden (Hidden Street)",
+          "path": "/maps/mushroom-garden-10001021",
+          "detail": "Victoria Island, 15 spawn points"
+        },
+        {
+          "name": "Dangerous Forest",
+          "path": "/maps/dangerous-forest",
+          "detail": "Maple Island, 12 spawn points"
+        },
+        {
+          "name": "The Field East of Amherst",
+          "path": "/maps/the-field-east-of-amherst",
+          "detail": "Maple Island, 12 spawn points"
+        },
+        {
+          "name": "Henesys Hunting Ground III",
+          "path": "/maps/henesys-hunting-ground-iii",
+          "detail": "Victoria Island, 11 spawn points"
+        },
+        {
+          "name": "Kerning City Middle Forest III",
+          "path": "/maps/kerning-city-middle-forest-iii",
+          "detail": "Victoria Island, 10 spawn points"
+        },
+        {
+          "name": "Thicket Around the Beach II",
+          "path": "/maps/thicket-around-the-beach-ii",
+          "detail": "Victoria Island, 9 spawn points"
+        },
+        {
+          "name": "Construction Site North of Kerning City",
+          "path": "/maps/construction-site-north-of-kerning-city",
+          "detail": "Victoria Island, 9 spawn points"
+        },
+        {
+          "name": "3-Way Road-Split",
+          "path": "/maps/3-way-road-split",
+          "detail": "Victoria Island, 9 spawn points"
+        },
+        {
+          "name": "Thicket Around the Beach III",
+          "path": "/maps/thicket-around-the-beach-iii",
+          "detail": "Victoria Island, 8 spawn points"
+        },
+        {
+          "name": "Sunset Sky",
+          "path": "/maps/sunset-sky",
+          "detail": "Victoria Island, 8 spawn points"
+        },
+        {
+          "name": "Henesys Hunting Ground II",
+          "path": "/maps/henesys-hunting-ground-ii",
+          "detail": "Victoria Island, 8 spawn points"
+        },
+        {
+          "name": "Kerning City Middle Forest II",
+          "path": "/maps/kerning-city-middle-forest-ii",
+          "detail": "Victoria Island, 8 spawn points"
+        },
+        {
+          "name": "Kerning City Construction Site",
+          "path": "/maps/kerning-city-construction-site",
+          "detail": "Victoria Island, 8 spawn points"
+        },
+        {
+          "name": "Kerning City Middle Forest I",
+          "path": "/maps/kerning-city-middle-forest-i",
+          "detail": "Victoria Island, 8 spawn points"
+        },
+        {
+          "name": "L Forest I",
+          "path": "/maps/l-forest-i",
+          "detail": "Victoria Island, 7 spawn points"
+        },
+        {
+          "name": "An Empty House",
+          "path": "/maps/an-empty-house",
+          "detail": "Victoria Island, 6 spawn points"
+        },
+        {
+          "name": "Northern Top of Construction Site",
+          "path": "/maps/northern-top-of-construction-site",
+          "detail": "Victoria Island, 6 spawn points"
+        },
+        {
+          "name": "Snail Field of Flowers",
+          "path": "/maps/snail-field-of-flowers",
+          "detail": "Maple Island, 6 spawn points"
+        },
+        {
+          "name": "Hunting Ground Middle of the Forest II",
+          "path": "/maps/hunting-ground-middle-of-the-forest-ii",
+          "detail": "Maple Island, 6 spawn points"
+        },
+        {
+          "name": "The Forest East of Henesys",
+          "path": "/maps/the-forest-east-of-henesys",
+          "detail": "Victoria Island, 6 spawn points"
+        },
+        {
+          "name": "Caution Falling Down",
+          "path": "/maps/caution-falling-down",
+          "detail": "Victoria Island, 5 spawn points"
+        },
+        {
+          "name": "Mushroom Garden (Rainbow Street)",
+          "path": "/maps/mushroom-garden",
+          "detail": "Maple Island, 5 spawn points"
+        },
+        {
+          "name": "Henesys Hunting Ground I",
+          "path": "/maps/henesys-hunting-ground-i",
+          "detail": "Victoria Island, 5 spawn points"
+        },
+        {
+          "name": "The Field West of Amherst",
+          "path": "/maps/the-field-west-of-amherst",
+          "detail": "Maple Island, 5 spawn points"
+        },
+        {
+          "name": "Tomato Field",
+          "path": "/maps/tomato-field",
+          "detail": "Maple Island, 4 spawn points"
+        },
+        {
+          "name": "In a Small Forest",
+          "path": "/maps/in-a-small-forest",
+          "detail": "Maple Island, 4 spawn points"
+        },
+        {
+          "name": "L Forest II",
+          "path": "/maps/l-forest-ii",
+          "detail": "Victoria Island, 3 spawn points"
+        },
+        {
+          "name": "Forest West of Henesys",
+          "path": "/maps/forest-west-of-henesys",
+          "detail": "Victoria Island, 3 spawn points"
+        },
+        {
+          "name": "The Road to the Dungeon",
+          "path": "/maps/the-road-to-the-dungeon",
+          "detail": "Victoria Island, 2 spawn points"
+        },
+        {
+          "name": "The Hill East of Henesys",
+          "path": "/maps/the-hill-east-of-henesys",
+          "detail": "Victoria Island, 2 spawn points"
+        },
+        {
+          "name": "Beach Hunting Ground",
+          "path": "/maps/beach-hunting-ground",
+          "detail": "Victoria Island, 3 spawn points"
+        }
+      ],
+      "total": 31
+    },
+    {
+      "title": "Reported drops",
+      "links": [
+        {
+          "name": "Arrows for Bows",
+          "path": "/items/arrows-for-bows",
+          "detail": "Arrows for bows, 3% historical rate"
+        },
+        {
+          "name": "Arrows for Crossbows",
+          "path": "/items/arrows-for-crossbows",
+          "detail": "Arrows for crossbows, 3% historical rate"
+        },
+        {
+          "name": "Bronze Koif",
+          "path": "/items/bronze-koif",
+          "detail": "Hat"
+        },
+        {
+          "name": "Bronze Ore",
+          "path": "/items/bronze-ore",
+          "detail": "Ores & ingots"
+        },
+        {
+          "name": "Brown Hard Leather Boots",
+          "path": "/items/brown-hard-leather-boots",
+          "detail": "Shoes, 0.08% historical rate"
+        },
+        {
+          "name": "Diamond Ore",
+          "path": "/items/diamond-ore",
+          "detail": "Gems & gem ores"
+        },
+        {
+          "name": "Double Axe",
+          "path": "/items/double-axe",
+          "detail": "One-handed axe, 0.07% historical rate"
+        },
+        {
+          "name": "Green Winter Hat",
+          "path": "/items/green-winter-hat",
+          "detail": "Hat"
+        },
+        {
+          "name": "Long Sword",
+          "path": "/items/long-sword",
+          "detail": "One-handed sword"
+        },
+        {
+          "name": "Orange Mushroom Cap",
+          "path": "/items/orange-mushroom-cap",
+          "detail": "Monster drops, 60% historical rate"
+        },
+        {
+          "name": "Red Ninja Sandals",
+          "path": "/items/red-ninja-sandals",
+          "detail": "Shoes, 0.08% historical rate"
+        },
+        {
+          "name": "Red Potion (for Olaf's Training: Olaf's First Training)",
+          "path": "/items/red-potion",
+          "detail": "Potions, 10% historical rate"
+        },
+        {
+          "name": "Spear",
+          "path": "/items/spear",
+          "detail": "Spear, 0.05% historical rate"
+        },
+        {
+          "name": "White Gomushin",
+          "path": "/items/white-gomushin",
+          "detail": "Shoes, 0.08% historical rate"
+        }
+      ],
+      "total": 14
+    },
+    {
+      "title": "Older-version drops",
+      "links": [
+        {
+          "name": "Basic Archer Gloves",
+          "path": "/items/basic-archer-gloves",
+          "detail": "Gloves, 0.1% historical rate"
+        },
+        {
+          "name": "Shoes Jump Scroll: Greater",
+          "path": "/items/shoes-jump-scroll-greater",
+          "detail": "Shoes scrolls, 0.03% historical rate"
+        }
+      ],
+      "total": 2
+    },
+    {
+      "title": "Quests that need it",
+      "links": [
+        {
+          "name": "Mai's Training (Mai's Final Training)",
+          "path": "/quests/mai-s-final-training",
+          "detail": ""
+        },
+        {
+          "name": "Nella & Kerning City Citizen's Request (Don Hwang's Request)",
+          "path": "/quests/don-hwang-s-request",
+          "detail": "Level 10"
+        },
+        {
+          "name": "Olaf's Training (Olaf's Second Training)",
+          "path": "/quests/olaf-s-second-training",
+          "detail": "Level 8"
+        },
+        {
+          "name": "The Reason Behind the Mushroom Studies",
+          "path": "/quests/the-reason-behind-the-mushroom-studies",
+          "detail": "Level 10"
+        }
+      ],
+      "total": 4
+    }
+  ]
+}

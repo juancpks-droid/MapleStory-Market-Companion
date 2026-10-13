@@ -1,0 +1,112 @@
+{
+  "schemaVersion": 1,
+  "path": "/items/dark-moonlight",
+  "kind": "item",
+  "name": "Dark Moonlight",
+  "source": "CCPLZ",
+  "sourceUrl": "https://ccplz.cc/items/dark-moonlight",
+  "checkedAt": "2026-10-13T15:37:42.205Z",
+  "notice": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial.",
+  "fields": [
+    {
+      "label": "Type",
+      "value": "Overall"
+    },
+    {
+      "label": "Required level",
+      "value": "40"
+    },
+    {
+      "label": "Class",
+      "value": "Magician"
+    },
+    {
+      "label": "Weapon defense",
+      "value": "+57"
+    },
+    {
+      "label": "Magic defense",
+      "value": "+66"
+    },
+    {
+      "label": "INT",
+      "value": "+4"
+    },
+    {
+      "label": "LUK",
+      "value": "+4"
+    },
+    {
+      "label": "Upgrade slots",
+      "value": "10"
+    },
+    {
+      "label": "NPC sell price",
+      "value": "12,600 mesos"
+    },
+    {
+      "label": "Required STR",
+      "value": "0"
+    },
+    {
+      "label": "Required DEX",
+      "value": "0"
+    },
+    {
+      "label": "Required INT",
+      "value": "70"
+    },
+    {
+      "label": "Required LUK",
+      "value": "30"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Similar equipment",
+      "links": [
+        {
+          "name": "Blue Moonlight",
+          "path": "/items/blue-moonlight",
+          "detail": "Level 40"
+        },
+        {
+          "name": "Blue Starlight",
+          "path": "/items/blue-starlight",
+          "detail": "Level 40"
+        },
+        {
+          "name": "Brown Moonlight",
+          "path": "/items/brown-moonlight",
+          "detail": "Level 40"
+        },
+        {
+          "name": "Brown Starlight",
+          "path": "/items/brown-starlight",
+          "detail": "Level 40"
+        },
+        {
+          "name": "Dark Starlight",
+          "path": "/items/dark-starlight",
+          "detail": "Level 40"
+        },
+        {
+          "name": "Green Starlight",
+          "path": "/items/green-starlight",
+          "detail": "Level 40"
+        },
+        {
+          "name": "Purple Moonlight",
+          "path": "/items/purple-moonlight",
+          "detail": "Level 40"
+        },
+        {
+          "name": "Red Moonlight",
+          "path": "/items/red-moonlight",
+          "detail": "Level 40"
+        }
+      ],
+      "total": 8
+    }
+  ]
+}

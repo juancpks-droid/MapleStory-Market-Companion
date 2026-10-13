@@ -1,0 +1,96 @@
+{
+  "schemaVersion": 1,
+  "path": "/quests/donating-to-kerning-city-506120",
+  "kind": "quest",
+  "name": "Donating to Kerning City (Orange Mushroom Cap)",
+  "source": "CCPLZ",
+  "sourceUrl": "https://ccplz.cc/quests/donating-to-kerning-city-506120",
+  "checkedAt": "2026-10-13T15:38:15.273Z",
+  "notice": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial.",
+  "fields": [
+    {
+      "label": "Minimum level",
+      "value": "12"
+    },
+    {
+      "label": "Category",
+      "value": "Citizenship"
+    },
+    {
+      "label": "Repeats",
+      "value": "Weekly, one of 18 in its rotation"
+    },
+    {
+      "label": "EXP reward",
+      "value": "334"
+    },
+    {
+      "label": "Meso reward",
+      "value": "409"
+    },
+    {
+      "label": "Starts with",
+      "value": "Community Board (Kerning City)"
+    },
+    {
+      "label": "Turn in to",
+      "value": "Roxy"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Quest NPCs",
+      "links": [
+        {
+          "name": "Community Board (Kerning City)",
+          "path": "/npcs/community-board-431",
+          "detail": "Starts the quest"
+        },
+        {
+          "name": "Roxy",
+          "path": "/npcs/roxy",
+          "detail": "Completes the quest"
+        }
+      ],
+      "total": 2
+    },
+    {
+      "title": "Items to bring",
+      "links": [
+        {
+          "name": "Orange Mushroom Cap",
+          "path": "/items/orange-mushroom-cap",
+          "detail": "x30"
+        }
+      ],
+      "total": 1
+    },
+    {
+      "title": "Item rewards",
+      "links": [
+        {
+          "name": "Blue Potion (for Olaf's Training: Olaf's First Training)",
+          "path": "/items/blue-potion",
+          "detail": ""
+        }
+      ],
+      "total": 1
+    },
+    {
+      "title": "Where it takes place",
+      "links": [
+        {
+          "name": "Kerning City",
+          "path": "/maps/kerning-city",
+          "detail": ""
+        },
+        {
+          "name": "Kerning City Civic Center",
+          "path": "/maps/kerning-city-civic-center",
+          "detail": ""
+        }
+      ],
+      "total": 2
+    }
+  ]
+}
