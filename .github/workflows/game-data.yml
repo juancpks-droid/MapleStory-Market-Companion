@@ -1,0 +1,38 @@
+name: Refresh shared game references
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '23 9 * * *'
+permissions:
+  contents: write
+concurrency:
+  group: shared-game-references
+  cancel-in-progress: false
+jobs:
+  collect:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+          cache: npm
+          cache-dependency-path: Lite/package-lock.json
+      - run: npm ci --ignore-scripts
+        working-directory: Lite
+      - run: node guide.test.mjs
+        working-directory: Lite
+      - run: node Lite/scripts/collect-game-data.mjs SharedGameData
+        env:
+          REFERENCE_BATCH: '18'
+      - name: Publish validated small records
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add SharedGameData
+          if ! git diff --cached --quiet; then
+            git commit -m 'Refresh shared game reference snapshot'
+            git pull --rebase origin main
+            git push origin HEAD:main
+          fi
