@@ -1,0 +1,72 @@
+{
+  "schemaVersion": 1,
+  "path": "/quests/sam-s-suggestion",
+  "kind": "quest",
+  "name": "Sam's Suggestion",
+  "source": "CCPLZ",
+  "sourceUrl": "https://ccplz.cc/quests/sam-s-suggestion",
+  "checkedAt": "2026-10-13T15:03:21.634Z",
+  "notice": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial.",
+  "fields": [
+    {
+      "label": "Minimum level",
+      "value": "1"
+    },
+    {
+      "label": "Category",
+      "value": "Maple Island"
+    },
+    {
+      "label": "EXP reward",
+      "value": "30"
+    },
+    {
+      "label": "Starts with",
+      "value": "Sam (Snail Hunting Ground I)"
+    },
+    {
+      "label": "Turn in to",
+      "value": "Mai"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Quest NPCs",
+      "links": [
+        {
+          "name": "Sam (Snail Hunting Ground I)",
+          "path": "/npcs/sam",
+          "detail": "Starts the quest"
+        },
+        {
+          "name": "Mai",
+          "path": "/npcs/mai",
+          "detail": "Completes the quest"
+        }
+      ],
+      "total": 2
+    },
+    {
+      "title": "Monsters to defeat",
+      "links": [
+        {
+          "name": "Snail",
+          "path": "/monsters/snail",
+          "detail": "x10"
+        }
+      ],
+      "total": 1
+    },
+    {
+      "title": "Item rewards",
+      "links": [
+        {
+          "name": "Egg",
+          "path": "/items/egg",
+          "detail": ""
+        }
+      ],
+      "total": 1
+    }
+  ]
+}

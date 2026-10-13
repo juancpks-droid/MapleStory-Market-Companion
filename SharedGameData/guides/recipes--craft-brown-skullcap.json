@@ -1,0 +1,116 @@
+{
+  "schemaVersion": 1,
+  "path": "/recipes/craft-brown-skullcap",
+  "kind": "recipe",
+  "name": "Brown Skullcap",
+  "source": "CCPLZ",
+  "sourceUrl": "https://ccplz.cc/recipes/craft-brown-skullcap",
+  "checkedAt": "2026-10-13T15:03:24.642Z",
+  "notice": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial.",
+  "fields": [
+    {
+      "label": "Crafting skill",
+      "value": "Leatherworking"
+    },
+    {
+      "label": "Crafting skill level",
+      "value": "1"
+    },
+    {
+      "label": "Meso cost",
+      "value": "300"
+    },
+    {
+      "label": "Crafts",
+      "value": "1"
+    },
+    {
+      "label": "Crafting EXP",
+      "value": "20"
+    },
+    {
+      "label": "Crafting fee (mesos)",
+      "value": "300"
+    },
+    {
+      "label": "Result quantity",
+      "value": "1"
+    },
+    {
+      "label": "Required skill level",
+      "value": "1"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Makes",
+      "links": [
+        {
+          "name": "Brown Skullcap",
+          "path": "/items/brown-skullcap",
+          "detail": ""
+        }
+      ],
+      "total": 1
+    },
+    {
+      "title": "Ingredients",
+      "links": [
+        {
+          "name": "Processed Leather",
+          "path": "/items/processed-leather",
+          "detail": "x1"
+        },
+        {
+          "name": "Red Snail Shell",
+          "path": "/items/red-snail-shell",
+          "detail": "x5"
+        },
+        {
+          "name": "Snail Shell",
+          "path": "/items/snail-shell",
+          "detail": "x5"
+        },
+        {
+          "name": "Spool of Thread",
+          "path": "/items/spool-of-thread",
+          "detail": "x3"
+        }
+      ],
+      "total": 4
+    },
+    {
+      "title": "Optional catalyst",
+      "links": [
+        {
+          "name": "Armor Crafting Catalyst",
+          "path": "/items/armor-crafting-catalyst",
+          "detail": ""
+        }
+      ],
+      "total": 1
+    },
+    {
+      "title": "Result",
+      "links": [
+        {
+          "name": "Brown Skullcap",
+          "path": "/items/brown-skullcap",
+          "detail": "Quantity: 1"
+        }
+      ],
+      "total": 1
+    },
+    {
+      "title": "Catalyst",
+      "links": [
+        {
+          "name": "Armor Crafting Catalyst",
+          "path": "/items/armor-crafting-catalyst",
+          "detail": "Quantity: 1"
+        }
+      ],
+      "total": 1
+    }
+  ]
+}

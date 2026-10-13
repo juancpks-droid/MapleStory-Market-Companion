@@ -1,3 +1,4 @@
+using Market.Core;
 using System.Text.Json;
 namespace Market.App;
 public sealed partial class MainForm
@@ -5,6 +6,7 @@ public sealed partial class MainForm
     sealed class ViewSession
     {
         public string Page {get;set;}="Dashboard";
+        public string GuidePath {get;set;}=""; public string GuideItem {get;set;}="";
         public Dictionary<string,string> Values {get;set;}=[];
         public int Days {get;set;}=7;
         public string? DisplayedPriceQuery {get;set;}
@@ -25,7 +27,7 @@ public sealed partial class MainForm
     void SaveViewSession()
     {
         var bounds=WindowState==FormWindowState.Normal?Bounds:RestoreBounds;
-        var state=new ViewSession{Page=selected,PriceDetailTab=priceDetails.SelectedIndex,PriceItem=priceItemChoice.SelectedItem as string??"",DisplayedPriceQuery=displayedPriceQuery,SettingsSection=settingsSections.SelectedIndex,FinderDetailTab=finderDetailTabs.SelectedIndex,Days=historyDays,Bag=inventoryCategory,Width=bounds.Width,Height=bounds.Height,Maximized=WindowState==FormWindowState.Maximized};
+        var state=new ViewSession{GuidePath=guidePath,GuideItem=guideSelection,Page=selected,PriceDetailTab=priceDetails.SelectedIndex,PriceItem=priceItemChoice.SelectedItem as string??"",DisplayedPriceQuery=displayedPriceQuery,SettingsSection=settingsSections.SelectedIndex,FinderDetailTab=finderDetailTabs.SelectedIndex,Days=historyDays,Bag=inventoryCategory,Width=bounds.Width,Height=bounds.Height,Maximized=WindowState==FormWindowState.Maximized};
         foreach(var (key,control) in SessionControls())state.Values[key]=control is CheckBox check?check.Checked.ToString():control.Text;
         var json=JsonSerializer.Serialize(state);
         if(json==lastSessionJson)return;
@@ -52,6 +54,7 @@ public sealed partial class MainForm
                 var area=Screen.FromControl(this).WorkingArea;
                 Size=new Size(Math.Clamp(state.Width,MinimumSize.Width,Math.Max(MinimumSize.Width,area.Width)),Math.Clamp(state.Height,MinimumSize.Height,Math.Max(MinimumSize.Height,area.Height)));
                 if(state.Maximized)WindowState=FormWindowState.Maximized;
+                if(GameGuideReader.ValidPath(state.GuidePath)){guidePath=state.GuidePath;guideSelection=state.GuideItem??"";}
                 if(state.Page is not null&&pages.ContainsKey(state.Page))ShowPage(state.Page);
                 if(priceItemChoice.Items.Contains(state.PriceItem))priceItemChoice.SelectedItem=state.PriceItem;priceDetails.SelectedIndex=Math.Clamp(state.PriceDetailTab,0,3);
                 finderDetailTabs.SelectedIndex=Math.Clamp(state.FinderDetailTab,0,finderDetailTabs.TabPages.Count-1);settingsSections.SelectedIndex=Math.Clamp(state.SettingsSection,0,1);

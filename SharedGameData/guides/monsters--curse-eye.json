@@ -1,0 +1,280 @@
+{
+  "schemaVersion": 1,
+  "path": "/monsters/curse-eye",
+  "kind": "monster",
+  "name": "Curse Eye",
+  "source": "CCPLZ",
+  "sourceUrl": "https://ccplz.cc/monsters/curse-eye",
+  "checkedAt": "2026-10-13T15:03:45.665Z",
+  "notice": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial.",
+  "fields": [
+    {
+      "label": "Level",
+      "value": "33"
+    },
+    {
+      "label": "HP",
+      "value": "1,001"
+    },
+    {
+      "label": "EXP",
+      "value": "63"
+    },
+    {
+      "label": "MP",
+      "value": "50"
+    },
+    {
+      "label": "Attack",
+      "value": "202"
+    },
+    {
+      "label": "Defense",
+      "value": "30"
+    },
+    {
+      "label": "Accuracy",
+      "value": "112"
+    },
+    {
+      "label": "Avoidability",
+      "value": "22"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Where it spawns",
+      "links": [
+        {
+          "name": "Sleepy Dungeon V",
+          "path": "/maps/sleepy-dungeon-v",
+          "detail": "Victoria Island, 23 spawn points"
+        },
+        {
+          "name": "Tree Dungeon, Forest Up North IX",
+          "path": "/maps/tree-dungeon-forest-up-north-ix",
+          "detail": "Victoria Island, 20 spawn points"
+        },
+        {
+          "name": "Hunting Ground in the Deep Forest II",
+          "path": "/maps/hunting-ground-in-the-deep-forest-ii",
+          "detail": "Victoria Island, 20 spawn points"
+        },
+        {
+          "name": "Sleepy Dungeon III",
+          "path": "/maps/sleepy-dungeon-iii",
+          "detail": "Victoria Island, 19 spawn points"
+        },
+        {
+          "name": "Tree Dungeon, Forest Up North VIII",
+          "path": "/maps/tree-dungeon-forest-up-north-viii",
+          "detail": "Victoria Island, 17 spawn points"
+        },
+        {
+          "name": "Tree Dungeon, Forest Up North VI",
+          "path": "/maps/tree-dungeon-forest-up-north-vi",
+          "detail": "Victoria Island, 15 spawn points"
+        },
+        {
+          "name": "Sleepy Dungeon IV",
+          "path": "/maps/sleepy-dungeon-iv",
+          "detail": "Victoria Island, 14 spawn points"
+        },
+        {
+          "name": "Tree Dungeon, Forest Up North VII",
+          "path": "/maps/tree-dungeon-forest-up-north-vii",
+          "detail": "Victoria Island, 13 spawn points"
+        },
+        {
+          "name": "Hunting Ground in the Deep Forest I",
+          "path": "/maps/hunting-ground-in-the-deep-forest-i",
+          "detail": "Victoria Island, 11 spawn points"
+        },
+        {
+          "name": "Tree Dungeon, Monkey Forest I",
+          "path": "/maps/tree-dungeon-monkey-forest-i",
+          "detail": "Victoria Island, 5 spawn points"
+        },
+        {
+          "name": "Tree Dungeon, Monkey Forest II",
+          "path": "/maps/tree-dungeon-monkey-forest-ii",
+          "detail": "Victoria Island, 4 spawn points"
+        },
+        {
+          "name": "Sleepy Dungeon I",
+          "path": "/maps/sleepy-dungeon-i",
+          "detail": "Victoria Island, 2 spawn points"
+        },
+        {
+          "name": "Sleepy Dungeon II",
+          "path": "/maps/sleepy-dungeon-ii",
+          "detail": "Victoria Island, 2 spawn points"
+        }
+      ],
+      "total": 13
+    },
+    {
+      "title": "Reported drops",
+      "links": [
+        {
+          "name": "Axe Pole Arm",
+          "path": "/items/axe-pole-arm",
+          "detail": "Polearm"
+        },
+        {
+          "name": "Battle Shield",
+          "path": "/items/battle-shield",
+          "detail": "Shield"
+        },
+        {
+          "name": "Black Knucklevest",
+          "path": "/items/black-knucklevest",
+          "detail": "Topwear, 0.08% historical rate"
+        },
+        {
+          "name": "Blue Potion (for Olaf's Training: Olaf's First Training)",
+          "path": "/items/blue-potion",
+          "detail": "Potions, 10% historical rate"
+        },
+        {
+          "name": "Bronze Pride",
+          "path": "/items/bronze-pride",
+          "detail": "Hat"
+        },
+        {
+          "name": "Curse Eye Tail",
+          "path": "/items/curse-eye-tail",
+          "detail": "Monster drops, 60% historical rate"
+        },
+        {
+          "name": "Great Brown Helmet",
+          "path": "/items/great-brown-helmet",
+          "detail": "Hat"
+        },
+        {
+          "name": "Green Distinction",
+          "path": "/items/green-distinction",
+          "detail": "Hat"
+        },
+        {
+          "name": "Green Matty",
+          "path": "/items/green-matty",
+          "detail": "Hat, 0.15% historical rate"
+        },
+        {
+          "name": "Green Pilfer",
+          "path": "/items/green-pilfer",
+          "detail": "Hat"
+        },
+        {
+          "name": "Orange Potion",
+          "path": "/items/orange-potion",
+          "detail": "Potions"
+        },
+        {
+          "name": "Orihalcon Ore",
+          "path": "/items/orihalcon-ore",
+          "detail": "Ores & ingots"
+        },
+        {
+          "name": "Scimitar",
+          "path": "/items/scimitar",
+          "detail": "Two-handed sword"
+        },
+        {
+          "name": "Sniper Potion",
+          "path": "/items/sniper-potion",
+          "detail": "Buff potions, 2% historical rate"
+        },
+        {
+          "name": "Topaz Ore",
+          "path": "/items/topaz-ore",
+          "detail": "Gems & gem ores"
+        },
+        {
+          "name": "Topwear MP Scroll: Greater",
+          "path": "/items/topwear-mp-scroll-greater",
+          "detail": "Topwear scrolls"
+        }
+      ],
+      "total": 16
+    },
+    {
+      "title": "Older-version drops",
+      "links": [
+        {
+          "name": "Arrows for Bows",
+          "path": "/items/arrows-for-bows",
+          "detail": "Arrows for bows, 3% historical rate"
+        },
+        {
+          "name": "Arrows for Crossbows",
+          "path": "/items/arrows-for-crossbows",
+          "detail": "Arrows for crossbows, 3% historical rate"
+        },
+        {
+          "name": "Black Knucklevest Pants",
+          "path": "/items/black-knucklevest-pants",
+          "detail": "Bottomwear, 0.08% historical rate"
+        },
+        {
+          "name": "Black Martial Arts Pants",
+          "path": "/items/black-martial-arts-pants",
+          "detail": "Bottomwear, 0.08% historical rate"
+        },
+        {
+          "name": "Blue Moonlight",
+          "path": "/items/blue-moonlight",
+          "detail": "Overall, 0.07% historical rate"
+        },
+        {
+          "name": "Bow Attack Scroll: Greater",
+          "path": "/items/bow-attack-scroll-greater",
+          "detail": "Bow scrolls, 0.03% historical rate"
+        },
+        {
+          "name": "Brown Piette",
+          "path": "/items/brown-piette",
+          "detail": "Topwear, 0.08% historical rate"
+        },
+        {
+          "name": "Brown Piette Pants",
+          "path": "/items/brown-piette-pants",
+          "detail": "Bottomwear, 0.08% historical rate"
+        },
+        {
+          "name": "Nakamaki",
+          "path": "/items/nakamaki",
+          "detail": "Spear, 0.05% historical rate"
+        },
+        {
+          "name": "Red Duke",
+          "path": "/items/red-duke",
+          "detail": "Hat, 0.15% historical rate"
+        },
+        {
+          "name": "Red Hwarang Shirt",
+          "path": "/items/red-hwarang-shirt",
+          "detail": "Topwear, 0.08% historical rate"
+        },
+        {
+          "name": "White Potion",
+          "path": "/items/white-potion",
+          "detail": "Potions, 10% historical rate"
+        }
+      ],
+      "total": 12
+    },
+    {
+      "title": "Quests that need it",
+      "links": [
+        {
+          "name": "Ronnie & the Fairies Building a New House (First Material Delivery for Building a New House)",
+          "path": "/quests/first-material-delivery-for-building-a-new-house",
+          "detail": "Level 41"
+        }
+      ],
+      "total": 1
+    }
+  ]
+}

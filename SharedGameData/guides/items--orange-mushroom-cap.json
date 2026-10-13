@@ -1,0 +1,99 @@
+{
+  "schemaVersion": 1,
+  "path": "/items/orange-mushroom-cap",
+  "kind": "item",
+  "name": "Orange Mushroom Cap",
+  "source": "CCPLZ",
+  "sourceUrl": "https://ccplz.cc/items/orange-mushroom-cap",
+  "checkedAt": "2026-10-13T15:03:06.551Z",
+  "notice": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial.",
+  "fields": [
+    {
+      "label": "Type",
+      "value": "Monster drops"
+    },
+    {
+      "label": "NPC sell price",
+      "value": "8 mesos"
+    },
+    {
+      "label": "Stack limit",
+      "value": "200"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Dropped by",
+      "links": [
+        {
+          "name": "Orange Mushroom",
+          "path": "/monsters/orange-mushroom",
+          "detail": "Level 8, 60% historical rate"
+        }
+      ],
+      "total": 1
+    },
+    {
+      "title": "Needed for quests",
+      "links": [
+        {
+          "name": "Biggs's Collection of Items",
+          "path": "/quests/biggs-s-collection-of-items",
+          "detail": "Level 3"
+        },
+        {
+          "name": "Collecting For Maya (Maya's First Collection)",
+          "path": "/quests/maya-s-first-collection",
+          "detail": "Level 30"
+        },
+        {
+          "name": "Donating to Henesys (Orange Mushroom Cap)",
+          "path": "/quests/donating-to-henesys-506023",
+          "detail": "Level 12"
+        },
+        {
+          "name": "Donating to Kerning City (Orange Mushroom Cap)",
+          "path": "/quests/donating-to-kerning-city-506120",
+          "detail": "Level 12"
+        },
+        {
+          "name": "Nella & Kerning City Citizen's Request (Don Hwang's Request)",
+          "path": "/quests/don-hwang-s-request",
+          "detail": "Level 10"
+        },
+        {
+          "name": "The Reason Behind the Mushroom Studies",
+          "path": "/quests/the-reason-behind-the-mushroom-studies",
+          "detail": "Level 10"
+        }
+      ],
+      "total": 6
+    },
+    {
+      "title": "Used in crafting",
+      "links": [
+        {
+          "name": "Brown Apprentice Hat",
+          "path": "/recipes/craft-brown-apprentice-hat",
+          "detail": ""
+        },
+        {
+          "name": "Brown Ghetto Beanie",
+          "path": "/recipes/craft-brown-ghetto-beanie",
+          "detail": ""
+        },
+        {
+          "name": "Brown Winter Hat",
+          "path": "/recipes/craft-brown-winter-hat",
+          "detail": ""
+        },
+        {
+          "name": "Hardwood Wand",
+          "path": "/recipes/craft-hardwood-wand",
+          "detail": ""
+        }
+      ],
+      "total": 4
+    }
+  ]
+}

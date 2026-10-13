@@ -1,0 +1,456 @@
+{
+  "schemaVersion": 1,
+  "path": "/items/white-potion",
+  "kind": "item",
+  "name": "White Potion",
+  "source": "CCPLZ",
+  "sourceUrl": "https://ccplz.cc/items/white-potion",
+  "checkedAt": "2026-10-13T15:13:16.452Z",
+  "notice": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial.",
+  "fields": [
+    {
+      "label": "Type",
+      "value": "Potions"
+    },
+    {
+      "label": "NPC sell price",
+      "value": "35 mesos"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Dropped by",
+      "links": [
+        {
+          "name": "Aqumander",
+          "path": "/monsters/aqumander",
+          "detail": "Level 43"
+        },
+        {
+          "name": "Cold Eye",
+          "path": "/monsters/cold-eye",
+          "detail": "Level 40, 10% historical rate"
+        },
+        {
+          "name": "Duskmander",
+          "path": "/monsters/duskmander",
+          "detail": "Level 50"
+        },
+        {
+          "name": "Echopus",
+          "path": "/monsters/echopus",
+          "detail": "Level 45"
+        },
+        {
+          "name": "Golden Stirge",
+          "path": "/monsters/golden-stirge",
+          "detail": "Level 42"
+        },
+        {
+          "name": "Jr. Balrog",
+          "path": "/monsters/jr-balrog",
+          "detail": "Level 80"
+        },
+        {
+          "name": "Myewood",
+          "path": "/monsters/myewood",
+          "detail": "Level 54"
+        },
+        {
+          "name": "Raffle",
+          "path": "/monsters/raffle",
+          "detail": "Level 40"
+        },
+        {
+          "name": "Rafflesia",
+          "path": "/monsters/rafflesia",
+          "detail": "Level 47"
+        },
+        {
+          "name": "Rotten Mushmom",
+          "path": "/monsters/rotten-mushmom",
+          "detail": "Level 60"
+        },
+        {
+          "name": "Zombie Lupin",
+          "path": "/monsters/zombie-lupin",
+          "detail": "Level 41, 10% historical rate"
+        }
+      ],
+      "total": 11
+    },
+    {
+      "title": "Also dropped by, in older versions",
+      "links": [
+        {
+          "name": "Black Ratz",
+          "path": "/monsters/black-ratz",
+          "detail": "Level 34, 10% historical rate"
+        },
+        {
+          "name": "Bloctopus",
+          "path": "/monsters/bloctopus",
+          "detail": "Level 35, 1% historical rate"
+        },
+        {
+          "name": "Blue Mushroom",
+          "path": "/monsters/blue-mushroom",
+          "detail": "Level 19, 10% historical rate"
+        },
+        {
+          "name": "Brown Teddy",
+          "path": "/monsters/brown-teddy",
+          "detail": "Level 30, 1% historical rate"
+        },
+        {
+          "name": "Buffoon",
+          "path": "/monsters/buffoon",
+          "detail": "Level 74, 1% historical rate"
+        },
+        {
+          "name": "Buffy",
+          "path": "/monsters/buffy",
+          "detail": "Level 62, 1% historical rate"
+        },
+        {
+          "name": "Cellion",
+          "path": "/monsters/cellion",
+          "detail": "Level 53, 10% historical rate"
+        },
+        {
+          "name": "Chronos",
+          "path": "/monsters/chronos",
+          "detail": "Level 37, 1% historical rate"
+        },
+        {
+          "name": "Coolie Zombie",
+          "path": "/monsters/coolie-zombie",
+          "detail": "Level 57, 10% historical rate"
+        },
+        {
+          "name": "Copper Drake",
+          "path": "/monsters/copper-drake",
+          "detail": "Level 45, 10% historical rate"
+        },
+        {
+          "name": "Croco",
+          "path": "/monsters/croco",
+          "detail": "Level 52, 10% historical rate"
+        },
+        {
+          "name": "Curse Eye",
+          "path": "/monsters/curse-eye",
+          "detail": "Level 33, 10% historical rate"
+        },
+        {
+          "name": "Dark Leatty",
+          "path": "/monsters/dark-leatty",
+          "detail": "Level 33, 10% historical rate"
+        },
+        {
+          "name": "Dark Nependeath",
+          "path": "/monsters/dark-nependeath",
+          "detail": "Level 47, 10% historical rate"
+        },
+        {
+          "name": "Dark Yeti",
+          "path": "/monsters/dark-yeti",
+          "detail": "Level 68, 10% historical rate"
+        },
+        {
+          "name": "Death Teddy",
+          "path": "/monsters/death-teddy",
+          "detail": "Level 85, 1% historical rate"
+        },
+        {
+          "name": "Deep Buffoon",
+          "path": "/monsters/deep-buffoon",
+          "detail": "Level 77, 1% historical rate"
+        },
+        {
+          "name": "Drake",
+          "path": "/monsters/drake",
+          "detail": "Level 50, 10% historical rate"
+        },
+        {
+          "name": "Evil Eye",
+          "path": "/monsters/evil-eye",
+          "detail": "Level 27, 10% historical rate"
+        },
+        {
+          "name": "Fire Boar",
+          "path": "/monsters/fire-boar",
+          "detail": "Level 32, 10% historical rate"
+        },
+        {
+          "name": "Firebomb",
+          "path": "/monsters/firebomb",
+          "detail": "Level 51, 10% historical rate"
+        },
+        {
+          "name": "Flyeye",
+          "path": "/monsters/flyeye",
+          "detail": "Level 41, 10% historical rate"
+        },
+        {
+          "name": "Ghost Pirate",
+          "path": "/monsters/ghost-pirate",
+          "detail": "Level 83, 1% historical rate"
+        },
+        {
+          "name": "Grupin",
+          "path": "/monsters/grupin",
+          "detail": "Level 53, 10% historical rate"
+        },
+        {
+          "name": "Iron Hog",
+          "path": "/monsters/iron-hog",
+          "detail": "Level 28, 10% historical rate"
+        },
+        {
+          "name": "Jr. Boogie 1",
+          "path": "/monsters/jr-boogie-1",
+          "detail": "Level 35, 10% historical rate"
+        },
+        {
+          "name": "Jr. Cellion",
+          "path": "/monsters/jr-cellion",
+          "detail": "Level 33, 10% historical rate"
+        },
+        {
+          "name": "Jr. Cerebes",
+          "path": "/monsters/jr-cerebes",
+          "detail": "Level 43, 10% historical rate"
+        },
+        {
+          "name": "Jr. Grupin",
+          "path": "/monsters/jr-grupin",
+          "detail": "Level 33, 10% historical rate"
+        },
+        {
+          "name": "Jr. Lioner",
+          "path": "/monsters/jr-lioner",
+          "detail": "Level 33, 10% historical rate"
+        },
+        {
+          "name": "Jr. Pepe",
+          "path": "/monsters/jr-pepe",
+          "detail": "Level 35, 10% historical rate"
+        },
+        {
+          "name": "Jr. Wraith",
+          "path": "/monsters/jr-wraith",
+          "detail": "Level 34, 10% historical rate"
+        },
+        {
+          "name": "Jr. Yeti",
+          "path": "/monsters/jr-yeti",
+          "detail": "Level 50, 10% historical rate"
+        },
+        {
+          "name": "King Block Golem",
+          "path": "/monsters/king-block-golem",
+          "detail": "Level 45, 1% historical rate"
+        },
+        {
+          "name": "Klock",
+          "path": "/monsters/klock",
+          "detail": "Level 71, 1% historical rate"
+        },
+        {
+          "name": "Lazy Buffy",
+          "path": "/monsters/lazy-buffy",
+          "detail": "Level 66, 1% historical rate"
+        },
+        {
+          "name": "Leatty",
+          "path": "/monsters/leatty",
+          "detail": "Level 32, 10% historical rate"
+        },
+        {
+          "name": "Ligator",
+          "path": "/monsters/ligator",
+          "detail": "Level 31, 10% historical rate"
+        },
+        {
+          "name": "Lioner",
+          "path": "/monsters/lioner",
+          "detail": "Level 53, 10% historical rate"
+        },
+        {
+          "name": "Lorang",
+          "path": "/monsters/lorang",
+          "detail": "Level 38, 10% historical rate"
+        },
+        {
+          "name": "Lunar Pixie",
+          "path": "/monsters/lunar-pixie",
+          "detail": "Level 45, 10% historical rate"
+        },
+        {
+          "name": "Lupin",
+          "path": "/monsters/lupin",
+          "detail": "Level 37, 10% historical rate"
+        },
+        {
+          "name": "Luster Pixie",
+          "path": "/monsters/luster-pixie",
+          "detail": "Level 52, 10% historical rate"
+        },
+        {
+          "name": "Malady",
+          "path": "/monsters/malady",
+          "detail": "Level 55, 10% historical rate"
+        },
+        {
+          "name": "Master Chronos",
+          "path": "/monsters/master-chronos",
+          "detail": "Level 49, 1% historical rate"
+        },
+        {
+          "name": "Master Robo",
+          "path": "/monsters/master-robo",
+          "detail": "Level 44, 10% historical rate"
+        },
+        {
+          "name": "Master Soul Teddy",
+          "path": "/monsters/master-soul-teddy",
+          "detail": "Level 67, 1% historical rate"
+        },
+        {
+          "name": "Mateon",
+          "path": "/monsters/mateon",
+          "detail": "Level 41, 10% historical rate"
+        },
+        {
+          "name": "Mecateon",
+          "path": "/monsters/mecateon",
+          "detail": "Level 48, 10% historical rate"
+        },
+        {
+          "name": "Nependeath",
+          "path": "/monsters/nependeath",
+          "detail": "Level 42, 10% historical rate"
+        },
+        {
+          "name": "Planey",
+          "path": "/monsters/planey",
+          "detail": "Level 38, 10% historical rate"
+        },
+        {
+          "name": "Plateon",
+          "path": "/monsters/plateon",
+          "detail": "Level 44, 10% historical rate"
+        },
+        {
+          "name": "Propelly",
+          "path": "/monsters/propelly",
+          "detail": "Level 37, 10% historical rate"
+        },
+        {
+          "name": "Ratz",
+          "path": "/monsters/ratz",
+          "detail": "Level 32, 10% historical rate"
+        },
+        {
+          "name": "Robo",
+          "path": "/monsters/robo",
+          "detail": "Level 41, 10% historical rate"
+        },
+        {
+          "name": "Soul Teddy",
+          "path": "/monsters/soul-teddy",
+          "detail": "Level 63, 1% historical rate"
+        },
+        {
+          "name": "Star Pixie",
+          "path": "/monsters/star-pixie",
+          "detail": "Level 35, 10% historical rate"
+        },
+        {
+          "name": "Tick-Tock",
+          "path": "/monsters/tick-tock",
+          "detail": "Level 40, 1% historical rate"
+        },
+        {
+          "name": "Tortie",
+          "path": "/monsters/tortie",
+          "detail": "Level 46, 10% historical rate"
+        },
+        {
+          "name": "Toy Trojan",
+          "path": "/monsters/toy-trojan",
+          "detail": "Level 39, 10% historical rate"
+        }
+      ],
+      "total": 60
+    },
+    {
+      "title": "Sold in",
+      "links": [
+        {
+          "name": "Arturo's Shop",
+          "path": "/shops/arturo-s-shop",
+          "detail": ""
+        },
+        {
+          "name": "Dr. Faymus's Shop",
+          "path": "/shops/dr-faymus-s-shop",
+          "detail": ""
+        },
+        {
+          "name": "Jane's Shop",
+          "path": "/shops/jane-s-shop",
+          "detail": ""
+        },
+        {
+          "name": "Len the Fairy's Shop",
+          "path": "/shops/len-the-fairy-s-shop",
+          "detail": ""
+        },
+        {
+          "name": "Luma's Shop",
+          "path": "/shops/luma-s-shop",
+          "detail": ""
+        },
+        {
+          "name": "Luna's Shop",
+          "path": "/shops/luna-s-shop",
+          "detail": ""
+        },
+        {
+          "name": "Mina's Shop",
+          "path": "/shops/mina-s-shop",
+          "detail": ""
+        },
+        {
+          "name": "Mr. Sweatbottom's Shop",
+          "path": "/shops/mr-sweatbottom-s-shop",
+          "detail": ""
+        },
+        {
+          "name": "Valen's Shop",
+          "path": "/shops/valen-s-shop",
+          "detail": ""
+        }
+      ],
+      "total": 9
+    },
+    {
+      "title": "Quest rewards",
+      "links": [
+        {
+          "name": "Another of Maya's Collections (Maya's Third Collection)",
+          "path": "/quests/maya-s-third-collection",
+          "detail": "Level 47"
+        },
+        {
+          "name": "Nella & Kerning City Citizen's Other Request (Dr. Faymus's Request)",
+          "path": "/quests/dr-faymus-s-request",
+          "detail": "Level 22"
+        }
+      ],
+      "total": 2
+    }
+  ]
+}

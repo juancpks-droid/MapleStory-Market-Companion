@@ -1,0 +1,330 @@
+{
+  "schemaVersion": 1,
+  "path": "/monsters/snail",
+  "kind": "monster",
+  "name": "Snail",
+  "source": "CCPLZ",
+  "sourceUrl": "https://ccplz.cc/monsters/snail",
+  "checkedAt": "2026-10-13T15:03:15.563Z",
+  "notice": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial.",
+  "fields": [
+    {
+      "label": "Level",
+      "value": "1"
+    },
+    {
+      "label": "HP",
+      "value": "45"
+    },
+    {
+      "label": "EXP",
+      "value": "2"
+    },
+    {
+      "label": "MP",
+      "value": "30"
+    },
+    {
+      "label": "Attack",
+      "value": "3"
+    },
+    {
+      "label": "Defense",
+      "value": "0"
+    },
+    {
+      "label": "Accuracy",
+      "value": "33"
+    },
+    {
+      "label": "Avoidability",
+      "value": "0"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Where it spawns",
+      "links": [
+        {
+          "name": "Snail Hunting Ground I",
+          "path": "/maps/snail-hunting-ground-i",
+          "detail": "Maple Island, 40 spawn points"
+        },
+        {
+          "name": "Snail Hunting Ground II",
+          "path": "/maps/snail-hunting-ground-ii",
+          "detail": "Maple Island, 29 spawn points"
+        },
+        {
+          "name": "Snail Hunting Ground III",
+          "path": "/maps/snail-hunting-ground-iii",
+          "detail": "Maple Island, 20 spawn points"
+        },
+        {
+          "name": "Thicket Around the Beach I",
+          "path": "/maps/thicket-around-the-beach-i",
+          "detail": "Victoria Island, 20 spawn points"
+        },
+        {
+          "name": "The Forest South of Ellinia",
+          "path": "/maps/the-forest-south-of-ellinia",
+          "detail": "Victoria Island, 15 spawn points"
+        },
+        {
+          "name": "Dangerous Forest",
+          "path": "/maps/dangerous-forest",
+          "detail": "Maple Island, 14 spawn points"
+        },
+        {
+          "name": "Hunting Ground Middle of the Forest I",
+          "path": "/maps/hunting-ground-middle-of-the-forest-i",
+          "detail": "Maple Island, 14 spawn points"
+        },
+        {
+          "name": "Thicket Around the Beach III",
+          "path": "/maps/thicket-around-the-beach-iii",
+          "detail": "Victoria Island, 13 spawn points"
+        },
+        {
+          "name": "Forest West of Henesys",
+          "path": "/maps/forest-west-of-henesys",
+          "detail": "Victoria Island, 13 spawn points"
+        },
+        {
+          "name": "In a Small Forest",
+          "path": "/maps/in-a-small-forest",
+          "detail": "Maple Island, 12 spawn points"
+        },
+        {
+          "name": "Rocky Road II",
+          "path": "/maps/rocky-road-ii",
+          "detail": "Victoria Island, 12 spawn points"
+        },
+        {
+          "name": "Snail Garden",
+          "path": "/maps/snail-garden",
+          "detail": "Maple Island, 11 spawn points"
+        },
+        {
+          "name": "East Rocky Mountain IV",
+          "path": "/maps/east-rocky-mountain-iv",
+          "detail": "Victoria Island, 11 spawn points"
+        },
+        {
+          "name": "The Field Up North of Ellinia",
+          "path": "/maps/the-field-up-north-of-ellinia",
+          "detail": "Victoria Island, 10 spawn points"
+        },
+        {
+          "name": "Hunting Ground Middle of the Forest II",
+          "path": "/maps/hunting-ground-middle-of-the-forest-ii",
+          "detail": "Maple Island, 10 spawn points"
+        },
+        {
+          "name": "Tomato Field",
+          "path": "/maps/tomato-field",
+          "detail": "Maple Island, 9 spawn points"
+        },
+        {
+          "name": "Rocky Road I",
+          "path": "/maps/rocky-road-i",
+          "detail": "Victoria Island, 9 spawn points"
+        },
+        {
+          "name": "Thicket Around the Beach II",
+          "path": "/maps/thicket-around-the-beach-ii",
+          "detail": "Victoria Island, 9 spawn points"
+        },
+        {
+          "name": "The Forest North of Ellinia",
+          "path": "/maps/the-forest-north-of-ellinia",
+          "detail": "Victoria Island, 9 spawn points"
+        },
+        {
+          "name": "Mushroom Garden (Rainbow Street)",
+          "path": "/maps/mushroom-garden",
+          "detail": "Maple Island, 7 spawn points"
+        },
+        {
+          "name": "Deep Forest",
+          "path": "/maps/deep-forest",
+          "detail": "Victoria Island, 7 spawn points"
+        },
+        {
+          "name": "The Forest East of Henesys",
+          "path": "/maps/the-forest-east-of-henesys",
+          "detail": "Victoria Island, 7 spawn points"
+        },
+        {
+          "name": "The Field West of Amherst",
+          "path": "/maps/the-field-west-of-amherst",
+          "detail": "Maple Island, 7 spawn points"
+        },
+        {
+          "name": "Snail Field of Flowers",
+          "path": "/maps/snail-field-of-flowers",
+          "detail": "Maple Island, 6 spawn points"
+        },
+        {
+          "name": "Perion Street Corner",
+          "path": "/maps/perion-street-corner",
+          "detail": "Victoria Island, 6 spawn points"
+        },
+        {
+          "name": "West Domain of Perion",
+          "path": "/maps/west-domain-of-perion",
+          "detail": "Victoria Island, 6 spawn points"
+        },
+        {
+          "name": "Kerning City Middle Forest III",
+          "path": "/maps/kerning-city-middle-forest-iii",
+          "detail": "Victoria Island, 5 spawn points"
+        },
+        {
+          "name": "3-Way Road-Split",
+          "path": "/maps/3-way-road-split",
+          "detail": "Victoria Island, 5 spawn points"
+        },
+        {
+          "name": "L Forest III",
+          "path": "/maps/l-forest-iii",
+          "detail": "Victoria Island, 4 spawn points"
+        },
+        {
+          "name": "The Field East of Amherst",
+          "path": "/maps/the-field-east-of-amherst",
+          "detail": "Maple Island, 3 spawn points"
+        },
+        {
+          "name": "The Forest of Wisdom",
+          "path": "/maps/the-forest-of-wisdom",
+          "detail": "Victoria Island, 3 spawn points"
+        },
+        {
+          "name": "East Domain of Perion",
+          "path": "/maps/east-domain-of-perion",
+          "detail": "Victoria Island, 3 spawn points"
+        },
+        {
+          "name": "Hunting Ground in the Deep Forest I",
+          "path": "/maps/hunting-ground-in-the-deep-forest-i",
+          "detail": "Victoria Island, 1 spawn point"
+        },
+        {
+          "name": "Hunting Ground in the Deep Forest II",
+          "path": "/maps/hunting-ground-in-the-deep-forest-ii",
+          "detail": "Victoria Island, 1 spawn point"
+        },
+        {
+          "name": "L Forest II",
+          "path": "/maps/l-forest-ii",
+          "detail": "Victoria Island, 1 spawn point"
+        },
+        {
+          "name": "Drake's Meal Table",
+          "path": "/maps/drake-s-meal-table",
+          "detail": "Victoria Island, 1 spawn point"
+        },
+        {
+          "name": "Beach Hunting Ground",
+          "path": "/maps/beach-hunting-ground",
+          "detail": "Victoria Island, 2 spawn points"
+        }
+      ],
+      "total": 37
+    },
+    {
+      "title": "Reported drops",
+      "links": [
+        {
+          "name": "Arrows for Bows",
+          "path": "/items/arrows-for-bows",
+          "detail": "Arrows for bows, 3% historical rate"
+        },
+        {
+          "name": "Arrows for Crossbows",
+          "path": "/items/arrows-for-crossbows",
+          "detail": "Arrows for crossbows, 3% historical rate"
+        },
+        {
+          "name": "Bronze Ore",
+          "path": "/items/bronze-ore",
+          "detail": "Ores & ingots"
+        },
+        {
+          "name": "Garnet Ore",
+          "path": "/items/garnet-ore",
+          "detail": "Gems & gem ores"
+        },
+        {
+          "name": "Green Headband",
+          "path": "/items/green-headband",
+          "detail": "Hat, 0.15% historical rate"
+        },
+        {
+          "name": "Green Skullcap",
+          "path": "/items/green-skullcap",
+          "detail": "Hat"
+        },
+        {
+          "name": "Green T-Shirt",
+          "path": "/items/green-t-shirt",
+          "detail": "Topwear"
+        },
+        {
+          "name": "Red Potion (for Olaf's Training: Olaf's First Training)",
+          "path": "/items/red-potion",
+          "detail": "Potions, 10% historical rate"
+        },
+        {
+          "name": "Red Striped Top",
+          "path": "/items/red-striped-top",
+          "detail": "Topwear"
+        },
+        {
+          "name": "Snail Shell",
+          "path": "/items/snail-shell",
+          "detail": "Monster drops, 60% historical rate"
+        },
+        {
+          "name": "Sword",
+          "path": "/items/sword",
+          "detail": "One-handed sword"
+        },
+        {
+          "name": "White Undershirt",
+          "path": "/items/white-undershirt",
+          "detail": "Topwear"
+        }
+      ],
+      "total": 12
+    },
+    {
+      "title": "Older-version drops",
+      "links": [
+        {
+          "name": "Cape Magic Def. Scroll: Intermediate",
+          "path": "/items/cape-magic-def-scroll-intermediate",
+          "detail": "Cape scrolls, 0.03% historical rate"
+        },
+        {
+          "name": "Green Apple",
+          "path": "/items/green-apple",
+          "detail": "Fruit & basic food, 2% historical rate"
+        }
+      ],
+      "total": 2
+    },
+    {
+      "title": "Quests that need it",
+      "links": [
+        {
+          "name": "Sam's Suggestion",
+          "path": "/quests/sam-s-suggestion",
+          "detail": "Level 1"
+        }
+      ],
+      "total": 1
+    }
+  ]
+}

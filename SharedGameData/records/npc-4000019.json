@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "item": {
+    "key": "gms83:4000019",
+    "name": "Snail Shell",
+    "id": "4000019",
+    "category": "Etc"
+  },
+  "kind": "npc",
+  "checkedAt": "2026-10-13T15:03:03.547Z",
+  "data": {
+    "sell": 1,
+    "buy": null,
+    "source": "CCPLZ",
+    "url": "https://ccplz.cc/items/snail-shell",
+    "checkedAt": "2026-10-13T15:03:03.547Z"
+  },
+  "provenance": {
+    "source": "CCPLZ",
+    "sourceUrl": "https://ccplz.cc/items/snail-shell",
+    "coverage": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial."
+  }
+}

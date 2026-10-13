@@ -1,0 +1,4 @@
+import {guide,isOld} from '../../../lib/guide-store.ts';
+import {guidePath,itemPath} from '../../../lib/guide.ts';
+import {identity} from '../../../lib/game-data.ts';
+export async function GET(request:Request){const u=new URL(request.url);let path=u.searchParams.get('path')||'',name='';try{if(u.searchParams.has('id')){const item=identity(u.searchParams.get('id')!);path=itemPath(item.name);name=item.name;}if(!guidePath(path))return Response.json({error:'Choose a valid item or related reference.'},{status:400});const data=await guide(path,name,u.searchParams.get('refresh')==='1');return Response.json({...data,stale:isOld(data)},{headers:{'Cache-Control':'private, max-age=60'}});}catch{return Response.json({error:'Reference unavailable right now. Your saved information is kept; try again later.'},{status:503});}}

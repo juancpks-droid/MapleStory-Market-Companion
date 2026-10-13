@@ -1,0 +1,147 @@
+{
+  "schemaVersion": 1,
+  "path": "/monsters/firebomb",
+  "kind": "monster",
+  "name": "Firebomb",
+  "source": "CCPLZ",
+  "sourceUrl": "https://ccplz.cc/monsters/firebomb",
+  "checkedAt": "2026-10-13T15:03:48.674Z",
+  "notice": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial.",
+  "fields": [
+    {
+      "label": "Level",
+      "value": "51"
+    },
+    {
+      "label": "HP",
+      "value": "1,934"
+    },
+    {
+      "label": "EXP",
+      "value": "148"
+    },
+    {
+      "label": "MP",
+      "value": "60"
+    },
+    {
+      "label": "Attack",
+      "value": "212"
+    },
+    {
+      "label": "Defense",
+      "value": "25"
+    },
+    {
+      "label": "Accuracy",
+      "value": "143"
+    },
+    {
+      "label": "Avoidability",
+      "value": "34"
+    },
+    {
+      "label": "Weak to",
+      "value": "Ice"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Where it spawns",
+      "links": [
+        {
+          "name": "The Cave of Trial III",
+          "path": "/maps/the-cave-of-trial-iii",
+          "detail": "Ossyria, 9 spawn points"
+        },
+        {
+          "name": "The Cave of Trial I",
+          "path": "/maps/the-cave-of-trial-i",
+          "detail": "Ossyria, 5 spawn points"
+        }
+      ],
+      "total": 2
+    },
+    {
+      "title": "Drops",
+      "links": [
+        {
+          "name": "Black Maro",
+          "path": "/items/black-maro",
+          "detail": "Hat, 0.15% historical rate"
+        },
+        {
+          "name": "Blood Moss Boots",
+          "path": "/items/blood-moss-boots",
+          "detail": "Shoes, 0.08% historical rate"
+        },
+        {
+          "name": "Blue Moonlight",
+          "path": "/items/blue-moonlight",
+          "detail": "Overall, 0.07% historical rate"
+        },
+        {
+          "name": "Blue Potion (for Olaf's Training: Olaf's First Training)",
+          "path": "/items/blue-potion",
+          "detail": "Potions, 10% historical rate"
+        },
+        {
+          "name": "Blue Shouldermail",
+          "path": "/items/blue-shouldermail",
+          "detail": "Topwear, 0.08% historical rate"
+        },
+        {
+          "name": "Blue Shouldermail Pants",
+          "path": "/items/blue-shouldermail-pants",
+          "detail": "Bottomwear, 0.08% historical rate"
+        },
+        {
+          "name": "Firebomb Flame",
+          "path": "/items/firebomb-flame",
+          "detail": "Monster drops, 60% historical rate"
+        },
+        {
+          "name": "Green Sonata",
+          "path": "/items/green-sonata",
+          "detail": "Hat, 0.15% historical rate"
+        },
+        {
+          "name": "Knuckle Mace",
+          "path": "/items/knuckle-mace",
+          "detail": "One-handed blunt, 0.07% historical rate"
+        },
+        {
+          "name": "Power Crystal Ore",
+          "path": "/items/power-crystal-ore",
+          "detail": "Crafting materials, 1% historical rate"
+        },
+        {
+          "name": "Red Seraphis",
+          "path": "/items/red-seraphis",
+          "detail": "Hat, 0.15% historical rate"
+        },
+        {
+          "name": "Sai",
+          "path": "/items/sai",
+          "detail": "Dagger, 0.05% historical rate"
+        },
+        {
+          "name": "The Magic Rock",
+          "path": "/items/the-magic-rock",
+          "detail": "Magic rocks, 1% historical rate"
+        },
+        {
+          "name": "Traus",
+          "path": "/items/traus",
+          "detail": "One-handed sword, 0.07% historical rate"
+        },
+        {
+          "name": "White Potion",
+          "path": "/items/white-potion",
+          "detail": "Potions, 10% historical rate"
+        }
+      ],
+      "total": 15
+    }
+  ]
+}

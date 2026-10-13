@@ -1,3 +1,4 @@
+import {smallSnapshot} from './guide-store.ts';
 import catalog from '../public/catalog.json' with {type:'json'};
 import {lookupIdentity} from './scrolls.ts';
 import {drops,npcReference} from './sources.ts';
@@ -23,6 +24,6 @@ export async function saveRecord(id:string,kind:Kind,data:any){if(!meaningful(ki
 }
 export async function reference(id:string,kind:Kind,refresh=false){const cached=await readRecord(id,kind);if(cached&&!refresh)return cached;
  const item=identity(id),key=item.key+'/'+kind;if(pending.has(key))return pending.get(key);if(pending.size>=4){if(cached)return cached;throw Error('Reference lookups are busy');}
- const job=(async()=>{try{const data=kind==='drops'?await drops(item.name):await npcReference(item.name,item.id);const saved=await saveRecord(id,kind,data);return saved||cached||{schemaVersion:1,item,kind,checkedAt:new Date().toISOString(),stale:false,data};}catch(e){if(cached)return cached;throw e;}finally{pending.delete(key)}})();pending.set(key,job);return job;
+ const job=(async()=>{try{const published=await smallSnapshot('records/'+kind+'-'+item.key.replace('gms83:','').replace(':','-')+'.json');if(published?.schemaVersion===1&&published.kind===kind&&published.item?.key===item.key&&meaningful(kind,published.data)&&Number.isFinite(Date.parse(published.checkedAt))&&(!cached||Date.parse(published.checkedAt)>Date.parse(cached.checkedAt)))return await saveRecord(id,kind,{...published.data,checkedAt:published.checkedAt});const data=kind==='drops'?await drops(item.name):await npcReference(item.name,item.id);const saved=await saveRecord(id,kind,data);return saved||cached||{schemaVersion:1,item,kind,checkedAt:new Date().toISOString(),stale:false,data};}catch(e){if(cached)return cached;throw e;}finally{pending.delete(key)}})();pending.set(key,job);return job;
 }
 export async function coverage(){const database=await db();const counts=await database.prepare('SELECT kind, COUNT(*) AS records FROM game_reference GROUP BY kind').all();return {schemaVersion:1,catalogItems:catalog.length,records:counts.results,refreshDays:7,scope:'NPC prices and monster/map references. Market offers are fetched separately.',sources:['NiaMeowDB','CCPLZ','MapleStory Quest']};}

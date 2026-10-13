@@ -1,0 +1,88 @@
+{
+  "schemaVersion": 1,
+  "path": "/items/goatee",
+  "kind": "item",
+  "name": "Goatee",
+  "source": "CCPLZ",
+  "sourceUrl": "https://ccplz.cc/items/goatee",
+  "checkedAt": "2026-10-13T15:03:30.641Z",
+  "notice": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial.",
+  "fields": [
+    {
+      "label": "Type",
+      "value": "Face accessory"
+    },
+    {
+      "label": "Source",
+      "value": "Cash Shop"
+    },
+    {
+      "label": "Required level",
+      "value": "0"
+    },
+    {
+      "label": "Required STR",
+      "value": "0"
+    },
+    {
+      "label": "Required DEX",
+      "value": "0"
+    },
+    {
+      "label": "Required INT",
+      "value": "0"
+    },
+    {
+      "label": "Required LUK",
+      "value": "0"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Related items",
+      "links": [
+        {
+          "name": "5 O'Clock Shadow",
+          "path": "/items/5-o-clock-shadow",
+          "detail": ""
+        },
+        {
+          "name": "5-Starred Red Paint (China)",
+          "path": "/items/5-starred-red-paint-china",
+          "detail": ""
+        },
+        {
+          "name": "6th Anniversary Party Glasses",
+          "path": "/items/6th-anniversary-party-glasses",
+          "detail": ""
+        },
+        {
+          "name": "Adhesive Bandage",
+          "path": "/items/adhesive-bandage",
+          "detail": ""
+        },
+        {
+          "name": "Allergic Reaction",
+          "path": "/items/allergic-reaction",
+          "detail": ""
+        },
+        {
+          "name": "Animal Face Accessory",
+          "path": "/items/animal-face-accessory",
+          "detail": ""
+        },
+        {
+          "name": "Apple Bubble Gum",
+          "path": "/items/apple-bubble-gum",
+          "detail": ""
+        },
+        {
+          "name": "Armillary Shield Paint (Portugal)",
+          "path": "/items/armillary-shield-paint-portugal",
+          "detail": ""
+        }
+      ],
+      "total": 8
+    }
+  ]
+}

@@ -1,4 +1,11 @@
-# Shared game reference database — first release
+# Shared game reference database
+
+PC 1.27.0 and Lite 0.4.0 include a shared field guide for items, monsters, maps, NPCs, shops, quests and recipes. Both read small public GitHub records, with local saved copies and existing source readers as fallbacks. See [operations and verification](OPERATIONS.md) for publishing, bounds, recovery and test results.
+
+The initial expanded snapshot contains 20 guide pages and 9 NPC/drop records. This is partial coverage, not a complete game database. GitHub's daily publisher grows coverage without running a crawler on a player's device. The workflow must be installed with workflow-scoped authorization before scheduled updates can run. No personal settings or player data are uploaded. Market data keeps its separate freshness and evidence rules.
+
+## Earlier foundation
+
 
 PC 1.26.0 and Lite 0.3.0 share a versioned record format and five starter records in `records/`. PC reads these small public GitHub files; Lite imports the same records into its persistent database. It contains public game references only, never player inventories or personal settings.
 

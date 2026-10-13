@@ -626,6 +626,26 @@ await Test("Shared database retains NPC data offline and rejects wrong identitie
  Check(SharedGameReference.ItemId("2040804","Scroll for Gloves for ATT 60%")=="classic:2040801");
 });
 
+
+await Test("Game guide validates identity, English and navigation paths",()=>Sync(()=>{
+ string html="<article data-ssr='monster'><h1>Snail</h1><dl><dt>HP</dt><dd>45</dd></dl><section><h2>Maps</h2><li><a href='/maps/snail-hunting-ground-i'>Snail Hunting Ground I</a><span>40 spawn points</span></li><a href='https://evil.test'>Bad</a></section></article>";
+ var guide=GameGuideReader.Parse(html,"/monsters/snail","Snail");Check(GameGuideReader.Valid(guide,guide.Path));Check(guide.Fields.Single().Value=="45"&&guide.Sections.Single().Links.Count==1);Check(guide.Sections[0].Links[0].Detail=="40 spawn points");
+ Throws(()=>GameGuideReader.Parse(html,"/items/snail"));Throws(()=>GameGuideReader.Parse(html,"/monsters/snail","Blue Snail"));Throws(()=>GameGuideReader.Parse(html.Replace("Snail</h1>","검</h1>"),"/monsters/snail"));
+ foreach(var path in new[]{"/items/../../secret","https://ccplz.cc/items/sword","/items/a?url=x","/items/a%2fb","/items/a/extra"})Check(!GameGuideReader.ValidPath(path));
+ Check(!GameGuideReader.Valid(guide with{SourceUrl="https://evil.test"},guide.Path));Check(!GameGuideReader.Valid(guide with{CheckedAt=DateTimeOffset.UtcNow.AddDays(1)},guide.Path));
+ Check(GameGuideReader.ItemPath("Scroll for Gloves for ATT 60%")=="/items/gloves-attack-scroll-intermediate");
+}));
+await Test("Bundled guide provides multiple entity types offline without network",async()=>{
+ using var reader=new GameGuideReader();string dir=Path.Combine(Path.GetTempPath(),"guide-offline-"+Guid.NewGuid().ToString("N"));var clock=Stopwatch.StartNew();
+ foreach(var path in new[]{"/items/blue-moonlight","/items/snail-shell","/monsters/snail","/maps/snail-hunting-ground-i","/quests/sam-s-suggestion","/recipes/craft-brown-skullcap"}){var guide=await reader.Lookup(dir,path,"",true,CancellationToken.None);Check(guide is not null&&GameGuideReader.Valid(guide,path),path);}
+ Check(clock.ElapsedMilliseconds<1000,"Offline guide was too slow");Check(await reader.Lookup(dir,"/items/not-an-item","",true,CancellationToken.None) is null);
+});
+await Test("Game guide rejects damaged local data and retains a valid bundled copy",async()=>{
+ string dir=Path.Combine(Path.GetTempPath(),"guide-corrupt-"+Guid.NewGuid().ToString("N"));Directory.CreateDirectory(Path.Combine(dir,"game-guide"));await File.WriteAllTextAsync(Path.Combine(dir,"game-guide","items--blue-moonlight.json"),"{broken");using var reader=new GameGuideReader();Check((await reader.Lookup(dir,"/items/blue-moonlight","Blue Moonlight",true,CancellationToken.None))?.Name=="Blue Moonlight");Check(await reader.Lookup(dir,"/items/blue-moonlight","Red Moonlight",true,CancellationToken.None) is null);
+});
+await Test("Guide bounds long reference lists while reporting total coverage",()=>Sync(()=>{
+ string links=string.Join("",Enumerable.Range(0,100).Select(i=>$"<li><a href='/maps/map-{i}'>Map {i}</a></li>"));var result=GameGuideReader.Parse("<article data-ssr='monster'><h1>Snail</h1><section><h2>Maps</h2>"+links+"</section></article>","/monsters/snail");Check(result.Sections[0].Total==100&&result.Sections[0].Links.Count==60);
+}));
 Directory.CreateDirectory("test-results");File.WriteAllText("test-results/results.json",JsonSerializer.Serialize(new{total=results.Count,failed=failures,results},Json.Options));Console.WriteLine($"{results.Count-failures}/{results.Count} passed");Environment.ExitCode=failures==0?0:1;
 
 

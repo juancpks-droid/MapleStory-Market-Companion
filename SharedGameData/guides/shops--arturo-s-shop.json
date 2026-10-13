@@ -1,0 +1,165 @@
+{
+  "schemaVersion": 1,
+  "path": "/shops/arturo-s-shop",
+  "kind": "shop",
+  "name": "Arturo's Shop",
+  "source": "CCPLZ",
+  "sourceUrl": "https://ccplz.cc/shops/arturo-s-shop",
+  "checkedAt": "2026-10-13T15:13:31.625Z",
+  "notice": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial.",
+  "fields": [
+    {
+      "label": "Shopkeeper",
+      "value": "Arturo"
+    },
+    {
+      "label": "Location",
+      "value": "Perion Department Store"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Reported stock",
+      "links": [
+        {
+          "name": "Arrows for Bows",
+          "path": "/items/arrows-for-bows",
+          "detail": "Arrows for bows, 1 mesos"
+        },
+        {
+          "name": "Arrows for Crossbows",
+          "path": "/items/arrows-for-crossbows",
+          "detail": "Arrows for crossbows, 1 mesos"
+        },
+        {
+          "name": "Apple",
+          "path": "/items/apple",
+          "detail": "Fruit & basic food, 20 mesos"
+        },
+        {
+          "name": "Egg",
+          "path": "/items/egg",
+          "detail": "Fruit & basic food, 30 mesos"
+        },
+        {
+          "name": "Pet Food (1 of 2)",
+          "path": "/items/pet-food",
+          "detail": "Pet food, 35 mesos"
+        },
+        {
+          "name": "Orange",
+          "path": "/items/orange",
+          "detail": "Fruit & basic food, 50 mesos"
+        },
+        {
+          "name": "Red Potion (for Olaf's Training: Olaf's First Training)",
+          "path": "/items/red-potion",
+          "detail": "Potions, 50 mesos"
+        },
+        {
+          "name": "Meat",
+          "path": "/items/meat",
+          "detail": "Fruit & basic food, 80 mesos"
+        },
+        {
+          "name": "Lemon",
+          "path": "/items/lemon",
+          "detail": "Fruit & basic food, 150 mesos"
+        },
+        {
+          "name": "Orange Potion",
+          "path": "/items/orange-potion",
+          "detail": "Potions, 150 mesos"
+        },
+        {
+          "name": "Blue Potion (for Olaf's Training: Olaf's First Training)",
+          "path": "/items/blue-potion",
+          "detail": "Potions, 220 mesos"
+        },
+        {
+          "name": "White Potion",
+          "path": "/items/white-potion",
+          "detail": "Potions, 350 mesos"
+        },
+        {
+          "name": "Return Scroll - Nearest Town (for Olaf's Training: Olaf's Second Training)",
+          "path": "/items/return-scroll-nearest-town",
+          "detail": "Return scrolls, 400 mesos"
+        },
+        {
+          "name": "Return Scroll to Perion",
+          "path": "/items/return-scroll-to-perion",
+          "detail": "Return scrolls, 500 mesos"
+        },
+        {
+          "name": "Sniper Potion",
+          "path": "/items/sniper-potion",
+          "detail": "Buff potions, 500 mesos"
+        },
+        {
+          "name": "Speed Potion",
+          "path": "/items/speed-potion",
+          "detail": "Buff potions, 500 mesos"
+        },
+        {
+          "name": "Subi Throwing Stars",
+          "path": "/items/subi-throwing-stars",
+          "detail": "Throwing stars, 500 mesos"
+        },
+        {
+          "name": "Warrior Potion",
+          "path": "/items/warrior-potion",
+          "detail": "Buff potions, 500 mesos"
+        },
+        {
+          "name": "Black Dye",
+          "path": "/items/black-dye",
+          "detail": "Crafting materials, 1,000 mesos"
+        },
+        {
+          "name": "Blue Dye",
+          "path": "/items/blue-dye",
+          "detail": "Crafting materials, 1,000 mesos"
+        },
+        {
+          "name": "Red Dye",
+          "path": "/items/red-dye",
+          "detail": "Crafting materials, 1,000 mesos"
+        },
+        {
+          "name": "White Dye",
+          "path": "/items/white-dye",
+          "detail": "Crafting materials, 1,000 mesos"
+        },
+        {
+          "name": "Yellow Dye",
+          "path": "/items/yellow-dye",
+          "detail": "Crafting materials, 1,000 mesos"
+        }
+      ],
+      "total": 23
+    },
+    {
+      "title": "Shopkeeper",
+      "links": [
+        {
+          "name": "Arturo",
+          "path": "/npcs/arturo",
+          "detail": ""
+        }
+      ],
+      "total": 1
+    },
+    {
+      "title": "Location",
+      "links": [
+        {
+          "name": "Perion Department Store",
+          "path": "/maps/perion-department-store",
+          "detail": ""
+        }
+      ],
+      "total": 1
+    }
+  ]
+}
