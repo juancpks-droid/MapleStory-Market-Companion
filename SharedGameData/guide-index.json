@@ -83,6 +83,11 @@
       "kind": "item"
     },
     {
+      "path": "/maps/deep-forest",
+      "name": "Deep Forest",
+      "kind": "map"
+    },
+    {
       "path": "/quests/donating-to-henesys-506023",
       "name": "Donating to Henesys (Orange Mushroom Cap)",
       "kind": "quest"
@@ -91,6 +96,11 @@
       "path": "/quests/donating-to-kerning-city-506120",
       "name": "Donating to Kerning City (Orange Mushroom Cap)",
       "kind": "quest"
+    },
+    {
+      "path": "/maps/east-rocky-mountain-iv",
+      "name": "East Rocky Mountain IV",
+      "kind": "map"
     },
     {
       "path": "/monsters/firebomb",
@@ -158,6 +168,16 @@
       "kind": "map"
     },
     {
+      "path": "/maps/hunting-ground-middle-of-the-forest-ii",
+      "name": "Hunting Ground Middle of the Forest II",
+      "kind": "map"
+    },
+    {
+      "path": "/maps/in-a-small-forest",
+      "name": "In a Small Forest",
+      "kind": "map"
+    },
+    {
       "path": "/quests/jane-s-final-challenge",
       "name": "Jane the Alchemist (Jane's Final Challenge)",
       "kind": "quest"
@@ -183,6 +203,11 @@
       "kind": "monster"
     },
     {
+      "path": "/maps/mushroom-garden",
+      "name": "Mushroom Garden (Rainbow Street)",
+      "kind": "map"
+    },
+    {
       "path": "/quests/don-hwang-s-request",
       "name": "Nella & Kerning City Citizen's Request (Don Hwang's Request)",
       "kind": "quest"
@@ -203,6 +228,11 @@
       "kind": "item"
     },
     {
+      "path": "/items/orange-potion",
+      "name": "Orange Potion",
+      "kind": "item"
+    },
+    {
       "path": "/monsters/plateon",
       "name": "Plateon",
       "kind": "monster"
@@ -216,6 +246,16 @@
       "path": "/items/red-moonlight",
       "name": "Red Moonlight",
       "kind": "item"
+    },
+    {
+      "path": "/maps/rocky-road-i",
+      "name": "Rocky Road I",
+      "kind": "map"
+    },
+    {
+      "path": "/maps/rocky-road-ii",
+      "name": "Rocky Road II",
+      "kind": "map"
     },
     {
       "path": "/quests/collecting-150-cursed-dolls",
@@ -238,6 +278,16 @@
       "kind": "monster"
     },
     {
+      "path": "/maps/snail-field-of-flowers",
+      "name": "Snail Field of Flowers",
+      "kind": "map"
+    },
+    {
+      "path": "/maps/snail-garden",
+      "name": "Snail Garden",
+      "kind": "map"
+    },
+    {
       "path": "/maps/snail-hunting-ground-i",
       "name": "Snail Hunting Ground I",
       "kind": "map"
@@ -258,6 +308,26 @@
       "kind": "item"
     },
     {
+      "path": "/maps/the-field-up-north-of-ellinia",
+      "name": "The Field Up North of Ellinia",
+      "kind": "map"
+    },
+    {
+      "path": "/maps/the-field-west-of-amherst",
+      "name": "The Field West of Amherst",
+      "kind": "map"
+    },
+    {
+      "path": "/maps/the-forest-east-of-henesys",
+      "name": "The Forest East of Henesys",
+      "kind": "map"
+    },
+    {
+      "path": "/maps/the-forest-north-of-ellinia",
+      "name": "The Forest North of Ellinia",
+      "kind": "map"
+    },
+    {
       "path": "/maps/the-forest-south-of-ellinia",
       "name": "The Forest South of Ellinia",
       "kind": "map"
@@ -273,8 +343,18 @@
       "kind": "map"
     },
     {
+      "path": "/maps/thicket-around-the-beach-ii",
+      "name": "Thicket Around the Beach II",
+      "kind": "map"
+    },
+    {
       "path": "/maps/thicket-around-the-beach-iii",
       "name": "Thicket Around the Beach III",
+      "kind": "map"
+    },
+    {
+      "path": "/maps/tomato-field",
+      "name": "Tomato Field",
       "kind": "map"
     },
     {

@@ -1,0 +1,88 @@
+{
+  "schemaVersion": 1,
+  "path": "/maps/deep-forest",
+  "kind": "map",
+  "name": "Deep Forest",
+  "source": "CCPLZ",
+  "sourceUrl": "https://ccplz.cc/maps/deep-forest",
+  "checkedAt": "2026-10-13T20:14:34.567Z",
+  "notice": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial.",
+  "fields": [
+    {
+      "label": "Region",
+      "value": "Victoria Island"
+    },
+    {
+      "label": "Street",
+      "value": "Dungeon"
+    },
+    {
+      "label": "Monster levels",
+      "value": "1 to 23"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Monsters",
+      "links": [
+        {
+          "name": "Snail",
+          "path": "/monsters/snail",
+          "detail": "Level 1"
+        },
+        {
+          "name": "Stump",
+          "path": "/monsters/stump",
+          "detail": "Level 5"
+        },
+        {
+          "name": "Slime",
+          "path": "/monsters/slime",
+          "detail": "Level 6"
+        },
+        {
+          "name": "Dark Stump",
+          "path": "/monsters/dark-stump",
+          "detail": "Level 11"
+        },
+        {
+          "name": "Green Mushroom",
+          "path": "/monsters/green-mushroom",
+          "detail": "Level 14"
+        },
+        {
+          "name": "Horny Mushroom",
+          "path": "/monsters/horny-mushroom",
+          "detail": "Level 22"
+        },
+        {
+          "name": "Dark Axe Stump",
+          "path": "/monsters/dark-axe-stump",
+          "detail": "Level 23"
+        }
+      ],
+      "total": 7
+    },
+    {
+      "title": "Connected maps",
+      "links": [
+        {
+          "name": "Damp Tree-Forest",
+          "path": "/maps/damp-tree-forest",
+          "detail": "Dungeon"
+        },
+        {
+          "name": "Perion Dungeon Entrance",
+          "path": "/maps/perion-dungeon-entrance",
+          "detail": "Warning Street"
+        },
+        {
+          "name": "Swampy Land in a Deep Forest",
+          "path": "/maps/swampy-land-in-a-deep-forest",
+          "detail": "Dungeon"
+        }
+      ],
+      "total": 3
+    }
+  ]
+}

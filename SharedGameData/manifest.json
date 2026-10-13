@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "publishedAt": "2026-10-13T17:08:30.487Z",
+  "publishedAt": "2026-10-13T20:14:43.591Z",
   "catalogItems": 12726,
-  "guideRecords": 56,
-  "referenceRecords": 19,
+  "guideRecords": 72,
+  "referenceRecords": 20,
   "entries": [
     {
       "file": "guides/items--5-o-clock-shadow.json",
@@ -132,6 +132,13 @@
       "kind": "item"
     },
     {
+      "file": "guides/items--orange-potion.json",
+      "bytes": 5894,
+      "sha256": "fade9321c6edaabf716f09b77251d136d8aff952cb82308feac27454ea978759",
+      "checkedAt": "2026-10-13T20:13:55.586Z",
+      "kind": "item"
+    },
+    {
       "file": "guides/items--purple-moonlight.json",
       "bytes": 2682,
       "sha256": "3089340eb36880c99589b1b98e64586f60349a7f1101ca489e1dfc1d30ddaf82",
@@ -167,6 +174,20 @@
       "kind": "map"
     },
     {
+      "file": "guides/maps--deep-forest.json",
+      "bytes": 2146,
+      "sha256": "c07549fb03aa7a79bad113fa96b898df64512011996ff277eb26f2d6fa582448",
+      "checkedAt": "2026-10-13T20:14:34.567Z",
+      "kind": "map"
+    },
+    {
+      "file": "guides/maps--east-rocky-mountain-iv.json",
+      "bytes": 1669,
+      "sha256": "afaab697537f363c2bc5dd6ec8a9d125a5076fcad0b43aa8234bd2014483e6f8",
+      "checkedAt": "2026-10-13T20:14:10.558Z",
+      "kind": "map"
+    },
+    {
       "file": "guides/maps--forest-west-of-henesys.json",
       "bytes": 2274,
       "sha256": "d50e71166050a9e464e8c464b6e21a0b806f6bac7d88f6f5fb1ef8d20117fc91",
@@ -178,6 +199,55 @@
       "bytes": 1548,
       "sha256": "c1e8a59c0f9ce671d2ffdd8ee447d717c2853dd2e56b9afb494463a4b2c6ed02",
       "checkedAt": "2026-10-13T17:08:24.491Z",
+      "kind": "map"
+    },
+    {
+      "file": "guides/maps--hunting-ground-middle-of-the-forest-ii.json",
+      "bytes": 1686,
+      "sha256": "87dd8b51f9ece078008f64224928c09ce1417c0a44542761e52008caae505720",
+      "checkedAt": "2026-10-13T20:14:16.583Z",
+      "kind": "map"
+    },
+    {
+      "file": "guides/maps--in-a-small-forest.json",
+      "bytes": 1623,
+      "sha256": "71906f85618401b93fcd9edd226a8af60f76ef8a00347cf96ad2eb5f0560b8cb",
+      "checkedAt": "2026-10-13T20:14:01.567Z",
+      "kind": "map"
+    },
+    {
+      "file": "guides/maps--mushroom-garden.json",
+      "bytes": 1386,
+      "sha256": "fe386549fbb883f45df891e5df7bfd506f31f6445bc0054aaa94990e395c9925",
+      "checkedAt": "2026-10-13T20:14:31.615Z",
+      "kind": "map"
+    },
+    {
+      "file": "guides/maps--rocky-road-i.json",
+      "bytes": 1733,
+      "sha256": "b763d37afb7a01d70e2da8363397448f9d21fd716f59f987a3e6e9e5e0ff1b29",
+      "checkedAt": "2026-10-13T20:14:22.561Z",
+      "kind": "map"
+    },
+    {
+      "file": "guides/maps--rocky-road-ii.json",
+      "bytes": 1968,
+      "sha256": "c87d8d230e6fedd4c5ea51961f42af9172ec0874c996a64d8e51a69bf9ad3e8f",
+      "checkedAt": "2026-10-13T20:14:04.594Z",
+      "kind": "map"
+    },
+    {
+      "file": "guides/maps--snail-field-of-flowers.json",
+      "bytes": 1507,
+      "sha256": "deceea5b410c5151849def4cbc08685d30bf0c7610b81202576c6386152119a7",
+      "checkedAt": "2026-10-13T20:14:43.568Z",
+      "kind": "map"
+    },
+    {
+      "file": "guides/maps--snail-garden.json",
+      "bytes": 1356,
+      "sha256": "596b570de0c6f4fa8b7d8ac3e5b3f74c10e4f78863933e112ec976ad9c8ed7a5",
+      "checkedAt": "2026-10-13T20:14:07.555Z",
       "kind": "map"
     },
     {
@@ -202,6 +272,34 @@
       "kind": "map"
     },
     {
+      "file": "guides/maps--the-field-up-north-of-ellinia.json",
+      "bytes": 1717,
+      "sha256": "37d9019ce345aedfe793a22533b703fe40ed04ef9dbf886aa03e675295891332",
+      "checkedAt": "2026-10-13T20:14:13.565Z",
+      "kind": "map"
+    },
+    {
+      "file": "guides/maps--the-field-west-of-amherst.json",
+      "bytes": 2674,
+      "sha256": "39cb1a378e8fceaf835e0325e454c3212d22bc4f1a2043c794510e743713299e",
+      "checkedAt": "2026-10-13T20:14:40.570Z",
+      "kind": "map"
+    },
+    {
+      "file": "guides/maps--the-forest-east-of-henesys.json",
+      "bytes": 2977,
+      "sha256": "eb44b959439d5aa680022cdd30f48455a9c9b2fb906e72dd16e53c8e6b5ba6b9",
+      "checkedAt": "2026-10-13T20:14:37.566Z",
+      "kind": "map"
+    },
+    {
+      "file": "guides/maps--the-forest-north-of-ellinia.json",
+      "bytes": 4069,
+      "sha256": "be6975674a23af0eceb31810c18b8d67d727ea708ae5ab7e86904feec46cf179",
+      "checkedAt": "2026-10-13T20:14:28.574Z",
+      "kind": "map"
+    },
+    {
       "file": "guides/maps--the-forest-south-of-ellinia.json",
       "bytes": 2432,
       "sha256": "3de23c7ef9a235b4c7d95d3a5d6ec0da90a11285eed1b8696780fcf17fa195fe",
@@ -216,10 +314,24 @@
       "kind": "map"
     },
     {
+      "file": "guides/maps--thicket-around-the-beach-ii.json",
+      "bytes": 1680,
+      "sha256": "8e7963edf1e7c79fd999618a82dab8a1c0604dc7d4faf9d98bc11ac6252fbe8f",
+      "checkedAt": "2026-10-13T20:14:25.584Z",
+      "kind": "map"
+    },
+    {
       "file": "guides/maps--thicket-around-the-beach-iii.json",
       "bytes": 1913,
       "sha256": "8e6decfa24294ba67b836bb127467567f0c6c0ae496a0b8617d29e1f04498d17",
       "checkedAt": "2026-10-13T17:08:27.493Z",
+      "kind": "map"
+    },
+    {
+      "file": "guides/maps--tomato-field.json",
+      "bytes": 1491,
+      "sha256": "a93f4fc4043d8f2e7273ae903b28e1fe94292095206d0e39b23b30e52143ae03",
+      "checkedAt": "2026-10-13T20:14:19.557Z",
       "kind": "map"
     },
     {
@@ -479,6 +591,13 @@
       "bytes": 681,
       "sha256": "192b20e61fd86ce64c26e17f94a0906cb5456b6a83b91f9ca698b188af97316e",
       "checkedAt": "2026-10-13T14:10:59.809Z",
+      "kind": "npc"
+    },
+    {
+      "file": "records/npc-2000001.json",
+      "bytes": 677,
+      "sha256": "60069565b8bad1b113251e89593122fa83f71eb68d66daa08a8caa882c01a47a",
+      "checkedAt": "2026-10-13T20:13:55.586Z",
       "kind": "npc"
     },
     {

@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "path": "/maps/hunting-ground-middle-of-the-forest-ii",
+  "kind": "map",
+  "name": "Hunting Ground Middle of the Forest II",
+  "source": "CCPLZ",
+  "sourceUrl": "https://ccplz.cc/maps/hunting-ground-middle-of-the-forest-ii",
+  "checkedAt": "2026-10-13T20:14:16.583Z",
+  "notice": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial.",
+  "fields": [
+    {
+      "label": "Region",
+      "value": "Maple Island"
+    },
+    {
+      "label": "Street",
+      "value": "Rainbow Street"
+    },
+    {
+      "label": "Monster levels",
+      "value": "1 to 8"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Monsters",
+      "links": [
+        {
+          "name": "Snail",
+          "path": "/monsters/snail",
+          "detail": "Level 1"
+        },
+        {
+          "name": "Blue Snail",
+          "path": "/monsters/blue-snail",
+          "detail": "Level 2"
+        },
+        {
+          "name": "Shroom",
+          "path": "/monsters/shroom",
+          "detail": "Level 3"
+        },
+        {
+          "name": "Red Snail",
+          "path": "/monsters/red-snail",
+          "detail": "Level 4"
+        },
+        {
+          "name": "Orange Mushroom",
+          "path": "/monsters/orange-mushroom",
+          "detail": "Level 8"
+        }
+      ],
+      "total": 5
+    },
+    {
+      "title": "Connected maps",
+      "links": [
+        {
+          "name": "The Field West of Amherst",
+          "path": "/maps/the-field-west-of-amherst",
+          "detail": "Rainbow Street"
+        }
+      ],
+      "total": 1
+    }
+  ]
+}

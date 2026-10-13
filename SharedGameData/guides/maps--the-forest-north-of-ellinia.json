@@ -1,0 +1,145 @@
+{
+  "schemaVersion": 1,
+  "path": "/maps/the-forest-north-of-ellinia",
+  "kind": "map",
+  "name": "The Forest North of Ellinia",
+  "source": "CCPLZ",
+  "sourceUrl": "https://ccplz.cc/maps/the-forest-north-of-ellinia",
+  "checkedAt": "2026-10-13T20:14:28.574Z",
+  "notice": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial.",
+  "fields": [
+    {
+      "label": "Region",
+      "value": "Victoria Island"
+    },
+    {
+      "label": "Street",
+      "value": "Victoria Road"
+    },
+    {
+      "label": "Monster levels",
+      "value": "1 to 17"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Monsters",
+      "links": [
+        {
+          "name": "Snail",
+          "path": "/monsters/snail",
+          "detail": "Level 1"
+        },
+        {
+          "name": "Stump",
+          "path": "/monsters/stump",
+          "detail": "Level 5"
+        },
+        {
+          "name": "Slime",
+          "path": "/monsters/slime",
+          "detail": "Level 6"
+        },
+        {
+          "name": "Axe Stump",
+          "path": "/monsters/axe-stump",
+          "detail": "Level 17"
+        }
+      ],
+      "total": 4
+    },
+    {
+      "title": "NPCs",
+      "links": [
+        {
+          "name": "Magician Job Instructor (The Forest North of Ellinia)",
+          "path": "/npcs/magician-job-instructor",
+          "detail": ""
+        }
+      ],
+      "total": 1
+    },
+    {
+      "title": "Connected maps",
+      "links": [
+        {
+          "name": "East Domain of Perion",
+          "path": "/maps/east-domain-of-perion",
+          "detail": "Victoria Road"
+        },
+        {
+          "name": "The Tree That Grew I",
+          "path": "/maps/the-tree-that-grew-i",
+          "detail": "Victoria Road"
+        },
+        {
+          "name": "The Tree Tunnel At the Forest Up North",
+          "path": "/maps/the-tree-tunnel-at-the-forest-up-north",
+          "detail": "Victoria Road"
+        },
+        {
+          "name": "Tree Dungeon, Forest Up North I",
+          "path": "/maps/tree-dungeon-forest-up-north-i",
+          "detail": "Victoria Road"
+        },
+        {
+          "name": "Tree Dungeon, Forest Up North II",
+          "path": "/maps/tree-dungeon-forest-up-north-ii",
+          "detail": "Victoria Road"
+        },
+        {
+          "name": "Tree Dungeon, Forest Up North III",
+          "path": "/maps/tree-dungeon-forest-up-north-iii",
+          "detail": "Victoria Road"
+        },
+        {
+          "name": "Tree Dungeon, Forest Up North IV",
+          "path": "/maps/tree-dungeon-forest-up-north-iv",
+          "detail": "Victoria Road"
+        },
+        {
+          "name": "Tree Dungeon, Forest Up North IX",
+          "path": "/maps/tree-dungeon-forest-up-north-ix",
+          "detail": "Victoria Road"
+        },
+        {
+          "name": "Tree Dungeon, Forest Up North V",
+          "path": "/maps/tree-dungeon-forest-up-north-v",
+          "detail": "Victoria Road"
+        },
+        {
+          "name": "Tree Dungeon, Forest Up North VI",
+          "path": "/maps/tree-dungeon-forest-up-north-vi",
+          "detail": "Victoria Road"
+        },
+        {
+          "name": "Tree Dungeon, Forest Up North VII",
+          "path": "/maps/tree-dungeon-forest-up-north-vii",
+          "detail": "Victoria Road"
+        },
+        {
+          "name": "Tree Dungeon, Forest Up North VIII",
+          "path": "/maps/tree-dungeon-forest-up-north-viii",
+          "detail": "Victoria Road"
+        }
+      ],
+      "total": 12
+    },
+    {
+      "title": "Quests set here",
+      "links": [
+        {
+          "name": "The Magician's Next Journey (Finding the Instructor)",
+          "path": "/quests/finding-the-instructor-20101",
+          "detail": "Level 30"
+        },
+        {
+          "name": "The Magician's Next Journey (Test of Qualification)",
+          "path": "/quests/test-of-qualification-20102",
+          "detail": "Level 30"
+        }
+      ],
+      "total": 2
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "schemaVersion": 1,
+  "path": "/maps/the-field-up-north-of-ellinia",
+  "kind": "map",
+  "name": "The Field Up North of Ellinia",
+  "source": "CCPLZ",
+  "sourceUrl": "https://ccplz.cc/maps/the-field-up-north-of-ellinia",
+  "checkedAt": "2026-10-13T20:14:13.565Z",
+  "notice": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial.",
+  "fields": [
+    {
+      "label": "Region",
+      "value": "Victoria Island"
+    },
+    {
+      "label": "Street",
+      "value": "Victoria Road"
+    },
+    {
+      "label": "Monster levels",
+      "value": "1 to 6"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Monsters",
+      "links": [
+        {
+          "name": "Snail",
+          "path": "/monsters/snail",
+          "detail": "Level 1"
+        },
+        {
+          "name": "Stump",
+          "path": "/monsters/stump",
+          "detail": "Level 5"
+        },
+        {
+          "name": "Slime",
+          "path": "/monsters/slime",
+          "detail": "Level 6"
+        }
+      ],
+      "total": 3
+    },
+    {
+      "title": "NPCs",
+      "links": [
+        {
+          "name": "Fully Bloomed Bluebell",
+          "path": "/npcs/fully-bloomed-bluebell",
+          "detail": ""
+        }
+      ],
+      "total": 1
+    },
+    {
+      "title": "Connected maps",
+      "links": [
+        {
+          "name": "Ellinia",
+          "path": "/maps/ellinia",
+          "detail": "Victoria Road"
+        },
+        {
+          "name": "The Tree That Grew I",
+          "path": "/maps/the-tree-that-grew-i",
+          "detail": "Victoria Road"
+        }
+      ],
+      "total": 2
+    }
+  ]
+}

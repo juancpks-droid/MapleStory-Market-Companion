@@ -1,0 +1,225 @@
+{
+  "schemaVersion": 1,
+  "path": "/items/orange-potion",
+  "kind": "item",
+  "name": "Orange Potion",
+  "source": "CCPLZ",
+  "sourceUrl": "https://ccplz.cc/items/orange-potion",
+  "checkedAt": "2026-10-13T20:13:55.586Z",
+  "notice": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial.",
+  "fields": [
+    {
+      "label": "Type",
+      "value": "Potions"
+    },
+    {
+      "label": "NPC sell price",
+      "value": "15 mesos"
+    },
+    {
+      "label": "NPC buy price (lowest recorded)",
+      "value": "150 mesos"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Dropped by",
+      "links": [
+        {
+          "name": "Curse Eye",
+          "path": "/monsters/curse-eye",
+          "detail": "Level 33"
+        },
+        {
+          "name": "Dark Axe Stump",
+          "path": "/monsters/dark-axe-stump",
+          "detail": "Level 23, 10% historical rate"
+        },
+        {
+          "name": "Fire Boar",
+          "path": "/monsters/fire-boar",
+          "detail": "Level 32, 10% historical rate"
+        },
+        {
+          "name": "Glowshroom",
+          "path": "/monsters/glowshroom",
+          "detail": "Level 39"
+        },
+        {
+          "name": "Horny Mushroom",
+          "path": "/monsters/horny-mushroom",
+          "detail": "Level 22, 10% historical rate"
+        },
+        {
+          "name": "Jr. Necki",
+          "path": "/monsters/jr-necki",
+          "detail": "Level 21, 10% historical rate"
+        },
+        {
+          "name": "Jr. Wraith",
+          "path": "/monsters/jr-wraith",
+          "detail": "Level 34"
+        },
+        {
+          "name": "Lorang",
+          "path": "/monsters/lorang",
+          "detail": "Level 38"
+        },
+        {
+          "name": "Lupin",
+          "path": "/monsters/lupin",
+          "detail": "Level 37"
+        },
+        {
+          "name": "Stirge",
+          "path": "/monsters/stirge",
+          "detail": "Level 20, 10% historical rate"
+        },
+        {
+          "name": "Wild Boar",
+          "path": "/monsters/wild-boar",
+          "detail": "Level 25, 10% historical rate"
+        },
+        {
+          "name": "Zombie Mushroom",
+          "path": "/monsters/zombie-mushroom",
+          "detail": "Level 24, 10% historical rate"
+        }
+      ],
+      "total": 12
+    },
+    {
+      "title": "Also dropped by, in older versions",
+      "links": [
+        {
+          "name": "Black Ratz",
+          "path": "/monsters/black-ratz",
+          "detail": "Level 34, 10% historical rate"
+        },
+        {
+          "name": "Blue Mushroom",
+          "path": "/monsters/blue-mushroom",
+          "detail": "Level 19, 10% historical rate"
+        },
+        {
+          "name": "Chirppy",
+          "path": "/monsters/chirppy",
+          "detail": "Level 31, 10% historical rate"
+        },
+        {
+          "name": "Dark Stump",
+          "path": "/monsters/dark-stump",
+          "detail": "Level 11, 10% historical rate"
+        },
+        {
+          "name": "Evil Eye",
+          "path": "/monsters/evil-eye",
+          "detail": "Level 27, 10% historical rate"
+        },
+        {
+          "name": "Fire Sentinel",
+          "path": "/monsters/fire-sentinel",
+          "detail": "Level 30, 10% historical rate"
+        },
+        {
+          "name": "Green Mushroom",
+          "path": "/monsters/green-mushroom",
+          "detail": "Level 14, 10% historical rate"
+        },
+        {
+          "name": "Ice Sentinel",
+          "path": "/monsters/ice-sentinel",
+          "detail": "Level 30, 10% historical rate"
+        },
+        {
+          "name": "Jr. Sentinel",
+          "path": "/monsters/jr-sentinel",
+          "detail": "Level 26, 10% historical rate"
+        },
+        {
+          "name": "Ratz",
+          "path": "/monsters/ratz",
+          "detail": "Level 32, 10% historical rate"
+        },
+        {
+          "name": "Sentinel",
+          "path": "/monsters/sentinel",
+          "detail": "Level 30, 10% historical rate"
+        },
+        {
+          "name": "Trixter",
+          "path": "/monsters/trixter",
+          "detail": "Level 25, 10% historical rate"
+        }
+      ],
+      "total": 12
+    },
+    {
+      "title": "Sold in",
+      "links": [
+        {
+          "name": "Arturo's Shop",
+          "path": "/shops/arturo-s-shop",
+          "detail": ""
+        },
+        {
+          "name": "Dr. Faymus's Shop",
+          "path": "/shops/dr-faymus-s-shop",
+          "detail": ""
+        },
+        {
+          "name": "Len the Fairy's Shop",
+          "path": "/shops/len-the-fairy-s-shop",
+          "detail": ""
+        },
+        {
+          "name": "Lucy's Shop",
+          "path": "/shops/lucy-s-shop",
+          "detail": ""
+        },
+        {
+          "name": "Luma's Shop",
+          "path": "/shops/luma-s-shop",
+          "detail": ""
+        },
+        {
+          "name": "Luna's Shop",
+          "path": "/shops/luna-s-shop",
+          "detail": ""
+        },
+        {
+          "name": "Mina's Shop",
+          "path": "/shops/mina-s-shop",
+          "detail": ""
+        },
+        {
+          "name": "Mr. Sweatbottom's Shop",
+          "path": "/shops/mr-sweatbottom-s-shop",
+          "detail": ""
+        },
+        {
+          "name": "Valen's Shop",
+          "path": "/shops/valen-s-shop",
+          "detail": ""
+        }
+      ],
+      "total": 9
+    },
+    {
+      "title": "Quest rewards",
+      "links": [
+        {
+          "name": "Caretaker's Ledger (The Filing Error)",
+          "path": "/quests/the-filing-error",
+          "detail": "Level 28"
+        },
+        {
+          "name": "Collecting For Maya (Maya's First Collection)",
+          "path": "/quests/maya-s-first-collection",
+          "detail": "Level 30"
+        }
+      ],
+      "total": 2
+    }
+  ]
+}

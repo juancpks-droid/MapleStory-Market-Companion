@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "path": "/maps/east-rocky-mountain-iv",
+  "kind": "map",
+  "name": "East Rocky Mountain IV",
+  "source": "CCPLZ",
+  "sourceUrl": "https://ccplz.cc/maps/east-rocky-mountain-iv",
+  "checkedAt": "2026-10-13T20:14:10.558Z",
+  "notice": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial.",
+  "fields": [
+    {
+      "label": "Region",
+      "value": "Victoria Island"
+    },
+    {
+      "label": "Street",
+      "value": "Victoria Road"
+    },
+    {
+      "label": "Monster levels",
+      "value": "1 to 23"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Monsters",
+      "links": [
+        {
+          "name": "Snail",
+          "path": "/monsters/snail",
+          "detail": "Level 1"
+        },
+        {
+          "name": "Dark Stump",
+          "path": "/monsters/dark-stump",
+          "detail": "Level 11"
+        },
+        {
+          "name": "Axe Stump",
+          "path": "/monsters/axe-stump",
+          "detail": "Level 17"
+        },
+        {
+          "name": "Dark Axe Stump",
+          "path": "/monsters/dark-axe-stump",
+          "detail": "Level 23"
+        }
+      ],
+      "total": 4
+    },
+    {
+      "title": "Connected maps",
+      "links": [
+        {
+          "name": "East Rocky Mountain III",
+          "path": "/maps/east-rocky-mountain-iii",
+          "detail": "Victoria Road"
+        },
+        {
+          "name": "East Rocky Mountain V",
+          "path": "/maps/east-rocky-mountain-v",
+          "detail": "Victoria Road"
+        }
+      ],
+      "total": 2
+    }
+  ]
+}
