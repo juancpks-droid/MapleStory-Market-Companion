@@ -55,24 +55,29 @@ public sealed partial class MainForm
   dropItemKey=key;int generation=++dropGeneration;dropLookupStop?.Cancel();dropLookupStop?.Dispose();dropLookupStop=CancellationTokenSource.CreateLinkedTokenSource(stop.Token);dropLookupStop.CancelAfter(dropLookupTimeout);var ct=dropLookupStop.Token;
   finderDrops.Rows.Clear();dropSourceUrl="";ShowDropSuggestions([]);
   if(item is null){finderDropNote.Text="Select an item to see monster drops and locations.";return;}
-  if(Offline){dropItemKey="";finderDropNote.Text="Offline: turn off Work offline, then select Load / retry to look up drop references.";return;}
+  if(Offline){var saved=await SharedGameReference.Drops(dataDirectory,item.Id,item.Name,true,ct);if(closing||IsDisposed||generation!=dropGeneration)return;if(saved is not null)ShowSharedDrops(saved);else finderDropNote.Text="Offline: no shared reference saved for this item yet.";dropItemKey="";return;}
   finderDropNote.Text="Looking up "+item.Name+"… Checking the item and related references; source requests are spaced.";
   string stage=source;var started=DateTimeOffset.UtcNow;using var progress=new System.Windows.Forms.Timer(){Interval=1000};
   progress.Tick+=(_,_)=>{if(!closing&&!IsDisposed&&generation==dropGeneration)finderDropNote.Text=$"Looking up {item.Name}… {(int)(DateTimeOffset.UtcNow-started).TotalSeconds}s elapsed • {stage} • Waiting for item, monster and map details. Requests are spaced; maximum wait 2 minutes.";};progress.Start();
   try{
+   var sharedTask=source=="Automatic"?SharedGameReference.Drops(dataDirectory,item.Id,item.Name,false,ct):Task.FromResult<DropLookupResult?>(null);
    await Task.Delay(500,ct);
-   DropLookupResult lookup;
-   if(source=="Automatic")lookup=await ReferenceFallback.Drops(item.Name,[("MapleClassic Wiki",c=>wikiReader.Lookup(item.Name,c)),("CCPLZ",c=>ccplzReader.Lookup(item.Name,c)),("MapleStory Quest",c=>questDropReader.Lookup(item.Name,c))],ct,message=>stage=message);
+   DropLookupResult lookup;var shared=sharedTask.IsCompletedSuccessfully?sharedTask.Result:null;
+   if(shared is not null)lookup=shared;
+   else if(source=="Automatic")lookup=await ReferenceFallback.Drops(item.Name,[("MapleClassic Wiki",c=>wikiReader.Lookup(item.Name,c)),("CCPLZ",c=>ccplzReader.Lookup(item.Name,c)),("MapleStory Quest",c=>questDropReader.Lookup(item.Name,c))],ct,message=>stage=message);
    else if(source=="NiaMeowDB")lookup=await DropFallback.Lookup(item.Name,dropReader.Lookup,ccplzReader.Lookup,ct,message=>stage=message);
    else lookup=new(source=="MapleClassic Wiki"?await wikiReader.Lookup(item.Name,ct):source=="CCPLZ"?await ccplzReader.Lookup(item.Name,ct):await questDropReader.Lookup(item.Name,ct),source,"");
    var result=lookup.Drops;
    if(closing||IsDisposed||generation!=dropGeneration||Offline)return;
-   ShowDropSuggestions(result.Suggestions);dropSourceUrl=result.SourceUrl;finderDropNote.Text=result.Item+" • "+lookup.Source+" • Checked "+result.CheckedAt.ToLocalTime().ToString("g")+"\n"+lookup.Notice+result.Message;
-   foreach(var monster in result.Monsters){int row=finderDrops.Rows.Add(monster.Name,monster.Locations.Count==0?"No recorded map information":string.Join("\n",monster.Locations.Take(5).Select(m=>m.Name))+(monster.Locations.Count>5?$"\n+ {monster.Locations.Count-5} more maps (click to see all)":""),monster.Evidence);finderDrops.Rows[row].Tag=monster;}
-   finderDrops.AutoResizeRows(DataGridViewAutoSizeRowsMode.AllCells);
+   ShowSharedDrops(lookup);
   }catch(OperationCanceledException){ShowDropTimeout(generation);}
   catch(Exception){if(!closing&&!IsDisposed&&generation==dropGeneration){dropItemKey="";finderDropNote.Text="Drop reference unavailable. Select Load / retry later, or use the website reference button. This does not mean the item has no drops.";}}
   finally{progress.Stop();}
+ }
+ void ShowSharedDrops(DropLookupResult lookup){var result=lookup.Drops;
+   ShowDropSuggestions(result.Suggestions);dropSourceUrl=result.SourceUrl;finderDropNote.Text=result.Item+" • "+lookup.Source+" • Checked "+result.CheckedAt.ToLocalTime().ToString("g")+"\n"+lookup.Notice+result.Message;
+   foreach(var monster in result.Monsters){int row=finderDrops.Rows.Add(monster.Name,monster.Locations.Count==0?"No recorded map information":string.Join("\n",monster.Locations.Take(5).Select(m=>m.Name))+(monster.Locations.Count>5?$"\n+ {monster.Locations.Count-5} more maps (click to see all)":""),monster.Evidence);finderDrops.Rows[row].Tag=monster;}
+   finderDrops.AutoResizeRows(DataGridViewAutoSizeRowsMode.AllCells);
  }
  void ShowDropTimeout(int generation){if(closing||IsDisposed||generation!=dropGeneration||Offline)return;dropItemKey="";finderDropNote.Text="The drop lookup timed out. No completed result was received. Select Load / retry, or switch to the other reference source.";}
 }

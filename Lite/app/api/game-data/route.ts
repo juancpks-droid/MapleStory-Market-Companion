@@ -1,0 +1,4 @@
+import {identity,readRecord,reference,coverage,Kind} from '../../../lib/game-data.ts';
+export async function GET(request:Request){const u=new URL(request.url);try{if(u.searchParams.get('coverage')==='1')return Response.json(await coverage());const id=u.searchParams.get('id')||'',kind=u.searchParams.get('kind');if(kind!=='drops'&&kind!=='npc')return Response.json({error:'Choose drops or npc'},{status:400});try{identity(id)}catch{return Response.json({error:'Select a verified catalog item'},{status:400})}
+ const result=u.searchParams.get('cached')==='1'?await readRecord(id,kind as Kind):await reference(id,kind as Kind,u.searchParams.get('refresh')==='1');if(!result)return new Response(null,{status:204});return Response.json(result,{headers:{'Cache-Control':'private, max-age=60'}});
+ }catch{return Response.json({error:'Reference temporarily unavailable. Existing saved data is kept.'},{status:503})}}

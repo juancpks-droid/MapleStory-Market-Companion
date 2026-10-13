@@ -1,0 +1,12 @@
+import assert from 'node:assert/strict';
+import {identity,meaningful} from './lib/game-data.ts';
+assert.equal(identity('2040804').key,identity('classic:2040801').key);
+assert.notEqual(identity('classic:2040801').key,identity('classic:2040802').key);
+assert.equal(identity('2000000').key,'gms83:2000000');
+assert.throws(()=>identity('../../private'));
+assert.throws(()=>identity('unknown'));
+assert.equal(meaningful('drops',{monsters:[]}),false);
+assert.equal(meaningful('npc',{sell:null,buy:null}),false);
+assert.equal(meaningful('npc',{sell:0,buy:null}),true);
+assert.equal(meaningful('drops',{monsters:[{name:'Snail'}]}),true);
+console.log('PASS: canonical cross-version keys, rate isolation, invalid IDs, empty-result protection and valid zero NPC value.');
