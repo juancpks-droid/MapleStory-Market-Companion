@@ -1,0 +1,44 @@
+{
+  "schemaVersion": 1,
+  "item": {
+    "key": "gms83:4000000",
+    "name": "Blue Snail Shell",
+    "id": "4000000",
+    "category": "Etc"
+  },
+  "kind": "drops",
+  "checkedAt": "2026-10-13T14:12:58.865Z",
+  "stale": false,
+  "data": {
+    "source": "NiaMeowDB",
+    "sourceUrl": "https://meowdb.com/msclassic/item-db/349",
+    "monsters": [
+      {
+        "name": "Blue Snail",
+        "url": "https://meowdb.com/msclassic/monsters/3",
+        "evidence": "Historical MapleSEA reference · likely, not confirmed Classic drop",
+        "maps": [
+          {
+            "name": "Snail Hunting Ground III",
+            "url": "https://meowdb.com/msclassic/maps/000000042"
+          },
+          {
+            "name": "Right Around Lith Harbor",
+            "url": "https://meowdb.com/msclassic/maps/010000010"
+          },
+          {
+            "name": "Forest West of Henesys",
+            "url": "https://meowdb.com/msclassic/maps/010001030"
+          }
+        ]
+      }
+    ],
+    "note": "Community reports and historical MSEA references. Historical references are not confirmed Classic World drops.",
+    "checkedAt": "2026-10-13T14:12:58.865Z"
+  },
+  "provenance": {
+    "source": "NiaMeowDB",
+    "sourceUrl": "https://meowdb.com/msclassic/item-db/349",
+    "coverage": "Reference data; community reports and historical evidence are labelled separately. Not independently verified Classic World facts."
+  }
+}

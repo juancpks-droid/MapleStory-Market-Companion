@@ -1,6 +1,8 @@
 # Shared game reference database — first release
 
-PC 1.26.0 and Lite 0.3.0 share a persistent, versioned reference service at the existing Lite site. It contains public game references only, never player inventories or personal settings.
+PC 1.26.0 and Lite 0.3.0 share a versioned record format and five starter records in `records/`. PC reads these small public GitHub files; Lite imports the same records into its persistent database. It contains public game references only, never player inventories or personal settings.
+
+The Lite host rejected direct non-browser API requests during testing. Therefore PC does not depend on that endpoint. Additional records learned by Lite are not automatically mirrored to GitHub yet; publishing a reviewed snapshot is currently required to expand the PC's shared coverage. Both clients retain their existing direct source readers for missing items. This is the foundation of a shared database, not a completed full-game import.
 
 ## Initial coverage
 
@@ -14,10 +16,10 @@ Every record has a schema version, namespaced identity, original source, source 
 - Bounded in-memory cache (200 entries) and at most four simultaneous reference retrievals per worker instance; identical in-flight item requests are shared.
 - Persistent D1 records survive process restarts. Existing source request spacing and per-host limits still apply.
 - Seven-day reference refresh age. Lite displays stale saved data before refreshing; source failures and empty results retain good records.
-- PC checks saved per-item files first, supports those records offline, and checks the shared service during its existing debounce. It does not wait past that debounce for the shared service; existing readers continue normally. Shared HTTP work has a 1.2-second limit and a 256 KiB response limit.
+- PC checks saved per-item files first, supports those records offline, and checks the public GitHub snapshot during its existing debounce. It does not wait past that debounce; existing readers continue normally. Shared HTTP work has a 1.2-second limit and a 256 KiB response limit.
 - UI result generations and cancellation still prevent an older search overwriting a newer item.
 
-## Read-only public API
+## Lite same-origin API
 
 `GET /api/game-data?id=1051025&kind=drops`
 

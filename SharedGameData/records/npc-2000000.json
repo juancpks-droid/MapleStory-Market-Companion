@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "item": {
+    "key": "gms83:2000000",
+    "name": "Red Potion",
+    "id": "2000000",
+    "category": "Use"
+  },
+  "kind": "npc",
+  "checkedAt": "2026-10-13T14:10:59.809Z",
+  "stale": false,
+  "data": {
+    "sell": 5,
+    "buy": 50,
+    "source": "MapleStory Quest",
+    "url": "https://maplestory.quest/items/2000000/Red-Potion",
+    "checkedAt": "2026-10-13T14:10:59.809Z"
+  },
+  "provenance": {
+    "source": "MapleStory Quest",
+    "sourceUrl": "https://maplestory.quest/items/2000000/Red-Potion",
+    "coverage": "Reference data; community reports and historical evidence are labelled separately. Not independently verified Classic World facts."
+  }
+}

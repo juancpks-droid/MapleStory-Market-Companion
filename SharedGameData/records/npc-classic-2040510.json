@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "item": {
+    "key": "classic:2040510",
+    "name": "Overall Armor DEX Scroll: Greater",
+    "id": "2040510",
+    "category": "Use"
+  },
+  "kind": "npc",
+  "checkedAt": "2026-10-13T14:23:58.612Z",
+  "stale": false,
+  "data": {
+    "sell": 1,
+    "buy": null,
+    "source": "CCPLZ",
+    "url": "https://ccplz.cc/items/overall-armor-dex-scroll-greater",
+    "checkedAt": "2026-10-13T14:23:58.612Z"
+  },
+  "provenance": {
+    "source": "CCPLZ",
+    "sourceUrl": "https://ccplz.cc/items/overall-armor-dex-scroll-greater",
+    "coverage": "Reference data; community reports and historical evidence are labelled separately. Not independently verified Classic World facts."
+  }
+}

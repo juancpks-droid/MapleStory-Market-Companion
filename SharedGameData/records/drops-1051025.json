@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "item": {
+    "key": "gms83:1051025",
+    "name": "Blue Moonlight",
+    "id": "1051025",
+    "category": "Equipment"
+  },
+  "kind": "drops",
+  "checkedAt": "2026-10-13T14:12:52.728Z",
+  "stale": false,
+  "data": {
+    "source": "NiaMeowDB",
+    "sourceUrl": "https://meowdb.com/msclassic/item-db/1138",
+    "monsters": [
+      {
+        "name": "Toy Trojan",
+        "url": "https://meowdb.com/msclassic/monsters/1029",
+        "evidence": "Historical MapleSEA reference · likely, not confirmed Classic drop",
+        "maps": []
+      },
+      {
+        "name": "Zombie Lupin",
+        "url": "https://meowdb.com/msclassic/monsters/38",
+        "evidence": "Historical MapleSEA reference · likely, not confirmed Classic drop",
+        "maps": [
+          {
+            "name": "Monkey Swamp III",
+            "url": "https://meowdb.com/msclassic/maps/010003097"
+          },
+          {
+            "name": "Tree Dungeon, Monkey Forest I",
+            "url": "https://meowdb.com/msclassic/maps/010002022"
+          },
+          {
+            "name": "Tree Dungeon, Monkey Forest II",
+            "url": "https://meowdb.com/msclassic/maps/010002024"
+          }
+        ]
+      },
+      {
+        "name": "Dark Nependeath",
+        "url": "https://meowdb.com/msclassic/monsters/1045",
+        "evidence": "Historical MapleSEA reference · likely, not confirmed Classic drop",
+        "maps": [
+          {
+            "name": "Strolling Path II",
+            "url": "https://meowdb.com/msclassic/maps/020000086"
+          }
+        ]
+      }
+    ],
+    "note": "Community reports and historical MSEA references. Historical references are not confirmed Classic World drops.",
+    "checkedAt": "2026-10-13T14:12:52.728Z"
+  },
+  "provenance": {
+    "source": "NiaMeowDB",
+    "sourceUrl": "https://meowdb.com/msclassic/item-db/1138",
+    "coverage": "Reference data; community reports and historical evidence are labelled separately. Not independently verified Classic World facts."
+  }
+}

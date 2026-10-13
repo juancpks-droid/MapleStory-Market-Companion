@@ -1,6 +1,7 @@
 import catalog from '../public/catalog.json' with {type:'json'};
 import {lookupIdentity} from './scrolls.ts';
 import {drops,npcReference} from './sources.ts';
+import starter from './game-data-seed.json' with {type:'json'};
 
 export type Kind='drops'|'npc';
 const catalogById=new Map(catalog.map(item=>[item.id,item]));
@@ -10,7 +11,7 @@ const TTL=7*86400000;
 export function identity(id:string){const item=catalogById.get(id);if(!item)throw Error('Unknown item');const source=lookupIdentity(item);return {key:('sourceId'in item?'classic:':'gms83:')+source.id,name:source.name,id:source.id,category:item.category};}
 export function meaningful(kind:Kind,data:any){return kind==='drops'?Array.isArray(data?.monsters)&&data.monsters.length>0:data?.sell!=null||data?.buy!=null;}
 let ready:Promise<D1Database>|undefined;
-async function db(){return ready??=(async()=>{try{const database=(await import('cloudflare:workers')).env.DB;if(!database)throw Error('Database unavailable');await database.prepare('CREATE TABLE IF NOT EXISTS game_reference (key TEXT PRIMARY KEY, item_key TEXT NOT NULL, kind TEXT NOT NULL, body TEXT NOT NULL, checked_at INTEGER NOT NULL)').run();return database;}catch(e){ready=undefined;throw e;}})();}
+async function db(){return ready??=(async()=>{try{const database=(await import('cloudflare:workers')).env.DB;if(!database)throw Error('Database unavailable');await database.prepare('CREATE TABLE IF NOT EXISTS game_reference (key TEXT PRIMARY KEY, item_key TEXT NOT NULL, kind TEXT NOT NULL, body TEXT NOT NULL, checked_at INTEGER NOT NULL)').run();if(starter.length)await database.batch(starter.map(r=>database.prepare('INSERT OR IGNORE INTO game_reference (key,item_key,kind,body,checked_at) VALUES (?,?,?,?,?)').bind(r.item.key+'/'+r.kind,r.item.key,r.kind,JSON.stringify(r),Date.parse(r.checkedAt))));return database;}catch(e){ready=undefined;throw e;}})();}
 export async function readRecord(id:string,kind:Kind){const item=identity(id),key=item.key+'/'+kind;let record=hot.get(key);if(!record){try{const row=await (await db()).prepare('SELECT body FROM game_reference WHERE key=?').bind(key).first<{body:string}>();if(row)record=JSON.parse(row.body);}catch{}if(record)remember(key,record);}return record?{...record,stale:Date.now()-Date.parse(record.checkedAt)>TTL}:null;}
 function remember(key:string,record:any){if(hot.size>=200)hot.delete(hot.keys().next().value!);hot.set(key,record);}
 export async function saveRecord(id:string,kind:Kind,data:any){if(!meaningful(kind,data))return null;const item=identity(id),key=item.key+'/'+kind;

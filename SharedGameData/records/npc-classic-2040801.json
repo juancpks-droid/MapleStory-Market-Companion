@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "item": {
+    "key": "classic:2040801",
+    "name": "Gloves Attack Scroll: Intermediate",
+    "id": "2040801",
+    "category": "Use"
+  },
+  "kind": "npc",
+  "checkedAt": "2026-10-13T14:23:58.568Z",
+  "stale": false,
+  "data": {
+    "sell": 1,
+    "buy": null,
+    "source": "CCPLZ",
+    "url": "https://ccplz.cc/items/gloves-attack-scroll-intermediate",
+    "checkedAt": "2026-10-13T14:23:58.568Z"
+  },
+  "provenance": {
+    "source": "CCPLZ",
+    "sourceUrl": "https://ccplz.cc/items/gloves-attack-scroll-intermediate",
+    "coverage": "Reference data; community reports and historical evidence are labelled separately. Not independently verified Classic World facts."
+  }
+}

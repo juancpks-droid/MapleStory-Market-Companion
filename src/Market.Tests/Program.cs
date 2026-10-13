@@ -617,11 +617,11 @@ await Test("All bundled Classic scrolls round-trip without mixing variants",()=>
 
 await Test("Shared database retains NPC data offline and rejects wrong identities",async()=>{
  var dir=Path.Combine(Path.GetTempPath(),"shared-reference-test-"+Guid.NewGuid().ToString("N"));Directory.CreateDirectory(Path.Combine(dir,"shared-game-data"));
- var path=Path.Combine(dir,"shared-game-data","npc-2000000.json");
- var record=new {schemaVersion=1,item=new{key="gms83:2000000"},kind="npc",checkedAt=DateTimeOffset.UtcNow,data=new{sell=5,buy=50,source="MapleStory Quest",url="https://maplestory.quest/items/2000000/Red-Potion"}};
- await File.WriteAllTextAsync(path,JsonSerializer.Serialize(record));var watch=Stopwatch.StartNew();var npc=await SharedGameReference.Npc(dir,"2000000","Red Potion",true,CancellationToken.None);Check(npc?.Sell==5&&npc.BuyMin==50);Check(watch.ElapsedMilliseconds<500,"Local reference read too slow");
- await File.WriteAllTextAsync(path,JsonSerializer.Serialize(record).Replace("gms83:2000000","gms83:2000001"));Check(await SharedGameReference.Npc(dir,"2000000","Red Potion",true,CancellationToken.None) is null);
- await File.WriteAllTextAsync(path,"{broken");Check(await SharedGameReference.Npc(dir,"2000000","Red Potion",true,CancellationToken.None) is null);
+ var path=Path.Combine(dir,"shared-game-data","npc-2000001.json");
+ var record=new {schemaVersion=1,item=new{key="gms83:2000001"},kind="npc",checkedAt=DateTimeOffset.UtcNow,data=new{sell=5,buy=50,source="MapleStory Quest",url="https://maplestory.quest/items/2000001/Red-Potion"}};
+ await File.WriteAllTextAsync(path,JsonSerializer.Serialize(record));var watch=Stopwatch.StartNew();var npc=await SharedGameReference.Npc(dir,"2000001","Blue Potion",true,CancellationToken.None);Check(npc?.Sell==5&&npc.BuyMin==50);Check(watch.ElapsedMilliseconds<500,"Local reference read too slow");
+ await File.WriteAllTextAsync(path,JsonSerializer.Serialize(record).Replace("gms83:2000001","gms83:2000002"));Check(await SharedGameReference.Npc(dir,"2000001","Blue Potion",true,CancellationToken.None) is null);
+ await File.WriteAllTextAsync(path,"{broken");Check(await SharedGameReference.Npc(dir,"2000001","Blue Potion",true,CancellationToken.None) is null);
  Check(SharedGameReference.ItemId("2040804","Scroll for Gloves for ATT 60%")=="classic:2040801");
 });
 
