@@ -53,6 +53,11 @@
       "kind": "item"
     },
     {
+      "path": "/recipes/craft-brown-winter-hat",
+      "name": "Brown Winter Hat",
+      "kind": "recipe"
+    },
+    {
       "path": "/quests/maya-s-first-collection",
       "name": "Collecting For Maya (Maya's First Collection)",
       "kind": "quest"
@@ -61,6 +66,11 @@
       "path": "/monsters/curse-eye",
       "name": "Curse Eye",
       "kind": "monster"
+    },
+    {
+      "path": "/maps/dangerous-forest",
+      "name": "Dangerous Forest",
+      "kind": "map"
     },
     {
       "path": "/items/dark-moonlight",
@@ -88,6 +98,11 @@
       "kind": "monster"
     },
     {
+      "path": "/maps/forest-west-of-henesys",
+      "name": "Forest West of Henesys",
+      "kind": "map"
+    },
+    {
       "path": "/items/general-s-mustache-1",
       "name": "General's Mustache (1)",
       "kind": "item"
@@ -98,8 +113,23 @@
       "kind": "item"
     },
     {
+      "path": "/items/gloves-attack-scroll-chaos",
+      "name": "Gloves Attack Scroll: Chaos",
+      "kind": "item"
+    },
+    {
+      "path": "/items/gloves-attack-scroll-greater",
+      "name": "Gloves Attack Scroll: Greater",
+      "kind": "item"
+    },
+    {
       "path": "/items/gloves-attack-scroll-intermediate",
       "name": "Gloves Attack Scroll: Intermediate",
+      "kind": "item"
+    },
+    {
+      "path": "/items/gloves-attack-scroll-lesser",
+      "name": "Gloves Attack Scroll: Lesser",
       "kind": "item"
     },
     {
@@ -118,6 +148,26 @@
       "kind": "item"
     },
     {
+      "path": "/recipes/craft-hardwood-wand",
+      "name": "Hardwood Wand",
+      "kind": "recipe"
+    },
+    {
+      "path": "/maps/hunting-ground-middle-of-the-forest-i",
+      "name": "Hunting Ground Middle of the Forest I",
+      "kind": "map"
+    },
+    {
+      "path": "/quests/jane-s-final-challenge",
+      "name": "Jane the Alchemist (Jane's Final Challenge)",
+      "kind": "quest"
+    },
+    {
+      "path": "/monsters/jr-yeti",
+      "name": "Jr. Yeti",
+      "kind": "monster"
+    },
+    {
       "path": "/items/long-brown-beard",
       "name": "Long Brown Beard",
       "kind": "item"
@@ -125,6 +175,11 @@
     {
       "path": "/monsters/mano",
       "name": "Mano",
+      "kind": "monster"
+    },
+    {
+      "path": "/monsters/mushmom",
+      "name": "Mushmom",
       "kind": "monster"
     },
     {
@@ -148,6 +203,11 @@
       "kind": "item"
     },
     {
+      "path": "/monsters/plateon",
+      "name": "Plateon",
+      "kind": "monster"
+    },
+    {
       "path": "/items/purple-moonlight",
       "name": "Purple Moonlight",
       "kind": "item"
@@ -156,6 +216,11 @@
       "path": "/items/red-moonlight",
       "name": "Red Moonlight",
       "kind": "item"
+    },
+    {
+      "path": "/quests/collecting-150-cursed-dolls",
+      "name": "Rowen the Fairy and the Cursed Doll (Collecting 150 Cursed Dolls)",
+      "kind": "quest"
     },
     {
       "path": "/npcs/sam",
@@ -178,14 +243,39 @@
       "kind": "map"
     },
     {
+      "path": "/maps/snail-hunting-ground-ii",
+      "name": "Snail Hunting Ground II",
+      "kind": "map"
+    },
+    {
+      "path": "/maps/snail-hunting-ground-iii",
+      "name": "Snail Hunting Ground III",
+      "kind": "map"
+    },
+    {
       "path": "/items/snail-shell",
       "name": "Snail Shell",
       "kind": "item"
     },
     {
+      "path": "/maps/the-forest-south-of-ellinia",
+      "name": "The Forest South of Ellinia",
+      "kind": "map"
+    },
+    {
       "path": "/quests/the-reason-behind-the-mushroom-studies",
       "name": "The Reason Behind the Mushroom Studies",
       "kind": "quest"
+    },
+    {
+      "path": "/maps/thicket-around-the-beach-i",
+      "name": "Thicket Around the Beach I",
+      "kind": "map"
+    },
+    {
+      "path": "/maps/thicket-around-the-beach-iii",
+      "name": "Thicket Around the Beach III",
+      "kind": "map"
     },
     {
       "path": "/items/white-potion",

@@ -1,0 +1,93 @@
+{
+  "schemaVersion": 1,
+  "path": "/maps/the-forest-south-of-ellinia",
+  "kind": "map",
+  "name": "The Forest South of Ellinia",
+  "source": "CCPLZ",
+  "sourceUrl": "https://ccplz.cc/maps/the-forest-south-of-ellinia",
+  "checkedAt": "2026-10-13T17:08:18.464Z",
+  "notice": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial.",
+  "fields": [
+    {
+      "label": "Region",
+      "value": "Victoria Island"
+    },
+    {
+      "label": "Street",
+      "value": "Victoria Road"
+    },
+    {
+      "label": "Monster levels",
+      "value": "1 to 17"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Monsters",
+      "links": [
+        {
+          "name": "Snail",
+          "path": "/monsters/snail",
+          "detail": "Level 1"
+        },
+        {
+          "name": "Stump",
+          "path": "/monsters/stump",
+          "detail": "Level 5"
+        },
+        {
+          "name": "Slime",
+          "path": "/monsters/slime",
+          "detail": "Level 6"
+        },
+        {
+          "name": "Green Mushroom",
+          "path": "/monsters/green-mushroom",
+          "detail": "Level 14"
+        },
+        {
+          "name": "Axe Stump",
+          "path": "/monsters/axe-stump",
+          "detail": "Level 17"
+        }
+      ],
+      "total": 5
+    },
+    {
+      "title": "Connected maps",
+      "links": [
+        {
+          "name": "Dungeon, Southern Forest I",
+          "path": "/maps/dungeon-southern-forest-i",
+          "detail": "Victoria Road"
+        },
+        {
+          "name": "Dungeon, Southern Forest II",
+          "path": "/maps/dungeon-southern-forest-ii",
+          "detail": "Victoria Road"
+        },
+        {
+          "name": "Dungeon, Southern Forest III",
+          "path": "/maps/dungeon-southern-forest-iii",
+          "detail": "Victoria Road"
+        },
+        {
+          "name": "Dungeon, Southern Forest IV",
+          "path": "/maps/dungeon-southern-forest-iv",
+          "detail": "Victoria Road"
+        },
+        {
+          "name": "The Forest East of Henesys",
+          "path": "/maps/the-forest-east-of-henesys",
+          "detail": "Victoria Road"
+        },
+        {
+          "name": "The Forest of Wisdom",
+          "path": "/maps/the-forest-of-wisdom",
+          "detail": "Victoria Road"
+        }
+      ],
+      "total": 6
+    }
+  ]
+}

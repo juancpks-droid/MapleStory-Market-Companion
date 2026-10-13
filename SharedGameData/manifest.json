@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "publishedAt": "2026-10-13T15:38:27.278Z",
+  "publishedAt": "2026-10-13T17:08:30.487Z",
   "catalogItems": 12726,
-  "guideRecords": 38,
-  "referenceRecords": 16,
+  "guideRecords": 56,
+  "referenceRecords": 19,
   "entries": [
     {
       "file": "guides/items--5-o-clock-shadow.json",
@@ -69,10 +69,31 @@
       "kind": "item"
     },
     {
+      "file": "guides/items--gloves-attack-scroll-chaos.json",
+      "bytes": 1325,
+      "sha256": "d61473e9948b50b9cc317fe038a110eb08fbf878bfbabcf9c35b3b0a9e6579d8",
+      "checkedAt": "2026-10-13T17:08:06.464Z",
+      "kind": "item"
+    },
+    {
+      "file": "guides/items--gloves-attack-scroll-greater.json",
+      "bytes": 2120,
+      "sha256": "7e48227ddd6ad37e0d0ffece735f5ec62d8ef867212ecd814fd7e2cb34973c6e",
+      "checkedAt": "2026-10-13T17:08:03.457Z",
+      "kind": "item"
+    },
+    {
       "file": "guides/items--gloves-attack-scroll-intermediate.json",
       "bytes": 2405,
       "sha256": "23882c8c173e5fd24b80865d51c4288d493f5d30795c38286f915d73cf8022eb",
       "checkedAt": "2026-10-13T15:03:09.553Z",
+      "kind": "item"
+    },
+    {
+      "file": "guides/items--gloves-attack-scroll-lesser.json",
+      "bytes": 1818,
+      "sha256": "a74a4cab3d4212e0f26297eceb421ad571aded20cf065182300637c2a03bdda0",
+      "checkedAt": "2026-10-13T17:08:00.459Z",
       "kind": "item"
     },
     {
@@ -139,10 +160,66 @@
       "kind": "item"
     },
     {
+      "file": "guides/maps--dangerous-forest.json",
+      "bytes": 1503,
+      "sha256": "bd0f2ce024ae6932f0d948ce3146774a6bd0e1af14cf56639237e2fd3d5c2419",
+      "checkedAt": "2026-10-13T17:08:21.495Z",
+      "kind": "map"
+    },
+    {
+      "file": "guides/maps--forest-west-of-henesys.json",
+      "bytes": 2274,
+      "sha256": "d50e71166050a9e464e8c464b6e21a0b806f6bac7d88f6f5fb1ef8d20117fc91",
+      "checkedAt": "2026-10-13T17:08:30.469Z",
+      "kind": "map"
+    },
+    {
+      "file": "guides/maps--hunting-ground-middle-of-the-forest-i.json",
+      "bytes": 1548,
+      "sha256": "c1e8a59c0f9ce671d2ffdd8ee447d717c2853dd2e56b9afb494463a4b2c6ed02",
+      "checkedAt": "2026-10-13T17:08:24.491Z",
+      "kind": "map"
+    },
+    {
       "file": "guides/maps--snail-hunting-ground-i.json",
       "bytes": 1428,
       "sha256": "3b1fe4dcc9309e8459cbe70bedd4fd1285d728a83f0107888aa83f5d86b292cf",
       "checkedAt": "2026-10-13T15:03:18.618Z",
+      "kind": "map"
+    },
+    {
+      "file": "guides/maps--snail-hunting-ground-ii.json",
+      "bytes": 1404,
+      "sha256": "84f7dcc6420c1d89a4ab8f1fbcc925a90bdf35b411d13429f27b9915f8289751",
+      "checkedAt": "2026-10-13T17:08:09.497Z",
+      "kind": "map"
+    },
+    {
+      "file": "guides/maps--snail-hunting-ground-iii.json",
+      "bytes": 1508,
+      "sha256": "2626baf5a8e326af8724f694c4933c152a5677eba74f47e29303eb6418813818",
+      "checkedAt": "2026-10-13T17:08:12.493Z",
+      "kind": "map"
+    },
+    {
+      "file": "guides/maps--the-forest-south-of-ellinia.json",
+      "bytes": 2432,
+      "sha256": "3de23c7ef9a235b4c7d95d3a5d6ec0da90a11285eed1b8696780fcf17fa195fe",
+      "checkedAt": "2026-10-13T17:08:18.464Z",
+      "kind": "map"
+    },
+    {
+      "file": "guides/maps--thicket-around-the-beach-i.json",
+      "bytes": 1788,
+      "sha256": "c15f3a4d4d9d54d96aecc4fb2b09ef717e5c6d6ebf08a83c0ef024829d546beb",
+      "checkedAt": "2026-10-13T17:08:15.486Z",
+      "kind": "map"
+    },
+    {
+      "file": "guides/maps--thicket-around-the-beach-iii.json",
+      "bytes": 1913,
+      "sha256": "8e6decfa24294ba67b836bb127467567f0c6c0ae496a0b8617d29e1f04498d17",
+      "checkedAt": "2026-10-13T17:08:27.493Z",
       "kind": "map"
     },
     {
@@ -160,6 +237,13 @@
       "kind": "monster"
     },
     {
+      "file": "guides/monsters--jr-yeti.json",
+      "bytes": 5237,
+      "sha256": "6eb909335ac41bd13f47c4cc499bd0d034ffdec5cf4fcf3be12640899548bf67",
+      "checkedAt": "2026-10-13T17:07:48.454Z",
+      "kind": "monster"
+    },
+    {
       "file": "guides/monsters--mano.json",
       "bytes": 7959,
       "sha256": "7ecfbe5d7ca4870ee37db6659adc3deb9b1a5b6bcb89902716f9e266b3e5260e",
@@ -167,10 +251,24 @@
       "kind": "monster"
     },
     {
+      "file": "guides/monsters--mushmom.json",
+      "bytes": 4492,
+      "sha256": "766def3dfb6cf8a84216f596b20368fc2180affd262a4cf174961bfe7b0c77bc",
+      "checkedAt": "2026-10-13T17:07:45.463Z",
+      "kind": "monster"
+    },
+    {
       "file": "guides/monsters--orange-mushroom.json",
       "bytes": 9719,
       "sha256": "a0defd3a7b11c9db3ea44b30c56a69fb80070c4c92d593832f897faabdfb9ab0",
       "checkedAt": "2026-10-13T15:38:03.222Z",
+      "kind": "monster"
+    },
+    {
+      "file": "guides/monsters--plateon.json",
+      "bytes": 4100,
+      "sha256": "9403ac003ac0b0a8745918468d7dcea411ec14fc5cd28683e08db3b22d79acde",
+      "checkedAt": "2026-10-13T17:07:51.463Z",
       "kind": "monster"
     },
     {
@@ -195,6 +293,13 @@
       "kind": "quest"
     },
     {
+      "file": "guides/quests--collecting-150-cursed-dolls.json",
+      "bytes": 2434,
+      "sha256": "46e92868a183251ff7375d0177ae37fc2162b6aaa5ba4d25be9f44eaf9040d16",
+      "checkedAt": "2026-10-13T17:07:57.488Z",
+      "kind": "quest"
+    },
+    {
       "file": "guides/quests--don-hwang-s-request.json",
       "bytes": 2333,
       "sha256": "708d8386048a734118b5536e611162e7db5880a8ca8fabd762f1bb5c051a1abc",
@@ -213,6 +318,13 @@
       "bytes": 2233,
       "sha256": "059f1170bd9661be07b95dffd4fae6653df6459955b7041a85b37cd99a9a11e0",
       "checkedAt": "2026-10-13T15:38:15.273Z",
+      "kind": "quest"
+    },
+    {
+      "file": "guides/quests--jane-s-final-challenge.json",
+      "bytes": 3029,
+      "sha256": "58afe48fcb2c8e16e788eced5a6df52540e0b4e999ab42ece6f0e1659b2db53a",
+      "checkedAt": "2026-10-13T17:07:54.498Z",
       "kind": "quest"
     },
     {
@@ -258,10 +370,24 @@
       "kind": "recipe"
     },
     {
+      "file": "guides/recipes--craft-brown-winter-hat.json",
+      "bytes": 2401,
+      "sha256": "3734fd0a084129e6af7f07a9f649dbb9789cb1494e79fe9e4ff1f317a852ca23",
+      "checkedAt": "2026-10-13T17:07:39.494Z",
+      "kind": "recipe"
+    },
+    {
       "file": "guides/recipes--craft-green-skullcap.json",
       "bytes": 2371,
       "sha256": "23f246911d304052bd02c6f49061a1a964e1e174405532f159780e87afbdb4f9",
       "checkedAt": "2026-10-13T15:38:00.276Z",
+      "kind": "recipe"
+    },
+    {
+      "file": "guides/recipes--craft-hardwood-wand.json",
+      "bytes": 2296,
+      "sha256": "4abd3baad9687c16e6b249c573dbb110b3d0b5e24cfdd2a97103fbd23c3dc8c7",
+      "checkedAt": "2026-10-13T17:07:42.463Z",
       "kind": "recipe"
     },
     {
@@ -377,10 +503,31 @@
       "kind": "npc"
     },
     {
+      "file": "records/npc-classic-2040800.json",
+      "bytes": 723,
+      "sha256": "3af747aefb8c23a90fa7b3dfc4f20a4621dc00456b168f09c664572dbfd33397",
+      "checkedAt": "2026-10-13T17:08:00.459Z",
+      "kind": "npc"
+    },
+    {
       "file": "records/npc-classic-2040801.json",
       "bytes": 740,
       "sha256": "320b713325977ee1445e197961fabe0d449080a9ed12dec835717ba0a6ef7803",
       "checkedAt": "2026-10-13T15:03:09.553Z",
+      "kind": "npc"
+    },
+    {
+      "file": "records/npc-classic-2040802.json",
+      "bytes": 725,
+      "sha256": "c445fb7651759e817e34ebd5befccbc522608361201eaf982a175eaf4c73d7ac",
+      "checkedAt": "2026-10-13T17:08:03.457Z",
+      "kind": "npc"
+    },
+    {
+      "file": "records/npc-classic-2040803.json",
+      "bytes": 719,
+      "sha256": "9f1aaa79d71551da94cc4d296a6fa55aeed5e806bedbe59a8d1596d09e47ced1",
+      "checkedAt": "2026-10-13T17:08:06.464Z",
       "kind": "npc"
     }
   ],

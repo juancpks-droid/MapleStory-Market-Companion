@@ -1,0 +1,192 @@
+{
+  "schemaVersion": 1,
+  "path": "/monsters/jr-yeti",
+  "kind": "monster",
+  "name": "Jr. Yeti",
+  "source": "CCPLZ",
+  "sourceUrl": "https://ccplz.cc/monsters/jr-yeti",
+  "checkedAt": "2026-10-13T17:07:48.454Z",
+  "notice": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial.",
+  "fields": [
+    {
+      "label": "Level",
+      "value": "50"
+    },
+    {
+      "label": "HP",
+      "value": "2,682"
+    },
+    {
+      "label": "EXP",
+      "value": "142"
+    },
+    {
+      "label": "MP",
+      "value": "0"
+    },
+    {
+      "label": "Attack",
+      "value": "261"
+    },
+    {
+      "label": "Defense",
+      "value": "15"
+    },
+    {
+      "label": "Accuracy",
+      "value": "116"
+    },
+    {
+      "label": "Avoidability",
+      "value": "29"
+    },
+    {
+      "label": "Weak to",
+      "value": "Fire"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Where it spawns",
+      "links": [
+        {
+          "name": "Watch Out for Icy Path I",
+          "path": "/maps/watch-out-for-icy-path-i",
+          "detail": "Ossyria, 26 spawn points"
+        },
+        {
+          "name": "Watch Out for Icy Path II",
+          "path": "/maps/watch-out-for-icy-path-ii",
+          "detail": "Ossyria, 18 spawn points"
+        },
+        {
+          "name": "The Crown-Flyer",
+          "path": "/maps/the-crown-flyer",
+          "detail": "Ossyria, 14 spawn points"
+        },
+        {
+          "name": "Icy Cold Field",
+          "path": "/maps/icy-cold-field",
+          "detail": "Ossyria, 11 spawn points"
+        },
+        {
+          "name": "Ice Valley I",
+          "path": "/maps/ice-valley-i",
+          "detail": "Ossyria, 10 spawn points"
+        },
+        {
+          "name": "Ice Valley II",
+          "path": "/maps/ice-valley-ii",
+          "detail": "Ossyria, 6 spawn points"
+        },
+        {
+          "name": "Sharp Cliff I",
+          "path": "/maps/sharp-cliff-i",
+          "detail": "Ossyria, 4 spawn points"
+        },
+        {
+          "name": "Cold Field II",
+          "path": "/maps/cold-field-ii",
+          "detail": "Ossyria, 4 spawn points"
+        }
+      ],
+      "total": 8
+    },
+    {
+      "title": "Drops",
+      "links": [
+        {
+          "name": "Blue Anakarune",
+          "path": "/items/blue-anakarune",
+          "detail": "Overall, 0.07% historical rate"
+        },
+        {
+          "name": "Blue Lumati",
+          "path": "/items/blue-lumati",
+          "detail": "Overall, 0.07% historical rate"
+        },
+        {
+          "name": "Blue Potion (for Olaf's Training: Olaf's First Training)",
+          "path": "/items/blue-potion",
+          "detail": "Potions, 10% historical rate"
+        },
+        {
+          "name": "Crescent Polearm",
+          "path": "/items/crescent-polearm",
+          "detail": "Polearm, 0.07% historical rate"
+        },
+        {
+          "name": "Crossbow Attack Scroll: Greater",
+          "path": "/items/crossbow-attack-scroll-greater",
+          "detail": "Crossbow scrolls, 0.03% historical rate"
+        },
+        {
+          "name": "Earring LUK Scroll: Intermediate",
+          "path": "/items/earring-luk-scroll-intermediate",
+          "detail": "Earring scrolls, 0.03% historical rate"
+        },
+        {
+          "name": "Elixir",
+          "path": "/items/elixir",
+          "detail": "Potions, 2% historical rate"
+        },
+        {
+          "name": "Gloves Attack Scroll: Intermediate",
+          "path": "/items/gloves-attack-scroll-intermediate",
+          "detail": "Gloves scrolls, 0.03% historical rate"
+        },
+        {
+          "name": "Jr. Yeti Skin",
+          "path": "/items/jr-yeti-skin",
+          "detail": "Monster drops, 60% historical rate"
+        },
+        {
+          "name": "Leather",
+          "path": "/items/leather",
+          "detail": "Monster drops, 5% historical rate"
+        },
+        {
+          "name": "Mithril Wolfskin",
+          "path": "/items/mithril-wolfskin",
+          "detail": "Gloves, 0.1% historical rate"
+        },
+        {
+          "name": "Purple Salt Shoes",
+          "path": "/items/purple-salt-shoes",
+          "detail": "Shoes, 0.08% historical rate"
+        },
+        {
+          "name": "Red Anakarune",
+          "path": "/items/red-anakarune",
+          "detail": "Overall, 0.07% historical rate"
+        },
+        {
+          "name": "Red Viper",
+          "path": "/items/red-viper",
+          "detail": "Bow, 0.05% historical rate"
+        },
+        {
+          "name": "Soft Feather",
+          "path": "/items/soft-feather",
+          "detail": "Crafting materials, 20% historical rate"
+        },
+        {
+          "name": "Umber Mantis",
+          "path": "/items/umber-mantis",
+          "detail": "Topwear, 0.08% historical rate"
+        },
+        {
+          "name": "Umber Mantis Pants",
+          "path": "/items/umber-mantis-pants",
+          "detail": "Bottomwear, 0.08% historical rate"
+        },
+        {
+          "name": "White Potion",
+          "path": "/items/white-potion",
+          "detail": "Potions, 10% historical rate"
+        }
+      ],
+      "total": 18
+    }
+  ]
+}

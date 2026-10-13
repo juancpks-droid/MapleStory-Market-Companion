@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "path": "/maps/snail-hunting-ground-iii",
+  "kind": "map",
+  "name": "Snail Hunting Ground III",
+  "source": "CCPLZ",
+  "sourceUrl": "https://ccplz.cc/maps/snail-hunting-ground-iii",
+  "checkedAt": "2026-10-13T17:08:12.493Z",
+  "notice": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial.",
+  "fields": [
+    {
+      "label": "Region",
+      "value": "Maple Island"
+    },
+    {
+      "label": "Street",
+      "value": "Maple Road"
+    },
+    {
+      "label": "Monster levels",
+      "value": "1 to 4"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Monsters",
+      "links": [
+        {
+          "name": "Snail",
+          "path": "/monsters/snail",
+          "detail": "Level 1"
+        },
+        {
+          "name": "Blue Snail",
+          "path": "/monsters/blue-snail",
+          "detail": "Level 2"
+        },
+        {
+          "name": "Red Snail",
+          "path": "/monsters/red-snail",
+          "detail": "Level 4"
+        }
+      ],
+      "total": 3
+    },
+    {
+      "title": "Connected maps",
+      "links": [
+        {
+          "name": "A Split Road",
+          "path": "/maps/a-split-road",
+          "detail": "Maple Road"
+        },
+        {
+          "name": "Snail Hunting Ground II",
+          "path": "/maps/snail-hunting-ground-ii",
+          "detail": "Maple Road"
+        }
+      ],
+      "total": 2
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 1,
+  "path": "/maps/thicket-around-the-beach-i",
+  "kind": "map",
+  "name": "Thicket Around the Beach I",
+  "source": "CCPLZ",
+  "sourceUrl": "https://ccplz.cc/maps/thicket-around-the-beach-i",
+  "checkedAt": "2026-10-13T17:08:15.486Z",
+  "notice": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial.",
+  "fields": [
+    {
+      "label": "Region",
+      "value": "Victoria Island"
+    },
+    {
+      "label": "Street",
+      "value": "Victoria Road"
+    },
+    {
+      "label": "Monster levels",
+      "value": "1 to 6"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Monsters",
+      "links": [
+        {
+          "name": "Snail",
+          "path": "/monsters/snail",
+          "detail": "Level 1"
+        },
+        {
+          "name": "Blue Snail",
+          "path": "/monsters/blue-snail",
+          "detail": "Level 2"
+        },
+        {
+          "name": "Red Snail",
+          "path": "/monsters/red-snail",
+          "detail": "Level 4"
+        },
+        {
+          "name": "Stump",
+          "path": "/monsters/stump",
+          "detail": "Level 5"
+        },
+        {
+          "name": "Slime",
+          "path": "/monsters/slime",
+          "detail": "Level 6"
+        }
+      ],
+      "total": 5
+    },
+    {
+      "title": "Connected maps",
+      "links": [
+        {
+          "name": "Right Around Lith Harbor",
+          "path": "/maps/right-around-lith-harbor",
+          "detail": "Victoria Road"
+        },
+        {
+          "name": "Thicket Around the Beach II",
+          "path": "/maps/thicket-around-the-beach-ii",
+          "detail": "Victoria Road"
+        }
+      ],
+      "total": 2
+    }
+  ]
+}

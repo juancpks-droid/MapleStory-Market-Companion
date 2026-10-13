@@ -1,0 +1,93 @@
+{
+  "schemaVersion": 1,
+  "path": "/maps/forest-west-of-henesys",
+  "kind": "map",
+  "name": "Forest West of Henesys",
+  "source": "CCPLZ",
+  "sourceUrl": "https://ccplz.cc/maps/forest-west-of-henesys",
+  "checkedAt": "2026-10-13T17:08:30.469Z",
+  "notice": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial.",
+  "fields": [
+    {
+      "label": "Region",
+      "value": "Victoria Island"
+    },
+    {
+      "label": "Street",
+      "value": "Victoria Road"
+    },
+    {
+      "label": "Monster levels",
+      "value": "1 to 10"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Monsters",
+      "links": [
+        {
+          "name": "Snail",
+          "path": "/monsters/snail",
+          "detail": "Level 1"
+        },
+        {
+          "name": "Blue Snail",
+          "path": "/monsters/blue-snail",
+          "detail": "Level 2"
+        },
+        {
+          "name": "Red Snail",
+          "path": "/monsters/red-snail",
+          "detail": "Level 4"
+        },
+        {
+          "name": "Stump",
+          "path": "/monsters/stump",
+          "detail": "Level 5"
+        },
+        {
+          "name": "Slime",
+          "path": "/monsters/slime",
+          "detail": "Level 6"
+        },
+        {
+          "name": "Pig",
+          "path": "/monsters/pig",
+          "detail": "Level 7"
+        },
+        {
+          "name": "Orange Mushroom",
+          "path": "/monsters/orange-mushroom",
+          "detail": "Level 8"
+        },
+        {
+          "name": "Ribbon Pig",
+          "path": "/monsters/ribbon-pig",
+          "detail": "Level 10"
+        }
+      ],
+      "total": 8
+    },
+    {
+      "title": "Connected maps",
+      "links": [
+        {
+          "name": "3-Way Road-Split",
+          "path": "/maps/3-way-road-split",
+          "detail": "Victoria Road"
+        },
+        {
+          "name": "A Hill West of Henesys",
+          "path": "/maps/a-hill-west-of-henesys",
+          "detail": "Victoria Road"
+        },
+        {
+          "name": "Forest West of Henesys",
+          "path": "/maps/forest-west-of-henesys",
+          "detail": "Victoria Road"
+        }
+      ],
+      "total": 3
+    }
+  ]
+}
