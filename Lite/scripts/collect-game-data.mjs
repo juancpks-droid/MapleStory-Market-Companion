@@ -2,6 +2,7 @@
 import {mkdir,readFile,writeFile,rename,readdir} from 'node:fs/promises';
 import {resolve,join} from 'node:path';
 import {createHash} from 'node:crypto';
+import {validReference} from '../lib/reference-contract.ts';
 import catalog from '../public/catalog.json' with {type:'json'};
 import {lookupIdentity} from '../lib/scrolls.ts';
 import {sourceGuide,itemPath,guidePath,validGuide,snapshotName} from '../lib/guide.ts';
@@ -24,7 +25,10 @@ while(queue.length&&attempted<budget){const path=queue.shift(),file=join(target,
   console.log('Updated '+path);
  }catch(e){failed.push(path);console.log('Kept previous data: '+path+' ('+e.message+')');}
 }
-state.queue=[...new Set([...queue,...failed])].slice(0,2000);await save(join(target,'collector-state.json'),state);
-const entries=[];for(const directory of ['guides','records'])for(const file of await readdir(join(target,directory))){if(!file.endsWith('.json'))continue;const bytes=await readFile(join(target,directory,file)),value=JSON.parse(bytes);if(bytes.length>262144)throw Error('Record exceeds size budget');if(directory==='guides'&&!validGuide(value,value.path))throw Error('Invalid published guide');entries.push({file:directory+'/'+file,bytes:bytes.length,sha256:createHash('sha256').update(bytes).digest('hex'),checkedAt:value.checkedAt,kind:value.kind});}
+state.queue=[...new Set([...queue,...failed])].slice(0,2000);
+const indexEntries=[];const entries=[];for(const directory of ['guides','records'])for(const file of await readdir(join(target,directory))){if(!file.endsWith('.json'))continue;const bytes=await readFile(join(target,directory,file)),value=JSON.parse(bytes);if(bytes.length>262144)throw Error('Record exceeds size budget');if(directory==='guides'&&!validGuide(value,value.path))throw Error('Invalid published guide');if(directory==='records'&&!validReference(value,value.item?.key,value.kind))throw Error('Invalid published reference: '+file);if(directory==='guides')indexEntries.push({path:value.path,name:value.name,kind:value.kind});entries.push({file:directory+'/'+file,bytes:bytes.length,sha256:createHash('sha256').update(bytes).digest('hex'),checkedAt:value.checkedAt,kind:value.kind});}
 await save(join(target,'manifest.json'),{schemaVersion:1,publishedAt:new Date().toISOString(),catalogItems:catalog.length,guideRecords:entries.filter(x=>x.file.startsWith('guides/')).length,referenceRecords:entries.filter(x=>x.file.startsWith('records/')).length,entries,partial:true,notice:'Selected factual references; coverage is incomplete. Market listings are separate.'});
 console.log(JSON.stringify({attempted,updated,failed:failed.length,queued:state.queue.length,records:entries.length}));
+
+const index={schemaVersion:1,partial:true,entries:indexEntries.sort((a,b)=>a.name.localeCompare(b.name)).slice(0,2000)};while(Buffer.byteLength(JSON.stringify(index,null,2))>250000)index.entries.pop();await save(join(target,'guide-index.json'),index);
+await save(join(target,'collector-state.json'),state);

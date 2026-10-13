@@ -19,3 +19,10 @@ for(const r of seed){assert.ok(validGuide(r,r.path),r.path);assert.ok(Buffer.byt
 const many=Array.from({length:100},(_,i)=>`<li><a href="/maps/map-${i}">Map ${i}</a></li>`).join('');const limited=parseGuide(fixture('monster','Snail',`<section><h2>Maps</h2>${many}</section>`),'/monsters/snail');assert.equal(limited.sections[0].links.length,60);assert.equal(limited.sections[0].total,100);
 const start=performance.now();for(let i=0;i<500;i++)parseGuide(fixture('monster','Snail',facts),'/monsters/snail');assert.ok(performance.now()-start<2000,'Small factual parser should remain fast');
 console.log(`PASS: ${seed.length} published references; item/monster/map/quest/recipe validation, English names, limits, unsafe-path rejection, identity mismatch and parser performance.`);
+
+for(const bad of [null,{}, {...record,notice:null}, {...record,fields:[null]}, {...record,fields:[{label:'HP',value:'검'}]}, {...record,sections:[null]}, {...record,sections:[{title:'Maps',total:-1,links:[]}]}, {...record,checkedAt:'1999-01-01'}])assert.equal(validGuide(bad,record.path),false);
+const {searchGuide}=await import('./lib/guide-contract.ts');
+const directory=seed.map(({path,name,kind})=>({path,name,kind}));assert.ok(searchGuide(directory,'snail','monster').every(e=>e.kind==='monster'&&e.name.toLowerCase().includes('snail')));assert.equal(searchGuide(directory,'not a real thing').length,0);assert.ok(searchGuide(directory,'').length<=40);
+const structured=fixture('recipe','Test Hat','<dl><dt>Skill</dt><dd>Tailoring</dd></dl>')+'<script id="ccplz-entity">'+JSON.stringify({recipe:{facts:{meso:300,resultCount:1,success:60},ingredients:[{name:'Snail Shell',canonical_slug:'snail-shell',quantity:5}]}})+'</script>';
+const recipe=parseGuide(structured,'/recipes/test-hat');assert.equal(recipe.fields.find(f=>f.label==='Crafting fee (mesos)').value,'300');assert.equal(recipe.sections.find(s=>s.title==='Ingredients').links[0].detail,'Quantity: 5');
+console.log('PASS: malformed caches, English facts, directory filtering, and structured recipe details.');

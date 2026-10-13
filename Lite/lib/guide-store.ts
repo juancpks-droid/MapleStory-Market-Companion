@@ -1,6 +1,8 @@
 import seed from './guide-seed.json' with {type:'json'};
 import type {Guide} from './guide.ts';
 import {guidePath,validGuide,sourceGuide,snapshotName} from './guide.ts';
+import {validEntry} from './guide-contract.ts';
+import type {GuideEntry} from './guide-contract.ts';
 const memory=new Map<string,Guide>(),pending=new Map<string,Promise<Guide>>(),misses=new Map<string,number>();
 const week=7*86400000;
 export const snapshotBase='https://raw.githubusercontent.com/juancpks-droid/MapleStory-Market-Companion/main/SharedGameData/';
@@ -18,3 +20,11 @@ export async function guide(path:string,name='',refresh=false):Promise<Guide>{
  const job=(async()=>{try{const published=await smallSnapshot('guides/'+snapshotName(path));if(validGuide(published,path,name)&&(!saved||Date.parse(published.checkedAt)>Date.parse(saved.checkedAt)))return await put(published);const fresh=await sourceGuide(path,name);return await put(fresh);}catch(e){if(misses.size>=200)misses.delete(misses.keys().next().value!);misses.set(path,Date.now()+300000);if(saved)return saved;throw e;}finally{pending.delete(path)}})();pending.set(path,job);return job;
 }
 export const isOld=(record:Guide)=>Date.now()-Date.parse(record.checkedAt)>week;
+let directory:GuideEntry[]|undefined,indexAt=0,indexPending:Promise<GuideEntry[]>|undefined;
+export async function guideDirectory(){
+ if(directory&&Date.now()-indexAt<3600000)return directory;
+ return indexPending??=(async()=>{try{const value=await smallSnapshot('guide-index.json');
+ if(value?.schemaVersion===1&&Array.isArray(value.entries)&&value.entries.length<=2000&&value.entries.every(validEntry))directory=value.entries;
+ return directory??=seed.filter(r=>validGuide(r,r.path)).map(({path,name,kind})=>({path,name,kind}));
+ }finally{indexAt=Date.now();indexPending=undefined;}})();
+}

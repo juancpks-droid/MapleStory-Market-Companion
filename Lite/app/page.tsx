@@ -148,7 +148,7 @@ export default function Home(){
 
  {!busy&&data.sourceUrl&&<details className="fallback"><summary>Website fallback</summary><p>Use only if the information above is missing.</p><a href={data.sourceUrl} target="_blank" rel="noreferrer">Open original source ↗</a></details>}</section>}
 
- <footer>Maple Market Lite · 0.4.0<br/>Independent companion · Item artwork © Nexon</footer></main>
+ <footer>Maple Market Lite · 0.5.0<br/>Independent companion · Item artwork © Nexon</footer></main>
 
  </div>
 

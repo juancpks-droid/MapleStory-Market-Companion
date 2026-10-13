@@ -42,3 +42,25 @@ An isolated Velopack 1.26.0→1.27.0 package test downloaded and verified an upd
 ## First scheduled-pipeline verification
 
 The manual run on October 13, 2026 passed validation, retrieved 18 of 18 attempted pages, and published commit 34ea6ab. The resulting snapshot contains 38 guide pages and 16 NPC/drop records. The daily schedule is enabled at 09:23 UTC; GitHub may delay scheduled runs. Run evidence: https://github.com/juancpks-droid/MapleStory-Market-Companion/actions/runs/38423585273
+
+## 1.28.0 / Lite 0.5.0 completion checklist
+
+This checklist describes implemented support, not exhaustive game-data coverage.
+
+1. Shared versioned records: same guide shape on PC, Lite and GitHub.
+2. Item identity: namespaced catalog IDs and scroll success-rate isolation.
+3. Item facts: stats, requirements and NPC reference prices where supplied.
+4. Drops: source-labelled reported and historical evidence remain distinct.
+5. Monsters: facts and related items/maps in the guide.
+6. Maps: monster/NPC/connected-map references inside the guide.
+7. NPCs: factual details and location/shop links where supplied.
+8. Shops: source-reported stock and prices; separate from market offers.
+9. Quests: requirements/rewards/relationships without copying story prose.
+10. Crafting: ingredients, quantities, result, costs and scalar requirements; PC direct parsing now matches Lite.
+11. Navigation: bounded searchable reference directory by entity type, plus related-page navigation and Back.
+12. Offline/session support: 38 bundled guide pages; bounded saved pages; Lite restores guide query/type/path alongside existing app search/filter state.
+13. Performance: no full reference download at startup, 40 search results, 256 KiB public-record cap, 1.2-second snapshot timeout, queued source work and bounded client caches.
+14. Publishing/recovery: daily bounded GitHub collector, manifest hashes, verified directory targets, schema/source validation, previous good data retained on failure, normal Git rollback.
+15. Validation/releases: 199 PC tests passed, Lite type/build/search/source/guide/reference checks passed. Browser QA at 390x844 restored Blue Moonlight, Brown Skullcap recipe, query 'skullcap' and recipe filter. Local API tests covered all seven types. An isolated 1.27.0→1.28.0 package update/restart preserved seeded user data/session and recovery backup. Physical iPhone and friends' own installations remain untested.
+
+The catalog still indexes 12,726 items; only the records counted in the live manifest have detailed shared coverage. Historical sources can differ from Classic World. The directory lists published pages (up to 2,000 and 250 KiB) rather than claiming that an absent reference does not exist. No guarantee can be made that every external source will always be available. On-demand page reads and the daily collector fill missing supported references over time.

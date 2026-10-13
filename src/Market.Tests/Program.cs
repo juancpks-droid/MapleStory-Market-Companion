@@ -646,6 +646,18 @@ await Test("Game guide rejects damaged local data and retains a valid bundled co
 await Test("Guide bounds long reference lists while reporting total coverage",()=>Sync(()=>{
  string links=string.Join("",Enumerable.Range(0,100).Select(i=>$"<li><a href='/maps/map-{i}'>Map {i}</a></li>"));var result=GameGuideReader.Parse("<article data-ssr='monster'><h1>Snail</h1><section><h2>Maps</h2>"+links+"</section></article>","/monsters/snail");Check(result.Sections[0].Total==100&&result.Sections[0].Links.Count==60);
 }));
+
+await Test("Guide structured crafting facts match the phone reader",()=>Sync(()=>{
+ string html="""<article data-ssr="recipe"><h1>Test Hat</h1><dl><dt>Skill</dt><dd>Tailoring</dd></dl></article><script id="ccplz-entity">{"recipe":{"facts":{"meso":300,"resultCount":1,"success":60},"ingredients":[{"name":"Snail Shell","canonical_slug":"snail-shell","quantity":5}]}}</script>""";
+ var guide=GameGuideReader.Parse(html,"/recipes/test-hat");Check(guide.Fields.Any(f=>f.Label=="Crafting fee (mesos)"&&f.Value=="300"));Check(guide.Sections.Single().Links.Single().Detail=="Quantity: 5");Check(!GameGuideReader.Valid(guide with{Sections=[new("Bad",[], -1)]},guide.Path));Check(!GameGuideReader.Valid(guide with{Notice=null!},guide.Path));
+}));
+await Test("Guide directory supports each entity type offline with bounded search",async()=>{
+ using var reader=new GameGuideReader();var entries=await reader.DirectoryEntries(true,CancellationToken.None);Check(entries.Select(e=>e.Kind).Distinct().Count()==7);Check(GameGuideReader.SearchDirectory(entries,"snail","monster").All(e=>e.Kind=="monster"));Check(GameGuideReader.SearchDirectory(entries,"").Count<=40);Check(GameGuideReader.SearchDirectory(entries,"not a real thing").Count==0);
+});
+await Test("Shared reference validation rejects future, unsafe and negative prices",()=>Sync(()=>{
+ string json="""{"schemaVersion":1,"kind":"npc","item":{"key":"gms83:2000000"},"checkedAt":"2026-10-13T14:00:00Z","data":{"source":"CCPLZ","url":"https://ccplz.cc/items/red-potion","sell":5,"buy":50}}""";
+ using var good=JsonDocument.Parse(json);Check(SharedGameReference.Valid(good.RootElement,"2000000","npc"));foreach(var changed in new[]{json.Replace("2026-10-13T14:00:00Z","2999-01-01T00:00:00Z"),json.Replace("ccplz.cc","evil.test"),json.Replace("\"sell\":5","\"sell\":-1"),"{}"}){using var bad=JsonDocument.Parse(changed);Check(!SharedGameReference.Valid(bad.RootElement,"2000000","npc"));}
+}));
 Directory.CreateDirectory("test-results");File.WriteAllText("test-results/results.json",JsonSerializer.Serialize(new{total=results.Count,failed=failures,results},Json.Options));Console.WriteLine($"{results.Count-failures}/{results.Count} passed");Environment.ExitCode=failures==0?0:1;
 
 

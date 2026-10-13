@@ -21,11 +21,12 @@ jobs:
           cache-dependency-path: Lite/package-lock.json
       - run: npm ci --ignore-scripts
         working-directory: Lite
-      - run: node guide.test.mjs
+      - run: node guide.test.mjs && node game-data.test.mjs && node sources.test.mjs && node search.test.mjs
         working-directory: Lite
       - run: node Lite/scripts/collect-game-data.mjs SharedGameData
         env:
           REFERENCE_BATCH: '18'
+      - run: node Lite/scripts/validate-game-data.mjs SharedGameData
       - name: Publish validated small records
         run: |
           git config user.name 'github-actions[bot]'

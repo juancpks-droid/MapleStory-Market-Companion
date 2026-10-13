@@ -12,11 +12,28 @@ public sealed partial class MainForm
   var actions=Toolbar();guideBack=Button("← Back",()=>{if(guideHistory.TryPop(out var path)){guidePath=path;itemReferenceKey="";QueueItemReference();}});guideBack.Enabled=false;actions.Controls.Add(guideBack);
   actions.Controls.Add(Button("Selected item",()=>{guidePath="";guideHistory.Clear();itemReferenceKey="";QueueItemReference();}));
   actions.Controls.Add(Button("Reload details",()=>{guideRefresh=true;itemReferenceKey="";QueueItemReference();}));
+  actions.Controls.Add(Button("Browse references",BrowseGameReferences));
   actions.Controls.Add(Button("Reference credits",()=>MessageBox.Show(this,"Shared field guide: CCPLZ factual references with source and checked date. Historical and reported information may differ from your server.\n\n"+WikiReferenceReader.Credit+"\nWiki fallback: https://mapleclassic.wiki — CC BY-NC-SA 4.0. Historical fallback: https://maplestory.io, GMS 83. Game data © Nexon. Reference data updates separately from the application; saved pages work offline.","Reference credits")));
   itemReferenceGrid.CellDoubleClick+=(_,e)=>{if(e.RowIndex<0||itemReferenceGrid.Rows[e.RowIndex].Tag is not GuideLink link)return;guideHistory.Push(guidePath);guidePath=link.Path;itemReferenceKey="";QueueItemReference();};
   page.Controls.Add(itemReferenceGrid);FitPriceText(itemReferenceNote);page.Controls.Add(itemReferenceNote);page.Controls.Add(actions);finderDetailTabs.TabPages.Add(page);
   itemReferenceNote.Text="Item stats, monsters, maps, shops, quests and crafting. Open a related row to explore inside the app.";
   FormClosed+=(_,_)=>gameGuideReader.Dispose();
+ }
+ async void BrowseGameReferences(){
+  using var dialog=new Form{Text="Browse game references",Size=new Size(650,560),MinimumSize=new Size(420,380),StartPosition=FormStartPosition.CenterParent,BackColor=BackColor,ForeColor=ForeColor};
+  using var cancel=CancellationTokenSource.CreateLinkedTokenSource(stop.Token);
+  var query=new TextBox{Dock=DockStyle.Top,PlaceholderText="Search a monster, map, NPC, shop, quest or recipe",BackColor=BackColor,ForeColor=ForeColor};
+  var kind=new ComboBox{Dock=DockStyle.Top,DropDownStyle=ComboBoxStyle.DropDownList,BackColor=BackColor,ForeColor=ForeColor};kind.Items.AddRange(new object[]{"all","item","monster","map","npc","shop","quest","recipe"});kind.SelectedIndex=0;
+  var list=new ListBox{Dock=DockStyle.Fill,BackColor=BackColor,ForeColor=ForeColor,DisplayMember="Name"};
+  var note=new Label{Dock=DockStyle.Bottom,Height=48,Text="Loading directory… Saved references remain available offline.",Padding=new Padding(8)};
+  var open=new System.Windows.Forms.Button{Text="Open selected reference",Dock=DockStyle.Bottom,Height=36};
+  IReadOnlyList<GuideEntry> entries=[];
+  void Filter(){list.BeginUpdate();list.Items.Clear();foreach(var e in GameGuideReader.SearchDirectory(entries,query.Text,kind.Text))list.Items.Add(e);list.EndUpdate();if(list.Items.Count>0)list.SelectedIndex=0;note.Text=$"{list.Items.Count} shown • {entries.Count} available pages • partial coverage, grows daily";}
+  void Choose(){if(list.SelectedItem is not GuideEntry entry)return;guideHistory.Push(guidePath);guidePath=entry.Path;itemReferenceKey="";dialog.DialogResult=DialogResult.OK;dialog.Close();QueueItemReference();}
+  query.TextChanged+=(_,_)=>Filter();kind.SelectedIndexChanged+=(_,_)=>Filter();list.DoubleClick+=(_,_)=>Choose();open.Click+=(_,_)=>Choose();
+  dialog.Controls.Add(list);dialog.Controls.Add(query);dialog.Controls.Add(kind);dialog.Controls.Add(note);dialog.Controls.Add(open);
+  dialog.Shown+=async(_,_)=>{try{entries=await gameGuideReader.DirectoryEntries(Offline,cancel.Token);if(!dialog.IsDisposed)Filter();}catch(OperationCanceledException){}};
+  dialog.FormClosed+=(_,_)=>cancel.Cancel();dialog.ShowDialog(this);await Task.CompletedTask;
  }
  void ShowGameGuide(GameGuide guide){
   itemReferenceGrid.Rows.Clear();itemReferenceNote.Text=guide.Name+" • "+guide.Source+" • "+guide.Kind+" • Checked "+guide.CheckedAt.ToLocalTime().ToString("g")+"\n"+(guide.CheckedAt<DateTimeOffset.UtcNow.AddDays(-7)?"Older saved reference. ":"")+guide.Notice;

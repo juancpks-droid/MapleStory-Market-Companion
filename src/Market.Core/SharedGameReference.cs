@@ -9,7 +9,19 @@ public static class SharedGameReference
  const string Endpoint="https://raw.githubusercontent.com/juancpks-droid/MapleStory-Market-Companion/main/SharedGameData/records/";
  static readonly Lazy<JsonDocument> starter=new(()=>{using var stream=typeof(SharedGameReference).Assembly.GetManifestResourceStream("shared-game-data")!;return JsonDocument.Parse(stream);});
  public static string ItemId(string id,string name)=>ScrollNames.Resolve(name) is {} scroll?"classic:"+scroll.ClassicId:id;
- public static bool Valid(JsonElement root,string id,string kind)=>root.TryGetProperty("schemaVersion",out var version)&&version.GetInt32()==1&&root.GetProperty("kind").GetString()==kind&&root.GetProperty("item").GetProperty("key").GetString()==(id.StartsWith("classic:")?id:"gms83:"+id)&&root.TryGetProperty("data",out _);
+ public static bool Valid(JsonElement root,string id,string kind){
+  try{
+   if(root.GetProperty("schemaVersion").GetInt32()!=1||root.GetProperty("kind").GetString()!=kind||root.GetProperty("item").GetProperty("key").GetString()!=(id.StartsWith("classic:")?id:"gms83:"+id)||!DateTimeOffset.TryParse(root.GetProperty("checkedAt").GetString(),out var at)||at<DateTimeOffset.UnixEpoch||at>DateTimeOffset.UtcNow.AddMinutes(2))return false;
+   var data=root.GetProperty("data");string host=data.GetProperty("source").GetString() switch{"CCPLZ"=>"ccplz.cc","NiaMeowDB"=>"meowdb.com","MapleStory Quest"=>"maplestory.quest",_=>""};if(host.Length==0)return false;
+   bool Url(JsonElement value)=>Uri.TryCreate(value.GetString(),UriKind.Absolute,out var u)&&u.Scheme=="https"&&u.Host==host&&u.UserInfo.Length==0&&u.IsDefaultPort;
+   bool Text(JsonElement value)=>value.ValueKind==JsonValueKind.String&&value.GetString() is {Length:>0 and <=200} text&&!System.Text.RegularExpressions.Regex.IsMatch(text,@"[\u1100-\u11ff\u2e80-\u9fff\uac00-\ud7af]");
+   if(kind=="npc"){
+    if(!Url(data.GetProperty("url")))return false;bool any=false;foreach(var key in new[]{"sell","buy"})if(data.TryGetProperty(key,out var p)&&p.ValueKind!=JsonValueKind.Null){if(p.ValueKind!=JsonValueKind.Number||!p.TryGetDecimal(out var price)||price<0||price>9007199254740991||decimal.Truncate(price)!=price)return false;any=true;}return any;
+   }
+   if(kind!="drops"||!Url(data.GetProperty("sourceUrl")))return false;var monsters=data.GetProperty("monsters");if(monsters.ValueKind!=JsonValueKind.Array||monsters.GetArrayLength() is <1 or >100)return false;
+   foreach(var m in monsters.EnumerateArray()){if(!Text(m.GetProperty("name"))||!Url(m.GetProperty("url"))||!Text(m.GetProperty("evidence")))return false;var maps=m.GetProperty("maps");if(maps.ValueKind!=JsonValueKind.Array||maps.GetArrayLength()>100)return false;foreach(var map in maps.EnumerateArray())if(!Text(map.GetProperty("name"))||!Url(map.GetProperty("url")))return false;}return true;
+  }catch(Exception e) when(e is KeyNotFoundException or InvalidOperationException or FormatException){return false;}
+ }
  static async Task<JsonDocument?> Read(string directory,string id,string name,string kind,bool offline,CancellationToken ct){
   id=ItemId(id,name);if(!System.Text.RegularExpressions.Regex.IsMatch(id,@"^(classic:)?\d{1,9}$"))return null;
   string path=Path.Combine(directory,"shared-game-data",kind+"-"+id.Replace(':','-')+".json");JsonDocument? saved=null;

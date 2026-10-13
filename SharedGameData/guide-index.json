@@ -1,0 +1,196 @@
+{
+  "schemaVersion": 1,
+  "partial": true,
+  "entries": [
+    {
+      "path": "/items/5-o-clock-shadow",
+      "name": "5 O'Clock Shadow",
+      "kind": "item"
+    },
+    {
+      "path": "/shops/arturo-s-shop",
+      "name": "Arturo's Shop",
+      "kind": "shop"
+    },
+    {
+      "path": "/quests/biggs-s-collection-of-items",
+      "name": "Biggs's Collection of Items",
+      "kind": "quest"
+    },
+    {
+      "path": "/items/blue-moonlight",
+      "name": "Blue Moonlight",
+      "kind": "item"
+    },
+    {
+      "path": "/items/blue-starlight",
+      "name": "Blue Starlight",
+      "kind": "item"
+    },
+    {
+      "path": "/recipes/craft-brown-apprentice-hat",
+      "name": "Brown Apprentice Hat",
+      "kind": "recipe"
+    },
+    {
+      "path": "/recipes/craft-brown-ghetto-beanie",
+      "name": "Brown Ghetto Beanie",
+      "kind": "recipe"
+    },
+    {
+      "path": "/items/brown-moonlight",
+      "name": "Brown Moonlight",
+      "kind": "item"
+    },
+    {
+      "path": "/recipes/craft-brown-skullcap",
+      "name": "Brown Skullcap",
+      "kind": "recipe"
+    },
+    {
+      "path": "/items/brown-starlight",
+      "name": "Brown Starlight",
+      "kind": "item"
+    },
+    {
+      "path": "/quests/maya-s-first-collection",
+      "name": "Collecting For Maya (Maya's First Collection)",
+      "kind": "quest"
+    },
+    {
+      "path": "/monsters/curse-eye",
+      "name": "Curse Eye",
+      "kind": "monster"
+    },
+    {
+      "path": "/items/dark-moonlight",
+      "name": "Dark Moonlight",
+      "kind": "item"
+    },
+    {
+      "path": "/items/dark-starlight",
+      "name": "Dark Starlight",
+      "kind": "item"
+    },
+    {
+      "path": "/quests/donating-to-henesys-506023",
+      "name": "Donating to Henesys (Orange Mushroom Cap)",
+      "kind": "quest"
+    },
+    {
+      "path": "/quests/donating-to-kerning-city-506120",
+      "name": "Donating to Kerning City (Orange Mushroom Cap)",
+      "kind": "quest"
+    },
+    {
+      "path": "/monsters/firebomb",
+      "name": "Firebomb",
+      "kind": "monster"
+    },
+    {
+      "path": "/items/general-s-mustache-1",
+      "name": "General's Mustache (1)",
+      "kind": "item"
+    },
+    {
+      "path": "/items/general-s-mustache-2",
+      "name": "General's Mustache (2)",
+      "kind": "item"
+    },
+    {
+      "path": "/items/gloves-attack-scroll-intermediate",
+      "name": "Gloves Attack Scroll: Intermediate",
+      "kind": "item"
+    },
+    {
+      "path": "/items/goatee",
+      "name": "Goatee",
+      "kind": "item"
+    },
+    {
+      "path": "/recipes/craft-green-skullcap",
+      "name": "Green Skullcap",
+      "kind": "recipe"
+    },
+    {
+      "path": "/items/green-starlight",
+      "name": "Green Starlight",
+      "kind": "item"
+    },
+    {
+      "path": "/items/long-brown-beard",
+      "name": "Long Brown Beard",
+      "kind": "item"
+    },
+    {
+      "path": "/monsters/mano",
+      "name": "Mano",
+      "kind": "monster"
+    },
+    {
+      "path": "/quests/don-hwang-s-request",
+      "name": "Nella & Kerning City Citizen's Request (Don Hwang's Request)",
+      "kind": "quest"
+    },
+    {
+      "path": "/items/ninja-mask-for-men",
+      "name": "Ninja Mask for Men",
+      "kind": "item"
+    },
+    {
+      "path": "/monsters/orange-mushroom",
+      "name": "Orange Mushroom",
+      "kind": "monster"
+    },
+    {
+      "path": "/items/orange-mushroom-cap",
+      "name": "Orange Mushroom Cap",
+      "kind": "item"
+    },
+    {
+      "path": "/items/purple-moonlight",
+      "name": "Purple Moonlight",
+      "kind": "item"
+    },
+    {
+      "path": "/items/red-moonlight",
+      "name": "Red Moonlight",
+      "kind": "item"
+    },
+    {
+      "path": "/npcs/sam",
+      "name": "Sam (Snail Hunting Ground I)",
+      "kind": "npc"
+    },
+    {
+      "path": "/quests/sam-s-suggestion",
+      "name": "Sam's Suggestion",
+      "kind": "quest"
+    },
+    {
+      "path": "/monsters/snail",
+      "name": "Snail",
+      "kind": "monster"
+    },
+    {
+      "path": "/maps/snail-hunting-ground-i",
+      "name": "Snail Hunting Ground I",
+      "kind": "map"
+    },
+    {
+      "path": "/items/snail-shell",
+      "name": "Snail Shell",
+      "kind": "item"
+    },
+    {
+      "path": "/quests/the-reason-behind-the-mushroom-studies",
+      "name": "The Reason Behind the Mushroom Studies",
+      "kind": "quest"
+    },
+    {
+      "path": "/items/white-potion",
+      "name": "White Potion",
+      "kind": "item"
+    }
+  ]
+}
