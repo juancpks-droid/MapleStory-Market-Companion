@@ -10,7 +10,7 @@ The catalog is an identity/search index, not a claim that every item has complet
 
 ## Collector
 
-`.github/workflows/game-data.yml` runs daily or manually. It requires GitHub workflow authorization to install. It processes at most 18 source pages per run, obeys the existing 3-second source spacing, robots checks, hourly limit and backoff, and queues discovered relations. It never follows arbitrary hosts or logs credentials. Empty, mismatched and invalid records do not replace good copies. Market listings are excluded from these slow-changing snapshots.
+`.github/workflows/game-data.yml` runs daily or manually. It is installed and enabled on the main branch. It processes at most 18 source pages per run, obeys the existing 3-second source spacing, robots checks, hourly limit and backoff, and queues discovered relations. It never follows arbitrary hosts or logs credentials. Empty, mismatched and invalid records do not replace good copies. Market listings are excluded from these slow-changing snapshots.
 
 The collector validates its records before one Git commit publishes the batch. Failed lookups retain their previous versions and remain queued. Run from the repository root after installing Lite's dependencies:
 
@@ -38,3 +38,7 @@ Every published batch is a normal Git commit. Revert an identified bad data comm
 196 core checks passed, including guide identity, corrupt-cache recovery, offline starters, scroll rate isolation, and bounded lists. Lite type checking, parser, source, search and shared-record checks passed. Eight local guide requests spanning all seven entity types returned usable records; saved local responses were 20–90 ms. Indexed searches over 12,726 catalog entries averaged 0.63 ms in a 100-search local run. These are local measurements, not promises about every phone/network.
 
 An isolated Velopack 1.26.0→1.27.0 package test downloaded and verified an update, blocked restart for unsaved Settings, restarted after saving, and preserved seeded session, settings, watchlist, alerts, theme, history and legacy data. It also read the bundled guide offline after restart. This used an isolated local feed and scripted confirmation, not a friend's actual installation. Physical iPhone testing remains outside this automated check.
+
+## First scheduled-pipeline verification
+
+The manual run on October 13, 2026 passed validation, retrieved 18 of 18 attempted pages, and published commit 34ea6ab. The resulting snapshot contains 38 guide pages and 16 NPC/drop records. The daily schedule is enabled at 09:23 UTC; GitHub may delay scheduled runs. Run evidence: https://github.com/juancpks-droid/MapleStory-Market-Companion/actions/runs/38423585273
