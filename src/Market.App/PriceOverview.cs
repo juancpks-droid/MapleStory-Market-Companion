@@ -29,7 +29,7 @@ public sealed partial class MainForm
   priceMetricStrip.ResumeLayout();
  }
  void UpdatePriceOverview(decimal? ask,decimal? buy,Valuation? estimate){
-  SetPriceMetric(lowestPriceMetric,ask,"Per unit · recently checked player listing");SetPriceMetric(wantedPriceMetric,buy,"Per unit · player buy request");
+  SetPriceMetric(lowestPriceMetric,ask,"Per unit · recorded asking price, not a sale");SetPriceMetric(wantedPriceMetric,buy,"Per unit · player request; availability unverified");
   SetPriceMetric(estimatePriceMetric,estimate?.Value,estimate is null?"":$"Confidence {estimate.Confidence}/100 · {estimate.Count} records");LayoutPriceMetrics();
  }
  void UpdateFmPriceMetrics(FmSummary? fm,bool enabled){

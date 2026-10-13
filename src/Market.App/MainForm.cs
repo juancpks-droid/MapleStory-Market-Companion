@@ -132,6 +132,7 @@ public sealed partial class MainForm : Form
 
         bar.Controls.Add(Button("Get prices",async()=>await LookupPricesNow()));search.KeyDown+=async (_,e)=>{if(e.KeyCode==Keys.Enter){e.SuppressKeyPress=true;await LookupPricesNow();}};bar.Controls.Add(Button("Refresh now",async()=>await LookupPricesNow()));priceWatchButton=Button("Watch item",()=>ToggleItemWatch(PriceWatchName));bar.Controls.Add(priceWatchButton);bar.Controls.Add(Button("Filters",EditListingFilters));bar.Controls.Add(Button("View in FM Tracker",OpenPriceInFm));bar.Controls.Add(Button("Price explanation",()=>priceSummary.Visible=!priceSummary.Visible));
 
+        AddLookupTools(bar,()=>{var entry=iconCatalog.Entries.FirstOrDefault(e=>TextKey.Search(e.Name)==TextKey.Search(DisplayedPriceQuery)||e.Id==DisplayedPriceQuery);return (entry?.Name??DisplayedPriceQuery,entry?.Id??"");},()=>lookupStatus.Text);
         var bottom=new Panel(){Dock=DockStyle.Bottom,Height=225};var chartBar=Toolbar();chartBar.Height=54;
 
         foreach(var (label,days) in new[]{("24 hours",1),("7 days",7),("14 days",14),("30 days",30)}){var b=Button(label,()=>{historyDays=days;foreach(var pair in historyButtons)pair.Value.ForeColor=pair.Key==days?Accent:TextColor;RenderHistory();});b.ForeColor=days==historyDays?Accent:TextColor;historyButtons[days]=b;chartBar.Controls.Add(b);}
@@ -355,7 +356,7 @@ public sealed partial class MainForm : Form
             var results=await Task.Run(()=>collector.Refresh(settings,refreshToken,names,onlineSearch,observations.ToArray(),result=>InvokeAsync(()=>{
                 // Cache verified batches, but publish the visible search only once at completion.
                 if(!closing&&!IsDisposed&&!Offline)ApplySourceResult(result);
-            })),refreshToken);
+            }),checking:message=>{if(!closing&&!IsDisposed)_=InvokeAsync(()=>{if(CanPresent()&&onlineSearch)lookupStatus.Text="Checking "+message+" • "+requestedQuery+" • Saved results stay visible";});}),refreshToken);
             refreshSucceeded=true;
             if(CanPresent()){
                 sourceResults=results;observations=store.Observations();fmSummaries=store.Summaries();
@@ -374,7 +375,7 @@ public sealed partial class MainForm : Form
             if(CanPresent()){
                 priceLookupLoading=false;
                 if(refreshSucceeded&&onlineSearch&&sourceResults.Any(r=>r.Updated))RememberLookupComplete(requestedQuery);
-                lookupStatus.Text=refreshSucceeded?"Checked "+DateTime.Now.ToString("t")+" • "+requestedQuery:"Search unavailable • Previous results retained; try again";
+                lookupStatus.Text=refreshSucceeded?"Checked "+DateTime.Now.ToString("t")+" • "+requestedQuery+" • "+(sourceResults.Any(r=>r.Updated)?"Source results received; see listing age":"No fresh source results; saved data retained"):"Search unavailable • Previous results retained; try again";
             }
             activePriceSearch=false;busy=false;refreshStop?.Dispose();refreshStop=null;UpdateConnectionStatus();
         }

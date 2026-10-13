@@ -49,6 +49,7 @@ public sealed partial class MainForm
   if(!force&&completedLookups.TryGetValue(query,out var checkedAt)&&DateTimeOffset.UtcNow-checkedAt<TimeSpan.FromMinutes(2)){
    CommitPriceView(query);lookupStatus.Text="Cached • checked "+checkedAt.ToLocalTime().ToString("t")+" • "+query;return;
   }
+  if(observations.Any(o=>ScrollNames.Matches(o.Name,query)))CommitPriceView(query);
   priceInputPending=false;priceLookupLoading=true;
   RememberPriceSearch(query);lastLookup=query;lastLookupAt=DateTimeOffset.UtcNow;
   lookupStatus.Text="Searching for "+query+" • Previous results stay visible";

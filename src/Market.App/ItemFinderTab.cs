@@ -21,7 +21,7 @@ public sealed partial class MainForm
         finderCategory.Items.AddRange(["All","Equipment","Use","Set-up","Etc","Cash","Unknown"]);finderCategory.SelectedIndex=0;
         finderSource.Items.Add("All");finderSource.Items.AddRange(settings.Sources.Select(s=>s.Id).Concat(observations.Select(o=>o.Provider)).Distinct().Cast<object>().ToArray());finderSource.SelectedIndex=0;
         var bar=Toolbar();bar.Height=48;bar.Controls.Add(finderSearch);bar.Controls.Add(finderCategory);bar.Controls.Add(finderSource);bar.Controls.Add(finderListed);
-        var actions=Toolbar();actions.Height=92;actions.WrapContents=true;actions.AutoScroll=false;
+        var actions=Toolbar();actions.AutoSize=true;actions.AutoSizeMode=AutoSizeMode.GrowAndShrink;actions.MinimumSize=new Size(0,48);actions.WrapContents=true;actions.AutoScroll=false;
         actions.Controls.Add(Button("Monster drops & maps",()=>{if(FinderSelection is {} item){if(Offline){MessageBox.Show("Turn off Work offline to look up monster drops and maps.","Offline");return;}var viewer=new WebsiteViewer(MonsterReference.ForItem(item.Name),dataDirectory);viewer.Show(this);}}));
         actions.Controls.Add(Button("Check prices",async()=>{if(FinderSelection is {} item){search.Text=item.Name;ShowPage("Price Checker");await LookupPricesNow();}}));
         finderWatchButton=Button("Watch item",()=>ToggleItemWatch(FinderWatchName));actions.Controls.Add(finderWatchButton);
@@ -31,12 +31,14 @@ public sealed partial class MainForm
         actions.Controls.Add(Button("Item websites",()=>{if(FinderActionItem is {} item)ShowItemWebsites(ItemName(item),item);}));
         actions.Controls.Add(Button("Open in CCPLZ",async ()=>await OpenCcplzItem()));
         actions.Controls.Add(Button("Refresh sources",async ()=>{await RefreshSources();RenderItemFinder();}));
+        AddLookupTools(actions,()=> (FinderSelection?.Name??"",FinderSelection?.Id??""),()=>finderDropNote.Text);
         var body=new TableLayoutPanel(){Dock=DockStyle.Fill,RowCount=2,ColumnCount=1};body.RowStyles.Add(new(SizeType.Percent,45));body.RowStyles.Add(new(SizeType.Percent,55));
         body.Controls.Add(finderItems,0,0);var lower=new Panel(){Dock=DockStyle.Fill};lower.Controls.Add(finderListings);lower.Controls.Add(finderEvidence);body.Controls.Add(BuildFinderDetails(lower),0,1);
         var page=pages["Item Finder"];page.Controls.Add(body);page.Controls.Add(actions);page.Controls.Add(finderStatus);page.Controls.Add(bar);
         finderSearch.TextChanged+=(_,_)=>DebounceSearch(RenderItemFinder);finderCategory.SelectedIndexChanged+=(_,_)=>RenderItemFinder();finderSource.SelectedIndexChanged+=(_,_)=>RenderItemFinder();finderListed.CheckedChanged+=(_,_)=>RenderItemFinder();
         finderItems.SelectionChanged+=(_,_)=>{if(!renderingFinderRows){RenderFinderListings();QueueFinderDrops();}};finderListings.CellDoubleClick+=(_,e)=>{if(e.RowIndex>=0&&finderListings.Rows[e.RowIndex].Tag is Observation o)ShowItemDetails(o);};
         finderItems.Scroll+=(_,_)=>{if(finderReady)_=LoadFinderIcons(finderGeneration);};
+        finderItems.CellClick+=(_,e)=>{if(e.RowIndex>=0&&finderItems.Rows[e.RowIndex].Tag is FinderResult item)RememberPriceSearch(item.Name);};
         finderReady=true;
     }
     void RenderItemFinder()

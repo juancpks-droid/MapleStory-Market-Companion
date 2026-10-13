@@ -1,0 +1,14 @@
+"use client";
+import {useEffect,useState} from 'react';
+import {cacheKey} from '../lib/search.ts';
+import {priceContext,keepSavedMarket} from '../lib/player-tools.ts';
+export default function ItemSummary({id,name}:{id:string;name:string}){
+ const [open,setOpen]=useState(false),[data,setData]=useState<Record<string,any>>({}),[status,setStatus]=useState('');
+ useEffect(()=>{if(!open)return;const c=new AbortController();let alive=true;setStatus('Loading saved summary…');
+ (async()=>{await Promise.all(['prices','finder'].map(async mode=>{let saved:any;try{saved=JSON.parse(localStorage.getItem(cacheKey(mode,id))||'null');if(saved&&alive)setData(d=>({...d,[mode]:saved}));}catch{}
+ if(!navigator.onLine)return;
+ if(saved&&Date.now()-Date.parse(saved.checkedAt)<(mode==='prices'?120000:86400000))return;
+ try{const r=await fetch(`/api/lookup?id=${encodeURIComponent(id)}&mode=${mode}`,{signal:c.signal});const value:any=await r.json();if(!r.ok)throw Error();if(alive){const result=mode==='prices'?keepSavedMarket(saved,value):value;setData(d=>({...d,[mode]:result}));try{const key=cacheKey(mode,id);localStorage.setItem(key,JSON.stringify(result));const keys=Object.keys(localStorage).filter(k=>k.startsWith('maple-lite-v3-'));while(keys.length>30){const remove=keys.shift();if(remove&&remove!==key)localStorage.removeItem(remove)}}catch{}}}catch{if(alive)setStatus('Some references could not refresh. Saved sections are kept.');}}));if(alive)setStatus(s=>s.startsWith('Some')?s:navigator.onLine?'Available references shown.':'Offline — saved references only.');})();return()=>{alive=false;c.abort()};},[id,open]);
+ const p=data.prices,d=data.finder;const money=(n:number)=>n.toLocaleString();
+ return <section className="field-guide"><button className="guide-toggle" aria-expanded={open} onClick={()=>setOpen(!open)}>{open?'▾':'▸'} {name} — quick summary</button>{open&&<div className="guide-body"><p role="status" className="muted">{status}</p><div className="price-cards">{[['Player ask',p?.ask],['Buy offer',p?.buy],['Sell to NPC',p?.npc?.sell]].filter(x=>x[1]!=null).map(([label,value])=><article key={label}><small>{label}</small><strong>{money(value)}</strong><span>mesos per unit</span></article>)}</div>{p&&<p className="evidence">{priceContext(p)}</p>}<details className="guide-section"><summary>Drops & maps ({d?.monsters?.length||0} recorded)</summary>{d?.monsters?.map((m:any)=><div key={m.url}><strong>{m.name}</strong><p className="evidence">{m.evidence}</p><p>{m.maps?.map((x:any)=>x.name).join(' · ')||'No map reference available.'}</p></div>)}{!d?.monsters?.length&&<p>No recorded drops loaded. This does not mean the item cannot drop.</p>}</details><p className="muted">{d?.source&&`Drop source: ${d.source}. `}{p?.npc?.source&&`NPC source: ${p.npc.source}. `}Historical references may differ from your server. Open details & guide below for more.</p></div>}</section>;
+}

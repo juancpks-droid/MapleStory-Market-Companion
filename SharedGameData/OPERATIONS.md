@@ -66,3 +66,18 @@ This checklist describes implemented support, not exhaustive game-data coverage.
 The catalog still indexes 12,726 items; only the records counted in the live manifest have detailed shared coverage. Historical sources can differ from Classic World. The directory lists published pages (up to 2,000 and 250 KiB) rather than claiming that an absent reference does not exist. No guarantee can be made that every external source will always be available. On-demand page reads and the daily collector fill missing supported references over time.
 
 The upgraded publisher passed on October 13, 2026: 18/18 new pages retrieved, 56 guide pages and 19 NPC/drop records validated (including SHA256 hashes), and normal commit 1bc0690 published. Run: https://github.com/juancpks-droid/MapleStory-Market-Companion/actions/runs/38436053439
+
+
+## Player improvements: 1.29.0 / Lite 0.6.0
+
+Maple Market 1.29.0 / Lite 0.6.0
+
+- Clearer lookup progress and saved results while supported sources refresh.
+- Easy access to recent items and watched favorites on PC; recent items and favorites on Lite.
+- Clearer price age and evidence labels, with NPC values separate from player asks.
+- Combined item summary with available market observations, NPC references, drops, maps and guide details.
+- Rotating common-item and distinct scroll-tier priorities in the bounded daily shared-data collector.
+- Faster repeat lookups with bounded saved results; unavailable market sources retain clearly labelled saved offers on Lite.
+- Copyable problem reports without seller names, listing notes, local file paths or device identifiers.
+
+Validation: 199 PC core tests passed. Lite search/source/guide/reference/player-tool checks, type checking and production build passed. Phone-width browser checks restored search/filter/favorite state. An isolated Windows 1.28.0 to 1.29.0 update downloaded, restarted and retained seeded settings, search/filter/session state, watchlist, market history and recovery backup. A physical iPhone and friends' individual installations were not tested. Shared detail coverage remains partial and source-labelled; historical references may differ from Classic World.

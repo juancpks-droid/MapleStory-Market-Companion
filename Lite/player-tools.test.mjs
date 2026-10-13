@@ -1,0 +1,11 @@
+import assert from 'node:assert/strict';
+import {rememberItem,toggleFavorite,priceContext,problemReport,keepSavedMarket} from './lib/player-tools.ts';
+import {priorityPaths} from './lib/collection-priority.ts';
+import catalog from './public/catalog.json' with {type:'json'};
+assert.deepEqual(rememberItem(['a','b'],'b'),['b','a']);assert.equal(rememberItem(Array.from({length:30},(_,i)=>String(i)),'new').length,12);
+assert.deepEqual(toggleFavorite(['a'],'a'),[]);assert.equal(toggleFavorite(Array.from({length:50},(_,i)=>String(i)),'new').length,50);
+const now=Date.now(),saved={offers:[{at:new Date(now-3600000).toISOString(),seller:'PRIVATE NAME',note:'PRIVATE NOTE'}],checkedAt:new Date(now-900000).toISOString(),ask:50};
+const result=keepSavedMarket(saved,{marketAvailable:false,offers:[],ask:null,buy:null,npc:{sell:5},checkedAt:new Date(now).toISOString()});assert.equal(result.offers.length,1);assert.equal(result.checkedAt,saved.checkedAt);assert.equal(result.ask,null);assert.equal(result.npc.sell,5);assert.match(priceContext(result,now),/Market source unavailable/);assert.match(priceContext({offers:[]},now),/Not enough recent offers/);
+const report=problemReport({id:'123',name:'Test item'},'prices',saved,'Unavailable');assert.ok(report.includes('Test item'));assert.ok(!report.includes('PRIVATE'));
+const priority=priorityPaths(catalog,0);assert.ok(priority.paths.includes('/items/red-potion'));assert.equal(priority.cursor,4);assert.equal(priorityPaths(catalog,12).cursor,0);
+console.log('PASS: bounded recent/favorite IDs, distinct priority rotation, no fake fresh prices, saved-offer retention and privacy-limited problem reports.');

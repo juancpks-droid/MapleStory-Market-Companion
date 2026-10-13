@@ -2,6 +2,8 @@
 
 import {useEffect,useState,useRef,useMemo} from 'react';
 import FieldGuide from './FieldGuide';
+import ItemSummary from './ItemSummary';
+import {rememberItem,toggleFavorite,priceContext,problemReport,LITE_VERSION,keepSavedMarket} from '../lib/player-tools.ts';
 
 import {Item,matchItems,exactItem,cacheKey} from '../lib/search.ts';
 
@@ -17,6 +19,7 @@ export default function Home(){
 
  const [view,setView]=useState<View|null>(null),[open,setOpen]=useState(false),[settledQuery,setSettledQuery]=useState(''),[active,setActive]=useState(-1);
 
+ const [recent,setRecent]=useState<string[]>([]),[favorites,setFavorites]=useState<string[]>([]),[copied,setCopied]=useState(false);
  const generation=useRef(0),forceLookup=useRef(false),request=useRef<AbortController|null>(null),restoreView=useRef<any>(null);
 
  const data=view?.data||{},shownItem=view?.item||selected,shownTab=view?.tab||tab;
@@ -35,7 +38,7 @@ export default function Home(){
 
   fetch('/catalog.json').then(r=>{if(!r.ok)throw Error();return r.json() as Promise<Item[]>}).then((items:Item[])=>{
 
-   if(!alive)return;setCatalog(items);const saved=restoreView.current;
+   if(!alive)return;setCatalog(items);try{const saved=JSON.parse(localStorage.getItem('maple-item-shortcuts')||'{}');const valid=(a:any,n:number)=>Array.isArray(a)?a.filter((id:any)=>typeof id==='string'&&items.some(i=>i.id===id)).slice(0,n):[];setRecent(valid(saved.recent,12));setFavorites(valid(saved.favorites,50))}catch{};const saved=restoreView.current;
 
    if(saved){const item=items.find(i=>i.id===saved.item?.id);if(item)setSelected(item);
 
@@ -59,9 +62,10 @@ export default function Home(){
 
  useEffect(()=>{if(!sessionReady)return;const save=()=>{try{localStorage.setItem('maple-lite-session',JSON.stringify({item:selected,tab,query,category,displayed:view?.item,displayedTab:view?.tab}))}catch{}};save();window.addEventListener('pagehide',save);return()=>window.removeEventListener('pagehide',save)},[sessionReady,selected,tab,query,category,view]);
 
+ useEffect(()=>{if(sessionReady)try{localStorage.setItem('maple-item-shortcuts',JSON.stringify({recent,favorites}))}catch{}},[recent,favorites,sessionReady]);
  const matches=useMemo(()=>query===settledQuery?matchItems(catalog,settledQuery,category):[],[catalog,settledQuery,query,category]);
 
- const choose=(item:Item)=>{request.current?.abort();generation.current++;setOpen(false);setActive(-1);setQuery(item.name);setSelected({...item});};
+ const choose=(item:Item)=>{setCopied(false);setRecent(ids=>rememberItem(ids,item.id));request.current?.abort();generation.current++;setOpen(false);setActive(-1);setQuery(item.name);setSelected({...item});};
 
  useEffect(()=>{const timer=setTimeout(()=>setSettledQuery(query),180);return()=>clearTimeout(timer)},[query]);
 
@@ -81,13 +85,13 @@ export default function Home(){
 
   let saved:any=null;try{saved=JSON.parse(localStorage.getItem(key)||'null')}catch{}
 
-  setMessage('');setBusy(true);if(saved)publish(saved);
+  setMessage(mode==='prices'?'Checking Kerning offers and NPC references…':'Checking saved drop references and available sources…');setBusy(true);if(saved)publish(saved);
 
   const fresh=saved&&Date.now()-Date.parse(saved.checkedAt)<(mode==='finder'?86400000:120000)&&!(mode==='finder'&&(!saved.monsters?.length||saved.monsters.some((m:any)=>m.mapsPending||m.mapsUnavailable)));
 
-  if(!navigator.onLine||(!forced&&fresh)){setBusy(false);if(!navigator.onLine)setMessage(saved?'Offline — saved results.':'Offline — previous results kept. Reconnect and tap Retry.');return()=>controller.abort()}
+  if(!navigator.onLine||(!forced&&fresh)){setBusy(false);setMessage('Showing saved results within the cache window. Retry requests a refresh; source limits still apply.');if(!navigator.onLine)setMessage(saved?'Offline — saved results.':'Offline — previous results kept. Reconnect and tap Retry.');return()=>controller.abort()}
 
-  const get=async(stage='')=>{const r=await fetch(`/api/lookup?id=${encodeURIComponent(item.id)}&mode=${mode}${stage}`,{signal:controller.signal});const d:any=await r.json();if(!r.ok)throw Error(d.error||'Source unavailable. Try again shortly.');return d};
+  const get=async(stage='')=>{const r=await fetch(`/api/lookup?id=${encodeURIComponent(item.id)}&mode=${mode}${stage}${forced&&!stage.includes('refresh=')?'&refresh=1':''}`,{signal:controller.signal});const d:any=await r.json();if(!r.ok)throw Error(d.error||'Source unavailable. Try again shortly.');return d};
 
   (async()=>{try{
 
@@ -97,7 +101,7 @@ export default function Home(){
 
    if(mode==='finder'&&!d.monsters?.length&&saved?.monsters?.length){setMessage('Source unavailable. Keeping your saved drop references.');return;}
 
-   publish(d);setMessage('');try{localStorage.setItem(key,JSON.stringify(d));const keys=Object.keys(localStorage).filter(k=>k.startsWith('maple-lite-v3-'));while(keys.length>30){const remove=keys.shift();if(remove&&remove!==key)localStorage.removeItem(remove)}}catch{}
+   if(mode==='prices')d=keepSavedMarket(saved,d);publish(d);setMessage(d.marketAvailable===false?'Market source unavailable. Saved offers and available NPC references are shown.':'');try{localStorage.setItem(key,JSON.stringify(d));const keys=Object.keys(localStorage).filter(k=>k.startsWith('maple-lite-v3-'));while(keys.length>30){const remove=keys.shift();if(remove&&remove!==key)localStorage.removeItem(remove)}}catch{}
 
   }catch(e:any){if(current())setMessage((navigator.onLine?e.message:'Offline')+' Previous results are kept; tap Retry when ready.');}
 
@@ -137,18 +141,21 @@ export default function Home(){
 
  {(open&&query.trim())&&<section className="results search-popup" id="item-options" role="listbox" aria-label="Matching items"><div className="section-label">MATCHING ITEMS<button className="close-results" onClick={()=>setOpen(false)}>Close</button></div>{matches.map((i,index)=><button className={'item-row'+(index===active?' highlighted':'')} id={`item-option-${index}`} role="option" aria-selected={index===active} key={i.id} onClick={()=>choose(i)}><div className="item-art">{icon(i)}</div><div><strong>{i.name}</strong><small>{i.category} · {i.classic?'Classic reference':'GMS 83 reference'}{matches.filter(x=>x.name===i.name).length>1?' · #'+i.id:''}</small></div><span className="arrow">›</span></button>)}{!matches.length&&<p className="empty">No matching items. Try a shorter name or another category.</p>}</section>}</div>
 
+ {!open&&(favorites.length>0||recent.length>0)&&<details className="shortcuts"><summary>Favorites & recent items</summary>{[['Favorites',favorites],['Recent items',recent]].map(([title,ids])=><section key={String(title)}><strong>{title}</strong><div className="shortcut-list">{(ids as string[]).map(id=>catalog.find(i=>i.id===id)).filter(Boolean).map(i=><button key={i!.id} onClick={()=>choose(i!)}>{i!.name}</button>)}</div></section>)}<button onClick={()=>setRecent([])}>Clear recent items</button></details>}
  {!selected&&!open&&<section className="results"><div className="section-label">QUICK PICKS<span>Tap an item to begin</span></div>{catalog.filter(i=>['4000001','4000000','4000016','2000000','1051025','4000009'].includes(i.id)).map(i=><button className="item-row" key={i.id} onClick={()=>choose(i)}><div className="item-art">{icon(i)}</div><div><strong>{i.name}</strong><small>{i.category}</small></div></button>)}</section>}
 
+ {selected&&<div className="item-actions"><button aria-pressed={favorites.includes(selected.id)} onClick={()=>setFavorites(ids=>toggleFavorite(ids,selected.id))}>{favorites.includes(selected.id)?'★ Favorite':'☆ Favorite'}</button><button onClick={async()=>{try{await navigator.clipboard.writeText(problemReport(selected,tab,view?.item.id===selected.id&&view?.tab===tab?data:null,message));setCopied(true)}catch{setMessage('Clipboard unavailable. Your browser may require permission.')}}}>{copied?'Report copied':'Copy problem report'}</button></div>}
+ {selected&&<ItemSummary key={'summary-'+selected.id} id={selected.id} name={selected.name}/>}
  {selected&&<FieldGuide key={selected.id} id={selected.id} name={selected.name}/>}
  {shownItem&&<section id="details"><div className="selected"><div className="item-art large">{icon(shownItem,48)}</div><div><small>{shownItem.category} · {shownItem.classic?'Classic reference':'GMS 83 reference'}</small><h2>{shownItem.name}</h2><span>#{shownItem.id.replace("classic:","")}</span></div></div>
 
  <div className="loadline" role="status">{busy?<><i/> Checking {selected?.name}… {view&&'Previous results stay visible.'}</>:data.checkedAt?`Checked ${new Date(data.checkedAt).toLocaleString()}`:'Ready to look up'}<button disabled={busy||offline} onClick={()=>{forceLookup.current=true;setSelected(selected?{...selected}:null)}}>{busy?'Loading':'Retry'}</button></div>{message&&<p className="notice">{message}</p>}
 
- {shownTab==='finder'?<><div className="section-label">MONSTER DROPS & MAPS<span>{data.source||'Reference lookup'}</span></div><p className="muted">{(data.sharedDatabase?'Shared game database · ':'')+(data.stale?'Saved reference may be out of date. ':'')}{data.note||'Reported drops and historical references are labelled separately.'}</p>{data.monsters?.map((m:any)=><article className="monster" key={m.url}><div className="monster-top"><span className="monster-mark">✦</span><h3>{m.name}</h3></div><p className="evidence">{m.evidence}</p><div className="map-list">{m.maps?.length?m.maps.map((x:any)=><div key={x.url}>↳ {x.name}</div>):<span>{m.mapsPending?(busy?'Loading maps…':'Maps could not load. Tap Retry.'):'No map reference available.'}</span>}</div></article>)}{!busy&&!data.monsters?.length&&<div className="empty"><strong>No recorded drops available</strong><p>This does not mean the item cannot drop. Try again later or use the source fallback.</p></div>}</>:<><div className="price-cards">{data.ask!=null&&<article><small>LOWEST PLAYER ASK</small><strong>{money(data.ask)}</strong><span>mesos / unit</span></article>}{data.buy!=null&&<article><small>BEST BUY OFFER</small><strong>{money(data.buy)}</strong><span>mesos / unit</span></article>}{data.npc?.sell!=null&&<article className="npc"><small>SELL TO NPC</small><strong>{money(data.npc.sell)}</strong><span>mesos · reference</span></article>}{data.npc?.buy!=null&&<article className="npc"><small>BUY FROM NPC</small><strong>{money(data.npc.buy)}</strong><span>mesos · lowest recorded</span></article>}</div><p className="muted">{data.note}</p>{data.npc&&<p className="evidence">NPC reference: {data.npc.source}{data.npc.stale?" · older saved reference":""}. May differ by server/version. Not player market value.</p>}{['sell','buy'].map(kind=><section key={kind}><div className="section-label">{kind==='sell'?'FOR SALE':'LOOKING TO BUY'}<span>{data.offers?.filter((x:any)=>x.kind===kind).length||0} offers</span></div>{data.offers?.filter((x:any)=>x.kind===kind).map((o:any)=><article className="offer" key={o.id}><div><span className="tag">{kind==='sell'?'SELL':'BUY'}</span><small>{o.source}</small></div><h3>{money(o.price)} <span>mesos / unit</span></h3><p>{o.quantity?`Quantity ${money(o.quantity)} · `:''}{o.seller||'Seller not provided'}</p>{o.variant&&<p className="evidence">{o.variant}</p>}{o.note&&<p>{o.note}</p>}<small>Posted {new Date(o.at).toLocaleString()}</small>{Date.now()-Date.parse(o.at)>86400000&&<p className="evidence">Older listing · availability may have changed</p>}</article>)}{!busy&&!data.offers?.some((x:any)=>x.kind===kind)&&<p className="empty">No matching public offers returned.</p>}</section>)}</>}
+ {shownTab==='finder'?<><div className="section-label">MONSTER DROPS & MAPS<span>{data.source||'Reference lookup'}</span></div><p className="muted">{(data.sharedDatabase?'Shared game database · ':'')+(data.stale?'Saved reference may be out of date. ':'')}{data.note||'Reported drops and historical references are labelled separately.'}</p>{data.monsters?.map((m:any)=><article className="monster" key={m.url}><div className="monster-top"><span className="monster-mark">✦</span><h3>{m.name}</h3></div><p className="evidence">{m.evidence}</p><div className="map-list">{m.maps?.length?m.maps.map((x:any)=><div key={x.url}>↳ {x.name}</div>):<span>{m.mapsPending?(busy?'Loading maps…':'Maps could not load. Tap Retry.'):'No map reference available.'}</span>}</div></article>)}{!busy&&!data.monsters?.length&&<div className="empty"><strong>No recorded drops available</strong><p>This does not mean the item cannot drop. Try again later or use the source fallback.</p></div>}</>:<><div className="price-cards">{data.ask!=null&&<article><small>LOWEST PLAYER ASK</small><strong>{money(data.ask)}</strong><span>mesos / unit</span></article>}{data.buy!=null&&<article><small>BEST BUY OFFER</small><strong>{money(data.buy)}</strong><span>mesos / unit</span></article>}{data.npc?.sell!=null&&<article className="npc"><small>SELL TO NPC</small><strong>{money(data.npc.sell)}</strong><span>mesos · reference</span></article>}{data.npc?.buy!=null&&<article className="npc"><small>BUY FROM NPC</small><strong>{money(data.npc.buy)}</strong><span>mesos · lowest recorded</span></article>}</div><p className="evidence">{priceContext(data)}</p><p className="muted">{data.note}</p>{data.npc&&<p className="evidence">NPC reference: {data.npc.source}{data.npc.stale?" · older saved reference":""}. May differ by server/version. Not player market value.</p>}{['sell','buy'].map(kind=><section key={kind}><div className="section-label">{kind==='sell'?'FOR SALE':'LOOKING TO BUY'}<span>{data.offers?.filter((x:any)=>x.kind===kind).length||0} offers</span></div>{data.offers?.filter((x:any)=>x.kind===kind).map((o:any)=><article className="offer" key={o.id}><div><span className="tag">{kind==='sell'?'SELL':'BUY'}</span><small>{o.source}</small></div><h3>{money(o.price)} <span>mesos / unit</span></h3><p>{o.quantity?`Quantity ${money(o.quantity)} · `:''}{o.seller||'Seller not provided'}</p>{o.variant&&<p className="evidence">{o.variant}</p>}{o.note&&<p>{o.note}</p>}<small>Posted {new Date(o.at).toLocaleString()}</small>{Date.now()-Date.parse(o.at)>86400000&&<p className="evidence">Older listing · availability may have changed</p>}</article>)}{!busy&&!data.offers?.some((x:any)=>x.kind===kind)&&<p className="empty">No matching public offers returned.</p>}</section>)}</>}
 
  {!busy&&data.sourceUrl&&<details className="fallback"><summary>Website fallback</summary><p>Use only if the information above is missing.</p><a href={data.sourceUrl} target="_blank" rel="noreferrer">Open original source ↗</a></details>}</section>}
 
- <footer>Maple Market Lite · 0.5.0<br/>Independent companion · Item artwork © Nexon</footer></main>
+ <footer>Maple Market Lite · {LITE_VERSION}<br/>Independent companion · Item artwork © Nexon</footer></main>
 
  </div>
 

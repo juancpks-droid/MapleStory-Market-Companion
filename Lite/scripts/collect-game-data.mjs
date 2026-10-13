@@ -2,6 +2,7 @@
 import {mkdir,readFile,writeFile,rename,readdir} from 'node:fs/promises';
 import {resolve,join} from 'node:path';
 import {createHash} from 'node:crypto';
+import {priorityPaths} from '../lib/collection-priority.ts';
 import {validReference} from '../lib/reference-contract.ts';
 import catalog from '../public/catalog.json' with {type:'json'};
 import {lookupIdentity} from '../lib/scrolls.ts';
@@ -16,7 +17,8 @@ for(let n=0;n<6;n++){const item=candidates[state.cursor++%candidates.length];try
 state.cursor%=candidates.length;
 const old=[];for(const file of await readdir(join(target,'guides'))){if(!file.endsWith('.json'))continue;const record=await read(join(target,'guides',file));if(record&&Date.parse(record.checkedAt)<Date.now()-7*86400000)old.push(record)}
 old.sort((a,b)=>Date.parse(a.checkedAt)-Date.parse(b.checkedAt));
-const queue=[...new Set([...old.slice(0,4).map(x=>x.path),...state.queue])].filter(guidePath);let attempted=0,updated=0;const failed=[];
+const priority=priorityPaths(candidates,state.priorityCursor||0);state.priorityCursor=priority.cursor;
+const queue=[...new Set([...old.slice(0,4).map(x=>x.path),...priority.paths,...state.queue])].filter(guidePath);let attempted=0,updated=0;const failed=[];
 while(queue.length&&attempted<budget){const path=queue.shift(),file=join(target,'guides',snapshotName(path)),previous=await read(file);if(validGuide(previous,path)&&Date.parse(previous.checkedAt)>Date.now()-7*86400000)continue;attempted++;
  try{const known=names.get(path),record=await sourceGuide(path,known?.identity.name||'');if(!validGuide(record,path,known?.identity.name||''))throw Error('Invalid source record');if(previous&&previous.fields.length>0&&!record.fields.length)throw Error('Incomplete source record');await save(file,record);updated++;
   for(const section of record.sections)for(const link of section.links)if(!queue.includes(link.path)&&queue.length<2000)queue.push(link.path);
