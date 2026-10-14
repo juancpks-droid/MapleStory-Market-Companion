@@ -1,15 +1,29 @@
 {
   "schemaVersion": 1,
-  "publishedAt": "2026-10-13T20:14:43.591Z",
+  "publishedAt": "2026-10-14T09:57:15.883Z",
   "catalogItems": 12726,
-  "guideRecords": 72,
-  "referenceRecords": 20,
+  "guideRecords": 90,
+  "referenceRecords": 23,
   "entries": [
     {
       "file": "guides/items--5-o-clock-shadow.json",
       "bytes": 2129,
       "sha256": "e9b3eeb9009f17e224aebc40f4d482d865eedb800f8140d038a538fa4995ce5b",
       "checkedAt": "2026-10-13T15:03:36.663Z",
+      "kind": "item"
+    },
+    {
+      "file": "guides/items--arrows-for-bows.json",
+      "bytes": 10684,
+      "sha256": "c8aaf60be74a0796e102ccca76f936b03c87f927ee40b20e54de13ed66de1457",
+      "checkedAt": "2026-10-14T09:57:12.842Z",
+      "kind": "item"
+    },
+    {
+      "file": "guides/items--arrows-for-crossbows.json",
+      "bytes": 10714,
+      "sha256": "57efd036d0d80b8d9c2975426bea55e8396c6346dfb8ee5545361ae980af8e79",
+      "checkedAt": "2026-10-14T09:57:15.869Z",
       "kind": "item"
     },
     {
@@ -52,6 +66,13 @@
       "bytes": 2982,
       "sha256": "c19f352fd4c4e834063d427195dfb8e51c97bd3f41aa987004e73f7b0543557a",
       "checkedAt": "2026-10-13T15:37:45.259Z",
+      "kind": "item"
+    },
+    {
+      "file": "guides/items--elixir.json",
+      "bytes": 10918,
+      "sha256": "2e38b149c9ae689fcd4afd2d71f34e403e9e6e3a89bdf90c689bebece3fe435b",
+      "checkedAt": "2026-10-14T09:56:27.886Z",
       "kind": "item"
     },
     {
@@ -118,6 +139,13 @@
       "kind": "item"
     },
     {
+      "file": "guides/items--mana-elixir.json",
+      "bytes": 8944,
+      "sha256": "49389bf7e251a3d89189fa8d1089b70773c7e3756ed5c74d2344ef63b20a2c62",
+      "checkedAt": "2026-10-14T09:56:24.891Z",
+      "kind": "item"
+    },
+    {
       "file": "guides/items--ninja-mask-for-men.json",
       "bytes": 1838,
       "sha256": "39d3b5bcdd64a43a2985c5fad45a6fc664b1ac72cf3d856c181b02e2e2947d54",
@@ -136,6 +164,13 @@
       "bytes": 5894,
       "sha256": "fade9321c6edaabf716f09b77251d136d8aff952cb82308feac27454ea978759",
       "checkedAt": "2026-10-13T20:13:55.586Z",
+      "kind": "item"
+    },
+    {
+      "file": "guides/items--power-elixir.json",
+      "bytes": 4501,
+      "sha256": "599b31c76c549bf1dd1b3aa3fdd196c70e9fc26d2977be3804e91d8cd7816b62",
+      "checkedAt": "2026-10-14T09:56:30.836Z",
       "kind": "item"
     },
     {
@@ -167,6 +202,20 @@
       "kind": "item"
     },
     {
+      "file": "guides/maps--3-way-road-split.json",
+      "bytes": 2457,
+      "sha256": "801d9dd298ef2d4a0051a1719944498ad1328c5449e896e57d204100e539f1a5",
+      "checkedAt": "2026-10-14T09:56:42.869Z",
+      "kind": "map"
+    },
+    {
+      "file": "guides/maps--beach-hunting-ground.json",
+      "bytes": 2115,
+      "sha256": "3d3f5d273c7527643d14b40a3d1bf2e144f42435f52a32da118f53bdafcb1bd6",
+      "checkedAt": "2026-10-14T09:57:09.854Z",
+      "kind": "map"
+    },
+    {
       "file": "guides/maps--dangerous-forest.json",
       "bytes": 1503,
       "sha256": "bd0f2ce024ae6932f0d948ce3146774a6bd0e1af14cf56639237e2fd3d5c2419",
@@ -181,6 +230,20 @@
       "kind": "map"
     },
     {
+      "file": "guides/maps--drake-s-meal-table.json",
+      "bytes": 1597,
+      "sha256": "70273322a6b33e8df3c82b99357b4e09718c046a6ec4a0a1a4de634fe2115915",
+      "checkedAt": "2026-10-14T09:57:06.890Z",
+      "kind": "map"
+    },
+    {
+      "file": "guides/maps--east-domain-of-perion.json",
+      "bytes": 2461,
+      "sha256": "16e73927b61a0233078d738547349d5c01ab493bb00593b411fc881b73e82b43",
+      "checkedAt": "2026-10-14T09:56:54.849Z",
+      "kind": "map"
+    },
+    {
       "file": "guides/maps--east-rocky-mountain-iv.json",
       "bytes": 1669,
       "sha256": "afaab697537f363c2bc5dd6ec8a9d125a5076fcad0b43aa8234bd2014483e6f8",
@@ -192,6 +255,20 @@
       "bytes": 2274,
       "sha256": "d50e71166050a9e464e8c464b6e21a0b806f6bac7d88f6f5fb1ef8d20117fc91",
       "checkedAt": "2026-10-13T17:08:30.469Z",
+      "kind": "map"
+    },
+    {
+      "file": "guides/maps--hunting-ground-in-the-deep-forest-i.json",
+      "bytes": 2091,
+      "sha256": "068ace3e28d1081e26d8ac3e14156b407196590e8f6960a2cb78ab66fb6d15a3",
+      "checkedAt": "2026-10-14T09:56:57.884Z",
+      "kind": "map"
+    },
+    {
+      "file": "guides/maps--hunting-ground-in-the-deep-forest-ii.json",
+      "bytes": 1679,
+      "sha256": "59825007f49b566b9d0f29befc61156bba1f53c9052cee06f2bfbd5511f95117",
+      "checkedAt": "2026-10-14T09:57:00.843Z",
       "kind": "map"
     },
     {
@@ -216,10 +293,38 @@
       "kind": "map"
     },
     {
+      "file": "guides/maps--kerning-city-middle-forest-iii.json",
+      "bytes": 2041,
+      "sha256": "40929d21ae5403cd3af6ea3b3d020e306aa74b3005680c19b048b461e42f4479",
+      "checkedAt": "2026-10-14T09:56:39.873Z",
+      "kind": "map"
+    },
+    {
+      "file": "guides/maps--l-forest-ii.json",
+      "bytes": 2558,
+      "sha256": "c36895b6ed93dbd92858a560ac85d61629f4f34a18973ad6fe6a12f9db7f6669",
+      "checkedAt": "2026-10-14T09:57:03.846Z",
+      "kind": "map"
+    },
+    {
+      "file": "guides/maps--l-forest-iii.json",
+      "bytes": 2344,
+      "sha256": "4332a5a3525d89b85f5db1dd673cc5e13c97bea4d187f75596839b5683c7746a",
+      "checkedAt": "2026-10-14T09:56:45.889Z",
+      "kind": "map"
+    },
+    {
       "file": "guides/maps--mushroom-garden.json",
       "bytes": 1386,
       "sha256": "fe386549fbb883f45df891e5df7bfd506f31f6445bc0054aaa94990e395c9925",
       "checkedAt": "2026-10-13T20:14:31.615Z",
+      "kind": "map"
+    },
+    {
+      "file": "guides/maps--perion-street-corner.json",
+      "bytes": 1875,
+      "sha256": "f908e88b2461c3ee47d7ef2fb2a99bb677a2f146259b2d85cf8ce3b6168c2ea8",
+      "checkedAt": "2026-10-14T09:56:33.861Z",
       "kind": "map"
     },
     {
@@ -272,6 +377,13 @@
       "kind": "map"
     },
     {
+      "file": "guides/maps--the-field-east-of-amherst.json",
+      "bytes": 1626,
+      "sha256": "4aa10536b7385bf29b0207272c36684d9b817ce33bc3d238c9dbfeaea2589195",
+      "checkedAt": "2026-10-14T09:56:49.074Z",
+      "kind": "map"
+    },
+    {
       "file": "guides/maps--the-field-up-north-of-ellinia.json",
       "bytes": 1717,
       "sha256": "37d9019ce345aedfe793a22533b703fe40ed04ef9dbf886aa03e675295891332",
@@ -297,6 +409,13 @@
       "bytes": 4069,
       "sha256": "be6975674a23af0eceb31810c18b8d67d727ea708ae5ab7e86904feec46cf179",
       "checkedAt": "2026-10-13T20:14:28.574Z",
+      "kind": "map"
+    },
+    {
+      "file": "guides/maps--the-forest-of-wisdom.json",
+      "bytes": 1985,
+      "sha256": "664a0f05f3efbeb27e1ac7c0ea402a9203d93932fc31800bbe10374fa233e590",
+      "checkedAt": "2026-10-14T09:56:51.852Z",
       "kind": "map"
     },
     {
@@ -332,6 +451,13 @@
       "bytes": 1491,
       "sha256": "a93f4fc4043d8f2e7273ae903b28e1fe94292095206d0e39b23b30e52143ae03",
       "checkedAt": "2026-10-13T20:14:19.557Z",
+      "kind": "map"
+    },
+    {
+      "file": "guides/maps--west-domain-of-perion.json",
+      "bytes": 2086,
+      "sha256": "4646b0f3a8b85e1ed27434deb3391e13e896ad9e0f43c8bb2f78882a7c6d009d",
+      "checkedAt": "2026-10-14T09:56:36.840Z",
       "kind": "map"
     },
     {
@@ -598,6 +724,27 @@
       "bytes": 677,
       "sha256": "60069565b8bad1b113251e89593122fa83f71eb68d66daa08a8caa882c01a47a",
       "checkedAt": "2026-10-13T20:13:55.586Z",
+      "kind": "npc"
+    },
+    {
+      "file": "records/npc-2000004.json",
+      "bytes": 658,
+      "sha256": "b7cd63baa61033f26c39a8a4ca980b42ad8e840d5fb471dfae1826afbf7e441b",
+      "checkedAt": "2026-10-14T09:56:27.886Z",
+      "kind": "npc"
+    },
+    {
+      "file": "records/npc-2000005.json",
+      "bytes": 677,
+      "sha256": "9f8c5bb7f14ef689ad0b1345ee2da8b162b7f91414ec78ba469c826c7dcdc5b9",
+      "checkedAt": "2026-10-14T09:56:30.836Z",
+      "kind": "npc"
+    },
+    {
+      "file": "records/npc-2000006.json",
+      "bytes": 674,
+      "sha256": "69118b0b290236ea24f325723c3b46dfbf320328c8b115516faf7bf41ce5e06b",
+      "checkedAt": "2026-10-14T09:56:24.891Z",
       "kind": "npc"
     },
     {

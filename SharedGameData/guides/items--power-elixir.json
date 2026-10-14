@@ -1,0 +1,159 @@
+{
+  "schemaVersion": 1,
+  "path": "/items/power-elixir",
+  "kind": "item",
+  "name": "Power Elixir",
+  "source": "CCPLZ",
+  "sourceUrl": "https://ccplz.cc/items/power-elixir",
+  "checkedAt": "2026-10-14T09:56:30.836Z",
+  "notice": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial.",
+  "fields": [
+    {
+      "label": "Type",
+      "value": "Potions"
+    },
+    {
+      "label": "NPC sell price",
+      "value": "2,500 mesos"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Dropped by",
+      "links": [
+        {
+          "name": "Bain",
+          "path": "/monsters/bain",
+          "detail": "Level 90, 2% historical rate"
+        },
+        {
+          "name": "Bloctopus",
+          "path": "/monsters/bloctopus",
+          "detail": "Level 35, 1% historical rate"
+        },
+        {
+          "name": "Brown Teddy",
+          "path": "/monsters/brown-teddy",
+          "detail": "Level 30, 1% historical rate"
+        },
+        {
+          "name": "Buffoon",
+          "path": "/monsters/buffoon",
+          "detail": "Level 74, 1% historical rate"
+        },
+        {
+          "name": "Buffy",
+          "path": "/monsters/buffy",
+          "detail": "Level 62, 1% historical rate"
+        },
+        {
+          "name": "Chronos",
+          "path": "/monsters/chronos",
+          "detail": "Level 37, 1% historical rate"
+        },
+        {
+          "name": "Death Teddy",
+          "path": "/monsters/death-teddy",
+          "detail": "Level 85, 1% historical rate"
+        },
+        {
+          "name": "Deep Buffoon",
+          "path": "/monsters/deep-buffoon",
+          "detail": "Level 77, 1% historical rate"
+        },
+        {
+          "name": "Ghost Pirate",
+          "path": "/monsters/ghost-pirate",
+          "detail": "Level 83, 1% historical rate"
+        },
+        {
+          "name": "Gigantic Spirit Viking",
+          "path": "/monsters/gigantic-spirit-viking",
+          "detail": "Level 98, 2% historical rate"
+        },
+        {
+          "name": "Grim Phantom Watch",
+          "path": "/monsters/grim-phantom-watch",
+          "detail": "Level 99, 2% historical rate"
+        },
+        {
+          "name": "Jr. Balrog",
+          "path": "/monsters/jr-balrog",
+          "detail": "Level 80, 100% historical rate"
+        },
+        {
+          "name": "King Block Golem",
+          "path": "/monsters/king-block-golem",
+          "detail": "Level 45, 1% historical rate"
+        },
+        {
+          "name": "Klock",
+          "path": "/monsters/klock",
+          "detail": "Level 71, 1% historical rate"
+        },
+        {
+          "name": "Lazy Buffy",
+          "path": "/monsters/lazy-buffy",
+          "detail": "Level 66, 1% historical rate"
+        },
+        {
+          "name": "Master Chronos",
+          "path": "/monsters/master-chronos",
+          "detail": "Level 49, 1% historical rate"
+        },
+        {
+          "name": "Master Death Teddy",
+          "path": "/monsters/master-death-teddy",
+          "detail": "Level 89, 2% historical rate"
+        },
+        {
+          "name": "Master Soul Teddy",
+          "path": "/monsters/master-soul-teddy",
+          "detail": "Level 67, 1% historical rate"
+        },
+        {
+          "name": "Phantom Watch",
+          "path": "/monsters/phantom-watch",
+          "detail": "Level 95, 2% historical rate"
+        },
+        {
+          "name": "Soul Teddy",
+          "path": "/monsters/soul-teddy",
+          "detail": "Level 63, 1% historical rate"
+        },
+        {
+          "name": "Taurospear",
+          "path": "/monsters/taurospear",
+          "detail": "Level 75, 2% historical rate"
+        },
+        {
+          "name": "Thanatos",
+          "path": "/monsters/thanatos",
+          "detail": "Level 108, 2% historical rate"
+        },
+        {
+          "name": "Tick-Tock",
+          "path": "/monsters/tick-tock",
+          "detail": "Level 40, 1% historical rate"
+        },
+        {
+          "name": "Wild Kargo",
+          "path": "/monsters/wild-kargo",
+          "detail": "Level 62, 2% historical rate"
+        }
+      ],
+      "total": 24
+    },
+    {
+      "title": "Quest rewards",
+      "links": [
+        {
+          "name": "Jane the Alchemist (Jane's Second Challenge)",
+          "path": "/quests/jane-s-second-challenge",
+          "detail": "Level 44"
+        }
+      ],
+      "total": 1
+    }
+  ]
+}

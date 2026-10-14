@@ -1,0 +1,391 @@
+{
+  "schemaVersion": 1,
+  "path": "/items/arrows-for-crossbows",
+  "kind": "item",
+  "name": "Arrows for Crossbows",
+  "source": "CCPLZ",
+  "sourceUrl": "https://ccplz.cc/items/arrows-for-crossbows",
+  "checkedAt": "2026-10-14T09:57:15.869Z",
+  "notice": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial.",
+  "fields": [
+    {
+      "label": "Type",
+      "value": "Arrows for crossbows"
+    },
+    {
+      "label": "NPC buy price (lowest recorded)",
+      "value": "1 mesos"
+    },
+    {
+      "label": "Stack limit",
+      "value": "1000"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Dropped by",
+      "links": [
+        {
+          "name": "Blue Snail",
+          "path": "/monsters/blue-snail",
+          "detail": "Level 2, 3% historical rate"
+        },
+        {
+          "name": "Bubbling",
+          "path": "/monsters/bubbling",
+          "detail": "Level 15, 3% historical rate"
+        },
+        {
+          "name": "Green Mushroom",
+          "path": "/monsters/green-mushroom",
+          "detail": "Level 14, 3% historical rate"
+        },
+        {
+          "name": "Orange Mushroom",
+          "path": "/monsters/orange-mushroom",
+          "detail": "Level 8, 3% historical rate"
+        },
+        {
+          "name": "Red Snail",
+          "path": "/monsters/red-snail",
+          "detail": "Level 4, 3% historical rate"
+        },
+        {
+          "name": "Shroom",
+          "path": "/monsters/shroom",
+          "detail": "Level 3, 3% historical rate"
+        },
+        {
+          "name": "Slime",
+          "path": "/monsters/slime",
+          "detail": "Level 6, 3% historical rate"
+        },
+        {
+          "name": "Snail",
+          "path": "/monsters/snail",
+          "detail": "Level 1, 3% historical rate"
+        },
+        {
+          "name": "Stump",
+          "path": "/monsters/stump",
+          "detail": "Level 5, 3% historical rate"
+        }
+      ],
+      "total": 9
+    },
+    {
+      "title": "Also dropped by, in older versions",
+      "links": [
+        {
+          "name": "Axe Stump",
+          "path": "/monsters/axe-stump",
+          "detail": "Level 17, 3% historical rate"
+        },
+        {
+          "name": "Barnard Gray",
+          "path": "/monsters/barnard-gray",
+          "detail": "Level 40, 3% historical rate"
+        },
+        {
+          "name": "Black Ratz",
+          "path": "/monsters/black-ratz",
+          "detail": "Level 34, 3% historical rate"
+        },
+        {
+          "name": "Block Golem",
+          "path": "/monsters/block-golem",
+          "detail": "Level 42, 3% historical rate"
+        },
+        {
+          "name": "Blue Mushroom",
+          "path": "/monsters/blue-mushroom",
+          "detail": "Level 19, 3% historical rate"
+        },
+        {
+          "name": "Chirppy",
+          "path": "/monsters/chirppy",
+          "detail": "Level 31, 3% historical rate"
+        },
+        {
+          "name": "Curse Eye",
+          "path": "/monsters/curse-eye",
+          "detail": "Level 33, 3% historical rate"
+        },
+        {
+          "name": "Dark Axe Stump",
+          "path": "/monsters/dark-axe-stump",
+          "detail": "Level 23, 3% historical rate"
+        },
+        {
+          "name": "Dark Stump",
+          "path": "/monsters/dark-stump",
+          "detail": "Level 11, 3% historical rate"
+        },
+        {
+          "name": "Drumming Bunny",
+          "path": "/monsters/drumming-bunny",
+          "detail": "Level 31, 3% historical rate"
+        },
+        {
+          "name": "Evil Eye",
+          "path": "/monsters/evil-eye",
+          "detail": "Level 27, 3% historical rate"
+        },
+        {
+          "name": "Green Trixter",
+          "path": "/monsters/green-trixter",
+          "detail": "Level 28, 3% historical rate"
+        },
+        {
+          "name": "Hector",
+          "path": "/monsters/hector",
+          "detail": "Level 55, 3% historical rate"
+        },
+        {
+          "name": "Helly",
+          "path": "/monsters/helly",
+          "detail": "Level 36, 3% historical rate"
+        },
+        {
+          "name": "Horny Mushroom",
+          "path": "/monsters/horny-mushroom",
+          "detail": "Level 22, 3% historical rate"
+        },
+        {
+          "name": "Iron Hog",
+          "path": "/monsters/iron-hog",
+          "detail": "Level 28, 3% historical rate"
+        },
+        {
+          "name": "Jr. Cerebes",
+          "path": "/monsters/jr-cerebes",
+          "detail": "Level 43, 3% historical rate"
+        },
+        {
+          "name": "King Bloctopus",
+          "path": "/monsters/king-bloctopus",
+          "detail": "Level 38, 3% historical rate"
+        },
+        {
+          "name": "Lunar Pixie",
+          "path": "/monsters/lunar-pixie",
+          "detail": "Level 45, 3% historical rate"
+        },
+        {
+          "name": "Mano",
+          "path": "/monsters/mano",
+          "detail": "Level 20, 30% historical rate"
+        },
+        {
+          "name": "Master Robo",
+          "path": "/monsters/master-robo",
+          "detail": "Level 44, 3% historical rate"
+        },
+        {
+          "name": "Mateon",
+          "path": "/monsters/mateon",
+          "detail": "Level 41, 3% historical rate"
+        },
+        {
+          "name": "Mecateon",
+          "path": "/monsters/mecateon",
+          "detail": "Level 48, 3% historical rate"
+        },
+        {
+          "name": "Octopus",
+          "path": "/monsters/octopus",
+          "detail": "Level 12, 3% historical rate"
+        },
+        {
+          "name": "Pig",
+          "path": "/monsters/pig",
+          "detail": "Level 7, 3% historical rate"
+        },
+        {
+          "name": "Pink Teddy",
+          "path": "/monsters/pink-teddy",
+          "detail": "Level 32, 3% historical rate"
+        },
+        {
+          "name": "Planey",
+          "path": "/monsters/planey",
+          "detail": "Level 38, 3% historical rate"
+        },
+        {
+          "name": "Plateon",
+          "path": "/monsters/plateon",
+          "detail": "Level 44, 3% historical rate"
+        },
+        {
+          "name": "Platoon Chronos",
+          "path": "/monsters/platoon-chronos",
+          "detail": "Level 41, 3% historical rate"
+        },
+        {
+          "name": "Propelly",
+          "path": "/monsters/propelly",
+          "detail": "Level 37, 3% historical rate"
+        },
+        {
+          "name": "Ratz",
+          "path": "/monsters/ratz",
+          "detail": "Level 32, 3% historical rate"
+        },
+        {
+          "name": "Ribbon Pig",
+          "path": "/monsters/ribbon-pig",
+          "detail": "Level 10, 3% historical rate"
+        },
+        {
+          "name": "Robo",
+          "path": "/monsters/robo",
+          "detail": "Level 41, 3% historical rate"
+        },
+        {
+          "name": "Roloduck",
+          "path": "/monsters/roloduck",
+          "detail": "Level 34, 3% historical rate"
+        },
+        {
+          "name": "Sentinel",
+          "path": "/monsters/sentinel",
+          "detail": "Level 30, 3% historical rate"
+        },
+        {
+          "name": "Star Pixie",
+          "path": "/monsters/star-pixie",
+          "detail": "Level 35, 3% historical rate"
+        },
+        {
+          "name": "Stirge",
+          "path": "/monsters/stirge",
+          "detail": "Level 20, 3% historical rate"
+        },
+        {
+          "name": "Tick",
+          "path": "/monsters/tick",
+          "detail": "Level 34, 3% historical rate"
+        },
+        {
+          "name": "Toy Trojan",
+          "path": "/monsters/toy-trojan",
+          "detail": "Level 39, 3% historical rate"
+        },
+        {
+          "name": "Trixter",
+          "path": "/monsters/trixter",
+          "detail": "Level 25, 3% historical rate"
+        },
+        {
+          "name": "Tweeter",
+          "path": "/monsters/tweeter",
+          "detail": "Level 39, 3% historical rate"
+        },
+        {
+          "name": "Ultra Gray",
+          "path": "/monsters/ultra-gray",
+          "detail": "Level 46, 3% historical rate"
+        },
+        {
+          "name": "White Fang",
+          "path": "/monsters/white-fang",
+          "detail": "Level 59, 3% historical rate"
+        },
+        {
+          "name": "Wild Boar",
+          "path": "/monsters/wild-boar",
+          "detail": "Level 25, 3% historical rate"
+        },
+        {
+          "name": "Zeta Gray",
+          "path": "/monsters/zeta-gray",
+          "detail": "Level 42, 3% historical rate"
+        },
+        {
+          "name": "Zombie Mushroom",
+          "path": "/monsters/zombie-mushroom",
+          "detail": "Level 24, 3% historical rate"
+        }
+      ],
+      "total": 46
+    },
+    {
+      "title": "Sold in",
+      "links": [
+        {
+          "name": "24 Hr Mobile Store's Shop",
+          "path": "/shops/24-hr-mobile-store-s-shop",
+          "detail": ""
+        },
+        {
+          "name": "Arturo's Shop",
+          "path": "/shops/arturo-s-shop",
+          "detail": ""
+        },
+        {
+          "name": "Dr. Faymus's Shop",
+          "path": "/shops/dr-faymus-s-shop",
+          "detail": ""
+        },
+        {
+          "name": "Len the Fairy's Shop",
+          "path": "/shops/len-the-fairy-s-shop",
+          "detail": ""
+        },
+        {
+          "name": "Luma's Shop",
+          "path": "/shops/luma-s-shop",
+          "detail": ""
+        },
+        {
+          "name": "Luna's Shop",
+          "path": "/shops/luna-s-shop",
+          "detail": ""
+        },
+        {
+          "name": "Mina's Shop",
+          "path": "/shops/mina-s-shop",
+          "detail": ""
+        },
+        {
+          "name": "Mr. Sweatbottom's Shop",
+          "path": "/shops/mr-sweatbottom-s-shop",
+          "detail": ""
+        },
+        {
+          "name": "Valen's Shop",
+          "path": "/shops/valen-s-shop",
+          "detail": ""
+        }
+      ],
+      "total": 9
+    },
+    {
+      "title": "How to craft it",
+      "links": [
+        {
+          "name": "Arrows for Crossbows (makes 5)",
+          "path": "/recipes/craft-arrows-for-crossbows-3-1-3",
+          "detail": "Crafting skill level 1"
+        },
+        {
+          "name": "Arrows for Crossbows (makes 500)",
+          "path": "/recipes/craft-arrows-for-crossbows",
+          "detail": "Crafting skill level 1"
+        }
+      ],
+      "total": 2
+    },
+    {
+      "title": "Used in crafting",
+      "links": [
+        {
+          "name": "Arrows for Bows (makes 5)",
+          "path": "/recipes/craft-arrows-for-bows-3-1-1",
+          "detail": ""
+        }
+      ],
+      "total": 1
+    }
+  ]
+}

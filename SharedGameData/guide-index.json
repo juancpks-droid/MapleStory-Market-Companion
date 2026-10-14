@@ -3,14 +3,34 @@
   "partial": true,
   "entries": [
     {
+      "path": "/maps/3-way-road-split",
+      "name": "3-Way Road-Split",
+      "kind": "map"
+    },
+    {
       "path": "/items/5-o-clock-shadow",
       "name": "5 O'Clock Shadow",
+      "kind": "item"
+    },
+    {
+      "path": "/items/arrows-for-bows",
+      "name": "Arrows for Bows",
+      "kind": "item"
+    },
+    {
+      "path": "/items/arrows-for-crossbows",
+      "name": "Arrows for Crossbows",
       "kind": "item"
     },
     {
       "path": "/shops/arturo-s-shop",
       "name": "Arturo's Shop",
       "kind": "shop"
+    },
+    {
+      "path": "/maps/beach-hunting-ground",
+      "name": "Beach Hunting Ground",
+      "kind": "map"
     },
     {
       "path": "/quests/biggs-s-collection-of-items",
@@ -98,9 +118,24 @@
       "kind": "quest"
     },
     {
+      "path": "/maps/drake-s-meal-table",
+      "name": "Drake's Meal Table",
+      "kind": "map"
+    },
+    {
+      "path": "/maps/east-domain-of-perion",
+      "name": "East Domain of Perion",
+      "kind": "map"
+    },
+    {
       "path": "/maps/east-rocky-mountain-iv",
       "name": "East Rocky Mountain IV",
       "kind": "map"
+    },
+    {
+      "path": "/items/elixir",
+      "name": "Elixir",
+      "kind": "item"
     },
     {
       "path": "/monsters/firebomb",
@@ -163,6 +198,16 @@
       "kind": "recipe"
     },
     {
+      "path": "/maps/hunting-ground-in-the-deep-forest-i",
+      "name": "Hunting Ground in the Deep Forest I",
+      "kind": "map"
+    },
+    {
+      "path": "/maps/hunting-ground-in-the-deep-forest-ii",
+      "name": "Hunting Ground in the Deep Forest II",
+      "kind": "map"
+    },
+    {
       "path": "/maps/hunting-ground-middle-of-the-forest-i",
       "name": "Hunting Ground Middle of the Forest I",
       "kind": "map"
@@ -188,8 +233,28 @@
       "kind": "monster"
     },
     {
+      "path": "/maps/kerning-city-middle-forest-iii",
+      "name": "Kerning City Middle Forest III",
+      "kind": "map"
+    },
+    {
+      "path": "/maps/l-forest-ii",
+      "name": "L Forest II",
+      "kind": "map"
+    },
+    {
+      "path": "/maps/l-forest-iii",
+      "name": "L Forest III",
+      "kind": "map"
+    },
+    {
       "path": "/items/long-brown-beard",
       "name": "Long Brown Beard",
+      "kind": "item"
+    },
+    {
+      "path": "/items/mana-elixir",
+      "name": "Mana Elixir",
       "kind": "item"
     },
     {
@@ -233,9 +298,19 @@
       "kind": "item"
     },
     {
+      "path": "/maps/perion-street-corner",
+      "name": "Perion Street Corner",
+      "kind": "map"
+    },
+    {
       "path": "/monsters/plateon",
       "name": "Plateon",
       "kind": "monster"
+    },
+    {
+      "path": "/items/power-elixir",
+      "name": "Power Elixir",
+      "kind": "item"
     },
     {
       "path": "/items/purple-moonlight",
@@ -308,6 +383,11 @@
       "kind": "item"
     },
     {
+      "path": "/maps/the-field-east-of-amherst",
+      "name": "The Field East of Amherst",
+      "kind": "map"
+    },
+    {
       "path": "/maps/the-field-up-north-of-ellinia",
       "name": "The Field Up North of Ellinia",
       "kind": "map"
@@ -325,6 +405,11 @@
     {
       "path": "/maps/the-forest-north-of-ellinia",
       "name": "The Forest North of Ellinia",
+      "kind": "map"
+    },
+    {
+      "path": "/maps/the-forest-of-wisdom",
+      "name": "The Forest of Wisdom",
       "kind": "map"
     },
     {
@@ -355,6 +440,11 @@
     {
       "path": "/maps/tomato-field",
       "name": "Tomato Field",
+      "kind": "map"
+    },
+    {
+      "path": "/maps/west-domain-of-perion",
+      "name": "West Domain of Perion",
       "kind": "map"
     },
     {

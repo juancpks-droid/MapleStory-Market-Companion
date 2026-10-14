@@ -1,0 +1,98 @@
+{
+  "schemaVersion": 1,
+  "path": "/maps/l-forest-iii",
+  "kind": "map",
+  "name": "L Forest III",
+  "source": "CCPLZ",
+  "sourceUrl": "https://ccplz.cc/maps/l-forest-iii",
+  "checkedAt": "2026-10-14T09:56:45.889Z",
+  "notice": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial.",
+  "fields": [
+    {
+      "label": "Region",
+      "value": "Victoria Island"
+    },
+    {
+      "label": "Street",
+      "value": "Victoria Road"
+    },
+    {
+      "label": "Monster levels",
+      "value": "1 to 19"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Monsters",
+      "links": [
+        {
+          "name": "Snail",
+          "path": "/monsters/snail",
+          "detail": "Level 1"
+        },
+        {
+          "name": "Blue Snail",
+          "path": "/monsters/blue-snail",
+          "detail": "Level 2"
+        },
+        {
+          "name": "Shroom",
+          "path": "/monsters/shroom",
+          "detail": "Level 3"
+        },
+        {
+          "name": "Red Snail",
+          "path": "/monsters/red-snail",
+          "detail": "Level 4"
+        },
+        {
+          "name": "Stump",
+          "path": "/monsters/stump",
+          "detail": "Level 5"
+        },
+        {
+          "name": "Slime",
+          "path": "/monsters/slime",
+          "detail": "Level 6"
+        },
+        {
+          "name": "Pig",
+          "path": "/monsters/pig",
+          "detail": "Level 7"
+        },
+        {
+          "name": "Ribbon Pig",
+          "path": "/monsters/ribbon-pig",
+          "detail": "Level 10"
+        },
+        {
+          "name": "Green Mushroom",
+          "path": "/monsters/green-mushroom",
+          "detail": "Level 14"
+        },
+        {
+          "name": "Blue Mushroom",
+          "path": "/monsters/blue-mushroom",
+          "detail": "Level 19"
+        }
+      ],
+      "total": 10
+    },
+    {
+      "title": "Connected maps",
+      "links": [
+        {
+          "name": "Kerning City Middle Forest I",
+          "path": "/maps/kerning-city-middle-forest-i",
+          "detail": "Victoria Road"
+        },
+        {
+          "name": "L Forest II",
+          "path": "/maps/l-forest-ii",
+          "detail": "Victoria Road"
+        }
+      ],
+      "total": 2
+    }
+  ]
+}

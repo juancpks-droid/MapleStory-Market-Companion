@@ -1,0 +1,98 @@
+{
+  "schemaVersion": 1,
+  "path": "/maps/east-domain-of-perion",
+  "kind": "map",
+  "name": "East Domain of Perion",
+  "source": "CCPLZ",
+  "sourceUrl": "https://ccplz.cc/maps/east-domain-of-perion",
+  "checkedAt": "2026-10-14T09:56:54.849Z",
+  "notice": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial.",
+  "fields": [
+    {
+      "label": "Region",
+      "value": "Victoria Island"
+    },
+    {
+      "label": "Street",
+      "value": "Victoria Road"
+    },
+    {
+      "label": "Monster levels",
+      "value": "1 to 23"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Monsters",
+      "links": [
+        {
+          "name": "Snail",
+          "path": "/monsters/snail",
+          "detail": "Level 1"
+        },
+        {
+          "name": "Blue Snail",
+          "path": "/monsters/blue-snail",
+          "detail": "Level 2"
+        },
+        {
+          "name": "Red Snail",
+          "path": "/monsters/red-snail",
+          "detail": "Level 4"
+        },
+        {
+          "name": "Stump",
+          "path": "/monsters/stump",
+          "detail": "Level 5"
+        },
+        {
+          "name": "Dark Stump",
+          "path": "/monsters/dark-stump",
+          "detail": "Level 11"
+        },
+        {
+          "name": "Green Mushroom",
+          "path": "/monsters/green-mushroom",
+          "detail": "Level 14"
+        },
+        {
+          "name": "Axe Stump",
+          "path": "/monsters/axe-stump",
+          "detail": "Level 17"
+        },
+        {
+          "name": "Dark Axe Stump",
+          "path": "/monsters/dark-axe-stump",
+          "detail": "Level 23"
+        }
+      ],
+      "total": 8
+    },
+    {
+      "title": "Connected maps",
+      "links": [
+        {
+          "name": "East Domain of Perion",
+          "path": "/maps/east-domain-of-perion",
+          "detail": "Victoria Road"
+        },
+        {
+          "name": "Rocky Road III",
+          "path": "/maps/rocky-road-iii",
+          "detail": "Victoria Road"
+        },
+        {
+          "name": "The Forest North of Ellinia",
+          "path": "/maps/the-forest-north-of-ellinia",
+          "detail": "Victoria Road"
+        },
+        {
+          "name": "The Land of Wild Boar II",
+          "path": "/maps/the-land-of-wild-boar-ii",
+          "detail": "Hidden Street"
+        }
+      ],
+      "total": 4
+    }
+  ]
+}

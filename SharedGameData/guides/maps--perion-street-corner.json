@@ -1,0 +1,78 @@
+{
+  "schemaVersion": 1,
+  "path": "/maps/perion-street-corner",
+  "kind": "map",
+  "name": "Perion Street Corner",
+  "source": "CCPLZ",
+  "sourceUrl": "https://ccplz.cc/maps/perion-street-corner",
+  "checkedAt": "2026-10-14T09:56:33.861Z",
+  "notice": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial.",
+  "fields": [
+    {
+      "label": "Region",
+      "value": "Victoria Island"
+    },
+    {
+      "label": "Street",
+      "value": "Victoria Road"
+    },
+    {
+      "label": "Monster levels",
+      "value": "1 to 11"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Monsters",
+      "links": [
+        {
+          "name": "Snail",
+          "path": "/monsters/snail",
+          "detail": "Level 1"
+        },
+        {
+          "name": "Blue Snail",
+          "path": "/monsters/blue-snail",
+          "detail": "Level 2"
+        },
+        {
+          "name": "Red Snail",
+          "path": "/monsters/red-snail",
+          "detail": "Level 4"
+        },
+        {
+          "name": "Stump",
+          "path": "/monsters/stump",
+          "detail": "Level 5"
+        },
+        {
+          "name": "Dark Stump",
+          "path": "/monsters/dark-stump",
+          "detail": "Level 11"
+        }
+      ],
+      "total": 5
+    },
+    {
+      "title": "Connected maps",
+      "links": [
+        {
+          "name": "East Rocky Mountain I",
+          "path": "/maps/east-rocky-mountain-i",
+          "detail": "Victoria Road"
+        },
+        {
+          "name": "Land of Wild Boar",
+          "path": "/maps/land-of-wild-boar",
+          "detail": "Hidden Street"
+        },
+        {
+          "name": "Perion",
+          "path": "/maps/perion",
+          "detail": "Victoria Road"
+        }
+      ],
+      "total": 3
+    }
+  ]
+}

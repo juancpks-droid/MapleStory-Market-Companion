@@ -1,0 +1,83 @@
+{
+  "schemaVersion": 1,
+  "path": "/maps/west-domain-of-perion",
+  "kind": "map",
+  "name": "West Domain of Perion",
+  "source": "CCPLZ",
+  "sourceUrl": "https://ccplz.cc/maps/west-domain-of-perion",
+  "checkedAt": "2026-10-14T09:56:36.840Z",
+  "notice": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial.",
+  "fields": [
+    {
+      "label": "Region",
+      "value": "Victoria Island"
+    },
+    {
+      "label": "Street",
+      "value": "Victoria Road"
+    },
+    {
+      "label": "Monster levels",
+      "value": "1 to 14"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Monsters",
+      "links": [
+        {
+          "name": "Snail",
+          "path": "/monsters/snail",
+          "detail": "Level 1"
+        },
+        {
+          "name": "Blue Snail",
+          "path": "/monsters/blue-snail",
+          "detail": "Level 2"
+        },
+        {
+          "name": "Red Snail",
+          "path": "/monsters/red-snail",
+          "detail": "Level 4"
+        },
+        {
+          "name": "Stump",
+          "path": "/monsters/stump",
+          "detail": "Level 5"
+        },
+        {
+          "name": "Dark Stump",
+          "path": "/monsters/dark-stump",
+          "detail": "Level 11"
+        },
+        {
+          "name": "Green Mushroom",
+          "path": "/monsters/green-mushroom",
+          "detail": "Level 14"
+        }
+      ],
+      "total": 6
+    },
+    {
+      "title": "Connected maps",
+      "links": [
+        {
+          "name": "Construction Site North of Kerning City",
+          "path": "/maps/construction-site-north-of-kerning-city",
+          "detail": "Victoria Road"
+        },
+        {
+          "name": "West Domain of Perion",
+          "path": "/maps/west-domain-of-perion",
+          "detail": "Victoria Road"
+        },
+        {
+          "name": "West Rocky Mountain I",
+          "path": "/maps/west-rocky-mountain-i",
+          "detail": "Victoria Road"
+        }
+      ],
+      "total": 3
+    }
+  ]
+}
