@@ -43,8 +43,18 @@
       "kind": "item"
     },
     {
+      "path": "/items/blue-snail-shell",
+      "name": "Blue Snail Shell",
+      "kind": "item"
+    },
+    {
       "path": "/items/blue-starlight",
       "name": "Blue Starlight",
+      "kind": "item"
+    },
+    {
+      "path": "/items/bronze-ore",
+      "name": "Bronze Ore",
       "kind": "item"
     },
     {
@@ -63,6 +73,11 @@
       "kind": "item"
     },
     {
+      "path": "/items/brown-skullcap",
+      "name": "Brown Skullcap",
+      "kind": "item"
+    },
+    {
       "path": "/recipes/craft-brown-skullcap",
       "name": "Brown Skullcap",
       "kind": "recipe"
@@ -76,6 +91,11 @@
       "path": "/recipes/craft-brown-winter-hat",
       "name": "Brown Winter Hat",
       "kind": "recipe"
+    },
+    {
+      "path": "/items/cape-magic-def-scroll-intermediate",
+      "name": "Cape Magic Def. Scroll: Intermediate",
+      "kind": "item"
     },
     {
       "path": "/quests/maya-s-first-collection",
@@ -133,6 +153,11 @@
       "kind": "map"
     },
     {
+      "path": "/items/egg",
+      "name": "Egg",
+      "kind": "item"
+    },
+    {
       "path": "/items/elixir",
       "name": "Elixir",
       "kind": "item"
@@ -146,6 +171,11 @@
       "path": "/maps/forest-west-of-henesys",
       "name": "Forest West of Henesys",
       "kind": "map"
+    },
+    {
+      "path": "/items/garnet-ore",
+      "name": "Garnet Ore",
+      "kind": "item"
     },
     {
       "path": "/items/general-s-mustache-1",
@@ -183,6 +213,21 @@
       "kind": "item"
     },
     {
+      "path": "/items/green-apple",
+      "name": "Green Apple",
+      "kind": "item"
+    },
+    {
+      "path": "/items/green-headband",
+      "name": "Green Headband",
+      "kind": "item"
+    },
+    {
+      "path": "/items/green-skullcap",
+      "name": "Green Skullcap",
+      "kind": "item"
+    },
+    {
       "path": "/recipes/craft-green-skullcap",
       "name": "Green Skullcap",
       "kind": "recipe"
@@ -190,6 +235,11 @@
     {
       "path": "/items/green-starlight",
       "name": "Green Starlight",
+      "kind": "item"
+    },
+    {
+      "path": "/items/green-t-shirt",
+      "name": "Green T-Shirt",
       "kind": "item"
     },
     {
@@ -253,6 +303,11 @@
       "kind": "item"
     },
     {
+      "path": "/npcs/mai",
+      "name": "Mai",
+      "kind": "npc"
+    },
+    {
       "path": "/items/mana-elixir",
       "name": "Mana Elixir",
       "kind": "item"
@@ -271,6 +326,11 @@
       "path": "/maps/mushroom-garden",
       "name": "Mushroom Garden (Rainbow Street)",
       "kind": "map"
+    },
+    {
+      "path": "/items/mushroom-spore",
+      "name": "Mushroom Spore",
+      "kind": "item"
     },
     {
       "path": "/quests/don-hwang-s-request",
@@ -313,6 +373,11 @@
       "kind": "item"
     },
     {
+      "path": "/items/processed-leather",
+      "name": "Processed Leather",
+      "kind": "item"
+    },
+    {
       "path": "/items/purple-moonlight",
       "name": "Purple Moonlight",
       "kind": "item"
@@ -321,6 +386,11 @@
       "path": "/items/red-moonlight",
       "name": "Red Moonlight",
       "kind": "item"
+    },
+    {
+      "path": "/npcs/robin",
+      "name": "Robin",
+      "kind": "npc"
     },
     {
       "path": "/maps/rocky-road-i",
@@ -346,6 +416,11 @@
       "path": "/quests/sam-s-suggestion",
       "name": "Sam's Suggestion",
       "kind": "quest"
+    },
+    {
+      "path": "/items/slime-bubble",
+      "name": "Slime Bubble",
+      "kind": "item"
     },
     {
       "path": "/monsters/snail",
@@ -380,6 +455,11 @@
     {
       "path": "/items/snail-shell",
       "name": "Snail Shell",
+      "kind": "item"
+    },
+    {
+      "path": "/items/sword",
+      "name": "Sword",
       "kind": "item"
     },
     {
@@ -450,6 +530,11 @@
     {
       "path": "/items/white-potion",
       "name": "White Potion",
+      "kind": "item"
+    },
+    {
+      "path": "/items/white-undershirt",
+      "name": "White Undershirt",
       "kind": "item"
     }
   ]

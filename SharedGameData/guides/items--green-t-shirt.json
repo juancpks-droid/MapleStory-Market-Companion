@@ -1,0 +1,127 @@
+{
+  "schemaVersion": 1,
+  "path": "/items/green-t-shirt",
+  "kind": "item",
+  "name": "Green T-Shirt",
+  "source": "CCPLZ",
+  "sourceUrl": "https://ccplz.cc/items/green-t-shirt",
+  "checkedAt": "2026-10-15T09:57:17.634Z",
+  "notice": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial.",
+  "fields": [
+    {
+      "label": "Type",
+      "value": "Topwear"
+    },
+    {
+      "label": "Class",
+      "value": "All classes"
+    },
+    {
+      "label": "Weapon defense",
+      "value": "+6"
+    },
+    {
+      "label": "Upgrade slots",
+      "value": "7"
+    },
+    {
+      "label": "NPC buy price (lowest recorded)",
+      "value": "50 mesos"
+    },
+    {
+      "label": "Required level",
+      "value": "0"
+    },
+    {
+      "label": "Required STR",
+      "value": "0"
+    },
+    {
+      "label": "Required DEX",
+      "value": "0"
+    },
+    {
+      "label": "Required INT",
+      "value": "0"
+    },
+    {
+      "label": "Required LUK",
+      "value": "0"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Dropped by",
+      "links": [
+        {
+          "name": "Blue Snail",
+          "path": "/monsters/blue-snail",
+          "detail": "Level 2"
+        },
+        {
+          "name": "Snail",
+          "path": "/monsters/snail",
+          "detail": "Level 1"
+        }
+      ],
+      "total": 2
+    },
+    {
+      "title": "Sold in",
+      "links": [
+        {
+          "name": "Pan's Shop",
+          "path": "/shops/pan-s-shop",
+          "detail": ""
+        }
+      ],
+      "total": 1
+    },
+    {
+      "title": "Similar equipment",
+      "links": [
+        {
+          "name": "Blue Striped Undershirt",
+          "path": "/items/blue-striped-undershirt",
+          "detail": ""
+        },
+        {
+          "name": "Grey T-Shirt",
+          "path": "/items/grey-t-shirt",
+          "detail": ""
+        },
+        {
+          "name": "Pink Tank Top",
+          "path": "/items/pink-tank-top",
+          "detail": ""
+        },
+        {
+          "name": "Red Striped Top",
+          "path": "/items/red-striped-top",
+          "detail": ""
+        },
+        {
+          "name": "Undershirt",
+          "path": "/items/undershirt",
+          "detail": ""
+        },
+        {
+          "name": "White Tube Top",
+          "path": "/items/white-tube-top",
+          "detail": ""
+        },
+        {
+          "name": "White Undershirt",
+          "path": "/items/white-undershirt",
+          "detail": ""
+        },
+        {
+          "name": "Wizet Plain Suit",
+          "path": "/items/wizet-plain-suit",
+          "detail": ""
+        }
+      ],
+      "total": 8
+    }
+  ]
+}

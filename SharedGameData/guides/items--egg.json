@@ -1,0 +1,114 @@
+{
+  "schemaVersion": 1,
+  "path": "/items/egg",
+  "kind": "item",
+  "name": "Egg",
+  "source": "CCPLZ",
+  "sourceUrl": "https://ccplz.cc/items/egg",
+  "checkedAt": "2026-10-15T09:57:41.639Z",
+  "notice": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial.",
+  "fields": [
+    {
+      "label": "Type",
+      "value": "Fruit & basic food"
+    },
+    {
+      "label": "NPC sell price",
+      "value": "3 mesos"
+    },
+    {
+      "label": "NPC buy price (lowest recorded)",
+      "value": "30 mesos"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Sold in",
+      "links": [
+        {
+          "name": "Arturo's Shop",
+          "path": "/shops/arturo-s-shop",
+          "detail": ""
+        },
+        {
+          "name": "Dr. Faymus's Shop",
+          "path": "/shops/dr-faymus-s-shop",
+          "detail": ""
+        },
+        {
+          "name": "Len the Fairy's Shop",
+          "path": "/shops/len-the-fairy-s-shop",
+          "detail": ""
+        },
+        {
+          "name": "Lucy's Shop",
+          "path": "/shops/lucy-s-shop",
+          "detail": ""
+        },
+        {
+          "name": "Luna's Shop",
+          "path": "/shops/luna-s-shop",
+          "detail": ""
+        },
+        {
+          "name": "Mina's Shop",
+          "path": "/shops/mina-s-shop",
+          "detail": ""
+        },
+        {
+          "name": "Mr. Sweatbottom's Shop",
+          "path": "/shops/mr-sweatbottom-s-shop",
+          "detail": ""
+        },
+        {
+          "name": "Valen's Shop",
+          "path": "/shops/valen-s-shop",
+          "detail": ""
+        }
+      ],
+      "total": 8
+    },
+    {
+      "title": "Quest rewards",
+      "links": [
+        {
+          "name": "Mai's Training",
+          "path": "/quests/mai-s-training",
+          "detail": "Level 3"
+        },
+        {
+          "name": "Mai's Training (Mai's Final Training)",
+          "path": "/quests/mai-s-final-training",
+          "detail": ""
+        },
+        {
+          "name": "Sam's Suggestion",
+          "path": "/quests/sam-s-suggestion",
+          "detail": "Level 1"
+        },
+        {
+          "name": "Todd's How-to-Hunt",
+          "path": "/quests/todd-s-how-to-hunt",
+          "detail": "Level 1"
+        },
+        {
+          "name": "Winston's Fossil Dig-up (Delivering a Box of Fossils)",
+          "path": "/quests/delivering-a-box-of-fossils",
+          "detail": "Level 17"
+        }
+      ],
+      "total": 5
+    },
+    {
+      "title": "Needed for quests",
+      "links": [
+        {
+          "name": "A Family Reunited (Bruce's Cooking Ingredients)",
+          "path": "/quests/bruce-s-cooking-ingredients",
+          "detail": "Level 17"
+        }
+      ],
+      "total": 1
+    }
+  ]
+}

@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "publishedAt": "2026-10-14T09:57:15.883Z",
+  "publishedAt": "2026-10-15T09:57:47.722Z",
   "catalogItems": 12726,
-  "guideRecords": 90,
-  "referenceRecords": 23,
+  "guideRecords": 107,
+  "referenceRecords": 34,
   "entries": [
     {
       "file": "guides/items--5-o-clock-shadow.json",
@@ -34,10 +34,24 @@
       "kind": "item"
     },
     {
+      "file": "guides/items--blue-snail-shell.json",
+      "bytes": 2031,
+      "sha256": "1e9a1b64d93a942cdad0e410de0803db5cf5eca83b3feff27018f534549beb5a",
+      "checkedAt": "2026-10-15T09:56:56.708Z",
+      "kind": "item"
+    },
+    {
       "file": "guides/items--blue-starlight.json",
       "bytes": 2841,
       "sha256": "3566bf7d762bb579ee6dbf044ab21e294d686ccc2fe2f4d8272d7542fd06a5a4",
       "checkedAt": "2026-10-13T15:03:51.670Z",
+      "kind": "item"
+    },
+    {
+      "file": "guides/items--bronze-ore.json",
+      "bytes": 2374,
+      "sha256": "ea7ccbebc1a5de47f1460f5475c1bf86c32636bc2e97be6013355c3b1eeee4e6",
+      "checkedAt": "2026-10-15T09:57:05.795Z",
       "kind": "item"
     },
     {
@@ -48,10 +62,24 @@
       "kind": "item"
     },
     {
+      "file": "guides/items--brown-skullcap.json",
+      "bytes": 3354,
+      "sha256": "335036d49d69bb0bfaf3adcf34c1829b13ede4eb359d6b4962e9e6899f349b64",
+      "checkedAt": "2026-10-15T09:57:44.653Z",
+      "kind": "item"
+    },
+    {
       "file": "guides/items--brown-starlight.json",
       "bytes": 2992,
       "sha256": "2382ee10808b587fe772fcf278745463a86238c2d7d6eaa5e0eea40c91eb4163",
       "checkedAt": "2026-10-13T15:37:39.237Z",
+      "kind": "item"
+    },
+    {
+      "file": "guides/items--cape-magic-def-scroll-intermediate.json",
+      "bytes": 1922,
+      "sha256": "d4d64d5433ebc7913a3d66a2278af4e960ee7186bc33678521a2a18ca8bff27f",
+      "checkedAt": "2026-10-15T09:57:29.636Z",
       "kind": "item"
     },
     {
@@ -69,10 +97,24 @@
       "kind": "item"
     },
     {
+      "file": "guides/items--egg.json",
+      "bytes": 2836,
+      "sha256": "8cace775b4f03e2a3be71df4f068cb60cce50adb395801d1233a9293a1557d89",
+      "checkedAt": "2026-10-15T09:57:41.639Z",
+      "kind": "item"
+    },
+    {
       "file": "guides/items--elixir.json",
       "bytes": 10918,
       "sha256": "2e38b149c9ae689fcd4afd2d71f34e403e9e6e3a89bdf90c689bebece3fe435b",
       "checkedAt": "2026-10-14T09:56:27.886Z",
+      "kind": "item"
+    },
+    {
+      "file": "guides/items--garnet-ore.json",
+      "bytes": 2031,
+      "sha256": "d4776dd03ea29a57b8ccc93388ad36becab06d7da051d440cac0c8749c822ae6",
+      "checkedAt": "2026-10-15T09:57:08.803Z",
       "kind": "item"
     },
     {
@@ -125,10 +167,38 @@
       "kind": "item"
     },
     {
+      "file": "guides/items--green-apple.json",
+      "bytes": 1780,
+      "sha256": "1efbff36eebd06269de9723b679ca9682563cc004d7fe1d2a3d51b647b9e8c1e",
+      "checkedAt": "2026-10-15T09:57:32.687Z",
+      "kind": "item"
+    },
+    {
+      "file": "guides/items--green-headband.json",
+      "bytes": 3061,
+      "sha256": "ecba8611578c520a6b666418eff6b11e7d087720d8a410b676ab5f9e391e5de8",
+      "checkedAt": "2026-10-15T09:57:11.655Z",
+      "kind": "item"
+    },
+    {
+      "file": "guides/items--green-skullcap.json",
+      "bytes": 2926,
+      "sha256": "f3d838db5fb1e3ceeae2c1154b9faf14783af8772bb4dfd59345a1cd83fba984",
+      "checkedAt": "2026-10-15T09:57:14.681Z",
+      "kind": "item"
+    },
+    {
       "file": "guides/items--green-starlight.json",
       "bytes": 2446,
       "sha256": "bdba509b1d8388882a9ec89d08914cd61e7c89331bfedb3fb64afcc55b3aa995",
       "checkedAt": "2026-10-13T15:37:48.232Z",
+      "kind": "item"
+    },
+    {
+      "file": "guides/items--green-t-shirt.json",
+      "bytes": 2735,
+      "sha256": "35aa929477b8a16808ed9696f6c454286133833bb3f26da6614806d7c4ba3b6d",
+      "checkedAt": "2026-10-15T09:57:17.634Z",
       "kind": "item"
     },
     {
@@ -143,6 +213,13 @@
       "bytes": 8944,
       "sha256": "49389bf7e251a3d89189fa8d1089b70773c7e3756ed5c74d2344ef63b20a2c62",
       "checkedAt": "2026-10-14T09:56:24.891Z",
+      "kind": "item"
+    },
+    {
+      "file": "guides/items--mushroom-spore.json",
+      "bytes": 1327,
+      "sha256": "b66a84834d6ad2646de66b5910bc5244b3884560b0a7a2cbab675160048e4aff",
+      "checkedAt": "2026-10-15T09:57:02.652Z",
       "kind": "item"
     },
     {
@@ -174,6 +251,13 @@
       "kind": "item"
     },
     {
+      "file": "guides/items--processed-leather.json",
+      "bytes": 9553,
+      "sha256": "97983f0449aa7066d77d8a5de6c9f9c5326f312608eac0264e89a388e7a2d5f1",
+      "checkedAt": "2026-10-15T09:57:47.691Z",
+      "kind": "item"
+    },
+    {
       "file": "guides/items--purple-moonlight.json",
       "bytes": 2682,
       "sha256": "3089340eb36880c99589b1b98e64586f60349a7f1101ca489e1dfc1d30ddaf82",
@@ -188,6 +272,13 @@
       "kind": "item"
     },
     {
+      "file": "guides/items--slime-bubble.json",
+      "bytes": 1446,
+      "sha256": "922c75983515b7daef2c712e2934e51b3032f315a2164d17786cf60161ddc4d2",
+      "checkedAt": "2026-10-15T09:56:59.702Z",
+      "kind": "item"
+    },
+    {
       "file": "guides/items--snail-shell.json",
       "bytes": 1473,
       "sha256": "d2dbddbbb1ba73a13dfff084d9a9c7cd3b73ca9a697c5e40e2e629757626b39f",
@@ -195,10 +286,24 @@
       "kind": "item"
     },
     {
+      "file": "guides/items--sword.json",
+      "bytes": 2932,
+      "sha256": "2dde9541abf89f59e1a0a1d922551250eafd4e54a3c3a98308addacd74fdeba2",
+      "checkedAt": "2026-10-15T09:57:23.700Z",
+      "kind": "item"
+    },
+    {
       "file": "guides/items--white-potion.json",
       "bytes": 12525,
       "sha256": "185c94c06413e0e10a188f78e2dc70ec430d8a02fd809ea9cc2d12bbb9e0eace",
       "checkedAt": "2026-10-13T15:13:16.452Z",
+      "kind": "item"
+    },
+    {
+      "file": "guides/items--white-undershirt.json",
+      "bytes": 2613,
+      "sha256": "cfaeecc94128440cbd8ab5e6af90ec61c7a4ffd2e8bbfaf4c3fec373dcf306b2",
+      "checkedAt": "2026-10-15T09:57:26.686Z",
       "kind": "item"
     },
     {
@@ -517,6 +622,20 @@
       "kind": "monster"
     },
     {
+      "file": "guides/npcs--mai.json",
+      "bytes": 1254,
+      "sha256": "95c3e18c21d046e21455fdc0e68c2231e7fd33ac39b17e0e6dfba29945948395",
+      "checkedAt": "2026-10-15T09:57:38.700Z",
+      "kind": "npc"
+    },
+    {
+      "file": "guides/npcs--robin.json",
+      "bytes": 676,
+      "sha256": "67e7d00246b097f7f5f8c2c272453dea1ad592a7fc6d0d94952be61e8a32ab95",
+      "checkedAt": "2026-10-15T09:57:35.640Z",
+      "kind": "npc"
+    },
+    {
       "file": "guides/npcs--sam.json",
       "bytes": 920,
       "sha256": "ae7acdb4bab6496adcfe8aa5b086542a34d75408fb16f338265d397b7c7dd5d7",
@@ -650,6 +769,27 @@
       "kind": "drops"
     },
     {
+      "file": "records/npc-1002008.json",
+      "bytes": 687,
+      "sha256": "5cd574d2a6600e7a5db0e26ef3d0c86cc4e2f991a518633549212518f6c2af10",
+      "checkedAt": "2026-10-15T09:57:44.653Z",
+      "kind": "npc"
+    },
+    {
+      "file": "records/npc-1002053.json",
+      "bytes": 688,
+      "sha256": "dc8a602c6159ebc99fb6fbb8888dd3b3b796198c7623f70a1e885df040b6bfe2",
+      "checkedAt": "2026-10-15T09:57:14.681Z",
+      "kind": "npc"
+    },
+    {
+      "file": "records/npc-1002067.json",
+      "bytes": 687,
+      "sha256": "94fc698237436164e3a7d4774be4bd806697602be599450b55647a35a89f3dbf",
+      "checkedAt": "2026-10-15T09:57:11.655Z",
+      "kind": "npc"
+    },
+    {
       "file": "records/npc-1050035.json",
       "bytes": 693,
       "sha256": "15e5e416aff239309c17efba2a0af92773a7c8dd6bdb9eec0d14f833c68a221a",
@@ -748,6 +888,20 @@
       "kind": "npc"
     },
     {
+      "file": "records/npc-2010009.json",
+      "bytes": 671,
+      "sha256": "182091db7b2a31ae606535736e02513a14d5a6b7ee568f07b47c3fb8bf4893c1",
+      "checkedAt": "2026-10-15T09:57:32.687Z",
+      "kind": "npc"
+    },
+    {
+      "file": "records/npc-4000000.json",
+      "bytes": 686,
+      "sha256": "880754aebd326dcee32b55833944610d55311392c22148aef7d87fa68de9dc21",
+      "checkedAt": "2026-10-15T09:56:56.708Z",
+      "kind": "npc"
+    },
+    {
       "file": "records/npc-4000001.json",
       "bytes": 695,
       "sha256": "dc6ee01d9567eb149a6560d699116031e2d15c7b8eb73d6e6833c77ea4c038b8",
@@ -755,10 +909,45 @@
       "kind": "npc"
     },
     {
+      "file": "records/npc-4000010.json",
+      "bytes": 675,
+      "sha256": "4032c98e09575ff21965ce0aaa1d937591dfe39b171738b99ed064fe115ee7ef",
+      "checkedAt": "2026-10-15T09:56:59.702Z",
+      "kind": "npc"
+    },
+    {
+      "file": "records/npc-4000011.json",
+      "bytes": 680,
+      "sha256": "2becf2e2010d4e83e7e64c6cbbbdb5933dadd55ea25a789df4383a6397f1fa76",
+      "checkedAt": "2026-10-15T09:57:02.652Z",
+      "kind": "npc"
+    },
+    {
       "file": "records/npc-4000019.json",
       "bytes": 671,
       "sha256": "d3dac27d7dd4c65d4baf5a7f2d26b8cd8d5f7a7883f2800645718bee8c67879b",
       "checkedAt": "2026-10-13T15:03:03.547Z",
+      "kind": "npc"
+    },
+    {
+      "file": "records/npc-4010000.json",
+      "bytes": 669,
+      "sha256": "fe1862cf74d216896a2a1310996204e70e8b41ea91adf4b1b57ccff659dbb407",
+      "checkedAt": "2026-10-15T09:57:05.795Z",
+      "kind": "npc"
+    },
+    {
+      "file": "records/npc-4020000.json",
+      "bytes": 669,
+      "sha256": "264ca41d331f8ecec6339c0eef0f3d214993de996466839d22ca691cb4a6cdd2",
+      "checkedAt": "2026-10-15T09:57:08.803Z",
+      "kind": "npc"
+    },
+    {
+      "file": "records/npc-4032451.json",
+      "bytes": 645,
+      "sha256": "9aa5a37bbf0d5d0fea01a7b38aaa1c1aceff549d71b1694429087cbc036355c2",
+      "checkedAt": "2026-10-15T09:57:41.639Z",
       "kind": "npc"
     },
     {
@@ -794,6 +983,13 @@
       "bytes": 719,
       "sha256": "9f1aaa79d71551da94cc4d296a6fa55aeed5e806bedbe59a8d1596d09e47ced1",
       "checkedAt": "2026-10-13T17:08:06.464Z",
+      "kind": "npc"
+    },
+    {
+      "file": "records/npc-classic-2041005.json",
+      "bytes": 744,
+      "sha256": "2c92cde94e00b261064612087e24936d9a3595e7a19f24a2869337956efa3ddd",
+      "checkedAt": "2026-10-15T09:57:29.636Z",
       "kind": "npc"
     }
   ],

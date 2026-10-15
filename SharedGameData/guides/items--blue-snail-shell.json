@@ -1,0 +1,85 @@
+{
+  "schemaVersion": 1,
+  "path": "/items/blue-snail-shell",
+  "kind": "item",
+  "name": "Blue Snail Shell",
+  "source": "CCPLZ",
+  "sourceUrl": "https://ccplz.cc/items/blue-snail-shell",
+  "checkedAt": "2026-10-15T09:56:56.708Z",
+  "notice": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial.",
+  "fields": [
+    {
+      "label": "Type",
+      "value": "Monster drops"
+    },
+    {
+      "label": "NPC sell price",
+      "value": "2 mesos"
+    },
+    {
+      "label": "Stack limit",
+      "value": "200"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Dropped by",
+      "links": [
+        {
+          "name": "Blue Snail",
+          "path": "/monsters/blue-snail",
+          "detail": "Level 2, 60% historical rate"
+        }
+      ],
+      "total": 1
+    },
+    {
+      "title": "Also dropped by, in older versions",
+      "links": [
+        {
+          "name": "Mano",
+          "path": "/monsters/mano",
+          "detail": "Level 20, 60% historical rate"
+        }
+      ],
+      "total": 1
+    },
+    {
+      "title": "Needed for quests",
+      "links": [
+        {
+          "name": "Biggs's Collection of Items",
+          "path": "/quests/biggs-s-collection-of-items",
+          "detail": "Level 3"
+        },
+        {
+          "name": "Donating to Henesys (Blue Snail Shell)",
+          "path": "/quests/donating-to-henesys",
+          "detail": "Level 12"
+        }
+      ],
+      "total": 2
+    },
+    {
+      "title": "Used in crafting",
+      "links": [
+        {
+          "name": "Blue Apprentice Hat",
+          "path": "/recipes/craft-blue-apprentice-hat",
+          "detail": ""
+        },
+        {
+          "name": "Blue Bandana",
+          "path": "/recipes/craft-blue-bandana",
+          "detail": ""
+        },
+        {
+          "name": "War Bow",
+          "path": "/recipes/craft-war-bow",
+          "detail": ""
+        }
+      ],
+      "total": 3
+    }
+  ]
+}

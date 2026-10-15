@@ -1,0 +1,137 @@
+{
+  "schemaVersion": 1,
+  "path": "/items/sword",
+  "kind": "item",
+  "name": "Sword",
+  "source": "CCPLZ",
+  "sourceUrl": "https://ccplz.cc/items/sword",
+  "checkedAt": "2026-10-15T09:57:23.700Z",
+  "notice": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial.",
+  "fields": [
+    {
+      "label": "Type",
+      "value": "One-handed sword"
+    },
+    {
+      "label": "Class",
+      "value": "All classes"
+    },
+    {
+      "label": "Weapon attack",
+      "value": "+17"
+    },
+    {
+      "label": "Upgrade slots",
+      "value": "7"
+    },
+    {
+      "label": "NPC buy price (lowest recorded)",
+      "value": "50 mesos"
+    },
+    {
+      "label": "Required level",
+      "value": "0"
+    },
+    {
+      "label": "Required STR",
+      "value": "0"
+    },
+    {
+      "label": "Required DEX",
+      "value": "0"
+    },
+    {
+      "label": "Required INT",
+      "value": "0"
+    },
+    {
+      "label": "Required LUK",
+      "value": "0"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Dropped by",
+      "links": [
+        {
+          "name": "Red Snail",
+          "path": "/monsters/red-snail",
+          "detail": "Level 4"
+        },
+        {
+          "name": "Snail",
+          "path": "/monsters/snail",
+          "detail": "Level 1"
+        }
+      ],
+      "total": 2
+    },
+    {
+      "title": "Sold in",
+      "links": [
+        {
+          "name": "Karl's Shop",
+          "path": "/shops/karl-s-shop",
+          "detail": ""
+        },
+        {
+          "name": "Sid's Shop",
+          "path": "/shops/sid-s-shop",
+          "detail": ""
+        },
+        {
+          "name": "Silver's Shop",
+          "path": "/shops/silver-s-shop",
+          "detail": ""
+        }
+      ],
+      "total": 3
+    },
+    {
+      "title": "Similar equipment",
+      "links": [
+        {
+          "name": "Old Gladius",
+          "path": "/items/old-gladius",
+          "detail": ""
+        },
+        {
+          "name": "Pumpkin Basket",
+          "path": "/items/pumpkin-basket",
+          "detail": ""
+        },
+        {
+          "name": "Beginner's Long Sword",
+          "path": "/items/beginner-s-long-sword",
+          "detail": "Level 10"
+        },
+        {
+          "name": "Long Sword",
+          "path": "/items/long-sword",
+          "detail": "Level 10"
+        },
+        {
+          "name": "Sabre",
+          "path": "/items/sabre",
+          "detail": "Level 15"
+        },
+        {
+          "name": "Saw",
+          "path": "/items/saw",
+          "detail": "Level 15"
+        },
+        {
+          "name": "Machete",
+          "path": "/items/machete",
+          "detail": "Level 20"
+        },
+        {
+          "name": "Viking Sword",
+          "path": "/items/viking-sword",
+          "detail": "Level 20"
+        }
+      ],
+      "total": 8
+    }
+  ]
+}

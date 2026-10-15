@@ -1,0 +1,86 @@
+{
+  "schemaVersion": 1,
+  "path": "/items/garnet-ore",
+  "kind": "item",
+  "name": "Garnet Ore",
+  "source": "CCPLZ",
+  "sourceUrl": "https://ccplz.cc/items/garnet-ore",
+  "checkedAt": "2026-10-15T09:57:08.803Z",
+  "notice": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial.",
+  "fields": [
+    {
+      "label": "Type",
+      "value": "Gems & gem ores"
+    },
+    {
+      "label": "NPC sell price",
+      "value": "40 mesos"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Dropped by",
+      "links": [
+        {
+          "name": "Dark Stump",
+          "path": "/monsters/dark-stump",
+          "detail": "Level 11"
+        },
+        {
+          "name": "Fire Boar",
+          "path": "/monsters/fire-boar",
+          "detail": "Level 32"
+        },
+        {
+          "name": "Lorang",
+          "path": "/monsters/lorang",
+          "detail": "Level 38"
+        },
+        {
+          "name": "Snail",
+          "path": "/monsters/snail",
+          "detail": "Level 1"
+        },
+        {
+          "name": "Stirge",
+          "path": "/monsters/stirge",
+          "detail": "Level 20"
+        }
+      ],
+      "total": 5
+    },
+    {
+      "title": "Quest rewards",
+      "links": [
+        {
+          "name": "Rowen the Fairy and the Cursed Doll (Collecting 70 Cursed Dolls)",
+          "path": "/quests/collecting-70-cursed-dolls",
+          "detail": "Level 36"
+        }
+      ],
+      "total": 1
+    },
+    {
+      "title": "Needed for quests",
+      "links": [
+        {
+          "name": "Chrishrama in Need of an Apprentice",
+          "path": "/quests/chrishrama-in-need-of-an-apprentice",
+          "detail": "Level 10"
+        }
+      ],
+      "total": 1
+    },
+    {
+      "title": "Used in crafting",
+      "links": [
+        {
+          "name": "Garnet",
+          "path": "/recipes/craft-garnet",
+          "detail": ""
+        }
+      ],
+      "total": 1
+    }
+  ]
+}

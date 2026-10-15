@@ -1,0 +1,141 @@
+{
+  "schemaVersion": 1,
+  "path": "/items/green-headband",
+  "kind": "item",
+  "name": "Green Headband",
+  "source": "CCPLZ",
+  "sourceUrl": "https://ccplz.cc/items/green-headband",
+  "checkedAt": "2026-10-15T09:57:11.655Z",
+  "notice": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial.",
+  "fields": [
+    {
+      "label": "Type",
+      "value": "Hat"
+    },
+    {
+      "label": "Required level",
+      "value": "5"
+    },
+    {
+      "label": "Class",
+      "value": "All classes"
+    },
+    {
+      "label": "Weapon defense",
+      "value": "+6"
+    },
+    {
+      "label": "Accuracy",
+      "value": "+1"
+    },
+    {
+      "label": "Upgrade slots",
+      "value": "7"
+    },
+    {
+      "label": "NPC sell price",
+      "value": "300 mesos"
+    },
+    {
+      "label": "NPC buy price (lowest recorded)",
+      "value": "600 mesos"
+    },
+    {
+      "label": "Required STR",
+      "value": "0"
+    },
+    {
+      "label": "Required DEX",
+      "value": "0"
+    },
+    {
+      "label": "Required INT",
+      "value": "0"
+    },
+    {
+      "label": "Required LUK",
+      "value": "0"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Dropped by",
+      "links": [
+        {
+          "name": "Snail",
+          "path": "/monsters/snail",
+          "detail": "Level 1, 0.15% historical rate"
+        }
+      ],
+      "total": 1
+    },
+    {
+      "title": "Sold in",
+      "links": [
+        {
+          "name": "Natasha's Shop",
+          "path": "/shops/natasha-s-shop",
+          "detail": ""
+        }
+      ],
+      "total": 1
+    },
+    {
+      "title": "Quest rewards",
+      "links": [
+        {
+          "name": "Please bring this letter to Lucas (Lucas's Reply)",
+          "path": "/quests/lucas-s-reply",
+          "detail": ""
+        }
+      ],
+      "total": 1
+    },
+    {
+      "title": "Similar equipment",
+      "links": [
+        {
+          "name": "Black Headband",
+          "path": "/items/black-headband",
+          "detail": "Level 5"
+        },
+        {
+          "name": "Blue Headband",
+          "path": "/items/blue-headband",
+          "detail": "Level 5"
+        },
+        {
+          "name": "Brown Skullcap",
+          "path": "/items/brown-skullcap",
+          "detail": "Level 5"
+        },
+        {
+          "name": "Green Skullcap",
+          "path": "/items/green-skullcap",
+          "detail": "Level 5"
+        },
+        {
+          "name": "Red Headband",
+          "path": "/items/red-headband",
+          "detail": "Level 5"
+        },
+        {
+          "name": "Red Skullcap",
+          "path": "/items/red-skullcap",
+          "detail": "Level 5"
+        },
+        {
+          "name": "Yellow Headband",
+          "path": "/items/yellow-headband",
+          "detail": "Level 5"
+        },
+        {
+          "name": "Black Swimming Cap",
+          "path": "/items/black-swimming-cap",
+          "detail": "Level 8"
+        }
+      ],
+      "total": 8
+    }
+  ]
+}

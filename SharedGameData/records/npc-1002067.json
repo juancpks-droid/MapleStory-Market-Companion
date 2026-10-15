@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "item": {
+    "key": "gms83:1002067",
+    "name": "Green Headband",
+    "id": "1002067",
+    "category": "Equipment"
+  },
+  "kind": "npc",
+  "checkedAt": "2026-10-15T09:57:11.655Z",
+  "data": {
+    "sell": 300,
+    "buy": 600,
+    "source": "CCPLZ",
+    "url": "https://ccplz.cc/items/green-headband",
+    "checkedAt": "2026-10-15T09:57:11.655Z"
+  },
+  "provenance": {
+    "source": "CCPLZ",
+    "sourceUrl": "https://ccplz.cc/items/green-headband",
+    "coverage": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial."
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "schemaVersion": 1,
+  "path": "/npcs/mai",
+  "kind": "npc",
+  "name": "Mai",
+  "source": "CCPLZ",
+  "sourceUrl": "https://ccplz.cc/npcs/mai",
+  "checkedAt": "2026-10-15T09:57:38.700Z",
+  "notice": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial.",
+  "fields": [],
+  "sections": [
+    {
+      "title": "Where to find them",
+      "links": [
+        {
+          "name": "A Split Road",
+          "path": "/maps/a-split-road",
+          "detail": "Maple Island"
+        }
+      ],
+      "total": 1
+    },
+    {
+      "title": "Quests they start",
+      "links": [
+        {
+          "name": "Mai's Training",
+          "path": "/quests/mai-s-training",
+          "detail": "Level 3"
+        },
+        {
+          "name": "Mai's Training (Mai's Final Training)",
+          "path": "/quests/mai-s-final-training",
+          "detail": ""
+        }
+      ],
+      "total": 2
+    },
+    {
+      "title": "Quests they complete",
+      "links": [
+        {
+          "name": "Sam's Suggestion",
+          "path": "/quests/sam-s-suggestion",
+          "detail": "Level 1"
+        }
+      ],
+      "total": 1
+    }
+  ]
+}
