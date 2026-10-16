@@ -13,6 +13,46 @@
       "kind": "item"
     },
     {
+      "path": "/items/5-starred-red-paint-china",
+      "name": "5-Starred Red Paint (China)",
+      "kind": "item"
+    },
+    {
+      "path": "/items/6th-anniversary-party-glasses",
+      "name": "6th Anniversary Party Glasses",
+      "kind": "item"
+    },
+    {
+      "path": "/items/adhesive-bandage",
+      "name": "Adhesive Bandage",
+      "kind": "item"
+    },
+    {
+      "path": "/items/allergic-reaction",
+      "name": "Allergic Reaction",
+      "kind": "item"
+    },
+    {
+      "path": "/items/animal-face-accessory",
+      "name": "Animal Face Accessory",
+      "kind": "item"
+    },
+    {
+      "path": "/items/apple-bubble-gum",
+      "name": "Apple Bubble Gum",
+      "kind": "item"
+    },
+    {
+      "path": "/items/armillary-shield-paint-portugal",
+      "name": "Armillary Shield Paint (Portugal)",
+      "kind": "item"
+    },
+    {
+      "path": "/items/armor-crafting-catalyst",
+      "name": "Armor Crafting Catalyst",
+      "kind": "item"
+    },
+    {
       "path": "/items/arrows-for-bows",
       "name": "Arrows for Bows",
       "kind": "item"
@@ -26,6 +66,11 @@
       "path": "/shops/arturo-s-shop",
       "name": "Arturo's Shop",
       "kind": "shop"
+    },
+    {
+      "path": "/items/australia-face-painting",
+      "name": "Australia Face Painting",
+      "kind": "item"
     },
     {
       "path": "/maps/beach-hunting-ground",
@@ -171,6 +216,11 @@
       "path": "/maps/forest-west-of-henesys",
       "name": "Forest West of Henesys",
       "kind": "map"
+    },
+    {
+      "path": "/items/freckles",
+      "name": "Freckles",
+      "kind": "item"
     },
     {
       "path": "/items/garnet-ore",
@@ -343,6 +393,11 @@
       "kind": "item"
     },
     {
+      "path": "/items/ninja-mask-for-women",
+      "name": "Ninja Mask for Women",
+      "kind": "item"
+    },
+    {
       "path": "/monsters/orange-mushroom",
       "name": "Orange Mushroom",
       "kind": "monster"
@@ -388,6 +443,11 @@
       "kind": "item"
     },
     {
+      "path": "/items/red-snail-shell",
+      "name": "Red Snail Shell",
+      "kind": "item"
+    },
+    {
       "path": "/npcs/robin",
       "name": "Robin",
       "kind": "npc"
@@ -416,6 +476,21 @@
       "path": "/quests/sam-s-suggestion",
       "name": "Sam's Suggestion",
       "kind": "quest"
+    },
+    {
+      "path": "/items/sf-ninja-mask",
+      "name": "SF Ninja Mask",
+      "kind": "item"
+    },
+    {
+      "path": "/maps/sleepy-dungeon-iii",
+      "name": "Sleepy Dungeon III",
+      "kind": "map"
+    },
+    {
+      "path": "/maps/sleepy-dungeon-v",
+      "name": "Sleepy Dungeon V",
+      "kind": "map"
     },
     {
       "path": "/items/slime-bubble",
@@ -455,6 +530,11 @@
     {
       "path": "/items/snail-shell",
       "name": "Snail Shell",
+      "kind": "item"
+    },
+    {
+      "path": "/items/spool-of-thread",
+      "name": "Spool of Thread",
       "kind": "item"
     },
     {
@@ -520,6 +600,16 @@
     {
       "path": "/maps/tomato-field",
       "name": "Tomato Field",
+      "kind": "map"
+    },
+    {
+      "path": "/maps/tree-dungeon-forest-up-north-ix",
+      "name": "Tree Dungeon, Forest Up North IX",
+      "kind": "map"
+    },
+    {
+      "path": "/maps/tree-dungeon-forest-up-north-viii",
+      "name": "Tree Dungeon, Forest Up North VIII",
       "kind": "map"
     },
     {

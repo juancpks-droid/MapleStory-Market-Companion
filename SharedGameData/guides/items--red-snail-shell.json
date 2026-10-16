@@ -1,0 +1,95 @@
+{
+  "schemaVersion": 1,
+  "path": "/items/red-snail-shell",
+  "kind": "item",
+  "name": "Red Snail Shell",
+  "source": "CCPLZ",
+  "sourceUrl": "https://ccplz.cc/items/red-snail-shell",
+  "checkedAt": "2026-10-16T09:56:29.279Z",
+  "notice": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial.",
+  "fields": [
+    {
+      "label": "Type",
+      "value": "Monster drops"
+    },
+    {
+      "label": "NPC sell price",
+      "value": "4 mesos"
+    },
+    {
+      "label": "Stack limit",
+      "value": "200"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Dropped by",
+      "links": [
+        {
+          "name": "Red Snail",
+          "path": "/monsters/red-snail",
+          "detail": "Level 4, 60% historical rate"
+        }
+      ],
+      "total": 1
+    },
+    {
+      "title": "Also dropped by, in older versions",
+      "links": [
+        {
+          "name": "Mano",
+          "path": "/monsters/mano",
+          "detail": "Level 20, 60% historical rate"
+        }
+      ],
+      "total": 1
+    },
+    {
+      "title": "Needed for quests",
+      "links": [
+        {
+          "name": "Donating to Henesys (Red Snail Shell)",
+          "path": "/quests/donating-to-henesys-506021",
+          "detail": "Level 12"
+        },
+        {
+          "name": "Donating to Kerning City (Red Snail Shell)",
+          "path": "/quests/donating-to-kerning-city",
+          "detail": "Level 12"
+        }
+      ],
+      "total": 2
+    },
+    {
+      "title": "Used in crafting",
+      "links": [
+        {
+          "name": "Brown Skullcap",
+          "path": "/recipes/craft-brown-skullcap",
+          "detail": ""
+        },
+        {
+          "name": "Hunter's Bow",
+          "path": "/recipes/craft-hunter-s-bow",
+          "detail": ""
+        },
+        {
+          "name": "Red Apprentice Hat",
+          "path": "/recipes/craft-red-apprentice-hat",
+          "detail": ""
+        },
+        {
+          "name": "Red Bandana",
+          "path": "/recipes/craft-red-bandana",
+          "detail": ""
+        },
+        {
+          "name": "Red Skullcap",
+          "path": "/recipes/craft-red-skullcap",
+          "detail": ""
+        }
+      ],
+      "total": 5
+    }
+  ]
+}

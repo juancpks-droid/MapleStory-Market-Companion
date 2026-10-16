@@ -1,0 +1,350 @@
+{
+  "schemaVersion": 1,
+  "path": "/items/spool-of-thread",
+  "kind": "item",
+  "name": "Spool of Thread",
+  "source": "CCPLZ",
+  "sourceUrl": "https://ccplz.cc/items/spool-of-thread",
+  "checkedAt": "2026-10-16T09:56:32.294Z",
+  "notice": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial.",
+  "fields": [
+    {
+      "label": "Type",
+      "value": "Crafting materials"
+    },
+    {
+      "label": "NPC sell price",
+      "value": "1 meso"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Needed for quests",
+      "links": [
+        {
+          "name": "Francois in Need of Help",
+          "path": "/quests/francois-in-need-of-help",
+          "detail": "Level 15"
+        }
+      ],
+      "total": 1
+    },
+    {
+      "title": "How to craft it",
+      "links": [
+        {
+          "name": "Spool of Thread",
+          "path": "/recipes/craft-spool-of-thread",
+          "detail": "Crafting skill level 1"
+        }
+      ],
+      "total": 1
+    },
+    {
+      "title": "Used in crafting",
+      "links": [
+        {
+          "name": "Aqua Brace",
+          "path": "/recipes/craft-aqua-brace",
+          "detail": ""
+        },
+        {
+          "name": "Basic Archer Gloves",
+          "path": "/recipes/craft-basic-archer-gloves",
+          "detail": ""
+        },
+        {
+          "name": "Black Duo",
+          "path": "/recipes/craft-black-duo",
+          "detail": ""
+        },
+        {
+          "name": "Black Justice Cape",
+          "path": "/recipes/craft-black-justice-cape",
+          "detail": ""
+        },
+        {
+          "name": "Black Lutia",
+          "path": "/recipes/craft-black-lutia",
+          "detail": ""
+        },
+        {
+          "name": "Black Marker",
+          "path": "/recipes/craft-black-marker",
+          "detail": ""
+        },
+        {
+          "name": "Blood Mesana",
+          "path": "/recipes/craft-blood-mesana",
+          "detail": ""
+        },
+        {
+          "name": "Blue Apprentice Hat",
+          "path": "/recipes/craft-blue-apprentice-hat",
+          "detail": ""
+        },
+        {
+          "name": "Blue Arten",
+          "path": "/recipes/craft-blue-arten",
+          "detail": ""
+        },
+        {
+          "name": "Blue Bandana",
+          "path": "/recipes/craft-blue-bandana",
+          "detail": ""
+        },
+        {
+          "name": "Blue Diros",
+          "path": "/recipes/craft-blue-diros",
+          "detail": ""
+        },
+        {
+          "name": "Blue Duo",
+          "path": "/recipes/craft-blue-duo",
+          "detail": ""
+        },
+        {
+          "name": "Blue Justice Cape",
+          "path": "/recipes/craft-blue-justice-cape",
+          "detail": ""
+        },
+        {
+          "name": "Blue Lutia",
+          "path": "/recipes/craft-blue-lutia",
+          "detail": ""
+        },
+        {
+          "name": "Blue Moon Gloves",
+          "path": "/recipes/craft-blue-moon-gloves",
+          "detail": ""
+        },
+        {
+          "name": "Blue Morrican",
+          "path": "/recipes/craft-blue-morrican",
+          "detail": ""
+        },
+        {
+          "name": "Blue Noel",
+          "path": "/recipes/craft-blue-noel",
+          "detail": ""
+        },
+        {
+          "name": "Blue Penance",
+          "path": "/recipes/craft-blue-penance",
+          "detail": ""
+        },
+        {
+          "name": "Blue Savata",
+          "path": "/recipes/craft-blue-savata",
+          "detail": ""
+        },
+        {
+          "name": "Blue Willow",
+          "path": "/recipes/craft-blue-willow",
+          "detail": ""
+        },
+        {
+          "name": "Bronze Mischief",
+          "path": "/recipes/craft-bronze-mischief",
+          "detail": ""
+        },
+        {
+          "name": "Bronze Scaler",
+          "path": "/recipes/craft-bronze-scaler",
+          "detail": ""
+        },
+        {
+          "name": "Bronze Wolfskin",
+          "path": "/recipes/craft-bronze-wolfskin",
+          "detail": ""
+        },
+        {
+          "name": "Brown Apprentice Hat",
+          "path": "/recipes/craft-brown-apprentice-hat",
+          "detail": ""
+        },
+        {
+          "name": "Brown Duo",
+          "path": "/recipes/craft-brown-duo",
+          "detail": ""
+        },
+        {
+          "name": "Brown Ghetto Beanie",
+          "path": "/recipes/craft-brown-ghetto-beanie",
+          "detail": ""
+        },
+        {
+          "name": "Brown Marker",
+          "path": "/recipes/craft-brown-marker",
+          "detail": ""
+        },
+        {
+          "name": "Brown Moon Gloves",
+          "path": "/recipes/craft-brown-moon-gloves",
+          "detail": ""
+        },
+        {
+          "name": "Brown Skullcap",
+          "path": "/recipes/craft-brown-skullcap",
+          "detail": ""
+        },
+        {
+          "name": "Brown Winter Hat",
+          "path": "/recipes/craft-brown-winter-hat",
+          "detail": ""
+        },
+        {
+          "name": "Dark Arten",
+          "path": "/recipes/craft-dark-arten",
+          "detail": ""
+        },
+        {
+          "name": "Dark Brace",
+          "path": "/recipes/craft-dark-brace",
+          "detail": ""
+        },
+        {
+          "name": "Dark Cleave",
+          "path": "/recipes/craft-dark-cleave",
+          "detail": ""
+        },
+        {
+          "name": "Dark Mesana",
+          "path": "/recipes/craft-dark-mesana",
+          "detail": ""
+        },
+        {
+          "name": "Dark Mischief",
+          "path": "/recipes/craft-dark-mischief",
+          "detail": ""
+        },
+        {
+          "name": "Dark Noel",
+          "path": "/recipes/craft-dark-noel",
+          "detail": ""
+        },
+        {
+          "name": "Dark Penance",
+          "path": "/recipes/craft-dark-penance",
+          "detail": ""
+        },
+        {
+          "name": "Dark Savata",
+          "path": "/recipes/craft-dark-savata",
+          "detail": ""
+        },
+        {
+          "name": "Dark Willow",
+          "path": "/recipes/craft-dark-willow",
+          "detail": ""
+        },
+        {
+          "name": "Dark Wolfskin",
+          "path": "/recipes/craft-dark-wolfskin",
+          "detail": ""
+        },
+        {
+          "name": "Gold Arbion",
+          "path": "/recipes/craft-gold-arbion",
+          "detail": ""
+        },
+        {
+          "name": "Gold Brace",
+          "path": "/recipes/craft-gold-brace",
+          "detail": ""
+        },
+        {
+          "name": "Gold Cleave",
+          "path": "/recipes/craft-gold-cleave",
+          "detail": ""
+        },
+        {
+          "name": "Gold Scaler",
+          "path": "/recipes/craft-gold-scaler",
+          "detail": ""
+        },
+        {
+          "name": "Gold Sylvia",
+          "path": "/recipes/craft-gold-sylvia",
+          "detail": ""
+        },
+        {
+          "name": "Green Diros",
+          "path": "/recipes/craft-green-diros",
+          "detail": ""
+        },
+        {
+          "name": "Green Ghetto Beanie",
+          "path": "/recipes/craft-green-ghetto-beanie",
+          "detail": ""
+        },
+        {
+          "name": "Green Marker",
+          "path": "/recipes/craft-green-marker",
+          "detail": ""
+        },
+        {
+          "name": "Green Morrican",
+          "path": "/recipes/craft-green-morrican",
+          "detail": ""
+        },
+        {
+          "name": "Green Skullcap",
+          "path": "/recipes/craft-green-skullcap",
+          "detail": ""
+        },
+        {
+          "name": "Green Winter Hat",
+          "path": "/recipes/craft-green-winter-hat",
+          "detail": ""
+        },
+        {
+          "name": "Ice Jeans",
+          "path": "/recipes/craft-ice-jeans",
+          "detail": ""
+        },
+        {
+          "name": "Leather Purse",
+          "path": "/recipes/craft-leather-purse",
+          "detail": ""
+        },
+        {
+          "name": "Lemona",
+          "path": "/recipes/craft-lemona",
+          "detail": ""
+        },
+        {
+          "name": "Mithril Mischief",
+          "path": "/recipes/craft-mithril-mischief",
+          "detail": ""
+        },
+        {
+          "name": "Mithril Scaler",
+          "path": "/recipes/craft-mithril-scaler",
+          "detail": ""
+        },
+        {
+          "name": "Mithril Wolfskin",
+          "path": "/recipes/craft-mithril-wolfskin",
+          "detail": ""
+        },
+        {
+          "name": "Ocean Mesana",
+          "path": "/recipes/craft-ocean-mesana",
+          "detail": ""
+        },
+        {
+          "name": "Orihalcon Arbion",
+          "path": "/recipes/craft-orihalcon-arbion",
+          "detail": ""
+        },
+        {
+          "name": "Purple Morrican",
+          "path": "/recipes/craft-purple-morrican",
+          "detail": ""
+        }
+      ],
+      "total": 60
+    }
+  ]
+}

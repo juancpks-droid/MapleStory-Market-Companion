@@ -1,15 +1,71 @@
 {
   "schemaVersion": 1,
-  "publishedAt": "2026-10-15T09:57:47.722Z",
+  "publishedAt": "2026-10-16T09:57:20.259Z",
   "catalogItems": 12726,
-  "guideRecords": 107,
-  "referenceRecords": 34,
+  "guideRecords": 125,
+  "referenceRecords": 35,
   "entries": [
     {
       "file": "guides/items--5-o-clock-shadow.json",
       "bytes": 2129,
       "sha256": "e9b3eeb9009f17e224aebc40f4d482d865eedb800f8140d038a538fa4995ce5b",
       "checkedAt": "2026-10-13T15:03:36.663Z",
+      "kind": "item"
+    },
+    {
+      "file": "guides/items--5-starred-red-paint-china.json",
+      "bytes": 2138,
+      "sha256": "8e2d53939fbe23ed3074a454d21c273d61cb414d57a9c90a32e0d3b401c989e6",
+      "checkedAt": "2026-10-16T09:56:38.271Z",
+      "kind": "item"
+    },
+    {
+      "file": "guides/items--6th-anniversary-party-glasses.json",
+      "bytes": 2142,
+      "sha256": "a126f6238c1cf82cd0a3ee55b8e68284aaef8155f80c2fb09488ebc13efceeca",
+      "checkedAt": "2026-10-16T09:56:41.195Z",
+      "kind": "item"
+    },
+    {
+      "file": "guides/items--adhesive-bandage.json",
+      "bytes": 2129,
+      "sha256": "02bbaeb98efcd4ec04ccc203b4b01100d678c69d9194b11377e351ba6460c72f",
+      "checkedAt": "2026-10-16T09:56:44.183Z",
+      "kind": "item"
+    },
+    {
+      "file": "guides/items--allergic-reaction.json",
+      "bytes": 1878,
+      "sha256": "4e0602b0d37cc68bb77c18fa231b5612f01775f90d731cd2bba0e5b7cbf8229d",
+      "checkedAt": "2026-10-16T09:56:47.227Z",
+      "kind": "item"
+    },
+    {
+      "file": "guides/items--animal-face-accessory.json",
+      "bytes": 1882,
+      "sha256": "8db94e982dfe8a158d377f7725a3a78d47b6af588127feea3da7199851d7bf82",
+      "checkedAt": "2026-10-16T09:56:50.260Z",
+      "kind": "item"
+    },
+    {
+      "file": "guides/items--apple-bubble-gum.json",
+      "bytes": 1877,
+      "sha256": "4e56401f6b3eb80d1f01ffdd986f67906c7a0fbcbb2f7c2a1502cc1a9a35e4b6",
+      "checkedAt": "2026-10-16T09:56:53.214Z",
+      "kind": "item"
+    },
+    {
+      "file": "guides/items--armillary-shield-paint-portugal.json",
+      "bytes": 1892,
+      "sha256": "fa7821d1eef3c03d44fa6676352695f9d437102837fd1730026f9a57b704586e",
+      "checkedAt": "2026-10-16T09:56:56.229Z",
+      "kind": "item"
+    },
+    {
+      "file": "guides/items--armor-crafting-catalyst.json",
+      "bytes": 9423,
+      "sha256": "6d0e2d8ae7bfa0b251cfd7e234292da7b011d535a5df66391f2ed1efd18d9be6",
+      "checkedAt": "2026-10-16T09:56:35.309Z",
       "kind": "item"
     },
     {
@@ -24,6 +80,13 @@
       "bytes": 10714,
       "sha256": "57efd036d0d80b8d9c2975426bea55e8396c6346dfb8ee5545361ae980af8e79",
       "checkedAt": "2026-10-14T09:57:15.869Z",
+      "kind": "item"
+    },
+    {
+      "file": "guides/items--australia-face-painting.json",
+      "bytes": 2136,
+      "sha256": "23e3aedd200c93ab206bdd2021f6729752b5f6b1901bf734be0e9b053811bc92",
+      "checkedAt": "2026-10-16T09:57:08.212Z",
       "kind": "item"
     },
     {
@@ -108,6 +171,13 @@
       "bytes": 10918,
       "sha256": "2e38b149c9ae689fcd4afd2d71f34e403e9e6e3a89bdf90c689bebece3fe435b",
       "checkedAt": "2026-10-14T09:56:27.886Z",
+      "kind": "item"
+    },
+    {
+      "file": "guides/items--freckles.json",
+      "bytes": 1828,
+      "sha256": "6b9a735cd43dbb074c5dc0be6e2344491bb67aa6239621afc34eaad2fe0b2dfc",
+      "checkedAt": "2026-10-16T09:56:59.189Z",
       "kind": "item"
     },
     {
@@ -230,6 +300,13 @@
       "kind": "item"
     },
     {
+      "file": "guides/items--ninja-mask-for-women.json",
+      "bytes": 1840,
+      "sha256": "efc85b3c13a38eeba0966acade664e4a8cf85a7c1b89e57c55e8488f0e147ecd",
+      "checkedAt": "2026-10-16T09:57:02.250Z",
+      "kind": "item"
+    },
+    {
       "file": "guides/items--orange-mushroom-cap.json",
       "bytes": 2696,
       "sha256": "17a3bf49ba85542e43c6ded7d02316214c8af86cbd24e038ced019ab15d5c553",
@@ -272,6 +349,20 @@
       "kind": "item"
     },
     {
+      "file": "guides/items--red-snail-shell.json",
+      "bytes": 2309,
+      "sha256": "961988cea27012372445fc7704e82c7b63eb55d5d8876148948b446910d04fdb",
+      "checkedAt": "2026-10-16T09:56:29.279Z",
+      "kind": "item"
+    },
+    {
+      "file": "guides/items--sf-ninja-mask.json",
+      "bytes": 1833,
+      "sha256": "8408553559844825e3c11f4a694d2c4d7dfee227f0e12324e7d52b580d46d542",
+      "checkedAt": "2026-10-16T09:57:05.213Z",
+      "kind": "item"
+    },
+    {
       "file": "guides/items--slime-bubble.json",
       "bytes": 1446,
       "sha256": "922c75983515b7daef2c712e2934e51b3032f315a2164d17786cf60161ddc4d2",
@@ -283,6 +374,13 @@
       "bytes": 1473,
       "sha256": "d2dbddbbb1ba73a13dfff084d9a9c7cd3b73ca9a697c5e40e2e629757626b39f",
       "checkedAt": "2026-10-13T15:03:03.547Z",
+      "kind": "item"
+    },
+    {
+      "file": "guides/items--spool-of-thread.json",
+      "bytes": 8903,
+      "sha256": "250ea3bc525dbeaa9138da3641b0a5cdf1c104295039dc31b5a193241080fafb",
+      "checkedAt": "2026-10-16T09:56:32.294Z",
       "kind": "item"
     },
     {
@@ -447,6 +545,20 @@
       "kind": "map"
     },
     {
+      "file": "guides/maps--sleepy-dungeon-iii.json",
+      "bytes": 1751,
+      "sha256": "990caf3d32c0221c2d7906ed044324e7d6081fe26bd76892695cdbbd96eb37c1",
+      "checkedAt": "2026-10-16T09:57:17.179Z",
+      "kind": "map"
+    },
+    {
+      "file": "guides/maps--sleepy-dungeon-v.json",
+      "bytes": 1853,
+      "sha256": "33fb811847d3ccfc781b9ba279dc663c370c19db99b57b445f07ee21ce422492",
+      "checkedAt": "2026-10-16T09:57:11.202Z",
+      "kind": "map"
+    },
+    {
       "file": "guides/maps--snail-field-of-flowers.json",
       "bytes": 1507,
       "sha256": "deceea5b410c5151849def4cbc08685d30bf0c7610b81202576c6386152119a7",
@@ -556,6 +668,20 @@
       "bytes": 1491,
       "sha256": "a93f4fc4043d8f2e7273ae903b28e1fe94292095206d0e39b23b30e52143ae03",
       "checkedAt": "2026-10-13T20:14:19.557Z",
+      "kind": "map"
+    },
+    {
+      "file": "guides/maps--tree-dungeon-forest-up-north-ix.json",
+      "bytes": 1176,
+      "sha256": "be2d15f525d427878de9126dcb10bf41ae13b1cbe2b93e9bdd87f1195a9f14d5",
+      "checkedAt": "2026-10-16T09:57:14.195Z",
+      "kind": "map"
+    },
+    {
+      "file": "guides/maps--tree-dungeon-forest-up-north-viii.json",
+      "bytes": 1182,
+      "sha256": "374fd9359fa56e6fffc3ca970a731fb9555e5c703bacc68f2611e7e549e95a4f",
+      "checkedAt": "2026-10-16T09:57:20.240Z",
       "kind": "map"
     },
     {
@@ -920,6 +1046,13 @@
       "bytes": 680,
       "sha256": "2becf2e2010d4e83e7e64c6cbbbdb5933dadd55ea25a789df4383a6397f1fa76",
       "checkedAt": "2026-10-15T09:57:02.652Z",
+      "kind": "npc"
+    },
+    {
+      "file": "records/npc-4000016.json",
+      "bytes": 683,
+      "sha256": "20da6eb4505c72d6a3c163dace9959702a43c2cb4928a4a5eedc5abbc583aa68",
+      "checkedAt": "2026-10-16T09:56:29.279Z",
       "kind": "npc"
     },
     {

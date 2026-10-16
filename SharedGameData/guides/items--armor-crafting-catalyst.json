@@ -1,0 +1,353 @@
+{
+  "schemaVersion": 1,
+  "path": "/items/armor-crafting-catalyst",
+  "kind": "item",
+  "name": "Armor Crafting Catalyst",
+  "source": "CCPLZ",
+  "sourceUrl": "https://ccplz.cc/items/armor-crafting-catalyst",
+  "checkedAt": "2026-10-16T09:56:35.309Z",
+  "notice": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial.",
+  "fields": [
+    {
+      "label": "Type",
+      "value": "Crafting catalysts"
+    },
+    {
+      "label": "NPC sell price",
+      "value": "1,000 mesos"
+    },
+    {
+      "label": "Stack limit",
+      "value": "100"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Quest rewards",
+      "links": [
+        {
+          "name": "A Blacksmith in My Own Right!",
+          "path": "/quests/a-blacksmith-in-my-own-right",
+          "detail": "Level 25"
+        },
+        {
+          "name": "A Leatherworker in My Own Right!",
+          "path": "/quests/a-leatherworker-in-my-own-right",
+          "detail": "Level 25"
+        },
+        {
+          "name": "A Tailor in My Own Right!",
+          "path": "/quests/a-tailor-in-my-own-right",
+          "detail": "Level 25"
+        }
+      ],
+      "total": 3
+    },
+    {
+      "title": "Used in crafting",
+      "links": [
+        {
+          "name": "Adamantium Knuckle",
+          "path": "/recipes/craft-adamantium-knuckle",
+          "detail": ""
+        },
+        {
+          "name": "Adamantium Tower Shield",
+          "path": "/recipes/craft-adamantium-tower-shield",
+          "detail": ""
+        },
+        {
+          "name": "Aqua Brace",
+          "path": "/recipes/craft-aqua-brace",
+          "detail": ""
+        },
+        {
+          "name": "Basic Archer Gloves",
+          "path": "/recipes/craft-basic-archer-gloves",
+          "detail": ""
+        },
+        {
+          "name": "Black Blue-Lined Shoes",
+          "path": "/recipes/craft-black-blue-lined-shoes",
+          "detail": ""
+        },
+        {
+          "name": "Black Cat Gloves",
+          "path": "/recipes/craft-black-cat-gloves",
+          "detail": ""
+        },
+        {
+          "name": "Black Duo",
+          "path": "/recipes/craft-black-duo",
+          "detail": ""
+        },
+        {
+          "name": "Black Green-Lined Shoes",
+          "path": "/recipes/craft-black-green-lined-shoes",
+          "detail": ""
+        },
+        {
+          "name": "Black Hunter Boots",
+          "path": "/recipes/craft-black-hunter-boots",
+          "detail": ""
+        },
+        {
+          "name": "Black Justice Cape",
+          "path": "/recipes/craft-black-justice-cape",
+          "detail": ""
+        },
+        {
+          "name": "Black Lappy Boots",
+          "path": "/recipes/craft-black-lappy-boots",
+          "detail": ""
+        },
+        {
+          "name": "Black Lutia",
+          "path": "/recipes/craft-black-lutia",
+          "detail": ""
+        },
+        {
+          "name": "Black Magic Shoes",
+          "path": "/recipes/craft-black-magic-shoes",
+          "detail": ""
+        },
+        {
+          "name": "Black Marker",
+          "path": "/recipes/craft-black-marker",
+          "detail": ""
+        },
+        {
+          "name": "Black Red-Lined Shoes",
+          "path": "/recipes/craft-black-red-lined-shoes",
+          "detail": ""
+        },
+        {
+          "name": "Black Salt Shoes",
+          "path": "/recipes/craft-black-salt-shoes",
+          "detail": ""
+        },
+        {
+          "name": "Black Wind Shoes",
+          "path": "/recipes/craft-black-wind-shoes",
+          "detail": ""
+        },
+        {
+          "name": "Black Yellow-Lined Shoes",
+          "path": "/recipes/craft-black-yellow-lined-shoes",
+          "detail": ""
+        },
+        {
+          "name": "Blood Battle Grieves",
+          "path": "/recipes/craft-blood-battle-grieves",
+          "detail": ""
+        },
+        {
+          "name": "Blood Mesana",
+          "path": "/recipes/craft-blood-mesana",
+          "detail": ""
+        },
+        {
+          "name": "Blue Apprentice Hat",
+          "path": "/recipes/craft-blue-apprentice-hat",
+          "detail": ""
+        },
+        {
+          "name": "Blue Arten",
+          "path": "/recipes/craft-blue-arten",
+          "detail": ""
+        },
+        {
+          "name": "Blue Bandana",
+          "path": "/recipes/craft-blue-bandana",
+          "detail": ""
+        },
+        {
+          "name": "Blue Diros",
+          "path": "/recipes/craft-blue-diros",
+          "detail": ""
+        },
+        {
+          "name": "Blue Duo",
+          "path": "/recipes/craft-blue-duo",
+          "detail": ""
+        },
+        {
+          "name": "Blue Goldwind Shoes",
+          "path": "/recipes/craft-blue-goldwind-shoes",
+          "detail": ""
+        },
+        {
+          "name": "Blue Goni Shoes",
+          "path": "/recipes/craft-blue-goni-shoes",
+          "detail": ""
+        },
+        {
+          "name": "Blue Hunter Boots",
+          "path": "/recipes/craft-blue-hunter-boots",
+          "detail": ""
+        },
+        {
+          "name": "Blue Jangoon Shoes",
+          "path": "/recipes/craft-blue-jangoon-shoes",
+          "detail": ""
+        },
+        {
+          "name": "Blue Justice Cape",
+          "path": "/recipes/craft-blue-justice-cape",
+          "detail": ""
+        },
+        {
+          "name": "Blue Lappy Boots",
+          "path": "/recipes/craft-blue-lappy-boots",
+          "detail": ""
+        },
+        {
+          "name": "Blue Lutia",
+          "path": "/recipes/craft-blue-lutia",
+          "detail": ""
+        },
+        {
+          "name": "Blue Magic Shoes",
+          "path": "/recipes/craft-blue-magic-shoes",
+          "detail": ""
+        },
+        {
+          "name": "Blue Metal Gear",
+          "path": "/recipes/craft-blue-metal-gear",
+          "detail": ""
+        },
+        {
+          "name": "Blue Moon Gloves",
+          "path": "/recipes/craft-blue-moon-gloves",
+          "detail": ""
+        },
+        {
+          "name": "Blue Moon Shoes",
+          "path": "/recipes/craft-blue-moon-shoes",
+          "detail": ""
+        },
+        {
+          "name": "Blue Morrican",
+          "path": "/recipes/craft-blue-morrican",
+          "detail": ""
+        },
+        {
+          "name": "Blue Noel",
+          "path": "/recipes/craft-blue-noel",
+          "detail": ""
+        },
+        {
+          "name": "Blue Penance",
+          "path": "/recipes/craft-blue-penance",
+          "detail": ""
+        },
+        {
+          "name": "Blue Pierre Shoes",
+          "path": "/recipes/craft-blue-pierre-shoes",
+          "detail": ""
+        },
+        {
+          "name": "Blue Savata",
+          "path": "/recipes/craft-blue-savata",
+          "detail": ""
+        },
+        {
+          "name": "Blue Silky Boots",
+          "path": "/recipes/craft-blue-silky-boots",
+          "detail": ""
+        },
+        {
+          "name": "Blue Steel-Tip Boots",
+          "path": "/recipes/craft-blue-steel-tip-boots",
+          "detail": ""
+        },
+        {
+          "name": "Blue White-Lined Boots",
+          "path": "/recipes/craft-blue-white-lined-boots",
+          "detail": ""
+        },
+        {
+          "name": "Blue Willow",
+          "path": "/recipes/craft-blue-willow",
+          "detail": ""
+        },
+        {
+          "name": "Bronze Chain Boots",
+          "path": "/recipes/craft-bronze-chain-boots",
+          "detail": ""
+        },
+        {
+          "name": "Bronze Mischief",
+          "path": "/recipes/craft-bronze-mischief",
+          "detail": ""
+        },
+        {
+          "name": "Bronze Missel",
+          "path": "/recipes/craft-bronze-missel",
+          "detail": ""
+        },
+        {
+          "name": "Bronze Pride",
+          "path": "/recipes/craft-bronze-pride",
+          "detail": ""
+        },
+        {
+          "name": "Bronze Scaler",
+          "path": "/recipes/craft-bronze-scaler",
+          "detail": ""
+        },
+        {
+          "name": "Bronze Wolfskin",
+          "path": "/recipes/craft-bronze-wolfskin",
+          "detail": ""
+        },
+        {
+          "name": "Brown Apprentice Hat",
+          "path": "/recipes/craft-brown-apprentice-hat",
+          "detail": ""
+        },
+        {
+          "name": "Brown Duo",
+          "path": "/recipes/craft-brown-duo",
+          "detail": ""
+        },
+        {
+          "name": "Brown Ghetto Beanie",
+          "path": "/recipes/craft-brown-ghetto-beanie",
+          "detail": ""
+        },
+        {
+          "name": "Brown Hunter Boots",
+          "path": "/recipes/craft-brown-hunter-boots",
+          "detail": ""
+        },
+        {
+          "name": "Brown Jack Boots",
+          "path": "/recipes/craft-brown-jack-boots",
+          "detail": ""
+        },
+        {
+          "name": "Brown Jangoon Shoes",
+          "path": "/recipes/craft-brown-jangoon-shoes",
+          "detail": ""
+        },
+        {
+          "name": "Brown Marker",
+          "path": "/recipes/craft-brown-marker",
+          "detail": ""
+        },
+        {
+          "name": "Brown Moon Gloves",
+          "path": "/recipes/craft-brown-moon-gloves",
+          "detail": ""
+        },
+        {
+          "name": "Brown Pierre Shoes",
+          "path": "/recipes/craft-brown-pierre-shoes",
+          "detail": ""
+        }
+      ],
+      "total": 60
+    }
+  ]
+}

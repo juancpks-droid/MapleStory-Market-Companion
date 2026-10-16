@@ -1,0 +1,78 @@
+{
+  "schemaVersion": 1,
+  "path": "/maps/sleepy-dungeon-v",
+  "kind": "map",
+  "name": "Sleepy Dungeon V",
+  "source": "CCPLZ",
+  "sourceUrl": "https://ccplz.cc/maps/sleepy-dungeon-v",
+  "checkedAt": "2026-10-16T09:57:11.202Z",
+  "notice": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial.",
+  "fields": [
+    {
+      "label": "Region",
+      "value": "Victoria Island"
+    },
+    {
+      "label": "Street",
+      "value": "Dungeon"
+    },
+    {
+      "label": "Monster levels",
+      "value": "6 to 58"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Monsters",
+      "links": [
+        {
+          "name": "Slime",
+          "path": "/monsters/slime",
+          "detail": "Level 6"
+        },
+        {
+          "name": "Jr. Necki",
+          "path": "/monsters/jr-necki",
+          "detail": "Level 21"
+        },
+        {
+          "name": "Curse Eye",
+          "path": "/monsters/curse-eye",
+          "detail": "Level 33"
+        },
+        {
+          "name": "Jr. Boogie 1",
+          "path": "/monsters/jr-boogie-1",
+          "detail": "Level 35"
+        },
+        {
+          "name": "Jr. Boogie 2",
+          "path": "/monsters/jr-boogie-2",
+          "detail": "Level 35"
+        },
+        {
+          "name": "Lupin",
+          "path": "/monsters/lupin",
+          "detail": "Level 37"
+        },
+        {
+          "name": "Dark Stone Golem",
+          "path": "/monsters/dark-stone-golem",
+          "detail": "Level 58"
+        }
+      ],
+      "total": 7
+    },
+    {
+      "title": "Connected maps",
+      "links": [
+        {
+          "name": "Sleepy Dungeon IV",
+          "path": "/maps/sleepy-dungeon-iv",
+          "detail": "Dungeon"
+        }
+      ],
+      "total": 1
+    }
+  ]
+}
