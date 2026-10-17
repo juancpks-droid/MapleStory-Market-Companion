@@ -1,11 +1,11 @@
 "use client";
 import {useEffect,useState} from 'react';
 import {cacheKey} from '../lib/search.ts';
-import {priceContext,keepSavedMarket} from '../lib/player-tools.ts';
+import {priceContext,keepSavedMarket,kerningMarket} from '../lib/player-tools.ts';
 export default function ItemSummary({id,name}:{id:string;name:string}){
  const [open,setOpen]=useState(false),[data,setData]=useState<Record<string,any>>({}),[status,setStatus]=useState('');
  useEffect(()=>{if(!open)return;const c=new AbortController();let alive=true;setStatus('Loading saved summary…');
- (async()=>{await Promise.all(['prices','finder'].map(async mode=>{let saved:any;try{saved=JSON.parse(localStorage.getItem(cacheKey(mode,id))||'null');if(saved&&alive)setData(d=>({...d,[mode]:saved}));}catch{}
+ (async()=>{await Promise.all(['prices','finder'].map(async mode=>{let saved:any;try{saved=JSON.parse(localStorage.getItem(cacheKey(mode,id))||'null');if(mode==='prices')saved=kerningMarket(saved);if(saved&&alive)setData(d=>({...d,[mode]:saved}));}catch{}
  if(!navigator.onLine)return;
  if(saved&&Date.now()-Date.parse(saved.checkedAt)<(mode==='prices'?120000:86400000))return;
  try{const r=await fetch(`/api/lookup?id=${encodeURIComponent(id)}&mode=${mode}`,{signal:c.signal});const value:any=await r.json();if(!r.ok)throw Error();if(alive){const result=mode==='prices'?keepSavedMarket(saved,value):value;setData(d=>({...d,[mode]:result}));try{const key=cacheKey(mode,id);localStorage.setItem(key,JSON.stringify(result));const keys=Object.keys(localStorage).filter(k=>k.startsWith('maple-lite-v3-'));while(keys.length>30){const remove=keys.shift();if(remove&&remove!==key)localStorage.removeItem(remove)}}catch{}}}catch{if(alive)setStatus('Some references could not refresh. Saved sections are kept.');}}));if(alive)setStatus(s=>s.startsWith('Some')?s:navigator.onLine?'Available references shown.':'Offline — saved references only.');})();return()=>{alive=false;c.abort()};},[id,open]);

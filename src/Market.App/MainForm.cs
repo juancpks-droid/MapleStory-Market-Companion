@@ -53,7 +53,7 @@ public sealed partial class MainForm : Form
 
     {
 
-        this.store=store; this.dataDirectory=dataDirectory;features=CompanionFeatures.Load(FeaturePath);RecoverLinkedJournal(); collector=new(fetcher); settings=store.LoadSettings(); observations=store.Observations();fmSummaries=store.Summaries();
+        this.store=store; this.dataDirectory=dataDirectory;features=CompanionFeatures.Load(FeaturePath);RecoverLinkedJournal(); collector=new(fetcher); settings=store.LoadSettings(); observations=PlayerMarketSource.Only(store.Observations()).ToList();fmSummaries=store.Summaries();
 
         if(settings.AccessVersion<2){var source=settings.Sources.FirstOrDefault(s=>s.Id=="Kerning Exchange");if(source is not null&&string.IsNullOrEmpty(source.PermissionReference)){source.Enabled=true;source.PermissionReference="https://kerning.gg/robots.txt — public pages allowed; checked each batch";}settings.AccessVersion=2;store.SaveSettings(settings);}
 
@@ -224,11 +224,11 @@ public sealed partial class MainForm : Form
 
         Note("Market sources",28);
 
-        Note("Kerning Exchange and BasilMarket read public listing pages and check robots.txt each batch. Requests are spaced by 3 seconds, capped at 60/hour per website and cached for at least 15 minutes. Basil rotates two sale categories per refresh and searches up to two requested items. Up to 12 listing details are checked within the remaining request budget (usually 8–10). Saved approximate listings stay queued; rounded prices remain labeled. Custom JSON feeds need an access reference.",72);
+        Note("Player market prices and listings use Kerning Exchange only, including background refreshes and saved market views. NPC prices, item details, drops and maps continue to use their separate reference sources. Kerning requests are spaced and cached; unavailable data stays unavailable.",72);
 
         var controls=new List<(SourceConfig config,CheckBox enabled,TextBox reference,NumericUpDown minutes,TextBox url)>();
 
-        foreach(var s in settings.Sources)
+        foreach(var s in settings.Sources.Where(s=>s.Id==PlayerMarketSource.Provider))
 
         {
 
@@ -347,10 +347,10 @@ public sealed partial class MainForm : Form
             var results=await Task.Run(()=>collector.Refresh(settings,refreshToken,names,onlineSearch,observations.ToArray(),result=>InvokeAsync(()=>{
                 // Cache verified batches, but publish the visible search only once at completion.
                 if(!closing&&!IsDisposed&&!Offline)ApplySourceResult(result);
-            }),checking:message=>{if(!closing&&!IsDisposed)_=InvokeAsync(()=>{if(CanPresent()&&onlineSearch&&presentPrices)lookupStatus.Text="Checking "+message+" • "+requestedQuery+" • Saved results stay visible";});},onlyProvider:onlineSearch||selected is "Price Checker" or "Seller Finder"?PlayerMarketSource.Provider:null),refreshToken);
+            }),checking:message=>{if(!closing&&!IsDisposed)_=InvokeAsync(()=>{if(CanPresent()&&onlineSearch&&presentPrices)lookupStatus.Text="Checking "+message+" • "+requestedQuery+" • Saved results stay visible";});},onlyProvider:PlayerMarketSource.Provider),refreshToken);
             refreshSucceeded=true;
             if(CanPresent()){
-                sourceResults=results;observations=store.Observations();fmSummaries=store.Summaries();
+                sourceResults=results;observations=PlayerMarketSource.Only(store.Observations()).ToList();fmSummaries=store.Summaries();
                 var basilScan=settings.Sources.FirstOrDefault(s=>s.Id=="BasilMarket");
                 if(basilScan is not null&&sourceResults.Any(r=>r.Provider=="BasilMarket"&&r.Updated))BasilCompletion.Observe(observations,basilScan,DateTimeOffset.UtcNow);
                 store.SaveSettings(settings);
@@ -389,7 +389,7 @@ public sealed partial class MainForm : Form
 
     }
 
-    IEnumerable<Observation> EligibleObservations()=>observations.Where(o=>settings.Sources.Any(s=>s.Id==o.Provider && s.Authorized));
+    IEnumerable<Observation> EligibleObservations()=>PlayerMarketSource.Only(observations).Where(o=>settings.Sources.Any(s=>s.Id==o.Provider && s.Authorized));
 
     void Render()
 
@@ -473,7 +473,7 @@ public sealed partial class MainForm : Form
 
         var previousWatchSelection=SelectedItem(watchGrid);UpdateWatchButtons();SetColumns(watchGrid,["Item","Latest ask","Est. value","Change","Confidence","Freshness","Alerts"]);SetColumns(inventoryGrid,["Item","Quantity","Est. unit","Est. stack","Source","Freshness"]);
 
-        var storedHistory=store.History();decimal total=0;int missing=0;foreach(var i in store.Items())
+        var storedHistory=PlayerMarketSource.Only(store.History());decimal total=0;int missing=0;foreach(var i in store.Items())
 
         {
 

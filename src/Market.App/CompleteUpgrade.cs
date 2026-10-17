@@ -83,7 +83,7 @@ public sealed partial class MainForm
     void RenderActivity()
     {
         SetColumns(activityGrid,["Item / exact variant","Earlier UTC day","Earlier median ask","Latest UTC day","Latest median ask","Change","Samples"]);
-        var active=store.History().Where(o=>settings.Sources.Any(s=>s.Id==o.Provider&&s.Authorized));foreach(var r in CompanionFeatures.Activity(active,DateTimeOffset.UtcNow))activityGrid.Rows.Add(r.Name+(r.Variant.Length>0?" • "+r.Variant:""),r.First.ToString("yyyy-MM-dd"),TextKey.Mesos(r.EarlierMedian),r.Last.ToString("yyyy-MM-dd"),TextKey.Mesos(r.LatestMedian),$"{(r.LatestMedian/r.EarlierMedian-1)*100:+0.0;-0.0;0}%",$"{r.EarlierCount} → {r.LatestCount}");
+        var active=PlayerMarketSource.Only(store.History()).Where(o=>settings.Sources.Any(s=>s.Id==o.Provider&&s.Authorized));foreach(var r in CompanionFeatures.Activity(active,DateTimeOffset.UtcNow))activityGrid.Rows.Add(r.Name+(r.Variant.Length>0?" • "+r.Variant:""),r.First.ToString("yyyy-MM-dd"),TextKey.Mesos(r.EarlierMedian),r.Last.ToString("yyyy-MM-dd"),TextKey.Mesos(r.LatestMedian),$"{(r.LatestMedian/r.EarlierMedian-1)*100:+0.0;-0.0;0}%",$"{r.EarlierCount} → {r.LatestCount}");
         if(activityGrid.Rows.Count==0)activityGrid.Rows.Add("Not enough comparable history yet","—","—","—","—","—","3 sellers on each of 2 days required");
     }
     void RenderEquipment()

@@ -1,12 +1,20 @@
 import assert from 'node:assert/strict';
-import {rememberItem,toggleFavorite,priceContext,problemReport,keepSavedMarket} from './lib/player-tools.ts';
+import {rememberItem,toggleFavorite,priceContext,problemReport,keepSavedMarket,kerningMarket} from './lib/player-tools.ts';
 import {priorityPaths} from './lib/collection-priority.ts';
 import catalog from './public/catalog.json' with {type:'json'};
 assert.deepEqual(rememberItem(['a','b'],'b'),['b','a']);assert.equal(rememberItem(Array.from({length:30},(_,i)=>String(i)),'new').length,12);
 assert.deepEqual(toggleFavorite(['a'],'a'),[]);assert.equal(toggleFavorite(Array.from({length:50},(_,i)=>String(i)),'new').length,50);
-const now=Date.now(),saved={offers:[{at:new Date(now-3600000).toISOString(),seller:'PRIVATE NAME',note:'PRIVATE NOTE'}],checkedAt:new Date(now-900000).toISOString(),ask:50};
+const now=Date.now(),saved={offers:[{at:new Date(now-3600000).toISOString(),source:'Kerning Exchange',kind:'sell',price:50,seller:'PRIVATE NAME',note:'PRIVATE NOTE'}],checkedAt:new Date(now-900000).toISOString(),ask:50};
 const result=keepSavedMarket(saved,{marketAvailable:false,offers:[],ask:null,buy:null,npc:{sell:5},checkedAt:new Date(now).toISOString()});assert.equal(result.offers.length,1);assert.equal(result.checkedAt,saved.checkedAt);assert.equal(result.ask,null);assert.equal(result.npc.sell,5);assert.match(priceContext(result,now),/Market source unavailable/);assert.match(priceContext({offers:[]},now),/Not enough recent offers/);
 const report=problemReport({id:'123',name:'Test item'},'prices',saved,'Unavailable');assert.ok(report.includes('Test item'));assert.ok(!report.includes('PRIVATE'));
 const priority=priorityPaths(catalog,0);assert.ok(priority.paths.includes('/items/red-potion'));assert.equal(priority.cursor,4);assert.equal(priorityPaths(catalog,12).cursor,0);
 assert.deepEqual(priorityPaths(catalog,12).paths,['/items/gloves-attack-scroll-lesser','/items/gloves-attack-scroll-intermediate','/items/gloves-attack-scroll-greater','/items/gloves-attack-scroll-chaos']);
 console.log('PASS: bounded recent/favorite IDs, distinct priority rotation, no fake fresh prices, saved-offer retention and privacy-limited problem reports.');
+
+const mixed={...saved,offers:[...saved.offers,{source:'BasilMarket',kind:'sell',price:1,at:new Date(now).toISOString()},{source:'NiaMeowDB',kind:'buy',price:999,at:new Date(now).toISOString()},{kind:'sell',price:2}],buy:999,sourceUrl:'https://other.example/item',npc:{sell:8,source:'CCPLZ'}};
+const clean=kerningMarket(mixed,now);assert.equal(clean.offers.length,1);assert.equal(clean.ask,50);assert.equal(clean.buy,null);assert.equal(clean.npc,mixed.npc);assert.equal(clean.sourceUrl,'https://kerning.gg');assert.equal(mixed.offers.length,4);
+const fallback=keepSavedMarket(mixed,{marketAvailable:false,npc:{sell:9,source:'MapleStory Quest'}});assert.equal(fallback.offers.length,1);assert.equal(fallback.ask,null);assert.equal(fallback.npc.sell,9);
+for(const offset of [-90000000,60000])assert.equal(kerningMarket({offers:[{...saved.offers[0],at:new Date(now+offset).toISOString()}]},now).ask,null);
+assert.equal(kerningMarket({offers:[],ask:123,buy:456},now).ask,null);
+assert.equal(kerningMarket({offers:[{...saved.offers[0],price:NaN}]},now).offers.length,0);
+console.log('PASS: mixed/unknown cached providers excluded; NPC references preserved; stale/future offers cannot set current prices; failed refresh never restores other markets.');

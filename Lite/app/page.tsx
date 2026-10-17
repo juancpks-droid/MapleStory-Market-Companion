@@ -3,7 +3,7 @@
 import {useEffect,useState,useRef,useMemo} from 'react';
 import FieldGuide from './FieldGuide';
 import ItemSummary from './ItemSummary';
-import {rememberItem,toggleFavorite,priceContext,problemReport,LITE_VERSION,keepSavedMarket} from '../lib/player-tools.ts';
+import {rememberItem,toggleFavorite,priceContext,problemReport,LITE_VERSION,keepSavedMarket,kerningMarket} from '../lib/player-tools.ts';
 
 import {Item,matchItems,exactItem,cacheKey} from '../lib/search.ts';
 
@@ -44,7 +44,7 @@ export default function Home(){
 
     const shown=items.find(i=>i.id===saved.displayed?.id),mode=saved.displayedTab;
 
-    if(shown&&(mode==='finder'||mode==='prices'))try{const data=JSON.parse(localStorage.getItem(cacheKey(mode,shown.id))||'null');if(data)setView({item:shown,tab:mode,data})}catch{}
+    if(shown&&(mode==='finder'||mode==='prices'))try{const data=JSON.parse(localStorage.getItem(cacheKey(mode,shown.id))||'null');if(data)setView({item:shown,tab:mode,data:mode==='prices'?kerningMarket(data):data})}catch{}
 
    }
 
@@ -83,7 +83,7 @@ export default function Home(){
 
   const publish=(value:any)=>{if(current())setView({item,tab:mode,data:value});};
 
-  let saved:any=null;try{saved=JSON.parse(localStorage.getItem(key)||'null')}catch{}
+  let saved:any=null;try{saved=JSON.parse(localStorage.getItem(key)||'null');if(mode==='prices')saved=kerningMarket(saved)}catch{}
 
   setMessage(mode==='prices'?'Checking Kerning offers and NPC references…':'Checking saved drop references and available sources…');setBusy(true);if(saved)publish(saved);
 
