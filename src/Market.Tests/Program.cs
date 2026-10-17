@@ -678,6 +678,18 @@ await Test("Seller finder isolates verified scroll success rate",()=>Sync(()=>{
  var found=SellerSearch.Find(rows,"Scroll for Gloves for ATT 60%",false,true,now,24);Check(found.Count==1&&found[0].ListingId=="a");
 }));
 
+
+await Test("Player market source excludes all non-Kerning cached offers and historical evidence",()=>Sync(()=>{
+ var rows=new[]{O("k",100,EvidenceKind.Asking) with{Provider="Kerning Exchange"},O("b",1,EvidenceKind.Asking) with{Provider="BasilMarket"},O("f",2) with{Provider="Approved JSON feed"},O("n",3) with{Provider="NiaMeowDB"}};
+ Check(PlayerMarketSource.Only(rows).Single().ListingId=="k");Check(PlayerMarketSource.Only(rows.Where(o=>o.Provider!="Kerning Exchange")).Count()==0);
+}));
+await Test("Kerning-only search never contacts fallback markets when Kerning fails",async()=>{
+ var hosts=new List<string>();var checks=new List<string>();using var fetch=new Fetcher(new Handler(request=>{hosts.Add(request.RequestUri!.Host);return new HttpResponseMessage(HttpStatusCode.NotFound);}));
+ var settings=new Settings{Sources=[new(){Id="BasilMarket",Enabled=true,PermissionReference="test"},new(){Id="Approved JSON feed",Enabled=true,PermissionReference="test",FeedUrl="https://feed.example.org/data"},new(){Id="Kerning Exchange",Enabled=true,PermissionReference="test"}]};
+ var rows=await new SourceCollector(fetch).Refresh(settings,CancellationToken.None,["Red Potion"],true,checking:checks.Add,onlyProvider:PlayerMarketSource.Provider);
+ Check(hosts.Count>0&&hosts.All(h=>h=="kerning.gg")&&checks.SequenceEqual(new[]{"Kerning Exchange"})&&rows.All(r=>r.Provider=="Kerning Exchange"));Check(settings.Sources.Where(s=>s.Id!="Kerning Exchange").All(s=>s.LastChecked==default));
+});
+
 Directory.CreateDirectory("test-results");File.WriteAllText("test-results/results.json",JsonSerializer.Serialize(new{total=results.Count,failed=failures,results},Json.Options));Console.WriteLine($"{results.Count-failures}/{results.Count} passed");Environment.ExitCode=failures==0?0:1;
 
 

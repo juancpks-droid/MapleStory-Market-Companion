@@ -17,11 +17,11 @@ public sealed partial class MainForm
   page.Controls.Remove(priceGrid);page.Controls.Remove(chart);
   var listings=new TabPage("For sale & looking to buy");
   var filters=Toolbar();filters.Height=42;filters.WrapContents=true;filters.AutoScroll=false;filters.Controls.Add(priceItemChoice);priceItemChoice.SelectedIndexChanged+=(_,_)=>{if(!fillingPriceChoices){RenderValuation();RenderHistory();QueueItemLookup(priceItemChoice.Text);}};
-  listingSort.Items.AddRange(["Newest first","Price: low to high","Price: high to low","Kerning first"]);listingSort.SelectedIndex=3;
+  listingSort.Items.AddRange(["Newest first","Price: low to high","Price: high to low","Recently checked"]);listingSort.SelectedIndex=3;
   listingMin.Width=75;listingMax.Width=75;
   filters.Controls.Add(listingSort);filters.Controls.Add(new Label(){Text="Min mesos",AutoSize=true,Padding=new Padding(0,8,0,0)});filters.Controls.Add(listingMin);
   filters.Controls.Add(new Label(){Text="Max (0 = any)",AutoSize=true,Padding=new Padding(0,8,0,0)});filters.Controls.Add(listingMax);
-  listingSource.Items.Add("All sources");listingSource.Items.AddRange(settings.Sources.Select(s=>s.Id).Distinct().Cast<object>().ToArray());listingSource.SelectedIndex=0;
+  listingSource.Items.Add(PlayerMarketSource.Provider);listingSource.SelectedIndex=0;listingSource.Enabled=false;
   filters.Controls.Add(listingSource);filters.Controls.Add(listingRecent);filters.Controls.Add(listingCompact);filters.Controls.Add(Button("Reset filters",ResetMarketFilters));
   listingSource.SelectedIndexChanged+=(_,_)=>RenderMarketCards(marketTarget);listingRecent.CheckedChanged+=(_,_)=>RenderMarketCards(marketTarget);listingCompact.CheckedChanged+=(_,_)=>RenderMarketCards(marketTarget);
   var columns=new TableLayoutPanel(){Dock=DockStyle.Fill,ColumnCount=2,RowCount=1};columns.ColumnStyles.Add(new(SizeType.Percent,50));columns.ColumnStyles.Add(new(SizeType.Percent,50));
@@ -35,7 +35,7 @@ public sealed partial class MainForm
   FitPriceText(fmContext);FitPriceText(priceSummary);FitPriceText(marketHeadline);BuildNpcReference(page);BuildPriceOverview(page);
   listingSort.SelectedIndexChanged+=(_,_)=>RenderMarketCards(marketTarget);listingMin.ValueChanged+=(_,_)=>RenderMarketCards(marketTarget);listingMax.ValueChanged+=(_,_)=>RenderMarketCards(marketTarget);
  }
- Observation? SelectedPriceItem()=>priceDetails.SelectedIndex==2&&priceGrid.SelectedRows.Count>0?priceGrid.SelectedRows[0].Tag as Observation:observations.FirstOrDefault(o=>o.Name==priceItemChoice.SelectedItem as string);
+ Observation? SelectedPriceItem()=>priceDetails.SelectedIndex==2&&priceGrid.SelectedRows.Count>0?priceGrid.SelectedRows[0].Tag as Observation:PlayerMarketSource.Only(observations).FirstOrDefault(o=>o.Name==priceItemChoice.SelectedItem as string);
  void SetPriceChoices(List<Observation> rows){
   var previous=priceItemChoice.SelectedItem as string;var query=DisplayedPriceQuery;fillingPriceChoices=true;
   priceItemChoice.Items.Clear();var names=rows.Select(o=>o.Name).Distinct().Order().ToArray();priceItemChoice.Items.AddRange(names);priceItemChoice.Visible=names.Length>1;
@@ -46,7 +46,7 @@ public sealed partial class MainForm
  void RenderMarketCards(Observation? target){
   marketTarget=target;var now=DateTimeOffset.UtcNow;
   var name=target?.Name??DisplayedPriceQuery;
-  var all=observations.Where(o=>TextKey.Normalize(o.Name)==TextKey.Normalize(name)&&(!o.Equipment||(target is not null&&o.MatchKey==target.MatchKey))&&o.Available&&o.Kind is EvidenceKind.Asking or EvidenceKind.Buying).DistinctBy(o=>o.Key).ToList();
+  var all=PlayerMarketSource.Only(observations).Where(o=>TextKey.Normalize(o.Name)==TextKey.Normalize(name)&&(!o.Equipment||(target is not null&&o.MatchKey==target.MatchKey))&&o.Available&&o.Kind is EvidenceKind.Asking or EvidenceKind.Buying).DistinctBy(o=>o.Key).ToList();
   var eligible=all.Where(o=>settings.Sources.Any(s=>s.Id==o.Provider&&s.Authorized)&&o.Fresh(now,TimeSpan.FromHours(settings.FreshHours))&&o.RetrievedAt>=now.AddMinutes(-30)).ToList();
   RenderListingWorkbench(all.Where(o=>o.UnitPrice>=listingMin.Value&&(listingMax.Value==0||o.UnitPrice<=listingMax.Value)&&(listingSource.SelectedIndex<=0||o.Provider==listingSource.Text)&&(!listingRecent.Checked||eligible.Contains(o))));
   var asks=eligible.Where(o=>o.Kind==EvidenceKind.Asking).ToList();var buys=eligible.Where(o=>o.Kind==EvidenceKind.Buying).ToList();
@@ -55,9 +55,9 @@ public sealed partial class MainForm
    flow.SuspendLayout();foreach(Control c in flow.Controls.Cast<Control>().ToArray())c.Dispose();flow.Controls.Clear();
    var candidates=all.Where(o=>o.Kind==kind).ToList();
    var matches=candidates.Where(o=>o.UnitPrice>=listingMin.Value&&(listingMax.Value==0||o.UnitPrice<=listingMax.Value)&&(listingSource.SelectedIndex<=0||o.Provider==listingSource.Text)&&(!listingRecent.Checked||eligible.Contains(o)));
-   matches=listingSort.SelectedIndex switch{1=>matches.OrderBy(o=>o.UnitPrice),2=>matches.OrderByDescending(o=>o.UnitPrice),3=>matches.OrderBy(o=>o.Provider=="Kerning Exchange"?0:1).ThenByDescending(o=>o.ObservedAt??o.RetrievedAt),_=>matches.OrderByDescending(o=>o.ObservedAt??o.RetrievedAt)};
+   matches=listingSort.SelectedIndex switch{1=>matches.OrderBy(o=>o.UnitPrice),2=>matches.OrderByDescending(o=>o.UnitPrice),3=>matches.OrderByDescending(o=>o.RetrievedAt),_=>matches.OrderByDescending(o=>o.ObservedAt??o.RetrievedAt)};
    var rows=matches.Take(100).ToList();label.Text=$"{heading} ({candidates.Count}) • showing {rows.Count}";
-   if(rows.Count==0)flow.Controls.Add(new Label(){Text=candidates.Count>0?"No listings match these filters. Try Reset filters to see cached listings.":"No matching cached listings. Choose Get prices to retrieve available public data here. Kerning is the primary listing source; other enabled sources add coverage. No imported offers does not mean nobody is trading.",AutoSize=true,MaximumSize=new Size(Math.Max(150,flow.ClientSize.Width-24),0),Padding=new Padding(10)});
+   if(rows.Count==0)flow.Controls.Add(new Label(){Text=candidates.Count>0?"No listings match these filters. Try Reset filters to see cached listings.":"No matching cached listings. Choose Get prices to retrieve available public data here. Kerning Exchange is the only player-market source. No imported offers does not mean nobody is trading.",AutoSize=true,MaximumSize=new Size(Math.Max(150,flow.ClientSize.Width-24),0),Padding=new Padding(10)});
    foreach(var o in rows){
     var card=new MarketListingCard(){Width=Math.Max(150,flow.ClientSize.Width-24),MaximumSize=new Size(Math.Max(150,flow.ClientSize.Width-24),0),AutoSize=true,AutoSizeMode=AutoSizeMode.GrowAndShrink,FlowDirection=FlowDirection.TopDown,WrapContents=false,Padding=new Padding(12),Margin=new Padding(2,3,2,10),BackColor=GuidePalette.Surface,Tag=o};
     void Line(string text,bool strong=false){card.Controls.Add(new Label(){Text=text,AutoSize=true,MaximumSize=new Size(Math.Max(130,card.Width-22),0),ForeColor=strong?GuidePalette.Gold:GuidePalette.Muted,Font=new Font("Segoe UI",strong?12:9,strong?FontStyle.Bold:FontStyle.Regular),Margin=new Padding(0,2,0,3)});}

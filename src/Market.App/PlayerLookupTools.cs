@@ -20,8 +20,8 @@ public sealed partial class MainForm
   var cancellation=CancellationTokenSource.CreateLinkedTokenSource(stop.Token);cancellation.CancelAfter(TimeSpan.FromSeconds(45));var reader=new GameGuideReader();
   actions.Controls.Add(Button("Check prices",()=>{dialog.Close();OpenSavedPrice(name);}));actions.Controls.Add(Button("Watch / unwatch",()=>ToggleItemWatch(name)));actions.Controls.Add(Button("Copy problem report",()=>CopyLookupReport(name,id,status.Text)));
   dialog.Controls.Add(text);dialog.Controls.Add(status);dialog.Controls.Add(actions);
-  var summary=new StringBuilder(name+"\r\n\r\nPLAYER MARKET — saved observations\r\n");
-  var rows=EligibleObservations().Where(o=>ScrollNames.Matches(o.Name,name)&&o.Available).ToList();var recent=rows.Where(o=>o.RetrievedAt>DateTimeOffset.UtcNow.AddHours(settings.FreshHours)&&o.ObservedAt is {} at&&at>DateTimeOffset.UtcNow.AddHours(settings.FreshHours)).ToList();
+  var summary=new StringBuilder(name+"\r\n\r\nPLAYER MARKET — Kerning Exchange saved observations\r\n");
+  var rows=PlayerMarketSource.Only(EligibleObservations()).Where(o=>ScrollNames.Matches(o.Name,name)&&o.Available).ToList();var recent=rows.Where(o=>o.RetrievedAt>DateTimeOffset.UtcNow.AddHours(settings.FreshHours)&&o.ObservedAt is {} at&&at>DateTimeOffset.UtcNow.AddHours(settings.FreshHours)).ToList();
   summary.AppendLine($"{recent.Count} recent observations; {rows.Count-recent.Count} older or undated observations. Asking prices are not completed sales. Equipment stats may differ.");
   foreach(var row in recent.OrderBy(o=>o.UnitPrice).Take(5))summary.AppendLine($"{row.Kind}: {TextKey.Mesos(row.UnitPrice)} mesos / unit · {row.Provider} · posted {row.ObservedAt:g}");
   if(recent.Count==0)summary.AppendLine("Not enough recent evidence for a current market value. Use Check prices to refresh.");text.Text=summary.ToString();

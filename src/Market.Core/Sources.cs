@@ -116,7 +116,7 @@ public sealed class SourceCollector(Fetcher fetcher)
     readonly KerningReader kerning=new(fetcher);
     readonly BasilReader basil=new(fetcher);
     public IReadOnlyList<CatalogItem> Catalog=>kerning.Catalog;
-    public async Task<List<SourceResult>> Refresh(Settings settings,CancellationToken ct,IEnumerable<string>? names=null,bool search=false,IEnumerable<Observation>? cached=null,Func<SourceResult,Task>? publish=null,Action<string>? checking=null)
+    public async Task<List<SourceResult>> Refresh(Settings settings,CancellationToken ct,IEnumerable<string>? names=null,bool search=false,IEnumerable<Observation>? cached=null,Func<SourceResult,Task>? publish=null,Action<string>? checking=null,string? onlyProvider=null)
     {
         if(!await mutex.WaitAsync(0,ct)) return [];
         try
@@ -124,6 +124,7 @@ public sealed class SourceCollector(Fetcher fetcher)
             var results=new List<SourceResult>(); async Task Add(SourceResult result){results.Add(result);if(publish is not null)await publish(result);}
             foreach(var config in settings.Sources.OrderBy(s=>s.Id=="Kerning Exchange"?0:1))
             {
+                if(onlyProvider is not null&&config.Id!=onlyProvider)continue;
                 if(search && config.Id is not ("Kerning Exchange" or "BasilMarket"))continue;
                 ct.ThrowIfCancellationRequested();checking?.Invoke(config.Id);var now=DateTimeOffset.UtcNow;
                 if(!config.Authorized) { await Add(new(config.Id,[],"Permission required — disabled",config.LastChecked)); continue; }

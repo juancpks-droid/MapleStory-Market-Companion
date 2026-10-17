@@ -148,8 +148,8 @@ public sealed partial class MainForm
         var bar=pages["Price Checker"].Controls.OfType<FlowLayoutPanel>().First();bar.Height=110;bar.WrapContents=true;
         object? Current()=>priceGrid.SelectedRows.Count>0?priceGrid.SelectedRows[0].Tag:null;
         string Name()=>Current() is {} item?ItemName(item):search.Text.Trim();
-        void Lookup(bool nia){var name=Name();if(name.Length==0){footer.Text="Search for or select an item first.";return;}if(nia)ShowWebsite("NiaMeowDB",name,Current());else ShowItemWebsites(name,Current());}
-        bar.Controls.Add(Button("Website fallback…",()=>Lookup(false)));
+        void Lookup(){var name=Name();if(name.Length==0){footer.Text="Search for or select an item first.";return;}ShowWebsite("Kerning Exchange",name,Current());}
+        bar.Controls.Add(Button("Kerning website (fallback)",Lookup));
     }
 }
 

@@ -9,7 +9,7 @@ public sealed partial class MainForm
   int Count(FlowLayoutPanel panel)=>panel.Controls.Cast<Control>().Count(c=>c.Tag is Observation);
   ShowPage("Price Checker");priceDetails.SelectedIndex=0;search.Text="Red Potion";RenderPrices(false);
   Check(Count(sellCards)==2&&Count(buyCards)==2,"Separate sale/buy cards exclude closed listings");CheckListingWorkbench(checks);
-  listingSource.SelectedItem="BasilMarket";Check(Count(sellCards)==0&&Count(buyCards)==0,"Source filter excludes other providers");
+  observations.Add(Row("other","Red Potion",1,EvidenceKind.Asking) with{Provider="BasilMarket"});RenderPrices(false);Check(Count(sellCards)==2&&Count(buyCards)==2&&listingSource.Items.Count==1,"Kerning-only view excludes cached other providers");observations.RemoveAll(o=>o.Provider!="Kerning Exchange");
   ResetMarketFilters();listingRecent.Checked=true;Check(Count(sellCards)==0,"Recent-only filter excludes disabled sources");
   ResetMarketFilters();listingCompact.Checked=true;Check(Count(sellCards)==2&&!sellCards.Controls[0].Controls.OfType<Label>().Any(l=>l.Text.Contains("player note")),"Compact cards keep prices while collapsing long notes");
   Check(ListingDetails(observations[0]).Contains("CH 2, FM room 3")&&ListingDetails(observations[0]).Contains("https://example.org/listing/a"),"Copy details contains player location and original listing link");listingCompact.Checked=false;

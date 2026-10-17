@@ -347,7 +347,7 @@ public sealed partial class MainForm : Form
             var results=await Task.Run(()=>collector.Refresh(settings,refreshToken,names,onlineSearch,observations.ToArray(),result=>InvokeAsync(()=>{
                 // Cache verified batches, but publish the visible search only once at completion.
                 if(!closing&&!IsDisposed&&!Offline)ApplySourceResult(result);
-            }),checking:message=>{if(!closing&&!IsDisposed)_=InvokeAsync(()=>{if(CanPresent()&&onlineSearch&&presentPrices)lookupStatus.Text="Checking "+message+" • "+requestedQuery+" • Saved results stay visible";});}),refreshToken);
+            }),checking:message=>{if(!closing&&!IsDisposed)_=InvokeAsync(()=>{if(CanPresent()&&onlineSearch&&presentPrices)lookupStatus.Text="Checking "+message+" • "+requestedQuery+" • Saved results stay visible";});},onlyProvider:onlineSearch||selected is "Price Checker" or "Seller Finder"?PlayerMarketSource.Provider:null),refreshToken);
             refreshSucceeded=true;
             if(CanPresent()){
                 sourceResults=results;observations=store.Observations();fmSummaries=store.Summaries();
@@ -415,7 +415,7 @@ public sealed partial class MainForm : Form
 
     {
 
-        if(!keepSearch){displayedPriceQuery=ResolvePriceQuery(search.Text);priceInputPending=false;priceLookupLoading=false;}if(priceGrid.IsDisposed||HoldPriceResults)return;var renderWatch=System.Diagnostics.Stopwatch.StartNew();renderingPriceRows=true;priceGrid.SuspendLayout();try{var query=DisplayedPriceQuery;var rows=observations.Where(o=>(query.Length==0||ScrollNames.Matches(o.Name,query)||(!ScrollNames.IsScroll(query)&&o.ItemId==DisplayedPriceQuery.Trim()))&&listingFilter.Matches(o,DateTimeOffset.UtcNow,settings.FreshHours)).OrderByDescending(o=>o.RetrievedAt).ToList();
+        if(!keepSearch){displayedPriceQuery=ResolvePriceQuery(search.Text);priceInputPending=false;priceLookupLoading=false;}if(priceGrid.IsDisposed||HoldPriceResults)return;var renderWatch=System.Diagnostics.Stopwatch.StartNew();renderingPriceRows=true;priceGrid.SuspendLayout();try{var query=DisplayedPriceQuery;var rows=PlayerMarketSource.Only(observations).Where(o=>(query.Length==0||ScrollNames.Matches(o.Name,query)||(!ScrollNames.IsScroll(query)&&o.ItemId==DisplayedPriceQuery.Trim()))&&listingFilter.Matches(o,DateTimeOffset.UtcNow,settings.FreshHours)).OrderByDescending(o=>o.RetrievedAt).ToList();
 
         SetPriceChoices(rows);SetColumns(priceGrid,["Item","Price / unit","Type","Source","Data observed","Retrieved","Quality"]);priceGrid.Columns[0].FillWeight=130;priceGrid.Columns[6].FillWeight=180;
 
@@ -430,17 +430,17 @@ public sealed partial class MainForm : Form
     {
         if(HoldPriceResults)return;
 
-        var query=TextKey.Search(features.Polish.Resolve(search.Text));var exact=observations.Where(o=>TextKey.Search(o.Name)==query).ToList();
+        var query=TextKey.Search(features.Polish.Resolve(search.Text));var exact=PlayerMarketSource.Only(observations).Where(o=>TextKey.Search(o.Name)==query).ToList();
 
         var selectedRow=priceGrid.SelectedRows.Count>0?priceGrid.SelectedRows[0].Tag as Observation:null;
 
         var target=SelectedPriceItem();
 
-        var v=target is null?null:ValuationEngine.Estimate(EligibleObservations(),target,DateTimeOffset.UtcNow,TimeSpan.FromHours(settings.FreshHours),settings.Discount);
+        var v=target is null?null:ValuationEngine.Estimate(PlayerMarketSource.Only(EligibleObservations()),target,DateTimeOffset.UtcNow,TimeSpan.FromHours(settings.FreshHours),settings.Discount);
 
-        var asks=target is null?[]:EligibleObservations().Where(o=>o.MatchKey==target.MatchKey&&o.Kind==EvidenceKind.Asking&&o.Available&&o.Fresh(DateTimeOffset.UtcNow,TimeSpan.FromHours(settings.FreshHours))&&o.RetrievedAt>=DateTimeOffset.UtcNow.AddMinutes(-30)).ToList();
+        var asks=target is null?[]:PlayerMarketSource.Only(EligibleObservations()).Where(o=>o.MatchKey==target.MatchKey&&o.Kind==EvidenceKind.Asking&&o.Available&&o.Fresh(DateTimeOffset.UtcNow,TimeSpan.FromHours(settings.FreshHours))&&o.RetrievedAt>=DateTimeOffset.UtcNow.AddMinutes(-30)).ToList();
 
-        var buyers=target is null?[]:EligibleObservations().Where(o=>o.MatchKey==target.MatchKey&&o.Kind==EvidenceKind.Buying&&o.Available&&o.Fresh(DateTimeOffset.UtcNow,TimeSpan.FromHours(settings.FreshHours))&&o.RetrievedAt>=DateTimeOffset.UtcNow.AddMinutes(-30)).ToList();
+        var buyers=target is null?[]:PlayerMarketSource.Only(EligibleObservations()).Where(o=>o.MatchKey==target.MatchKey&&o.Kind==EvidenceKind.Buying&&o.Available&&o.Fresh(DateTimeOffset.UtcNow,TimeSpan.FromHours(settings.FreshHours))&&o.RetrievedAt>=DateTimeOffset.UtcNow.AddMinutes(-30)).ToList();
         UpdatePriceOverview(asks.Count==0?null:asks.Min(o=>o.UnitPrice),buyers.Count==0?null:buyers.Max(o=>o.UnitPrice),v);
         string lead=target is null?"Search an item online to retrieve its market listings.":target.Name+" • Lowest recently checked ask: "+TextKey.Mesos(asks.Count==0?null:asks.Min(o=>o.UnitPrice))+" • "+asks.Count+" recent asks";
 
@@ -461,7 +461,7 @@ public sealed partial class MainForm : Form
 
         int days=historyDays;var now=DateTimeOffset.UtcNow;
 
-        history.Points=store.History().Where(o=>o.ItemKey==name && o.ObservedAt is {} t && t>=now.AddDays(-days)&&t<=now && (item is null || o.MatchKey==item.MatchKey)).OrderBy(o=>o.ObservedAt).ToList();history.Invalidate();
+        history.Points=PlayerMarketSource.Only(store.History()).Where(o=>o.ItemKey==name && o.ObservedAt is {} t && t>=now.AddDays(-days)&&t<=now && (item is null || o.MatchKey==item.MatchKey)).OrderBy(o=>o.ObservedAt).ToList();history.Invalidate();
 
     }
 
