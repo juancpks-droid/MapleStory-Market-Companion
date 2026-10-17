@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "item": {
+    "key": "gms83:1442003",
+    "name": "Axe Pole Arm",
+    "id": "1442003",
+    "category": "Equipment"
+  },
+  "kind": "npc",
+  "checkedAt": "2026-10-17T09:50:35.914Z",
+  "data": {
+    "sell": 9000,
+    "buy": null,
+    "source": "CCPLZ",
+    "url": "https://ccplz.cc/items/axe-pole-arm",
+    "checkedAt": "2026-10-17T09:50:35.914Z"
+  },
+  "provenance": {
+    "source": "CCPLZ",
+    "sourceUrl": "https://ccplz.cc/items/axe-pole-arm",
+    "coverage": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial."
+  }
+}

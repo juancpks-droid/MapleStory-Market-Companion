@@ -1,0 +1,122 @@
+{
+  "schemaVersion": 1,
+  "path": "/items/axe-pole-arm",
+  "kind": "item",
+  "name": "Axe Pole Arm",
+  "source": "CCPLZ",
+  "sourceUrl": "https://ccplz.cc/items/axe-pole-arm",
+  "checkedAt": "2026-10-17T09:50:35.914Z",
+  "notice": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial.",
+  "fields": [
+    {
+      "label": "Type",
+      "value": "Polearm"
+    },
+    {
+      "label": "Required level",
+      "value": "35"
+    },
+    {
+      "label": "Class",
+      "value": "Warrior"
+    },
+    {
+      "label": "Weapon attack",
+      "value": "+60"
+    },
+    {
+      "label": "Upgrade slots",
+      "value": "7"
+    },
+    {
+      "label": "NPC sell price",
+      "value": "9,000 mesos"
+    },
+    {
+      "label": "Required STR",
+      "value": "75"
+    },
+    {
+      "label": "Required DEX",
+      "value": "35"
+    },
+    {
+      "label": "Required INT",
+      "value": "0"
+    },
+    {
+      "label": "Required LUK",
+      "value": "0"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Dropped by",
+      "links": [
+        {
+          "name": "Curse Eye",
+          "path": "/monsters/curse-eye",
+          "detail": "Level 33"
+        }
+      ],
+      "total": 1
+    },
+    {
+      "title": "How to craft it",
+      "links": [
+        {
+          "name": "Axe Pole Arm",
+          "path": "/recipes/craft-axe-pole-arm",
+          "detail": "Crafting skill level 7"
+        }
+      ],
+      "total": 1
+    },
+    {
+      "title": "Similar equipment",
+      "links": [
+        {
+          "name": "Mithril Pole Arm",
+          "path": "/items/mithril-pole-arm",
+          "detail": "Level 30"
+        },
+        {
+          "name": "Crescent Polearm",
+          "path": "/items/crescent-polearm",
+          "detail": "Level 40"
+        },
+        {
+          "name": "Janitor's Mop",
+          "path": "/items/janitor-s-mop",
+          "detail": "Level 25"
+        },
+        {
+          "name": "Studded Polearm",
+          "path": "/items/studded-polearm",
+          "detail": "Level 20"
+        },
+        {
+          "name": "The Nine Dragons",
+          "path": "/items/the-nine-dragons",
+          "detail": "Level 50"
+        },
+        {
+          "name": "Iron Ball",
+          "path": "/items/iron-ball",
+          "detail": "Level 15"
+        },
+        {
+          "name": "Pole Arm",
+          "path": "/items/pole-arm",
+          "detail": "Level 10"
+        },
+        {
+          "name": "Skylar",
+          "path": "/items/skylar",
+          "detail": "Level 60"
+        }
+      ],
+      "total": 8
+    }
+  ]
+}

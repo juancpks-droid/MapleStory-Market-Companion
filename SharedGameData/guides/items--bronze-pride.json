@@ -1,0 +1,161 @@
+{
+  "schemaVersion": 1,
+  "path": "/items/bronze-pride",
+  "kind": "item",
+  "name": "Bronze Pride",
+  "source": "CCPLZ",
+  "sourceUrl": "https://ccplz.cc/items/bronze-pride",
+  "checkedAt": "2026-10-17T09:50:44.892Z",
+  "notice": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial.",
+  "fields": [
+    {
+      "label": "Type",
+      "value": "Hat"
+    },
+    {
+      "label": "Required level",
+      "value": "30"
+    },
+    {
+      "label": "Class",
+      "value": "All classes"
+    },
+    {
+      "label": "Weapon defense",
+      "value": "+16"
+    },
+    {
+      "label": "Magic defense",
+      "value": "+18"
+    },
+    {
+      "label": "INT",
+      "value": "+2"
+    },
+    {
+      "label": "Max MP",
+      "value": "+10"
+    },
+    {
+      "label": "Upgrade slots",
+      "value": "7"
+    },
+    {
+      "label": "NPC sell price",
+      "value": "1,800 mesos"
+    },
+    {
+      "label": "Required STR",
+      "value": "0"
+    },
+    {
+      "label": "Required DEX",
+      "value": "0"
+    },
+    {
+      "label": "Required INT",
+      "value": "40"
+    },
+    {
+      "label": "Required LUK",
+      "value": "0"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Dropped by",
+      "links": [
+        {
+          "name": "Curse Eye",
+          "path": "/monsters/curse-eye",
+          "detail": "Level 33"
+        }
+      ],
+      "total": 1
+    },
+    {
+      "title": "Also dropped by, in older versions",
+      "links": [
+        {
+          "name": "Wild Boar",
+          "path": "/monsters/wild-boar",
+          "detail": "Level 25, 0.15% historical rate"
+        }
+      ],
+      "total": 1
+    },
+    {
+      "title": "How to craft it",
+      "links": [
+        {
+          "name": "Bronze Pride",
+          "path": "/recipes/craft-bronze-pride",
+          "detail": "Crafting skill level 6"
+        }
+      ],
+      "total": 1
+    },
+    {
+      "title": "Used in crafting",
+      "links": [
+        {
+          "name": "Golden Pride",
+          "path": "/recipes/craft-golden-pride",
+          "detail": ""
+        },
+        {
+          "name": "Steel Pride",
+          "path": "/recipes/craft-steel-pride",
+          "detail": ""
+        }
+      ],
+      "total": 2
+    },
+    {
+      "title": "Similar equipment",
+      "links": [
+        {
+          "name": "Black Jester",
+          "path": "/items/black-jester",
+          "detail": "Level 30"
+        },
+        {
+          "name": "Blue Guise",
+          "path": "/items/blue-guise",
+          "detail": "Level 30"
+        },
+        {
+          "name": "Blue Hawkeye",
+          "path": "/items/blue-hawkeye",
+          "detail": "Level 30"
+        },
+        {
+          "name": "Blue Jester",
+          "path": "/items/blue-jester",
+          "detail": "Level 30"
+        },
+        {
+          "name": "Brown Guise",
+          "path": "/items/brown-guise",
+          "detail": "Level 30"
+        },
+        {
+          "name": "Brown Hawkeye",
+          "path": "/items/brown-hawkeye",
+          "detail": "Level 30"
+        },
+        {
+          "name": "Brown Jester",
+          "path": "/items/brown-jester",
+          "detail": "Level 30"
+        },
+        {
+          "name": "Cap of Memories",
+          "path": "/items/cap-of-memories",
+          "detail": "Level 30"
+        }
+      ],
+      "total": 8
+    }
+  ]
+}

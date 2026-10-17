@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "publishedAt": "2026-10-16T09:57:20.259Z",
+  "publishedAt": "2026-10-17T09:50:59.961Z",
   "catalogItems": 12726,
-  "guideRecords": 125,
-  "referenceRecords": 35,
+  "guideRecords": 141,
+  "referenceRecords": 44,
   "entries": [
     {
       "file": "guides/items--5-o-clock-shadow.json",
@@ -90,6 +90,27 @@
       "kind": "item"
     },
     {
+      "file": "guides/items--axe-pole-arm.json",
+      "bytes": 2667,
+      "sha256": "8b8a1c2277a1f3d48fd45a5db597258a95ad550924c8863b148dbee981fd4906",
+      "checkedAt": "2026-10-17T09:50:35.914Z",
+      "kind": "item"
+    },
+    {
+      "file": "guides/items--battle-shield.json",
+      "bytes": 3075,
+      "sha256": "f840992f806b2ac1260b0191a972abe0d01b8eae63ce43eb693f1c856f44f177",
+      "checkedAt": "2026-10-17T09:50:38.909Z",
+      "kind": "item"
+    },
+    {
+      "file": "guides/items--black-knucklevest.json",
+      "bytes": 2597,
+      "sha256": "77a29463bb35b6adcffa2322f08b277aa9a165c99c82c53bbf381b92966f7843",
+      "checkedAt": "2026-10-17T09:50:41.886Z",
+      "kind": "item"
+    },
+    {
       "file": "guides/items--blue-moonlight.json",
       "bytes": 2762,
       "sha256": "4d41a71132f8802189ec0a3d1ea8500fca5acba0e8c00e002d5ee93f0d08279f",
@@ -118,6 +139,13 @@
       "kind": "item"
     },
     {
+      "file": "guides/items--bronze-pride.json",
+      "bytes": 3438,
+      "sha256": "5a745365b75c6d1b9aa735d4ab6eacb42c68d6bfb49aa5f2d925b91d96d31ef9",
+      "checkedAt": "2026-10-17T09:50:44.892Z",
+      "kind": "item"
+    },
+    {
       "file": "guides/items--brown-moonlight.json",
       "bytes": 2934,
       "sha256": "e056803483b177f279204f841cea02130acd2fb46e23fff6b8a8f4ae1d5676e5",
@@ -143,6 +171,13 @@
       "bytes": 1922,
       "sha256": "d4d64d5433ebc7913a3d66a2278af4e960ee7186bc33678521a2a18ca8bff27f",
       "checkedAt": "2026-10-15T09:57:29.636Z",
+      "kind": "item"
+    },
+    {
+      "file": "guides/items--curse-eye-tail.json",
+      "bytes": 1945,
+      "sha256": "5e2c3e296ee42486cea3add5d1c30ed25bcddd1cb25fc544e2facbdc5a7f26bd",
+      "checkedAt": "2026-10-17T09:50:48.020Z",
       "kind": "item"
     },
     {
@@ -237,6 +272,13 @@
       "kind": "item"
     },
     {
+      "file": "guides/items--great-brown-helmet.json",
+      "bytes": 3011,
+      "sha256": "22cc42acd396c7d0c1238780e3bc3de58343983fcb3b9fb79364497a62aa1951",
+      "checkedAt": "2026-10-17T09:50:50.937Z",
+      "kind": "item"
+    },
+    {
       "file": "guides/items--green-apple.json",
       "bytes": 1780,
       "sha256": "1efbff36eebd06269de9723b679ca9682563cc004d7fe1d2a3d51b647b9e8c1e",
@@ -244,10 +286,31 @@
       "kind": "item"
     },
     {
+      "file": "guides/items--green-distinction.json",
+      "bytes": 2770,
+      "sha256": "d36961ce9bf903db1a750357e9e49f2d89e4390ca01afddeb51ad0def727b8c5",
+      "checkedAt": "2026-10-17T09:50:53.879Z",
+      "kind": "item"
+    },
+    {
       "file": "guides/items--green-headband.json",
       "bytes": 3061,
       "sha256": "ecba8611578c520a6b666418eff6b11e7d087720d8a410b676ab5f9e391e5de8",
       "checkedAt": "2026-10-15T09:57:11.655Z",
+      "kind": "item"
+    },
+    {
+      "file": "guides/items--green-matty.json",
+      "bytes": 2923,
+      "sha256": "d70cef2a90b0a6f2e029ab356980237da34c2421fb29ef9288b840eff99d6637",
+      "checkedAt": "2026-10-17T09:50:57.007Z",
+      "kind": "item"
+    },
+    {
+      "file": "guides/items--green-pilfer.json",
+      "bytes": 2754,
+      "sha256": "31de6ed01931f8146443747c0f19f00b4d336d3fe0b7be7115c520a30480bcbb",
+      "checkedAt": "2026-10-17T09:50:59.912Z",
       "kind": "item"
     },
     {
@@ -545,10 +608,31 @@
       "kind": "map"
     },
     {
+      "file": "guides/maps--sleepy-dungeon-i.json",
+      "bytes": 2162,
+      "sha256": "fa98d7958ba49e2bcd214015682411806c254dfbd7e29602d62156941bff8e76",
+      "checkedAt": "2026-10-17T09:50:29.894Z",
+      "kind": "map"
+    },
+    {
+      "file": "guides/maps--sleepy-dungeon-ii.json",
+      "bytes": 1997,
+      "sha256": "84a277df69419baa5ac7ec5d14f985df2269a505c5f55cf0682154cf67af796b",
+      "checkedAt": "2026-10-17T09:50:32.874Z",
+      "kind": "map"
+    },
+    {
       "file": "guides/maps--sleepy-dungeon-iii.json",
       "bytes": 1751,
       "sha256": "990caf3d32c0221c2d7906ed044324e7d6081fe26bd76892695cdbbd96eb37c1",
       "checkedAt": "2026-10-16T09:57:17.179Z",
+      "kind": "map"
+    },
+    {
+      "file": "guides/maps--sleepy-dungeon-iv.json",
+      "bytes": 1761,
+      "sha256": "873fec590a6a7438787ab95ca51d8c258cd6b3a44c5c7b4d50b3bd7fca7d3046",
+      "checkedAt": "2026-10-17T09:50:17.890Z",
       "kind": "map"
     },
     {
@@ -678,10 +762,38 @@
       "kind": "map"
     },
     {
+      "file": "guides/maps--tree-dungeon-forest-up-north-vi.json",
+      "bytes": 1302,
+      "sha256": "ae27fc819c15bb4ce05349503196cb8ef1ba5b71f37c84f9c05a0f22b7222f78",
+      "checkedAt": "2026-10-17T09:50:14.981Z",
+      "kind": "map"
+    },
+    {
+      "file": "guides/maps--tree-dungeon-forest-up-north-vii.json",
+      "bytes": 1427,
+      "sha256": "e47c851d9b86f47bab02e87cc5d9afd6f7c0c1c017e37635dbf35c1d241debdf",
+      "checkedAt": "2026-10-17T09:50:20.918Z",
+      "kind": "map"
+    },
+    {
       "file": "guides/maps--tree-dungeon-forest-up-north-viii.json",
       "bytes": 1182,
       "sha256": "374fd9359fa56e6fffc3ca970a731fb9555e5c703bacc68f2611e7e549e95a4f",
       "checkedAt": "2026-10-16T09:57:20.240Z",
+      "kind": "map"
+    },
+    {
+      "file": "guides/maps--tree-dungeon-monkey-forest-i.json",
+      "bytes": 1279,
+      "sha256": "bd6bf54e6d2964a8cfe9598ad13dd10b5dd7e0cd578f9f9a3b5ca8d3e823399f",
+      "checkedAt": "2026-10-17T09:50:24.029Z",
+      "kind": "map"
+    },
+    {
+      "file": "guides/maps--tree-dungeon-monkey-forest-ii.json",
+      "bytes": 1284,
+      "sha256": "22b7f6a7d1b2f85204573a2c66e60e50f4bad358cf18d5c7977c1390c0bf5613",
+      "checkedAt": "2026-10-17T09:50:26.928Z",
       "kind": "map"
     },
     {
@@ -895,6 +1007,13 @@
       "kind": "drops"
     },
     {
+      "file": "records/npc-1002004.json",
+      "bytes": 701,
+      "sha256": "102c37de980a141dc8411c49c8bfdb8a175d55d29a4d6a15d43193c961d08414",
+      "checkedAt": "2026-10-17T09:50:50.937Z",
+      "kind": "npc"
+    },
+    {
       "file": "records/npc-1002008.json",
       "bytes": 687,
       "sha256": "5cd574d2a6600e7a5db0e26ef3d0c86cc4e2f991a518633549212518f6c2af10",
@@ -909,10 +1028,45 @@
       "kind": "npc"
     },
     {
+      "file": "records/npc-1002064.json",
+      "bytes": 683,
+      "sha256": "fb4e829f00b2f2850ce4974cee05dc9e055a5e96979dc544165a59f3c49c04d3",
+      "checkedAt": "2026-10-17T09:50:44.892Z",
+      "kind": "npc"
+    },
+    {
       "file": "records/npc-1002067.json",
       "bytes": 687,
       "sha256": "94fc698237436164e3a7d4774be4bd806697602be599450b55647a35a89f3dbf",
       "checkedAt": "2026-10-15T09:57:11.655Z",
+      "kind": "npc"
+    },
+    {
+      "file": "records/npc-1002143.json",
+      "bytes": 680,
+      "sha256": "6b94230d925e315ebe79943b2500a0a620e184c0b378bb62e44139a4a9af73e9",
+      "checkedAt": "2026-10-17T09:50:57.007Z",
+      "kind": "npc"
+    },
+    {
+      "file": "records/npc-1002168.json",
+      "bytes": 698,
+      "sha256": "5091c6db4d0989746f80f85a1e6764f065e506b4868f5e83e575c965efe64a82",
+      "checkedAt": "2026-10-17T09:50:53.879Z",
+      "kind": "npc"
+    },
+    {
+      "file": "records/npc-1002183.json",
+      "bytes": 683,
+      "sha256": "8749e1f70fcba4e06a036661917d518c8dbd0f240b0bb58483d2e42a19afb9e1",
+      "checkedAt": "2026-10-17T09:50:59.912Z",
+      "kind": "npc"
+    },
+    {
+      "file": "records/npc-1040063.json",
+      "bytes": 698,
+      "sha256": "88aac8c589ad3545312f14df7721b9abfcbc356a4042d4bf2ee9e99c6d581e82",
+      "checkedAt": "2026-10-17T09:50:41.886Z",
       "kind": "npc"
     },
     {
@@ -976,6 +1130,20 @@
       "bytes": 693,
       "sha256": "182fcad159de3bb2cf364edd5241c0138d2a597beb506a9d746310a208787b4a",
       "checkedAt": "2026-10-13T15:37:36.252Z",
+      "kind": "npc"
+    },
+    {
+      "file": "records/npc-1092007.json",
+      "bytes": 687,
+      "sha256": "5c9ad3d336fe97ad4d3abc320a67cb9430d74e969b693d4db6efecb7d0a36fff",
+      "checkedAt": "2026-10-17T09:50:38.909Z",
+      "kind": "npc"
+    },
+    {
+      "file": "records/npc-1442003.json",
+      "bytes": 683,
+      "sha256": "9ea60508e7bc07106f42d61f78b3351cd5ff953b1635db55ae8103e8d41c47be",
+      "checkedAt": "2026-10-17T09:50:35.914Z",
       "kind": "npc"
     },
     {
@@ -1046,6 +1214,13 @@
       "bytes": 680,
       "sha256": "2becf2e2010d4e83e7e64c6cbbbdb5933dadd55ea25a789df4383a6397f1fa76",
       "checkedAt": "2026-10-15T09:57:02.652Z",
+      "kind": "npc"
+    },
+    {
+      "file": "records/npc-4000013.json",
+      "bytes": 681,
+      "sha256": "de4c812f4d5df87322f68ebf098687668b5afe28446ed3bee60a878fa6fcec69",
+      "checkedAt": "2026-10-17T09:50:48.020Z",
       "kind": "npc"
     },
     {

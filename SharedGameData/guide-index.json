@@ -73,6 +73,16 @@
       "kind": "item"
     },
     {
+      "path": "/items/axe-pole-arm",
+      "name": "Axe Pole Arm",
+      "kind": "item"
+    },
+    {
+      "path": "/items/battle-shield",
+      "name": "Battle Shield",
+      "kind": "item"
+    },
+    {
       "path": "/maps/beach-hunting-ground",
       "name": "Beach Hunting Ground",
       "kind": "map"
@@ -81,6 +91,11 @@
       "path": "/quests/biggs-s-collection-of-items",
       "name": "Biggs's Collection of Items",
       "kind": "quest"
+    },
+    {
+      "path": "/items/black-knucklevest",
+      "name": "Black Knucklevest",
+      "kind": "item"
     },
     {
       "path": "/items/blue-moonlight",
@@ -100,6 +115,11 @@
     {
       "path": "/items/bronze-ore",
       "name": "Bronze Ore",
+      "kind": "item"
+    },
+    {
+      "path": "/items/bronze-pride",
+      "name": "Bronze Pride",
       "kind": "item"
     },
     {
@@ -151,6 +171,11 @@
       "path": "/monsters/curse-eye",
       "name": "Curse Eye",
       "kind": "monster"
+    },
+    {
+      "path": "/items/curse-eye-tail",
+      "name": "Curse Eye Tail",
+      "kind": "item"
     },
     {
       "path": "/maps/dangerous-forest",
@@ -263,13 +288,33 @@
       "kind": "item"
     },
     {
+      "path": "/items/great-brown-helmet",
+      "name": "Great Brown Helmet",
+      "kind": "item"
+    },
+    {
       "path": "/items/green-apple",
       "name": "Green Apple",
       "kind": "item"
     },
     {
+      "path": "/items/green-distinction",
+      "name": "Green Distinction",
+      "kind": "item"
+    },
+    {
       "path": "/items/green-headband",
       "name": "Green Headband",
+      "kind": "item"
+    },
+    {
+      "path": "/items/green-matty",
+      "name": "Green Matty",
+      "kind": "item"
+    },
+    {
+      "path": "/items/green-pilfer",
+      "name": "Green Pilfer",
       "kind": "item"
     },
     {
@@ -483,8 +528,23 @@
       "kind": "item"
     },
     {
+      "path": "/maps/sleepy-dungeon-i",
+      "name": "Sleepy Dungeon I",
+      "kind": "map"
+    },
+    {
+      "path": "/maps/sleepy-dungeon-ii",
+      "name": "Sleepy Dungeon II",
+      "kind": "map"
+    },
+    {
       "path": "/maps/sleepy-dungeon-iii",
       "name": "Sleepy Dungeon III",
+      "kind": "map"
+    },
+    {
+      "path": "/maps/sleepy-dungeon-iv",
+      "name": "Sleepy Dungeon IV",
       "kind": "map"
     },
     {
@@ -608,8 +668,28 @@
       "kind": "map"
     },
     {
+      "path": "/maps/tree-dungeon-forest-up-north-vi",
+      "name": "Tree Dungeon, Forest Up North VI",
+      "kind": "map"
+    },
+    {
+      "path": "/maps/tree-dungeon-forest-up-north-vii",
+      "name": "Tree Dungeon, Forest Up North VII",
+      "kind": "map"
+    },
+    {
       "path": "/maps/tree-dungeon-forest-up-north-viii",
       "name": "Tree Dungeon, Forest Up North VIII",
+      "kind": "map"
+    },
+    {
+      "path": "/maps/tree-dungeon-monkey-forest-i",
+      "name": "Tree Dungeon, Monkey Forest I",
+      "kind": "map"
+    },
+    {
+      "path": "/maps/tree-dungeon-monkey-forest-ii",
+      "name": "Tree Dungeon, Monkey Forest II",
       "kind": "map"
     },
     {

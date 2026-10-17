@@ -1,0 +1,132 @@
+{
+  "schemaVersion": 1,
+  "path": "/items/battle-shield",
+  "kind": "item",
+  "name": "Battle Shield",
+  "source": "CCPLZ",
+  "sourceUrl": "https://ccplz.cc/items/battle-shield",
+  "checkedAt": "2026-10-17T09:50:38.909Z",
+  "notice": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial.",
+  "fields": [
+    {
+      "label": "Type",
+      "value": "Shield"
+    },
+    {
+      "label": "Required level",
+      "value": "35"
+    },
+    {
+      "label": "Class",
+      "value": "Warrior"
+    },
+    {
+      "label": "Weapon defense",
+      "value": "+120"
+    },
+    {
+      "label": "Upgrade slots",
+      "value": "7"
+    },
+    {
+      "label": "NPC sell price",
+      "value": "10,000 mesos"
+    },
+    {
+      "label": "Required STR",
+      "value": "60"
+    },
+    {
+      "label": "Required DEX",
+      "value": "25"
+    },
+    {
+      "label": "Required INT",
+      "value": "0"
+    },
+    {
+      "label": "Required LUK",
+      "value": "0"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Dropped by",
+      "links": [
+        {
+          "name": "Curse Eye",
+          "path": "/monsters/curse-eye",
+          "detail": "Level 33"
+        }
+      ],
+      "total": 1
+    },
+    {
+      "title": "Also dropped by, in older versions",
+      "links": [
+        {
+          "name": "Axe Stump",
+          "path": "/monsters/axe-stump",
+          "detail": "Level 17, 0.07% historical rate"
+        },
+        {
+          "name": "Luster Pixie",
+          "path": "/monsters/luster-pixie",
+          "detail": "Level 52, 0.07% historical rate"
+        },
+        {
+          "name": "Star Pixie",
+          "path": "/monsters/star-pixie",
+          "detail": "Level 35, 0.07% historical rate"
+        }
+      ],
+      "total": 3
+    },
+    {
+      "title": "Similar equipment",
+      "links": [
+        {
+          "name": "Esther Shield",
+          "path": "/items/esther-shield",
+          "detail": "Level 35"
+        },
+        {
+          "name": "Red Cross Shield",
+          "path": "/items/red-cross-shield",
+          "detail": "Level 30"
+        },
+        {
+          "name": "Adamantium Tower Shield",
+          "path": "/items/adamantium-tower-shield",
+          "detail": "Level 40"
+        },
+        {
+          "name": "Mithril Tower Shield",
+          "path": "/items/mithril-tower-shield",
+          "detail": "Level 40"
+        },
+        {
+          "name": "Steel Tower Shield",
+          "path": "/items/steel-tower-shield",
+          "detail": "Level 40"
+        },
+        {
+          "name": "Red Triangular Shield",
+          "path": "/items/red-triangular-shield",
+          "detail": "Level 25"
+        },
+        {
+          "name": "Jurgen Wristguard",
+          "path": "/items/jurgen-wristguard",
+          "detail": "Level 22"
+        },
+        {
+          "name": "Mystic Shield",
+          "path": "/items/mystic-shield",
+          "detail": "Level 22"
+        }
+      ],
+      "total": 8
+    }
+  ]
+}

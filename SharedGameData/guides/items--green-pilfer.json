@@ -1,0 +1,126 @@
+{
+  "schemaVersion": 1,
+  "path": "/items/green-pilfer",
+  "kind": "item",
+  "name": "Green Pilfer",
+  "source": "CCPLZ",
+  "sourceUrl": "https://ccplz.cc/items/green-pilfer",
+  "checkedAt": "2026-10-17T09:50:59.912Z",
+  "notice": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial.",
+  "fields": [
+    {
+      "label": "Type",
+      "value": "Hat"
+    },
+    {
+      "label": "Required level",
+      "value": "40"
+    },
+    {
+      "label": "Class",
+      "value": "Thief"
+    },
+    {
+      "label": "Weapon defense",
+      "value": "+33"
+    },
+    {
+      "label": "DEX",
+      "value": "+4"
+    },
+    {
+      "label": "Upgrade slots",
+      "value": "7"
+    },
+    {
+      "label": "NPC sell price",
+      "value": "4,200 mesos"
+    },
+    {
+      "label": "Required STR",
+      "value": "0"
+    },
+    {
+      "label": "Required DEX",
+      "value": "25"
+    },
+    {
+      "label": "Required INT",
+      "value": "0"
+    },
+    {
+      "label": "Required LUK",
+      "value": "60"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Dropped by",
+      "links": [
+        {
+          "name": "Curse Eye",
+          "path": "/monsters/curse-eye",
+          "detail": "Level 33"
+        }
+      ],
+      "total": 1
+    },
+    {
+      "title": "Also dropped by, in older versions",
+      "links": [
+        {
+          "name": "Tortie",
+          "path": "/monsters/tortie",
+          "detail": "Level 46, 0.15% historical rate"
+        }
+      ],
+      "total": 1
+    },
+    {
+      "title": "Similar equipment",
+      "links": [
+        {
+          "name": "Blue Distinction",
+          "path": "/items/blue-distinction",
+          "detail": "Level 40"
+        },
+        {
+          "name": "Blue Guiltian",
+          "path": "/items/blue-guiltian",
+          "detail": "Level 40"
+        },
+        {
+          "name": "Blue Pilfer",
+          "path": "/items/blue-pilfer",
+          "detail": "Level 40"
+        },
+        {
+          "name": "Brown Distinction",
+          "path": "/items/brown-distinction",
+          "detail": "Level 40"
+        },
+        {
+          "name": "Brown Guiltian",
+          "path": "/items/brown-guiltian",
+          "detail": "Level 40"
+        },
+        {
+          "name": "Brown Pilfer",
+          "path": "/items/brown-pilfer",
+          "detail": "Level 40"
+        },
+        {
+          "name": "Dark Distinction",
+          "path": "/items/dark-distinction",
+          "detail": "Level 40"
+        },
+        {
+          "name": "Dark Guiltian",
+          "path": "/items/dark-guiltian",
+          "detail": "Level 40"
+        }
+      ],
+      "total": 8
+    }
+  ]
+}

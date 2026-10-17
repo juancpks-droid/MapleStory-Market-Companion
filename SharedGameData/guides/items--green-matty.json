@@ -1,0 +1,134 @@
+{
+  "schemaVersion": 1,
+  "path": "/items/green-matty",
+  "kind": "item",
+  "name": "Green Matty",
+  "source": "CCPLZ",
+  "sourceUrl": "https://ccplz.cc/items/green-matty",
+  "checkedAt": "2026-10-17T09:50:57.007Z",
+  "notice": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial.",
+  "fields": [
+    {
+      "label": "Type",
+      "value": "Hat"
+    },
+    {
+      "label": "Required level",
+      "value": "35"
+    },
+    {
+      "label": "Class",
+      "value": "Magician"
+    },
+    {
+      "label": "Weapon defense",
+      "value": "+18"
+    },
+    {
+      "label": "Magic defense",
+      "value": "+20"
+    },
+    {
+      "label": "LUK",
+      "value": "+3"
+    },
+    {
+      "label": "Max HP",
+      "value": "+5"
+    },
+    {
+      "label": "Upgrade slots",
+      "value": "7"
+    },
+    {
+      "label": "NPC sell price",
+      "value": "3,000 mesos"
+    },
+    {
+      "label": "Required STR",
+      "value": "0"
+    },
+    {
+      "label": "Required DEX",
+      "value": "0"
+    },
+    {
+      "label": "Required INT",
+      "value": "60"
+    },
+    {
+      "label": "Required LUK",
+      "value": "25"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Dropped by",
+      "links": [
+        {
+          "name": "Curse Eye",
+          "path": "/monsters/curse-eye",
+          "detail": "Level 33, 0.15% historical rate"
+        }
+      ],
+      "total": 1
+    },
+    {
+      "title": "Also dropped by, in older versions",
+      "links": [
+        {
+          "name": "Green Mushroom",
+          "path": "/monsters/green-mushroom",
+          "detail": "Level 14, 0.15% historical rate"
+        }
+      ],
+      "total": 1
+    },
+    {
+      "title": "Similar equipment",
+      "links": [
+        {
+          "name": "Blue Burgler",
+          "path": "/items/blue-burgler",
+          "detail": "Level 35"
+        },
+        {
+          "name": "Blue Matty",
+          "path": "/items/blue-matty",
+          "detail": "Level 35"
+        },
+        {
+          "name": "Blue Pole-Feather Hat",
+          "path": "/items/blue-pole-feather-hat",
+          "detail": "Level 35"
+        },
+        {
+          "name": "Brown Burgler",
+          "path": "/items/brown-burgler",
+          "detail": "Level 35"
+        },
+        {
+          "name": "Brown Matty",
+          "path": "/items/brown-matty",
+          "detail": "Level 35"
+        },
+        {
+          "name": "Brown Pole-Feather Hat",
+          "path": "/items/brown-pole-feather-hat",
+          "detail": "Level 35"
+        },
+        {
+          "name": "Chief Stan Hat",
+          "path": "/items/chief-stan-hat",
+          "detail": "Level 35"
+        },
+        {
+          "name": "Dark Burgler",
+          "path": "/items/dark-burgler",
+          "detail": "Level 35"
+        }
+      ],
+      "total": 8
+    }
+  ]
+}
