@@ -3,4 +3,4 @@
   <ItemGroup><PackageReference Include="Microsoft.Data.Sqlite" Version="10.0.12"/><PackageReference Include="SQLitePCLRaw.bundle_e_sqlite3" Version="3.0.5"/><PackageReference Include="SQLitePCLRaw.lib.e_sqlite3" Version="3.53.3"/><PackageReference Include="HtmlAgilityPack" Version="1.13.0"/></ItemGroup>
   <ItemGroup><EmbeddedResource Include="scroll-reference.json" LogicalName="scroll-reference"/><EmbeddedResource Include="scroll-legacy.json" LogicalName="scroll-legacy"/></ItemGroup>
   <ItemGroup><EmbeddedResource Include="shared-game-data.json" LogicalName="shared-game-data" /></ItemGroup>
-<ItemGroup><EmbeddedResource Include="game-guide-seed.json" LogicalName="game-guide-seed" /></ItemGroup></Project>
+<ItemGroup><EmbeddedResource Include="game-guide-seed.json" LogicalName="game-guide-seed" /><EmbeddedResource Include="accuracy-monsters.json" LogicalName="accuracy-monsters" /></ItemGroup></Project>

@@ -702,6 +702,13 @@ await Test("Accuracy targets are minimum whole-number ACC and potion never lower
   Check(AccuracyCalculator.HitChance(level,n+7,mob,avoid)>=AccuracyCalculator.HitChance(level,n,mob,avoid));
  }
 }));
+await Test("Monster catalog identity and unavailable avoid safety",()=>Sync(()=>{
+ Check(AccuracyMonsterCatalog.All.Length==1548);Check(AccuracyMonsterCatalog.All.Select(m=>m.Id).Distinct().Count()==1548);
+ Check(AccuracyMonsterCatalog.All.Count(m=>m.Name=="Jr. Balrog")>1);
+ var json="""{"id":100100,"name":"Snail","meta":{"level":1,"evasion":0}}""";
+ Check(AccuracyMonsterCatalog.Parse(json,100100).Avoid==0);
+ foreach(var bad in new[]{json.Replace("100100","100101"),json.Replace("Snail","Other"),json.Replace(",\"evasion\":0",""),json.Replace("\"evasion\":0","\"evasion\":-1")}){bool rejected=false;try{AccuracyMonsterCatalog.Parse(bad,100100);}catch{rejected=true;}Check(rejected);}
+}));
 Directory.CreateDirectory("test-results");File.WriteAllText("test-results/results.json",JsonSerializer.Serialize(new{total=results.Count,failed=failures,results},Json.Options));Console.WriteLine($"{results.Count-failures}/{results.Count} passed");Environment.ExitCode=failures==0?0:1;
 
 

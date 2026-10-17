@@ -2,7 +2,8 @@ import {kerningMarket} from './player-tools.ts';
 import {marketKey} from './scrolls.ts';
 import {load} from 'cheerio/slim';
 const memo=new Map<string,{at:number,text:string}>(),flight=new Map<string,Promise<string>>(),hosts=new Map<string,{next:number,count:number,start:number,tail:Promise<any>}>();
-const allowed=new Set(['kerning.gg','ccplz.cc','meowdb.com','maplestory.quest']);
+const allowed=new Set(['kerning.gg','ccplz.cc','meowdb.com','maplestory.quest','maplestory.io']);
+export async function publicApi(url:string){if(!/^https:\/\/maplestory\.io\/api\/gms\/83\/mob\/\d+$/.test(url))throw Error('Unsupported monster API');return raw(url)}
 export const key=(s:string)=>s.normalize().replace(/’/g,"'").replace(/\s*\(Lv\.?\s*\d+\)\s*$/i,'').trim().toLowerCase().replace(/\s+/g,' ');
 const label=($:any,s:any)=>$(s).text().replace(/\s+/g,' ').trim();
 export function robotsAllows(text:string,path:string){let applies=false,best=-1,yes=true;for(const raw of text.split('\n')){const line=raw.split('#')[0].trim(),i=line.indexOf(':');if(i<0)continue;const k=line.slice(0,i).toLowerCase(),v=line.slice(i+1).trim();if(k==='user-agent'){applies=v==='*'||v.toLowerCase().includes('maplemarketcompanion');continue}if(!applies||!v||!['allow','disallow'].includes(k))continue;const pattern='^'+v.replace(/[.+?^{}()|[\]\\]/g,'\\$&').replace(/\*/g,'.*');if(new RegExp(pattern).test(path)&&v.length>=best){if(v.length>best||k==='allow'){yes=k==='allow';best=v.length}}}return yes}
