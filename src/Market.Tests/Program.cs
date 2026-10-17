@@ -690,6 +690,18 @@ await Test("Kerning-only search never contacts fallback markets when Kerning fai
  Check(hosts.Count>0&&hosts.All(h=>h=="kerning.gg")&&checks.SequenceEqual(new[]{"Kerning Exchange"})&&rows.All(r=>r.Provider=="Kerning Exchange"));Check(settings.Sources.Where(s=>s.Id!="Kerning Exchange").All(s=>s.LastChecked==default));
 });
 
+await Test("Classic accuracy has correct zero, midpoint and level penalty",()=>Sync(()=>{
+ Check(AccuracyCalculator.HitChance(30,0,22,13)==0);Check(AccuracyCalculator.HitChance(30,0,1,0)==1);
+ Check(Math.Abs(AccuracyCalculator.HitChance(30,51,30,20)-.5)<1e-12);
+ Check(AccuracyCalculator.HitChance(20,51,30,20)<.5);Check(AccuracyCalculator.HitChance(30,10000,30,20)==1);
+ Check(double.IsNaN(AccuracyCalculator.HitChance(0,51,30,20)));
+}));
+await Test("Accuracy targets are minimum whole-number ACC and potion never lowers chance",()=>Sync(()=>{
+ foreach(var level in new[]{1,20,30,100})foreach(var mob in new[]{1,30,100})foreach(var avoid in new[]{0,13,29,100})foreach(var target in new[]{.9,.95,1.0}){
+  int n=AccuracyCalculator.NeededAcc(level,mob,avoid,target);Check(AccuracyCalculator.HitChance(level,n,mob,avoid)>=target);Check(n==0||AccuracyCalculator.HitChance(level,n-1,mob,avoid)<target);
+  Check(AccuracyCalculator.HitChance(level,n+7,mob,avoid)>=AccuracyCalculator.HitChance(level,n,mob,avoid));
+ }
+}));
 Directory.CreateDirectory("test-results");File.WriteAllText("test-results/results.json",JsonSerializer.Serialize(new{total=results.Count,failed=failures,results},Json.Options));Console.WriteLine($"{results.Count-failures}/{results.Count} passed");Environment.ExitCode=failures==0?0:1;
 
 

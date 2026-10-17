@@ -3,6 +3,7 @@
 import {useEffect,useState,useRef,useMemo} from 'react';
 import FieldGuide from './FieldGuide';
 import ItemSummary from './ItemSummary';
+import Accuracy from './Accuracy';
 import {rememberItem,toggleFavorite,priceContext,problemReport,LITE_VERSION,keepSavedMarket,kerningMarket} from '../lib/player-tools.ts';
 
 import {Item,matchItems,exactItem,cacheKey} from '../lib/search.ts';
@@ -34,7 +35,7 @@ export default function Home(){
 
   let alive=true;
 
-  try{const saved=JSON.parse(localStorage.getItem('maple-lite-session')||'{}');restoreView.current=saved;if(saved.tab==='finder'||saved.tab==='prices')setTab(saved.tab);if(typeof saved.query==='string')setQuery(saved.query);if(categories.includes(saved.category))setCategory(saved.category);}catch{}
+  try{const saved=JSON.parse(localStorage.getItem('maple-lite-session')||'{}');restoreView.current=saved;if(saved.tab==='finder'||saved.tab==='prices'||saved.tab==='accuracy')setTab(saved.tab);if(typeof saved.query==='string')setQuery(saved.query);if(categories.includes(saved.category))setCategory(saved.category);}catch{}
 
   fetch('/catalog.json').then(r=>{if(!r.ok)throw Error();return r.json() as Promise<Item[]>}).then((items:Item[])=>{
 
@@ -75,7 +76,7 @@ export default function Home(){
 
  useEffect(()=>{
 
-  if(!selected||!sessionReady)return;
+  if(!selected||!sessionReady||tab==='accuracy')return;
 
   const item=selected,mode=tab,g=++generation.current,controller=new AbortController(),key=cacheKey(mode,item.id),forced=forceLookup.current;request.current=controller;forceLookup.current=false;
 
@@ -125,13 +126,13 @@ export default function Home(){
 
  return <div className="shell"><header><img src="/icon.png" width="44" height="44" alt="Maple crest"/><div><strong>MAPLE MARKET <span>LITE</span></strong><small>CLASSIC WORLD COMPANION</small></div><button className="help" onClick={()=>setHelp(!help)} aria-label="Install and about">?</button></header>
 
-<nav aria-label="Main tools"><button className={tab==='finder'?'chosen':''} onClick={()=>setTab('finder')} aria-pressed={tab==='finder'}><span>⌕</span>Item Finder</button><button className={tab==='prices'?'chosen':''} onClick={()=>setTab('prices')} aria-pressed={tab==='prices'}><span>◈</span>Price Checker</button></nav>
+<nav aria-label="Main tools">{[['finder','⌕','Item Finder'],['accuracy','◎','Accuracy'],['prices','◈','Price Checker']].map(([key,badge,label])=><button key={key} className={tab===key?'chosen':''} onClick={()=>setTab(key)} aria-pressed={tab===key}><span>{badge}</span>{label}</button>)}</nav>
 
  {installPrompt&&!help&&<aside className="install install-invite" aria-label="Add to Home Screen"><b>Add Maple Market to your Home Screen?</b><p>Open your item finder and prices with one tap, like an app.</p><div className="install-actions"><button onClick={()=>{dismissInstall();setHelp(true)}}>Show me how</button><button className="quiet" onClick={dismissInstall}>Not now</button></div></aside>}
 
  {help&&<aside className="install"><b>Keep it on your Home Screen</b><p>On iPhone, open this page in Safari. Tap Share (the square with an up arrow), then Add to Home Screen. Leave Open as Web App on if shown, then tap Add. If the option is missing, look under Edit Actions in the Share menu.</p><p>Your search text, category filter, selected item, tab and recent results stay on this device. Internet is needed for fresh data. Reference drops may differ from Classic World.</p><button onClick={()=>setHelp(false)}>Got it</button></aside>}
 
- <main><div className="eyebrow">YOUR POCKET FIELD GUIDE</div><h1>{tab==='finder'?'Find your next drop.':'Know the asking price.'}</h1><p className="intro">{tab==='finder'?'Items, monsters and places to explore.':'Player offers and NPC references, in one place.'}</p>
+ <main>{tab==='accuracy'?<Accuracy/>:<><div className="eyebrow">YOUR POCKET FIELD GUIDE</div><h1>{tab==='finder'?'Find your next drop.':'Know the asking price.'}</h1><p className="intro">{tab==='finder'?'Items, monsters and places to explore.':'Player offers and NPC references, in one place.'}</p>
 
  <div className="search-region"><div className="search"><span aria-hidden="true">⌕</span><input aria-label="Search items" placeholder="Search an item or item ID…" value={query} onChange={e=>editQuery(e.target.value)} onFocus={()=>setOpen(!!query.trim())} onKeyDown={searchKeyDown} role="combobox" aria-autocomplete="list" aria-expanded={open} aria-controls="item-options" aria-activedescendant={open&&active>=0?`item-option-${active}`:undefined} autoComplete="off"/><button aria-label="Clear search" onClick={()=>editQuery('')}>×</button></div>
 
@@ -155,7 +156,7 @@ export default function Home(){
 
  {!busy&&data.sourceUrl&&<details className="fallback"><summary>Website fallback</summary><p>Use only if the information above is missing.</p><a href={data.sourceUrl} target="_blank" rel="noreferrer">Open original source ↗</a></details>}</section>}
 
- <footer>Maple Market Lite · {LITE_VERSION}<br/>Independent companion · Item artwork © Nexon</footer></main>
+ </>}<footer>Maple Market Lite · {LITE_VERSION}<br/>Independent companion · Item artwork © Nexon</footer></main>
 
  </div>
 
