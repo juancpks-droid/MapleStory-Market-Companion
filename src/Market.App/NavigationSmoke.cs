@@ -7,13 +7,13 @@ public sealed partial class MainForm{
  internal async Task CheckNavigation(string dir){
   timer.Stop();await Task.Delay(300);finderSearch.Text="Potion";
   ShowPage("Item Finder");int removed=0;organizedNav!.ControlRemoved+=(_,_)=>removed++;
-  foreach(var page in new[]{"Price Checker","FM Tracker","Deal Finder","Dashboard","Item Finder"})ShowPage(page);
+  foreach(var page in new[]{"Price Checker","FM Tracker","Seller Finder","Dashboard","Item Finder"})ShowPage(page);
   if(removed!=0)throw new Exception("Sidebar detached controls while switching within the same menu");
   if(title.BackColor.A!=255)throw new Exception("Title must have an opaque background");
   bool unprepared=false;pages["Item Finder"].VisibleChanged+=(_,_)=>{if(pages["Item Finder"].Visible&&finderItems.Rows.Count==0)unprepared=true;};
   foreach(var theme in MerchantTools.Themes)foreach(var size in new[]{9,13}){
    features.Theme=theme;features.TextSize=size;ApplyTextSize();ApplyGuideStyle();Size=new Size(1100,760);
-   foreach(var name in new[]{"FM Tracker","Item Finder","Price Checker","Deal Finder","Dashboard","Item Finder","Watchlist","Alert Inbox","Settings","Price Checker","Item Finder","FM Tracker","Price Checker","Dashboard","Settings","Watchlist","Item Finder","Price Checker","Deal Finder","Item Finder"}){
+   foreach(var name in new[]{"FM Tracker","Item Finder","Price Checker","Seller Finder","Dashboard","Item Finder","Watchlist","Alert Inbox","Settings","Price Checker","Item Finder","FM Tracker","Price Checker","Dashboard","Settings","Watchlist","Item Finder","Price Checker","Seller Finder","Item Finder"}){
     ShowPage(name);await Task.Delay(25);
     if(selected!=name||pages.Count(p=>p.Value.Visible)!=1||!pages[name].Visible)throw new Exception("Page visibility failed: "+name);
    }

@@ -20,7 +20,7 @@ public sealed partial class MainForm
     string SessionPath=>Path.Combine(dataDirectory,"view-session.json");
     string lastSessionJson="";
     Dictionary<string,Control> SessionControls()=>new(){
-        ["watchSearch"]=watchSearch,["watchFilter"]=watchFilter,["listingFocus"]=listingFocus,["listingText"]=listingText,["listingSide"]=listingSide,["listingQuantity"]=listingQuantity,["listingExact"]=listingExact,["listingSource"]=listingSource,["listingRecent"]=listingRecent,["listingCompact"]=listingCompact,["listingSort"]=listingSort,["listingMin"]=listingMin,["listingMax"]=listingMax,["dashboardSearch"]=quickSearch,["priceSearch"]=search,["fmSearch"]=fmSearch,
+        ["sellerSearch"]=sellerSearch,["sellerRecent"]=sellerRecent,["sellerSort"]=sellerSort,["watchSearch"]=watchSearch,["watchFilter"]=watchFilter,["listingFocus"]=listingFocus,["listingText"]=listingText,["listingSide"]=listingSide,["listingQuantity"]=listingQuantity,["listingExact"]=listingExact,["listingSource"]=listingSource,["listingRecent"]=listingRecent,["listingCompact"]=listingCompact,["listingSort"]=listingSort,["listingMin"]=listingMin,["listingMax"]=listingMax,["dashboardSearch"]=quickSearch,["priceSearch"]=search,["fmSearch"]=fmSearch,
         ["finderDropSource"]=finderDropSource,["finderSearch"]=finderSearch,["finderCategory"]=finderCategory,["finderSource"]=finderSource,["finderListed"]=finderListed,
         ["inventorySearch"]=inventorySearch,["inventorySort"]=inventorySort,["catalogSearch"]=catalogSearch,["catalogCategory"]=catalogCategory
     };
@@ -55,6 +55,7 @@ public sealed partial class MainForm
                 Size=new Size(Math.Clamp(state.Width,MinimumSize.Width,Math.Max(MinimumSize.Width,area.Width)),Math.Clamp(state.Height,MinimumSize.Height,Math.Max(MinimumSize.Height,area.Height)));
                 if(state.Maximized)WindowState=FormWindowState.Maximized;
                 if(GameGuideReader.ValidPath(state.GuidePath)){guidePath=state.GuidePath;guideSelection=state.GuideItem??"";}
+                if(state.Page=="Deal Finder")state.Page="Seller Finder";
                 if(state.Page is not null&&pages.ContainsKey(state.Page))ShowPage(state.Page);
                 if(priceItemChoice.Items.Contains(state.PriceItem))priceItemChoice.SelectedItem=state.PriceItem;priceDetails.SelectedIndex=Math.Clamp(state.PriceDetailTab,0,3);
                 finderDetailTabs.SelectedIndex=Math.Clamp(state.FinderDetailTab,0,finderDetailTabs.TabPages.Count-1);settingsSections.SelectedIndex=Math.Clamp(state.SettingsSection,0,1);

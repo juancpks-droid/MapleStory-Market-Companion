@@ -658,6 +658,26 @@ await Test("Shared reference validation rejects future, unsafe and negative pric
  string json="""{"schemaVersion":1,"kind":"npc","item":{"key":"gms83:2000000"},"checkedAt":"2026-10-13T14:00:00Z","data":{"source":"CCPLZ","url":"https://ccplz.cc/items/red-potion","sell":5,"buy":50}}""";
  using var good=JsonDocument.Parse(json);Check(SharedGameReference.Valid(good.RootElement,"2000000","npc"));foreach(var changed in new[]{json.Replace("2026-10-13T14:00:00Z","2999-01-01T00:00:00Z"),json.Replace("ccplz.cc","evil.test"),json.Replace("\"sell\":5","\"sell\":-1"),"{}"}){using var bad=JsonDocument.Parse(changed);Check(!SharedGameReference.Valid(bad.RootElement,"2000000","npc"));}
 }));
+
+await Test("Seller finder excludes buys, completed sales, withdrawn listings and obsolete duplicates",()=>Sync(()=>{
+ var offer=O("sell",200,EvidenceKind.Asking) with{Name="Red Potion"};
+ var rows=new[]{offer,offer with{RetrievedAt=now.AddMinutes(-1)},O("buy",10,EvidenceKind.Buying) with{Name="Red Potion"},O("sold") with{Name="Red Potion"},O("closed",10,EvidenceKind.Asking) with{Name="Red Potion",Available=false}};
+ Check(SellerSearch.Find(rows,"red potion",false,true,now,24).Count==1);
+ Check(SellerSearch.Find(new[]{offer,offer with{Available=false,RetrievedAt=now.AddSeconds(1)}},"red potion",false,true,now,24).Count==0);
+}));
+await Test("Seller finder retains anonymous/location-missing offers and sorts price numerically",()=>Sync(()=>{
+ var rows=new[]{O("a",1000,EvidenceKind.Asking) with{Name="Orange Mushroom Cap",Seller="",Note=""},O("b",99,EvidenceKind.Asking) with{Name="Orange Mushroom Cap"}};
+ var found=SellerSearch.Find(rows,"mushroom orange",true,true,now,24);Check(found.Count==2&&found[0].UnitPrice==99&&found[1].Seller=="");Check(SellerSearch.Find(rows,"",false,true,now,24).Count==0);
+}));
+await Test("Seller finder labels older data through filter and rejects stale retrieval or unknown time",()=>Sync(()=>{
+ var rows=new[]{O("a",100,EvidenceKind.Asking) with{Name="Red Potion",ObservedAt=now.AddDays(-3)},O("b",100,EvidenceKind.Asking) with{Name="Red Potion",ObservedAt=null},O("c",100,EvidenceKind.Asking) with{Name="Red Potion",RetrievedAt=now.AddDays(-3)}};
+ Check(SellerSearch.Find(rows,"Red Potion",true,true,now,24).Count==0);Check(SellerSearch.Find(rows,"Red Potion",false,true,now,24).Count==3);
+}));
+await Test("Seller finder isolates verified scroll success rate",()=>Sync(()=>{
+ var rows=new[]{O("a",100,EvidenceKind.Asking) with{Name="Gloves Attack Scroll: Intermediate"},O("b",100,EvidenceKind.Asking) with{Name="Gloves Attack Scroll: Lesser"}};
+ var found=SellerSearch.Find(rows,"Scroll for Gloves for ATT 60%",false,true,now,24);Check(found.Count==1&&found[0].ListingId=="a");
+}));
+
 Directory.CreateDirectory("test-results");File.WriteAllText("test-results/results.json",JsonSerializer.Serialize(new{total=results.Count,failed=failures,results},Json.Options));Console.WriteLine($"{results.Count-failures}/{results.Count} passed");Environment.ExitCode=failures==0?0:1;
 
 

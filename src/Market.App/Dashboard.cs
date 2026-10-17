@@ -18,7 +18,7 @@ public sealed partial class MainForm
         bar.Controls.Add(Button("Check price",Search));bar.Controls.Add(Button("Refresh",async()=>await RefreshSources()));bar.Controls.Add(Button("Customize cards",EditDashboardCards));bar.Controls.Add(Button("Search all",()=>ShowPage("Search Everything")));
         quickSearch.KeyDown+=(_,e)=>{if(e.KeyCode==Keys.Enter){e.SuppressKeyPress=true;Search();}};layout.Controls.Add(bar,0,0);
         var cards=dashboardCards;
-        foreach(var (label,target) in new[]{(marketCard,"FM Tracker"),(dealCard,"Deal Finder"),(watchCard,"Watchlist"),(inventoryCard,"Inventory")})
+        foreach(var (label,target) in new[]{(marketCard,"FM Tracker"),(dealCard,"Seller Finder"),(watchCard,"Watchlist"),(inventoryCard,"Inventory")})
         {
             cards.ColumnStyles.Add(new(SizeType.Percent,25));label.Dock=DockStyle.Fill;label.BackColor=Surface;label.ForeColor=TextColor;label.BorderStyle=BorderStyle.FixedSingle;label.Padding=new Padding(12,10,5,5);label.Margin=new Padding(3,4,8,4);label.Cursor=Cursors.Hand;label.Click+=(_,_)=>ShowPage(target);cards.Controls.Add(label);
         }
@@ -31,7 +31,7 @@ public sealed partial class MainForm
         }
         var upper=new TableLayoutPanel(){Dock=DockStyle.Fill,ColumnCount=2,RowCount=1};upper.ColumnStyles.Add(new(SizeType.Percent,50));upper.ColumnStyles.Add(new(SizeType.Percent,50));
         upper.Controls.Add(Section("Your watchlist","Manage",()=>ShowPage("Watchlist"),dashboardWatch,watchEmpty),0,0);
-        upper.Controls.Add(Section("Potential deals","View all",()=>ShowPage("Deal Finder"),dashboardDeals,dealsEmpty),1,0);layout.Controls.Add(upper,0,3);
+        upper.Controls.Add(Section("Potential deals","View all",()=>ShowPage("Seller Finder"),dashboardDeals,dealsEmpty),1,0);layout.Controls.Add(upper,0,3);
         layout.Controls.Add(Section("Latest FM sightings","Browse FM",()=>ShowPage("FM Tracker"),dashboardMarket,marketEmpty),0,4);
         dashboardWatch.CellDoubleClick+=(_,e)=>{if(e.RowIndex>=0&&dashboardWatch.Rows[e.RowIndex].Tag is SavedItem item){ShowItemDetails(item);}};
         dashboardDeals.CellDoubleClick+=(_,e)=>{if(e.RowIndex>=0&&dashboardDeals.Rows[e.RowIndex].Tag is Deal deal)Open(deal.Listing.Url);};

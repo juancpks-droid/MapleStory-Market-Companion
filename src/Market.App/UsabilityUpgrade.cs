@@ -9,7 +9,7 @@ public sealed partial class MainForm
     readonly Label profitSummary=Info(70);
     FlowLayoutPanel? organizedNav;Form? compactWindow;Label? compactText;bool usabilityReady;
     readonly HashSet<string> collapsedGroups=["Inventory","Trading","Settings"];
-    string PageGroup(string page)=>page switch{"Dashboard" or "Item Finder" or "Price Checker" or "Deal Finder" or "FM Tracker" or "Item Catalog" or "Compare" or "Market Activity" or "Price History" or "Price Changes" or "Seller Comparison" or "Websites"=>"Market","Inventory" or "Characters" or "Transfers" or "Equipment" or "Restock" or "Undo Center"=>"Inventory","Item Notes"=>"Market","Settings" or "Backups" or "Getting Started" or "Market Health"=>"Settings",_=>"Market"};
+    string PageGroup(string page)=>page switch{"Dashboard" or "Item Finder" or "Price Checker" or "Seller Finder" or "FM Tracker" or "Item Catalog" or "Compare" or "Market Activity" or "Price History" or "Price Changes" or "Seller Comparison" or "Websites"=>"Market","Inventory" or "Characters" or "Transfers" or "Equipment" or "Restock" or "Undo Center"=>"Inventory","Item Notes"=>"Market","Settings" or "Backups" or "Getting Started" or "Market Health"=>"Settings",_=>"Market"};
     void BuildUsabilityTools()
     {
         void Page(string name,DataGridView grid,string explanation,params (string,Action)[] actions){var bar=Toolbar();foreach(var (label,action) in actions)bar.Controls.Add(Button(label,action));var note=Info(72);note.Text=explanation;pages[name].Controls.Add(grid);pages[name].Controls.Add(note);pages[name].Controls.Add(bar);}

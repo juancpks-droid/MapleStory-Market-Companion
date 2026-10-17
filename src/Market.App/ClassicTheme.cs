@@ -38,7 +38,7 @@ public sealed class ClassicTitle : Label
    "Watchlist"=>"Your saved items • Follow prices and manage notifications",
    "Alert Inbox"=>"Review your market notifications and price alerts",
    "Settings"=>"Make it yours • Themes, data sources, updates and backups",
-   "Deal Finder"=>"Compare opportunities using recent, comparable market evidence",
+   "Seller Finder"=>"Find players offering an item for sale, with prices and location notes",
    _=>"Maple Market • Your classic world companion"};
   if(Text=="Price Checker"&&PriceStatus is not null)description=PriceStatus();
   using var small=new Font("Segoe UI",9);TextRenderer.DrawText(e.Graphics,description,small,new Rectangle(26,47,Math.Max(1,Width-220),22),GuidePalette.Muted,TextFormatFlags.EndEllipsis);

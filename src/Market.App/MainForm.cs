@@ -71,7 +71,7 @@ public sealed partial class MainForm : Form
 
         var nav=new FlowLayoutPanel(){Dock=DockStyle.Fill,FlowDirection=FlowDirection.TopDown,WrapContents=false,AutoScroll=true,Padding=new Padding(0,12,0,0)}; sidebar.Controls.Add(nav); nav.BringToFront();
 
-        foreach(string name in new[]{"Dashboard","Item Finder","Price Checker","Deal Finder","Watchlist","Inventory","FM Tracker","Item Catalog","Compare","Equipment","Price Alerts","Trade Journal","Market Activity","Backups","Characters","Alert Inbox","Market Health","Websites","Settings","Merchant Goals","Restock","Gear Wishlist","Item Notes","Trading Sessions","Price History","Getting Started","Transfers","Shopping List","Selling Planner","Search Everything","Price Changes","Seller Comparison","Undo Center","Profit Breakdown","Duplicate Review"})
+        foreach(string name in new[]{"Dashboard","Item Finder","Price Checker","Seller Finder","Watchlist","Inventory","FM Tracker","Item Catalog","Compare","Equipment","Price Alerts","Trade Journal","Market Activity","Backups","Characters","Alert Inbox","Market Health","Websites","Settings","Merchant Goals","Restock","Gear Wishlist","Item Notes","Trading Sessions","Price History","Getting Started","Transfers","Shopping List","Selling Planner","Search Everything","Price Changes","Seller Comparison","Undo Center","Profit Breakdown","Duplicate Review"})
 
         {
 
@@ -130,7 +130,7 @@ public sealed partial class MainForm : Form
 
         var p=pages["Price Checker"];var bar=Toolbar();bar.AutoSize=true;bar.AutoSizeMode=AutoSizeMode.GrowAndShrink;bar.MinimumSize=new Size(0,48);bar.WrapContents=true;bar.AutoScroll=false;search.Margin=new Padding(3,9,10,3);InitializeItemLookup();search.TextChanged+=(_,_)=>{QueueItemLookup(search.Text);};bar.Controls.Add(search);
 
-        bar.Controls.Add(Button("Get prices",async()=>await LookupPricesNow()));search.KeyDown+=async (_,e)=>{if(e.KeyCode==Keys.Enter){e.SuppressKeyPress=true;await LookupPricesNow();}};bar.Controls.Add(Button("Refresh now",async()=>await LookupPricesNow()));priceWatchButton=Button("Watch item",()=>ToggleItemWatch(PriceWatchName));bar.Controls.Add(priceWatchButton);bar.Controls.Add(Button("Filters",EditListingFilters));bar.Controls.Add(Button("View in FM Tracker",OpenPriceInFm));bar.Controls.Add(Button("Price explanation",()=>priceSummary.Visible=!priceSummary.Visible));
+        bar.Controls.Add(Button("Get prices",async()=>await LookupPricesNow()));search.KeyDown+=async (_,e)=>{if(e.KeyCode==Keys.Enter){e.SuppressKeyPress=true;await LookupPricesNow();}};bar.Controls.Add(Button("Refresh now",async()=>await LookupPricesNow()));priceWatchButton=Button("Watch item",()=>ToggleItemWatch(PriceWatchName));bar.Controls.Add(priceWatchButton);bar.Controls.Add(Button("Filters",EditListingFilters));bar.Controls.Add(Button("View in FM Tracker",OpenPriceInFm));bar.Controls.Add(Button("Find sellers",async()=>{sellerSearch.Text=DisplayedPriceQuery;ShowPage("Seller Finder");await FindSellers();}));bar.Controls.Add(Button("Price explanation",()=>priceSummary.Visible=!priceSummary.Visible));
 
         AddLookupTools(bar,()=>{var entry=iconCatalog.Entries.FirstOrDefault(e=>TextKey.Search(e.Name)==TextKey.Search(DisplayedPriceQuery)||e.Id==DisplayedPriceQuery);return (entry?.Name??DisplayedPriceQuery,entry?.Id??"");},()=>lookupStatus.Text);
         var bottom=new Panel(){Dock=DockStyle.Bottom,Height=225};var chartBar=Toolbar();chartBar.Height=54;
@@ -143,17 +143,7 @@ public sealed partial class MainForm : Form
 
     }
 
-    void BuildDeals()
-
-    {
-
-        var p=pages["Deal Finder"];var bar=Toolbar();bar.Controls.Add(Button("Snooze 30 min",Snooze));bar.Controls.Add(Button("Dismiss selected",()=>{if(SelectedDeal() is {} d){store.MarkAlert(AlertKey(d));footer.Text="Alert dismissed for this listing and price.";}}));bar.Controls.Add(Button("Open source",()=>{if(SelectedDeal() is {} d)Open(d.Listing.Url);}));
-
-        dealSummary.Text="Market data unavailable. Opportunities need independent, recent evidence. Profit figures are gross per unit; fees and actual availability are unverified.";
-
-        p.Controls.Add(dealsGrid);p.Controls.Add(dealSummary);p.Controls.Add(bar);dealsGrid.CellDoubleClick+=(_,_)=>{if(SelectedDeal() is {} d)Open(d.Listing.Url);};
-
-    }
+    void BuildDeals()=>BuildSellerFinder();
 
     void BuildWatch()
 
@@ -294,6 +284,7 @@ public sealed partial class MainForm : Form
     public void ShowPage(string name)
 
     {
+        if(name=="Deal Finder")name="Seller Finder";
 
         if(!MarketPage(name))name="Dashboard";
         if(name=="Backups"){name="Settings";settingsSections.SelectedIndex=1;}
@@ -333,37 +324,37 @@ public sealed partial class MainForm : Form
 
     }
 
-    async Task RefreshSources(bool onlineSearch=false,string? lookupQuery=null)
+    async Task RefreshSources(bool onlineSearch=false,string? lookupQuery=null,bool presentPrices=true)
     {
         var requestedQuery=lookupQuery??ResolvePriceQuery(search.Text);
         if(Offline){
-            if(onlineSearch)CommitPriceView(requestedQuery);else RenderPrices();
+            if(onlineSearch&&presentPrices)CommitPriceView(requestedQuery);else if(presentPrices)RenderPrices();
             lookupStatus.Text="Offline • showing saved prices";UpdateConnectionStatus();return;
         }
         if(busy){
             if(onlineSearch){pendingSearch=true;pendingLookup=requestedQuery;lookupStatus.Text="Search queued • Previous results stay visible";}
             return;
         }
-        busy=true;activePriceSearch=onlineSearch;activeSearchQuery=requestedQuery;
+        busy=true;activePriceSearch=onlineSearch&&presentPrices;activeSearchQuery=requestedQuery;
         int inputGeneration=priceInputGeneration,refreshGeneration=++priceRefreshGeneration;
         bool refreshSucceeded=false;
         refreshStop=CancellationTokenSource.CreateLinkedTokenSource(stop.Token);var refreshToken=refreshStop.Token;
-        bool CanPresent()=>!closing&&!IsDisposed&&!Offline&&!refreshToken.IsCancellationRequested&&inputGeneration==priceInputGeneration&&refreshGeneration==priceRefreshGeneration;
-        if(onlineSearch){priceLookupLoading=true;lookupStatus.Text="Searching for "+requestedQuery+" • Previous results stay visible";}
+        bool CanPresent()=>!closing&&!IsDisposed&&!Offline&&!refreshToken.IsCancellationRequested&&(!presentPrices||inputGeneration==priceInputGeneration)&&refreshGeneration==priceRefreshGeneration;
+        if(onlineSearch&&presentPrices){priceLookupLoading=true;lookupStatus.Text="Searching for "+requestedQuery+" • Previous results stay visible";}
         footer.Text="Checking sources • Existing results stay visible";
         try{
             var names=onlineSearch?new[]{requestedQuery}:store.Items().Select(i=>i.Name).ToArray();
             var results=await Task.Run(()=>collector.Refresh(settings,refreshToken,names,onlineSearch,observations.ToArray(),result=>InvokeAsync(()=>{
                 // Cache verified batches, but publish the visible search only once at completion.
                 if(!closing&&!IsDisposed&&!Offline)ApplySourceResult(result);
-            }),checking:message=>{if(!closing&&!IsDisposed)_=InvokeAsync(()=>{if(CanPresent()&&onlineSearch)lookupStatus.Text="Checking "+message+" • "+requestedQuery+" • Saved results stay visible";});}),refreshToken);
+            }),checking:message=>{if(!closing&&!IsDisposed)_=InvokeAsync(()=>{if(CanPresent()&&onlineSearch&&presentPrices)lookupStatus.Text="Checking "+message+" • "+requestedQuery+" • Saved results stay visible";});}),refreshToken);
             refreshSucceeded=true;
             if(CanPresent()){
                 sourceResults=results;observations=store.Observations();fmSummaries=store.Summaries();
                 var basilScan=settings.Sources.FirstOrDefault(s=>s.Id=="BasilMarket");
                 if(basilScan is not null&&sourceResults.Any(r=>r.Provider=="BasilMarket"&&r.Updated))BasilCompletion.Observe(observations,basilScan,DateTimeOffset.UtcNow);
                 store.SaveSettings(settings);
-                if(onlineSearch)CommitPriceView(requestedQuery);
+                if(onlineSearch&&presentPrices)CommitPriceView(requestedQuery);
                 else if(selected=="Price Checker")RenderPrices();
                 else Render();
                 footer.Text=settings.Sources.Any(s=>s.Authorized)?string.Join(" • ",sourceResults.Where(r=>settings.Sources.Any(s=>s.Id==r.Provider&&s.Authorized)).Select(r=>r.Status)):"Market data unavailable • Enable a source in Settings.";
@@ -373,9 +364,9 @@ public sealed partial class MainForm : Form
         catch(Exception e){Log(e);if(CanPresent())footer.Text="Refresh could not finish. Existing data retained; see source status.";}
         finally{
             if(CanPresent()){
-                priceLookupLoading=false;
+                if(presentPrices)priceLookupLoading=false;
                 if(refreshSucceeded&&onlineSearch&&sourceResults.Any(r=>r.Updated))RememberLookupComplete(requestedQuery);
-                lookupStatus.Text=refreshSucceeded?"Checked "+DateTime.Now.ToString("t")+" • "+requestedQuery+" • "+(sourceResults.Any(r=>r.Updated)?"Source results received; see listing age":"No fresh source results; saved data retained"):"Search unavailable • Previous results retained; try again";
+                if(presentPrices)lookupStatus.Text=refreshSucceeded?"Checked "+DateTime.Now.ToString("t")+" • "+requestedQuery+" • "+(sourceResults.Any(r=>r.Updated)?"Source results received; see listing age":"No fresh source results; saved data retained"):"Search unavailable • Previous results retained; try again";
             }
             activePriceSearch=false;busy=false;refreshStop?.Dispose();refreshStop=null;UpdateConnectionStatus();
         }
@@ -474,17 +465,7 @@ public sealed partial class MainForm : Form
 
     }
 
-    void RenderDeals()
-
-    {
-
-        SetColumns(dealsGrid,["Item","Ask","Est. value","Gross / unit","Discount","ROI","Confidence","Rating"]);
-
-        foreach(var d in deals){int i=dealsGrid.Rows.Add(d.Listing.Name,TextKey.Mesos(d.Listing.UnitPrice),TextKey.Mesos(d.Estimate.Value),TextKey.Mesos(d.Profit),$"{d.Discount:N0}%",$"{d.Roi:N0}%",d.Estimate.Confidence,d.Rating);dealsGrid.Rows[i].Tag=d;}
-
-        dealSummary.Text=deals.Count==0?"No eligible opportunities. This can mean insufficient evidence, unknown timestamps, stale data, or no permitted source.\nGross profit is per unit. No fees or guaranteed resale are assumed.":$"{deals.Count} potential opportunities across retrieved coverage. Verify the listing and equipment before trading.\nGross profit is per unit; fees, selling speed and in-game availability are unverified.";
-
-    }
+    void RenderDeals()=>RenderSellerFinder();
 
     void RenderItems()
 
