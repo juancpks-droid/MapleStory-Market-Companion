@@ -15,27 +15,36 @@ public sealed partial class MainForm{
   bar.Controls.Add(Button("Open monster",()=>{if(monsterMatches.SelectedItem is string name){monsterChosen.Text=name;_=LoadMonsterFinder();}}));
   bar.Controls.Add(Button("Refresh reference",()=>_=LoadMonsterFinder(true)));
   monsterAccuracy=Button("Use these stats in Accuracy",UseMonsterAccuracy);monsterAccuracy.Enabled=false;bar.Controls.Add(monsterAccuracy);
-  var tabs=new TabControl{Dock=DockStyle.Fill};foreach(var (title,grid) in new[]{("Stats",monsterFacts),("Drops",monsterDrops),("Maps",monsterMaps)}){var tab=new TabPage(title);tab.Controls.Add(grid);tabs.TabPages.Add(tab);grid.Columns.Add("Name","Name");grid.Columns.Add("Detail","Details");grid.AutoSizeColumnsMode=DataGridViewAutoSizeColumnsMode.Fill;}
+  var tabs=new MarketTabs{Dock=DockStyle.Fill};foreach(var (title,grid) in new[]{("Stats",monsterFacts),("Drops",monsterDrops),("Maps",monsterMaps)}){var tab=new TabPage(title);tab.Controls.Add(grid);tabs.TabPages.Add(tab);grid.Columns.Add("Name","Name");grid.Columns.Add("Detail","Details");grid.AutoSizeColumnsMode=DataGridViewAutoSizeColumnsMode.Fill;}
   monsterFacts.Columns[0].HeaderText="Stat";monsterFacts.Columns[1].HeaderText="Value";
   var dropsBar=Toolbar();dropsBar.Controls.Add(Button("Check selected drop price",()=>{if(monsterDrops.CurrentRow?.Tag is GuideLink link){search.Text=link.Name;ShowPage("Price Checker");_=LookupPricesNow();}}));tabs.TabPages[1].Controls.Add(dropsBar);
   page.Controls.Add(tabs);page.Controls.Add(monsterNote);page.Controls.Add(monsterMatches);page.Controls.Add(bar);
-  var names=new AutoCompleteStringCollection();names.AddRange(AccuracyMonsterCatalog.All.Select(m=>m.Name).Distinct().Order().ToArray());monsterQuery.AutoCompleteCustomSource=names;monsterQuery.AutoCompleteSource=AutoCompleteSource.CustomSource;monsterQuery.AutoCompleteMode=AutoCompleteMode.Suggest;
+  var names=new AutoCompleteStringCollection();names.AddRange(AccuracyMonsterCatalog.All.Where(m=>AccuracyMonsterCatalog.IsDisplayName(m.Name)).Select(m=>m.Name).Distinct().Order().ToArray());monsterQuery.AutoCompleteCustomSource=names;monsterQuery.AutoCompleteSource=AutoCompleteSource.CustomSource;monsterQuery.AutoCompleteMode=AutoCompleteMode.Suggest;
   monsterQuery.TextChanged+=(_,_)=>FilterMonsterFinder();monsterBoss.CheckedChanged+=(_,_)=>FilterMonsterFinder();
   monsterQuery.KeyDown+=(_,e)=>{if(e.KeyCode==Keys.Enter){var exact=monsterMatches.Items.Cast<string>().FirstOrDefault(n=>n.Equals(monsterQuery.Text.Trim(),StringComparison.OrdinalIgnoreCase));if(exact is not null)monsterMatches.SelectedItem=exact;if(monsterMatches.SelectedItem is string n){monsterChosen.Text=n;_=LoadMonsterFinder();}e.SuppressKeyPress=true;}};
   monsterMatches.DoubleClick+=(_,_)=>{if(monsterMatches.SelectedItem is string n){monsterChosen.Text=n;_=LoadMonsterFinder();}};
-  FilterMonsterFinder();monsterNote.Text="Select a monster, then Open monster. Stats, drops and maps use labeled CCPLZ references. Coverage may be partial.";
+  FitPriceText(monsterNote);FilterMonsterFinder();monsterNote.Text="Select a monster, then Open monster. Stats, drops and maps use labeled CCPLZ references. Coverage may be partial.";
   FormClosed+=async(_,_)=>{monsterStop?.Cancel();try{if(monsterJob is not null)await monsterJob;}finally{monsterReader.Dispose();}};
  }
- void FilterMonsterFinder(){var keep=monsterMatches.SelectedItem as string;monsterMatches.BeginUpdate();monsterMatches.Items.Clear();foreach(var n in AccuracyMonsterCatalog.All.Where(m=>(!monsterBoss.Checked||m.Boss)&&m.Name.Contains(monsterQuery.Text.Trim(),StringComparison.OrdinalIgnoreCase)).Select(m=>m.Name).Distinct().Order().Take(100))monsterMatches.Items.Add(n);if(keep is not null&&monsterMatches.Items.Contains(keep))monsterMatches.SelectedItem=keep;else if(monsterMatches.Items.Count>0)monsterMatches.SelectedIndex=0;monsterMatches.EndUpdate();}
+ void FilterMonsterFinder(){var keep=monsterMatches.SelectedItem as string;monsterMatches.BeginUpdate();monsterMatches.Items.Clear();foreach(var n in AccuracyMonsterCatalog.All.Where(m=>AccuracyMonsterCatalog.IsDisplayName(m.Name)&&(!monsterBoss.Checked||m.Boss)&&m.Name.Contains(monsterQuery.Text.Trim(),StringComparison.OrdinalIgnoreCase)).Select(m=>m.Name).Distinct().Order().Take(100))monsterMatches.Items.Add(n);if(keep is not null&&monsterMatches.Items.Contains(keep))monsterMatches.SelectedItem=keep;else if(monsterMatches.Items.Count>0)monsterMatches.SelectedIndex=0;monsterMatches.EndUpdate();}
  Task LoadMonsterFinder(bool refresh=false)=>monsterJob=ReadMonsterFinder(refresh);
  async Task ReadMonsterFinder(bool refresh=false){
-  string name=monsterChosen.Text;if(name.Length==0)return;
+  string name=monsterChosen.Text;if(!AccuracyMonsterCatalog.IsDisplayName(name)){monsterChosen.Text="";monsterNote.Text="Choose a named monster; placeholder entries are excluded.";return;}
   int generation=++monsterGeneration;monsterStop?.Cancel();monsterStop?.Dispose();monsterStop=CancellationTokenSource.CreateLinkedTokenSource(stop.Token);monsterStop.CancelAfter(TimeSpan.FromSeconds(55));var ct=monsterStop.Token;
   if(monsterGuide?.Name!=name){monsterGuide=null;monsterFacts.Rows.Clear();monsterDrops.Rows.Clear();monsterMaps.Rows.Clear();monsterAccuracy!.Enabled=false;}
-  monsterNote.Text=name+" • Loading reference…";
-  try{var guide=await monsterReader.Lookup(dataDirectory,MonsterPath(name),name,Offline,ct,refresh);if(generation!=monsterGeneration||IsDisposed)return;if(guide is null)throw new IOException("No saved reference");monsterGuide=guide;RenderMonsterFinder();}
-  catch(OperationCanceledException){if(generation==monsterGeneration&&!IsDisposed)monsterNote.Text=name+" • Lookup cancelled or timed out. Retry when ready.";}
-  catch(Exception e) when(e is HttpRequestException or IOException or FormatException){if(generation==monsterGeneration&&!IsDisposed){if(monsterGuide is not null)RenderMonsterFinder();monsterNote.Text=name+" • Reference unavailable. "+(monsterGuide is null?"Try another monster or refresh. Missing information is not proof of no drops or maps.":"Showing saved details; retry later.");}}
+  if(monsterGuide is null){monsterGuide=HistoricalMonster(name);RenderMonsterFinder();}
+  monsterNote.Text=name+" • Checking drop/map reference. Historical catalog stats are shown until available…";
+  try{using var guideDeadline=CancellationTokenSource.CreateLinkedTokenSource(ct);guideDeadline.CancelAfter(TimeSpan.FromSeconds(12));var guide=await monsterReader.Lookup(dataDirectory,MonsterPath(name),name,Offline,guideDeadline.Token,refresh);if(generation!=monsterGeneration||IsDisposed)return;if(guide is null)throw new IOException("No saved reference");monsterGuide=guide;RenderMonsterFinder();}
+  catch(OperationCanceledException){if(generation!=monsterGeneration||IsDisposed)return;}
+  catch(Exception e) when(e is HttpRequestException or IOException or FormatException){if(generation!=monsterGeneration||IsDisposed)return;}
+  if(generation!=monsterGeneration||IsDisposed)return;
+  if(monsterGuide?.Source!="CCPLZ"){
+   var historical=await LoadHistoricalMonster(name,ct);
+   if(generation!=monsterGeneration||IsDisposed)return;
+   monsterGuide=historical;
+   RenderMonsterFinder();
+  }
+
  }
  static int? MonsterStat(GameGuide? guide,string field){var value=guide?.Fields.FirstOrDefault(f=>f.Label.Equals(field,StringComparison.OrdinalIgnoreCase))?.Value.Replace(",","");return int.TryParse(value,out int n)&&n>=0?n:null;}
  void RenderMonsterFinder(){
@@ -49,6 +58,6 @@ public sealed partial class MainForm{
  void UseMonsterAccuracy(){
   if(monsterGuide is not {} guide||MonsterStat(guide,"Level") is not int level||MonsterStat(guide,"Avoidability") is not int avoid||level is <1 or >200||avoid>100000)return;
   accuracyLookup?.Cancel();settingAccuracy=true;accuracyMonster.SelectedIndex=0;accuracyMobLevel.Value=level;accuracyAvoid.Value=avoid;accuracySearch.Text="";settingAccuracy=false;accuracyUnavailable=false;
-  accuracyReference.Text="CCPLZ reference: "+guide.Name+". Using Monster Finder stats; values remain editable.";accuracySource.Text="Custom reference values";RenderAccuracy();ShowPage("Accuracy");
+  accuracyReference.Text=guide.Source+" reference: "+guide.Name+". Using Monster Finder stats; values remain editable.";accuracySource.Text="Custom reference values";RenderAccuracy();ShowPage("Accuracy");
  }
 }
