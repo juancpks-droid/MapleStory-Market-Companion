@@ -1,0 +1,120 @@
+{
+  "schemaVersion": 1,
+  "path": "/quests/first-material-delivery-for-building-a-new-house",
+  "kind": "quest",
+  "name": "Ronnie & the Fairies Building a New House (First Material Delivery for Building a New House)",
+  "source": "CCPLZ",
+  "sourceUrl": "https://ccplz.cc/quests/first-material-delivery-for-building-a-new-house",
+  "checkedAt": "2026-10-18T09:51:20.409Z",
+  "notice": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial.",
+  "fields": [
+    {
+      "label": "Minimum level",
+      "value": "41"
+    },
+    {
+      "label": "Category",
+      "value": "Ellinia"
+    },
+    {
+      "label": "EXP reward",
+      "value": "8,670"
+    },
+    {
+      "label": "Meso reward",
+      "value": "1,301"
+    },
+    {
+      "label": "Starts with",
+      "value": "Ronnie"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Quest NPCs",
+      "links": [
+        {
+          "name": "Ronnie",
+          "path": "/npcs/ronnie",
+          "detail": "Starts the quest"
+        }
+      ],
+      "total": 1
+    },
+    {
+      "title": "Complete first",
+      "links": [
+        {
+          "name": "Mr. Wetbottom's Secret Book (Returned Secret Book)",
+          "path": "/quests/returned-secret-book",
+          "detail": ""
+        }
+      ],
+      "total": 1
+    },
+    {
+      "title": "Monsters to defeat",
+      "links": [
+        {
+          "name": "Curse Eye",
+          "path": "/monsters/curse-eye",
+          "detail": "x50"
+        },
+        {
+          "name": "Horny Mushroom",
+          "path": "/monsters/horny-mushroom",
+          "detail": "x50"
+        }
+      ],
+      "total": 2
+    },
+    {
+      "title": "Items to bring",
+      "links": [
+        {
+          "name": "Curse Eye Tail",
+          "path": "/items/curse-eye-tail",
+          "detail": "x30"
+        },
+        {
+          "name": "Horny Mushroom Cap",
+          "path": "/items/horny-mushroom-cap",
+          "detail": "x30"
+        }
+      ],
+      "total": 2
+    },
+    {
+      "title": "Item rewards",
+      "links": [
+        {
+          "name": "Blue Potion (for Olaf's Training: Olaf's First Training)",
+          "path": "/items/blue-potion",
+          "detail": ""
+        },
+        {
+          "name": "Magic Potion",
+          "path": "/items/magic-potion",
+          "detail": ""
+        }
+      ],
+      "total": 2
+    },
+    {
+      "title": "Where it takes place",
+      "links": [
+        {
+          "name": "Ellinia",
+          "path": "/maps/ellinia",
+          "detail": ""
+        },
+        {
+          "name": "The Tree Tunnel At the Forest Up North",
+          "path": "/maps/the-tree-tunnel-at-the-forest-up-north",
+          "detail": ""
+        }
+      ],
+      "total": 2
+    }
+  ]
+}

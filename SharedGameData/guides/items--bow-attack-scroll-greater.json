@@ -1,0 +1,83 @@
+{
+  "schemaVersion": 1,
+  "path": "/items/bow-attack-scroll-greater",
+  "kind": "item",
+  "name": "Bow Attack Scroll: Greater",
+  "source": "CCPLZ",
+  "sourceUrl": "https://ccplz.cc/items/bow-attack-scroll-greater",
+  "checkedAt": "2026-10-18T09:51:02.428Z",
+  "notice": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial.",
+  "fields": [
+    {
+      "label": "Type",
+      "value": "Bow scrolls"
+    },
+    {
+      "label": "Weapon attack",
+      "value": "+4"
+    },
+    {
+      "label": "NPC sell price",
+      "value": "1 meso"
+    },
+    {
+      "label": "Success rate (%)",
+      "value": "10"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Dropped by",
+      "links": [
+        {
+          "name": "Crimson Balrog",
+          "path": "/monsters/crimson-balrog",
+          "detail": "Level 100, 0.3% historical rate"
+        },
+        {
+          "name": "Curse Eye",
+          "path": "/monsters/curse-eye",
+          "detail": "Level 33, 0.03% historical rate"
+        }
+      ],
+      "total": 2
+    },
+    {
+      "title": "Quest rewards",
+      "links": [
+        {
+          "name": "Building a New House For Blackbull",
+          "path": "/quests/building-a-new-house-for-blackbull",
+          "detail": "Level 48"
+        },
+        {
+          "name": "The Alligators at the Swamp (Taking Out the Alligators 1)",
+          "path": "/quests/taking-out-the-alligators-1",
+          "detail": "Level 48"
+        }
+      ],
+      "total": 2
+    },
+    {
+      "title": "Related items",
+      "links": [
+        {
+          "name": "Bow Attack Scroll: Lesser",
+          "path": "/items/bow-attack-scroll-lesser",
+          "detail": ""
+        },
+        {
+          "name": "Bow Attack Scroll: Intermediate",
+          "path": "/items/bow-attack-scroll-intermediate",
+          "detail": ""
+        },
+        {
+          "name": "Bow Attack Scroll: Chaos",
+          "path": "/items/bow-attack-scroll-chaos",
+          "detail": ""
+        }
+      ],
+      "total": 3
+    }
+  ]
+}

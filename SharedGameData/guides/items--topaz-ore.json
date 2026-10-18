@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 1,
+  "path": "/items/topaz-ore",
+  "kind": "item",
+  "name": "Topaz Ore",
+  "source": "CCPLZ",
+  "sourceUrl": "https://ccplz.cc/items/topaz-ore",
+  "checkedAt": "2026-10-18T09:50:50.423Z",
+  "notice": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial.",
+  "fields": [
+    {
+      "label": "Type",
+      "value": "Gems & gem ores"
+    },
+    {
+      "label": "NPC sell price",
+      "value": "80 mesos"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Dropped by",
+      "links": [
+        {
+          "name": "Curse Eye",
+          "path": "/monsters/curse-eye",
+          "detail": "Level 33"
+        },
+        {
+          "name": "Horny Mushroom",
+          "path": "/monsters/horny-mushroom",
+          "detail": "Level 22"
+        },
+        {
+          "name": "Rotten Mushroom",
+          "path": "/monsters/rotten-mushroom",
+          "detail": "Level 56"
+        }
+      ],
+      "total": 3
+    },
+    {
+      "title": "Quest rewards",
+      "links": [
+        {
+          "name": "Rowen the Fairy and the Cursed Doll (Collecting 70 Cursed Dolls)",
+          "path": "/quests/collecting-70-cursed-dolls",
+          "detail": "Level 36"
+        }
+      ],
+      "total": 1
+    },
+    {
+      "title": "Used in crafting",
+      "links": [
+        {
+          "name": "Topaz",
+          "path": "/recipes/craft-topaz",
+          "detail": ""
+        }
+      ],
+      "total": 1
+    }
+  ]
+}

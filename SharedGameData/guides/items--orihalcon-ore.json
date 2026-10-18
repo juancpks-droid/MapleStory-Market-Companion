@@ -1,0 +1,85 @@
+{
+  "schemaVersion": 1,
+  "path": "/items/orihalcon-ore",
+  "kind": "item",
+  "name": "Orihalcon Ore",
+  "source": "CCPLZ",
+  "sourceUrl": "https://ccplz.cc/items/orihalcon-ore",
+  "checkedAt": "2026-10-18T09:50:41.446Z",
+  "notice": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial.",
+  "fields": [
+    {
+      "label": "Type",
+      "value": "Ores & ingots"
+    },
+    {
+      "label": "NPC sell price",
+      "value": "100 mesos"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Dropped by",
+      "links": [
+        {
+          "name": "Axe Stump",
+          "path": "/monsters/axe-stump",
+          "detail": "Level 17"
+        },
+        {
+          "name": "Curse Eye",
+          "path": "/monsters/curse-eye",
+          "detail": "Level 33"
+        },
+        {
+          "name": "Dark Axe Stump",
+          "path": "/monsters/dark-axe-stump",
+          "detail": "Level 23"
+        },
+        {
+          "name": "Echopus",
+          "path": "/monsters/echopus",
+          "detail": "Level 45"
+        },
+        {
+          "name": "Fairy 1",
+          "path": "/monsters/fairy-1",
+          "detail": "Level 29"
+        },
+        {
+          "name": "Lorang",
+          "path": "/monsters/lorang",
+          "detail": "Level 38"
+        },
+        {
+          "name": "Slime",
+          "path": "/monsters/slime",
+          "detail": "Level 6"
+        }
+      ],
+      "total": 7
+    },
+    {
+      "title": "Quest rewards",
+      "links": [
+        {
+          "name": "Rowen the Fairy and the Cursed Doll (Collecting 50 Cursed Dolls)",
+          "path": "/quests/collecting-50-cursed-dolls",
+          "detail": "Level 36"
+        }
+      ],
+      "total": 1
+    },
+    {
+      "title": "Used in crafting",
+      "links": [
+        {
+          "name": "Orihalcon Ingot",
+          "path": "/recipes/craft-orihalcon-ingot",
+          "detail": ""
+        }
+      ],
+      "total": 1
+    }
+  ]
+}

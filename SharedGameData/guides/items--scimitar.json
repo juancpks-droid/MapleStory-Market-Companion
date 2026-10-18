@@ -1,0 +1,137 @@
+{
+  "schemaVersion": 1,
+  "path": "/items/scimitar",
+  "kind": "item",
+  "name": "Scimitar",
+  "source": "CCPLZ",
+  "sourceUrl": "https://ccplz.cc/items/scimitar",
+  "checkedAt": "2026-10-18T09:50:44.376Z",
+  "notice": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial.",
+  "fields": [
+    {
+      "label": "Type",
+      "value": "Two-handed sword"
+    },
+    {
+      "label": "Required level",
+      "value": "30"
+    },
+    {
+      "label": "Class",
+      "value": "Warrior"
+    },
+    {
+      "label": "Weapon attack",
+      "value": "+53"
+    },
+    {
+      "label": "Upgrade slots",
+      "value": "7"
+    },
+    {
+      "label": "NPC sell price",
+      "value": "6,500 mesos"
+    },
+    {
+      "label": "NPC buy price (lowest recorded)",
+      "value": "26000 mesos"
+    },
+    {
+      "label": "Required STR",
+      "value": "65"
+    },
+    {
+      "label": "Required DEX",
+      "value": "30"
+    },
+    {
+      "label": "Required INT",
+      "value": "0"
+    },
+    {
+      "label": "Required LUK",
+      "value": "0"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Dropped by",
+      "links": [
+        {
+          "name": "Curse Eye",
+          "path": "/monsters/curse-eye",
+          "detail": "Level 33"
+        }
+      ],
+      "total": 1
+    },
+    {
+      "title": "Also dropped by, in older versions",
+      "links": [
+        {
+          "name": "Dark Leatty",
+          "path": "/monsters/dark-leatty",
+          "detail": "Level 33, 0.07% historical rate"
+        }
+      ],
+      "total": 1
+    },
+    {
+      "title": "Sold in",
+      "links": [
+        {
+          "name": "River's Shop",
+          "path": "/shops/river-s-shop",
+          "detail": ""
+        }
+      ],
+      "total": 1
+    },
+    {
+      "title": "Similar equipment",
+      "links": [
+        {
+          "name": "Aluminum Baseball Bat",
+          "path": "/items/aluminum-baseball-bat",
+          "detail": "Level 30"
+        },
+        {
+          "name": "Broadsword",
+          "path": "/items/broadsword",
+          "detail": "Level 25"
+        },
+        {
+          "name": "Lionheart",
+          "path": "/items/lionheart",
+          "detail": "Level 35"
+        },
+        {
+          "name": "Two-Handed Sword",
+          "path": "/items/two-handed-sword",
+          "detail": "Level 20"
+        },
+        {
+          "name": "Zard",
+          "path": "/items/zard",
+          "detail": "Level 40"
+        },
+        {
+          "name": "Wooden Baseball Bat",
+          "path": "/items/wooden-baseball-bat",
+          "detail": "Level 15"
+        },
+        {
+          "name": "Wooden Sword",
+          "path": "/items/wooden-sword",
+          "detail": "Level 10"
+        },
+        {
+          "name": "Lion's Fang",
+          "path": "/items/lion-s-fang",
+          "detail": "Level 50"
+        }
+      ],
+      "total": 8
+    }
+  ]
+}

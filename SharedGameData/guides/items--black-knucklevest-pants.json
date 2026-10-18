@@ -1,0 +1,130 @@
+{
+  "schemaVersion": 1,
+  "path": "/items/black-knucklevest-pants",
+  "kind": "item",
+  "name": "Black Knucklevest Pants",
+  "source": "CCPLZ",
+  "sourceUrl": "https://ccplz.cc/items/black-knucklevest-pants",
+  "checkedAt": "2026-10-18T09:50:56.398Z",
+  "notice": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial.",
+  "fields": [
+    {
+      "label": "Type",
+      "value": "Bottomwear"
+    },
+    {
+      "label": "Required level",
+      "value": "35"
+    },
+    {
+      "label": "Class",
+      "value": "Thief"
+    },
+    {
+      "label": "Weapon defense",
+      "value": "+32"
+    },
+    {
+      "label": "LUK",
+      "value": "+3"
+    },
+    {
+      "label": "Max HP",
+      "value": "+5"
+    },
+    {
+      "label": "Upgrade slots",
+      "value": "7"
+    },
+    {
+      "label": "NPC sell price",
+      "value": "4,000 mesos"
+    },
+    {
+      "label": "Required STR",
+      "value": "0"
+    },
+    {
+      "label": "Required DEX",
+      "value": "25"
+    },
+    {
+      "label": "Required INT",
+      "value": "0"
+    },
+    {
+      "label": "Required LUK",
+      "value": "60"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Dropped by",
+      "links": [
+        {
+          "name": "Blue Mushroom",
+          "path": "/monsters/blue-mushroom",
+          "detail": "Level 19"
+        }
+      ],
+      "total": 1
+    },
+    {
+      "title": "Also dropped by, in older versions",
+      "links": [
+        {
+          "name": "Curse Eye",
+          "path": "/monsters/curse-eye",
+          "detail": "Level 33, 0.08% historical rate"
+        }
+      ],
+      "total": 1
+    },
+    {
+      "title": "Similar equipment",
+      "links": [
+        {
+          "name": "Black Amoria Skirt",
+          "path": "/items/black-amoria-skirt",
+          "detail": "Level 35"
+        },
+        {
+          "name": "Blue Amoria Skirt",
+          "path": "/items/blue-amoria-skirt",
+          "detail": "Level 35"
+        },
+        {
+          "name": "Blue Knucklevest Pants",
+          "path": "/items/blue-knucklevest-pants",
+          "detail": "Level 35"
+        },
+        {
+          "name": "Blue Legolia Pants",
+          "path": "/items/blue-legolia-pants",
+          "detail": "Level 35"
+        },
+        {
+          "name": "Blue Legolier Pants",
+          "path": "/items/blue-legolier-pants",
+          "detail": "Level 35"
+        },
+        {
+          "name": "Brown Legolia Pants",
+          "path": "/items/brown-legolia-pants",
+          "detail": "Level 35"
+        },
+        {
+          "name": "Brown Legolier Pants",
+          "path": "/items/brown-legolier-pants",
+          "detail": "Level 35"
+        },
+        {
+          "name": "Dark Legolia Pants",
+          "path": "/items/dark-legolia-pants",
+          "detail": "Level 35"
+        }
+      ],
+      "total": 8
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "item": {
+    "key": "gms83:4020006",
+    "name": "Topaz Ore",
+    "id": "4020006",
+    "category": "Etc"
+  },
+  "kind": "npc",
+  "checkedAt": "2026-10-18T09:50:50.423Z",
+  "data": {
+    "sell": 80,
+    "buy": null,
+    "source": "CCPLZ",
+    "url": "https://ccplz.cc/items/topaz-ore",
+    "checkedAt": "2026-10-18T09:50:50.423Z"
+  },
+  "provenance": {
+    "source": "CCPLZ",
+    "sourceUrl": "https://ccplz.cc/items/topaz-ore",
+    "coverage": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial."
+  }
+}

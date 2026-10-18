@@ -1,0 +1,127 @@
+{
+  "schemaVersion": 1,
+  "path": "/items/nakamaki",
+  "kind": "item",
+  "name": "Nakamaki",
+  "source": "CCPLZ",
+  "sourceUrl": "https://ccplz.cc/items/nakamaki",
+  "checkedAt": "2026-10-18T09:51:11.430Z",
+  "notice": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial.",
+  "fields": [
+    {
+      "label": "Type",
+      "value": "Spear"
+    },
+    {
+      "label": "Required level",
+      "value": "35"
+    },
+    {
+      "label": "Class",
+      "value": "Warrior"
+    },
+    {
+      "label": "Weapon attack",
+      "value": "+57"
+    },
+    {
+      "label": "Upgrade slots",
+      "value": "7"
+    },
+    {
+      "label": "NPC sell price",
+      "value": "9,000 mesos"
+    },
+    {
+      "label": "Required STR",
+      "value": "75"
+    },
+    {
+      "label": "Required DEX",
+      "value": "35"
+    },
+    {
+      "label": "Required INT",
+      "value": "0"
+    },
+    {
+      "label": "Required LUK",
+      "value": "0"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Dropped by",
+      "links": [
+        {
+          "name": "Zombie Mushroom",
+          "path": "/monsters/zombie-mushroom",
+          "detail": "Level 24, 0.05% historical rate"
+        }
+      ],
+      "total": 1
+    },
+    {
+      "title": "Also dropped by, in older versions",
+      "links": [
+        {
+          "name": "Curse Eye",
+          "path": "/monsters/curse-eye",
+          "detail": "Level 33, 0.05% historical rate"
+        },
+        {
+          "name": "Wild Boar",
+          "path": "/monsters/wild-boar",
+          "detail": "Level 25, 0.05% historical rate"
+        }
+      ],
+      "total": 2
+    },
+    {
+      "title": "Similar equipment",
+      "links": [
+        {
+          "name": "Forked Spear",
+          "path": "/items/forked-spear",
+          "detail": "Level 30"
+        },
+        {
+          "name": "Zeco",
+          "path": "/items/zeco",
+          "detail": "Level 40"
+        },
+        {
+          "name": "Fish Spear",
+          "path": "/items/fish-spear",
+          "detail": "Level 20"
+        },
+        {
+          "name": "Serpent's Tongue",
+          "path": "/items/serpent-s-tongue",
+          "detail": "Level 50"
+        },
+        {
+          "name": "Fork on a Stick",
+          "path": "/items/fork-on-a-stick",
+          "detail": "Level 15"
+        },
+        {
+          "name": "Spear",
+          "path": "/items/spear",
+          "detail": "Level 10"
+        },
+        {
+          "name": "Holy Spear",
+          "path": "/items/holy-spear",
+          "detail": "Level 60"
+        },
+        {
+          "name": "Redemption",
+          "path": "/items/redemption",
+          "detail": "Level 70"
+        }
+      ],
+      "total": 8
+    }
+  ]
+}

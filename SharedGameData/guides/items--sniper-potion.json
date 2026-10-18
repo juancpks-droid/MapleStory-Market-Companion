@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "path": "/items/sniper-potion",
+  "kind": "item",
+  "name": "Sniper Potion",
+  "source": "CCPLZ",
+  "sourceUrl": "https://ccplz.cc/items/sniper-potion",
+  "checkedAt": "2026-10-18T09:50:47.379Z",
+  "notice": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial.",
+  "fields": [
+    {
+      "label": "Type",
+      "value": "Buff potions"
+    },
+    {
+      "label": "NPC sell price",
+      "value": "250 mesos"
+    },
+    {
+      "label": "NPC buy price (lowest recorded)",
+      "value": "500 mesos"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Dropped by",
+      "links": [
+        {
+          "name": "Curse Eye",
+          "path": "/monsters/curse-eye",
+          "detail": "Level 33, 2% historical rate"
+        }
+      ],
+      "total": 1
+    },
+    {
+      "title": "Sold in",
+      "links": [
+        {
+          "name": "Arturo's Shop",
+          "path": "/shops/arturo-s-shop",
+          "detail": ""
+        },
+        {
+          "name": "Luna's Shop",
+          "path": "/shops/luna-s-shop",
+          "detail": ""
+        }
+      ],
+      "total": 2
+    },
+    {
+      "title": "Quest rewards",
+      "links": [
+        {
+          "name": "Teo's Collection (Teo's Even Weirder Hobby)",
+          "path": "/quests/teo-s-even-weirder-hobby",
+          "detail": "Level 8"
+        }
+      ],
+      "total": 1
+    }
+  ]
+}

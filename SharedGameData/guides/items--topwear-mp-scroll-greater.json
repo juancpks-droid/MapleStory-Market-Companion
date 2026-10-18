@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "path": "/items/topwear-mp-scroll-greater",
+  "kind": "item",
+  "name": "Topwear MP Scroll: Greater",
+  "source": "CCPLZ",
+  "sourceUrl": "https://ccplz.cc/items/topwear-mp-scroll-greater",
+  "checkedAt": "2026-10-18T09:50:53.412Z",
+  "notice": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial.",
+  "fields": [
+    {
+      "label": "Type",
+      "value": "Topwear scrolls"
+    },
+    {
+      "label": "Max MP",
+      "value": "+20"
+    },
+    {
+      "label": "NPC sell price",
+      "value": "1 meso"
+    },
+    {
+      "label": "Success rate (%)",
+      "value": "10"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Dropped by",
+      "links": [
+        {
+          "name": "Curse Eye",
+          "path": "/monsters/curse-eye",
+          "detail": "Level 33"
+        }
+      ],
+      "total": 1
+    },
+    {
+      "title": "Related items",
+      "links": [
+        {
+          "name": "Topwear MP Scroll: Lesser",
+          "path": "/items/topwear-mp-scroll-lesser",
+          "detail": ""
+        },
+        {
+          "name": "Topwear MP Scroll: Intermediate",
+          "path": "/items/topwear-mp-scroll-intermediate",
+          "detail": ""
+        },
+        {
+          "name": "Topwear MP Scroll: Chaos",
+          "path": "/items/topwear-mp-scroll-chaos",
+          "detail": ""
+        }
+      ],
+      "total": 3
+    }
+  ]
+}

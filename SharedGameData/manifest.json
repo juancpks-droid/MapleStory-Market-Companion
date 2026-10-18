@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "publishedAt": "2026-10-17T09:50:59.961Z",
+  "publishedAt": "2026-10-18T09:51:32.534Z",
   "catalogItems": 12726,
-  "guideRecords": 141,
-  "referenceRecords": 44,
+  "guideRecords": 162,
+  "referenceRecords": 59,
   "entries": [
     {
       "file": "guides/items--5-o-clock-shadow.json",
@@ -104,10 +104,38 @@
       "kind": "item"
     },
     {
+      "file": "guides/items--black-knucklevest-pants.json",
+      "bytes": 2944,
+      "sha256": "5c636fc041319a143b78723dc9ff859a9b5e5921bf5021a43854dd583db5fde1",
+      "checkedAt": "2026-10-18T09:50:56.398Z",
+      "kind": "item"
+    },
+    {
       "file": "guides/items--black-knucklevest.json",
       "bytes": 2597,
       "sha256": "77a29463bb35b6adcffa2322f08b277aa9a165c99c82c53bbf381b92966f7843",
       "checkedAt": "2026-10-17T09:50:41.886Z",
+      "kind": "item"
+    },
+    {
+      "file": "guides/items--black-maro.json",
+      "bytes": 2908,
+      "sha256": "1346de4a80bb42e8f7add7e84899c721c4ee4ff747b64f55fb366e32a41b2b81",
+      "checkedAt": "2026-10-18T09:51:29.530Z",
+      "kind": "item"
+    },
+    {
+      "file": "guides/items--black-martial-arts-pants.json",
+      "bytes": 3005,
+      "sha256": "d422efb555f9d59e51244efb40a5c2c5a6587a7dda7d821d4fbb36d91016b265",
+      "checkedAt": "2026-10-18T09:50:59.400Z",
+      "kind": "item"
+    },
+    {
+      "file": "guides/items--blood-moss-boots.json",
+      "bytes": 3120,
+      "sha256": "63750d64fd9a7546b2c7fd03ce8f1522363a3b535cfd6d5c6ee3676871cf291b",
+      "checkedAt": "2026-10-18T09:51:32.482Z",
       "kind": "item"
     },
     {
@@ -132,6 +160,13 @@
       "kind": "item"
     },
     {
+      "file": "guides/items--bow-attack-scroll-greater.json",
+      "bytes": 2132,
+      "sha256": "32be4e1c459cd2f97b96be877337ab2b426f661d7eead55b3811dda8f5873f62",
+      "checkedAt": "2026-10-18T09:51:02.428Z",
+      "kind": "item"
+    },
+    {
       "file": "guides/items--bronze-ore.json",
       "bytes": 2374,
       "sha256": "ea7ccbebc1a5de47f1460f5475c1bf86c32636bc2e97be6013355c3b1eeee4e6",
@@ -150,6 +185,20 @@
       "bytes": 2934,
       "sha256": "e056803483b177f279204f841cea02130acd2fb46e23fff6b8a8f4ae1d5676e5",
       "checkedAt": "2026-10-13T15:37:36.252Z",
+      "kind": "item"
+    },
+    {
+      "file": "guides/items--brown-piette-pants.json",
+      "bytes": 3305,
+      "sha256": "976a1a398a9648ed666117f09b8b8c2706aa5c6f8c246d878d359c7506074e55",
+      "checkedAt": "2026-10-18T09:51:08.379Z",
+      "kind": "item"
+    },
+    {
+      "file": "guides/items--brown-piette.json",
+      "bytes": 2861,
+      "sha256": "7958cdaa44460c5bc6773eaf65da9c7a7d6f1db3a008e6a21b7b42fa25a5893f",
+      "checkedAt": "2026-10-18T09:51:05.404Z",
       "kind": "item"
     },
     {
@@ -356,6 +405,13 @@
       "kind": "item"
     },
     {
+      "file": "guides/items--nakamaki.json",
+      "bytes": 2818,
+      "sha256": "d685492dd15a30474f71291d9b64535d085cf060e35d6e7c868e74a56b13cb65",
+      "checkedAt": "2026-10-18T09:51:11.430Z",
+      "kind": "item"
+    },
+    {
       "file": "guides/items--ninja-mask-for-men.json",
       "bytes": 1838,
       "sha256": "39d3b5bcdd64a43a2985c5fad45a6fc664b1ac72cf3d856c181b02e2e2947d54",
@@ -384,6 +440,13 @@
       "kind": "item"
     },
     {
+      "file": "guides/items--orihalcon-ore.json",
+      "bytes": 2046,
+      "sha256": "71f7443a80b85f7521719033aa635594d3323b5b87cf7bb5439fffe04a5a791e",
+      "checkedAt": "2026-10-18T09:50:41.446Z",
+      "kind": "item"
+    },
+    {
       "file": "guides/items--power-elixir.json",
       "bytes": 4501,
       "sha256": "599b31c76c549bf1dd1b3aa3fdd196c70e9fc26d2977be3804e91d8cd7816b62",
@@ -405,6 +468,20 @@
       "kind": "item"
     },
     {
+      "file": "guides/items--red-duke.json",
+      "bytes": 2895,
+      "sha256": "9bfd88c519033f7e9e0a49e4c74a179af337b97e9b5d52600218b1e7aa46a63f",
+      "checkedAt": "2026-10-18T09:51:14.377Z",
+      "kind": "item"
+    },
+    {
+      "file": "guides/items--red-hwarang-shirt.json",
+      "bytes": 3326,
+      "sha256": "55b5d4bf6cd3726583719d83ee142b954f1066045f31cca2231984064742da91",
+      "checkedAt": "2026-10-18T09:51:17.386Z",
+      "kind": "item"
+    },
+    {
       "file": "guides/items--red-moonlight.json",
       "bytes": 2676,
       "sha256": "26c0cb04630585c34403ecbd321e22bac9ec01f6faff0ff13710f5204b4fefb4",
@@ -416,6 +493,13 @@
       "bytes": 2309,
       "sha256": "961988cea27012372445fc7704e82c7b63eb55d5d8876148948b446910d04fdb",
       "checkedAt": "2026-10-16T09:56:29.279Z",
+      "kind": "item"
+    },
+    {
+      "file": "guides/items--scimitar.json",
+      "bytes": 2983,
+      "sha256": "fb6d0fc650bedba99fad027f5e4806f75ce9e068dca4b58e60f5c6741ad4c668",
+      "checkedAt": "2026-10-18T09:50:44.376Z",
       "kind": "item"
     },
     {
@@ -440,6 +524,13 @@
       "kind": "item"
     },
     {
+      "file": "guides/items--sniper-potion.json",
+      "bytes": 1496,
+      "sha256": "8221c1dd4841392c836cea0a07cd267011f45aecad07de24114d98d9527f99c4",
+      "checkedAt": "2026-10-18T09:50:47.379Z",
+      "kind": "item"
+    },
+    {
       "file": "guides/items--spool-of-thread.json",
       "bytes": 8903,
       "sha256": "250ea3bc525dbeaa9138da3641b0a5cdf1c104295039dc31b5a193241080fafb",
@@ -451,6 +542,20 @@
       "bytes": 2932,
       "sha256": "2dde9541abf89f59e1a0a1d922551250eafd4e54a3c3a98308addacd74fdeba2",
       "checkedAt": "2026-10-15T09:57:23.700Z",
+      "kind": "item"
+    },
+    {
+      "file": "guides/items--topaz-ore.json",
+      "bytes": 1554,
+      "sha256": "4e78f469966797f58401a222d5db35fa54d4f3a56d0da1675c8e90520ba14822",
+      "checkedAt": "2026-10-18T09:50:50.423Z",
+      "kind": "item"
+    },
+    {
+      "file": "guides/items--topwear-mp-scroll-greater.json",
+      "bytes": 1503,
+      "sha256": "f1f300e305d71cb4ed0e767f097172f54e3abdc1f15fe03ce714c2533fcdc74b",
+      "checkedAt": "2026-10-18T09:50:53.412Z",
       "kind": "item"
     },
     {
@@ -678,6 +783,20 @@
       "kind": "map"
     },
     {
+      "file": "guides/maps--the-cave-of-trial-i.json",
+      "bytes": 1479,
+      "sha256": "bcbc5bc571c05448ba899f9ba2f2d6ce841a61bd2fb6e5c80b5ef59347ddd6f5",
+      "checkedAt": "2026-10-18T09:51:26.380Z",
+      "kind": "map"
+    },
+    {
+      "file": "guides/maps--the-cave-of-trial-iii.json",
+      "bytes": 1611,
+      "sha256": "4991c52d16740f77ed39edad72011da856dbd058b94c16cf56bbb99163efdaa0",
+      "checkedAt": "2026-10-18T09:51:23.559Z",
+      "kind": "map"
+    },
+    {
       "file": "guides/maps--the-field-east-of-amherst.json",
       "bytes": 1626,
       "sha256": "4aa10536b7385bf29b0207272c36684d9b817ce33bc3d238c9dbfeaea2589195",
@@ -804,6 +923,13 @@
       "kind": "map"
     },
     {
+      "file": "guides/monsters--blue-snail.json",
+      "bytes": 7048,
+      "sha256": "7d972febf4856125227e563b5551d2084cdff6900285894648517ee9013df26e",
+      "checkedAt": "2026-10-18T02:41:08.156Z",
+      "kind": "monster"
+    },
+    {
       "file": "guides/monsters--curse-eye.json",
       "bytes": 8010,
       "sha256": "c0c3d27259fd059020de76de176070c773bb591953c38db2922327b9de3ea42d",
@@ -815,6 +941,13 @@
       "bytes": 3786,
       "sha256": "537fa909d926bf86a7c93176b832801dc7bb9fb3a6064bae8ff796a8ccbef547",
       "checkedAt": "2026-10-13T15:03:48.674Z",
+      "kind": "monster"
+    },
+    {
+      "file": "guides/monsters--jr-balrog.json",
+      "bytes": 4857,
+      "sha256": "0390f1e1f2f22ec0bffca311c473ad434d2257526f67a9c00e8e0b5fd47918f0",
+      "checkedAt": "2026-10-18T02:41:11.58Z",
       "kind": "monster"
     },
     {
@@ -850,6 +983,13 @@
       "bytes": 4100,
       "sha256": "9403ac003ac0b0a8745918468d7dcea411ec14fc5cd28683e08db3b22d79acde",
       "checkedAt": "2026-10-13T17:07:51.463Z",
+      "kind": "monster"
+    },
+    {
+      "file": "guides/monsters--slime.json",
+      "bytes": 9173,
+      "sha256": "49956924f32aff1bbbb6509a562efe05a472781173be394d0a60b277524aa250",
+      "checkedAt": "2026-10-18T02:37:08.965Z",
       "kind": "monster"
     },
     {
@@ -913,6 +1053,13 @@
       "bytes": 2233,
       "sha256": "059f1170bd9661be07b95dffd4fae6653df6459955b7041a85b37cd99a9a11e0",
       "checkedAt": "2026-10-13T15:38:15.273Z",
+      "kind": "quest"
+    },
+    {
+      "file": "guides/quests--first-material-delivery-for-building-a-new-house.json",
+      "bytes": 2830,
+      "sha256": "1d11225aa020390bfbad928b5d491ca8552d52a52ab22ed042bbd86cdd8c1333",
+      "checkedAt": "2026-10-18T09:51:20.409Z",
       "kind": "quest"
     },
     {
@@ -1021,6 +1168,13 @@
       "kind": "npc"
     },
     {
+      "file": "records/npc-1002025.json",
+      "bytes": 671,
+      "sha256": "f64165073e5c4dc2e0db59d2368b02cd78fd54b5f69ce6df5291fde3770ef772",
+      "checkedAt": "2026-10-18T09:51:14.377Z",
+      "kind": "npc"
+    },
+    {
       "file": "records/npc-1002053.json",
       "bytes": 688,
       "sha256": "dc8a602c6159ebc99fb6fbb8888dd3b3b796198c7623f70a1e885df040b6bfe2",
@@ -1063,10 +1217,31 @@
       "kind": "npc"
     },
     {
+      "file": "records/npc-1002214.json",
+      "bytes": 677,
+      "sha256": "48129c4d1fc8b299e99933837202f62572d2a28910d43533d38abf6661223606",
+      "checkedAt": "2026-10-18T09:51:29.530Z",
+      "kind": "npc"
+    },
+    {
+      "file": "records/npc-1040021.json",
+      "bytes": 699,
+      "sha256": "00c6d340d2981862f59cbfb9f3e6073da1da20050e2d7b5d678e097076b356e7",
+      "checkedAt": "2026-10-18T09:51:17.386Z",
+      "kind": "npc"
+    },
+    {
       "file": "records/npc-1040063.json",
       "bytes": 698,
       "sha256": "88aac8c589ad3545312f14df7721b9abfcbc356a4042d4bf2ee9e99c6d581e82",
       "checkedAt": "2026-10-17T09:50:41.886Z",
+      "kind": "npc"
+    },
+    {
+      "file": "records/npc-1040079.json",
+      "bytes": 683,
+      "sha256": "56b3a2c67b2ebf53d3af3c6bed3abb5933bfd04b0ea0abbaa75f8908466765b5",
+      "checkedAt": "2026-10-18T09:51:05.404Z",
       "kind": "npc"
     },
     {
@@ -1133,10 +1308,52 @@
       "kind": "npc"
     },
     {
+      "file": "records/npc-1060016.json",
+      "bytes": 719,
+      "sha256": "cf0368ab8741f4d5eec2e1da7e12c0c214cc58ae68813cbab60bec78d429ac62",
+      "checkedAt": "2026-10-18T09:50:59.400Z",
+      "kind": "npc"
+    },
+    {
+      "file": "records/npc-1060052.json",
+      "bytes": 716,
+      "sha256": "9447b46455bb1f00bc2fa4e9f1308ad06149892328831de0bc7734789cb23386",
+      "checkedAt": "2026-10-18T09:50:56.398Z",
+      "kind": "npc"
+    },
+    {
+      "file": "records/npc-1060069.json",
+      "bytes": 701,
+      "sha256": "dce5e0b67eaf1a3ac0c9c7cf1c933d47ae0284b26bcb2b3b59bced79a6b0917b",
+      "checkedAt": "2026-10-18T09:51:08.379Z",
+      "kind": "npc"
+    },
+    {
+      "file": "records/npc-1072150.json",
+      "bytes": 695,
+      "sha256": "20aafcd5afbc9881230395ab9fa87d0ac03b3feb125c4781d4b2835c299cc5ca",
+      "checkedAt": "2026-10-18T09:51:32.482Z",
+      "kind": "npc"
+    },
+    {
       "file": "records/npc-1092007.json",
       "bytes": 687,
       "sha256": "5c9ad3d336fe97ad4d3abc320a67cb9430d74e969b693d4db6efecb7d0a36fff",
       "checkedAt": "2026-10-17T09:50:38.909Z",
+      "kind": "npc"
+    },
+    {
+      "file": "records/npc-1402002.json",
+      "bytes": 672,
+      "sha256": "50126e2c7dda495d20e481f10eaf4937faf17f9e1a0ee0375474db419551b265",
+      "checkedAt": "2026-10-18T09:50:44.376Z",
+      "kind": "npc"
+    },
+    {
+      "file": "records/npc-1432003.json",
+      "bytes": 671,
+      "sha256": "6e33f0009ab647f78f794bf50dbb98bfbede94c524a7e6867f1023c3a4588b07",
+      "checkedAt": "2026-10-18T09:51:11.430Z",
       "kind": "npc"
     },
     {
@@ -1179,6 +1396,13 @@
       "bytes": 674,
       "sha256": "69118b0b290236ea24f325723c3b46dfbf320328c8b115516faf7bf41ce5e06b",
       "checkedAt": "2026-10-14T09:56:24.891Z",
+      "kind": "npc"
+    },
+    {
+      "file": "records/npc-2002005.json",
+      "bytes": 678,
+      "sha256": "749e2bcb23ffeac60eb4ec5c7d1986fde5d0037aebdfcc6995ce4fc4ccb69884",
+      "checkedAt": "2026-10-18T09:50:47.379Z",
       "kind": "npc"
     },
     {
@@ -1245,6 +1469,13 @@
       "kind": "npc"
     },
     {
+      "file": "records/npc-4010005.json",
+      "bytes": 679,
+      "sha256": "640b67c1f5d4b6d2df7cc9a4795baeb6c40f8fc7176ccb30b1d62806d11d564d",
+      "checkedAt": "2026-10-18T09:50:41.446Z",
+      "kind": "npc"
+    },
+    {
       "file": "records/npc-4020000.json",
       "bytes": 669,
       "sha256": "264ca41d331f8ecec6339c0eef0f3d214993de996466839d22ca691cb4a6cdd2",
@@ -1252,10 +1483,24 @@
       "kind": "npc"
     },
     {
+      "file": "records/npc-4020006.json",
+      "bytes": 666,
+      "sha256": "fb907468b5d62d83b7085f376b518b1fe7b70969415386f9a5459121caa3fd58",
+      "checkedAt": "2026-10-18T09:50:50.423Z",
+      "kind": "npc"
+    },
+    {
       "file": "records/npc-4032451.json",
       "bytes": 645,
       "sha256": "9aa5a37bbf0d5d0fea01a7b38aaa1c1aceff549d71b1694429087cbc036355c2",
       "checkedAt": "2026-10-15T09:57:41.639Z",
+      "kind": "npc"
+    },
+    {
+      "file": "records/npc-classic-2040410.json",
+      "bytes": 716,
+      "sha256": "ef238093576df892afc2c701e35a9f369aa88253e76823c54c9b019bee98ff2f",
+      "checkedAt": "2026-10-18T09:50:53.412Z",
       "kind": "npc"
     },
     {
@@ -1298,6 +1543,13 @@
       "bytes": 744,
       "sha256": "2c92cde94e00b261064612087e24936d9a3595e7a19f24a2869337956efa3ddd",
       "checkedAt": "2026-10-15T09:57:29.636Z",
+      "kind": "npc"
+    },
+    {
+      "file": "records/npc-classic-2044502.json",
+      "bytes": 716,
+      "sha256": "75fb8d6c04026602b7d2fb06e18a8427b08cf64a675df506b691b2f93a15ce37",
+      "checkedAt": "2026-10-18T09:51:02.428Z",
       "kind": "npc"
     }
   ],

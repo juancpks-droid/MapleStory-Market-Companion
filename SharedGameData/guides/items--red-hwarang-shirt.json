@@ -1,0 +1,145 @@
+{
+  "schemaVersion": 1,
+  "path": "/items/red-hwarang-shirt",
+  "kind": "item",
+  "name": "Red Hwarang Shirt",
+  "source": "CCPLZ",
+  "sourceUrl": "https://ccplz.cc/items/red-hwarang-shirt",
+  "checkedAt": "2026-10-18T09:51:17.386Z",
+  "notice": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial.",
+  "fields": [
+    {
+      "label": "Type",
+      "value": "Topwear"
+    },
+    {
+      "label": "Required level",
+      "value": "30"
+    },
+    {
+      "label": "Class",
+      "value": "Warrior"
+    },
+    {
+      "label": "Weapon defense",
+      "value": "+55"
+    },
+    {
+      "label": "STR",
+      "value": "+3"
+    },
+    {
+      "label": "Upgrade slots",
+      "value": "7"
+    },
+    {
+      "label": "NPC sell price",
+      "value": "3,000 mesos"
+    },
+    {
+      "label": "NPC buy price (lowest recorded)",
+      "value": "12000 mesos"
+    },
+    {
+      "label": "Required STR",
+      "value": "50"
+    },
+    {
+      "label": "Required DEX",
+      "value": "20"
+    },
+    {
+      "label": "Required INT",
+      "value": "0"
+    },
+    {
+      "label": "Required LUK",
+      "value": "0"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Dropped by",
+      "links": [
+        {
+          "name": "Curse Eye",
+          "path": "/monsters/curse-eye",
+          "detail": "Level 33, 0.08% historical rate"
+        },
+        {
+          "name": "Evil Eye",
+          "path": "/monsters/evil-eye",
+          "detail": "Level 27, 0.08% historical rate"
+        },
+        {
+          "name": "Sentinel",
+          "path": "/monsters/sentinel",
+          "detail": "Level 30, 0.08% historical rate"
+        },
+        {
+          "name": "Zombie Mushroom",
+          "path": "/monsters/zombie-mushroom",
+          "detail": "Level 24, 0.08% historical rate"
+        }
+      ],
+      "total": 4
+    },
+    {
+      "title": "Sold in",
+      "links": [
+        {
+          "name": "Harry's Shop",
+          "path": "/shops/harry-s-shop",
+          "detail": ""
+        }
+      ],
+      "total": 1
+    },
+    {
+      "title": "Similar equipment",
+      "links": [
+        {
+          "name": "Black Huntress Armor",
+          "path": "/items/black-huntress-armor",
+          "detail": "Level 30"
+        },
+        {
+          "name": "Black Steal",
+          "path": "/items/black-steal",
+          "detail": "Level 30"
+        },
+        {
+          "name": "Blue Fairy Top",
+          "path": "/items/blue-fairy-top",
+          "detail": "Level 30"
+        },
+        {
+          "name": "Blue Hunter's Armor",
+          "path": "/items/blue-hunter-s-armor",
+          "detail": "Level 30"
+        },
+        {
+          "name": "Blue Steal",
+          "path": "/items/blue-steal",
+          "detail": "Level 30"
+        },
+        {
+          "name": "Dark Brown Stealer",
+          "path": "/items/dark-brown-stealer",
+          "detail": "Level 30"
+        },
+        {
+          "name": "Dark Hunter's Armor",
+          "path": "/items/dark-hunter-s-armor",
+          "detail": "Level 30"
+        },
+        {
+          "name": "Dark Silver Stealer",
+          "path": "/items/dark-silver-stealer",
+          "detail": "Level 30"
+        }
+      ],
+      "total": 8
+    }
+  ]
+}

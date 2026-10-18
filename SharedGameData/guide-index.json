@@ -98,9 +98,34 @@
       "kind": "item"
     },
     {
+      "path": "/items/black-knucklevest-pants",
+      "name": "Black Knucklevest Pants",
+      "kind": "item"
+    },
+    {
+      "path": "/items/black-maro",
+      "name": "Black Maro",
+      "kind": "item"
+    },
+    {
+      "path": "/items/black-martial-arts-pants",
+      "name": "Black Martial Arts Pants",
+      "kind": "item"
+    },
+    {
+      "path": "/items/blood-moss-boots",
+      "name": "Blood Moss Boots",
+      "kind": "item"
+    },
+    {
       "path": "/items/blue-moonlight",
       "name": "Blue Moonlight",
       "kind": "item"
+    },
+    {
+      "path": "/monsters/blue-snail",
+      "name": "Blue Snail",
+      "kind": "monster"
     },
     {
       "path": "/items/blue-snail-shell",
@@ -110,6 +135,11 @@
     {
       "path": "/items/blue-starlight",
       "name": "Blue Starlight",
+      "kind": "item"
+    },
+    {
+      "path": "/items/bow-attack-scroll-greater",
+      "name": "Bow Attack Scroll: Greater",
       "kind": "item"
     },
     {
@@ -135,6 +165,16 @@
     {
       "path": "/items/brown-moonlight",
       "name": "Brown Moonlight",
+      "kind": "item"
+    },
+    {
+      "path": "/items/brown-piette",
+      "name": "Brown Piette",
+      "kind": "item"
+    },
+    {
+      "path": "/items/brown-piette-pants",
+      "name": "Brown Piette Pants",
       "kind": "item"
     },
     {
@@ -373,6 +413,11 @@
       "kind": "quest"
     },
     {
+      "path": "/monsters/jr-balrog",
+      "name": "Jr. Balrog",
+      "kind": "monster"
+    },
+    {
       "path": "/monsters/jr-yeti",
       "name": "Jr. Yeti",
       "kind": "monster"
@@ -428,6 +473,11 @@
       "kind": "item"
     },
     {
+      "path": "/items/nakamaki",
+      "name": "Nakamaki",
+      "kind": "item"
+    },
+    {
       "path": "/quests/don-hwang-s-request",
       "name": "Nella & Kerning City Citizen's Request (Don Hwang's Request)",
       "kind": "quest"
@@ -458,6 +508,11 @@
       "kind": "item"
     },
     {
+      "path": "/items/orihalcon-ore",
+      "name": "Orihalcon Ore",
+      "kind": "item"
+    },
+    {
       "path": "/maps/perion-street-corner",
       "name": "Perion Street Corner",
       "kind": "map"
@@ -480,6 +535,16 @@
     {
       "path": "/items/purple-moonlight",
       "name": "Purple Moonlight",
+      "kind": "item"
+    },
+    {
+      "path": "/items/red-duke",
+      "name": "Red Duke",
+      "kind": "item"
+    },
+    {
+      "path": "/items/red-hwarang-shirt",
+      "name": "Red Hwarang Shirt",
       "kind": "item"
     },
     {
@@ -508,6 +573,11 @@
       "kind": "map"
     },
     {
+      "path": "/quests/first-material-delivery-for-building-a-new-house",
+      "name": "Ronnie & the Fairies Building a New House (First Material Delivery for Building a New House)",
+      "kind": "quest"
+    },
+    {
       "path": "/quests/collecting-150-cursed-dolls",
       "name": "Rowen the Fairy and the Cursed Doll (Collecting 150 Cursed Dolls)",
       "kind": "quest"
@@ -521,6 +591,11 @@
       "path": "/quests/sam-s-suggestion",
       "name": "Sam's Suggestion",
       "kind": "quest"
+    },
+    {
+      "path": "/items/scimitar",
+      "name": "Scimitar",
+      "kind": "item"
     },
     {
       "path": "/items/sf-ninja-mask",
@@ -551,6 +626,11 @@
       "path": "/maps/sleepy-dungeon-v",
       "name": "Sleepy Dungeon V",
       "kind": "map"
+    },
+    {
+      "path": "/monsters/slime",
+      "name": "Slime",
+      "kind": "monster"
     },
     {
       "path": "/items/slime-bubble",
@@ -593,6 +673,11 @@
       "kind": "item"
     },
     {
+      "path": "/items/sniper-potion",
+      "name": "Sniper Potion",
+      "kind": "item"
+    },
+    {
       "path": "/items/spool-of-thread",
       "name": "Spool of Thread",
       "kind": "item"
@@ -601,6 +686,16 @@
       "path": "/items/sword",
       "name": "Sword",
       "kind": "item"
+    },
+    {
+      "path": "/maps/the-cave-of-trial-i",
+      "name": "The Cave of Trial I",
+      "kind": "map"
+    },
+    {
+      "path": "/maps/the-cave-of-trial-iii",
+      "name": "The Cave of Trial III",
+      "kind": "map"
     },
     {
       "path": "/maps/the-field-east-of-amherst",
@@ -663,6 +758,16 @@
       "kind": "map"
     },
     {
+      "path": "/items/topaz-ore",
+      "name": "Topaz Ore",
+      "kind": "item"
+    },
+    {
+      "path": "/items/topwear-mp-scroll-greater",
+      "name": "Topwear MP Scroll: Greater",
+      "kind": "item"
+    },
+    {
       "path": "/maps/tree-dungeon-forest-up-north-ix",
       "name": "Tree Dungeon, Forest Up North IX",
       "kind": "map"
@@ -706,21 +811,6 @@
       "path": "/items/white-undershirt",
       "name": "White Undershirt",
       "kind": "item"
-    },
-    {
-      "path": "/monsters/slime",
-      "name": "Slime",
-      "kind": "monster"
-    },
-    {
-      "path": "/monsters/blue-snail",
-      "name": "Blue Snail",
-      "kind": "monster"
-    },
-    {
-      "path": "/monsters/jr-balrog",
-      "name": "Jr. Balrog",
-      "kind": "monster"
     }
   ]
 }
