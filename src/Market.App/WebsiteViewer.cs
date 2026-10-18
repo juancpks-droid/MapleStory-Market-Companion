@@ -13,6 +13,7 @@ sealed class WebsiteViewer : Form
     readonly Label status=new(){Dock=DockStyle.Bottom,Height=48,Padding=new Padding(8),AutoEllipsis=true};
     readonly TextBox address=new(){Dock=DockStyle.Top,ReadOnly=true,Height=28,AccessibleName="Website address"};
     readonly WebsiteLookup lookup;
+    static readonly PublicReferenceClient kerningCatalog=new("https://kerning.gg");
     readonly string dataDirectory;
     readonly Button back=new(){Text="Back",AutoSize=true,Enabled=false};
     readonly Button forward=new(){Text="Forward",AutoSize=true,Enabled=false};
@@ -79,7 +80,15 @@ sealed class WebsiteViewer : Form
                 }
                 Ready.TrySetResult(e.IsSuccess);
             };
-            core.Navigate(lookup.Url);
+            var startUrl=lookup.Url;
+            if(lookup.Mode==WebsiteSearchMode.Kerning){
+                try{using var deadline=new CancellationTokenSource(TimeSpan.FromSeconds(25));
+                    var catalog=KerningPages.Catalog(await kerningCatalog.Get("https://kerning.gg/sitemap.xml",deadline.Token));
+                    var matches=catalog.Where(x=>TextKey.Search(ScrollNames.Query(x.Name))==TextKey.Search(ScrollNames.Query(lookup.ItemName))).ToArray();
+                    if(matches.Length==1){startUrl=matches[0].Url;LookupResult="opened";searched=true;}
+                }catch{/* Keep interactive search if the public catalog is unavailable. */}
+            }
+            if(!IsDisposed)core.Navigate(startUrl);
         }
         catch(Exception e)
         {
@@ -143,13 +152,22 @@ public sealed partial class MainForm
         var note=new Label(){Dock=DockStyle.Top,Height=64,Padding=new Padding(8),Text=name+"\nExact lookups open a unique matching item. Other sites offer search fallbacks. Equipment variants and price coverage depend on the website."};
         picker.Controls.Add(list);picker.Controls.Add(open);picker.Controls.Add(note);list.DoubleClick+=(_,_)=>open.PerformClick();picker.ShowDialog(this);
     }
+    Button? kerningPriceFallback;
+    string KerningFallbackName=>priceItemChoice.SelectedItem as string??DisplayedPriceQuery.Trim();
+    void UpdateKerningPriceFallback(){
+        if(kerningPriceFallback is null)return;
+        kerningPriceFallback.Visible=KerningFallbackName.Length>0&&lowestPriceMetric.Tag is not true&&wantedPriceMetric.Tag is not true;
+        kerningPriceFallback.Enabled=!Offline;
+    }
     void BuildWebsiteLookup()
     {
-        var bar=pages["Price Checker"].Controls.OfType<FlowLayoutPanel>().First();bar.Height=110;bar.WrapContents=true;
-        object? Current()=>priceGrid.SelectedRows.Count>0?priceGrid.SelectedRows[0].Tag:null;
-        string Name()=>Current() is {} item?ItemName(item):search.Text.Trim();
-        void Lookup(){var name=Name();if(name.Length==0){footer.Text="Search for or select an item first.";return;}ShowWebsite("Kerning Exchange",name,Current());}
-        bar.Controls.Add(Button("Kerning website (fallback)",Lookup));
+        var bar=(FlowLayoutPanel)search.Parent!;bar.Height=110;bar.WrapContents=true;
+        kerningPriceFallback=Button("Check on Kerning Exchange",()=>{
+            var name=KerningFallbackName;
+            if(name.Length>0)ShowWebsite("Kerning Exchange",name);
+        });
+        kerningPriceFallback.AccessibleDescription="No current player prices found. Opens the displayed item on Kerning Exchange; NPC prices remain in Price Checker.";
+        bar.Controls.Add(kerningPriceFallback);UpdateKerningPriceFallback();
     }
 }
 

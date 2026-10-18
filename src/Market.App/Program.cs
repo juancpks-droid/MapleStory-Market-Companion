@@ -20,6 +20,7 @@ static class Program
 
         Velopack.VelopackApp.Build().SetAutoApplyOnStartup(false).Run();
         ApplicationConfiguration.Initialize();
+        if(args.Contains("--kerning-fallback-smoke")){KerningFallbackSmoke.Run();return;}
         if(args.Contains("--monster-finder-smoke")){MonsterFinderSmoke.Run();return;}
         if(args.Contains("--stable-search-smoke")){StableSearchSmoke.Run();return;}
         if(args.Contains("--navigation-smoke")){NavigationSmoke.Run();return;}

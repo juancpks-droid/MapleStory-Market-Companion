@@ -30,7 +30,7 @@ public sealed partial class MainForm
  }
  void UpdatePriceOverview(decimal? ask,decimal? buy,Valuation? estimate){
   SetPriceMetric(lowestPriceMetric,ask,"Per unit · recorded asking price, not a sale");SetPriceMetric(wantedPriceMetric,buy,"Per unit · player request; availability unverified");
-  SetPriceMetric(estimatePriceMetric,estimate?.Value,estimate is null?"":$"Confidence {estimate.Confidence}/100 · {estimate.Count} records");LayoutPriceMetrics();
+  SetPriceMetric(estimatePriceMetric,estimate?.Value,estimate is null?"":$"Confidence {estimate.Confidence}/100 · {estimate.Count} records");LayoutPriceMetrics();UpdateKerningPriceFallback();
  }
  void UpdateFmPriceMetrics(FmSummary? fm,bool enabled){
   string detail=fm is null?"":$"Last seen {fm.LastSeen.ToLocalTime():g}\n{(enabled?fm.Quality(DateTimeOffset.UtcNow,settings.FreshHours):"Source disabled · cached only")}\n{fm.Sightings} sightings · summary, not a live offer";
