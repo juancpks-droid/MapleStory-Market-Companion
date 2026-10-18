@@ -33,6 +33,7 @@ public sealed class ClassicTitle : Label
   string description=Text switch{
    "Dashboard"=>"Your market at a glance • Explore listings, demand and watched items",
    "Price Checker"=>"Find an item • Compare player offers and NPC reference prices",
+   "Monster Finder"=>"Explore monster stats, drop references and spawn locations",
    "Item Finder"=>"Discover classic items, monster drops and places to explore",
    "FM Tracker"=>"Explore Free Market sightings and recent source summaries",
    "Watchlist"=>"Your saved items • Follow prices and manage notifications",

@@ -2,7 +2,7 @@ using Market.Core;
 namespace Market.App;
 public sealed partial class MainForm
 {
-    readonly HashSet<string> essentialPages=["Dashboard","Item Finder","Accuracy","Price Checker","Seller Finder","FM Tracker","Inventory","Characters","Transfers","Watchlist","Trade Journal","Alert Inbox","Settings","Backups"];
+    readonly HashSet<string> essentialPages=["Dashboard","Item Finder","Monster Finder","Accuracy","Price Checker","Seller Finder","FM Tracker","Inventory","Characters","Transfers","Watchlist","Trade Journal","Alert Inbox","Settings","Backups"];
     readonly HashSet<string> expandedTools=[];
     bool fullNavigation,reliabilityReady;
     void BuildReliabilityPolish()

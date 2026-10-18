@@ -48,8 +48,8 @@ public sealed class ClassicBrand : Control
 }
 public static class NavigationBadges
 {
- static readonly string[] Pages=["Dashboard","Item Finder","Price Checker","Seller Finder","Watchlist","Inventory","FM Tracker","Item Catalog","Compare","Equipment","Price Alerts","Trade Journal","Market Activity","Backups","Characters","Alert Inbox","Market Health","Websites","Settings","Merchant Goals","Restock","Gear Wishlist","Item Notes","Trading Sessions","Price History","Getting Started","Transfers","Shopping List","Selling Planner","Search Everything","Price Changes","Seller Comparison","Undo Center","Profit Breakdown","Duplicate Review","Accuracy"];
- static readonly string[] Symbols=["⌂","⌕","$","SF","★","▣","FM","▤","⇄","⚔","!","TJ","↗","BK","CH","✉","♥","WWW","⚙","MG","+","GW","IN","TS","PH","GO","⇆","SL","SP","SE","PC","SC","↶","PB","DR","◎"];
+ static readonly string[] Pages=["Dashboard","Item Finder","Price Checker","Seller Finder","Watchlist","Inventory","FM Tracker","Item Catalog","Compare","Equipment","Price Alerts","Trade Journal","Market Activity","Backups","Characters","Alert Inbox","Market Health","Websites","Settings","Merchant Goals","Restock","Gear Wishlist","Item Notes","Trading Sessions","Price History","Getting Started","Transfers","Shopping List","Selling Planner","Search Everything","Price Changes","Seller Comparison","Undo Center","Profit Breakdown","Duplicate Review","Accuracy","Monster Finder"];
+ static readonly string[] Symbols=["⌂","⌕","$","SF","★","▣","FM","▤","⇄","⚔","!","TJ","↗","BK","CH","✉","♥","WWW","⚙","MG","+","GW","IN","TS","PH","GO","⇆","SL","SP","SE","PC","SC","↶","PB","DR","◎","M"];
  public static void Paint(Graphics g,string page,Rectangle r){
   int i=Array.IndexOf(Pages,page);if(i<0)return;
   Color[] colors=[Color.FromArgb(42,111,134),Color.FromArgb(155,82,39),Color.FromArgb(72,125,79),Color.FromArgb(125,84,146),Color.FromArgb(169,110,28)];var color=colors[i%colors.Length];

@@ -7,6 +7,7 @@ public sealed partial class MainForm {
  readonly Label accuracyTargets=new(){AutoSize=true,MaximumSize=new Size(760,0),Padding=new Padding(8),Font=new Font("Segoe UI",11)};
  static readonly (string Name,int Level,int Avoid)[] AccuracyMonsters=[("Custom monster",22,13),("Snail",1,0),("Orange Mushroom",8,0),("Green Mushroom",14,8),("Horny Mushroom",22,13),("Zombie Mushroom",24,14),("Wild Boar",25,15),("Zombie Lupin",41,29)];
  readonly TextBox accuracySearch=new(){Width=370,PlaceholderText="Monster name or ID"};
+ readonly Label accuracyReference=new(){AutoSize=true,MaximumSize=new Size(760,0)};
  readonly Label accuracySource=new(){AutoSize=true,MaximumSize=new Size(760,0)};
  readonly PublicReferenceClient accuracyClient=new("https://maplestory.io",false);
  CancellationTokenSource? accuracyLookup;
@@ -36,7 +37,7 @@ public sealed partial class MainForm {
   accuracyMonster.SelectedItem=keep;accuracyMonster.EndUpdate();settingAccuracy=false;
  }
  async Task LoadAccuracyMonster(){
-  accuracyLookup?.Cancel();accuracyLookup=new();var ct=accuracyLookup.Token;
+  accuracyReference.Text="";accuracyLookup?.Cancel();accuracyLookup=new();var ct=accuracyLookup.Token;
   var classic=Array.FindIndex(AccuracyMonsters,m=>m.Name==accuracyMonster.Text);
   accuracyUnavailable=false;
   if(classic>=0){if(classic>0){settingAccuracy=true;accuracyMobLevel.Value=AccuracyMonsters[classic].Level;accuracyAvoid.Value=AccuracyMonsters[classic].Avoid;settingAccuracy=false;}accuracySource.Text=classic==0?"Custom monster stats":"Selected classic preset • NiaMeowDB reference";RenderAccuracy();return;}
@@ -60,7 +61,7 @@ public sealed partial class MainForm {
   accuracyPotion.Items.AddRange(["None / already included","Sniper Potion +5","Supreme Sniper Potion +7"]);accuracyPotion.SelectedIndex=0;
   accuracyMonster.Items.AddRange(AccuracyMonsters.Select(m=>m.Name).Cast<object>().ToArray());accuracyMonster.SelectedItem="Horny Mushroom";FilterAccuracyMonsters();accuracyMonster.Width=470;ConfigureAccuracySearch();
   Field("Your level",accuracyLevel);Field("Your ACC (before selected potion)",accuracyAcc);Field("Potion bonus",accuracyPotion);Field("Search monsters",accuracySearch);Field("Monster preset",accuracyMonster);Field("Monster level",accuracyMobLevel);Field("Monster avoid (EVA)",accuracyAvoid);
-  Note($"{AccuracyMonsterCatalog.All.Length:N0} named historical monsters, including bosses and variants. Search by name or ID.");panel.Controls.Add(accuracySource);
+  Note($"{AccuracyMonsterCatalog.All.Length:N0} named historical monsters, including bosses and variants. Search by name or ID.");panel.Controls.Add(accuracySource);panel.Controls.Add(accuracyReference);
   Note("Choose None if your displayed ACC already includes a potion. The two potion bonuses do not stack.");panel.Controls.Add(accuracyResult);panel.Controls.Add(accuracyTargets);
   Note("Estimate based on the published Classic World model, not a guarantee of live game behavior. Physical attacks and offensive spells use this hit check. Darkness and other separate effects are not included.");
   Note("Formula and selected monster facts: NiaMeowDB • checked October 17, 2026. Expanded catalog: MapleStory.io historical GMS 83. Use custom stats for changed game values.");

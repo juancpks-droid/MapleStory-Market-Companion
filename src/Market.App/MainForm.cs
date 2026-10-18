@@ -71,7 +71,7 @@ public sealed partial class MainForm : Form
 
         var nav=new FlowLayoutPanel(){Dock=DockStyle.Fill,FlowDirection=FlowDirection.TopDown,WrapContents=false,AutoScroll=true,Padding=new Padding(0,12,0,0)}; sidebar.Controls.Add(nav); nav.BringToFront();
 
-        foreach(string name in new[]{"Dashboard","Item Finder","Accuracy","Price Checker","Seller Finder","Watchlist","Inventory","FM Tracker","Item Catalog","Compare","Equipment","Price Alerts","Trade Journal","Market Activity","Backups","Characters","Alert Inbox","Market Health","Websites","Settings","Merchant Goals","Restock","Gear Wishlist","Item Notes","Trading Sessions","Price History","Getting Started","Transfers","Shopping List","Selling Planner","Search Everything","Price Changes","Seller Comparison","Undo Center","Profit Breakdown","Duplicate Review"})
+        foreach(string name in new[]{"Dashboard","Item Finder","Monster Finder","Accuracy","Price Checker","Seller Finder","Watchlist","Inventory","FM Tracker","Item Catalog","Compare","Equipment","Price Alerts","Trade Journal","Market Activity","Backups","Characters","Alert Inbox","Market Health","Websites","Settings","Merchant Goals","Restock","Gear Wishlist","Item Notes","Trading Sessions","Price History","Getting Started","Transfers","Shopping List","Selling Planner","Search Everything","Price Changes","Seller Comparison","Undo Center","Profit Breakdown","Duplicate Review"})
 
         {
 
@@ -85,7 +85,7 @@ public sealed partial class MainForm : Form
 
         var main=new Panel(){Dock=DockStyle.Fill,Padding=new Padding(0)}; main.Controls.Add(content); main.Controls.Add(title); main.Controls.Add(footer); title.Padding=new Padding(20,10,0,0); Controls.Add(main); Controls.Add(sidebar);
 
-        ConfigureIcons(); BuildDashboard(); BuildPrices(); BuildDeals(); BuildWatch(); BuildInventory(); BuildFm(); BuildWebsites(); BuildSettings(); BuildCatalog(); BuildComparison(); BuildCompleteUpgrade(); BuildDailyTools(); BuildMerchantTools(); BuildWorkspaceTools(); BuildUsabilityTools(); BuildPolishTools(); BuildReliabilityPolish(); ConfigureTradingTools(); BuildCompanionUpgrade(); BuildPlanningUpgrade(); BuildWebsiteLookup(); BuildItemFinder(); BuildSettingsSections();BuildMarketDashboard();BuildMarketShortcuts();BuildAccuracy(); ApplyTextSize(); ApplyGuideStyle();ApplyMarketFocus();
+        ConfigureIcons(); BuildDashboard(); BuildPrices(); BuildDeals(); BuildWatch(); BuildInventory(); BuildFm(); BuildWebsites(); BuildSettings(); BuildCatalog(); BuildComparison(); BuildCompleteUpgrade(); BuildDailyTools(); BuildMerchantTools(); BuildWorkspaceTools(); BuildUsabilityTools(); BuildPolishTools(); BuildReliabilityPolish(); ConfigureTradingTools(); BuildCompanionUpgrade(); BuildPlanningUpgrade(); BuildWebsiteLookup(); BuildItemFinder(); BuildSettingsSections();BuildMarketDashboard();BuildMarketShortcuts();BuildAccuracy();BuildMonsterFinder(); ApplyTextSize(); ApplyGuideStyle();ApplyMarketFocus();
 
         var menu=new ContextMenuStrip(); menu.Items.Add("Open Market Companion",null,(_,_)=>{Show();WindowState=FormWindowState.Normal;Activate();}); menu.Items.Add("Snooze alerts for 30 minutes",null,(_,_)=>Snooze()); menu.Items.Add("Exit",null,(_,_)=>ExitApplication());
 
@@ -299,6 +299,7 @@ public sealed partial class MainForm : Form
             if(usabilityReady&&new[]{"Price Changes","Seller Comparison","Undo Center","Profit Breakdown"}.Contains(name))RenderUsability();
             if(workspaceReady&&new[]{"Transfers","Shopping List","Selling Planner","Search Everything"}.Contains(name))RenderWorkspace();
             if(name=="Item Finder")RenderItemFinder();
+            if(name=="Monster Finder"&&monsterGuide is null)_=LoadMonsterFinder();
             if(name=="Price Checker")RenderPrices();
             if(name=="Dashboard"){RenderDashboard();ApplyDashboardPanels();RenderMarketDashboard();}
             if(name=="Compare")RenderComparison();

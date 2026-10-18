@@ -706,6 +706,21 @@
       "path": "/items/white-undershirt",
       "name": "White Undershirt",
       "kind": "item"
+    },
+    {
+      "path": "/monsters/slime",
+      "name": "Slime",
+      "kind": "monster"
+    },
+    {
+      "path": "/monsters/blue-snail",
+      "name": "Blue Snail",
+      "kind": "monster"
+    },
+    {
+      "path": "/monsters/jr-balrog",
+      "name": "Jr. Balrog",
+      "kind": "monster"
     }
   ]
 }
