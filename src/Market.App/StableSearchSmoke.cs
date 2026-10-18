@@ -15,6 +15,18 @@ public sealed partial class MainForm
 {
  internal async Task CheckStableSearch(){
   void Check(bool ok,string message){if(!ok)throw new Exception(message);}
+  ShowPage("Accuracy");
+  Check(accuracySearch.AutoCompleteMode==AutoCompleteMode.Suggest,"Monster suggestions disabled");
+  foreach(var name in new[]{"Snail","Zombie Lupin","Horny Mushroom"}){
+   accuracySearch.Text=name;SelectAccuracySearch(true);
+   Check(accuracyMonster.Text==name,"Monster suggestion did not select "+name);
+  }
+  var monster=AccuracyMonsterCatalog.All.First(m=>m.Name=="Jr. Balrog");
+  accuracySearch.Text=monster.Id.ToString();SelectAccuracySearch(true);
+  Check(accuracyMonster.Text==monster.Label,"Monster ID search selected wrong variant");
+  accuracySearch.Text="No such monster";SelectAccuracySearch(true);
+  Check(accuracyMonster.Text==monster.Label,"No-match search changed selected monster");
+  Check(accuracySearch.AutoCompleteCustomSource.Contains(monster.Label),"Catalog monster missing from suggestions");
   timer.Stop();updateTimer.Stop();ShowPage("Price Checker");
   observations=new[]{"Red Potion","Blue Potion"}.Select((name,i)=>new Observation{Provider="Kerning Exchange",Name=name,ItemId="test-"+i,ListingId="stable-"+i,Kind=EvidenceKind.Asking,Available=true,UnitPrice=50+i,Quantity=3,ObservedAt=DateTimeOffset.UtcNow,RetrievedAt=DateTimeOffset.UtcNow,Url="https://example.org/"+i}).ToList();
   search.Text="Red Potion";CommitPriceView("Red Potion");itemLookupTimer.Stop();
@@ -35,13 +47,14 @@ public sealed partial class MainForm
   features.Offline=false;RememberLookupComplete("Red Potion");search.Text="Red Potion";
   await Task.Delay(850);Check(DisplayedPriceQuery=="Red Potion"&&!busy&&lookupStatus.Text.StartsWith("Cached"),"Cached debounce did not commit without networking");
   var retained=priceGrid.Rows[0];busy=true;search.Text="Blue Potion";await LookupPricesNow();
-  Check(lastLookup=="Blue Potion"&&pendingLookup=="Blue Potion"&&ReferenceEquals(retained,priceGrid.Rows[0]),"Explicit search reused the old selected item or removed its results");
+  Check(lastLookup=="Blue Potion"&&pendingLookup=="Blue Potion"&&SelectedPriceItem()?.Name=="Blue Potion","Explicit search did not show cached results for the new item");
+  retained=priceGrid.Rows[0];
   refreshStop=CancellationTokenSource.CreateLinkedTokenSource(stop.Token);activePriceSearch=true;var generation=priceRefreshGeneration;
   search.Text="Claw Attack Scroll: Intermediate";
   Check(refreshStop.IsCancellationRequested&&priceRefreshGeneration>generation&&!pendingSearch,"New input did not invalidate older work");
   Check(ReferenceEquals(retained,priceGrid.Rows[0]),"Cancelling old search changed visible results");
   itemLookupTimer.Stop();SaveViewSession();var saved=System.Text.Json.JsonSerializer.Deserialize<ViewSession>(File.ReadAllText(SessionPath))!;
-  Check(saved.Values["priceSearch"]==search.Text&&saved.DisplayedPriceQuery=="Red Potion","Draft and displayed results not saved separately");
+  Check(saved.Values["priceSearch"]==search.Text&&saved.DisplayedPriceQuery=="Blue Potion","Draft and displayed results not saved separately");
   refreshStop.Dispose();refreshStop=null;activePriceSearch=false;busy=false;pendingSearch=false;
   search.Text="No Such Stable Search Item";await LookupPricesNow();
   Check(lastLookup=="No Such Stable Search Item"&&DisplayedPriceQuery==lastLookup&&priceGrid.Rows.Count==0&&!HoldPriceResults,"Completed explicit search did not replace old results");

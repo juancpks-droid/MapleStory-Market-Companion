@@ -11,6 +11,25 @@ public sealed partial class MainForm {
  readonly PublicReferenceClient accuracyClient=new("https://maplestory.io",false);
  CancellationTokenSource? accuracyLookup;
  bool settingAccuracy,accuracyUnavailable;
+ void ConfigureAccuracySearch(){
+  var names=new AutoCompleteStringCollection();
+  names.AddRange(AccuracyMonsters.Select(m=>m.Name).Concat(AccuracyMonsterCatalog.All.Select(m=>m.Label)).Distinct().Order().ToArray());
+  accuracySearch.AutoCompleteCustomSource=names;
+  accuracySearch.AutoCompleteSource=AutoCompleteSource.CustomSource;
+  accuracySearch.AutoCompleteMode=AutoCompleteMode.Suggest;
+  accuracySearch.TextChanged+=(_,_)=>{FilterAccuracyMonsters();if(accuracySearch.Focused)SelectAccuracySearch(false);};
+  accuracySearch.KeyDown+=(_,e)=>{if(e.KeyCode==Keys.Enter){SelectAccuracySearch(true);e.SuppressKeyPress=true;}};
+ }
+ void SelectAccuracySearch(bool allowUnique){
+  var query=accuracySearch.Text.Trim();if(query.Length==0)return;
+  var exact=accuracyMonster.Items.Cast<string>().FirstOrDefault(n=>string.Equals(n,query,StringComparison.OrdinalIgnoreCase));
+  if(exact is not null){accuracyMonster.SelectedItem=exact;return;}
+  if(!allowUnique)return;
+  var byId=AccuracyMonsterCatalog.All.FirstOrDefault(m=>m.Id.ToString()==query);
+  if(byId is not null){accuracyMonster.SelectedItem=byId.Label;return;}
+  var matches=AccuracyMonsterCatalog.All.Where(m=>m.Id.ToString()==query||m.Label.Contains(query,StringComparison.OrdinalIgnoreCase)).ToArray();
+  if(matches.Length==1)accuracyMonster.SelectedItem=matches[0].Label;
+ }
  void FilterAccuracyMonsters(){
   var keep=accuracyMonster.Text;settingAccuracy=true;accuracyMonster.BeginUpdate();accuracyMonster.Items.Clear();accuracyMonster.Items.AddRange(AccuracyMonsters.Select(m=>(object)m.Name).ToArray());
   accuracyMonster.Items.AddRange(AccuracyMonsterCatalog.All.Where(m=>m.Label==keep||m.Label.Contains(accuracySearch.Text.Trim(),StringComparison.OrdinalIgnoreCase)).Select(m=>(object)m.Label).ToArray());
@@ -39,7 +58,7 @@ public sealed partial class MainForm {
   void Field(string label,Control input){var row=Toolbar();row.AutoSize=true;row.Controls.Add(new Label{Text=label,Width=290,Height=30,TextAlign=ContentAlignment.MiddleLeft});input.AccessibleName=label;row.Controls.Add(input);panel.Controls.Add(row);}
   Note("Estimate your hit chance and the accuracy needed for a monster. Calculates instantly, including offline.");
   accuracyPotion.Items.AddRange(["None / already included","Sniper Potion +5","Supreme Sniper Potion +7"]);accuracyPotion.SelectedIndex=0;
-  accuracyMonster.Items.AddRange(AccuracyMonsters.Select(m=>m.Name).Cast<object>().ToArray());accuracyMonster.SelectedItem="Horny Mushroom";FilterAccuracyMonsters();accuracyMonster.Width=470;accuracySearch.TextChanged+=(_,_)=>FilterAccuracyMonsters();
+  accuracyMonster.Items.AddRange(AccuracyMonsters.Select(m=>m.Name).Cast<object>().ToArray());accuracyMonster.SelectedItem="Horny Mushroom";FilterAccuracyMonsters();accuracyMonster.Width=470;ConfigureAccuracySearch();
   Field("Your level",accuracyLevel);Field("Your ACC (before selected potion)",accuracyAcc);Field("Potion bonus",accuracyPotion);Field("Search monsters",accuracySearch);Field("Monster preset",accuracyMonster);Field("Monster level",accuracyMobLevel);Field("Monster avoid (EVA)",accuracyAvoid);
   Note($"{AccuracyMonsterCatalog.All.Length:N0} named historical monsters, including bosses and variants. Search by name or ID.");panel.Controls.Add(accuracySource);
   Note("Choose None if your displayed ACC already includes a potion. The two potion bonuses do not stack.");panel.Controls.Add(accuracyResult);panel.Controls.Add(accuracyTargets);

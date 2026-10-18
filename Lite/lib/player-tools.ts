@@ -1,4 +1,4 @@
-export const LITE_VERSION='0.9.1';
+export const LITE_VERSION='0.9.2';
 export function rememberItem(ids:string[],id:string,limit=12){return [id,...ids.filter(x=>typeof x==='string'&&x!==id)].slice(0,limit);}
 export function toggleFavorite(ids:string[],id:string){return ids.includes(id)?ids.filter(x=>x!==id):rememberItem(ids,id,50);}
 export function priceContext(data:any,now=Date.now()){
