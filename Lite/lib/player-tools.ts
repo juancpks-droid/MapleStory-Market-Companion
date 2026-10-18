@@ -1,4 +1,4 @@
-export const LITE_VERSION='0.10.0';
+export const LITE_VERSION='0.10.1';
 export function rememberItem(ids:string[],id:string,limit=12){return [id,...ids.filter(x=>typeof x==='string'&&x!==id)].slice(0,limit);}
 export function toggleFavorite(ids:string[],id:string){return ids.includes(id)?ids.filter(x=>x!==id):rememberItem(ids,id,50);}
 export function priceContext(data:any,now=Date.now()){
@@ -19,4 +19,10 @@ export function keepSavedMarket(saved:any,fresh:any){saved=kerningMarket(saved);
 export function problemReport(item:{id:string;name:string},mode:string,data:any,message:string){
  // Deliberately exclude player names, offer notes, favorites and browser/device identifiers.
  return [`Maple Market Lite ${LITE_VERSION}`,`Item: ${item.name} (#${item.id})`,`Tool: ${mode==='prices'?'Price Checker':'Item Finder'}`,`Source: ${data?.source|| (mode==='prices'?'Kerning / NPC references':'Reference lookup')}`,`Checked: ${data?.checkedAt||'Not available'}`,`Offers returned: ${Array.isArray(data?.offers)?data.offers.length:0}`,`Drop references: ${Array.isArray(data?.monsters)?data.monsters.length:0}`,`Status: ${message||'No error shown'}`,'Describe what looks wrong: '].join('\n');
+}
+
+export function kerningFallback(data:any){return data?.ask==null&&data?.buy==null;}
+export function kerningItemLink(data:any){
+ try{const u=new URL(data?.sourceUrl);if(u.origin==='https://kerning.gg'&&!u.username&&!u.password&&/^\/item\/\d+-[a-z0-9-]+$/.test(u.pathname))return u.origin+u.pathname;}catch{}
+ return null;
 }
