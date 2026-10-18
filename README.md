@@ -112,3 +112,9 @@ Pages prepare their content before becoming visible. Buffered content and sideba
 - Duplicate messages do not repaint. Routine local analysis no longer replaces source backoff or user-action messages.
 - Offline control sizes to its text, including larger fonts.
 - Validation: status stress test (100 changes, duplicate-message invalidation checks), all four themes at 9/13 point text, 186 core tests, close/reopen state recovery and isolated local-feed package update/restart.
+
+## Source price summaries (1.33.0 / Lite 0.9.0)
+
+Price Checker can read the public developer feed at https://maplestory-classic.com/market.json. Its reported median, sales count and dated daily medians are separate from Kerning buy/sell offers. The site is attributed and the source snapshot date is visible; snapshots older than 24 hours are labelled older data. No feed summary is inserted as an individual trade, used for bargain alerts, or mixed with NPC prices. Equipment variants may differ.
+
+Lookups require one unique exact normalized name, with verified Classic scroll tiers. Fetches are bounded and cached for one hour. PC keeps the last valid feed on disk for offline use; Lite retains saved item summaries when refresh fails. The desktop graph selector switches between source daily medians and existing Kerning observations.

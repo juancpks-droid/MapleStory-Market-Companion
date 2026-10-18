@@ -137,7 +137,7 @@ public sealed partial class MainForm : Form
 
         foreach(var (label,days) in new[]{("24 hours",1),("7 days",7),("14 days",14),("30 days",30)}){var b=Button(label,()=>{historyDays=days;foreach(var pair in historyButtons)pair.Value.ForeColor=pair.Key==days?Accent:TextColor;RenderHistory();});b.ForeColor=days==historyDays?Accent:TextColor;historyButtons[days]=b;chartBar.Controls.Add(b);}
 
-        chartBar.Controls.Add(new Label(){AutoSize=true,Text="History • actual source timestamps only",ForeColor=Muted,Padding=new Padding(5,12,0,0)});bottom.Controls.Add(history);bottom.Controls.Add(chartBar);
+        chartBar.Controls.Add(new Label(){AutoSize=true,Text="History • actual source timestamps only",ForeColor=Muted,Padding=new Padding(5,12,0,0)});BuildHistorySource(chartBar);bottom.Controls.Add(history);bottom.Controls.Add(chartBar);
 
         p.Controls.Add(priceGrid);p.Controls.Add(bottom);p.Controls.Add(priceSummary);p.Controls.Add(fmContext);p.Controls.Add(bar);priceGrid.CellDoubleClick+=(_,e)=>{if(e.RowIndex>=0 && priceGrid.Rows[e.RowIndex].Tag is Observation o)ShowListingDetails(o);};priceGrid.SelectionChanged+=(_,_)=>{if(!renderingPriceRows){RenderValuation();RenderHistory();}};BuildPriceDetails(p,bottom);BuildPriceSuggestions(p,bar);
 
@@ -444,7 +444,7 @@ public sealed partial class MainForm : Form
         UpdatePriceOverview(asks.Count==0?null:asks.Min(o=>o.UnitPrice),buyers.Count==0?null:buyers.Max(o=>o.UnitPrice),v);
         string lead=target is null?"Search an item online to retrieve its market listings.":target.Name+" • Lowest recently checked ask: "+TextKey.Mesos(asks.Count==0?null:asks.Min(o=>o.UnitPrice))+" • "+asks.Count+" recent asks";
 
-        RenderMarketCards(target);UpdateWatchButtons();QueueNpcPrices();var fm=fmSummaries.FirstOrDefault(x=>TextKey.Search(x.Name)==TextKey.Search(target?.Name??DisplayedPriceQuery));
+        RenderMarketCards(target);UpdateWatchButtons();QueueNpcPrices();QueueClassicPrices();var fm=fmSummaries.FirstOrDefault(x=>TextKey.Search(x.Name)==TextKey.Search(target?.Name??DisplayedPriceQuery));
         fmContext.Visible=false;
         bool fmEnabled=settings.Sources.Any(x=>x.Id=="Kerning Exchange"&&x.Authorized);
         UpdateFmPriceMetrics(fm,fmEnabled);fmContext.Text=fm is null?"FM summaries: search an exact item name or open FM Tracker for broader coverage.":$"Kerning FM • 7-day median {TextKey.Mesos(fm.Median7)} • Lowest observed ask {TextKey.Mesos(fm.LowestAsk)} • {fm.Sightings} sightings\nLast seen {fm.LastSeen.ToLocalTime():g} • {(fmEnabled?fm.Quality(DateTimeOffset.UtcNow,settings.FreshHours):"Source disabled — cached only")} • Summary only; excluded from bargain alerts.";
@@ -461,7 +461,8 @@ public sealed partial class MainForm : Form
 
         int days=historyDays;var now=DateTimeOffset.UtcNow;
 
-        history.Points=PlayerMarketSource.Only(store.History()).Where(o=>o.ItemKey==name && o.ObservedAt is {} t && t>=now.AddDays(-days)&&t<=now && (item is null || o.MatchKey==item.MatchKey)).OrderBy(o=>o.ObservedAt).ToList();history.Invalidate();
+        history.SummaryMode=priceHistorySource.SelectedIndex==0;
+        history.Points=history.SummaryMode?ClassicHistory(days):PlayerMarketSource.Only(store.History()).Where(o=>o.ItemKey==name && o.ObservedAt is {} t && t>=now.AddDays(-days)&&t<=now && (item is null || o.MatchKey==item.MatchKey)).OrderBy(o=>o.ObservedAt).ToList();history.Invalidate();
 
     }
 

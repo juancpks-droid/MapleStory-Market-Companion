@@ -709,6 +709,16 @@ await Test("Monster catalog identity and unavailable avoid safety",()=>Sync(()=>
  Check(AccuracyMonsterCatalog.Parse(json,100100).Avoid==0);
  foreach(var bad in new[]{json.Replace("100100","100101"),json.Replace("Snail","Other"),json.Replace(",\"evasion\":0",""),json.Replace("\"evasion\":0","\"evasion\":-1")}){bool rejected=false;try{AccuracyMonsterCatalog.Parse(bad,100100);}catch{rejected=true;}Check(rejected);}
 }));
+await Test("Classic feed exact identity, daily history and invalid evidence",()=>Sync(()=>{
+ var json="""{"updatedAt":"2026-10-15T10:00:00Z","items":[{"n":"Work Gloves","s":"work-gloves","p":1999,"sold":796,"h":[["2026-10-14",1999,47],["2026-10-19",999,2],["2026-10-13",-1,1]]},{"n":"Hat Accuracy Scroll: Intermediate","s":"hat-accuracy-scroll-intermediate","p":59999,"sold":6,"h":[["2026-10-14",50000,57]]}]}""";
+ var rows=ClassicMarketFeed.Parse(json,new DateTimeOffset(2026,10,17,0,0,0,TimeSpan.Zero));
+ Check(rows.Length==2&&rows[0].History.Length==1);Check(rows[0].History[0].Sales==47);
+ Check(ClassicMarketFeed.Match(rows,"Work") is null&&ClassicMarketFeed.Match(rows,"Work Gloves")?.Median==1999);
+ Check(ClassicMarketFeed.Match(rows.Concat(rows),"Work Gloves") is null);
+ Check(ClassicMarketFeed.Match(rows,"Hat Accuracy Scroll: Greater") is null);
+ Throws(()=>ClassicMarketFeed.Parse(json.Replace("2026-10-15T10:00:00Z","2099-10-15T10:00:00Z"),now));
+}));
+
 Directory.CreateDirectory("test-results");File.WriteAllText("test-results/results.json",JsonSerializer.Serialize(new{total=results.Count,failed=failures,results},Json.Options));Console.WriteLine($"{results.Count-failures}/{results.Count} passed");Environment.ExitCode=failures==0?0:1;
 
 

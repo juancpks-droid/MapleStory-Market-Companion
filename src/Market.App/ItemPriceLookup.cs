@@ -32,7 +32,7 @@ public sealed partial class MainForm
   // Text edits invalidate in-flight work immediately, but leave the visible results alone.
   displayedPriceQuery??="";priceInputGeneration++;priceInputPending=true;priceLookupLoading=false;
   itemLookupTimer.Stop();priceRenderTimer.Stop();queuedLookup="";pendingSearch=false;pendingLookup="";
-  npcGeneration++;npcStop?.Cancel();npcKey="";
+  npcGeneration++;npcStop?.Cancel();npcKey="";classicPriceKey="";
   if(activePriceSearch){priceRefreshGeneration++;refreshStop?.Cancel();}
   query=ResolvePriceQuery(query);
   if(closing)return;

@@ -6,7 +6,7 @@ public sealed partial class MainForm
  readonly MarketMetric npcSellMetric=new(){Caption="SELL TO NPC"},npcBuyMetric=new(){Caption="BUY FROM NPC"},fmMedianMetric=new(){Caption="KERNING FM · 7-DAY MEDIAN"},fmAskMetric=new(){Caption="KERNING FM · LOWEST ASK"};
  readonly TableLayoutPanel priceMetricStrip=new(){Dock=DockStyle.Top,Visible=false,AutoScroll=true};
  string metricLayout="";
- MarketMetric[] PriceMetrics()=>[lowestPriceMetric,wantedPriceMetric,estimatePriceMetric,fmMedianMetric,fmAskMetric,npcSellMetric,npcBuyMetric];
+ MarketMetric[] PriceMetrics()=>[lowestPriceMetric,wantedPriceMetric,estimatePriceMetric,classicMedianMetric,fmMedianMetric,fmAskMetric,npcSellMetric,npcBuyMetric];
  void BuildPriceOverview(Panel page){
   foreach(var card in PriceMetrics()){card.Detailed=true;card.Visible=false;}
   int index=page.Controls.GetChildIndex(priceSummary);page.Controls.Add(priceMetricStrip);page.Controls.SetChildIndex(priceMetricStrip,index);
