@@ -1,0 +1,116 @@
+{
+  "schemaVersion": 1,
+  "path": "/items/knuckle-mace",
+  "kind": "item",
+  "name": "Knuckle Mace",
+  "source": "CCPLZ",
+  "sourceUrl": "https://ccplz.cc/items/knuckle-mace",
+  "checkedAt": "2026-10-19T10:00:31.890Z",
+  "notice": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial.",
+  "fields": [
+    {
+      "label": "Type",
+      "value": "One-handed blunt"
+    },
+    {
+      "label": "Required level",
+      "value": "50"
+    },
+    {
+      "label": "Class",
+      "value": "Warrior"
+    },
+    {
+      "label": "Weapon attack",
+      "value": "+69"
+    },
+    {
+      "label": "Upgrade slots",
+      "value": "7"
+    },
+    {
+      "label": "NPC sell price",
+      "value": "13,500 mesos"
+    },
+    {
+      "label": "Required STR",
+      "value": "100"
+    },
+    {
+      "label": "Required DEX",
+      "value": "45"
+    },
+    {
+      "label": "Required INT",
+      "value": "0"
+    },
+    {
+      "label": "Required LUK",
+      "value": "0"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Dropped by",
+      "links": [
+        {
+          "name": "Firebomb",
+          "path": "/monsters/firebomb",
+          "detail": "Level 51, 0.07% historical rate"
+        },
+        {
+          "name": "Iron Hog",
+          "path": "/monsters/iron-hog",
+          "detail": "Level 28, 0.07% historical rate"
+        }
+      ],
+      "total": 2
+    },
+    {
+      "title": "Similar equipment",
+      "links": [
+        {
+          "name": "Black Tube",
+          "path": "/items/black-tube",
+          "detail": "Level 50"
+        },
+        {
+          "name": "Jacker",
+          "path": "/items/jacker",
+          "detail": "Level 40"
+        },
+        {
+          "name": "Purple Tube",
+          "path": "/items/purple-tube",
+          "detail": "Level 40"
+        },
+        {
+          "name": "Emergency Rescue Tube",
+          "path": "/items/emergency-rescue-tube",
+          "detail": "Level 60"
+        },
+        {
+          "name": "Tamus",
+          "path": "/items/tamus",
+          "detail": "Level 60"
+        },
+        {
+          "name": "Heavy Hammer",
+          "path": "/items/heavy-hammer",
+          "detail": "Level 35"
+        },
+        {
+          "name": "Lollipop",
+          "path": "/items/lollipop",
+          "detail": "Level 30"
+        },
+        {
+          "name": "War Hammer",
+          "path": "/items/war-hammer",
+          "detail": "Level 30"
+        }
+      ],
+      "total": 8
+    }
+  ]
+}

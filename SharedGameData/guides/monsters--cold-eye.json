@@ -1,0 +1,244 @@
+{
+  "schemaVersion": 1,
+  "path": "/monsters/cold-eye",
+  "kind": "monster",
+  "name": "Cold Eye",
+  "source": "CCPLZ",
+  "sourceUrl": "https://ccplz.cc/monsters/cold-eye",
+  "checkedAt": "2026-10-19T10:00:49.762Z",
+  "notice": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial.",
+  "fields": [
+    {
+      "label": "Level",
+      "value": "40"
+    },
+    {
+      "label": "HP",
+      "value": "1,894"
+    },
+    {
+      "label": "EXP",
+      "value": "85"
+    },
+    {
+      "label": "MP",
+      "value": "50"
+    },
+    {
+      "label": "Attack",
+      "value": "237"
+    },
+    {
+      "label": "Defense",
+      "value": "0"
+    },
+    {
+      "label": "Accuracy",
+      "value": "120"
+    },
+    {
+      "label": "Avoidability",
+      "value": "25"
+    },
+    {
+      "label": "Weak to",
+      "value": "Fire"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Where it spawns",
+      "links": [
+        {
+          "name": "The Tunnel That Lost Light I",
+          "path": "/maps/the-tunnel-that-lost-light-i",
+          "detail": "Victoria Island, 32 spawn points"
+        },
+        {
+          "name": "The Tunnel That Lost Light II",
+          "path": "/maps/the-tunnel-that-lost-light-ii",
+          "detail": "Victoria Island, 25 spawn points"
+        },
+        {
+          "name": "Another Path",
+          "path": "/maps/another-path",
+          "detail": "Victoria Island, 23 spawn points"
+        },
+        {
+          "name": "Drake's Meal Table",
+          "path": "/maps/drake-s-meal-table",
+          "detail": "Victoria Island, 22 spawn points"
+        },
+        {
+          "name": "Sanctuary Entrance II",
+          "path": "/maps/sanctuary-entrance-ii",
+          "detail": "Victoria Island, 15 spawn points"
+        },
+        {
+          "name": "Sanctuary Entrance I",
+          "path": "/maps/sanctuary-entrance-i",
+          "detail": "Victoria Island, 13 spawn points"
+        },
+        {
+          "name": "Sanctuary Entrance III",
+          "path": "/maps/sanctuary-entrance-iii",
+          "detail": "Victoria Island, 8 spawn points"
+        },
+        {
+          "name": "Sanctuary Entrance IV",
+          "path": "/maps/sanctuary-entrance-iv",
+          "detail": "Victoria Island, 5 spawn points"
+        },
+        {
+          "name": "Tree Dungeon, Forest Up North VII",
+          "path": "/maps/tree-dungeon-forest-up-north-vii",
+          "detail": "Victoria Island, 4 spawn points"
+        },
+        {
+          "name": "Wild Kargo's Area",
+          "path": "/maps/wild-kargo-s-area",
+          "detail": "Victoria Island, 17 spawn points"
+        }
+      ],
+      "total": 10
+    },
+    {
+      "title": "Reported drops",
+      "links": [
+        {
+          "name": "Blue Starlight",
+          "path": "/items/blue-starlight",
+          "detail": "Overall"
+        },
+        {
+          "name": "Brown Starlight",
+          "path": "/items/brown-starlight",
+          "detail": "Overall"
+        },
+        {
+          "name": "Cold Eye Tail",
+          "path": "/items/cold-eye-tail",
+          "detail": "Monster drops, 60% historical rate"
+        },
+        {
+          "name": "White Potion",
+          "path": "/items/white-potion",
+          "detail": "Potions, 10% historical rate"
+        }
+      ],
+      "total": 4
+    },
+    {
+      "title": "Older-version drops",
+      "links": [
+        {
+          "name": "Blue Potion (for Olaf's Training: Olaf's First Training)",
+          "path": "/items/blue-potion",
+          "detail": "Potions, 10% historical rate"
+        },
+        {
+          "name": "Brown Distinction",
+          "path": "/items/brown-distinction",
+          "detail": "Hat, 0.15% historical rate"
+        },
+        {
+          "name": "Brown Moon Gloves",
+          "path": "/items/brown-moon-gloves",
+          "detail": "Gloves, 0.1% historical rate"
+        },
+        {
+          "name": "Cat's Eye",
+          "path": "/items/cat-s-eye",
+          "detail": "Earring, 0.1% historical rate"
+        },
+        {
+          "name": "Dark Avarice",
+          "path": "/items/dark-avarice",
+          "detail": "Claw, 0.05% historical rate"
+        },
+        {
+          "name": "Dark Guardian",
+          "path": "/items/dark-guardian",
+          "detail": "Claw, 0.05% historical rate"
+        },
+        {
+          "name": "Dark Hunter's Pants",
+          "path": "/items/dark-hunter-s-pants",
+          "detail": "Bottomwear, 0.08% historical rate"
+        },
+        {
+          "name": "Eagle Crow",
+          "path": "/items/eagle-crow",
+          "detail": "Crossbow, 0.05% historical rate"
+        },
+        {
+          "name": "Emerald Hildon Boots",
+          "path": "/items/emerald-hildon-boots",
+          "detail": "Shoes, 0.08% historical rate"
+        },
+        {
+          "name": "Gold Nordic Helm",
+          "path": "/items/gold-nordic-helm",
+          "detail": "Hat, 0.15% historical rate"
+        },
+        {
+          "name": "Icicle",
+          "path": "/items/icicle",
+          "detail": "Throwing stars, 0.1% historical rate"
+        },
+        {
+          "name": "Mana Elixir",
+          "path": "/items/mana-elixir",
+          "detail": "Potions, 10% historical rate"
+        },
+        {
+          "name": "Niam",
+          "path": "/items/niam",
+          "detail": "Two-handed axe, 0.07% historical rate"
+        },
+        {
+          "name": "Pink Goldwind Shoes",
+          "path": "/items/pink-goldwind-shoes",
+          "detail": "Shoes, 0.08% historical rate"
+        },
+        {
+          "name": "Pink Moon Conehat",
+          "path": "/items/pink-moon-conehat",
+          "detail": "Hat, 0.15% historical rate"
+        },
+        {
+          "name": "Red Distinction",
+          "path": "/items/red-distinction",
+          "detail": "Hat, 0.15% historical rate"
+        },
+        {
+          "name": "Red Salt Shoes",
+          "path": "/items/red-salt-shoes",
+          "detail": "Shoes, 0.08% historical rate"
+        },
+        {
+          "name": "Red Shadow",
+          "path": "/items/red-shadow",
+          "detail": "Topwear, 0.08% historical rate"
+        },
+        {
+          "name": "Red Shadow Pants",
+          "path": "/items/red-shadow-pants",
+          "detail": "Bottomwear, 0.08% historical rate"
+        }
+      ],
+      "total": 19
+    },
+    {
+      "title": "Quests that need it",
+      "links": [
+        {
+          "name": "Ronnie & the Fairies Building a New House (Last Material Delivery for Building a New House)",
+          "path": "/quests/last-material-delivery-for-building-a-new-house",
+          "detail": "Level 41"
+        }
+      ],
+      "total": 1
+    }
+  ]
+}

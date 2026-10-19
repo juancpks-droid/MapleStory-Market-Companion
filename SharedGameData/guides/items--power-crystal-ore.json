@@ -1,0 +1,138 @@
+{
+  "schemaVersion": 1,
+  "path": "/items/power-crystal-ore",
+  "kind": "item",
+  "name": "Power Crystal Ore",
+  "source": "CCPLZ",
+  "sourceUrl": "https://ccplz.cc/items/power-crystal-ore",
+  "checkedAt": "2026-10-19T10:00:34.764Z",
+  "notice": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial.",
+  "fields": [
+    {
+      "label": "Type",
+      "value": "Crafting materials"
+    },
+    {
+      "label": "NPC sell price",
+      "value": "2,000 mesos"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Dropped by",
+      "links": [
+        {
+          "name": "Bain",
+          "path": "/monsters/bain",
+          "detail": "Level 90, 1% historical rate"
+        },
+        {
+          "name": "Cellion",
+          "path": "/monsters/cellion",
+          "detail": "Level 53, 1% historical rate"
+        },
+        {
+          "name": "Coolie Zombie",
+          "path": "/monsters/coolie-zombie",
+          "detail": "Level 57, 1% historical rate"
+        },
+        {
+          "name": "Dark Nependeath",
+          "path": "/monsters/dark-nependeath",
+          "detail": "Level 47, 1% historical rate"
+        },
+        {
+          "name": "Dual Ghost Pirate",
+          "path": "/monsters/dual-ghost-pirate",
+          "detail": "Level 87, 1% historical rate"
+        },
+        {
+          "name": "Firebomb",
+          "path": "/monsters/firebomb",
+          "detail": "Level 51, 1% historical rate"
+        },
+        {
+          "name": "Helly",
+          "path": "/monsters/helly",
+          "detail": "Level 36, 1% historical rate"
+        },
+        {
+          "name": "Jr. Boogie 1",
+          "path": "/monsters/jr-boogie-1",
+          "detail": "Level 35, 1% historical rate"
+        },
+        {
+          "name": "Jr. Cellion",
+          "path": "/monsters/jr-cellion",
+          "detail": "Level 33, 1% historical rate"
+        },
+        {
+          "name": "King Bloctopus",
+          "path": "/monsters/king-bloctopus",
+          "detail": "Level 38, 1% historical rate"
+        },
+        {
+          "name": "Leatty",
+          "path": "/monsters/leatty",
+          "detail": "Level 32, 1% historical rate"
+        },
+        {
+          "name": "Luster Pixie",
+          "path": "/monsters/luster-pixie",
+          "detail": "Level 52, 1% historical rate"
+        },
+        {
+          "name": "Mecateon",
+          "path": "/monsters/mecateon",
+          "detail": "Level 48, 1% historical rate"
+        },
+        {
+          "name": "Platoon Chronos",
+          "path": "/monsters/platoon-chronos",
+          "detail": "Level 41, 1% historical rate"
+        },
+        {
+          "name": "Ratz",
+          "path": "/monsters/ratz",
+          "detail": "Level 32, 1% historical rate"
+        },
+        {
+          "name": "Sentinel",
+          "path": "/monsters/sentinel",
+          "detail": "Level 30, 1% historical rate"
+        },
+        {
+          "name": "Spirit Viking",
+          "path": "/monsters/spirit-viking",
+          "detail": "Level 93, 1% historical rate"
+        },
+        {
+          "name": "Tick",
+          "path": "/monsters/tick",
+          "detail": "Level 34, 1% historical rate"
+        },
+        {
+          "name": "Werewolf",
+          "path": "/monsters/werewolf",
+          "detail": "Level 75, 1% historical rate"
+        },
+        {
+          "name": "Yeti",
+          "path": "/monsters/yeti",
+          "detail": "Level 65, 1% historical rate"
+        },
+        {
+          "name": "Yeti and Pepe",
+          "path": "/monsters/yeti-and-pepe",
+          "detail": "Level 78, 1% historical rate"
+        },
+        {
+          "name": "Zeta Gray",
+          "path": "/monsters/zeta-gray",
+          "detail": "Level 42, 1% historical rate"
+        }
+      ],
+      "total": 22
+    }
+  ]
+}

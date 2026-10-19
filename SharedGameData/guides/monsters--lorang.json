@@ -1,0 +1,243 @@
+{
+  "schemaVersion": 1,
+  "path": "/monsters/lorang",
+  "kind": "monster",
+  "name": "Lorang",
+  "source": "CCPLZ",
+  "sourceUrl": "https://ccplz.cc/monsters/lorang",
+  "checkedAt": "2026-10-19T10:00:52.742Z",
+  "notice": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial.",
+  "fields": [
+    {
+      "label": "Level",
+      "value": "38"
+    },
+    {
+      "label": "HP",
+      "value": "1,714"
+    },
+    {
+      "label": "EXP",
+      "value": "78"
+    },
+    {
+      "label": "MP",
+      "value": "10"
+    },
+    {
+      "label": "Attack",
+      "value": "207"
+    },
+    {
+      "label": "Defense",
+      "value": "0"
+    },
+    {
+      "label": "Accuracy",
+      "value": "116"
+    },
+    {
+      "label": "Avoidability",
+      "value": "24"
+    },
+    {
+      "label": "Weak to",
+      "value": "Lightning"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Where it spawns",
+      "links": [
+        {
+          "name": "A Look-Out Shed Around the Beach",
+          "path": "/maps/a-look-out-shed-around-the-beach",
+          "detail": "Victoria Island, 36 spawn points"
+        },
+        {
+          "name": "Lorang Lorang",
+          "path": "/maps/lorang-lorang",
+          "detail": "Victoria Island, 35 spawn points"
+        },
+        {
+          "name": "Lorang and Clang",
+          "path": "/maps/lorang-and-clang",
+          "detail": "Victoria Island, 18 spawn points"
+        },
+        {
+          "name": "Lorang Lorang Lorang",
+          "path": "/maps/lorang-lorang-lorang",
+          "detail": "Victoria Island, 17 spawn points"
+        },
+        {
+          "name": "Clang and Lorang",
+          "path": "/maps/clang-and-lorang",
+          "detail": "Victoria Island, 8 spawn points"
+        }
+      ],
+      "total": 5
+    },
+    {
+      "title": "Reported drops",
+      "links": [
+        {
+          "name": "Black Dragon Robe",
+          "path": "/items/black-dragon-robe",
+          "detail": "Overall"
+        },
+        {
+          "name": "Blue Potion (for Olaf's Training: Olaf's First Training)",
+          "path": "/items/blue-potion",
+          "detail": "Potions, 10% historical rate"
+        },
+        {
+          "name": "Cat's Eye",
+          "path": "/items/cat-s-eye",
+          "detail": "Earring"
+        },
+        {
+          "name": "Dark Brown Stealer Pants",
+          "path": "/items/dark-brown-stealer-pants",
+          "detail": "Bottomwear"
+        },
+        {
+          "name": "Garnet Ore",
+          "path": "/items/garnet-ore",
+          "detail": "Gems & gem ores"
+        },
+        {
+          "name": "Korean Fan",
+          "path": "/items/korean-fan",
+          "detail": "Dagger, 0.05% historical rate"
+        },
+        {
+          "name": "Lorang Claw",
+          "path": "/items/lorang-claw",
+          "detail": "Monster drops, 60% historical rate"
+        },
+        {
+          "name": "Orange Potion",
+          "path": "/items/orange-potion",
+          "detail": "Potions"
+        },
+        {
+          "name": "Orihalcon Ore",
+          "path": "/items/orihalcon-ore",
+          "detail": "Ores & ingots"
+        },
+        {
+          "name": "Purple Steal",
+          "path": "/items/purple-steal",
+          "detail": "Topwear"
+        },
+        {
+          "name": "Purple Steal Pants",
+          "path": "/items/purple-steal-pants",
+          "detail": "Bottomwear"
+        },
+        {
+          "name": "Purple Tube",
+          "path": "/items/purple-tube",
+          "detail": "One-handed blunt"
+        },
+        {
+          "name": "Red Gold Stealer",
+          "path": "/items/red-gold-stealer",
+          "detail": "Topwear"
+        },
+        {
+          "name": "Red Silky Boots",
+          "path": "/items/red-silky-boots",
+          "detail": "Shoes"
+        },
+        {
+          "name": "Sky Blue Umbrella",
+          "path": "/items/sky-blue-umbrella",
+          "detail": "One-handed sword, 0.07% historical rate"
+        }
+      ],
+      "total": 15
+    },
+    {
+      "title": "Older-version drops",
+      "links": [
+        {
+          "name": "Adamantium Tower Shield",
+          "path": "/items/adamantium-tower-shield",
+          "detail": "Shield, 0.07% historical rate"
+        },
+        {
+          "name": "Blue Pierre Shoes",
+          "path": "/items/blue-pierre-shoes",
+          "detail": "Shoes, 0.08% historical rate"
+        },
+        {
+          "name": "Blue Starlight",
+          "path": "/items/blue-starlight",
+          "detail": "Overall, 0.07% historical rate"
+        },
+        {
+          "name": "Dagger Attack Scroll: Intermediate",
+          "path": "/items/dagger-attack-scroll-intermediate",
+          "detail": "Dagger scrolls, 0.03% historical rate"
+        },
+        {
+          "name": "Dark Cleave",
+          "path": "/items/dark-cleave",
+          "detail": "Gloves, 0.1% historical rate"
+        },
+        {
+          "name": "Dark Noel",
+          "path": "/items/dark-noel",
+          "detail": "Gloves, 0.1% historical rate"
+        },
+        {
+          "name": "Dark Piette",
+          "path": "/items/dark-piette",
+          "detail": "Topwear, 0.08% historical rate"
+        },
+        {
+          "name": "Dark Piette Pants",
+          "path": "/items/dark-piette-pants",
+          "detail": "Bottomwear, 0.08% historical rate"
+        },
+        {
+          "name": "Dark Trigger",
+          "path": "/items/dark-trigger",
+          "detail": "Shoes, 0.08% historical rate"
+        },
+        {
+          "name": "Purple Shadow",
+          "path": "/items/purple-shadow",
+          "detail": "Topwear, 0.08% historical rate"
+        },
+        {
+          "name": "Purple Shadow Pants",
+          "path": "/items/purple-shadow-pants",
+          "detail": "Bottomwear, 0.08% historical rate"
+        },
+        {
+          "name": "Ryden",
+          "path": "/items/ryden",
+          "detail": "Bow, 0.05% historical rate"
+        },
+        {
+          "name": "The Summoning Rock",
+          "path": "/items/the-summoning-rock",
+          "detail": "Magic rocks, 1% historical rate"
+        },
+        {
+          "name": "White Crusader Chainmail",
+          "path": "/items/white-crusader-chainmail",
+          "detail": "Overall, 0.07% historical rate"
+        },
+        {
+          "name": "White Potion",
+          "path": "/items/white-potion",
+          "detail": "Potions, 10% historical rate"
+        }
+      ],
+      "total": 15
+    }
+  ]
+}

@@ -1,0 +1,162 @@
+{
+  "schemaVersion": 1,
+  "path": "/monsters/dark-nependeath",
+  "kind": "monster",
+  "name": "Dark Nependeath",
+  "source": "CCPLZ",
+  "sourceUrl": "https://ccplz.cc/monsters/dark-nependeath",
+  "checkedAt": "2026-10-19T10:01:04.763Z",
+  "notice": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial.",
+  "fields": [
+    {
+      "label": "Level",
+      "value": "47"
+    },
+    {
+      "label": "HP",
+      "value": "2,285"
+    },
+    {
+      "label": "EXP",
+      "value": "127"
+    },
+    {
+      "label": "MP",
+      "value": "50"
+    },
+    {
+      "label": "Attack",
+      "value": "248"
+    },
+    {
+      "label": "Defense",
+      "value": "15"
+    },
+    {
+      "label": "Accuracy",
+      "value": "138"
+    },
+    {
+      "label": "Avoidability",
+      "value": "25"
+    },
+    {
+      "label": "Weak to",
+      "value": "Holy, Fire"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Where it spawns",
+      "links": [
+        {
+          "name": "Strolling Path II",
+          "path": "/maps/strolling-path-ii",
+          "detail": "Ossyria, 17 spawn points"
+        }
+      ],
+      "total": 1
+    },
+    {
+      "title": "Drops",
+      "links": [
+        {
+          "name": "Blue Arten",
+          "path": "/items/blue-arten",
+          "detail": "Gloves, 0.1% historical rate"
+        },
+        {
+          "name": "Blue China",
+          "path": "/items/blue-china",
+          "detail": "Topwear, 0.08% historical rate"
+        },
+        {
+          "name": "Blue China Pants",
+          "path": "/items/blue-china-pants",
+          "detail": "Bottomwear, 0.08% historical rate"
+        },
+        {
+          "name": "Blue Potion (for Olaf's Training: Olaf's First Training)",
+          "path": "/items/blue-potion",
+          "detail": "Potions, 10% historical rate"
+        },
+        {
+          "name": "Blue Willow",
+          "path": "/items/blue-willow",
+          "detail": "Gloves, 0.1% historical rate"
+        },
+        {
+          "name": "Brown Moonlight",
+          "path": "/items/brown-moonlight",
+          "detail": "Overall, 0.07% historical rate"
+        },
+        {
+          "name": "Cape STR Scroll: Greater",
+          "path": "/items/cape-str-scroll-greater",
+          "detail": "Cape scrolls, 0.03% historical rate"
+        },
+        {
+          "name": "Dark Crystal Ore",
+          "path": "/items/dark-crystal-ore",
+          "detail": "Crafting materials, 1% historical rate"
+        },
+        {
+          "name": "Dark Piette",
+          "path": "/items/dark-piette",
+          "detail": "Topwear, 0.08% historical rate"
+        },
+        {
+          "name": "Dark Piette Pants",
+          "path": "/items/dark-piette-pants",
+          "detail": "Bottomwear, 0.08% historical rate"
+        },
+        {
+          "name": "Elixir",
+          "path": "/items/elixir",
+          "detail": "Potions, 2% historical rate"
+        },
+        {
+          "name": "Emerald Hildon Boots",
+          "path": "/items/emerald-hildon-boots",
+          "detail": "Shoes, 0.08% historical rate"
+        },
+        {
+          "name": "Power Crystal Ore",
+          "path": "/items/power-crystal-ore",
+          "detail": "Crafting materials, 1% historical rate"
+        },
+        {
+          "name": "Red Shouldermail",
+          "path": "/items/red-shouldermail",
+          "detail": "Topwear, 0.08% historical rate"
+        },
+        {
+          "name": "Red Shouldermail Pants",
+          "path": "/items/red-shouldermail-pants",
+          "detail": "Bottomwear, 0.08% historical rate"
+        },
+        {
+          "name": "Red Whip",
+          "path": "/items/red-whip",
+          "detail": "One-handed sword, 0.07% historical rate"
+        },
+        {
+          "name": "The Summoning Rock",
+          "path": "/items/the-summoning-rock",
+          "detail": "Magic rocks, 1% historical rate"
+        },
+        {
+          "name": "White Potion",
+          "path": "/items/white-potion",
+          "detail": "Potions, 10% historical rate"
+        },
+        {
+          "name": "Yellow Duke",
+          "path": "/items/yellow-duke",
+          "detail": "Hat, 0.15% historical rate"
+        }
+      ],
+      "total": 19
+    }
+  ]
+}

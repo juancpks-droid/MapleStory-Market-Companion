@@ -1,0 +1,128 @@
+{
+  "schemaVersion": 1,
+  "path": "/items/red-seraphis",
+  "kind": "item",
+  "name": "Red Seraphis",
+  "source": "CCPLZ",
+  "sourceUrl": "https://ccplz.cc/items/red-seraphis",
+  "checkedAt": "2026-10-19T10:00:37.855Z",
+  "notice": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial.",
+  "fields": [
+    {
+      "label": "Type",
+      "value": "Hat"
+    },
+    {
+      "label": "Required level",
+      "value": "60"
+    },
+    {
+      "label": "Class",
+      "value": "Magician"
+    },
+    {
+      "label": "Weapon defense",
+      "value": "+28"
+    },
+    {
+      "label": "Magic defense",
+      "value": "+30"
+    },
+    {
+      "label": "INT",
+      "value": "+3"
+    },
+    {
+      "label": "Max HP",
+      "value": "+30"
+    },
+    {
+      "label": "Upgrade slots",
+      "value": "7"
+    },
+    {
+      "label": "NPC sell price",
+      "value": "9,000 mesos"
+    },
+    {
+      "label": "Required STR",
+      "value": "0"
+    },
+    {
+      "label": "Required DEX",
+      "value": "0"
+    },
+    {
+      "label": "Required INT",
+      "value": "110"
+    },
+    {
+      "label": "Required LUK",
+      "value": "50"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Dropped by",
+      "links": [
+        {
+          "name": "Firebomb",
+          "path": "/monsters/firebomb",
+          "detail": "Level 51, 0.15% historical rate"
+        },
+        {
+          "name": "Tweeter",
+          "path": "/monsters/tweeter",
+          "detail": "Level 39, 0.08% historical rate"
+        }
+      ],
+      "total": 2
+    },
+    {
+      "title": "Similar equipment",
+      "links": [
+        {
+          "name": "Black Polyfeather Hat",
+          "path": "/items/black-polyfeather-hat",
+          "detail": "Level 60"
+        },
+        {
+          "name": "Blue Oriental Helmet",
+          "path": "/items/blue-oriental-helmet",
+          "detail": "Level 60"
+        },
+        {
+          "name": "Blue Seraphis",
+          "path": "/items/blue-seraphis",
+          "detail": "Level 60"
+        },
+        {
+          "name": "Bronze Identity",
+          "path": "/items/bronze-identity",
+          "detail": "Level 60"
+        },
+        {
+          "name": "Brown Polyfeather Hat",
+          "path": "/items/brown-polyfeather-hat",
+          "detail": "Level 60"
+        },
+        {
+          "name": "Dark Identity",
+          "path": "/items/dark-identity",
+          "detail": "Level 60"
+        },
+        {
+          "name": "Dark Seraphis",
+          "path": "/items/dark-seraphis",
+          "detail": "Level 60"
+        },
+        {
+          "name": "Green Seraphis",
+          "path": "/items/green-seraphis",
+          "detail": "Level 60"
+        }
+      ],
+      "total": 8
+    }
+  ]
+}

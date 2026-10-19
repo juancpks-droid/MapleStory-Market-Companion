@@ -1,0 +1,133 @@
+{
+  "schemaVersion": 1,
+  "path": "/items/the-magic-rock",
+  "kind": "item",
+  "name": "The Magic Rock",
+  "source": "CCPLZ",
+  "sourceUrl": "https://ccplz.cc/items/the-magic-rock",
+  "checkedAt": "2026-10-19T10:00:43.861Z",
+  "notice": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial.",
+  "fields": [
+    {
+      "label": "Type",
+      "value": "Magic rocks"
+    },
+    {
+      "label": "NPC sell price",
+      "value": "1 meso"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Dropped by",
+      "links": [
+        {
+          "name": "Bubbling",
+          "path": "/monsters/bubbling",
+          "detail": "Level 15, 1% historical rate"
+        },
+        {
+          "name": "Cellion",
+          "path": "/monsters/cellion",
+          "detail": "Level 53, 1% historical rate"
+        },
+        {
+          "name": "Dark Klock",
+          "path": "/monsters/dark-klock",
+          "detail": "Level 76, 1% historical rate"
+        },
+        {
+          "name": "Dark Pepe",
+          "path": "/monsters/dark-pepe",
+          "detail": "Level 64, 1% historical rate"
+        },
+        {
+          "name": "Dark Yeti and Pepe",
+          "path": "/monsters/dark-yeti-and-pepe",
+          "detail": "Level 82, 1% historical rate"
+        },
+        {
+          "name": "Fire Sentinel",
+          "path": "/monsters/fire-sentinel",
+          "detail": "Level 30, 1% historical rate"
+        },
+        {
+          "name": "Firebomb",
+          "path": "/monsters/firebomb",
+          "detail": "Level 51, 1% historical rate"
+        },
+        {
+          "name": "Flyeye",
+          "path": "/monsters/flyeye",
+          "detail": "Level 41, 1% historical rate"
+        },
+        {
+          "name": "Gatekeeper",
+          "path": "/monsters/gatekeeper",
+          "detail": "Level 108, 1% historical rate"
+        },
+        {
+          "name": "Grupin",
+          "path": "/monsters/grupin",
+          "detail": "Level 53, 1% historical rate"
+        },
+        {
+          "name": "Ice Sentinel",
+          "path": "/monsters/ice-sentinel",
+          "detail": "Level 30, 1% historical rate"
+        },
+        {
+          "name": "Jr. Grupin",
+          "path": "/monsters/jr-grupin",
+          "detail": "Level 33, 1% historical rate"
+        },
+        {
+          "name": "Jr. Pepe",
+          "path": "/monsters/jr-pepe",
+          "detail": "Level 35, 1% historical rate"
+        },
+        {
+          "name": "Ligator",
+          "path": "/monsters/ligator",
+          "detail": "Level 31, 1% historical rate"
+        },
+        {
+          "name": "Lunar Pixie",
+          "path": "/monsters/lunar-pixie",
+          "detail": "Level 45, 1% historical rate"
+        },
+        {
+          "name": "Malady",
+          "path": "/monsters/malady",
+          "detail": "Level 55, 1% historical rate"
+        },
+        {
+          "name": "Phantom Watch",
+          "path": "/monsters/phantom-watch",
+          "detail": "Level 95, 1% historical rate"
+        },
+        {
+          "name": "Sentinel",
+          "path": "/monsters/sentinel",
+          "detail": "Level 30, 1% historical rate"
+        },
+        {
+          "name": "Star Pixie",
+          "path": "/monsters/star-pixie",
+          "detail": "Level 35, 1% historical rate"
+        },
+        {
+          "name": "Tauromacis",
+          "path": "/monsters/tauromacis",
+          "detail": "Level 70, 1% historical rate"
+        },
+        {
+          "name": "Werewolf",
+          "path": "/monsters/werewolf",
+          "detail": "Level 75, 1% historical rate"
+        }
+      ],
+      "total": 21
+    }
+  ]
+}

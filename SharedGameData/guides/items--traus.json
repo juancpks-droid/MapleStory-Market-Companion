@@ -1,0 +1,116 @@
+{
+  "schemaVersion": 1,
+  "path": "/items/traus",
+  "kind": "item",
+  "name": "Traus",
+  "source": "CCPLZ",
+  "sourceUrl": "https://ccplz.cc/items/traus",
+  "checkedAt": "2026-10-19T10:00:46.871Z",
+  "notice": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial.",
+  "fields": [
+    {
+      "label": "Type",
+      "value": "One-handed sword"
+    },
+    {
+      "label": "Required level",
+      "value": "40"
+    },
+    {
+      "label": "Class",
+      "value": "Warrior"
+    },
+    {
+      "label": "Weapon attack",
+      "value": "+60"
+    },
+    {
+      "label": "Upgrade slots",
+      "value": "7"
+    },
+    {
+      "label": "NPC sell price",
+      "value": "9,500 mesos"
+    },
+    {
+      "label": "Required STR",
+      "value": "80"
+    },
+    {
+      "label": "Required DEX",
+      "value": "35"
+    },
+    {
+      "label": "Required INT",
+      "value": "0"
+    },
+    {
+      "label": "Required LUK",
+      "value": "0"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Dropped by",
+      "links": [
+        {
+          "name": "Firebomb",
+          "path": "/monsters/firebomb",
+          "detail": "Level 51, 0.07% historical rate"
+        },
+        {
+          "name": "Star Pixie",
+          "path": "/monsters/star-pixie",
+          "detail": "Level 35, 0.07% historical rate"
+        }
+      ],
+      "total": 2
+    },
+    {
+      "title": "Similar equipment",
+      "links": [
+        {
+          "name": "Yellow Umbrella",
+          "path": "/items/yellow-umbrella",
+          "detail": "Level 40"
+        },
+        {
+          "name": "Cutlus",
+          "path": "/items/cutlus",
+          "detail": "Level 35"
+        },
+        {
+          "name": "Red Whip",
+          "path": "/items/red-whip",
+          "detail": "Level 35"
+        },
+        {
+          "name": "Hero's Gladius (One-handed sword)",
+          "path": "/items/hero-s-gladius",
+          "detail": "Level 45"
+        },
+        {
+          "name": "Gladius",
+          "path": "/items/gladius",
+          "detail": "Level 30"
+        },
+        {
+          "name": "Jeweled Katar",
+          "path": "/items/jeweled-katar",
+          "detail": "Level 50"
+        },
+        {
+          "name": "Sky Blue Umbrella",
+          "path": "/items/sky-blue-umbrella",
+          "detail": "Level 27"
+        },
+        {
+          "name": "Eloon",
+          "path": "/items/eloon",
+          "detail": "Level 25"
+        }
+      ],
+      "total": 8
+    }
+  ]
+}

@@ -78,6 +78,11 @@
       "kind": "item"
     },
     {
+      "path": "/items/battle-scar",
+      "name": "Battle Scar",
+      "kind": "item"
+    },
+    {
       "path": "/items/battle-shield",
       "name": "Battle Shield",
       "kind": "item"
@@ -120,6 +125,16 @@
     {
       "path": "/items/blue-moonlight",
       "name": "Blue Moonlight",
+      "kind": "item"
+    },
+    {
+      "path": "/items/blue-shouldermail",
+      "name": "Blue Shouldermail",
+      "kind": "item"
+    },
+    {
+      "path": "/items/blue-shouldermail-pants",
+      "name": "Blue Shouldermail Pants",
       "kind": "item"
     },
     {
@@ -203,6 +218,11 @@
       "kind": "item"
     },
     {
+      "path": "/monsters/cold-eye",
+      "name": "Cold Eye",
+      "kind": "monster"
+    },
+    {
       "path": "/quests/maya-s-first-collection",
       "name": "Collecting For Maya (Maya's First Collection)",
       "kind": "quest"
@@ -226,6 +246,11 @@
       "path": "/items/dark-moonlight",
       "name": "Dark Moonlight",
       "kind": "item"
+    },
+    {
+      "path": "/monsters/dark-nependeath",
+      "name": "Dark Nependeath",
+      "kind": "monster"
     },
     {
       "path": "/items/dark-starlight",
@@ -276,6 +301,11 @@
       "path": "/monsters/firebomb",
       "name": "Firebomb",
       "kind": "monster"
+    },
+    {
+      "path": "/items/firebomb-flame",
+      "name": "Firebomb Flame",
+      "kind": "item"
     },
     {
       "path": "/maps/forest-west-of-henesys",
@@ -368,6 +398,11 @@
       "kind": "recipe"
     },
     {
+      "path": "/items/green-sonata",
+      "name": "Green Sonata",
+      "kind": "item"
+    },
+    {
       "path": "/items/green-starlight",
       "name": "Green Starlight",
       "kind": "item"
@@ -378,9 +413,19 @@
       "kind": "item"
     },
     {
+      "path": "/monsters/green-trixter",
+      "name": "Green Trixter",
+      "kind": "monster"
+    },
+    {
       "path": "/recipes/craft-hardwood-wand",
       "name": "Hardwood Wand",
       "kind": "recipe"
+    },
+    {
+      "path": "/items/heart",
+      "name": "Heart",
+      "kind": "item"
     },
     {
       "path": "/maps/hunting-ground-in-the-deep-forest-i",
@@ -428,6 +473,11 @@
       "kind": "map"
     },
     {
+      "path": "/items/knuckle-mace",
+      "name": "Knuckle Mace",
+      "kind": "item"
+    },
+    {
       "path": "/maps/l-forest-ii",
       "name": "L Forest II",
       "kind": "map"
@@ -441,6 +491,11 @@
       "path": "/items/long-brown-beard",
       "name": "Long Brown Beard",
       "kind": "item"
+    },
+    {
+      "path": "/monsters/lorang",
+      "name": "Lorang",
+      "kind": "monster"
     },
     {
       "path": "/npcs/mai",
@@ -523,6 +578,11 @@
       "kind": "monster"
     },
     {
+      "path": "/items/power-crystal-ore",
+      "name": "Power Crystal Ore",
+      "kind": "item"
+    },
+    {
       "path": "/items/power-elixir",
       "name": "Power Elixir",
       "kind": "item"
@@ -550,6 +610,11 @@
     {
       "path": "/items/red-moonlight",
       "name": "Red Moonlight",
+      "kind": "item"
+    },
+    {
+      "path": "/items/red-seraphis",
+      "name": "Red Seraphis",
       "kind": "item"
     },
     {
@@ -581,6 +646,11 @@
       "path": "/quests/collecting-150-cursed-dolls",
       "name": "Rowen the Fairy and the Cursed Doll (Collecting 150 Cursed Dolls)",
       "kind": "quest"
+    },
+    {
+      "path": "/items/sai",
+      "name": "Sai",
+      "kind": "item"
     },
     {
       "path": "/npcs/sam",
@@ -683,6 +753,11 @@
       "kind": "item"
     },
     {
+      "path": "/monsters/star-pixie",
+      "name": "Star Pixie",
+      "kind": "monster"
+    },
+    {
       "path": "/items/sword",
       "name": "Sword",
       "kind": "item"
@@ -733,6 +808,11 @@
       "kind": "map"
     },
     {
+      "path": "/items/the-magic-rock",
+      "name": "The Magic Rock",
+      "kind": "item"
+    },
+    {
       "path": "/quests/the-reason-behind-the-mushroom-studies",
       "name": "The Reason Behind the Mushroom Studies",
       "kind": "quest"
@@ -765,6 +845,11 @@
     {
       "path": "/items/topwear-mp-scroll-greater",
       "name": "Topwear MP Scroll: Greater",
+      "kind": "item"
+    },
+    {
+      "path": "/items/traus",
+      "name": "Traus",
       "kind": "item"
     },
     {
@@ -810,6 +895,11 @@
     {
       "path": "/items/white-undershirt",
       "name": "White Undershirt",
+      "kind": "item"
+    },
+    {
+      "path": "/items/yakuza-scar",
+      "name": "Yakuza Scar",
       "kind": "item"
     }
   ]

@@ -1,0 +1,135 @@
+{
+  "schemaVersion": 1,
+  "path": "/items/green-sonata",
+  "kind": "item",
+  "name": "Green Sonata",
+  "source": "CCPLZ",
+  "sourceUrl": "https://ccplz.cc/items/green-sonata",
+  "checkedAt": "2026-10-19T10:00:28.900Z",
+  "notice": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial.",
+  "fields": [
+    {
+      "label": "Type",
+      "value": "Hat"
+    },
+    {
+      "label": "Required level",
+      "value": "50"
+    },
+    {
+      "label": "Class",
+      "value": "Thief"
+    },
+    {
+      "label": "Weapon defense",
+      "value": "+39"
+    },
+    {
+      "label": "DEX",
+      "value": "+5"
+    },
+    {
+      "label": "Upgrade slots",
+      "value": "7"
+    },
+    {
+      "label": "NPC sell price",
+      "value": "6,600 mesos"
+    },
+    {
+      "label": "Required STR",
+      "value": "0"
+    },
+    {
+      "label": "Required DEX",
+      "value": "40"
+    },
+    {
+      "label": "Required INT",
+      "value": "0"
+    },
+    {
+      "label": "Required LUK",
+      "value": "90"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Dropped by",
+      "links": [
+        {
+          "name": "Black Ratz",
+          "path": "/monsters/black-ratz",
+          "detail": "Level 34, 0.08% historical rate"
+        },
+        {
+          "name": "Dark Stone Golem",
+          "path": "/monsters/dark-stone-golem",
+          "detail": "Level 58, 0.15% historical rate"
+        },
+        {
+          "name": "Firebomb",
+          "path": "/monsters/firebomb",
+          "detail": "Level 51, 0.15% historical rate"
+        },
+        {
+          "name": "Jr. Cerebes",
+          "path": "/monsters/jr-cerebes",
+          "detail": "Level 43, 0.15% historical rate"
+        },
+        {
+          "name": "Propelly",
+          "path": "/monsters/propelly",
+          "detail": "Level 37, 0.08% historical rate"
+        }
+      ],
+      "total": 5
+    },
+    {
+      "title": "Similar equipment",
+      "links": [
+        {
+          "name": "Aqua Golden Circlet",
+          "path": "/items/aqua-golden-circlet",
+          "detail": "Level 50"
+        },
+        {
+          "name": "Black Maro",
+          "path": "/items/black-maro",
+          "detail": "Level 50"
+        },
+        {
+          "name": "Blue Maro",
+          "path": "/items/blue-maro",
+          "detail": "Level 50"
+        },
+        {
+          "name": "Blue Sonata",
+          "path": "/items/blue-sonata",
+          "detail": "Level 50"
+        },
+        {
+          "name": "Bronze Crusader Helm",
+          "path": "/items/bronze-crusader-helm",
+          "detail": "Level 50"
+        },
+        {
+          "name": "Brown Sonata",
+          "path": "/items/brown-sonata",
+          "detail": "Level 50"
+        },
+        {
+          "name": "Dark Golden Circlet",
+          "path": "/items/dark-golden-circlet",
+          "detail": "Level 50"
+        },
+        {
+          "name": "Flame Golden Circlet",
+          "path": "/items/flame-golden-circlet",
+          "detail": "Level 50"
+        }
+      ],
+      "total": 8
+    }
+  ]
+}

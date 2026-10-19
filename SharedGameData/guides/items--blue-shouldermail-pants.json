@@ -1,0 +1,120 @@
+{
+  "schemaVersion": 1,
+  "path": "/items/blue-shouldermail-pants",
+  "kind": "item",
+  "name": "Blue Shouldermail Pants",
+  "source": "CCPLZ",
+  "sourceUrl": "https://ccplz.cc/items/blue-shouldermail-pants",
+  "checkedAt": "2026-10-19T10:00:22.756Z",
+  "notice": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial.",
+  "fields": [
+    {
+      "label": "Type",
+      "value": "Bottomwear"
+    },
+    {
+      "label": "Required level",
+      "value": "50"
+    },
+    {
+      "label": "Class",
+      "value": "Warrior"
+    },
+    {
+      "label": "Weapon defense",
+      "value": "+57"
+    },
+    {
+      "label": "DEX",
+      "value": "+5"
+    },
+    {
+      "label": "Upgrade slots",
+      "value": "7"
+    },
+    {
+      "label": "NPC sell price",
+      "value": "8,800 mesos"
+    },
+    {
+      "label": "Required STR",
+      "value": "90"
+    },
+    {
+      "label": "Required DEX",
+      "value": "40"
+    },
+    {
+      "label": "Required INT",
+      "value": "0"
+    },
+    {
+      "label": "Required LUK",
+      "value": "0"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Dropped by",
+      "links": [
+        {
+          "name": "Firebomb",
+          "path": "/monsters/firebomb",
+          "detail": "Level 51, 0.08% historical rate"
+        },
+        {
+          "name": "Pepe",
+          "path": "/monsters/pepe",
+          "detail": "Level 60, 0.08% historical rate"
+        }
+      ],
+      "total": 2
+    },
+    {
+      "title": "Similar equipment",
+      "links": [
+        {
+          "name": "Blue China Pants",
+          "path": "/items/blue-china-pants",
+          "detail": "Level 50"
+        },
+        {
+          "name": "Blue Moon Pants",
+          "path": "/items/blue-moon-pants",
+          "detail": "Level 50"
+        },
+        {
+          "name": "Brown China Pants",
+          "path": "/items/brown-china-pants",
+          "detail": "Level 50"
+        },
+        {
+          "name": "Brown Moon Pants",
+          "path": "/items/brown-moon-pants",
+          "detail": "Level 50"
+        },
+        {
+          "name": "Dark Shouldermail Pants",
+          "path": "/items/dark-shouldermail-pants",
+          "detail": "Level 50"
+        },
+        {
+          "name": "Green China Pants",
+          "path": "/items/green-china-pants",
+          "detail": "Level 50"
+        },
+        {
+          "name": "Ivory Shouldermail Pants",
+          "path": "/items/ivory-shouldermail-pants",
+          "detail": "Level 50"
+        },
+        {
+          "name": "Maroon Moon Pants",
+          "path": "/items/maroon-moon-pants",
+          "detail": "Level 50"
+        }
+      ],
+      "total": 8
+    }
+  ]
+}

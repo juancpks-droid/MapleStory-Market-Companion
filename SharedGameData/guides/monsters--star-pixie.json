@@ -1,0 +1,213 @@
+{
+  "schemaVersion": 1,
+  "path": "/monsters/star-pixie",
+  "kind": "monster",
+  "name": "Star Pixie",
+  "source": "CCPLZ",
+  "sourceUrl": "https://ccplz.cc/monsters/star-pixie",
+  "checkedAt": "2026-10-19T10:01:10.750Z",
+  "notice": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial.",
+  "fields": [
+    {
+      "label": "Level",
+      "value": "35"
+    },
+    {
+      "label": "HP",
+      "value": "930"
+    },
+    {
+      "label": "EXP",
+      "value": "74"
+    },
+    {
+      "label": "MP",
+      "value": "70"
+    },
+    {
+      "label": "Attack",
+      "value": "154"
+    },
+    {
+      "label": "Defense",
+      "value": "0"
+    },
+    {
+      "label": "Accuracy",
+      "value": "125"
+    },
+    {
+      "label": "Avoidability",
+      "value": "22"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Where it spawns",
+      "links": [
+        {
+          "name": "Cloud Park I",
+          "path": "/maps/cloud-park-i",
+          "detail": "Ossyria, 35 spawn points"
+        },
+        {
+          "name": "Cloud Park II",
+          "path": "/maps/cloud-park-ii",
+          "detail": "Ossyria, 31 spawn points"
+        },
+        {
+          "name": "Cloud Park III",
+          "path": "/maps/cloud-park-iii",
+          "detail": "Ossyria, 21 spawn points"
+        },
+        {
+          "name": "Cloud Park IV",
+          "path": "/maps/cloud-park-iv",
+          "detail": "Ossyria, 16 spawn points"
+        },
+        {
+          "name": "Strolling Path",
+          "path": "/maps/strolling-path",
+          "detail": "Ossyria, 15 spawn points"
+        },
+        {
+          "name": "Disposed Flower Garden",
+          "path": "/maps/disposed-flower-garden",
+          "detail": "Ossyria, 5 spawn points"
+        }
+      ],
+      "total": 6
+    },
+    {
+      "title": "Drops",
+      "links": [
+        {
+          "name": "Arrows for Bows",
+          "path": "/items/arrows-for-bows",
+          "detail": "Arrows for bows, 3% historical rate"
+        },
+        {
+          "name": "Arrows for Crossbows",
+          "path": "/items/arrows-for-crossbows",
+          "detail": "Arrows for crossbows, 3% historical rate"
+        },
+        {
+          "name": "Battle Shield",
+          "path": "/items/battle-shield",
+          "detail": "Shield, 0.07% historical rate"
+        },
+        {
+          "name": "Black Marker",
+          "path": "/items/black-marker",
+          "detail": "Gloves, 0.1% historical rate"
+        },
+        {
+          "name": "Blue Guiltian",
+          "path": "/items/blue-guiltian",
+          "detail": "Hat, 0.15% historical rate"
+        },
+        {
+          "name": "Blue Potion (for Olaf's Training: Olaf's First Training)",
+          "path": "/items/blue-potion",
+          "detail": "Potions, 10% historical rate"
+        },
+        {
+          "name": "Blue White-Lined Boots",
+          "path": "/items/blue-white-lined-boots",
+          "detail": "Shoes, 0.08% historical rate"
+        },
+        {
+          "name": "Brown Moonlight",
+          "path": "/items/brown-moonlight",
+          "detail": "Overall, 0.07% historical rate"
+        },
+        {
+          "name": "Cape STR Scroll: Lesser",
+          "path": "/items/cape-str-scroll-lesser",
+          "detail": "Cape scrolls, 0.03% historical rate"
+        },
+        {
+          "name": "Fish Spear",
+          "path": "/items/fish-spear",
+          "detail": "Spear, 0.05% historical rate"
+        },
+        {
+          "name": "Green Silky Boots",
+          "path": "/items/green-silky-boots",
+          "detail": "Shoes, 0.08% historical rate"
+        },
+        {
+          "name": "Pan Lid",
+          "path": "/items/pan-lid",
+          "detail": "Shield, 0.07% historical rate"
+        },
+        {
+          "name": "Red Burgler",
+          "path": "/items/red-burgler",
+          "detail": "Hat, 0.15% historical rate"
+        },
+        {
+          "name": "Red Legolia",
+          "path": "/items/red-legolia",
+          "detail": "Topwear, 0.08% historical rate"
+        },
+        {
+          "name": "Red Legolia Pants",
+          "path": "/items/red-legolia-pants",
+          "detail": "Bottomwear, 0.08% historical rate"
+        },
+        {
+          "name": "Shield DEF Scroll: Greater",
+          "path": "/items/shield-def-scroll-greater",
+          "detail": "Shield scrolls, 0.03% historical rate"
+        },
+        {
+          "name": "Sky Blue Umbrella",
+          "path": "/items/sky-blue-umbrella",
+          "detail": "One-handed sword, 0.07% historical rate"
+        },
+        {
+          "name": "Star Pixie's Starpiece",
+          "path": "/items/star-pixie-s-starpiece",
+          "detail": "Monster drops, 60% historical rate"
+        },
+        {
+          "name": "Steel Missel",
+          "path": "/items/steel-missel",
+          "detail": "Gloves, 0.1% historical rate"
+        },
+        {
+          "name": "Stiff Feather",
+          "path": "/items/stiff-feather",
+          "detail": "Crafting materials, 20% historical rate"
+        },
+        {
+          "name": "The Magic Rock",
+          "path": "/items/the-magic-rock",
+          "detail": "Magic rocks, 1% historical rate"
+        },
+        {
+          "name": "Traus",
+          "path": "/items/traus",
+          "detail": "One-handed sword, 0.07% historical rate"
+        },
+        {
+          "name": "Vaulter 2000",
+          "path": "/items/vaulter-2000",
+          "detail": "Bow, 0.05% historical rate"
+        },
+        {
+          "name": "White Potion",
+          "path": "/items/white-potion",
+          "detail": "Potions, 10% historical rate"
+        },
+        {
+          "name": "Wisdom Crystal Ore",
+          "path": "/items/wisdom-crystal-ore",
+          "detail": "Crafting materials, 1% historical rate"
+        }
+      ],
+      "total": 25
+    }
+  ]
+}

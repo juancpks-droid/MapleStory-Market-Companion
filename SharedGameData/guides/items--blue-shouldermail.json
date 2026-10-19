@@ -1,0 +1,125 @@
+{
+  "schemaVersion": 1,
+  "path": "/items/blue-shouldermail",
+  "kind": "item",
+  "name": "Blue Shouldermail",
+  "source": "CCPLZ",
+  "sourceUrl": "https://ccplz.cc/items/blue-shouldermail",
+  "checkedAt": "2026-10-19T10:00:19.787Z",
+  "notice": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial.",
+  "fields": [
+    {
+      "label": "Type",
+      "value": "Topwear"
+    },
+    {
+      "label": "Required level",
+      "value": "50"
+    },
+    {
+      "label": "Class",
+      "value": "Warrior"
+    },
+    {
+      "label": "Weapon defense",
+      "value": "+75"
+    },
+    {
+      "label": "DEX",
+      "value": "+5"
+    },
+    {
+      "label": "Upgrade slots",
+      "value": "7"
+    },
+    {
+      "label": "NPC sell price",
+      "value": "11,000 mesos"
+    },
+    {
+      "label": "Required STR",
+      "value": "90"
+    },
+    {
+      "label": "Required DEX",
+      "value": "40"
+    },
+    {
+      "label": "Required INT",
+      "value": "0"
+    },
+    {
+      "label": "Required LUK",
+      "value": "0"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Dropped by",
+      "links": [
+        {
+          "name": "Drumming Bunny",
+          "path": "/monsters/drumming-bunny",
+          "detail": "Level 31, 0.08% historical rate"
+        },
+        {
+          "name": "Firebomb",
+          "path": "/monsters/firebomb",
+          "detail": "Level 51, 0.08% historical rate"
+        },
+        {
+          "name": "Pepe",
+          "path": "/monsters/pepe",
+          "detail": "Level 60, 0.08% historical rate"
+        }
+      ],
+      "total": 3
+    },
+    {
+      "title": "Similar equipment",
+      "links": [
+        {
+          "name": "Blue China",
+          "path": "/items/blue-china",
+          "detail": "Level 50"
+        },
+        {
+          "name": "Blue Moon (Topwear)",
+          "path": "/items/blue-moon-1041078",
+          "detail": "Level 50"
+        },
+        {
+          "name": "Brown China",
+          "path": "/items/brown-china",
+          "detail": "Level 50"
+        },
+        {
+          "name": "Brown Moon",
+          "path": "/items/brown-moon",
+          "detail": "Level 50"
+        },
+        {
+          "name": "Dark Shouldermail",
+          "path": "/items/dark-shouldermail",
+          "detail": "Level 50"
+        },
+        {
+          "name": "Green China",
+          "path": "/items/green-china",
+          "detail": "Level 50"
+        },
+        {
+          "name": "Ivory Shouldermail",
+          "path": "/items/ivory-shouldermail",
+          "detail": "Level 50"
+        },
+        {
+          "name": "Maroon Moon",
+          "path": "/items/maroon-moon",
+          "detail": "Level 50"
+        }
+      ],
+      "total": 8
+    }
+  ]
+}

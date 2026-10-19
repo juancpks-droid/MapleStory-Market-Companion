@@ -1,0 +1,138 @@
+{
+  "schemaVersion": 1,
+  "path": "/items/sai",
+  "kind": "item",
+  "name": "Sai",
+  "source": "CCPLZ",
+  "sourceUrl": "https://ccplz.cc/items/sai",
+  "checkedAt": "2026-10-19T10:00:40.733Z",
+  "notice": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial.",
+  "fields": [
+    {
+      "label": "Type",
+      "value": "Dagger"
+    },
+    {
+      "label": "Required level",
+      "value": "50"
+    },
+    {
+      "label": "Class",
+      "value": "Warrior, Thief"
+    },
+    {
+      "label": "Weapon attack",
+      "value": "+67"
+    },
+    {
+      "label": "Upgrade slots",
+      "value": "7"
+    },
+    {
+      "label": "NPC sell price",
+      "value": "13,500 mesos"
+    },
+    {
+      "label": "Required STR",
+      "value": "45"
+    },
+    {
+      "label": "Required DEX",
+      "value": "0"
+    },
+    {
+      "label": "Required INT",
+      "value": "0"
+    },
+    {
+      "label": "Required LUK",
+      "value": "100"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Dropped by",
+      "links": [
+        {
+          "name": "Duskmander",
+          "path": "/monsters/duskmander",
+          "detail": "Level 50"
+        }
+      ],
+      "total": 1
+    },
+    {
+      "title": "Also dropped by, in older versions",
+      "links": [
+        {
+          "name": "Copper Drake",
+          "path": "/monsters/copper-drake",
+          "detail": "Level 45, 0.05% historical rate"
+        },
+        {
+          "name": "Firebomb",
+          "path": "/monsters/firebomb",
+          "detail": "Level 51, 0.05% historical rate"
+        }
+      ],
+      "total": 2
+    },
+    {
+      "title": "How to craft it",
+      "links": [
+        {
+          "name": "Sai",
+          "path": "/recipes/craft-sai",
+          "detail": "Crafting skill level 10"
+        }
+      ],
+      "total": 1
+    },
+    {
+      "title": "Similar equipment",
+      "links": [
+        {
+          "name": "Shinkita",
+          "path": "/items/shinkita",
+          "detail": "Level 50"
+        },
+        {
+          "name": "Bazlud",
+          "path": "/items/bazlud",
+          "detail": "Level 45"
+        },
+        {
+          "name": "Gephart",
+          "path": "/items/gephart",
+          "detail": "Level 40"
+        },
+        {
+          "name": "Korean Fan",
+          "path": "/items/korean-fan",
+          "detail": "Level 40"
+        },
+        {
+          "name": "Deadly Fin",
+          "path": "/items/deadly-fin",
+          "detail": "Level 60"
+        },
+        {
+          "name": "Serpent's Coil",
+          "path": "/items/serpent-s-coil",
+          "detail": "Level 60"
+        },
+        {
+          "name": "Halfmoon Zamadar",
+          "path": "/items/halfmoon-zamadar",
+          "detail": "Level 35"
+        },
+        {
+          "name": "Cass",
+          "path": "/items/cass",
+          "detail": "Level 30"
+        }
+      ],
+      "total": 8
+    }
+  ]
+}
