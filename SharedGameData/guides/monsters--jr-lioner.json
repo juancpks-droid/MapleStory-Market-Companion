@@ -1,0 +1,162 @@
+{
+  "schemaVersion": 1,
+  "path": "/monsters/jr-lioner",
+  "kind": "monster",
+  "name": "Jr. Lioner",
+  "source": "CCPLZ",
+  "sourceUrl": "https://ccplz.cc/monsters/jr-lioner",
+  "checkedAt": "2026-10-20T09:56:24.910Z",
+  "notice": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial.",
+  "fields": [
+    {
+      "label": "Level",
+      "value": "33"
+    },
+    {
+      "label": "HP",
+      "value": "910"
+    },
+    {
+      "label": "EXP",
+      "value": "66"
+    },
+    {
+      "label": "MP",
+      "value": "70"
+    },
+    {
+      "label": "Attack",
+      "value": "185"
+    },
+    {
+      "label": "Defense",
+      "value": "10"
+    },
+    {
+      "label": "Accuracy",
+      "value": "112"
+    },
+    {
+      "label": "Avoidability",
+      "value": "24"
+    },
+    {
+      "label": "Weak to",
+      "value": "Ice"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Where it spawns",
+      "links": [
+        {
+          "name": "Garden of Yellow I",
+          "path": "/maps/garden-of-yellow-i",
+          "detail": "Ossyria, 22 spawn points"
+        },
+        {
+          "name": "Garden of Yellow II",
+          "path": "/maps/garden-of-yellow-ii",
+          "detail": "Ossyria, 8 spawn points"
+        },
+        {
+          "name": "The Road to Garden of 3 Colors",
+          "path": "/maps/the-road-to-garden-of-3-colors",
+          "detail": "Ossyria, 7 spawn points"
+        }
+      ],
+      "total": 3
+    },
+    {
+      "title": "Drops",
+      "links": [
+        {
+          "name": "Blue Guise",
+          "path": "/items/blue-guise",
+          "detail": "Hat, 0.15% historical rate"
+        },
+        {
+          "name": "Blue Potion (for Olaf's Training: Olaf's First Training)",
+          "path": "/items/blue-potion",
+          "detail": "Potions, 10% historical rate"
+        },
+        {
+          "name": "Bow Attack Scroll: Intermediate",
+          "path": "/items/bow-attack-scroll-intermediate",
+          "detail": "Bow scrolls, 0.03% historical rate"
+        },
+        {
+          "name": "Brown Hunter Boots",
+          "path": "/items/brown-hunter-boots",
+          "detail": "Shoes, 0.08% historical rate"
+        },
+        {
+          "name": "Dark Guardian",
+          "path": "/items/dark-guardian",
+          "detail": "Claw, 0.05% historical rate"
+        },
+        {
+          "name": "Gold Scaler",
+          "path": "/items/gold-scaler",
+          "detail": "Gloves, 0.1% historical rate"
+        },
+        {
+          "name": "Leather",
+          "path": "/items/leather",
+          "detail": "Monster drops, 5% historical rate"
+        },
+        {
+          "name": "Purple Salt Shoes",
+          "path": "/items/purple-salt-shoes",
+          "detail": "Shoes, 0.08% historical rate"
+        },
+        {
+          "name": "Red Moonlight",
+          "path": "/items/red-moonlight",
+          "detail": "Overall, 0.07% historical rate"
+        },
+        {
+          "name": "Red Starlight",
+          "path": "/items/red-starlight",
+          "detail": "Overall, 0.07% historical rate"
+        },
+        {
+          "name": "Reef Claw",
+          "path": "/items/reef-claw",
+          "detail": "Dagger, 0.05% historical rate"
+        },
+        {
+          "name": "Silver Fitted Mail",
+          "path": "/items/silver-fitted-mail",
+          "detail": "Overall, 0.07% historical rate"
+        },
+        {
+          "name": "Solid Horn",
+          "path": "/items/solid-horn",
+          "detail": "Monster drops, 60% historical rate"
+        },
+        {
+          "name": "Stiff Feather",
+          "path": "/items/stiff-feather",
+          "detail": "Crafting materials, 20% historical rate"
+        },
+        {
+          "name": "The Summoning Rock",
+          "path": "/items/the-summoning-rock",
+          "detail": "Magic rocks, 1% historical rate"
+        },
+        {
+          "name": "White Potion",
+          "path": "/items/white-potion",
+          "detail": "Potions, 10% historical rate"
+        },
+        {
+          "name": "Wisdom Crystal Ore",
+          "path": "/items/wisdom-crystal-ore",
+          "detail": "Crafting materials, 1% historical rate"
+        }
+      ],
+      "total": 17
+    }
+  ]
+}

@@ -1,0 +1,139 @@
+{
+  "schemaVersion": 1,
+  "path": "/items/black-lappy-boots",
+  "kind": "item",
+  "name": "Black Lappy Boots",
+  "source": "CCPLZ",
+  "sourceUrl": "https://ccplz.cc/items/black-lappy-boots",
+  "checkedAt": "2026-10-20T09:56:37.017Z",
+  "notice": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial.",
+  "fields": [
+    {
+      "label": "Type",
+      "value": "Shoes"
+    },
+    {
+      "label": "Required level",
+      "value": "25"
+    },
+    {
+      "label": "Class",
+      "value": "Thief"
+    },
+    {
+      "label": "Weapon defense",
+      "value": "+16"
+    },
+    {
+      "label": "STR",
+      "value": "+2"
+    },
+    {
+      "label": "Max HP",
+      "value": "+5"
+    },
+    {
+      "label": "Avoidability",
+      "value": "+2"
+    },
+    {
+      "label": "Upgrade slots",
+      "value": "5"
+    },
+    {
+      "label": "NPC sell price",
+      "value": "1,500 mesos"
+    },
+    {
+      "label": "Required STR",
+      "value": "0"
+    },
+    {
+      "label": "Required DEX",
+      "value": "15"
+    },
+    {
+      "label": "Required INT",
+      "value": "0"
+    },
+    {
+      "label": "Required LUK",
+      "value": "40"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Dropped by",
+      "links": [
+        {
+          "name": "Dark Axe Stump",
+          "path": "/monsters/dark-axe-stump",
+          "detail": "Level 23, 0.08% historical rate"
+        },
+        {
+          "name": "Mano",
+          "path": "/monsters/mano",
+          "detail": "Level 20, 0.8% historical rate"
+        }
+      ],
+      "total": 2
+    },
+    {
+      "title": "How to craft it",
+      "links": [
+        {
+          "name": "Black Lappy Boots",
+          "path": "/recipes/craft-black-lappy-boots",
+          "detail": "Crafting skill level 5"
+        }
+      ],
+      "total": 1
+    },
+    {
+      "title": "Similar equipment",
+      "links": [
+        {
+          "name": "Black Wind Shoes",
+          "path": "/items/black-wind-shoes",
+          "detail": "Level 25"
+        },
+        {
+          "name": "Blue Lappy Boots",
+          "path": "/items/blue-lappy-boots",
+          "detail": "Level 25"
+        },
+        {
+          "name": "Brown Jack Boots",
+          "path": "/items/brown-jack-boots",
+          "detail": "Level 25"
+        },
+        {
+          "name": "Dark War Boots",
+          "path": "/items/dark-war-boots",
+          "detail": "Level 25"
+        },
+        {
+          "name": "Gold War Boots",
+          "path": "/items/gold-war-boots",
+          "detail": "Level 25"
+        },
+        {
+          "name": "Green Jack Boots",
+          "path": "/items/green-jack-boots",
+          "detail": "Level 25"
+        },
+        {
+          "name": "Green Lappy Boots",
+          "path": "/items/green-lappy-boots",
+          "detail": "Level 25"
+        },
+        {
+          "name": "Mithril War Boots",
+          "path": "/items/mithril-war-boots",
+          "detail": "Level 25"
+        }
+      ],
+      "total": 8
+    }
+  ]
+}

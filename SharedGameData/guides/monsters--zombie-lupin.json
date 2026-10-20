@@ -1,0 +1,254 @@
+{
+  "schemaVersion": 1,
+  "path": "/monsters/zombie-lupin",
+  "kind": "monster",
+  "name": "Zombie Lupin",
+  "source": "CCPLZ",
+  "sourceUrl": "https://ccplz.cc/monsters/zombie-lupin",
+  "checkedAt": "2026-10-20T09:56:18.906Z",
+  "notice": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial.",
+  "fields": [
+    {
+      "label": "Level",
+      "value": "41"
+    },
+    {
+      "label": "HP",
+      "value": "1,774"
+    },
+    {
+      "label": "EXP",
+      "value": "89"
+    },
+    {
+      "label": "MP",
+      "value": "50"
+    },
+    {
+      "label": "Attack",
+      "value": "221"
+    },
+    {
+      "label": "Defense",
+      "value": "0"
+    },
+    {
+      "label": "Accuracy",
+      "value": "121"
+    },
+    {
+      "label": "Avoidability",
+      "value": "29"
+    },
+    {
+      "label": "Weak to",
+      "value": "Holy"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Where it spawns",
+      "links": [
+        {
+          "name": "Monkey Swamp III",
+          "path": "/maps/monkey-swamp-iii",
+          "detail": "Victoria Island, 31 spawn points"
+        },
+        {
+          "name": "Tree Dungeon, Monkey Forest II",
+          "path": "/maps/tree-dungeon-monkey-forest-ii",
+          "detail": "Victoria Island, 26 spawn points"
+        },
+        {
+          "name": "Tree Dungeon, Monkey Forest I",
+          "path": "/maps/tree-dungeon-monkey-forest-i",
+          "detail": "Victoria Island, 26 spawn points"
+        },
+        {
+          "name": "Monkey Forest II",
+          "path": "/maps/monkey-forest-ii",
+          "detail": "Victoria Island, 25 spawn points"
+        },
+        {
+          "name": "The Forest of Evil II",
+          "path": "/maps/the-forest-of-evil-ii",
+          "detail": "Victoria Island, 16 spawn points"
+        },
+        {
+          "name": "Monkey Swamp II",
+          "path": "/maps/monkey-swamp-ii",
+          "detail": "Victoria Island, 13 spawn points"
+        },
+        {
+          "name": "The Forest of Evil I",
+          "path": "/maps/the-forest-of-evil-i",
+          "detail": "Victoria Island, 11 spawn points"
+        }
+      ],
+      "total": 7
+    },
+    {
+      "title": "Reported drops",
+      "links": [
+        {
+          "name": "Black Napoleon",
+          "path": "/items/black-napoleon",
+          "detail": "Cape"
+        },
+        {
+          "name": "Cursed Doll",
+          "path": "/items/cursed-doll",
+          "detail": "Monster drops, 60% historical rate"
+        },
+        {
+          "name": "Lionheart",
+          "path": "/items/lionheart",
+          "detail": "Two-handed sword"
+        },
+        {
+          "name": "White Potion",
+          "path": "/items/white-potion",
+          "detail": "Potions, 10% historical rate"
+        }
+      ],
+      "total": 4
+    },
+    {
+      "title": "Older-version drops",
+      "links": [
+        {
+          "name": "Arc Staff",
+          "path": "/items/arc-staff",
+          "detail": "Staff, 0.07% historical rate"
+        },
+        {
+          "name": "Black Jangoon Armor",
+          "path": "/items/black-jangoon-armor",
+          "detail": "Topwear, 0.08% historical rate"
+        },
+        {
+          "name": "Black Jangoon Skirt",
+          "path": "/items/black-jangoon-skirt",
+          "detail": "Bottomwear, 0.08% historical rate"
+        },
+        {
+          "name": "Blood Avarice",
+          "path": "/items/blood-avarice",
+          "detail": "Claw, 0.05% historical rate"
+        },
+        {
+          "name": "Blue Potion (for Olaf's Training: Olaf's First Training)",
+          "path": "/items/blue-potion",
+          "detail": "Potions, 10% historical rate"
+        },
+        {
+          "name": "Bronze Wolfskin",
+          "path": "/items/bronze-wolfskin",
+          "detail": "Gloves, 0.1% historical rate"
+        },
+        {
+          "name": "Brown Guiltian",
+          "path": "/items/brown-guiltian",
+          "detail": "Hat, 0.15% historical rate"
+        },
+        {
+          "name": "Dark Legolia",
+          "path": "/items/dark-legolia",
+          "detail": "Topwear, 0.08% historical rate"
+        },
+        {
+          "name": "Dark Pilfer",
+          "path": "/items/dark-pilfer",
+          "detail": "Hat, 0.15% historical rate"
+        },
+        {
+          "name": "Dark Starlight",
+          "path": "/items/dark-starlight",
+          "detail": "Overall, 0.07% historical rate"
+        },
+        {
+          "name": "Emerald Fitted Mail",
+          "path": "/items/emerald-fitted-mail",
+          "detail": "Overall, 0.07% historical rate"
+        },
+        {
+          "name": "Green Legolier",
+          "path": "/items/green-legolier",
+          "detail": "Topwear, 0.08% historical rate"
+        },
+        {
+          "name": "Green Legolier Pants",
+          "path": "/items/green-legolier-pants",
+          "detail": "Bottomwear, 0.08% historical rate"
+        },
+        {
+          "name": "Purple Avenger",
+          "path": "/items/purple-avenger",
+          "detail": "Overall, 0.07% historical rate"
+        },
+        {
+          "name": "Rower",
+          "path": "/items/rower",
+          "detail": "Crossbow, 0.05% historical rate"
+        },
+        {
+          "name": "Shinkita",
+          "path": "/items/shinkita",
+          "detail": "Dagger, 0.05% historical rate"
+        },
+        {
+          "name": "Silver Crow",
+          "path": "/items/silver-crow",
+          "detail": "Crossbow, 0.05% historical rate"
+        },
+        {
+          "name": "Stiff Feather",
+          "path": "/items/stiff-feather",
+          "detail": "Crafting materials, 20% historical rate"
+        },
+        {
+          "name": "The Nine Dragons",
+          "path": "/items/the-nine-dragons",
+          "detail": "Polearm, 0.07% historical rate"
+        },
+        {
+          "name": "Yellow Jangoon Armor",
+          "path": "/items/yellow-jangoon-armor",
+          "detail": "Topwear, 0.08% historical rate"
+        }
+      ],
+      "total": 20
+    },
+    {
+      "title": "Quests that need it",
+      "links": [
+        {
+          "name": "Rowen the Fairy and the Cursed Doll (Collecting 100 Cursed Dolls)",
+          "path": "/quests/collecting-100-cursed-dolls",
+          "detail": "Level 36"
+        },
+        {
+          "name": "Rowen the Fairy and the Cursed Doll (Collecting 150 Cursed Dolls)",
+          "path": "/quests/collecting-150-cursed-dolls",
+          "detail": "Level 36"
+        },
+        {
+          "name": "Rowen the Fairy and the Cursed Doll (Collecting 200 Cursed Dolls)",
+          "path": "/quests/collecting-200-cursed-dolls",
+          "detail": "Level 36"
+        },
+        {
+          "name": "Rowen the Fairy and the Cursed Doll (Collecting 50 Cursed Dolls)",
+          "path": "/quests/collecting-50-cursed-dolls",
+          "detail": "Level 36"
+        },
+        {
+          "name": "Rowen the Fairy and the Cursed Doll (Collecting 70 Cursed Dolls)",
+          "path": "/quests/collecting-70-cursed-dolls",
+          "detail": "Level 36"
+        }
+      ],
+      "total": 5
+    }
+  ]
+}

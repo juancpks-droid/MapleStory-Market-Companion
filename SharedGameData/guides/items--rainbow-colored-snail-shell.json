@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "path": "/items/rainbow-colored-snail-shell",
+  "kind": "item",
+  "name": "Rainbow-colored Snail Shell",
+  "source": "CCPLZ",
+  "sourceUrl": "https://ccplz.cc/items/rainbow-colored-snail-shell",
+  "checkedAt": "2026-10-20T09:56:28.040Z",
+  "notice": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial.",
+  "fields": [
+    {
+      "label": "Type",
+      "value": "Invasion items"
+    },
+    {
+      "label": "NPC sell price",
+      "value": "100 mesos"
+    },
+    {
+      "label": "Trade restriction flag",
+      "value": "1"
+    },
+    {
+      "label": "Stack limit",
+      "value": "200"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Dropped by",
+      "links": [
+        {
+          "name": "Mano",
+          "path": "/monsters/mano",
+          "detail": "Level 20, 20% historical rate"
+        }
+      ],
+      "total": 1
+    }
+  ]
+}

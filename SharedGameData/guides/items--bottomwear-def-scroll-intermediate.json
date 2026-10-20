@@ -1,0 +1,76 @@
+{
+  "schemaVersion": 1,
+  "path": "/items/bottomwear-def-scroll-intermediate",
+  "kind": "item",
+  "name": "Bottomwear DEF Scroll: Intermediate",
+  "source": "CCPLZ",
+  "sourceUrl": "https://ccplz.cc/items/bottomwear-def-scroll-intermediate",
+  "checkedAt": "2026-10-20T09:56:42.939Z",
+  "notice": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial.",
+  "fields": [
+    {
+      "label": "Type",
+      "value": "Bottomwear scrolls"
+    },
+    {
+      "label": "Weapon defense",
+      "value": "+4"
+    },
+    {
+      "label": "Magic defense",
+      "value": "+2"
+    },
+    {
+      "label": "NPC sell price",
+      "value": "1 meso"
+    },
+    {
+      "label": "Success rate (%)",
+      "value": "60"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Dropped by",
+      "links": [
+        {
+          "name": "Mano",
+          "path": "/monsters/mano",
+          "detail": "Level 20, 0.3% historical rate"
+        },
+        {
+          "name": "Mushmom",
+          "path": "/monsters/mushmom",
+          "detail": "Level 40, 0.3% historical rate"
+        },
+        {
+          "name": "Tick",
+          "path": "/monsters/tick",
+          "detail": "Level 34, 0.03% historical rate"
+        }
+      ],
+      "total": 3
+    },
+    {
+      "title": "Related items",
+      "links": [
+        {
+          "name": "Bottomwear DEF Scroll: Lesser",
+          "path": "/items/bottomwear-def-scroll-lesser",
+          "detail": ""
+        },
+        {
+          "name": "Bottomwear DEF Scroll: Greater",
+          "path": "/items/bottomwear-def-scroll-greater",
+          "detail": ""
+        },
+        {
+          "name": "Bottomwear DEF Scroll: Chaos",
+          "path": "/items/bottomwear-def-scroll-chaos",
+          "detail": ""
+        }
+      ],
+      "total": 3
+    }
+  ]
+}

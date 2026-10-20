@@ -1,0 +1,198 @@
+{
+  "schemaVersion": 1,
+  "path": "/monsters/dark-stone-golem",
+  "kind": "monster",
+  "name": "Dark Stone Golem",
+  "source": "CCPLZ",
+  "sourceUrl": "https://ccplz.cc/monsters/dark-stone-golem",
+  "checkedAt": "2026-10-20T09:56:15.926Z",
+  "notice": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial.",
+  "fields": [
+    {
+      "label": "Level",
+      "value": "58"
+    },
+    {
+      "label": "HP",
+      "value": "5,428"
+    },
+    {
+      "label": "EXP",
+      "value": "192"
+    },
+    {
+      "label": "MP",
+      "value": "150"
+    },
+    {
+      "label": "Attack",
+      "value": "297"
+    },
+    {
+      "label": "Defense",
+      "value": "0"
+    },
+    {
+      "label": "Accuracy",
+      "value": "121"
+    },
+    {
+      "label": "Avoidability",
+      "value": "31"
+    },
+    {
+      "label": "Weak to",
+      "value": "Holy"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Where it spawns",
+      "links": [
+        {
+          "name": "Sleepy Dungeon V",
+          "path": "/maps/sleepy-dungeon-v",
+          "detail": "Victoria Island, 19 spawn points"
+        },
+        {
+          "name": "Sleepy Dungeon III",
+          "path": "/maps/sleepy-dungeon-iii",
+          "detail": "Victoria Island, 9 spawn points"
+        },
+        {
+          "name": "Sleepy Dungeon IV",
+          "path": "/maps/sleepy-dungeon-iv",
+          "detail": "Victoria Island, 7 spawn points"
+        }
+      ],
+      "total": 3
+    },
+    {
+      "title": "Reported drops",
+      "links": [
+        {
+          "name": "Dark Stone Golem Rubble",
+          "path": "/items/dark-stone-golem-rubble",
+          "detail": "Monster drops, 60% historical rate"
+        }
+      ],
+      "total": 1
+    },
+    {
+      "title": "Older-version drops",
+      "links": [
+        {
+          "name": "Black Magic Cape",
+          "path": "/items/black-magic-cape",
+          "detail": "Cape, 0.1% historical rate"
+        },
+        {
+          "name": "Black Maro",
+          "path": "/items/black-maro",
+          "detail": "Hat, 0.15% historical rate"
+        },
+        {
+          "name": "Blue Goldrunners",
+          "path": "/items/blue-goldrunners",
+          "detail": "Shoes, 0.08% historical rate"
+        },
+        {
+          "name": "Blue Potion (for Olaf's Training: Olaf's First Training)",
+          "path": "/items/blue-potion",
+          "detail": "Potions, 10% historical rate"
+        },
+        {
+          "name": "Blue Tai",
+          "path": "/items/blue-tai",
+          "detail": "Overall, 0.07% historical rate"
+        },
+        {
+          "name": "Brown Pierre Shoes",
+          "path": "/items/brown-pierre-shoes",
+          "detail": "Shoes, 0.08% historical rate"
+        },
+        {
+          "name": "Dark Crystal Ore",
+          "path": "/items/dark-crystal-ore",
+          "detail": "Crafting materials, 1% historical rate"
+        },
+        {
+          "name": "Dark Identity",
+          "path": "/items/dark-identity",
+          "detail": "Hat, 0.15% historical rate"
+        },
+        {
+          "name": "Dark Manute",
+          "path": "/items/dark-manute",
+          "detail": "Gloves, 0.1% historical rate"
+        },
+        {
+          "name": "Dark Starlight",
+          "path": "/items/dark-starlight",
+          "detail": "Overall, 0.07% historical rate"
+        },
+        {
+          "name": "Elixir",
+          "path": "/items/elixir",
+          "detail": "Potions, 2% historical rate"
+        },
+        {
+          "name": "Evil Wings",
+          "path": "/items/evil-wings",
+          "detail": "Staff, 0.07% historical rate"
+        },
+        {
+          "name": "Green Sonata",
+          "path": "/items/green-sonata",
+          "detail": "Hat, 0.15% historical rate"
+        },
+        {
+          "name": "Holy Cross Earrings",
+          "path": "/items/holy-cross-earrings",
+          "detail": "Earring, 0.1% historical rate"
+        },
+        {
+          "name": "Maroon Jangoon Armor",
+          "path": "/items/maroon-jangoon-armor",
+          "detail": "Topwear, 0.08% historical rate"
+        },
+        {
+          "name": "Old Steel Nordic Helm",
+          "path": "/items/old-steel-nordic-helm",
+          "detail": "Hat, 0.15% historical rate"
+        },
+        {
+          "name": "Purple Shadow",
+          "path": "/items/purple-shadow",
+          "detail": "Topwear, 0.08% historical rate"
+        },
+        {
+          "name": "Purple Shadow Pants",
+          "path": "/items/purple-shadow-pants",
+          "detail": "Bottomwear, 0.08% historical rate"
+        },
+        {
+          "name": "Red Orientican",
+          "path": "/items/red-orientican",
+          "detail": "Topwear, 0.08% historical rate"
+        },
+        {
+          "name": "Red Orientican Pants",
+          "path": "/items/red-orientican-pants",
+          "detail": "Bottomwear, 0.08% historical rate"
+        },
+        {
+          "name": "Steel Brist",
+          "path": "/items/steel-brist",
+          "detail": "Gloves, 0.1% historical rate"
+        },
+        {
+          "name": "White Jangoon Pants",
+          "path": "/items/white-jangoon-pants",
+          "detail": "Bottomwear, 0.08% historical rate"
+        }
+      ],
+      "total": 22
+    }
+  ]
+}

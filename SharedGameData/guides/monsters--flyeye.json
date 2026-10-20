@@ -1,0 +1,183 @@
+{
+  "schemaVersion": 1,
+  "path": "/monsters/flyeye",
+  "kind": "monster",
+  "name": "Flyeye",
+  "source": "CCPLZ",
+  "sourceUrl": "https://ccplz.cc/monsters/flyeye",
+  "checkedAt": "2026-10-20T09:56:06.931Z",
+  "notice": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial.",
+  "fields": [
+    {
+      "label": "Level",
+      "value": "41"
+    },
+    {
+      "label": "HP",
+      "value": "1,419"
+    },
+    {
+      "label": "EXP",
+      "value": "99"
+    },
+    {
+      "label": "MP",
+      "value": "60"
+    },
+    {
+      "label": "Attack",
+      "value": "198"
+    },
+    {
+      "label": "Defense",
+      "value": "0"
+    },
+    {
+      "label": "Accuracy",
+      "value": "133"
+    },
+    {
+      "label": "Avoidability",
+      "value": "28"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Where it spawns",
+      "links": [
+        {
+          "name": "Dead Mine IV",
+          "path": "/maps/dead-mine-iv",
+          "detail": "Ossyria, 18 spawn points"
+        },
+        {
+          "name": "The Passage",
+          "path": "/maps/the-passage",
+          "detail": "Ossyria, 15 spawn points"
+        },
+        {
+          "name": "Dead Mine II",
+          "path": "/maps/dead-mine-ii",
+          "detail": "Ossyria, 10 spawn points"
+        },
+        {
+          "name": "Dead Mine III",
+          "path": "/maps/dead-mine-iii",
+          "detail": "Ossyria, 9 spawn points"
+        },
+        {
+          "name": "Dead Mine I",
+          "path": "/maps/dead-mine-i",
+          "detail": "Ossyria, 8 spawn points"
+        }
+      ],
+      "total": 5
+    },
+    {
+      "title": "Drops",
+      "links": [
+        {
+          "name": "Blue Arten",
+          "path": "/items/blue-arten",
+          "detail": "Gloves, 0.1% historical rate"
+        },
+        {
+          "name": "Blue Potion (for Olaf's Training: Olaf's First Training)",
+          "path": "/items/blue-potion",
+          "detail": "Potions, 10% historical rate"
+        },
+        {
+          "name": "Brown Starlight",
+          "path": "/items/brown-starlight",
+          "detail": "Overall, 0.07% historical rate"
+        },
+        {
+          "name": "Cape STR Scroll: Greater",
+          "path": "/items/cape-str-scroll-greater",
+          "detail": "Cape scrolls, 0.03% historical rate"
+        },
+        {
+          "name": "Dark Calaf",
+          "path": "/items/dark-calaf",
+          "detail": "Overall, 0.07% historical rate"
+        },
+        {
+          "name": "Fly-Eye Wing",
+          "path": "/items/fly-eye-wing",
+          "detail": "Monster drops, 60% historical rate"
+        },
+        {
+          "name": "Gold Brace",
+          "path": "/items/gold-brace",
+          "detail": "Gloves, 0.1% historical rate"
+        },
+        {
+          "name": "Gold Dragon",
+          "path": "/items/gold-dragon",
+          "detail": "Topwear, 0.08% historical rate"
+        },
+        {
+          "name": "Green Goni Shoes",
+          "path": "/items/green-goni-shoes",
+          "detail": "Shoes, 0.08% historical rate"
+        },
+        {
+          "name": "Khaki Shadow",
+          "path": "/items/khaki-shadow",
+          "detail": "Topwear, 0.08% historical rate"
+        },
+        {
+          "name": "Khaki Shadow Pants",
+          "path": "/items/khaki-shadow-pants",
+          "detail": "Bottomwear, 0.08% historical rate"
+        },
+        {
+          "name": "Korean Fan",
+          "path": "/items/korean-fan",
+          "detail": "Dagger, 0.05% historical rate"
+        },
+        {
+          "name": "Olympus",
+          "path": "/items/olympus",
+          "detail": "Bow, 0.05% historical rate"
+        },
+        {
+          "name": "Orihalcon Hildon Boots",
+          "path": "/items/orihalcon-hildon-boots",
+          "detail": "Shoes, 0.08% historical rate"
+        },
+        {
+          "name": "Red Legolier",
+          "path": "/items/red-legolier",
+          "detail": "Topwear, 0.08% historical rate"
+        },
+        {
+          "name": "Red Legolier Pants",
+          "path": "/items/red-legolier-pants",
+          "detail": "Bottomwear, 0.08% historical rate"
+        },
+        {
+          "name": "Stiff Feather",
+          "path": "/items/stiff-feather",
+          "detail": "Crafting materials, 20% historical rate"
+        },
+        {
+          "name": "The Magic Rock",
+          "path": "/items/the-magic-rock",
+          "detail": "Magic rocks, 1% historical rate"
+        },
+        {
+          "name": "White Martial Arts Shorts",
+          "path": "/items/white-martial-arts-shorts",
+          "detail": "Bottomwear, 0.08% historical rate"
+        },
+        {
+          "name": "White Potion",
+          "path": "/items/white-potion",
+          "detail": "Potions, 10% historical rate"
+        }
+      ],
+      "total": 20
+    }
+  ]
+}

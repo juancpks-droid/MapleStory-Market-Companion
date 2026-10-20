@@ -1,0 +1,134 @@
+{
+  "schemaVersion": 1,
+  "path": "/items/black-hunter",
+  "kind": "item",
+  "name": "Black Hunter",
+  "source": "CCPLZ",
+  "sourceUrl": "https://ccplz.cc/items/black-hunter",
+  "checkedAt": "2026-10-20T09:56:33.937Z",
+  "notice": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial.",
+  "fields": [
+    {
+      "label": "Type",
+      "value": "Hat"
+    },
+    {
+      "label": "Required level",
+      "value": "25"
+    },
+    {
+      "label": "Class",
+      "value": "Bowman"
+    },
+    {
+      "label": "Weapon defense",
+      "value": "+24"
+    },
+    {
+      "label": "Max HP",
+      "value": "+15"
+    },
+    {
+      "label": "Max MP",
+      "value": "+10"
+    },
+    {
+      "label": "Upgrade slots",
+      "value": "7"
+    },
+    {
+      "label": "NPC sell price",
+      "value": "1,500 mesos"
+    },
+    {
+      "label": "NPC buy price (lowest recorded)",
+      "value": "4500 mesos"
+    },
+    {
+      "label": "Required STR",
+      "value": "15"
+    },
+    {
+      "label": "Required DEX",
+      "value": "40"
+    },
+    {
+      "label": "Required INT",
+      "value": "0"
+    },
+    {
+      "label": "Required LUK",
+      "value": "0"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Dropped by",
+      "links": [
+        {
+          "name": "Mano",
+          "path": "/monsters/mano",
+          "detail": "Level 20, 1.5% historical rate"
+        }
+      ],
+      "total": 1
+    },
+    {
+      "title": "Sold in",
+      "links": [
+        {
+          "name": "Sam's Shop",
+          "path": "/shops/sam-s-shop",
+          "detail": ""
+        }
+      ],
+      "total": 1
+    },
+    {
+      "title": "Similar equipment",
+      "links": [
+        {
+          "name": "Blue Bamboo Hat",
+          "path": "/items/blue-bamboo-hat",
+          "detail": "Level 25"
+        },
+        {
+          "name": "Blue Hunter",
+          "path": "/items/blue-hunter",
+          "detail": "Level 25"
+        },
+        {
+          "name": "Blue Tiberian",
+          "path": "/items/blue-tiberian",
+          "detail": "Level 25"
+        },
+        {
+          "name": "Brown Bamboo Hat",
+          "path": "/items/brown-bamboo-hat",
+          "detail": "Level 25"
+        },
+        {
+          "name": "Brown Hunter",
+          "path": "/items/brown-hunter",
+          "detail": "Level 25"
+        },
+        {
+          "name": "Brown Tiberian",
+          "path": "/items/brown-tiberian",
+          "detail": "Level 25"
+        },
+        {
+          "name": "Dark Tiberian",
+          "path": "/items/dark-tiberian",
+          "detail": "Level 25"
+        },
+        {
+          "name": "Gold Burgonet Helm",
+          "path": "/items/gold-burgernet-helm",
+          "detail": "Level 25"
+        }
+      ],
+      "total": 8
+    }
+  ]
+}

@@ -1,0 +1,157 @@
+{
+  "schemaVersion": 1,
+  "path": "/monsters/dark-leatty",
+  "kind": "monster",
+  "name": "Dark Leatty",
+  "source": "CCPLZ",
+  "sourceUrl": "https://ccplz.cc/monsters/dark-leatty",
+  "checkedAt": "2026-10-20T09:56:21.959Z",
+  "notice": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial.",
+  "fields": [
+    {
+      "label": "Level",
+      "value": "33"
+    },
+    {
+      "label": "HP",
+      "value": "910"
+    },
+    {
+      "label": "EXP",
+      "value": "66"
+    },
+    {
+      "label": "MP",
+      "value": "50"
+    },
+    {
+      "label": "Attack",
+      "value": "202"
+    },
+    {
+      "label": "Defense",
+      "value": "20"
+    },
+    {
+      "label": "Accuracy",
+      "value": "112"
+    },
+    {
+      "label": "Avoidability",
+      "value": "21"
+    },
+    {
+      "label": "Weak to",
+      "value": "Holy"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Where it spawns",
+      "links": [
+        {
+          "name": "Orbis Tower <3rd Floor>",
+          "path": "/maps/orbis-tower-3rd-floor",
+          "detail": "Ossyria, 24 spawn points"
+        },
+        {
+          "name": "Orbis Tower <4th Floor>",
+          "path": "/maps/orbis-tower-4th-floor",
+          "detail": "Ossyria, 12 spawn points"
+        },
+        {
+          "name": "Orbis Tower <2nd Floor>",
+          "path": "/maps/orbis-tower-2nd-floor",
+          "detail": "Ossyria, 6 spawn points"
+        }
+      ],
+      "total": 3
+    },
+    {
+      "title": "Drops",
+      "links": [
+        {
+          "name": "Blue Pole-Feather Hat",
+          "path": "/items/blue-pole-feather-hat",
+          "detail": "Hat, 0.15% historical rate"
+        },
+        {
+          "name": "Blue Potion (for Olaf's Training: Olaf's First Training)",
+          "path": "/items/blue-potion",
+          "detail": "Potions, 10% historical rate"
+        },
+        {
+          "name": "Dark Briggon",
+          "path": "/items/dark-briggon",
+          "detail": "Gloves, 0.1% historical rate"
+        },
+        {
+          "name": "Dark Chaos Robe",
+          "path": "/items/dark-chaos-robe",
+          "detail": "Overall, 0.07% historical rate"
+        },
+        {
+          "name": "Dark Guise",
+          "path": "/items/dark-guise",
+          "detail": "Hat, 0.15% historical rate"
+        },
+        {
+          "name": "Dark Leatty Furball",
+          "path": "/items/dark-leatty-furball",
+          "detail": "Monster drops, 60% historical rate"
+        },
+        {
+          "name": "Dark Legolia",
+          "path": "/items/dark-legolia",
+          "detail": "Topwear, 0.08% historical rate"
+        },
+        {
+          "name": "Dark Legolia Pants",
+          "path": "/items/dark-legolia-pants",
+          "detail": "Bottomwear, 0.08% historical rate"
+        },
+        {
+          "name": "Gephart",
+          "path": "/items/gephart",
+          "detail": "Dagger, 0.05% historical rate"
+        },
+        {
+          "name": "Green White-Lined Boots",
+          "path": "/items/green-white-lined-boots",
+          "detail": "Shoes, 0.08% historical rate"
+        },
+        {
+          "name": "Purple Moonlight",
+          "path": "/items/purple-moonlight",
+          "detail": "Overall, 0.07% historical rate"
+        },
+        {
+          "name": "Scimitar",
+          "path": "/items/scimitar",
+          "detail": "Two-handed sword, 0.07% historical rate"
+        },
+        {
+          "name": "The Summoning Rock",
+          "path": "/items/the-summoning-rock",
+          "detail": "Magic rocks, 1% historical rate"
+        },
+        {
+          "name": "Topwear DEF Scroll: Greater",
+          "path": "/items/topwear-def-scroll-greater",
+          "detail": "Topwear scrolls, 0.03% historical rate"
+        },
+        {
+          "name": "White Potion",
+          "path": "/items/white-potion",
+          "detail": "Potions, 10% historical rate"
+        },
+        {
+          "name": "Wisdom Crystal Ore",
+          "path": "/items/wisdom-crystal-ore",
+          "detail": "Crafting materials, 1% historical rate"
+        }
+      ],
+      "total": 16
+    }
+  ]
+}

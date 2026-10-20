@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "item": {
+    "key": "classic:2043302",
+    "name": "Dagger Attack Scroll: Greater",
+    "id": "2043302",
+    "category": "Use"
+  },
+  "kind": "npc",
+  "checkedAt": "2026-10-20T09:56:48.917Z",
+  "data": {
+    "sell": 1,
+    "buy": null,
+    "source": "CCPLZ",
+    "url": "https://ccplz.cc/items/dagger-attack-scroll-greater",
+    "checkedAt": "2026-10-20T09:56:48.917Z"
+  },
+  "provenance": {
+    "source": "CCPLZ",
+    "sourceUrl": "https://ccplz.cc/items/dagger-attack-scroll-greater",
+    "coverage": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial."
+  }
+}

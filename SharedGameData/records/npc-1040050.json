@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "item": {
+    "key": "gms83:1040050",
+    "name": "Black Sneak",
+    "id": "1040050",
+    "category": "Equipment"
+  },
+  "kind": "npc",
+  "checkedAt": "2026-10-20T09:56:39.957Z",
+  "data": {
+    "sell": 2500,
+    "buy": 7500,
+    "source": "CCPLZ",
+    "url": "https://ccplz.cc/items/black-sneak",
+    "checkedAt": "2026-10-20T09:56:39.957Z"
+  },
+  "provenance": {
+    "source": "CCPLZ",
+    "sourceUrl": "https://ccplz.cc/items/black-sneak",
+    "coverage": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial."
+  }
+}

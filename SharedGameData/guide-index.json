@@ -98,6 +98,16 @@
       "kind": "quest"
     },
     {
+      "path": "/items/black-bennis-chainmail",
+      "name": "Black Bennis Chainmail",
+      "kind": "item"
+    },
+    {
+      "path": "/items/black-hunter",
+      "name": "Black Hunter",
+      "kind": "item"
+    },
+    {
       "path": "/items/black-knucklevest",
       "name": "Black Knucklevest",
       "kind": "item"
@@ -108,6 +118,11 @@
       "kind": "item"
     },
     {
+      "path": "/items/black-lappy-boots",
+      "name": "Black Lappy Boots",
+      "kind": "item"
+    },
+    {
       "path": "/items/black-maro",
       "name": "Black Maro",
       "kind": "item"
@@ -115,6 +130,11 @@
     {
       "path": "/items/black-martial-arts-pants",
       "name": "Black Martial Arts Pants",
+      "kind": "item"
+    },
+    {
+      "path": "/items/black-sneak",
+      "name": "Black Sneak",
       "kind": "item"
     },
     {
@@ -150,6 +170,11 @@
     {
       "path": "/items/blue-starlight",
       "name": "Blue Starlight",
+      "kind": "item"
+    },
+    {
+      "path": "/items/bottomwear-def-scroll-intermediate",
+      "name": "Bottomwear DEF Scroll: Intermediate",
       "kind": "item"
     },
     {
@@ -213,9 +238,19 @@
       "kind": "recipe"
     },
     {
+      "path": "/items/cape-int-scroll-intermediate",
+      "name": "Cape INT Scroll: Intermediate",
+      "kind": "item"
+    },
+    {
       "path": "/items/cape-magic-def-scroll-intermediate",
       "name": "Cape Magic Def. Scroll: Intermediate",
       "kind": "item"
+    },
+    {
+      "path": "/monsters/chirppy",
+      "name": "Chirppy",
+      "kind": "monster"
     },
     {
       "path": "/monsters/cold-eye",
@@ -238,9 +273,29 @@
       "kind": "item"
     },
     {
+      "path": "/items/dagger-attack-scroll-greater",
+      "name": "Dagger Attack Scroll: Greater",
+      "kind": "item"
+    },
+    {
       "path": "/maps/dangerous-forest",
       "name": "Dangerous Forest",
       "kind": "map"
+    },
+    {
+      "path": "/monsters/dark-leatty",
+      "name": "Dark Leatty",
+      "kind": "monster"
+    },
+    {
+      "path": "/items/dark-master-sergeant",
+      "name": "Dark Master Sergeant",
+      "kind": "item"
+    },
+    {
+      "path": "/items/dark-mesana",
+      "name": "Dark Mesana",
+      "kind": "item"
     },
     {
       "path": "/items/dark-moonlight",
@@ -253,9 +308,19 @@
       "kind": "monster"
     },
     {
+      "path": "/items/dark-savata",
+      "name": "Dark Savata",
+      "kind": "item"
+    },
+    {
       "path": "/items/dark-starlight",
       "name": "Dark Starlight",
       "kind": "item"
+    },
+    {
+      "path": "/monsters/dark-stone-golem",
+      "name": "Dark Stone Golem",
+      "kind": "monster"
     },
     {
       "path": "/maps/deep-forest",
@@ -306,6 +371,11 @@
       "path": "/items/firebomb-flame",
       "name": "Firebomb Flame",
       "kind": "item"
+    },
+    {
+      "path": "/monsters/flyeye",
+      "name": "Flyeye",
+      "kind": "monster"
     },
     {
       "path": "/maps/forest-west-of-henesys",
@@ -463,6 +533,16 @@
       "kind": "monster"
     },
     {
+      "path": "/monsters/jr-cellion",
+      "name": "Jr. Cellion",
+      "kind": "monster"
+    },
+    {
+      "path": "/monsters/jr-lioner",
+      "name": "Jr. Lioner",
+      "kind": "monster"
+    },
+    {
       "path": "/monsters/jr-yeti",
       "name": "Jr. Yeti",
       "kind": "monster"
@@ -595,6 +675,11 @@
     {
       "path": "/items/purple-moonlight",
       "name": "Purple Moonlight",
+      "kind": "item"
+    },
+    {
+      "path": "/items/rainbow-colored-snail-shell",
+      "name": "Rainbow-colored Snail Shell",
       "kind": "item"
     },
     {
@@ -901,6 +986,11 @@
       "path": "/items/yakuza-scar",
       "name": "Yakuza Scar",
       "kind": "item"
+    },
+    {
+      "path": "/monsters/zombie-lupin",
+      "name": "Zombie Lupin",
+      "kind": "monster"
     }
   ]
 }
