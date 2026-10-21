@@ -1,0 +1,83 @@
+{
+  "schemaVersion": 1,
+  "path": "/items/overall-armor-dex-scroll-intermediate",
+  "kind": "item",
+  "name": "Overall Armor DEX Scroll: Intermediate",
+  "source": "CCPLZ",
+  "sourceUrl": "https://ccplz.cc/items/overall-armor-dex-scroll-intermediate",
+  "checkedAt": "2026-10-21T09:58:40.551Z",
+  "notice": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial.",
+  "fields": [
+    {
+      "label": "Type",
+      "value": "Overall scrolls"
+    },
+    {
+      "label": "DEX",
+      "value": "+2"
+    },
+    {
+      "label": "NPC sell price",
+      "value": "1 meso"
+    },
+    {
+      "label": "Success rate (%)",
+      "value": "60"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Dropped by",
+      "links": [
+        {
+          "name": "Mano",
+          "path": "/monsters/mano",
+          "detail": "Level 20, 0.3% historical rate"
+        },
+        {
+          "name": "Mushmom",
+          "path": "/monsters/mushmom",
+          "detail": "Level 40, 0.3% historical rate"
+        }
+      ],
+      "total": 2
+    },
+    {
+      "title": "Quest rewards",
+      "links": [
+        {
+          "name": "A Marble of Friendship (A Promise Between Three Friends)",
+          "path": "/quests/a-promise-between-three-friends",
+          "detail": "Level 37"
+        },
+        {
+          "name": "The Doctor Who Never Returned (A Truth Finally Known)",
+          "path": "/quests/a-truth-finally-known",
+          "detail": "Level 37"
+        }
+      ],
+      "total": 2
+    },
+    {
+      "title": "Related items",
+      "links": [
+        {
+          "name": "Overall Armor DEX Scroll: Lesser",
+          "path": "/items/overall-armor-dex-scroll-lesser",
+          "detail": ""
+        },
+        {
+          "name": "Overall Armor DEX Scroll: Greater",
+          "path": "/items/overall-armor-dex-scroll-greater",
+          "detail": ""
+        },
+        {
+          "name": "Overall Armor DEX Scroll: Chaos",
+          "path": "/items/overall-armor-dex-scroll-chaos",
+          "detail": ""
+        }
+      ],
+      "total": 3
+    }
+  ]
+}

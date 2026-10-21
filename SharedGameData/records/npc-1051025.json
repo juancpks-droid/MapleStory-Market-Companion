@@ -7,13 +7,13 @@
     "category": "Equipment"
   },
   "kind": "npc",
-  "checkedAt": "2026-10-13T15:03:00.543Z",
+  "checkedAt": "2026-10-21T09:57:55.611Z",
   "data": {
     "sell": 12600,
     "buy": null,
     "source": "CCPLZ",
     "url": "https://ccplz.cc/items/blue-moonlight",
-    "checkedAt": "2026-10-13T15:03:00.543Z"
+    "checkedAt": "2026-10-21T09:57:55.611Z"
   },
   "provenance": {
     "source": "CCPLZ",

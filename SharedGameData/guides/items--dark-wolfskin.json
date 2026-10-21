@@ -1,0 +1,130 @@
+{
+  "schemaVersion": 1,
+  "path": "/items/dark-wolfskin",
+  "kind": "item",
+  "name": "Dark Wolfskin",
+  "source": "CCPLZ",
+  "sourceUrl": "https://ccplz.cc/items/dark-wolfskin",
+  "checkedAt": "2026-10-21T09:58:25.602Z",
+  "notice": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial.",
+  "fields": [
+    {
+      "label": "Type",
+      "value": "Gloves"
+    },
+    {
+      "label": "Required level",
+      "value": "25"
+    },
+    {
+      "label": "Class",
+      "value": "Thief"
+    },
+    {
+      "label": "Weapon defense",
+      "value": "+12"
+    },
+    {
+      "label": "LUK",
+      "value": "+2"
+    },
+    {
+      "label": "Max HP",
+      "value": "+5"
+    },
+    {
+      "label": "Upgrade slots",
+      "value": "5"
+    },
+    {
+      "label": "NPC sell price",
+      "value": "3,000 mesos"
+    },
+    {
+      "label": "Required STR",
+      "value": "0"
+    },
+    {
+      "label": "Required DEX",
+      "value": "15"
+    },
+    {
+      "label": "Required INT",
+      "value": "0"
+    },
+    {
+      "label": "Required LUK",
+      "value": "40"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Dropped by",
+      "links": [
+        {
+          "name": "Mano",
+          "path": "/monsters/mano",
+          "detail": "Level 20, 1% historical rate"
+        }
+      ],
+      "total": 1
+    },
+    {
+      "title": "How to craft it",
+      "links": [
+        {
+          "name": "Dark Wolfskin",
+          "path": "/recipes/craft-dark-wolfskin",
+          "detail": "Crafting skill level 5"
+        }
+      ],
+      "total": 1
+    },
+    {
+      "title": "Similar equipment",
+      "links": [
+        {
+          "name": "Blood Mesana",
+          "path": "/items/blood-mesana",
+          "detail": "Level 25"
+        },
+        {
+          "name": "Blue Savata",
+          "path": "/items/blue-savata",
+          "detail": "Level 25"
+        },
+        {
+          "name": "Bronze Wolfskin",
+          "path": "/items/bronze-wolfskin",
+          "detail": "Level 25"
+        },
+        {
+          "name": "Dark Mesana",
+          "path": "/items/dark-mesana",
+          "detail": "Level 25"
+        },
+        {
+          "name": "Dark Savata",
+          "path": "/items/dark-savata",
+          "detail": "Level 25"
+        },
+        {
+          "name": "Mithril Wolfskin",
+          "path": "/items/mithril-wolfskin",
+          "detail": "Level 25"
+        },
+        {
+          "name": "Ocean Mesana",
+          "path": "/items/ocean-mesana",
+          "detail": "Level 25"
+        },
+        {
+          "name": "Red Savata",
+          "path": "/items/red-savata",
+          "detail": "Level 25"
+        }
+      ],
+      "total": 8
+    }
+  ]
+}

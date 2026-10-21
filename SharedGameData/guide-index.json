@@ -323,6 +323,21 @@
       "kind": "monster"
     },
     {
+      "path": "/items/dark-tiberian",
+      "name": "Dark Tiberian",
+      "kind": "item"
+    },
+    {
+      "path": "/items/dark-war-boots",
+      "name": "Dark War Boots",
+      "kind": "item"
+    },
+    {
+      "path": "/items/dark-wolfskin",
+      "name": "Dark Wolfskin",
+      "kind": "item"
+    },
+    {
       "path": "/maps/deep-forest",
       "name": "Deep Forest",
       "kind": "map"
@@ -341,6 +356,16 @@
       "path": "/maps/drake-s-meal-table",
       "name": "Drake's Meal Table",
       "kind": "map"
+    },
+    {
+      "path": "/items/earring-int-scroll-greater",
+      "name": "Earring INT Scroll: Greater",
+      "kind": "item"
+    },
+    {
+      "path": "/items/earring-int-scroll-intermediate",
+      "name": "Earring INT Scroll: Intermediate",
+      "kind": "item"
     },
     {
       "path": "/maps/east-domain-of-perion",
@@ -425,6 +450,11 @@
     {
       "path": "/items/goatee",
       "name": "Goatee",
+      "kind": "item"
+    },
+    {
+      "path": "/items/gold-sneak",
+      "name": "Gold Sneak",
       "kind": "item"
     },
     {
@@ -648,6 +678,11 @@
       "kind": "item"
     },
     {
+      "path": "/items/overall-armor-dex-scroll-intermediate",
+      "name": "Overall Armor DEX Scroll: Intermediate",
+      "kind": "item"
+    },
+    {
       "path": "/maps/perion-street-corner",
       "name": "Perion Street Corner",
       "kind": "map"
@@ -683,6 +718,11 @@
       "kind": "item"
     },
     {
+      "path": "/items/red-doroness-robe",
+      "name": "Red Doroness Robe",
+      "kind": "item"
+    },
+    {
       "path": "/items/red-duke",
       "name": "Red Duke",
       "kind": "item"
@@ -690,6 +730,11 @@
     {
       "path": "/items/red-hwarang-shirt",
       "name": "Red Hwarang Shirt",
+      "kind": "item"
+    },
+    {
+      "path": "/items/red-jack-boots",
+      "name": "Red Jack Boots",
       "kind": "item"
     },
     {

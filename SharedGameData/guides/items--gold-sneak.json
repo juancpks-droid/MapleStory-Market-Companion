@@ -1,0 +1,139 @@
+{
+  "schemaVersion": 1,
+  "path": "/items/gold-sneak",
+  "kind": "item",
+  "name": "Gold Sneak",
+  "source": "CCPLZ",
+  "sourceUrl": "https://ccplz.cc/items/gold-sneak",
+  "checkedAt": "2026-10-21T09:58:37.604Z",
+  "notice": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial.",
+  "fields": [
+    {
+      "label": "Type",
+      "value": "Topwear"
+    },
+    {
+      "label": "Required level",
+      "value": "25"
+    },
+    {
+      "label": "Class",
+      "value": "Thief"
+    },
+    {
+      "label": "Weapon defense",
+      "value": "+36"
+    },
+    {
+      "label": "STR",
+      "value": "+2"
+    },
+    {
+      "label": "Max HP",
+      "value": "+5"
+    },
+    {
+      "label": "Upgrade slots",
+      "value": "7"
+    },
+    {
+      "label": "NPC sell price",
+      "value": "2,500 mesos"
+    },
+    {
+      "label": "NPC buy price (lowest recorded)",
+      "value": "7500 mesos"
+    },
+    {
+      "label": "Required STR",
+      "value": "0"
+    },
+    {
+      "label": "Required DEX",
+      "value": "15"
+    },
+    {
+      "label": "Required INT",
+      "value": "0"
+    },
+    {
+      "label": "Required LUK",
+      "value": "40"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Dropped by",
+      "links": [
+        {
+          "name": "Evil Eye",
+          "path": "/monsters/evil-eye",
+          "detail": "Level 27, 0.08% historical rate"
+        },
+        {
+          "name": "Mano",
+          "path": "/monsters/mano",
+          "detail": "Level 20, 0.8% historical rate"
+        }
+      ],
+      "total": 2
+    },
+    {
+      "title": "Sold in",
+      "links": [
+        {
+          "name": "Don Hwang's Shop",
+          "path": "/shops/don-hwang-s-shop",
+          "detail": ""
+        }
+      ],
+      "total": 1
+    },
+    {
+      "title": "Similar equipment",
+      "links": [
+        {
+          "name": "Black Bennis Chainmail",
+          "path": "/items/black-bennis-chainmail",
+          "detail": "Level 25"
+        },
+        {
+          "name": "Black Sneak",
+          "path": "/items/black-sneak",
+          "detail": "Level 25"
+        },
+        {
+          "name": "Blood Sneak",
+          "path": "/items/blood-sneak",
+          "detail": "Level 25"
+        },
+        {
+          "name": "Blue Bennis Chainmail (Female)",
+          "path": "/items/blue-bennis-chainmail-1041041",
+          "detail": "Level 25"
+        },
+        {
+          "name": "Blue Bennis Chainmail (Male)",
+          "path": "/items/blue-bennis-chainmail",
+          "detail": "Level 25"
+        },
+        {
+          "name": "Blue Shark",
+          "path": "/items/blue-shark",
+          "detail": "Level 25"
+        },
+        {
+          "name": "Blue Sneak",
+          "path": "/items/blue-sneak",
+          "detail": "Level 25"
+        },
+        {
+          "name": "Brown Sneak",
+          "path": "/items/brown-sneak",
+          "detail": "Level 25"
+        }
+      ],
+      "total": 8
+    }
+  ]
+}
