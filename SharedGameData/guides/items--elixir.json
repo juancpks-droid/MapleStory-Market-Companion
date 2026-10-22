@@ -5,7 +5,7 @@
   "name": "Elixir",
   "source": "CCPLZ",
   "sourceUrl": "https://ccplz.cc/items/elixir",
-  "checkedAt": "2026-10-14T09:56:27.886Z",
+  "checkedAt": "2026-10-22T09:59:24.654Z",
   "notice": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial.",
   "fields": [
     {
@@ -26,313 +26,22 @@
       "title": "Dropped by",
       "links": [
         {
+          "name": "Crimson Balrog",
+          "path": "/monsters/crimson-balrog",
+          "detail": "Level 100"
+        },
+        {
           "name": "Jr. Balrog",
           "path": "/monsters/jr-balrog",
-          "detail": "Level 80, 100% historical rate"
+          "detail": "Level 80"
+        },
+        {
+          "name": "Mushmom",
+          "path": "/monsters/mushmom",
+          "detail": "Level 40"
         }
       ],
-      "total": 1
-    },
-    {
-      "title": "Also dropped by, in older versions",
-      "links": [
-        {
-          "name": "Barnard Gray",
-          "path": "/monsters/barnard-gray",
-          "detail": "Level 40, 2% historical rate"
-        },
-        {
-          "name": "Black Ratz",
-          "path": "/monsters/black-ratz",
-          "detail": "Level 34, 2% historical rate"
-        },
-        {
-          "name": "Bloctopus",
-          "path": "/monsters/bloctopus",
-          "detail": "Level 35, 1% historical rate"
-        },
-        {
-          "name": "Brown Teddy",
-          "path": "/monsters/brown-teddy",
-          "detail": "Level 30, 1% historical rate"
-        },
-        {
-          "name": "Buffoon",
-          "path": "/monsters/buffoon",
-          "detail": "Level 74, 1% historical rate"
-        },
-        {
-          "name": "Buffy",
-          "path": "/monsters/buffy",
-          "detail": "Level 62, 1% historical rate"
-        },
-        {
-          "name": "Cellion",
-          "path": "/monsters/cellion",
-          "detail": "Level 53, 2% historical rate"
-        },
-        {
-          "name": "Cerebes",
-          "path": "/monsters/cerebes",
-          "detail": "Level 72, 2% historical rate"
-        },
-        {
-          "name": "Chronos",
-          "path": "/monsters/chronos",
-          "detail": "Level 37, 1% historical rate"
-        },
-        {
-          "name": "Clang",
-          "path": "/monsters/clang",
-          "detail": "Level 49, 2% historical rate"
-        },
-        {
-          "name": "Coolie Zombie",
-          "path": "/monsters/coolie-zombie",
-          "detail": "Level 57, 2% historical rate"
-        },
-        {
-          "name": "Copper Drake",
-          "path": "/monsters/copper-drake",
-          "detail": "Level 45, 2% historical rate"
-        },
-        {
-          "name": "Croco",
-          "path": "/monsters/croco",
-          "detail": "Level 52, 2% historical rate"
-        },
-        {
-          "name": "Dark Jr. Yeti",
-          "path": "/monsters/dark-jr-yeti",
-          "detail": "Level 56, 2% historical rate"
-        },
-        {
-          "name": "Dark Nependeath",
-          "path": "/monsters/dark-nependeath",
-          "detail": "Level 47, 2% historical rate"
-        },
-        {
-          "name": "Dark Pepe",
-          "path": "/monsters/dark-pepe",
-          "detail": "Level 64, 2% historical rate"
-        },
-        {
-          "name": "Dark Stone Golem",
-          "path": "/monsters/dark-stone-golem",
-          "detail": "Level 58, 2% historical rate"
-        },
-        {
-          "name": "Dark Yeti",
-          "path": "/monsters/dark-yeti",
-          "detail": "Level 68, 2% historical rate"
-        },
-        {
-          "name": "Dark Yeti and Pepe",
-          "path": "/monsters/dark-yeti-and-pepe",
-          "detail": "Level 82, 2% historical rate"
-        },
-        {
-          "name": "Death Teddy",
-          "path": "/monsters/death-teddy",
-          "detail": "Level 85, 1% historical rate"
-        },
-        {
-          "name": "Deep Buffoon",
-          "path": "/monsters/deep-buffoon",
-          "detail": "Level 77, 1% historical rate"
-        },
-        {
-          "name": "Drake",
-          "path": "/monsters/drake",
-          "detail": "Level 50, 2% historical rate"
-        },
-        {
-          "name": "Drumming Bunny",
-          "path": "/monsters/drumming-bunny",
-          "detail": "Level 31, 2% historical rate"
-        },
-        {
-          "name": "Ghost Pirate",
-          "path": "/monsters/ghost-pirate",
-          "detail": "Level 83, 1% historical rate"
-        },
-        {
-          "name": "Green Trixter",
-          "path": "/monsters/green-trixter",
-          "detail": "Level 28, 2% historical rate"
-        },
-        {
-          "name": "Grupin",
-          "path": "/monsters/grupin",
-          "detail": "Level 53, 2% historical rate"
-        },
-        {
-          "name": "Hector",
-          "path": "/monsters/hector",
-          "detail": "Level 55, 2% historical rate"
-        },
-        {
-          "name": "Iron Hog",
-          "path": "/monsters/iron-hog",
-          "detail": "Level 28, 2% historical rate"
-        },
-        {
-          "name": "Jr. Yeti",
-          "path": "/monsters/jr-yeti",
-          "detail": "Level 50, 2% historical rate"
-        },
-        {
-          "name": "King Block Golem",
-          "path": "/monsters/king-block-golem",
-          "detail": "Level 45, 1% historical rate"
-        },
-        {
-          "name": "King Bloctopus",
-          "path": "/monsters/king-bloctopus",
-          "detail": "Level 38, 2% historical rate"
-        },
-        {
-          "name": "Klock",
-          "path": "/monsters/klock",
-          "detail": "Level 71, 1% historical rate"
-        },
-        {
-          "name": "Lazy Buffy",
-          "path": "/monsters/lazy-buffy",
-          "detail": "Level 66, 1% historical rate"
-        },
-        {
-          "name": "Lioner",
-          "path": "/monsters/lioner",
-          "detail": "Level 53, 2% historical rate"
-        },
-        {
-          "name": "Lucida",
-          "path": "/monsters/lucida",
-          "detail": "Level 73, 2% historical rate"
-        },
-        {
-          "name": "Luster Pixie",
-          "path": "/monsters/luster-pixie",
-          "detail": "Level 52, 2% historical rate"
-        },
-        {
-          "name": "Malady",
-          "path": "/monsters/malady",
-          "detail": "Level 55, 2% historical rate"
-        },
-        {
-          "name": "Master Chronos",
-          "path": "/monsters/master-chronos",
-          "detail": "Level 49, 1% historical rate"
-        },
-        {
-          "name": "Master Death Teddy",
-          "path": "/monsters/master-death-teddy",
-          "detail": "Level 89, 2% historical rate"
-        },
-        {
-          "name": "Master Soul Teddy",
-          "path": "/monsters/master-soul-teddy",
-          "detail": "Level 67, 1% historical rate"
-        },
-        {
-          "name": "Mecateon",
-          "path": "/monsters/mecateon",
-          "detail": "Level 48, 2% historical rate"
-        },
-        {
-          "name": "Pepe",
-          "path": "/monsters/pepe",
-          "detail": "Level 60, 2% historical rate"
-        },
-        {
-          "name": "Phantom Watch",
-          "path": "/monsters/phantom-watch",
-          "detail": "Level 95, 2% historical rate"
-        },
-        {
-          "name": "Planey",
-          "path": "/monsters/planey",
-          "detail": "Level 38, 2% historical rate"
-        },
-        {
-          "name": "Plateon",
-          "path": "/monsters/plateon",
-          "detail": "Level 44, 2% historical rate"
-        },
-        {
-          "name": "Platoon Chronos",
-          "path": "/monsters/platoon-chronos",
-          "detail": "Level 41, 2% historical rate"
-        },
-        {
-          "name": "Propelly",
-          "path": "/monsters/propelly",
-          "detail": "Level 37, 2% historical rate"
-        },
-        {
-          "name": "Red Drake",
-          "path": "/monsters/red-drake",
-          "detail": "Level 60, 2% historical rate"
-        },
-        {
-          "name": "Roloduck",
-          "path": "/monsters/roloduck",
-          "detail": "Level 34, 2% historical rate"
-        },
-        {
-          "name": "Soul Teddy",
-          "path": "/monsters/soul-teddy",
-          "detail": "Level 63, 1% historical rate"
-        },
-        {
-          "name": "Stone Golem",
-          "path": "/monsters/stone-golem",
-          "detail": "Level 56, 2% historical rate"
-        },
-        {
-          "name": "Tauromacis",
-          "path": "/monsters/tauromacis",
-          "detail": "Level 70, 2% historical rate"
-        },
-        {
-          "name": "Thanatos",
-          "path": "/monsters/thanatos",
-          "detail": "Level 108, 2% historical rate"
-        },
-        {
-          "name": "Tick-Tock",
-          "path": "/monsters/tick-tock",
-          "detail": "Level 40, 1% historical rate"
-        },
-        {
-          "name": "Tortie",
-          "path": "/monsters/tortie",
-          "detail": "Level 46, 2% historical rate"
-        },
-        {
-          "name": "Ultra Gray",
-          "path": "/monsters/ultra-gray",
-          "detail": "Level 46, 2% historical rate"
-        },
-        {
-          "name": "White Fang",
-          "path": "/monsters/white-fang",
-          "detail": "Level 59, 2% historical rate"
-        },
-        {
-          "name": "Wraith",
-          "path": "/monsters/wraith",
-          "detail": "Level 48, 2% historical rate"
-        },
-        {
-          "name": "Yeti and Pepe",
-          "path": "/monsters/yeti-and-pepe",
-          "detail": "Level 78, 2% historical rate"
-        }
-      ],
-      "total": 59
+      "total": 3
     },
     {
       "title": "Sold in",
@@ -353,6 +62,11 @@
     {
       "title": "Quest rewards",
       "links": [
+        {
+          "name": "A Fragile Sanctuary (The Sage's Burden) (2 of 2)",
+          "path": "/quests/the-sage-s-burden-10620",
+          "detail": "Level 50"
+        },
         {
           "name": "A Gift for a Citizen of Honor (A Box Hidden Long Ago)",
           "path": "/quests/a-box-hidden-long-ago",
@@ -377,9 +91,19 @@
           "name": "Maya and Her Peculiar Savior (An Unknown Savior)",
           "path": "/quests/an-unknown-savior",
           "detail": "Level 47"
+        },
+        {
+          "name": "The Lantern Rite (Charms Gone Gray)",
+          "path": "/quests/charms-gone-gray",
+          "detail": "Level 55"
+        },
+        {
+          "name": "The Lantern Rite (The Last Lantern)",
+          "path": "/quests/the-last-lantern",
+          "detail": "Level 55"
         }
       ],
-      "total": 5
+      "total": 8
     }
   ]
 }

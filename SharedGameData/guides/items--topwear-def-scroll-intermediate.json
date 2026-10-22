@@ -1,0 +1,55 @@
+{
+  "schemaVersion": 1,
+  "path": "/items/topwear-def-scroll-intermediate",
+  "kind": "item",
+  "name": "Topwear DEF Scroll: Intermediate",
+  "source": "CCPLZ",
+  "sourceUrl": "https://ccplz.cc/items/topwear-def-scroll-intermediate",
+  "checkedAt": "2026-10-22T09:59:45.626Z",
+  "notice": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial.",
+  "fields": [
+    {
+      "label": "Type",
+      "value": "Topwear scrolls"
+    },
+    {
+      "label": "Weapon defense",
+      "value": "+4"
+    },
+    {
+      "label": "Magic defense",
+      "value": "+2"
+    },
+    {
+      "label": "NPC sell price",
+      "value": "1 meso"
+    },
+    {
+      "label": "Success rate (%)",
+      "value": "60"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Related items",
+      "links": [
+        {
+          "name": "Topwear DEF Scroll: Lesser",
+          "path": "/items/topwear-def-scroll-lesser",
+          "detail": ""
+        },
+        {
+          "name": "Topwear DEF Scroll: Greater",
+          "path": "/items/topwear-def-scroll-greater",
+          "detail": ""
+        },
+        {
+          "name": "Topwear DEF Scroll: Chaos",
+          "path": "/items/topwear-def-scroll-chaos",
+          "detail": ""
+        }
+      ],
+      "total": 3
+    }
+  ]
+}

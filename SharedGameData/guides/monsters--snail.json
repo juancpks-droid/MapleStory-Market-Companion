@@ -5,7 +5,7 @@
   "name": "Snail",
   "source": "CCPLZ",
   "sourceUrl": "https://ccplz.cc/monsters/snail",
-  "checkedAt": "2026-10-13T15:03:15.563Z",
+  "checkedAt": "2026-10-22T09:59:09.587Z",
   "notice": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial.",
   "fields": [
     {
@@ -234,86 +234,80 @@
       "total": 37
     },
     {
-      "title": "Reported drops",
+      "title": "Drops",
       "links": [
         {
           "name": "Arrows for Bows",
           "path": "/items/arrows-for-bows",
-          "detail": "Arrows for bows, 3% historical rate"
+          "detail": "Arrows for bows, 0.97% drop rate, 103 kills counted"
         },
         {
           "name": "Arrows for Crossbows",
           "path": "/items/arrows-for-crossbows",
-          "detail": "Arrows for crossbows, 3% historical rate"
+          "detail": "Arrows for crossbows, 0.97% drop rate, 103 kills counted"
         },
         {
           "name": "Bronze Ore",
           "path": "/items/bronze-ore",
-          "detail": "Ores & ingots"
+          "detail": "Ores & ingots, 0.97% drop rate, 103 kills counted"
         },
         {
           "name": "Garnet Ore",
           "path": "/items/garnet-ore",
-          "detail": "Gems & gem ores"
+          "detail": "Gems & gem ores, 0.97% drop rate, 103 kills counted"
         },
         {
           "name": "Green Headband",
           "path": "/items/green-headband",
-          "detail": "Hat, 0.15% historical rate"
+          "detail": "Hat, about 0.22%, usual for its kind"
         },
         {
           "name": "Green Skullcap",
           "path": "/items/green-skullcap",
-          "detail": "Hat"
+          "detail": "Hat, about 0.22%, usual for its kind"
         },
         {
           "name": "Green T-Shirt",
           "path": "/items/green-t-shirt",
-          "detail": "Topwear"
+          "detail": "Topwear, about 0.22%, usual for its kind"
         },
         {
-          "name": "Red Potion (for Olaf's Training: Olaf's First Training)",
+          "name": "Red Potion",
           "path": "/items/red-potion",
-          "detail": "Potions, 10% historical rate"
+          "detail": "Potions, 2.9% drop rate, 103 kills counted"
         },
         {
           "name": "Red Striped Top",
           "path": "/items/red-striped-top",
-          "detail": "Topwear"
+          "detail": "Topwear, about 0.22%, usual for its kind"
+        },
+        {
+          "name": "Sera's Mirror",
+          "path": "/items/sera-s-mirror",
+          "detail": "Quest items"
         },
         {
           "name": "Snail Shell",
           "path": "/items/snail-shell",
-          "detail": "Monster drops, 60% historical rate"
+          "detail": "Monster drops, 51% drop rate, 103 kills counted"
         },
         {
           "name": "Sword",
           "path": "/items/sword",
-          "detail": "One-handed sword"
+          "detail": "One-handed sword, about 0.22%, usual for its kind"
         },
         {
           "name": "White Undershirt",
           "path": "/items/white-undershirt",
-          "detail": "Topwear"
-        }
-      ],
-      "total": 12
-    },
-    {
-      "title": "Older-version drops",
-      "links": [
-        {
-          "name": "Cape Magic Def. Scroll: Intermediate",
-          "path": "/items/cape-magic-def-scroll-intermediate",
-          "detail": "Cape scrolls, 0.03% historical rate"
+          "detail": "Topwear, about 0.22%, usual for its kind"
         },
         {
-          "name": "Green Apple",
-          "path": "/items/green-apple",
-          "detail": "Fruit & basic food, 2% historical rate"
+          "name": "Wisdom Crystal Ore",
+          "path": "/items/wisdom-crystal-ore",
+          "detail": "Crafting materials"
         }
       ],
-      "total": 2
+      "total": 14
     },
     {
       "title": "Quests that need it",

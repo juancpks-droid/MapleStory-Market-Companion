@@ -1,0 +1,123 @@
+{
+  "schemaVersion": 1,
+  "path": "/items/red-shark",
+  "kind": "item",
+  "name": "Red Shark",
+  "source": "CCPLZ",
+  "sourceUrl": "https://ccplz.cc/items/red-shark",
+  "checkedAt": "2026-10-22T09:59:30.640Z",
+  "notice": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial.",
+  "fields": [
+    {
+      "label": "Type",
+      "value": "Topwear"
+    },
+    {
+      "label": "Required level",
+      "value": "25"
+    },
+    {
+      "label": "Class",
+      "value": "Warrior"
+    },
+    {
+      "label": "Weapon defense",
+      "value": "+50"
+    },
+    {
+      "label": "STR",
+      "value": "+2"
+    },
+    {
+      "label": "Max HP",
+      "value": "+5"
+    },
+    {
+      "label": "Upgrade slots",
+      "value": "7"
+    },
+    {
+      "label": "NPC sell price",
+      "value": "2,500 mesos"
+    },
+    {
+      "label": "NPC buy price (lowest recorded)",
+      "value": "7500 mesos"
+    },
+    {
+      "label": "Required STR",
+      "value": "40"
+    },
+    {
+      "label": "Required DEX",
+      "value": "15"
+    },
+    {
+      "label": "Required INT",
+      "value": "0"
+    },
+    {
+      "label": "Required LUK",
+      "value": "0"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Sold in",
+      "links": [
+        {
+          "name": "Harry's Shop",
+          "path": "/shops/harry-s-shop",
+          "detail": ""
+        }
+      ],
+      "total": 1
+    },
+    {
+      "title": "Similar equipment",
+      "links": [
+        {
+          "name": "Black Bennis Chainmail",
+          "path": "/items/black-bennis-chainmail",
+          "detail": "Level 25"
+        },
+        {
+          "name": "Black Sneak",
+          "path": "/items/black-sneak",
+          "detail": "Level 25"
+        },
+        {
+          "name": "Blood Sneak",
+          "path": "/items/blood-sneak",
+          "detail": "Level 25"
+        },
+        {
+          "name": "Blue Bennis Chainmail (Female)",
+          "path": "/items/blue-bennis-chainmail-1041041",
+          "detail": "Level 25"
+        },
+        {
+          "name": "Blue Bennis Chainmail (Male)",
+          "path": "/items/blue-bennis-chainmail",
+          "detail": "Level 25"
+        },
+        {
+          "name": "Blue Shark",
+          "path": "/items/blue-shark",
+          "detail": "Level 25"
+        },
+        {
+          "name": "Blue Sneak",
+          "path": "/items/blue-sneak",
+          "detail": "Level 25"
+        },
+        {
+          "name": "Brown Sneak",
+          "path": "/items/brown-sneak",
+          "detail": "Level 25"
+        }
+      ],
+      "total": 8
+    }
+  ]
+}

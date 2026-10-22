@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "path": "/items/sunrise-dew",
+  "kind": "item",
+  "name": "Sunrise Dew",
+  "source": "CCPLZ",
+  "sourceUrl": "https://ccplz.cc/items/sunrise-dew",
+  "checkedAt": "2026-10-22T09:59:39.635Z",
+  "notice": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial.",
+  "fields": [
+    {
+      "label": "Type",
+      "value": "Cooked food"
+    },
+    {
+      "label": "NPC sell price",
+      "value": "300 mesos"
+    }
+  ],
+  "sections": []
+}

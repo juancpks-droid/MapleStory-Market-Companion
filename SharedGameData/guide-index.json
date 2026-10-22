@@ -748,8 +748,18 @@
       "kind": "item"
     },
     {
+      "path": "/items/red-shark",
+      "name": "Red Shark",
+      "kind": "item"
+    },
+    {
       "path": "/items/red-snail-shell",
       "name": "Red Snail Shell",
+      "kind": "item"
+    },
+    {
+      "path": "/items/red-wizardry-hat",
+      "name": "Red Wizardry Hat",
       "kind": "item"
     },
     {
@@ -883,9 +893,19 @@
       "kind": "item"
     },
     {
+      "path": "/items/staff-magic-attack-scroll-intermediate",
+      "name": "Staff Magic Attack Scroll: Intermediate",
+      "kind": "item"
+    },
+    {
       "path": "/monsters/star-pixie",
       "name": "Star Pixie",
       "kind": "monster"
+    },
+    {
+      "path": "/items/sunrise-dew",
+      "name": "Sunrise Dew",
+      "kind": "item"
     },
     {
       "path": "/items/sword",
@@ -973,6 +993,16 @@
       "kind": "item"
     },
     {
+      "path": "/items/topwear-def-scroll-greater",
+      "name": "Topwear DEF Scroll: Greater",
+      "kind": "item"
+    },
+    {
+      "path": "/items/topwear-def-scroll-intermediate",
+      "name": "Topwear DEF Scroll: Intermediate",
+      "kind": "item"
+    },
+    {
       "path": "/items/topwear-mp-scroll-greater",
       "name": "Topwear MP Scroll: Greater",
       "kind": "item"
@@ -1013,9 +1043,34 @@
       "kind": "map"
     },
     {
+      "path": "/items/two-handed-sword-attack-scroll-intermediate",
+      "name": "Two-handed Sword Attack Scroll: Intermediate",
+      "kind": "item"
+    },
+    {
+      "path": "/items/wand-magic-attack-scroll-greater",
+      "name": "Wand Magic Attack Scroll: Greater",
+      "kind": "item"
+    },
+    {
+      "path": "/items/wand-magic-attack-scroll-intermediate",
+      "name": "Wand Magic Attack Scroll: Intermediate",
+      "kind": "item"
+    },
+    {
       "path": "/maps/west-domain-of-perion",
       "name": "West Domain of Perion",
       "kind": "map"
+    },
+    {
+      "path": "/items/white-doros-robe",
+      "name": "White Doros Robe",
+      "kind": "item"
+    },
+    {
+      "path": "/items/white-fingerless-gloves",
+      "name": "White Fingerless Gloves",
+      "kind": "item"
     },
     {
       "path": "/items/white-potion",

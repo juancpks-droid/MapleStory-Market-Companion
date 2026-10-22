@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "path": "/items/two-handed-sword-attack-scroll-intermediate",
+  "kind": "item",
+  "name": "Two-handed Sword Attack Scroll: Intermediate",
+  "source": "CCPLZ",
+  "sourceUrl": "https://ccplz.cc/items/two-handed-sword-attack-scroll-intermediate",
+  "checkedAt": "2026-10-22T09:59:48.554Z",
+  "notice": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial.",
+  "fields": [
+    {
+      "label": "Type",
+      "value": "Two-handed sword scrolls"
+    },
+    {
+      "label": "Weapon attack",
+      "value": "+2"
+    },
+    {
+      "label": "NPC sell price",
+      "value": "1 meso"
+    },
+    {
+      "label": "Success rate (%)",
+      "value": "60"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Quest rewards",
+      "links": [
+        {
+          "name": "Jane and the Mushroom",
+          "path": "/quests/jane-and-the-mushroom",
+          "detail": "Level 20"
+        }
+      ],
+      "total": 1
+    },
+    {
+      "title": "Related items",
+      "links": [
+        {
+          "name": "Two-handed Sword Attack Scroll: Lesser",
+          "path": "/items/two-handed-sword-attack-scroll-lesser",
+          "detail": ""
+        },
+        {
+          "name": "Two-handed Sword Attack Scroll: Greater",
+          "path": "/items/two-handed-sword-attack-scroll-greater",
+          "detail": ""
+        },
+        {
+          "name": "Two-handed Sword Attack Scroll: Chaos",
+          "path": "/items/two-handed-sword-attack-scroll-chaos",
+          "detail": ""
+        }
+      ],
+      "total": 3
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "item": {
+    "key": "classic:2040402",
+    "name": "Topwear DEF Scroll: Greater",
+    "id": "2040402",
+    "category": "Use"
+  },
+  "kind": "npc",
+  "checkedAt": "2026-10-22T09:59:42.608Z",
+  "data": {
+    "sell": 1,
+    "buy": null,
+    "source": "CCPLZ",
+    "url": "https://ccplz.cc/items/topwear-def-scroll-greater",
+    "checkedAt": "2026-10-22T09:59:42.608Z"
+  },
+  "provenance": {
+    "source": "CCPLZ",
+    "sourceUrl": "https://ccplz.cc/items/topwear-def-scroll-greater",
+    "coverage": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial."
+  }
+}

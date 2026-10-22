@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "item": {
+    "key": "gms83:1050025",
+    "name": "White Doros Robe",
+    "id": "1050025",
+    "category": "Equipment"
+  },
+  "kind": "npc",
+  "checkedAt": "2026-10-22T09:59:57.653Z",
+  "data": {
+    "sell": 4500,
+    "buy": 13500,
+    "source": "CCPLZ",
+    "url": "https://ccplz.cc/items/white-doros-robe",
+    "checkedAt": "2026-10-22T09:59:57.653Z"
+  },
+  "provenance": {
+    "source": "CCPLZ",
+    "sourceUrl": "https://ccplz.cc/items/white-doros-robe",
+    "coverage": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial."
+  }
+}

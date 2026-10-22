@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "item": {
+    "key": "gms83:1041024",
+    "name": "Red Shark",
+    "id": "1041024",
+    "category": "Equipment"
+  },
+  "kind": "npc",
+  "checkedAt": "2026-10-22T09:59:30.640Z",
+  "data": {
+    "sell": 2500,
+    "buy": 7500,
+    "source": "CCPLZ",
+    "url": "https://ccplz.cc/items/red-shark",
+    "checkedAt": "2026-10-22T09:59:30.640Z"
+  },
+  "provenance": {
+    "source": "CCPLZ",
+    "sourceUrl": "https://ccplz.cc/items/red-shark",
+    "coverage": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial."
+  }
+}

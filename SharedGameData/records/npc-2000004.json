@@ -7,13 +7,13 @@
     "category": "Use"
   },
   "kind": "npc",
-  "checkedAt": "2026-10-14T09:56:27.886Z",
+  "checkedAt": "2026-10-22T09:59:24.654Z",
   "data": {
     "sell": 500,
     "buy": 3000,
     "source": "CCPLZ",
     "url": "https://ccplz.cc/items/elixir",
-    "checkedAt": "2026-10-14T09:56:27.886Z"
+    "checkedAt": "2026-10-22T09:59:24.654Z"
   },
   "provenance": {
     "source": "CCPLZ",

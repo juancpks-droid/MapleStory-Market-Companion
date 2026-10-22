@@ -1,0 +1,138 @@
+{
+  "schemaVersion": 1,
+  "path": "/items/white-doros-robe",
+  "kind": "item",
+  "name": "White Doros Robe",
+  "source": "CCPLZ",
+  "sourceUrl": "https://ccplz.cc/items/white-doros-robe",
+  "checkedAt": "2026-10-22T09:59:57.653Z",
+  "notice": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial.",
+  "fields": [
+    {
+      "label": "Type",
+      "value": "Overall"
+    },
+    {
+      "label": "Required level",
+      "value": "25"
+    },
+    {
+      "label": "Class",
+      "value": "Magician"
+    },
+    {
+      "label": "Weapon defense",
+      "value": "+40"
+    },
+    {
+      "label": "Magic defense",
+      "value": "+49"
+    },
+    {
+      "label": "INT",
+      "value": "+3"
+    },
+    {
+      "label": "LUK",
+      "value": "+2"
+    },
+    {
+      "label": "Upgrade slots",
+      "value": "10"
+    },
+    {
+      "label": "NPC sell price",
+      "value": "4,500 mesos"
+    },
+    {
+      "label": "NPC buy price (lowest recorded)",
+      "value": "13500 mesos"
+    },
+    {
+      "label": "Required STR",
+      "value": "0"
+    },
+    {
+      "label": "Required DEX",
+      "value": "0"
+    },
+    {
+      "label": "Required INT",
+      "value": "40"
+    },
+    {
+      "label": "Required LUK",
+      "value": "15"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Dropped by",
+      "links": [
+        {
+          "name": "Jr. Wraith",
+          "path": "/monsters/jr-wraith",
+          "detail": "Level 34, about 0.22%, usual for its kind"
+        }
+      ],
+      "total": 1
+    },
+    {
+      "title": "Sold in",
+      "links": [
+        {
+          "name": "Serabi the Fairy's Shop",
+          "path": "/shops/serabi-the-fairy-s-shop",
+          "detail": ""
+        }
+      ],
+      "total": 1
+    },
+    {
+      "title": "Similar equipment",
+      "links": [
+        {
+          "name": "Blue Doros Robe",
+          "path": "/items/blue-doros-robe",
+          "detail": "Level 25"
+        },
+        {
+          "name": "Brown Doroness Robe",
+          "path": "/items/brown-doroness-robe",
+          "detail": "Level 25"
+        },
+        {
+          "name": "Brown Doros Robe",
+          "path": "/items/brown-doros-robe",
+          "detail": "Level 25"
+        },
+        {
+          "name": "Purple Doroness Robe",
+          "path": "/items/purple-doroness-robe",
+          "detail": "Level 25"
+        },
+        {
+          "name": "Red Doroness Robe",
+          "path": "/items/red-doroness-robe",
+          "detail": "Level 25"
+        },
+        {
+          "name": "Yellow Doros Robe",
+          "path": "/items/yellow-doros-robe",
+          "detail": "Level 25"
+        },
+        {
+          "name": "Blue Kendo Robe",
+          "path": "/items/blue-kendo-robe",
+          "detail": "Level 20"
+        },
+        {
+          "name": "Red Kendo Robe",
+          "path": "/items/red-kendo-robe",
+          "detail": "Level 20"
+        }
+      ],
+      "total": 8
+    }
+  ]
+}
