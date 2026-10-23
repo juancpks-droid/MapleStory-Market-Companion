@@ -33,6 +33,11 @@
       "kind": "item"
     },
     {
+      "path": "/maps/an-empty-house",
+      "name": "An Empty House",
+      "kind": "map"
+    },
+    {
       "path": "/items/animal-face-accessory",
       "name": "Animal Face Accessory",
       "kind": "item"
@@ -261,6 +266,11 @@
       "path": "/quests/maya-s-first-collection",
       "name": "Collecting For Maya (Maya's First Collection)",
       "kind": "quest"
+    },
+    {
+      "path": "/maps/construction-site-north-of-kerning-city",
+      "name": "Construction Site North of Kerning City",
+      "kind": "map"
     },
     {
       "path": "/monsters/curse-eye",
@@ -528,6 +538,16 @@
       "kind": "item"
     },
     {
+      "path": "/maps/henesys-hunting-ground-ii",
+      "name": "Henesys Hunting Ground II",
+      "kind": "map"
+    },
+    {
+      "path": "/maps/henesys-hunting-ground-iii",
+      "name": "Henesys Hunting Ground III",
+      "kind": "map"
+    },
+    {
       "path": "/maps/hunting-ground-in-the-deep-forest-i",
       "name": "Hunting Ground in the Deep Forest I",
       "kind": "map"
@@ -578,6 +598,21 @@
       "kind": "monster"
     },
     {
+      "path": "/maps/kerning-city-construction-site",
+      "name": "Kerning City Construction Site",
+      "kind": "map"
+    },
+    {
+      "path": "/maps/kerning-city-middle-forest-i",
+      "name": "Kerning City Middle Forest I",
+      "kind": "map"
+    },
+    {
+      "path": "/maps/kerning-city-middle-forest-ii",
+      "name": "Kerning City Middle Forest II",
+      "kind": "map"
+    },
+    {
       "path": "/maps/kerning-city-middle-forest-iii",
       "name": "Kerning City Middle Forest III",
       "kind": "map"
@@ -586,6 +621,11 @@
       "path": "/items/knuckle-mace",
       "name": "Knuckle Mace",
       "kind": "item"
+    },
+    {
+      "path": "/maps/l-forest-i",
+      "name": "L Forest I",
+      "kind": "map"
     },
     {
       "path": "/maps/l-forest-ii",
@@ -628,6 +668,11 @@
       "kind": "monster"
     },
     {
+      "path": "/maps/mushroom-garden-10001021",
+      "name": "Mushroom Garden (Hidden Street)",
+      "kind": "map"
+    },
+    {
       "path": "/maps/mushroom-garden",
       "name": "Mushroom Garden (Rainbow Street)",
       "kind": "map"
@@ -656,6 +701,11 @@
       "path": "/items/ninja-mask-for-women",
       "name": "Ninja Mask for Women",
       "kind": "item"
+    },
+    {
+      "path": "/maps/northern-top-of-construction-site",
+      "name": "Northern Top of Construction Site",
+      "kind": "map"
     },
     {
       "path": "/monsters/orange-mushroom",
@@ -906,6 +956,11 @@
       "path": "/items/sunrise-dew",
       "name": "Sunrise Dew",
       "kind": "item"
+    },
+    {
+      "path": "/maps/sunset-sky",
+      "name": "Sunset Sky",
+      "kind": "map"
     },
     {
       "path": "/items/sword",

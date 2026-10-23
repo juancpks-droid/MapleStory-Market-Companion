@@ -1,0 +1,58 @@
+{
+  "schemaVersion": 1,
+  "path": "/maps/an-empty-house",
+  "kind": "map",
+  "name": "An Empty House",
+  "source": "CCPLZ",
+  "sourceUrl": "https://ccplz.cc/maps/an-empty-house",
+  "checkedAt": "2026-10-23T09:58:23.481Z",
+  "notice": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial.",
+  "fields": [
+    {
+      "label": "Region",
+      "value": "Victoria Island"
+    },
+    {
+      "label": "Street",
+      "value": "Hidden Street"
+    },
+    {
+      "label": "Monster levels",
+      "value": "8"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Monsters",
+      "links": [
+        {
+          "name": "Orange Mushroom",
+          "path": "/monsters/orange-mushroom",
+          "detail": "Level 8"
+        }
+      ],
+      "total": 1
+    },
+    {
+      "title": "Connected maps",
+      "links": [
+        {
+          "name": "An Empty House",
+          "path": "/maps/an-empty-house",
+          "detail": "Hidden Street"
+        },
+        {
+          "name": "Henesys",
+          "path": "/maps/henesys",
+          "detail": "Victoria Road"
+        },
+        {
+          "name": "Pig Park",
+          "path": "/maps/pig-park",
+          "detail": "Hidden Street"
+        }
+      ],
+      "total": 3
+    }
+  ]
+}

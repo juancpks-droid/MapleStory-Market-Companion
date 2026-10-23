@@ -1,15 +1,15 @@
 {
   "schemaVersion": 1,
-  "publishedAt": "2026-10-22T10:00:00.709Z",
+  "publishedAt": "2026-10-23T09:58:26.516Z",
   "catalogItems": 12726,
-  "guideRecords": 218,
+  "guideRecords": 229,
   "referenceRecords": 101,
   "entries": [
     {
       "file": "guides/items--5-o-clock-shadow.json",
       "bytes": 2129,
-      "sha256": "e9b3eeb9009f17e224aebc40f4d482d865eedb800f8140d038a538fa4995ce5b",
-      "checkedAt": "2026-10-13T15:03:36.663Z",
+      "sha256": "e2faf7d1ba13e908f760930e9822fcfb5a539483ca65fc51ae42a19eb8dade04",
+      "checkedAt": "2026-10-23T09:57:44.529Z",
       "kind": "item"
     },
     {
@@ -196,9 +196,9 @@
     },
     {
       "file": "guides/items--blue-snail-shell.json",
-      "bytes": 2031,
-      "sha256": "1e9a1b64d93a942cdad0e410de0803db5cf5eca83b3feff27018f534549beb5a",
-      "checkedAt": "2026-10-15T09:56:56.708Z",
+      "bytes": 2061,
+      "sha256": "f6897576c5db3c8ac1cca80f1732b1e41614a9e96de2bebe959705b581bd36a2",
+      "checkedAt": "2026-10-23T09:57:47.477Z",
       "kind": "item"
     },
     {
@@ -449,8 +449,8 @@
     {
       "file": "guides/items--goatee.json",
       "bytes": 2085,
-      "sha256": "98aeac6fd154953e967b117d951044d41f69a65cd2ad35a03cd974510294bf7e",
-      "checkedAt": "2026-10-13T15:03:30.641Z",
+      "sha256": "4281d0964080c0ddbfda8f3257849090b3bf4eaca5ecca86e85ddbf55841eebe",
+      "checkedAt": "2026-10-23T09:57:38.497Z",
       "kind": "item"
     },
     {
@@ -547,8 +547,8 @@
     {
       "file": "guides/items--long-brown-beard.json",
       "bytes": 2115,
-      "sha256": "fcc581e7c380233c4098363eb6839f4135d76d908e4f62a13347e58814c1a86a",
-      "checkedAt": "2026-10-13T15:03:27.636Z",
+      "sha256": "0955a2648110555691d4540809eae3699c1ae61bb64e47c75b7164c1ed74236e",
+      "checkedAt": "2026-10-23T09:57:35.467Z",
       "kind": "item"
     },
     {
@@ -560,9 +560,9 @@
     },
     {
       "file": "guides/items--mushroom-spore.json",
-      "bytes": 1327,
-      "sha256": "b66a84834d6ad2646de66b5910bc5244b3884560b0a7a2cbab675160048e4aff",
-      "checkedAt": "2026-10-15T09:57:02.652Z",
+      "bytes": 1339,
+      "sha256": "846ca27c398b8a04ce559609465b11f2b82baac24795bce23418264fad703c20",
+      "checkedAt": "2026-10-23T09:57:53.552Z",
       "kind": "item"
     },
     {
@@ -575,8 +575,8 @@
     {
       "file": "guides/items--ninja-mask-for-men.json",
       "bytes": 1838,
-      "sha256": "39d3b5bcdd64a43a2985c5fad45a6fc664b1ac72cf3d856c181b02e2e2947d54",
-      "checkedAt": "2026-10-13T15:03:33.654Z",
+      "sha256": "277a65721c69a00b3830060de1b629419ee45c72adbbe18aecc14776fdf9755a",
+      "checkedAt": "2026-10-23T09:57:41.505Z",
       "kind": "item"
     },
     {
@@ -735,9 +735,9 @@
     },
     {
       "file": "guides/items--slime-bubble.json",
-      "bytes": 1446,
-      "sha256": "922c75983515b7daef2c712e2934e51b3032f315a2164d17786cf60161ddc4d2",
-      "checkedAt": "2026-10-15T09:56:59.702Z",
+      "bytes": 1460,
+      "sha256": "01c1a3f3134d0c9e7ef4928509527cbc23a2f7ab8c295365dfce34488dacd21d",
+      "checkedAt": "2026-10-23T09:57:50.462Z",
       "kind": "item"
     },
     {
@@ -888,10 +888,24 @@
       "kind": "map"
     },
     {
+      "file": "guides/maps--an-empty-house.json",
+      "bytes": 1352,
+      "sha256": "e94c201fd7211275e9a794884c976e475cb8d718923d58b7f36c6379592b1e99",
+      "checkedAt": "2026-10-23T09:58:23.481Z",
+      "kind": "map"
+    },
+    {
       "file": "guides/maps--beach-hunting-ground.json",
       "bytes": 2115,
       "sha256": "3d3f5d273c7527643d14b40a3d1bf2e144f42435f52a32da118f53bdafcb1bd6",
       "checkedAt": "2026-10-14T09:57:09.854Z",
+      "kind": "map"
+    },
+    {
+      "file": "guides/maps--construction-site-north-of-kerning-city.json",
+      "bytes": 3016,
+      "sha256": "86166f2fc407d9017d5161e2b6113f32cc6c6bcb6ebe8bd2b61b9f7bb8e1a845",
+      "checkedAt": "2026-10-23T09:58:02.460Z",
       "kind": "map"
     },
     {
@@ -937,6 +951,20 @@
       "kind": "map"
     },
     {
+      "file": "guides/maps--henesys-hunting-ground-ii.json",
+      "bytes": 2055,
+      "sha256": "5386f2dbd9badb06079b7b372ba6a4006564942ff572d382740182f2f153fc3e",
+      "checkedAt": "2026-10-23T09:58:08.469Z",
+      "kind": "map"
+    },
+    {
+      "file": "guides/maps--henesys-hunting-ground-iii.json",
+      "bytes": 1784,
+      "sha256": "88ad7b2900feddc82db14860a17b34aedb70ef872f882e103a83e2949b904216",
+      "checkedAt": "2026-10-23T09:57:59.465Z",
+      "kind": "map"
+    },
+    {
       "file": "guides/maps--hunting-ground-in-the-deep-forest-i.json",
       "bytes": 2091,
       "sha256": "068ace3e28d1081e26d8ac3e14156b407196590e8f6960a2cb78ab66fb6d15a3",
@@ -972,10 +1000,38 @@
       "kind": "map"
     },
     {
+      "file": "guides/maps--kerning-city-construction-site.json",
+      "bytes": 2702,
+      "sha256": "e016f4228e480839fc7b47a4c71e048231bf8715d3031ce11cbe9b196f502847",
+      "checkedAt": "2026-10-23T09:58:14.483Z",
+      "kind": "map"
+    },
+    {
+      "file": "guides/maps--kerning-city-middle-forest-i.json",
+      "bytes": 2173,
+      "sha256": "7799c4c4e4ef81b959387df91abfb4c1d9f0e9f51ec19047fd27690fb1fbb071",
+      "checkedAt": "2026-10-23T09:58:17.456Z",
+      "kind": "map"
+    },
+    {
+      "file": "guides/maps--kerning-city-middle-forest-ii.json",
+      "bytes": 2205,
+      "sha256": "a7b879646d639c9dd4ebc41fef71ab1a0efbebf35fa03e62c4fca8b1d92cf70c",
+      "checkedAt": "2026-10-23T09:58:11.506Z",
+      "kind": "map"
+    },
+    {
       "file": "guides/maps--kerning-city-middle-forest-iii.json",
       "bytes": 2041,
       "sha256": "40929d21ae5403cd3af6ea3b3d020e306aa74b3005680c19b048b461e42f4479",
       "checkedAt": "2026-10-14T09:56:39.873Z",
+      "kind": "map"
+    },
+    {
+      "file": "guides/maps--l-forest-i.json",
+      "bytes": 2352,
+      "sha256": "84a4bced923c579774cf0323e74d4bf55d7864cb3cf7b08dd2d21cbcda2fe5fe",
+      "checkedAt": "2026-10-23T09:58:20.444Z",
       "kind": "map"
     },
     {
@@ -993,10 +1049,24 @@
       "kind": "map"
     },
     {
+      "file": "guides/maps--mushroom-garden-10001021.json",
+      "bytes": 1464,
+      "sha256": "a3adff64e3b764cdd8ef497770edbf0ed512b97ab9cd4843c2d984038aa0f43b",
+      "checkedAt": "2026-10-23T09:57:56.474Z",
+      "kind": "map"
+    },
+    {
       "file": "guides/maps--mushroom-garden.json",
       "bytes": 1386,
       "sha256": "fe386549fbb883f45df891e5df7bfd506f31f6445bc0054aaa94990e395c9925",
       "checkedAt": "2026-10-13T20:14:31.615Z",
+      "kind": "map"
+    },
+    {
+      "file": "guides/maps--northern-top-of-construction-site.json",
+      "bytes": 1473,
+      "sha256": "067a65eb002f8fd82a9260273bad8ca364c5b2c25706b9d1b4f989e1f583af71",
+      "checkedAt": "2026-10-23T09:58:26.459Z",
       "kind": "map"
     },
     {
@@ -1088,6 +1158,13 @@
       "bytes": 1508,
       "sha256": "2626baf5a8e326af8724f694c4933c152a5677eba74f47e29303eb6418813818",
       "checkedAt": "2026-10-13T17:08:12.493Z",
+      "kind": "map"
+    },
+    {
+      "file": "guides/maps--sunset-sky.json",
+      "bytes": 1910,
+      "sha256": "aa43887fc727ed580e4e3cfa0b3adb3d21c51ca0932bc9856cbc871993a895c2",
+      "checkedAt": "2026-10-23T09:58:05.485Z",
       "kind": "map"
     },
     {
@@ -1996,8 +2073,8 @@
     {
       "file": "records/npc-4000000.json",
       "bytes": 686,
-      "sha256": "880754aebd326dcee32b55833944610d55311392c22148aef7d87fa68de9dc21",
-      "checkedAt": "2026-10-15T09:56:56.708Z",
+      "sha256": "c9f418e5d0e0693f63c943bab65b38770052cb7a7e0705e1a6ed0aca5955a37b",
+      "checkedAt": "2026-10-23T09:57:47.477Z",
       "kind": "npc"
     },
     {
@@ -2010,15 +2087,15 @@
     {
       "file": "records/npc-4000010.json",
       "bytes": 675,
-      "sha256": "4032c98e09575ff21965ce0aaa1d937591dfe39b171738b99ed064fe115ee7ef",
-      "checkedAt": "2026-10-15T09:56:59.702Z",
+      "sha256": "7d9e41a579d84f46501053fd313ca3144f168613151091f459eb918bf5f5a0d8",
+      "checkedAt": "2026-10-23T09:57:50.462Z",
       "kind": "npc"
     },
     {
       "file": "records/npc-4000011.json",
       "bytes": 680,
-      "sha256": "2becf2e2010d4e83e7e64c6cbbbdb5933dadd55ea25a789df4383a6397f1fa76",
-      "checkedAt": "2026-10-15T09:57:02.652Z",
+      "sha256": "5d4a7406a9364e472f69277c2ce86ac419a5bdcb76e47eb7b1fa167191adfcc9",
+      "checkedAt": "2026-10-23T09:57:53.552Z",
       "kind": "npc"
     },
     {

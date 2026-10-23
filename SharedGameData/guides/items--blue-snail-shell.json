@@ -5,7 +5,7 @@
   "name": "Blue Snail Shell",
   "source": "CCPLZ",
   "sourceUrl": "https://ccplz.cc/items/blue-snail-shell",
-  "checkedAt": "2026-10-15T09:56:56.708Z",
+  "checkedAt": "2026-10-23T09:57:47.477Z",
   "notice": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial.",
   "fields": [
     {
@@ -28,21 +28,15 @@
         {
           "name": "Blue Snail",
           "path": "/monsters/blue-snail",
-          "detail": "Level 2, 60% historical rate"
-        }
-      ],
-      "total": 1
-    },
-    {
-      "title": "Also dropped by, in older versions",
-      "links": [
+          "detail": "Level 2, 47% drop rate, 105 kills counted"
+        },
         {
           "name": "Mano",
           "path": "/monsters/mano",
-          "detail": "Level 20, 60% historical rate"
+          "detail": "Level 20"
         }
       ],
-      "total": 1
+      "total": 2
     },
     {
       "title": "Needed for quests",
@@ -56,9 +50,14 @@
           "name": "Donating to Henesys (Blue Snail Shell)",
           "path": "/quests/donating-to-henesys",
           "detail": "Level 12"
+        },
+        {
+          "name": "Legend of the Snail (Snail Hunt)",
+          "path": "/quests/snail-hunt",
+          "detail": "Level 20"
         }
       ],
-      "total": 2
+      "total": 3
     },
     {
       "title": "Used in crafting",

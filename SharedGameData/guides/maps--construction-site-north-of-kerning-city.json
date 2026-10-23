@@ -1,0 +1,115 @@
+{
+  "schemaVersion": 1,
+  "path": "/maps/construction-site-north-of-kerning-city",
+  "kind": "map",
+  "name": "Construction Site North of Kerning City",
+  "source": "CCPLZ",
+  "sourceUrl": "https://ccplz.cc/maps/construction-site-north-of-kerning-city",
+  "checkedAt": "2026-10-23T09:58:02.460Z",
+  "notice": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial.",
+  "fields": [
+    {
+      "label": "Region",
+      "value": "Victoria Island"
+    },
+    {
+      "label": "Street",
+      "value": "Victoria Road"
+    },
+    {
+      "label": "Monster levels",
+      "value": "4 to 19"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Monsters",
+      "links": [
+        {
+          "name": "Red Snail",
+          "path": "/monsters/red-snail",
+          "detail": "Level 4"
+        },
+        {
+          "name": "Orange Mushroom",
+          "path": "/monsters/orange-mushroom",
+          "detail": "Level 8"
+        },
+        {
+          "name": "Dark Stump",
+          "path": "/monsters/dark-stump",
+          "detail": "Level 11"
+        },
+        {
+          "name": "Octopus",
+          "path": "/monsters/octopus",
+          "detail": "Level 12"
+        },
+        {
+          "name": "Axe Stump",
+          "path": "/monsters/axe-stump",
+          "detail": "Level 17"
+        },
+        {
+          "name": "Blue Mushroom",
+          "path": "/monsters/blue-mushroom",
+          "detail": "Level 19"
+        }
+      ],
+      "total": 6
+    },
+    {
+      "title": "NPCs",
+      "links": [
+        {
+          "name": "Thief Job Instructor (Construction Site North of Kerning City)",
+          "path": "/npcs/thief-job-instructor",
+          "detail": ""
+        }
+      ],
+      "total": 1
+    },
+    {
+      "title": "Connected maps",
+      "links": [
+        {
+          "name": "Construction Site North of Kerning City",
+          "path": "/maps/construction-site-north-of-kerning-city",
+          "detail": "Victoria Road"
+        },
+        {
+          "name": "Northern Top of Construction Site",
+          "path": "/maps/northern-top-of-construction-site",
+          "detail": "Hidden Street"
+        },
+        {
+          "name": "Sunset Sky",
+          "path": "/maps/sunset-sky",
+          "detail": "Victoria Road"
+        },
+        {
+          "name": "West Domain of Perion",
+          "path": "/maps/west-domain-of-perion",
+          "detail": "Victoria Road"
+        }
+      ],
+      "total": 4
+    },
+    {
+      "title": "Quests set here",
+      "links": [
+        {
+          "name": "The Thief's Next Journey (Finding the Instructor)",
+          "path": "/quests/finding-the-instructor-20301",
+          "detail": "Level 30"
+        },
+        {
+          "name": "The Thief's Next Journey (Test of Qualification)",
+          "path": "/quests/test-of-qualification-20302",
+          "detail": "Level 30"
+        }
+      ],
+      "total": 2
+    }
+  ]
+}

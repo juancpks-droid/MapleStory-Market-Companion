@@ -1,0 +1,110 @@
+{
+  "schemaVersion": 1,
+  "path": "/maps/kerning-city-construction-site",
+  "kind": "map",
+  "name": "Kerning City Construction Site",
+  "source": "CCPLZ",
+  "sourceUrl": "https://ccplz.cc/maps/kerning-city-construction-site",
+  "checkedAt": "2026-10-23T09:58:14.483Z",
+  "notice": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial.",
+  "fields": [
+    {
+      "label": "Region",
+      "value": "Victoria Island"
+    },
+    {
+      "label": "Street",
+      "value": "Victoria Road"
+    },
+    {
+      "label": "Monster levels",
+      "value": "2 to 14"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Monsters",
+      "links": [
+        {
+          "name": "Blue Snail",
+          "path": "/monsters/blue-snail",
+          "detail": "Level 2"
+        },
+        {
+          "name": "Stump",
+          "path": "/monsters/stump",
+          "detail": "Level 5"
+        },
+        {
+          "name": "Orange Mushroom",
+          "path": "/monsters/orange-mushroom",
+          "detail": "Level 8"
+        },
+        {
+          "name": "Octopus",
+          "path": "/monsters/octopus",
+          "detail": "Level 12"
+        },
+        {
+          "name": "Green Mushroom",
+          "path": "/monsters/green-mushroom",
+          "detail": "Level 14"
+        }
+      ],
+      "total": 5
+    },
+    {
+      "title": "NPCs",
+      "links": [
+        {
+          "name": "Chun Ji",
+          "path": "/npcs/chun-ji",
+          "detail": ""
+        }
+      ],
+      "total": 1
+    },
+    {
+      "title": "Connected maps",
+      "links": [
+        {
+          "name": "Caution Falling Down",
+          "path": "/maps/caution-falling-down",
+          "detail": "Hidden Street"
+        },
+        {
+          "name": "Kerning City",
+          "path": "/maps/kerning-city",
+          "detail": "Victoria Road"
+        },
+        {
+          "name": "L Forest I",
+          "path": "/maps/l-forest-i",
+          "detail": "Victoria Road"
+        }
+      ],
+      "total": 3
+    },
+    {
+      "title": "Quests set here",
+      "links": [
+        {
+          "name": "A Grudge That Won't Rest (A Quiet Line of Work)",
+          "path": "/quests/a-quiet-line-of-work",
+          "detail": "Level 47"
+        },
+        {
+          "name": "A Grudge That Won't Rest (An Unresolved Question)",
+          "path": "/quests/an-unresolved-question",
+          "detail": "Level 47"
+        },
+        {
+          "name": "A Grudge That Won't Rest (Another Lead)",
+          "path": "/quests/another-lead",
+          "detail": "Level 47"
+        }
+      ],
+      "total": 3
+    }
+  ]
+}
