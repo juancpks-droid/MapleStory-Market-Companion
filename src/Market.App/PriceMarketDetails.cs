@@ -29,7 +29,7 @@ public sealed partial class MainForm
   columns.Controls.Add(Side(sellCards,sellCount));columns.Controls.Add(Side(buyCards,buyCount));listings.Controls.Add(columns);listings.Controls.Add(filters);
   priceDetails.TabPages.Add(listings);
   var timeline=new TabPage("Price over time");chart.Dock=DockStyle.Fill;timeline.Controls.Add(chart);priceDetails.TabPages.Add(timeline);
-  var evidence=new TabPage("All price evidence");evidence.Controls.Add(priceGrid);priceDetails.TabPages.Add(evidence);BuildListingWorkbench();
+  var evidence=new TabPage("All price evidence");evidence.Controls.Add(priceGrid);priceDetails.TabPages.Add(evidence);BuildListingWorkbench();BuildNiaPrices();
   priceDetails.SelectedIndexChanged+=(_,_)=>{RenderValuation();RenderHistory();ApplyWorkbenchFocus();};page.Controls.Add(priceDetails);priceDetails.BringToFront();
   page.Controls.Add(marketHeadline);marketHeadline.BringToFront();priceDetails.BringToFront();marketHeadline.Font=new Font("Segoe UI",10,FontStyle.Bold);
   FitPriceText(fmContext);FitPriceText(priceSummary);FitPriceText(marketHeadline);BuildNpcReference(page);BuildPriceOverview(page);

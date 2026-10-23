@@ -10,7 +10,7 @@ const label=($:any,s:any)=>$(s).text().replace(/\s+/g,' ').trim();
 export function robotsAllows(text:string,path:string){let applies=false,best=-1,yes=true;for(const raw of text.split('\n')){const line=raw.split('#')[0].trim(),i=line.indexOf(':');if(i<0)continue;const k=line.slice(0,i).toLowerCase(),v=line.slice(i+1).trim();if(k==='user-agent'){applies=v==='*'||v.toLowerCase().includes('maplemarketcompanion');continue}if(!applies||!v||!['allow','disallow'].includes(k))continue;const pattern='^'+v.replace(/[.+?^{}()|[\]\\]/g,'\\$&').replace(/\*/g,'.*');if(new RegExp(pattern).test(path)&&v.length>=best){if(v.length>best||k==='allow'){yes=k==='allow';best=v.length}}}return yes}
 async function raw(url:string):Promise<string>{
  const u=new URL(url);if(u.protocol!=='https:'||!allowed.has(u.host))throw Error('Unsupported source');
- const ttl=u.pathname==='/robots.txt'||u.host==='maplestory-classic.com'?3600000:u.host==='kerning.gg'?900000:86400000;
+ const ttl=u.pathname==='/robots.txt'||u.host==='maplestory-classic.com'?3600000:(u.host==='kerning.gg'||u.host==='meowdb.com'&&/\/api\/(item-market-summary|market-listings)/.test(u.pathname))?900000:86400000;
  const cached=memo.get(url);if(cached&&Date.now()-cached.at<ttl)return cached.text;
  if(flight.has(url))return flight.get(url)!;
  const job=(async()=>{const shared=await readShared(url);if(shared)return shared.text();const h=hosts.get(u.host)||{next:0,count:0,start:Date.now(),tail:Promise.resolve()};hosts.set(u.host,h);const prior=h.tail;let release!:()=>void;h.tail=new Promise<void>(r=>release=r);await prior;

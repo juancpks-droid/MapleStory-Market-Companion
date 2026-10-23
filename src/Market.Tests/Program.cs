@@ -719,6 +719,16 @@ await Test("Classic feed exact identity, daily history and invalid evidence",()=
  Throws(()=>ClassicMarketFeed.Parse(json.Replace("2026-10-15T10:00:00Z","2099-10-15T10:00:00Z"),now));
 }));
 
+await Test("Nia market rejects wrong IDs and keeps price, condition and active offers",()=>Sync(()=>{
+ const string summary="""{"itemId":1435,"condition":"clean","usual":2199,"cheapestSell":1400,"bestBuy":30000}""";
+ const string rows="""{"listings":[{"id":1,"side":"sell","price":250000,"quantity":1,"condition":"clean","stats":{"critRate":2},"username":"Test","status":"active"},{"id":2,"side":"buy","price":null,"quantity":2,"status":"active"},{"id":3,"side":"sell","price":100,"status":"completed"}]}""";
+ var result=NiaMarketClient.Parse(summary,rows,1435,"Work Gloves","https://meowdb.com/msclassic/item-db/1435",now);
+ Check(result.Usual==2199&&result.Offers.Count==2&&result.Offers[0].Price==250000&&result.Offers[0].Stats.Contains("critRate: 2")&&result.Offers[1].Price is null);
+ Throws(()=>NiaMarketClient.Parse(summary,rows,113,"Scroll","https://meowdb.com/msclassic/item-db/113",now));
+ Throws(()=>NiaMarketClient.Resolve("<a href='/msclassic/item-db/1'>Work Gloves</a><a href='/msclassic/item-db/2'>Work Gloves</a>","Work Gloves"));
+ Check(NiaMarketClient.Resolve("<a href='/msclassic/item-db/1435'>Work Gloves (Lv 10)</a>","Work Gloves").EndsWith("/1435"));
+}));
+
 Directory.CreateDirectory("test-results");File.WriteAllText("test-results/results.json",JsonSerializer.Serialize(new{total=results.Count,failed=failures,results},Json.Options));Console.WriteLine($"{results.Count-failures}/{results.Count} passed");Environment.ExitCode=failures==0?0:1;
 
 

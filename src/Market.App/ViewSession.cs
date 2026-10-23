@@ -57,7 +57,7 @@ public sealed partial class MainForm
                 if(GameGuideReader.ValidPath(state.GuidePath)){guidePath=state.GuidePath;guideSelection=state.GuideItem??"";}
                 if(state.Page=="Deal Finder")state.Page="Seller Finder";
                 if(state.Page is not null&&pages.ContainsKey(state.Page))ShowPage(state.Page);
-                if(priceItemChoice.Items.Contains(state.PriceItem))priceItemChoice.SelectedItem=state.PriceItem;priceDetails.SelectedIndex=Math.Clamp(state.PriceDetailTab,0,3);
+                if(priceItemChoice.Items.Contains(state.PriceItem))priceItemChoice.SelectedItem=state.PriceItem;priceDetails.SelectedIndex=Math.Clamp(state.PriceDetailTab,0,priceDetails.TabPages.Count-1);
                 finderDetailTabs.SelectedIndex=Math.Clamp(state.FinderDetailTab,0,finderDetailTabs.TabPages.Count-1);settingsSections.SelectedIndex=Math.Clamp(state.SettingsSection,0,1);
             }
         }catch(Exception e) when(e is IOException or JsonException or UnauthorizedAccessException){footer.Text="Previous view could not be restored. Your saved player data is still available.";}

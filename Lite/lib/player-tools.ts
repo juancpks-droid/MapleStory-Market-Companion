@@ -1,11 +1,11 @@
-export const LITE_VERSION='0.10.2';
+export const LITE_VERSION='0.11.0';
 export function rememberItem(ids:string[],id:string,limit=12){return [id,...ids.filter(x=>typeof x==='string'&&x!==id)].slice(0,limit);}
 export function toggleFavorite(ids:string[],id:string){return ids.includes(id)?ids.filter(x=>x!==id):rememberItem(ids,id,50);}
 export function priceContext(data:any,now=Date.now()){
  const offers=Array.isArray(data?.offers)?data.offers:[];
  const recent=offers.filter((o:any)=>Number.isFinite(Date.parse(o.at))&&Date.parse(o.at)<=now&&now-Date.parse(o.at)<86400000).length;
  const at=Date.parse(data?.checkedAt),age=Number.isFinite(at)?Math.max(0,Math.floor((now-at)/60000)):null;
- return `Player listings: Kerning Exchange only. ${data?.marketAvailable===false?'Market source unavailable; any offers below are saved observations. ':''}${age===null?'Check time unavailable':age<1?'Checked just now':`Checked ${age} min ago`} · ${recent} listings posted in the last 24 hours · ${offers.length-recent} older/undated listings. Asking prices are not completed sales; equipment stats may differ. ${recent?'':'Not enough recent offers for a current market value. '}NPC prices are separate reference values.`;
+ return `These player listings: Kerning Exchange. Additional NiaMeowDB prices and offers are shown separately. ${data?.marketAvailable===false?'Market source unavailable; any offers below are saved observations. ':''}${age===null?'Check time unavailable':age<1?'Checked just now':`Checked ${age} min ago`} · ${recent} listings posted in the last 24 hours · ${offers.length-recent} older/undated listings. Asking prices are not completed sales; equipment stats may differ. ${recent?'':'Not enough recent offers for a current market value. '}NPC prices are separate reference values.`;
 }
 export function kerningMarket(data:any,now=Date.now()){
  if(!data)return data;

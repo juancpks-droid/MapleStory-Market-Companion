@@ -445,7 +445,7 @@ public sealed partial class MainForm : Form
         UpdatePriceOverview(asks.Count==0?null:asks.Min(o=>o.UnitPrice),buyers.Count==0?null:buyers.Max(o=>o.UnitPrice),v);
         string lead=target is null?"Search an item online to retrieve its market listings.":target.Name+" • Lowest recently checked ask: "+TextKey.Mesos(asks.Count==0?null:asks.Min(o=>o.UnitPrice))+" • "+asks.Count+" recent asks";
 
-        RenderMarketCards(target);UpdateWatchButtons();QueueNpcPrices();QueueClassicPrices();var fm=fmSummaries.FirstOrDefault(x=>TextKey.Search(x.Name)==TextKey.Search(target?.Name??DisplayedPriceQuery));
+        RenderMarketCards(target);UpdateWatchButtons();QueueNpcPrices();QueueClassicPrices();QueueNiaPrices();var fm=fmSummaries.FirstOrDefault(x=>TextKey.Search(x.Name)==TextKey.Search(target?.Name??DisplayedPriceQuery));
         fmContext.Visible=false;
         bool fmEnabled=settings.Sources.Any(x=>x.Id=="Kerning Exchange"&&x.Authorized);
         UpdateFmPriceMetrics(fm,fmEnabled);fmContext.Text=fm is null?"FM summaries: search an exact item name or open FM Tracker for broader coverage.":$"Kerning FM • 7-day median {TextKey.Mesos(fm.Median7)} • Lowest observed ask {TextKey.Mesos(fm.LowestAsk)} • {fm.Sightings} sightings\nLast seen {fm.LastSeen.ToLocalTime():g} • {(fmEnabled?fm.Quality(DateTimeOffset.UtcNow,settings.FreshHours):"Source disabled — cached only")} • Summary only; excluded from bargain alerts.";

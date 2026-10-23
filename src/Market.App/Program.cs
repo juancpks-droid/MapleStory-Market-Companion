@@ -35,6 +35,7 @@ static class Program
         if(args.Contains("--drops-smoke")){DropReferenceSmoke.Run();return;}
         if(args.Contains("--finder-smoke")){FinderSmoke.Run();return;}
         if(args.Length==3&&args[0]=="--updater-smoke"){UpdaterSmoke.Run(args[1],args[2]).GetAwaiter().GetResult();return;}
+        if(args.Contains("--nia-market-smoke")){NiaMarketSmoke.Run();return;}
         if(args.Contains("--adblock-smoke")){AdBlockSmoke.Run();return;}
 
         string directory=Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData),"MapleStoryClassicMarketCompanion");

@@ -1,0 +1,10 @@
+using Market.Core;
+namespace Market.App;
+static class NiaMarketSmoke{
+ public static void Run(){var dir=Path.Combine(AppContext.BaseDirectory,"nia-test-"+Guid.NewGuid().ToString("N"));Directory.CreateDirectory(dir);var report=Path.Combine(AppContext.BaseDirectory,"nia-result.txt");new CompanionFeatures{SetupComplete=true,Offline=true}.Save(Path.Combine(dir,"companion-features.json"));using var store=new Store(Path.Combine(dir,"market.db"));var settings=store.LoadSettings();settings.AccessVersion=5;settings.CloseToTray=false;foreach(var s in settings.Sources)s.Enabled=false;store.SaveSettings(settings);using var form=new MainForm(store,dir);form.Shown+=async(_,_)=>{try{await form.CheckNiaMarket(report);File.AppendAllText(report,"PASS: NiaMeowDB live lookups, offline cache and UI.\n");}catch(Exception e){File.AppendAllText(report,"FAIL: "+e);Environment.ExitCode=1;}finally{form.ExitApplication();}};Application.Run(form);}
+}
+public sealed partial class MainForm{
+ internal async Task CheckNiaMarket(string report){timer.Stop();updateTimer.Stop();using var reader=new NiaMarketClient();foreach(var name in new[]{"Work Gloves","Gloves Accuracy Scroll: Intermediate","Orange Potion"}){var r=await reader.Lookup(dataDirectory,name,false,stop.Token)??throw new Exception("No live Nia result: "+name);if(r.Name!=name||r.Usual is null||r.Url.Contains("login"))throw new Exception("Wrong item: "+name);var cached=await reader.Lookup(dataDirectory,name,true,stop.Token);if(cached?.CheckedAt!=r.CheckedAt)throw new Exception("Offline cache lost");File.AppendAllText(report,$"PASS: {name} · usual {r.Usual} · {r.Offers.Count} offers · offline cache retained\n");}
+ ShowPage("Price Checker");search.Text="Work Gloves";RememberPriceSearch("Work Gloves");RenderPrices(false);priceDetails.SelectedIndex=4;niaKey="";QueueNiaPrices();for(int i=0;i<200&&niaResult is null;i++)await Task.Delay(100);if(niaResult?.Name!="Work Gloves"||niaGrid.Rows.Count==0||!niaNote.Text.Contains("NiaMeowDB"))throw new Exception("Nia UI failed");CapturePreview(Path.Combine(dataDirectory,"nia-prices.png"));
+ }
+}
