@@ -1,0 +1,44 @@
+Started 1.34.2 PID 27724
+PASS: PC live card and chart: Work Gloves median 1999; 11 days
+PASS: PC live card and chart: Orange Mushroom Cap median 20; 11 days
+PASS: PC live card and chart: Iron Ore median 479; 12 days
+PASS: PC live card and chart: Hat Accuracy Scroll: Intermediate median 55000; 11 days
+PASS: PC live card and chart: Hat Accuracy Scroll: Greater median 9999; 11 days
+PASS: feed restored from disk offline
+PASS: Slime: level 6, avoid 0, 52 map rows, 19 drop rows; actual Accuracy and Price buttons.
+PASS: Blue Snail: level 2, avoid 0, 41 map rows, 15 drop rows; actual Accuracy and Price buttons.
+PASS: Jr. Balrog: level 80, avoid 49, 1 map rows, 33 drop rows; actual Accuracy and Price buttons.
+PASS: Unsaved Settings correctly block restart
+PASS: Updater downloaded and verified newer package after scripted Yes
+PASS: Download did not bypass unsaved Settings
+PASS: Save settings unlocks restart immediately
+PASS: Blue Snail search selection, live level/avoid and all potions
+PASS: Slime search selection, live level/avoid and all potions
+PASS: Jr. Balrog search selection, live level/avoid and all potions
+PASS: filter retains selection; custom override; cached monster reuse
+Starting real update/restart at 2026-10-23T19:42:14.4384531+00:00
+Started 1.35.0 PID 31700
+PASS: updated process restarted; inventory 73 preserved; recovery backup exists; old process released mutex
+PASS: Restart visibly restored Accuracy tab
+PASS: Monster, levels, ACC and potion survived package update
+PASS: Saved graph subtab retained
+PASS: Saved Settings survive restart even with setup incomplete
+PASS: Searches, listing price filters, sort, chart range, window size and Finder filters restored
+PASS: Legacy character and mesos data preserved
+PASS: Existing quantity and shared watchlist preserved
+PASS: All companion feature data unchanged: alerts, trades, dashboard preferences and theme
+PASS: Stored market history and listing notes preserved
+PASS: Graph still renders the saved market price after restart
+PASS: Bundled item guide works offline after the real restart
+PASS: PC live card and chart: Work Gloves median 1999; 11 days
+PASS: PC live card and chart: Orange Mushroom Cap median 20; 11 days
+PASS: PC live card and chart: Iron Ore median 479; 12 days
+PASS: PC live card and chart: Hat Accuracy Scroll: Intermediate median 55000; 11 days
+PASS: PC live card and chart: Hat Accuracy Scroll: Greater median 9999; 11 days
+PASS: feed restored from disk offline
+PASS: Both market tools, cards, evidence, graph and listing tools exclude cached non-Kerning data; original history is retained
+PASS: New version actual Kerning button opens three exact items and retains NPC cards after update
+PASS: Work Gloves · usual 2199 · 40 offers · offline cache retained
+PASS: Gloves Accuracy Scroll: Intermediate · usual 99999 · 0 offers · offline cache retained
+PASS: Orange Potion · usual 135 · 3 offers · offline cache retained
+COMPLETE: real package update and process restart preserved the seeded data and session.
