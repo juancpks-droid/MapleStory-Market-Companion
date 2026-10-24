@@ -5,7 +5,7 @@
   "name": "Firebomb",
   "source": "CCPLZ",
   "sourceUrl": "https://ccplz.cc/monsters/firebomb",
-  "checkedAt": "2026-10-13T15:03:48.674Z",
+  "checkedAt": "2026-10-24T09:53:20.080Z",
   "notice": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial.",
   "fields": [
     {
@@ -66,82 +66,27 @@
       "title": "Drops",
       "links": [
         {
-          "name": "Black Maro",
-          "path": "/items/black-maro",
-          "detail": "Hat, 0.15% historical rate"
-        },
-        {
-          "name": "Blood Moss Boots",
-          "path": "/items/blood-moss-boots",
-          "detail": "Shoes, 0.08% historical rate"
-        },
-        {
-          "name": "Blue Moonlight",
-          "path": "/items/blue-moonlight",
-          "detail": "Overall, 0.07% historical rate"
-        },
-        {
-          "name": "Blue Potion (for Olaf's Training: Olaf's First Training)",
+          "name": "Blue Potion",
           "path": "/items/blue-potion",
-          "detail": "Potions, 10% historical rate"
-        },
-        {
-          "name": "Blue Shouldermail",
-          "path": "/items/blue-shouldermail",
-          "detail": "Topwear, 0.08% historical rate"
-        },
-        {
-          "name": "Blue Shouldermail Pants",
-          "path": "/items/blue-shouldermail-pants",
-          "detail": "Bottomwear, 0.08% historical rate"
+          "detail": "Potions, about 2.4%, usual for its kind"
         },
         {
           "name": "Firebomb Flame",
           "path": "/items/firebomb-flame",
-          "detail": "Monster drops, 60% historical rate"
+          "detail": "Monster drops"
         },
         {
-          "name": "Green Sonata",
-          "path": "/items/green-sonata",
-          "detail": "Hat, 0.15% historical rate"
-        },
-        {
-          "name": "Knuckle Mace",
-          "path": "/items/knuckle-mace",
-          "detail": "One-handed blunt, 0.07% historical rate"
-        },
-        {
-          "name": "Power Crystal Ore",
-          "path": "/items/power-crystal-ore",
-          "detail": "Crafting materials, 1% historical rate"
-        },
-        {
-          "name": "Red Seraphis",
-          "path": "/items/red-seraphis",
-          "detail": "Hat, 0.15% historical rate"
-        },
-        {
-          "name": "Sai",
-          "path": "/items/sai",
-          "detail": "Dagger, 0.05% historical rate"
-        },
-        {
-          "name": "The Magic Rock",
-          "path": "/items/the-magic-rock",
-          "detail": "Magic rocks, 1% historical rate"
-        },
-        {
-          "name": "Traus",
-          "path": "/items/traus",
-          "detail": "One-handed sword, 0.07% historical rate"
+          "name": "Gold Ore",
+          "path": "/items/gold-ore",
+          "detail": "Ores & ingots, about 1.2%, usual for its kind"
         },
         {
           "name": "White Potion",
           "path": "/items/white-potion",
-          "detail": "Potions, 10% historical rate"
+          "detail": "Potions, about 2.4%, usual for its kind"
         }
       ],
-      "total": 15
+      "total": 4
     }
   ]
 }

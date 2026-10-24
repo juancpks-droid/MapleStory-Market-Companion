@@ -1,0 +1,155 @@
+{
+  "schemaVersion": 1,
+  "path": "/items/bronze-koif",
+  "kind": "item",
+  "name": "Bronze Koif",
+  "source": "CCPLZ",
+  "sourceUrl": "https://ccplz.cc/items/bronze-koif",
+  "checkedAt": "2026-10-24T09:53:44.113Z",
+  "notice": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial.",
+  "fields": [
+    {
+      "label": "Type",
+      "value": "Hat"
+    },
+    {
+      "label": "Required level",
+      "value": "10"
+    },
+    {
+      "label": "Class",
+      "value": "Warrior"
+    },
+    {
+      "label": "Weapon defense",
+      "value": "+22"
+    },
+    {
+      "label": "DEX",
+      "value": "+1"
+    },
+    {
+      "label": "Accuracy",
+      "value": "+1"
+    },
+    {
+      "label": "Upgrade slots",
+      "value": "7"
+    },
+    {
+      "label": "NPC sell price",
+      "value": "600 mesos"
+    },
+    {
+      "label": "NPC buy price (lowest recorded)",
+      "value": "1200 mesos"
+    },
+    {
+      "label": "Required STR",
+      "value": "10"
+    },
+    {
+      "label": "Required DEX",
+      "value": "0"
+    },
+    {
+      "label": "Required INT",
+      "value": "0"
+    },
+    {
+      "label": "Required LUK",
+      "value": "0"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Dropped by",
+      "links": [
+        {
+          "name": "Orange Mushroom",
+          "path": "/monsters/orange-mushroom",
+          "detail": "Level 8, about 0.22%, usual for its kind"
+        },
+        {
+          "name": "Slime",
+          "path": "/monsters/slime",
+          "detail": "Level 6, about 0.22%, usual for its kind"
+        }
+      ],
+      "total": 2
+    },
+    {
+      "title": "Sold in",
+      "links": [
+        {
+          "name": "Harry's Shop",
+          "path": "/shops/harry-s-shop",
+          "detail": ""
+        }
+      ],
+      "total": 1
+    },
+    {
+      "title": "Used in crafting",
+      "links": [
+        {
+          "name": "Metal Koif",
+          "path": "/recipes/craft-metal-koif",
+          "detail": ""
+        },
+        {
+          "name": "Mithril Koif",
+          "path": "/recipes/craft-mithril-koif",
+          "detail": ""
+        }
+      ],
+      "total": 2
+    },
+    {
+      "title": "Similar equipment",
+      "links": [
+        {
+          "name": "Black Bandana",
+          "path": "/items/black-bandana",
+          "detail": "Level 10"
+        },
+        {
+          "name": "Black Ghetto Beanie",
+          "path": "/items/black-ghetto-beanie",
+          "detail": "Level 10"
+        },
+        {
+          "name": "Blue Apprentice Hat",
+          "path": "/items/blue-apprentice-hat",
+          "detail": "Level 10"
+        },
+        {
+          "name": "Blue Bandana",
+          "path": "/items/blue-bandana",
+          "detail": "Level 10"
+        },
+        {
+          "name": "Blue Ghetto Beanie",
+          "path": "/items/blue-ghetto-beanie",
+          "detail": "Level 10"
+        },
+        {
+          "name": "Brown Apprentice Hat",
+          "path": "/items/brown-apprentice-hat",
+          "detail": "Level 10"
+        },
+        {
+          "name": "Brown Ghetto Beanie",
+          "path": "/items/brown-ghetto-beanie",
+          "detail": "Level 10"
+        },
+        {
+          "name": "Brown Winter Hat",
+          "path": "/items/brown-winter-hat",
+          "detail": "Level 10"
+        }
+      ],
+      "total": 8
+    }
+  ]
+}

@@ -188,6 +188,11 @@
       "kind": "item"
     },
     {
+      "path": "/items/bronze-koif",
+      "name": "Bronze Koif",
+      "kind": "item"
+    },
+    {
       "path": "/items/bronze-ore",
       "name": "Bronze Ore",
       "kind": "item"
@@ -206,6 +211,11 @@
       "path": "/recipes/craft-brown-ghetto-beanie",
       "name": "Brown Ghetto Beanie",
       "kind": "recipe"
+    },
+    {
+      "path": "/items/brown-hard-leather-boots",
+      "name": "Brown Hard Leather Boots",
+      "kind": "item"
     },
     {
       "path": "/items/brown-moonlight",
@@ -251,6 +261,11 @@
       "path": "/items/cape-magic-def-scroll-intermediate",
       "name": "Cape Magic Def. Scroll: Intermediate",
       "kind": "item"
+    },
+    {
+      "path": "/maps/caution-falling-down",
+      "name": "Caution Falling Down",
+      "kind": "map"
     },
     {
       "path": "/monsters/chirppy",
@@ -353,6 +368,11 @@
       "kind": "map"
     },
     {
+      "path": "/items/diamond-ore",
+      "name": "Diamond Ore",
+      "kind": "item"
+    },
+    {
       "path": "/quests/donating-to-henesys-506023",
       "name": "Donating to Henesys (Orange Mushroom Cap)",
       "kind": "quest"
@@ -361,6 +381,11 @@
       "path": "/quests/donating-to-kerning-city-506120",
       "name": "Donating to Kerning City (Orange Mushroom Cap)",
       "kind": "quest"
+    },
+    {
+      "path": "/items/double-axe",
+      "name": "Double Axe",
+      "kind": "item"
     },
     {
       "path": "/maps/drake-s-meal-table",
@@ -528,6 +553,11 @@
       "kind": "monster"
     },
     {
+      "path": "/items/green-winter-hat",
+      "name": "Green Winter Hat",
+      "kind": "item"
+    },
+    {
       "path": "/recipes/craft-hardwood-wand",
       "name": "Hardwood Wand",
       "kind": "recipe"
@@ -536,6 +566,11 @@
       "path": "/items/heart",
       "name": "Heart",
       "kind": "item"
+    },
+    {
+      "path": "/maps/henesys-hunting-ground-i",
+      "name": "Henesys Hunting Ground I",
+      "kind": "map"
     },
     {
       "path": "/maps/henesys-hunting-ground-ii",
@@ -640,6 +675,11 @@
     {
       "path": "/items/long-brown-beard",
       "name": "Long Brown Beard",
+      "kind": "item"
+    },
+    {
+      "path": "/items/long-sword",
+      "name": "Long Sword",
       "kind": "item"
     },
     {
@@ -790,6 +830,11 @@
     {
       "path": "/items/red-moonlight",
       "name": "Red Moonlight",
+      "kind": "item"
+    },
+    {
+      "path": "/items/red-ninja-sandals",
+      "name": "Red Ninja Sandals",
       "kind": "item"
     },
     {
@@ -1013,6 +1058,11 @@
       "kind": "map"
     },
     {
+      "path": "/maps/the-hill-east-of-henesys",
+      "name": "The Hill East of Henesys",
+      "kind": "map"
+    },
+    {
       "path": "/items/the-magic-rock",
       "name": "The Magic Rock",
       "kind": "item"
@@ -1021,6 +1071,11 @@
       "path": "/quests/the-reason-behind-the-mushroom-studies",
       "name": "The Reason Behind the Mushroom Studies",
       "kind": "quest"
+    },
+    {
+      "path": "/maps/the-road-to-the-dungeon",
+      "name": "The Road to the Dungeon",
+      "kind": "map"
     },
     {
       "path": "/maps/thicket-around-the-beach-i",

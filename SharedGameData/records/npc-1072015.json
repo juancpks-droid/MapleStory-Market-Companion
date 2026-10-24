@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "item": {
+    "key": "gms83:1072015",
+    "name": "Brown Hard Leather Boots",
+    "id": "1072015",
+    "category": "Equipment"
+  },
+  "kind": "npc",
+  "checkedAt": "2026-10-24T09:53:47.072Z",
+  "data": {
+    "sell": 600,
+    "buy": 1200,
+    "source": "CCPLZ",
+    "url": "https://ccplz.cc/items/brown-hard-leather-boots",
+    "checkedAt": "2026-10-24T09:53:47.072Z"
+  },
+  "provenance": {
+    "source": "CCPLZ",
+    "sourceUrl": "https://ccplz.cc/items/brown-hard-leather-boots",
+    "coverage": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial."
+  }
+}

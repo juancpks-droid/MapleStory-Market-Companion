@@ -1,0 +1,138 @@
+{
+  "schemaVersion": 1,
+  "path": "/items/red-ninja-sandals",
+  "kind": "item",
+  "name": "Red Ninja Sandals",
+  "source": "CCPLZ",
+  "sourceUrl": "https://ccplz.cc/items/red-ninja-sandals",
+  "checkedAt": "2026-10-24T09:54:02.109Z",
+  "notice": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial.",
+  "fields": [
+    {
+      "label": "Type",
+      "value": "Shoes"
+    },
+    {
+      "label": "Required level",
+      "value": "15"
+    },
+    {
+      "label": "Class",
+      "value": "Thief"
+    },
+    {
+      "label": "Weapon defense",
+      "value": "+12"
+    },
+    {
+      "label": "STR",
+      "value": "+1"
+    },
+    {
+      "label": "Max HP",
+      "value": "+5"
+    },
+    {
+      "label": "Avoidability",
+      "value": "+1"
+    },
+    {
+      "label": "Upgrade slots",
+      "value": "5"
+    },
+    {
+      "label": "NPC sell price",
+      "value": "900 mesos"
+    },
+    {
+      "label": "NPC buy price (lowest recorded)",
+      "value": "1800 mesos"
+    },
+    {
+      "label": "Required STR",
+      "value": "0"
+    },
+    {
+      "label": "Required DEX",
+      "value": "0"
+    },
+    {
+      "label": "Required INT",
+      "value": "0"
+    },
+    {
+      "label": "Required LUK",
+      "value": "20"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Dropped by",
+      "links": [
+        {
+          "name": "Orange Mushroom",
+          "path": "/monsters/orange-mushroom",
+          "detail": "Level 8, about 0.22%, usual for its kind"
+        }
+      ],
+      "total": 1
+    },
+    {
+      "title": "Sold in",
+      "links": [
+        {
+          "name": "Don Hwang's Shop",
+          "path": "/shops/don-hwang-s-shop",
+          "detail": ""
+        }
+      ],
+      "total": 1
+    },
+    {
+      "title": "Similar equipment",
+      "links": [
+        {
+          "name": "Beige Nitty",
+          "path": "/items/beige-nitty",
+          "detail": "Level 15"
+        },
+        {
+          "name": "Black Nitty",
+          "path": "/items/black-nitty",
+          "detail": "Level 15"
+        },
+        {
+          "name": "Blue Ninja Sandals",
+          "path": "/items/blue-ninja-sandals",
+          "detail": "Level 15"
+        },
+        {
+          "name": "Blue Woodsman Boots",
+          "path": "/items/blue-woodsman-boots",
+          "detail": "Level 15"
+        },
+        {
+          "name": "Bronze Grieves",
+          "path": "/items/bronze-grieves",
+          "detail": "Level 15"
+        },
+        {
+          "name": "Brown Woodsman Boots",
+          "path": "/items/brown-woodsman-boots",
+          "detail": "Level 15"
+        },
+        {
+          "name": "Green Woodsman Boots",
+          "path": "/items/green-woodsman-boots",
+          "detail": "Level 15"
+        },
+        {
+          "name": "Steel Grieves",
+          "path": "/items/steel-grieves",
+          "detail": "Level 15"
+        }
+      ],
+      "total": 8
+    }
+  ]
+}

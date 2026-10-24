@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "item": {
+    "key": "gms83:1072031",
+    "name": "Red Ninja Sandals",
+    "id": "1072031",
+    "category": "Equipment"
+  },
+  "kind": "npc",
+  "checkedAt": "2026-10-24T09:54:02.109Z",
+  "data": {
+    "sell": 900,
+    "buy": 1800,
+    "source": "CCPLZ",
+    "url": "https://ccplz.cc/items/red-ninja-sandals",
+    "checkedAt": "2026-10-24T09:54:02.109Z"
+  },
+  "provenance": {
+    "source": "CCPLZ",
+    "sourceUrl": "https://ccplz.cc/items/red-ninja-sandals",
+    "coverage": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial."
+  }
+}

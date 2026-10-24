@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "publishedAt": "2026-10-23T09:58:26.516Z",
+  "publishedAt": "2026-10-24T09:54:02.187Z",
   "catalogItems": 12726,
-  "guideRecords": 229,
-  "referenceRecords": 101,
+  "guideRecords": 240,
+  "referenceRecords": 108,
   "entries": [
     {
       "file": "guides/items--5-o-clock-shadow.json",
@@ -223,6 +223,13 @@
       "kind": "item"
     },
     {
+      "file": "guides/items--bronze-koif.json",
+      "bytes": 3432,
+      "sha256": "553e0d4ca461d3dd23ad9e12c623c4650cccfac4dfdc5cd22e10e920265719bf",
+      "checkedAt": "2026-10-24T09:53:44.113Z",
+      "kind": "item"
+    },
+    {
       "file": "guides/items--bronze-ore.json",
       "bytes": 2374,
       "sha256": "ea7ccbebc1a5de47f1460f5475c1bf86c32636bc2e97be6013355c3b1eeee4e6",
@@ -234,6 +241,13 @@
       "bytes": 3438,
       "sha256": "5a745365b75c6d1b9aa735d4ab6eacb42c68d6bfb49aa5f2d925b91d96d31ef9",
       "checkedAt": "2026-10-17T09:50:44.892Z",
+      "kind": "item"
+    },
+    {
+      "file": "guides/items--brown-hard-leather-boots.json",
+      "bytes": 2992,
+      "sha256": "1fba32054549382a96f06d58d5f3cf405f5af760e3b792581569e298b385b32a",
+      "checkedAt": "2026-10-24T09:53:47.072Z",
       "kind": "item"
     },
     {
@@ -356,6 +370,20 @@
       "kind": "item"
     },
     {
+      "file": "guides/items--diamond-ore.json",
+      "bytes": 2398,
+      "sha256": "282a7b9f7c440a2437d6d6d3a2f2f0e2c5c1f019a1f3d69401e1fe5e9a1c609c",
+      "checkedAt": "2026-10-24T09:53:50.107Z",
+      "kind": "item"
+    },
+    {
+      "file": "guides/items--double-axe.json",
+      "bytes": 2704,
+      "sha256": "cb299a6f65f00a09c5c479bdd7e82e43cbb34ace8452aa302025281f6cd71117",
+      "checkedAt": "2026-10-24T09:53:53.090Z",
+      "kind": "item"
+    },
+    {
       "file": "guides/items--earring-int-scroll-greater.json",
       "bytes": 1822,
       "sha256": "4d53a0007afd760ffdb457bef9470e8a8f92e07330063bfeed1629cc8bff1f22",
@@ -407,29 +435,29 @@
     {
       "file": "guides/items--general-s-mustache-1.json",
       "bytes": 1877,
-      "sha256": "d9f738504da53b936bd073a901c54099cc895fc2227fa425169ed5c63cd1c5bd",
-      "checkedAt": "2026-10-13T15:03:39.690Z",
+      "sha256": "f590aabb708707f26cb33ddd7875199713e630d458c52ddf79553bae2f4b571c",
+      "checkedAt": "2026-10-24T09:53:11.182Z",
       "kind": "item"
     },
     {
       "file": "guides/items--general-s-mustache-2.json",
       "bytes": 1877,
-      "sha256": "48b9c9d26e353d7ecf471f3670f5e4cdbda892a8ec539a7da0faf2274863d591",
-      "checkedAt": "2026-10-13T15:03:42.699Z",
+      "sha256": "c338cf36881df212f77b632c9188a922bf32d4d49f5a342ec4e04434e8d5abcc",
+      "checkedAt": "2026-10-24T09:53:14.157Z",
       "kind": "item"
     },
     {
       "file": "guides/items--gloves-attack-scroll-chaos.json",
       "bytes": 1325,
-      "sha256": "d61473e9948b50b9cc317fe038a110eb08fbf878bfbabcf9c35b3b0a9e6579d8",
-      "checkedAt": "2026-10-13T17:08:06.464Z",
+      "sha256": "54c2126d3aebadfec53f47009c746458d5398649e988316f1dbb5c3cce259678",
+      "checkedAt": "2026-10-24T09:53:29.113Z",
       "kind": "item"
     },
     {
       "file": "guides/items--gloves-attack-scroll-greater.json",
-      "bytes": 2120,
-      "sha256": "7e48227ddd6ad37e0d0ffece735f5ec62d8ef867212ecd814fd7e2cb34973c6e",
-      "checkedAt": "2026-10-13T17:08:03.457Z",
+      "bytes": 1583,
+      "sha256": "a392918f4d705d6507c1d858db7f7a668893003ac285d6ae6779e61859ad5b2d",
+      "checkedAt": "2026-10-24T09:53:26.087Z",
       "kind": "item"
     },
     {
@@ -442,8 +470,8 @@
     {
       "file": "guides/items--gloves-attack-scroll-lesser.json",
       "bytes": 1818,
-      "sha256": "a74a4cab3d4212e0f26297eceb421ad571aded20cf065182300637c2a03bdda0",
-      "checkedAt": "2026-10-13T17:08:00.459Z",
+      "sha256": "66803b34f80225264b655daa2742643b014476c00695957749130a46d468bd7e",
+      "checkedAt": "2026-10-24T09:53:23.099Z",
       "kind": "item"
     },
     {
@@ -531,6 +559,13 @@
       "kind": "item"
     },
     {
+      "file": "guides/items--green-winter-hat.json",
+      "bytes": 3130,
+      "sha256": "a294d2ad9aca1da5e38f55e92d358792ab36130cc10c7e9afecb6aba5935e7de",
+      "checkedAt": "2026-10-24T09:53:56.180Z",
+      "kind": "item"
+    },
+    {
       "file": "guides/items--heart.json",
       "bytes": 1830,
       "sha256": "6ce5d7fd25efc47b362ec13dfbb8e6eb3b164d382e4c3e57a39e423d568070ab",
@@ -549,6 +584,13 @@
       "bytes": 2115,
       "sha256": "0955a2648110555691d4540809eae3699c1ae61bb64e47c75b7164c1ed74236e",
       "checkedAt": "2026-10-23T09:57:35.467Z",
+      "kind": "item"
+    },
+    {
+      "file": "guides/items--long-sword.json",
+      "bytes": 2972,
+      "sha256": "361cb236212acd927a0e5d39825ff91aedfbf943cfdba6b7f41f36694d0bd144",
+      "checkedAt": "2026-10-24T09:53:59.167Z",
       "kind": "item"
     },
     {
@@ -682,6 +724,13 @@
       "bytes": 2676,
       "sha256": "26c0cb04630585c34403ecbd321e22bac9ec01f6faff0ff13710f5204b4fefb4",
       "checkedAt": "2026-10-13T15:37:54.261Z",
+      "kind": "item"
+    },
+    {
+      "file": "guides/items--red-ninja-sandals.json",
+      "bytes": 3012,
+      "sha256": "b9fd4aebbb4a8dcd0a3a91decf0d06bfcdfa8ba68172dc9a0f87295e31dacb35",
+      "checkedAt": "2026-10-24T09:54:02.109Z",
       "kind": "item"
     },
     {
@@ -902,6 +951,13 @@
       "kind": "map"
     },
     {
+      "file": "guides/maps--caution-falling-down.json",
+      "bytes": 1416,
+      "sha256": "462175aa3c2d9f1dbf99d4470f198c21acbd51e90454870bc67cd21697430fe9",
+      "checkedAt": "2026-10-24T09:53:32.123Z",
+      "kind": "map"
+    },
+    {
       "file": "guides/maps--construction-site-north-of-kerning-city.json",
       "bytes": 3016,
       "sha256": "86166f2fc407d9017d5161e2b6113f32cc6c6bcb6ebe8bd2b61b9f7bb8e1a845",
@@ -948,6 +1004,13 @@
       "bytes": 2274,
       "sha256": "d50e71166050a9e464e8c464b6e21a0b806f6bac7d88f6f5fb1ef8d20117fc91",
       "checkedAt": "2026-10-13T17:08:30.469Z",
+      "kind": "map"
+    },
+    {
+      "file": "guides/maps--henesys-hunting-ground-i.json",
+      "bytes": 2167,
+      "sha256": "3817e781b917da9597ff97245fbf93946db63a271ae9b5dedfb31b5ef0a78cbb",
+      "checkedAt": "2026-10-24T09:53:35.098Z",
       "kind": "map"
     },
     {
@@ -1231,6 +1294,20 @@
       "kind": "map"
     },
     {
+      "file": "guides/maps--the-hill-east-of-henesys.json",
+      "bytes": 2196,
+      "sha256": "4a25c3ee27f2d4502accc1309246907b8b15abd7b008df22b6e50718b3980e75",
+      "checkedAt": "2026-10-24T09:53:41.091Z",
+      "kind": "map"
+    },
+    {
+      "file": "guides/maps--the-road-to-the-dungeon.json",
+      "bytes": 2946,
+      "sha256": "d6f5edede9ecd39e172e6539dba00f24a493c8ef5f3ebfcd93eb7d24f12d637b",
+      "checkedAt": "2026-10-24T09:53:38.090Z",
+      "kind": "map"
+    },
+    {
       "file": "guides/maps--thicket-around-the-beach-i.json",
       "bytes": 1788,
       "sha256": "c15f3a4d4d9d54d96aecc4fb2b09ef717e5c6d6ebf08a83c0ef024829d546beb",
@@ -1330,9 +1407,9 @@
     },
     {
       "file": "guides/monsters--curse-eye.json",
-      "bytes": 8010,
-      "sha256": "c0c3d27259fd059020de76de176070c773bb591953c38db2922327b9de3ea42d",
-      "checkedAt": "2026-10-13T15:03:45.665Z",
+      "bytes": 7384,
+      "sha256": "0a9c091c68c17ddce3899c459b5affcc8132a564267f28e1d5aa7979115e2075",
+      "checkedAt": "2026-10-24T09:53:17.107Z",
       "kind": "monster"
     },
     {
@@ -1358,9 +1435,9 @@
     },
     {
       "file": "guides/monsters--firebomb.json",
-      "bytes": 3786,
-      "sha256": "537fa909d926bf86a7c93176b832801dc7bb9fb3a6064bae8ff796a8ccbef547",
-      "checkedAt": "2026-10-13T15:03:48.674Z",
+      "bytes": 2072,
+      "sha256": "53367f5db63bf4cbe83de3329f486ee954e9d3b587ae375814591d299739aa90",
+      "checkedAt": "2026-10-24T09:53:20.080Z",
       "kind": "monster"
     },
     {
@@ -1644,10 +1721,24 @@
       "kind": "npc"
     },
     {
+      "file": "records/npc-1002043.json",
+      "bytes": 679,
+      "sha256": "a14a57c2e38e894e5a1a86c8828e6fbd4f057f4c27767bb27abd160d90651d93",
+      "checkedAt": "2026-10-24T09:53:44.113Z",
+      "kind": "npc"
+    },
+    {
       "file": "records/npc-1002053.json",
       "bytes": 688,
       "sha256": "dc8a602c6159ebc99fb6fbb8888dd3b3b796198c7623f70a1e885df040b6bfe2",
       "checkedAt": "2026-10-15T09:57:14.681Z",
+      "kind": "npc"
+    },
+    {
+      "file": "records/npc-1002057.json",
+      "bytes": 694,
+      "sha256": "7f4dd27c7a799649d702b05e05953eddb7120235423cbb223c516be1d0be2097",
+      "checkedAt": "2026-10-24T09:53:56.180Z",
       "kind": "npc"
     },
     {
@@ -1896,6 +1987,20 @@
       "kind": "npc"
     },
     {
+      "file": "records/npc-1072015.json",
+      "bytes": 718,
+      "sha256": "64f464e3c45a9690c07de54f5f123e0d600ecad236d64efd821ce3e192695f64",
+      "checkedAt": "2026-10-24T09:53:47.072Z",
+      "kind": "npc"
+    },
+    {
+      "file": "records/npc-1072031.json",
+      "bytes": 697,
+      "sha256": "d7929a1f202949cd370d6af746eda5d4265e4a6902bdc23c3abff3b98fbf7f06",
+      "checkedAt": "2026-10-24T09:54:02.109Z",
+      "kind": "npc"
+    },
+    {
       "file": "records/npc-1072052.json",
       "bytes": 689,
       "sha256": "2a10561c8c0597643ec1a4a013734a3e0daeb863c14c74b92e34a58970c548da",
@@ -1959,10 +2064,24 @@
       "kind": "npc"
     },
     {
+      "file": "records/npc-1302007.json",
+      "bytes": 677,
+      "sha256": "c41281d8525f253094409f85c6d3b63a106d5664731300ae1e4e7e87758cb0e1",
+      "checkedAt": "2026-10-24T09:53:59.167Z",
+      "kind": "npc"
+    },
+    {
       "file": "records/npc-1302009.json",
       "bytes": 662,
       "sha256": "24c46c10bff5905e808c44d15ff39a44516e89f27c12dfcbe4135a41279224ab",
       "checkedAt": "2026-10-19T10:00:46.871Z",
+      "kind": "npc"
+    },
+    {
+      "file": "records/npc-1312000.json",
+      "bytes": 677,
+      "sha256": "8b583bed7396d97160b9147e5220a61c6f365dcb1e7ec59e9903b173e9878a65",
+      "checkedAt": "2026-10-24T09:53:53.090Z",
       "kind": "npc"
     },
     {
@@ -2169,6 +2288,13 @@
       "kind": "npc"
     },
     {
+      "file": "records/npc-4020007.json",
+      "bytes": 673,
+      "sha256": "3792e19c094809de381dd47cbee80fa50de9112a00da52e57d4c74bfaa2c353f",
+      "checkedAt": "2026-10-24T09:53:50.107Z",
+      "kind": "npc"
+    },
+    {
       "file": "records/npc-4032451.json",
       "bytes": 645,
       "sha256": "9aa5a37bbf0d5d0fea01a7b38aaa1c1aceff549d71b1694429087cbc036355c2",
@@ -2234,8 +2360,8 @@
     {
       "file": "records/npc-classic-2040800.json",
       "bytes": 723,
-      "sha256": "3af747aefb8c23a90fa7b3dfc4f20a4621dc00456b168f09c664572dbfd33397",
-      "checkedAt": "2026-10-13T17:08:00.459Z",
+      "sha256": "7e449b3e209841ea8ee89be682ca6a508fce974d33f0056d3dadfff041f7c582",
+      "checkedAt": "2026-10-24T09:53:23.099Z",
       "kind": "npc"
     },
     {
@@ -2248,15 +2374,15 @@
     {
       "file": "records/npc-classic-2040802.json",
       "bytes": 725,
-      "sha256": "c445fb7651759e817e34ebd5befccbc522608361201eaf982a175eaf4c73d7ac",
-      "checkedAt": "2026-10-13T17:08:03.457Z",
+      "sha256": "0a7b7545ffbc01971d658f883bb5ef4702d067ee51c15aa0f79d6e3d9a72c242",
+      "checkedAt": "2026-10-24T09:53:26.087Z",
       "kind": "npc"
     },
     {
       "file": "records/npc-classic-2040803.json",
       "bytes": 719,
-      "sha256": "9f1aaa79d71551da94cc4d296a6fa55aeed5e806bedbe59a8d1596d09e47ced1",
-      "checkedAt": "2026-10-13T17:08:06.464Z",
+      "sha256": "e6133a0707a50b92046e94596356cef5c8b119ebdea0513c1afe18766608b515",
+      "checkedAt": "2026-10-24T09:53:29.113Z",
       "kind": "npc"
     },
     {

@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "item": {
+    "key": "gms83:4020007",
+    "name": "Diamond Ore",
+    "id": "4020007",
+    "category": "Etc"
+  },
+  "kind": "npc",
+  "checkedAt": "2026-10-24T09:53:50.107Z",
+  "data": {
+    "sell": 240,
+    "buy": null,
+    "source": "CCPLZ",
+    "url": "https://ccplz.cc/items/diamond-ore",
+    "checkedAt": "2026-10-24T09:53:50.107Z"
+  },
+  "provenance": {
+    "source": "CCPLZ",
+    "sourceUrl": "https://ccplz.cc/items/diamond-ore",
+    "coverage": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial."
+  }
+}

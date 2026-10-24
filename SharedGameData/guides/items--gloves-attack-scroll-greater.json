@@ -5,7 +5,7 @@
   "name": "Gloves Attack Scroll: Greater",
   "source": "CCPLZ",
   "sourceUrl": "https://ccplz.cc/items/gloves-attack-scroll-greater",
-  "checkedAt": "2026-10-13T17:08:03.457Z",
+  "checkedAt": "2026-10-24T09:53:26.087Z",
   "notice": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial.",
   "fields": [
     {
@@ -26,27 +26,6 @@
     }
   ],
   "sections": [
-    {
-      "title": "Dropped by",
-      "links": [
-        {
-          "name": "Crimson Balrog",
-          "path": "/monsters/crimson-balrog",
-          "detail": "Level 100, 0.3% historical rate"
-        },
-        {
-          "name": "Fire Sentinel",
-          "path": "/monsters/fire-sentinel",
-          "detail": "Level 30, 0.03% historical rate"
-        },
-        {
-          "name": "Tortie",
-          "path": "/monsters/tortie",
-          "detail": "Level 46, 0.03% historical rate"
-        }
-      ],
-      "total": 3
-    },
     {
       "title": "Quest rewards",
       "links": [

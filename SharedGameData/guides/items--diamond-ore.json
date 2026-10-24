@@ -1,0 +1,90 @@
+{
+  "schemaVersion": 1,
+  "path": "/items/diamond-ore",
+  "kind": "item",
+  "name": "Diamond Ore",
+  "source": "CCPLZ",
+  "sourceUrl": "https://ccplz.cc/items/diamond-ore",
+  "checkedAt": "2026-10-24T09:53:50.107Z",
+  "notice": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial.",
+  "fields": [
+    {
+      "label": "Type",
+      "value": "Gems & gem ores"
+    },
+    {
+      "label": "NPC sell price",
+      "value": "240 mesos"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Dropped by",
+      "links": [
+        {
+          "name": "Cerebes",
+          "path": "/monsters/cerebes",
+          "detail": "about 1.2%, usual for its kind"
+        },
+        {
+          "name": "Croco",
+          "path": "/monsters/croco",
+          "detail": "Level 52, about 1.2%, usual for its kind"
+        },
+        {
+          "name": "Dark Axe Stump",
+          "path": "/monsters/dark-axe-stump",
+          "detail": "Level 23, about 1.2%, usual for its kind"
+        },
+        {
+          "name": "Dark Leatty",
+          "path": "/monsters/dark-leatty",
+          "detail": "about 1.2%, usual for its kind"
+        },
+        {
+          "name": "Drake",
+          "path": "/monsters/drake",
+          "detail": "Level 50, about 1.2%, usual for its kind"
+        },
+        {
+          "name": "Fire Boar",
+          "path": "/monsters/fire-boar",
+          "detail": "Level 32, about 1.2%, usual for its kind"
+        },
+        {
+          "name": "Orange Mushroom",
+          "path": "/monsters/orange-mushroom",
+          "detail": "Level 8, about 1.2%, usual for its kind"
+        },
+        {
+          "name": "White Fang",
+          "path": "/monsters/white-fang",
+          "detail": "about 1.2%, usual for its kind"
+        }
+      ],
+      "total": 8
+    },
+    {
+      "title": "Quest rewards",
+      "links": [
+        {
+          "name": "Rowen the Fairy and the Cursed Doll (Collecting 100 Cursed Dolls)",
+          "path": "/quests/collecting-100-cursed-dolls",
+          "detail": "Level 36"
+        }
+      ],
+      "total": 1
+    },
+    {
+      "title": "Used in crafting",
+      "links": [
+        {
+          "name": "Diamond",
+          "path": "/recipes/craft-diamond",
+          "detail": ""
+        }
+      ],
+      "total": 1
+    }
+  ]
+}

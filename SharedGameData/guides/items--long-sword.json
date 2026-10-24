@@ -1,0 +1,136 @@
+{
+  "schemaVersion": 1,
+  "path": "/items/long-sword",
+  "kind": "item",
+  "name": "Long Sword",
+  "source": "CCPLZ",
+  "sourceUrl": "https://ccplz.cc/items/long-sword",
+  "checkedAt": "2026-10-24T09:53:59.167Z",
+  "notice": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial.",
+  "fields": [
+    {
+      "label": "Type",
+      "value": "One-handed sword"
+    },
+    {
+      "label": "Required level",
+      "value": "10"
+    },
+    {
+      "label": "Class",
+      "value": "All classes"
+    },
+    {
+      "label": "Weapon attack",
+      "value": "+27"
+    },
+    {
+      "label": "Upgrade slots",
+      "value": "7"
+    },
+    {
+      "label": "NPC sell price",
+      "value": "1,500 mesos"
+    },
+    {
+      "label": "NPC buy price (lowest recorded)",
+      "value": "3000 mesos"
+    },
+    {
+      "label": "Required STR",
+      "value": "20"
+    },
+    {
+      "label": "Required DEX",
+      "value": "0"
+    },
+    {
+      "label": "Required INT",
+      "value": "0"
+    },
+    {
+      "label": "Required LUK",
+      "value": "0"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Dropped by",
+      "links": [
+        {
+          "name": "Orange Mushroom",
+          "path": "/monsters/orange-mushroom",
+          "detail": "Level 8, about 0.22%, usual for its kind"
+        }
+      ],
+      "total": 1
+    },
+    {
+      "title": "Sold in",
+      "links": [
+        {
+          "name": "Cutthroat Manny's Shop",
+          "path": "/shops/cutthroat-manny-s-shop",
+          "detail": ""
+        },
+        {
+          "name": "River's Shop",
+          "path": "/shops/river-s-shop",
+          "detail": ""
+        },
+        {
+          "name": "Silver's Shop",
+          "path": "/shops/silver-s-shop",
+          "detail": ""
+        }
+      ],
+      "total": 3
+    },
+    {
+      "title": "Similar equipment",
+      "links": [
+        {
+          "name": "Beginner's Long Sword",
+          "path": "/items/beginner-s-long-sword",
+          "detail": "Level 10"
+        },
+        {
+          "name": "Pumpkin Basket",
+          "path": "/items/pumpkin-basket",
+          "detail": "Level 10"
+        },
+        {
+          "name": "Sabre",
+          "path": "/items/sabre",
+          "detail": "Level 15"
+        },
+        {
+          "name": "Saw",
+          "path": "/items/saw",
+          "detail": "Level 15"
+        },
+        {
+          "name": "Old Gladius",
+          "path": "/items/old-gladius",
+          "detail": ""
+        },
+        {
+          "name": "Sword",
+          "path": "/items/sword",
+          "detail": ""
+        },
+        {
+          "name": "Machete",
+          "path": "/items/machete",
+          "detail": "Level 20"
+        },
+        {
+          "name": "Viking Sword",
+          "path": "/items/viking-sword",
+          "detail": "Level 20"
+        }
+      ],
+      "total": 8
+    }
+  ]
+}

@@ -1,0 +1,134 @@
+{
+  "schemaVersion": 1,
+  "path": "/items/brown-hard-leather-boots",
+  "kind": "item",
+  "name": "Brown Hard Leather Boots",
+  "source": "CCPLZ",
+  "sourceUrl": "https://ccplz.cc/items/brown-hard-leather-boots",
+  "checkedAt": "2026-10-24T09:53:47.072Z",
+  "notice": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial.",
+  "fields": [
+    {
+      "label": "Type",
+      "value": "Shoes"
+    },
+    {
+      "label": "Required level",
+      "value": "10"
+    },
+    {
+      "label": "Class",
+      "value": "Bowman"
+    },
+    {
+      "label": "Weapon defense",
+      "value": "+10"
+    },
+    {
+      "label": "Avoidability",
+      "value": "+1"
+    },
+    {
+      "label": "Speed",
+      "value": "+1"
+    },
+    {
+      "label": "Upgrade slots",
+      "value": "5"
+    },
+    {
+      "label": "NPC sell price",
+      "value": "600 mesos"
+    },
+    {
+      "label": "NPC buy price (lowest recorded)",
+      "value": "1200 mesos"
+    },
+    {
+      "label": "Required STR",
+      "value": "0"
+    },
+    {
+      "label": "Required DEX",
+      "value": "10"
+    },
+    {
+      "label": "Required INT",
+      "value": "0"
+    },
+    {
+      "label": "Required LUK",
+      "value": "0"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Dropped by",
+      "links": [
+        {
+          "name": "Orange Mushroom",
+          "path": "/monsters/orange-mushroom",
+          "detail": "Level 8, about 0.22%, usual for its kind"
+        }
+      ],
+      "total": 1
+    },
+    {
+      "title": "Sold in",
+      "links": [
+        {
+          "name": "Sam's Shop",
+          "path": "/shops/sam-s-shop",
+          "detail": ""
+        }
+      ],
+      "total": 1
+    },
+    {
+      "title": "Similar equipment",
+      "links": [
+        {
+          "name": "Blue Basic Boots",
+          "path": "/items/blue-basic-boots",
+          "detail": "Level 10"
+        },
+        {
+          "name": "Blue Gidder Shoes",
+          "path": "/items/blue-gidder-shoes",
+          "detail": "Level 10"
+        },
+        {
+          "name": "Brown Basic Boots",
+          "path": "/items/brown-basic-boots",
+          "detail": "Level 10"
+        },
+        {
+          "name": "Brown Gidder Shoes",
+          "path": "/items/brown-gidder-shoes",
+          "detail": "Level 10"
+        },
+        {
+          "name": "Green Hard Leather Boots",
+          "path": "/items/green-hard-leather-boots",
+          "detail": "Level 10"
+        },
+        {
+          "name": "Yellow Basic Boots",
+          "path": "/items/yellow-basic-boots",
+          "detail": "Level 10"
+        },
+        {
+          "name": "Black Gomushin",
+          "path": "/items/black-gomushin",
+          "detail": "Level 11"
+        },
+        {
+          "name": "Smelly Gomushin",
+          "path": "/items/smelly-gomushin",
+          "detail": "Level 11"
+        }
+      ],
+      "total": 8
+    }
+  ]
+}

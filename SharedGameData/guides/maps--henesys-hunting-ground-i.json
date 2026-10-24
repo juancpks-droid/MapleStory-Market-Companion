@@ -1,0 +1,88 @@
+{
+  "schemaVersion": 1,
+  "path": "/maps/henesys-hunting-ground-i",
+  "kind": "map",
+  "name": "Henesys Hunting Ground I",
+  "source": "CCPLZ",
+  "sourceUrl": "https://ccplz.cc/maps/henesys-hunting-ground-i",
+  "checkedAt": "2026-10-24T09:53:35.098Z",
+  "notice": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial.",
+  "fields": [
+    {
+      "label": "Region",
+      "value": "Victoria Island"
+    },
+    {
+      "label": "Street",
+      "value": "Victoria Road"
+    },
+    {
+      "label": "Monster levels",
+      "value": "2 to 14"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Monsters",
+      "links": [
+        {
+          "name": "Blue Snail",
+          "path": "/monsters/blue-snail",
+          "detail": "Level 2"
+        },
+        {
+          "name": "Shroom",
+          "path": "/monsters/shroom",
+          "detail": "Level 3"
+        },
+        {
+          "name": "Red Snail",
+          "path": "/monsters/red-snail",
+          "detail": "Level 4"
+        },
+        {
+          "name": "Stump",
+          "path": "/monsters/stump",
+          "detail": "Level 5"
+        },
+        {
+          "name": "Slime",
+          "path": "/monsters/slime",
+          "detail": "Level 6"
+        },
+        {
+          "name": "Orange Mushroom",
+          "path": "/monsters/orange-mushroom",
+          "detail": "Level 8"
+        },
+        {
+          "name": "Green Mushroom",
+          "path": "/monsters/green-mushroom",
+          "detail": "Level 14"
+        }
+      ],
+      "total": 7
+    },
+    {
+      "title": "Connected maps",
+      "links": [
+        {
+          "name": "A Hill West of Henesys",
+          "path": "/maps/a-hill-west-of-henesys",
+          "detail": "Victoria Road"
+        },
+        {
+          "name": "Henesys",
+          "path": "/maps/henesys",
+          "detail": "Victoria Road"
+        },
+        {
+          "name": "Henesys Hunting Ground II",
+          "path": "/maps/henesys-hunting-ground-ii",
+          "detail": "Victoria Road"
+        }
+      ],
+      "total": 3
+    }
+  ]
+}

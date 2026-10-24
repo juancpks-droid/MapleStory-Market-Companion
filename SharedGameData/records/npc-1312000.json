@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "item": {
+    "key": "gms83:1312000",
+    "name": "Double Axe",
+    "id": "1312000",
+    "category": "Equipment"
+  },
+  "kind": "npc",
+  "checkedAt": "2026-10-24T09:53:53.090Z",
+  "data": {
+    "sell": 1500,
+    "buy": 3000,
+    "source": "CCPLZ",
+    "url": "https://ccplz.cc/items/double-axe",
+    "checkedAt": "2026-10-24T09:53:53.090Z"
+  },
+  "provenance": {
+    "source": "CCPLZ",
+    "sourceUrl": "https://ccplz.cc/items/double-axe",
+    "coverage": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial."
+  }
+}
