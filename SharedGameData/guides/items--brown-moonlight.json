@@ -5,7 +5,7 @@
   "name": "Brown Moonlight",
   "source": "CCPLZ",
   "sourceUrl": "https://ccplz.cc/items/brown-moonlight",
-  "checkedAt": "2026-10-13T15:37:36.252Z",
+  "checkedAt": "2026-10-25T09:53:29.376Z",
   "notice": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial.",
   "fields": [
     {
@@ -58,27 +58,6 @@
     }
   ],
   "sections": [
-    {
-      "title": "Dropped by",
-      "links": [
-        {
-          "name": "Dark Nependeath",
-          "path": "/monsters/dark-nependeath",
-          "detail": "Level 47, 0.07% historical rate"
-        },
-        {
-          "name": "Green Trixter",
-          "path": "/monsters/green-trixter",
-          "detail": "Level 28, 0.08% historical rate"
-        },
-        {
-          "name": "Star Pixie",
-          "path": "/monsters/star-pixie",
-          "detail": "Level 35, 0.07% historical rate"
-        }
-      ],
-      "total": 3
-    },
     {
       "title": "Similar equipment",
       "links": [

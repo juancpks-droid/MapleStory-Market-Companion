@@ -7,13 +7,13 @@
     "category": "Equipment"
   },
   "kind": "npc",
-  "checkedAt": "2026-10-13T15:37:36.252Z",
+  "checkedAt": "2026-10-25T09:53:29.376Z",
   "data": {
     "sell": 12600,
     "buy": null,
     "source": "CCPLZ",
     "url": "https://ccplz.cc/items/brown-moonlight",
-    "checkedAt": "2026-10-13T15:37:36.252Z"
+    "checkedAt": "2026-10-25T09:53:29.376Z"
   },
   "provenance": {
     "source": "CCPLZ",

@@ -1,0 +1,126 @@
+{
+  "schemaVersion": 1,
+  "path": "/items/basic-archer-gloves",
+  "kind": "item",
+  "name": "Basic Archer Gloves",
+  "source": "CCPLZ",
+  "sourceUrl": "https://ccplz.cc/items/basic-archer-gloves",
+  "checkedAt": "2026-10-25T09:53:44.285Z",
+  "notice": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial.",
+  "fields": [
+    {
+      "label": "Type",
+      "value": "Gloves"
+    },
+    {
+      "label": "Required level",
+      "value": "15"
+    },
+    {
+      "label": "Class",
+      "value": "Bowman"
+    },
+    {
+      "label": "Weapon defense",
+      "value": "+8"
+    },
+    {
+      "label": "DEX",
+      "value": "+1"
+    },
+    {
+      "label": "Upgrade slots",
+      "value": "5"
+    },
+    {
+      "label": "NPC sell price",
+      "value": "1,800 mesos"
+    },
+    {
+      "label": "Required STR",
+      "value": "0"
+    },
+    {
+      "label": "Required DEX",
+      "value": "20"
+    },
+    {
+      "label": "Required INT",
+      "value": "0"
+    },
+    {
+      "label": "Required LUK",
+      "value": "0"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Dropped by",
+      "links": [
+        {
+          "name": "Orange Mushroom",
+          "path": "/monsters/orange-mushroom",
+          "detail": "Level 8, about 0.22%, usual for its kind"
+        }
+      ],
+      "total": 1
+    },
+    {
+      "title": "How to craft it",
+      "links": [
+        {
+          "name": "Basic Archer Gloves",
+          "path": "/recipes/craft-basic-archer-gloves",
+          "detail": "Crafting skill level 3"
+        }
+      ],
+      "total": 1
+    },
+    {
+      "title": "Similar equipment",
+      "links": [
+        {
+          "name": "Black Duo",
+          "path": "/items/black-duo",
+          "detail": "Level 15"
+        },
+        {
+          "name": "Blue Duo",
+          "path": "/items/blue-duo",
+          "detail": "Level 15"
+        },
+        {
+          "name": "Brown Duo",
+          "path": "/items/brown-duo",
+          "detail": "Level 15"
+        },
+        {
+          "name": "Lemona",
+          "path": "/items/lemona",
+          "detail": "Level 15"
+        },
+        {
+          "name": "Steel Fingerless Gloves",
+          "path": "/items/steel-fingerless-gloves",
+          "detail": "Level 15"
+        },
+        {
+          "name": "Juno",
+          "path": "/items/juno",
+          "detail": "Level 10"
+        },
+        {
+          "name": "Work Gloves",
+          "path": "/items/work-gloves",
+          "detail": "Level 10"
+        },
+        {
+          "name": "Black Cat Gloves",
+          "path": "/items/black-cat-gloves",
+          "detail": "Level 20"
+        }
+      ],
+      "total": 8
+    }
+  ]
+}

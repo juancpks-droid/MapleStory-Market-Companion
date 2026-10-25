@@ -83,6 +83,11 @@
       "kind": "item"
     },
     {
+      "path": "/items/basic-archer-gloves",
+      "name": "Basic Archer Gloves",
+      "kind": "item"
+    },
+    {
       "path": "/items/battle-scar",
       "name": "Battle Scar",
       "kind": "item"
@@ -96,6 +101,11 @@
       "path": "/maps/beach-hunting-ground",
       "name": "Beach Hunting Ground",
       "kind": "map"
+    },
+    {
+      "path": "/npcs/biggs",
+      "name": "Biggs",
+      "kind": "npc"
     },
     {
       "path": "/quests/biggs-s-collection-of-items",
@@ -150,6 +160,11 @@
     {
       "path": "/items/blue-moonlight",
       "name": "Blue Moonlight",
+      "kind": "item"
+    },
+    {
+      "path": "/items/blue-potion",
+      "name": "Blue Potion",
       "kind": "item"
     },
     {
@@ -448,6 +463,11 @@
       "kind": "item"
     },
     {
+      "path": "/items/fruit-knife",
+      "name": "Fruit Knife",
+      "kind": "item"
+    },
+    {
       "path": "/items/garnet-ore",
       "name": "Garnet Ore",
       "kind": "item"
@@ -693,6 +713,11 @@
       "kind": "npc"
     },
     {
+      "path": "/quests/mai-s-final-training",
+      "name": "Mai's Training (Mai's Final Training)",
+      "kind": "quest"
+    },
+    {
       "path": "/items/mana-elixir",
       "name": "Mana Elixir",
       "kind": "item"
@@ -701,6 +726,16 @@
       "path": "/monsters/mano",
       "name": "Mano",
       "kind": "monster"
+    },
+    {
+      "path": "/npcs/maya",
+      "name": "Maya",
+      "kind": "npc"
+    },
+    {
+      "path": "/quests/delivering-the-weird-medicine",
+      "name": "Maya and the Weird Medicine (Delivering the Weird Medicine)",
+      "kind": "quest"
     },
     {
       "path": "/monsters/mushmom",
@@ -746,6 +781,11 @@
       "path": "/maps/northern-top-of-construction-site",
       "name": "Northern Top of Construction Site",
       "kind": "map"
+    },
+    {
+      "path": "/quests/olaf-s-second-training",
+      "name": "Olaf's Training (Olaf's Second Training)",
+      "kind": "quest"
     },
     {
       "path": "/monsters/orange-mushroom",
@@ -808,6 +848,11 @@
       "kind": "item"
     },
     {
+      "path": "/items/razor",
+      "name": "Razor",
+      "kind": "item"
+    },
+    {
       "path": "/items/red-doroness-robe",
       "name": "Red Doroness Robe",
       "kind": "item"
@@ -835,6 +880,11 @@
     {
       "path": "/items/red-ninja-sandals",
       "name": "Red Ninja Sandals",
+      "kind": "item"
+    },
+    {
+      "path": "/items/red-potion",
+      "name": "Red Potion",
       "kind": "item"
     },
     {
@@ -905,6 +955,11 @@
     {
       "path": "/items/sf-ninja-mask",
       "name": "SF Ninja Mask",
+      "kind": "item"
+    },
+    {
+      "path": "/items/shoes-jump-scroll-greater",
+      "name": "Shoes Jump Scroll: Greater",
       "kind": "item"
     },
     {
@@ -980,6 +1035,16 @@
     {
       "path": "/items/sniper-potion",
       "name": "Sniper Potion",
+      "kind": "item"
+    },
+    {
+      "path": "/maps/southperry",
+      "name": "Southperry",
+      "kind": "map"
+    },
+    {
+      "path": "/items/spear",
+      "name": "Spear",
       "kind": "item"
     },
     {
@@ -1180,6 +1245,11 @@
     {
       "path": "/items/white-fingerless-gloves",
       "name": "White Fingerless Gloves",
+      "kind": "item"
+    },
+    {
+      "path": "/items/white-gomushin",
+      "name": "White Gomushin",
       "kind": "item"
     },
     {

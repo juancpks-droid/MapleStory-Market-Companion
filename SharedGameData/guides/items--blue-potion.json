@@ -1,0 +1,684 @@
+{
+  "schemaVersion": 1,
+  "path": "/items/blue-potion",
+  "kind": "item",
+  "name": "Blue Potion",
+  "source": "CCPLZ",
+  "sourceUrl": "https://ccplz.cc/items/blue-potion",
+  "checkedAt": "2026-10-25T09:53:35.403Z",
+  "notice": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial.",
+  "fields": [
+    {
+      "label": "Type",
+      "value": "Potions"
+    },
+    {
+      "label": "NPC sell price",
+      "value": "22 mesos"
+    },
+    {
+      "label": "NPC buy price (lowest recorded)",
+      "value": "220 mesos"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Dropped by",
+      "links": [
+        {
+          "name": "Aqumander",
+          "path": "/monsters/aqumander",
+          "detail": "Level 43, about 2.4%, usual for its kind"
+        },
+        {
+          "name": "Axe Stump",
+          "path": "/monsters/axe-stump",
+          "detail": "Level 17, about 2.4%, usual for its kind"
+        },
+        {
+          "name": "Bain",
+          "path": "/monsters/bain",
+          "detail": "about 2.4%, usual for its kind"
+        },
+        {
+          "name": "Blue Mushroom",
+          "path": "/monsters/blue-mushroom",
+          "detail": "Level 19, about 2.4%, usual for its kind"
+        },
+        {
+          "name": "Bubbling",
+          "path": "/monsters/bubbling",
+          "detail": "Level 15, about 2.4%, usual for its kind"
+        },
+        {
+          "name": "Cellion",
+          "path": "/monsters/cellion",
+          "detail": "about 2.4%, usual for its kind"
+        },
+        {
+          "name": "Cerebes",
+          "path": "/monsters/cerebes",
+          "detail": "about 2.4%, usual for its kind"
+        },
+        {
+          "name": "Clang",
+          "path": "/monsters/clang",
+          "detail": "Level 49, about 2.4%, usual for its kind"
+        },
+        {
+          "name": "Cold Eye",
+          "path": "/monsters/cold-eye",
+          "detail": "Level 40, about 2.4%, usual for its kind"
+        },
+        {
+          "name": "Coolie Zombie",
+          "path": "/monsters/coolie-zombie",
+          "detail": "about 2.4%, usual for its kind"
+        },
+        {
+          "name": "Copper Drake",
+          "path": "/monsters/copper-drake",
+          "detail": "Level 45, about 2.4%, usual for its kind"
+        },
+        {
+          "name": "Crimson Balrog",
+          "path": "/monsters/crimson-balrog",
+          "detail": "Level 100"
+        },
+        {
+          "name": "Curse Eye",
+          "path": "/monsters/curse-eye",
+          "detail": "Level 33, about 2.4%, usual for its kind"
+        },
+        {
+          "name": "Dark Axe Stump",
+          "path": "/monsters/dark-axe-stump",
+          "detail": "Level 23, about 2.4%, usual for its kind"
+        },
+        {
+          "name": "Dark Leatty",
+          "path": "/monsters/dark-leatty",
+          "detail": "about 2.4%, usual for its kind"
+        },
+        {
+          "name": "Dark Yeti",
+          "path": "/monsters/dark-yeti",
+          "detail": "about 2.4%, usual for its kind"
+        },
+        {
+          "name": "Duskmander",
+          "path": "/monsters/duskmander",
+          "detail": "Level 50, about 2.4%, usual for its kind"
+        },
+        {
+          "name": "Echopus",
+          "path": "/monsters/echopus",
+          "detail": "Level 45, about 2.4%, usual for its kind"
+        },
+        {
+          "name": "Evil Eye",
+          "path": "/monsters/evil-eye",
+          "detail": "Level 27, about 2.4%, usual for its kind"
+        },
+        {
+          "name": "Fire Boar",
+          "path": "/monsters/fire-boar",
+          "detail": "Level 32, about 2.4%, usual for its kind"
+        },
+        {
+          "name": "Firebomb",
+          "path": "/monsters/firebomb",
+          "detail": "about 2.4%, usual for its kind"
+        },
+        {
+          "name": "Flyeye",
+          "path": "/monsters/flyeye",
+          "detail": "Level 41, about 2.4%, usual for its kind"
+        },
+        {
+          "name": "Glowshroom",
+          "path": "/monsters/glowshroom",
+          "detail": "Level 39, about 2.4%, usual for its kind"
+        },
+        {
+          "name": "Golden Stirge",
+          "path": "/monsters/golden-stirge",
+          "detail": "Level 42, about 2.4%, usual for its kind"
+        },
+        {
+          "name": "Green Mushroom",
+          "path": "/monsters/green-mushroom",
+          "detail": "Level 14, 0.97% drop rate, 620 kills counted"
+        },
+        {
+          "name": "Grupin",
+          "path": "/monsters/grupin",
+          "detail": "about 2.4%, usual for its kind"
+        },
+        {
+          "name": "Hector",
+          "path": "/monsters/hector",
+          "detail": "about 2.4%, usual for its kind"
+        },
+        {
+          "name": "Horny Mushroom",
+          "path": "/monsters/horny-mushroom",
+          "detail": "Level 22, 0.95% drop rate, 633 kills counted"
+        },
+        {
+          "name": "Jr. Balrog",
+          "path": "/monsters/jr-balrog",
+          "detail": "Level 80"
+        },
+        {
+          "name": "Jr. Cellion",
+          "path": "/monsters/jr-cellion",
+          "detail": "about 2.4%, usual for its kind"
+        },
+        {
+          "name": "Jr. Grupin",
+          "path": "/monsters/jr-grupin",
+          "detail": "about 2.4%, usual for its kind"
+        },
+        {
+          "name": "Jr. Lioner",
+          "path": "/monsters/jr-lioner",
+          "detail": "about 2.4%, usual for its kind"
+        },
+        {
+          "name": "Jr. Necki",
+          "path": "/monsters/jr-necki",
+          "detail": "Level 21, about 2.4%, usual for its kind"
+        },
+        {
+          "name": "Jr. Pepe",
+          "path": "/monsters/jr-pepe",
+          "detail": "about 2.4%, usual for its kind"
+        },
+        {
+          "name": "Jr. Sentinel",
+          "path": "/monsters/jr-sentinel",
+          "detail": "about 2.4%, usual for its kind"
+        },
+        {
+          "name": "Jr. Wraith",
+          "path": "/monsters/jr-wraith",
+          "detail": "Level 34, about 2.4%, usual for its kind"
+        },
+        {
+          "name": "Jr. Yeti",
+          "path": "/monsters/jr-yeti",
+          "detail": "about 2.4%, usual for its kind"
+        },
+        {
+          "name": "Leatty",
+          "path": "/monsters/leatty",
+          "detail": "about 2.4%, usual for its kind"
+        },
+        {
+          "name": "Ligator",
+          "path": "/monsters/ligator",
+          "detail": "Level 31, about 2.4%, usual for its kind"
+        },
+        {
+          "name": "Lioner",
+          "path": "/monsters/lioner",
+          "detail": "about 2.4%, usual for its kind"
+        },
+        {
+          "name": "Lorang",
+          "path": "/monsters/lorang",
+          "detail": "Level 38, about 2.4%, usual for its kind"
+        },
+        {
+          "name": "Lucida",
+          "path": "/monsters/lucida",
+          "detail": "about 2.4%, usual for its kind"
+        },
+        {
+          "name": "Lunar Pixie",
+          "path": "/monsters/lunar-pixie",
+          "detail": "about 2.4%, usual for its kind"
+        },
+        {
+          "name": "Luster Pixie",
+          "path": "/monsters/luster-pixie",
+          "detail": "about 2.4%, usual for its kind"
+        },
+        {
+          "name": "Minor Zombie",
+          "path": "/monsters/minor-zombie",
+          "detail": "about 2.4%, usual for its kind"
+        },
+        {
+          "name": "Mushmom",
+          "path": "/monsters/mushmom",
+          "detail": "Level 40"
+        },
+        {
+          "name": "Raffle",
+          "path": "/monsters/raffle",
+          "detail": "Level 40, about 2.4%, usual for its kind"
+        },
+        {
+          "name": "Rafflesia",
+          "path": "/monsters/rafflesia",
+          "detail": "Level 47, about 2.4%, usual for its kind"
+        },
+        {
+          "name": "Rotten Mushmom",
+          "path": "/monsters/rotten-mushmom",
+          "detail": "Level 60"
+        },
+        {
+          "name": "Rotten Mushroom",
+          "path": "/monsters/rotten-mushroom",
+          "detail": "Level 56, about 2.4%, usual for its kind"
+        },
+        {
+          "name": "Sporewood",
+          "path": "/monsters/sporewood",
+          "detail": "Level 59, about 2.4%, usual for its kind"
+        },
+        {
+          "name": "Star Pixie",
+          "path": "/monsters/star-pixie",
+          "detail": "about 2.4%, usual for its kind"
+        },
+        {
+          "name": "Stirge",
+          "path": "/monsters/stirge",
+          "detail": "Level 20, about 2.4%, usual for its kind"
+        },
+        {
+          "name": "Tauromacis",
+          "path": "/monsters/tauromacis",
+          "detail": "Level 70, about 2.4%, usual for its kind"
+        },
+        {
+          "name": "Taurospear",
+          "path": "/monsters/taurospear",
+          "detail": "Level 75, about 2.4%, usual for its kind"
+        },
+        {
+          "name": "Tortie",
+          "path": "/monsters/tortie",
+          "detail": "Level 46, about 2.4%, usual for its kind"
+        },
+        {
+          "name": "Transformed Dark Yeti",
+          "path": "/monsters/transformed-dark-yeti",
+          "detail": "about 2.4%, usual for its kind"
+        },
+        {
+          "name": "Transformed Yeti",
+          "path": "/monsters/transformed-yeti",
+          "detail": "about 2.4%, usual for its kind"
+        },
+        {
+          "name": "White Fang",
+          "path": "/monsters/white-fang",
+          "detail": "about 2.4%, usual for its kind"
+        },
+        {
+          "name": "Wild Boar",
+          "path": "/monsters/wild-boar",
+          "detail": "Level 25, about 2.4%, usual for its kind"
+        }
+      ],
+      "total": 60
+    },
+    {
+      "title": "Sold in",
+      "links": [
+        {
+          "name": "Arturo's Shop",
+          "path": "/shops/arturo-s-shop",
+          "detail": ""
+        },
+        {
+          "name": "Dr. Faymus's Shop",
+          "path": "/shops/dr-faymus-s-shop",
+          "detail": ""
+        },
+        {
+          "name": "Len the Fairy's Shop",
+          "path": "/shops/len-the-fairy-s-shop",
+          "detail": ""
+        },
+        {
+          "name": "Luma's Shop",
+          "path": "/shops/luma-s-shop",
+          "detail": ""
+        },
+        {
+          "name": "Luna's Shop",
+          "path": "/shops/luna-s-shop",
+          "detail": ""
+        },
+        {
+          "name": "Mina's Shop",
+          "path": "/shops/mina-s-shop",
+          "detail": ""
+        },
+        {
+          "name": "Mr. Sweatbottom's Shop",
+          "path": "/shops/mr-sweatbottom-s-shop",
+          "detail": ""
+        },
+        {
+          "name": "Valen's Shop",
+          "path": "/shops/valen-s-shop",
+          "detail": ""
+        }
+      ],
+      "total": 8
+    },
+    {
+      "title": "Quest rewards",
+      "links": [
+        {
+          "name": "[Construction Site B1] What Shumi Lost ([Construction Site B2] Shumi's Lost Roll of Cash)",
+          "path": "/quests/construction-site-b2-shumi-s-lost-roll-of-cash",
+          "detail": "Level 35"
+        },
+        {
+          "name": "A Family Reunited (A Father's Love for His Daughter)",
+          "path": "/quests/a-father-s-love-for-his-daughter",
+          "detail": "Level 17"
+        },
+        {
+          "name": "A Family Reunited (Bruce's Cooking Ingredients)",
+          "path": "/quests/bruce-s-cooking-ingredients",
+          "detail": "Level 17"
+        },
+        {
+          "name": "A Gift for a Citizen of Honor (A Craftsman's Touch)",
+          "path": "/quests/a-craftsman-s-touch",
+          "detail": "Level 57"
+        },
+        {
+          "name": "A Grudge That Won't Rest (A Quiet Line of Work)",
+          "path": "/quests/a-quiet-line-of-work",
+          "detail": "Level 47"
+        },
+        {
+          "name": "A Marble of Friendship (A Marble Made With Care)",
+          "path": "/quests/a-marble-made-with-care",
+          "detail": "Level 37"
+        },
+        {
+          "name": "A Marble of Friendship (Materials for a Special Marble)",
+          "path": "/quests/materials-for-a-special-marble",
+          "detail": "Level 37"
+        },
+        {
+          "name": "After the Festival Ends... (Chief Stan's Hammer)",
+          "path": "/quests/chief-stan-s-hammer",
+          "detail": "Level 27"
+        },
+        {
+          "name": "After the Festival Ends... (Memories of Youth)",
+          "path": "/quests/memories-of-youth",
+          "detail": "Level 27"
+        },
+        {
+          "name": "Alex the Runaway Kid (Talking to Stan)",
+          "path": "/quests/talking-to-stan",
+          "detail": "Level 18"
+        },
+        {
+          "name": "Asking After Athena Pierce",
+          "path": "/quests/asking-after-athena-pierce",
+          "detail": "Level 12"
+        },
+        {
+          "name": "Asking After Chief Stan",
+          "path": "/quests/asking-after-chief-stan",
+          "detail": "Level 12"
+        },
+        {
+          "name": "Asking After Chun Ji",
+          "path": "/quests/asking-after-chun-ji",
+          "detail": "Level 12"
+        },
+        {
+          "name": "Asking After Dark Lord",
+          "path": "/quests/asking-after-dark-lord",
+          "detail": "Level 12"
+        },
+        {
+          "name": "Caretaker's Ledger (Repairing the Book)",
+          "path": "/quests/repairing-the-book",
+          "detail": "Level 28"
+        },
+        {
+          "name": "Caretaker's Ledger (The Dark Lord's Signature)",
+          "path": "/quests/the-dark-lord-s-signature",
+          "detail": "Level 28"
+        },
+        {
+          "name": "Caretaker's Ledger (The Filing Error)",
+          "path": "/quests/the-filing-error",
+          "detail": "Level 28"
+        },
+        {
+          "name": "Collecting For Maya (Maya's Second Collection)",
+          "path": "/quests/maya-s-second-collection",
+          "detail": "Level 30"
+        },
+        {
+          "name": "Donating to Henesys (Blue Mushroom Cap)",
+          "path": "/quests/donating-to-henesys-506025",
+          "detail": "Level 12"
+        },
+        {
+          "name": "Donating to Henesys (Blue Snail Shell)",
+          "path": "/quests/donating-to-henesys",
+          "detail": "Level 12"
+        },
+        {
+          "name": "Donating to Henesys (Charm of the Undead)",
+          "path": "/quests/donating-to-henesys-506027",
+          "detail": "Level 12"
+        },
+        {
+          "name": "Donating to Henesys (Cold Eye Tail)",
+          "path": "/quests/donating-to-henesys-506033",
+          "detail": "Level 12"
+        },
+        {
+          "name": "Donating to Henesys (Curse Eye Tail)",
+          "path": "/quests/donating-to-henesys-506031",
+          "detail": "Level 12"
+        },
+        {
+          "name": "Donating to Henesys (Drake Skull)",
+          "path": "/quests/donating-to-henesys-506035",
+          "detail": "Level 12"
+        },
+        {
+          "name": "Donating to Henesys (Evil Eye Tail)",
+          "path": "/quests/donating-to-henesys-506029",
+          "detail": "Level 12"
+        },
+        {
+          "name": "Donating to Henesys (Green Mushroom Cap)",
+          "path": "/quests/donating-to-henesys-506024",
+          "detail": "Level 12"
+        },
+        {
+          "name": "Donating to Henesys (Horny Mushroom Cap)",
+          "path": "/quests/donating-to-henesys-506026",
+          "detail": "Level 12"
+        },
+        {
+          "name": "Donating to Henesys (Ligator Skin)",
+          "path": "/quests/donating-to-henesys-506030",
+          "detail": "Level 12"
+        },
+        {
+          "name": "Donating to Henesys (Lorang Claw)",
+          "path": "/quests/donating-to-henesys-506032",
+          "detail": "Level 12"
+        },
+        {
+          "name": "Donating to Henesys (Mushroom Spore)",
+          "path": "/quests/donating-to-henesys-506020",
+          "detail": "Level 12"
+        },
+        {
+          "name": "Donating to Henesys (Orange Mushroom Cap)",
+          "path": "/quests/donating-to-henesys-506023",
+          "detail": "Level 12"
+        },
+        {
+          "name": "Donating to Henesys (Red Snail Shell)",
+          "path": "/quests/donating-to-henesys-506021",
+          "detail": "Level 12"
+        },
+        {
+          "name": "Donating to Henesys (Squishy Liquid)",
+          "path": "/quests/donating-to-henesys-506022",
+          "detail": "Level 12"
+        },
+        {
+          "name": "Donating to Henesys (Tortie Shell)",
+          "path": "/quests/donating-to-henesys-506034",
+          "detail": "Level 12"
+        },
+        {
+          "name": "Donating to Henesys (Wild Boar Tooth)",
+          "path": "/quests/donating-to-henesys-506028",
+          "detail": "Level 12"
+        },
+        {
+          "name": "Donating to Kerning City (Bubbling's Huge Bubble)",
+          "path": "/quests/donating-to-kerning-city-506124",
+          "detail": "Level 12"
+        },
+        {
+          "name": "Donating to Kerning City (Charm of the Undead)",
+          "path": "/quests/donating-to-kerning-city-506127",
+          "detail": "Level 12"
+        },
+        {
+          "name": "Donating to Kerning City (Cold Eye Tail)",
+          "path": "/quests/donating-to-kerning-city-506134",
+          "detail": "Level 12"
+        },
+        {
+          "name": "Donating to Kerning City (Evil Eye Tail)",
+          "path": "/quests/donating-to-kerning-city-506129",
+          "detail": "Level 12"
+        },
+        {
+          "name": "Donating to Kerning City (Fire Boar's Tooth)",
+          "path": "/quests/donating-to-kerning-city-506131",
+          "detail": "Level 12"
+        },
+        {
+          "name": "Donating to Kerning City (Firewood)",
+          "path": "/quests/donating-to-kerning-city-506125",
+          "detail": "Level 12"
+        },
+        {
+          "name": "Donating to Kerning City (Leaf)",
+          "path": "/quests/donating-to-kerning-city-506121",
+          "detail": "Level 12"
+        },
+        {
+          "name": "Donating to Kerning City (Ligator Skin)",
+          "path": "/quests/donating-to-kerning-city-506130",
+          "detail": "Level 12"
+        },
+        {
+          "name": "Donating to Kerning City (Lupin's Banana)",
+          "path": "/quests/donating-to-kerning-city-506133",
+          "detail": "Level 12"
+        },
+        {
+          "name": "Donating to Kerning City (Medicine With Weird Vibes)",
+          "path": "/quests/donating-to-kerning-city-506136",
+          "detail": "Level 12"
+        },
+        {
+          "name": "Donating to Kerning City (Octopus Leg)",
+          "path": "/quests/donating-to-kerning-city-506123",
+          "detail": "Level 12"
+        },
+        {
+          "name": "Donating to Kerning City (Orange Mushroom Cap)",
+          "path": "/quests/donating-to-kerning-city-506120",
+          "detail": "Level 12"
+        },
+        {
+          "name": "Donating to Kerning City (Pig's Ribbon)",
+          "path": "/quests/donating-to-kerning-city-506122",
+          "detail": "Level 12"
+        },
+        {
+          "name": "Donating to Kerning City (Red Snail Shell)",
+          "path": "/quests/donating-to-kerning-city",
+          "detail": "Level 12"
+        },
+        {
+          "name": "Donating to Kerning City (Stirge Wing)",
+          "path": "/quests/donating-to-kerning-city-506126",
+          "detail": "Level 12"
+        },
+        {
+          "name": "Donating to Kerning City (Tablecloth)",
+          "path": "/quests/donating-to-kerning-city-506132",
+          "detail": "Level 12"
+        },
+        {
+          "name": "Donating to Kerning City (Tortie Shell)",
+          "path": "/quests/donating-to-kerning-city-506135",
+          "detail": "Level 12"
+        },
+        {
+          "name": "Donating to Kerning City (Wild Boar Tooth)",
+          "path": "/quests/donating-to-kerning-city-506128",
+          "detail": "Level 12"
+        },
+        {
+          "name": "Dr. Betty's Research on Plants (Research on Plant Fossils)",
+          "path": "/quests/research-on-plant-fossils",
+          "detail": "Level 17"
+        },
+        {
+          "name": "First Greeting with Athena Pierce",
+          "path": "/quests/first-greeting-with-athena-pierce",
+          "detail": "Level 12"
+        },
+        {
+          "name": "First Greeting with Chief Stan",
+          "path": "/quests/first-greeting-with-chief-stan",
+          "detail": "Level 12"
+        },
+        {
+          "name": "First Greeting with Chun Ji",
+          "path": "/quests/first-greeting-with-chun-ji",
+          "detail": "Level 12"
+        },
+        {
+          "name": "First Greeting with Dark Lord",
+          "path": "/quests/first-greeting-with-dark-lord",
+          "detail": "Level 12"
+        },
+        {
+          "name": "I Need Help on My Homework!",
+          "path": "/quests/i-need-help-on-my-homework",
+          "detail": "Level 10"
+        },
+        {
+          "name": "I Need to Find My Daughter (I Need to Find My Daughter 2)",
+          "path": "/quests/i-need-to-find-my-daughter-2",
+          "detail": "Level 11"
+        }
+      ],
+      "total": 60
+    }
+  ]
+}

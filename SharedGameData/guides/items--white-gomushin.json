@@ -1,0 +1,130 @@
+{
+  "schemaVersion": 1,
+  "path": "/items/white-gomushin",
+  "kind": "item",
+  "name": "White Gomushin",
+  "source": "CCPLZ",
+  "sourceUrl": "https://ccplz.cc/items/white-gomushin",
+  "checkedAt": "2026-10-25T09:53:41.297Z",
+  "notice": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial.",
+  "fields": [
+    {
+      "label": "Type",
+      "value": "Shoes"
+    },
+    {
+      "label": "Required level",
+      "value": "11"
+    },
+    {
+      "label": "Class",
+      "value": "All classes"
+    },
+    {
+      "label": "Weapon defense",
+      "value": "+11"
+    },
+    {
+      "label": "Speed",
+      "value": "+1"
+    },
+    {
+      "label": "Upgrade slots",
+      "value": "5"
+    },
+    {
+      "label": "NPC sell price",
+      "value": "660 mesos"
+    },
+    {
+      "label": "NPC buy price (lowest recorded)",
+      "value": "1980 mesos"
+    },
+    {
+      "label": "Required STR",
+      "value": "0"
+    },
+    {
+      "label": "Required DEX",
+      "value": "0"
+    },
+    {
+      "label": "Required INT",
+      "value": "0"
+    },
+    {
+      "label": "Required LUK",
+      "value": "0"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Dropped by",
+      "links": [
+        {
+          "name": "Orange Mushroom",
+          "path": "/monsters/orange-mushroom",
+          "detail": "Level 8, about 0.22%, usual for its kind"
+        }
+      ],
+      "total": 1
+    },
+    {
+      "title": "Sold in",
+      "links": [
+        {
+          "name": "Don Hwang's Shop",
+          "path": "/shops/don-hwang-s-shop",
+          "detail": ""
+        }
+      ],
+      "total": 1
+    },
+    {
+      "title": "Similar equipment",
+      "links": [
+        {
+          "name": "Black Gomushin",
+          "path": "/items/black-gomushin",
+          "detail": "Level 11"
+        },
+        {
+          "name": "Smelly Gomushin",
+          "path": "/items/smelly-gomushin",
+          "detail": "Level 11"
+        },
+        {
+          "name": "Blue Basic Boots",
+          "path": "/items/blue-basic-boots",
+          "detail": "Level 10"
+        },
+        {
+          "name": "Blue Gidder Shoes",
+          "path": "/items/blue-gidder-shoes",
+          "detail": "Level 10"
+        },
+        {
+          "name": "Brown Basic Boots",
+          "path": "/items/brown-basic-boots",
+          "detail": "Level 10"
+        },
+        {
+          "name": "Brown Gidder Shoes",
+          "path": "/items/brown-gidder-shoes",
+          "detail": "Level 10"
+        },
+        {
+          "name": "Brown Hard Leather Boots",
+          "path": "/items/brown-hard-leather-boots",
+          "detail": "Level 10"
+        },
+        {
+          "name": "Green Hard Leather Boots",
+          "path": "/items/green-hard-leather-boots",
+          "detail": "Level 10"
+        }
+      ],
+      "total": 8
+    }
+  ]
+}

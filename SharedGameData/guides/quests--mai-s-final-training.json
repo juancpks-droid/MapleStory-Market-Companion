@@ -1,0 +1,85 @@
+{
+  "schemaVersion": 1,
+  "path": "/quests/mai-s-final-training",
+  "kind": "quest",
+  "name": "Mai's Training (Mai's Final Training)",
+  "source": "CCPLZ",
+  "sourceUrl": "https://ccplz.cc/quests/mai-s-final-training",
+  "checkedAt": "2026-10-25T09:53:50.360Z",
+  "notice": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial.",
+  "fields": [
+    {
+      "label": "Category",
+      "value": "Maple Island"
+    },
+    {
+      "label": "EXP reward",
+      "value": "120"
+    },
+    {
+      "label": "Meso reward",
+      "value": "150"
+    },
+    {
+      "label": "Starts with",
+      "value": "Mai"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Quest NPCs",
+      "links": [
+        {
+          "name": "Mai",
+          "path": "/npcs/mai",
+          "detail": "Starts the quest"
+        }
+      ],
+      "total": 1
+    },
+    {
+      "title": "Complete first",
+      "links": [
+        {
+          "name": "Mai's Training",
+          "path": "/quests/mai-s-training",
+          "detail": ""
+        }
+      ],
+      "total": 1
+    },
+    {
+      "title": "Monsters to defeat",
+      "links": [
+        {
+          "name": "Orange Mushroom",
+          "path": "/monsters/orange-mushroom",
+          "detail": "x1"
+        }
+      ],
+      "total": 1
+    },
+    {
+      "title": "Item rewards",
+      "links": [
+        {
+          "name": "Egg",
+          "path": "/items/egg",
+          "detail": ""
+        }
+      ],
+      "total": 1
+    },
+    {
+      "title": "Where it takes place",
+      "links": [
+        {
+          "name": "Southperry",
+          "path": "/maps/southperry",
+          "detail": ""
+        }
+      ],
+      "total": 1
+    }
+  ]
+}

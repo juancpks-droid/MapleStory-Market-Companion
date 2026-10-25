@@ -1,0 +1,112 @@
+{
+  "schemaVersion": 1,
+  "path": "/npcs/maya",
+  "kind": "npc",
+  "name": "Maya",
+  "source": "CCPLZ",
+  "sourceUrl": "https://ccplz.cc/npcs/maya",
+  "checkedAt": "2026-10-25T09:54:08.416Z",
+  "notice": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial.",
+  "fields": [],
+  "sections": [
+    {
+      "title": "Where to find them",
+      "links": [
+        {
+          "name": "Henesys Townstreet",
+          "path": "/maps/henesys-townstreet",
+          "detail": "Victoria Island"
+        }
+      ],
+      "total": 1
+    },
+    {
+      "title": "Quests they start",
+      "links": [
+        {
+          "name": "Another of Maya's Collections (Maya's Last Collection)",
+          "path": "/quests/maya-s-last-collection",
+          "detail": "Level 47"
+        },
+        {
+          "name": "Another of Maya's Collections (Maya's Third Collection)",
+          "path": "/quests/maya-s-third-collection",
+          "detail": "Level 47"
+        },
+        {
+          "name": "Collecting For Maya (Maya's First Collection)",
+          "path": "/quests/maya-s-first-collection",
+          "detail": "Level 30"
+        },
+        {
+          "name": "Collecting For Maya (Maya's Second Collection)",
+          "path": "/quests/maya-s-second-collection",
+          "detail": "Level 30"
+        },
+        {
+          "name": "Maya and Her Peculiar Savior (A Name on a Note)",
+          "path": "/quests/a-name-on-a-note",
+          "detail": "Level 47"
+        },
+        {
+          "name": "Maya and Her Peculiar Savior (An Unknown Savior)",
+          "path": "/quests/an-unknown-savior",
+          "detail": "Level 47"
+        },
+        {
+          "name": "Maya and the Weird Medicine (Maya of Henesys)",
+          "path": "/quests/maya-of-henesys",
+          "detail": "Level 21"
+        }
+      ],
+      "total": 7
+    },
+    {
+      "title": "Quests they complete",
+      "links": [
+        {
+          "name": "Asking After Maya, the Town Resident",
+          "path": "/quests/asking-after-maya-the-town-resident",
+          "detail": "Level 12"
+        },
+        {
+          "name": "First Greeting with Maya, the Town Resident",
+          "path": "/quests/first-greeting-with-maya-the-town-resident",
+          "detail": "Level 12"
+        },
+        {
+          "name": "Maya and Her Peculiar Savior (A Name Never Given)",
+          "path": "/quests/a-name-never-given",
+          "detail": "Level 47"
+        },
+        {
+          "name": "Maya and the Weird Medicine (Delivering the Weird Medicine)",
+          "path": "/quests/delivering-the-weird-medicine",
+          "detail": "Level 21"
+        }
+      ],
+      "total": 4
+    },
+    {
+      "title": "Appears in quests",
+      "links": [
+        {
+          "name": "Manji's Old Gladius (Old Gladius)",
+          "path": "/quests/old-gladius",
+          "detail": "Level 50"
+        },
+        {
+          "name": "Maya and Her Peculiar Savior (A Price to Pay)",
+          "path": "/quests/a-price-to-pay",
+          "detail": "Level 47"
+        },
+        {
+          "name": "Maya and the Weird Medicine (Arcon's Blood?)",
+          "path": "/quests/arcon-s-blood",
+          "detail": "Level 21"
+        }
+      ],
+      "total": 3
+    }
+  ]
+}

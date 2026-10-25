@@ -1,0 +1,103 @@
+{
+  "schemaVersion": 1,
+  "path": "/quests/delivering-the-weird-medicine",
+  "kind": "quest",
+  "name": "Maya and the Weird Medicine (Delivering the Weird Medicine)",
+  "source": "CCPLZ",
+  "sourceUrl": "https://ccplz.cc/quests/delivering-the-weird-medicine",
+  "checkedAt": "2026-10-25T09:54:11.339Z",
+  "notice": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial.",
+  "fields": [
+    {
+      "label": "Minimum level",
+      "value": "21"
+    },
+    {
+      "label": "Category",
+      "value": "Henesys"
+    },
+    {
+      "label": "EXP reward",
+      "value": "1,870"
+    },
+    {
+      "label": "Meso reward",
+      "value": "687"
+    },
+    {
+      "label": "Starts with",
+      "value": "Teo"
+    },
+    {
+      "label": "Turn in to",
+      "value": "Maya"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Quest NPCs",
+      "links": [
+        {
+          "name": "Teo",
+          "path": "/npcs/teo",
+          "detail": "Starts the quest"
+        },
+        {
+          "name": "Maya",
+          "path": "/npcs/maya",
+          "detail": "Completes the quest"
+        }
+      ],
+      "total": 2
+    },
+    {
+      "title": "Complete first",
+      "links": [
+        {
+          "name": "Maya and the Weird Medicine (Making Sparkling Rock)",
+          "path": "/quests/making-sparkling-rock",
+          "detail": ""
+        }
+      ],
+      "total": 1
+    },
+    {
+      "title": "Items to bring",
+      "links": [
+        {
+          "name": "Weird Medicine",
+          "path": "/items/weird-medicine",
+          "detail": "x1"
+        }
+      ],
+      "total": 1
+    },
+    {
+      "title": "Item rewards",
+      "links": [
+        {
+          "name": "Brown Bamboo Hat",
+          "path": "/items/brown-bamboo-hat",
+          "detail": ""
+        }
+      ],
+      "total": 1
+    },
+    {
+      "title": "Where it takes place",
+      "links": [
+        {
+          "name": "Henesys",
+          "path": "/maps/henesys",
+          "detail": ""
+        },
+        {
+          "name": "Lith Harbor",
+          "path": "/maps/lith-harbor",
+          "detail": ""
+        }
+      ],
+      "total": 2
+    }
+  ]
+}

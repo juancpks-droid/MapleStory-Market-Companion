@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "item": {
+    "key": "gms83:1332007",
+    "name": "Fruit Knife",
+    "id": "1332007",
+    "category": "Equipment"
+  },
+  "kind": "npc",
+  "checkedAt": "2026-10-25T09:53:59.356Z",
+  "data": {
+    "sell": 750,
+    "buy": 1500,
+    "source": "CCPLZ",
+    "url": "https://ccplz.cc/items/fruit-knife",
+    "checkedAt": "2026-10-25T09:53:59.356Z"
+  },
+  "provenance": {
+    "source": "CCPLZ",
+    "sourceUrl": "https://ccplz.cc/items/fruit-knife",
+    "coverage": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial."
+  }
+}

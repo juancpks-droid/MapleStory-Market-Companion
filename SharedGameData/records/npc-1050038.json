@@ -7,13 +7,13 @@
     "category": "Equipment"
   },
   "kind": "npc",
-  "checkedAt": "2026-10-13T15:03:51.670Z",
+  "checkedAt": "2026-10-25T09:53:20.369Z",
   "data": {
     "sell": 12600,
     "buy": null,
     "source": "CCPLZ",
     "url": "https://ccplz.cc/items/blue-starlight",
-    "checkedAt": "2026-10-13T15:03:51.670Z"
+    "checkedAt": "2026-10-25T09:53:20.369Z"
   },
   "provenance": {
     "source": "CCPLZ",

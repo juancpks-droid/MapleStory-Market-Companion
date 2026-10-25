@@ -1,0 +1,131 @@
+{
+  "schemaVersion": 1,
+  "path": "/items/spear",
+  "kind": "item",
+  "name": "Spear",
+  "source": "CCPLZ",
+  "sourceUrl": "https://ccplz.cc/items/spear",
+  "checkedAt": "2026-10-25T09:53:38.339Z",
+  "notice": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial.",
+  "fields": [
+    {
+      "label": "Type",
+      "value": "Spear"
+    },
+    {
+      "label": "Required level",
+      "value": "10"
+    },
+    {
+      "label": "Class",
+      "value": "Warrior, Bowman, Thief"
+    },
+    {
+      "label": "Weapon attack",
+      "value": "+32"
+    },
+    {
+      "label": "Upgrade slots",
+      "value": "7"
+    },
+    {
+      "label": "NPC sell price",
+      "value": "2,500 mesos"
+    },
+    {
+      "label": "NPC buy price (lowest recorded)",
+      "value": "5000 mesos"
+    },
+    {
+      "label": "Required STR",
+      "value": "25"
+    },
+    {
+      "label": "Required DEX",
+      "value": "0"
+    },
+    {
+      "label": "Required INT",
+      "value": "0"
+    },
+    {
+      "label": "Required LUK",
+      "value": "0"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Dropped by",
+      "links": [
+        {
+          "name": "Orange Mushroom",
+          "path": "/monsters/orange-mushroom",
+          "detail": "Level 8, about 0.22%, usual for its kind"
+        }
+      ],
+      "total": 1
+    },
+    {
+      "title": "Sold in",
+      "links": [
+        {
+          "name": "Cutthroat Manny's Shop",
+          "path": "/shops/cutthroat-manny-s-shop",
+          "detail": ""
+        },
+        {
+          "name": "River's Shop",
+          "path": "/shops/river-s-shop",
+          "detail": ""
+        }
+      ],
+      "total": 2
+    },
+    {
+      "title": "Similar equipment",
+      "links": [
+        {
+          "name": "Fork on a Stick",
+          "path": "/items/fork-on-a-stick",
+          "detail": "Level 15"
+        },
+        {
+          "name": "Fish Spear",
+          "path": "/items/fish-spear",
+          "detail": "Level 20"
+        },
+        {
+          "name": "Forked Spear",
+          "path": "/items/forked-spear",
+          "detail": "Level 30"
+        },
+        {
+          "name": "Nakamaki",
+          "path": "/items/nakamaki",
+          "detail": "Level 35"
+        },
+        {
+          "name": "Zeco",
+          "path": "/items/zeco",
+          "detail": "Level 40"
+        },
+        {
+          "name": "Serpent's Tongue",
+          "path": "/items/serpent-s-tongue",
+          "detail": "Level 50"
+        },
+        {
+          "name": "Holy Spear",
+          "path": "/items/holy-spear",
+          "detail": "Level 60"
+        },
+        {
+          "name": "Redemption",
+          "path": "/items/redemption",
+          "detail": "Level 70"
+        }
+      ],
+      "total": 8
+    }
+  ]
+}

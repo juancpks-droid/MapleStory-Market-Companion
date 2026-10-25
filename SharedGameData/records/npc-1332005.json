@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "item": {
+    "key": "gms83:1332005",
+    "name": "Razor",
+    "id": "1332005",
+    "category": "Equipment"
+  },
+  "kind": "npc",
+  "checkedAt": "2026-10-25T09:54:02.385Z",
+  "data": {
+    "sell": 250,
+    "buy": 500,
+    "source": "CCPLZ",
+    "url": "https://ccplz.cc/items/razor",
+    "checkedAt": "2026-10-25T09:54:02.385Z"
+  },
+  "provenance": {
+    "source": "CCPLZ",
+    "sourceUrl": "https://ccplz.cc/items/razor",
+    "coverage": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial."
+  }
+}

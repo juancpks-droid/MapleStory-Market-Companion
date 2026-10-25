@@ -1,0 +1,126 @@
+{
+  "schemaVersion": 1,
+  "path": "/items/fruit-knife",
+  "kind": "item",
+  "name": "Fruit Knife",
+  "source": "CCPLZ",
+  "sourceUrl": "https://ccplz.cc/items/fruit-knife",
+  "checkedAt": "2026-10-25T09:53:59.356Z",
+  "notice": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial.",
+  "fields": [
+    {
+      "label": "Type",
+      "value": "Dagger"
+    },
+    {
+      "label": "Required level",
+      "value": "8"
+    },
+    {
+      "label": "Class",
+      "value": "All classes"
+    },
+    {
+      "label": "Weapon attack",
+      "value": "+23"
+    },
+    {
+      "label": "Upgrade slots",
+      "value": "7"
+    },
+    {
+      "label": "NPC sell price",
+      "value": "750 mesos"
+    },
+    {
+      "label": "NPC buy price (lowest recorded)",
+      "value": "1500 mesos"
+    },
+    {
+      "label": "Required STR",
+      "value": "0"
+    },
+    {
+      "label": "Required DEX",
+      "value": "0"
+    },
+    {
+      "label": "Required INT",
+      "value": "0"
+    },
+    {
+      "label": "Required LUK",
+      "value": "0"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Sold in",
+      "links": [
+        {
+          "name": "Silver's Shop",
+          "path": "/shops/silver-s-shop",
+          "detail": ""
+        }
+      ],
+      "total": 1
+    },
+    {
+      "title": "Quest rewards",
+      "links": [
+        {
+          "name": "Biggs's Collection of Items",
+          "path": "/quests/biggs-s-collection-of-items",
+          "detail": "Level 3"
+        }
+      ],
+      "total": 1
+    },
+    {
+      "title": "Similar equipment",
+      "links": [
+        {
+          "name": "Beginner's Triangular Zamadar",
+          "path": "/items/beginner-s-triangular-zamadar",
+          "detail": "Level 10"
+        },
+        {
+          "name": "Triangular Zamadar",
+          "path": "/items/triangular-zamadar",
+          "detail": "Level 10"
+        },
+        {
+          "name": "Razor",
+          "path": "/items/razor",
+          "detail": "Level 5"
+        },
+        {
+          "name": "Field Dagger",
+          "path": "/items/field-dagger",
+          "detail": "Level 15"
+        },
+        {
+          "name": "Triple-Tipped Zamadar",
+          "path": "/items/triple-tipped-zamadar",
+          "detail": "Level 17"
+        },
+        {
+          "name": "Coconut Knife",
+          "path": "/items/coconut-knife",
+          "detail": "Level 20"
+        },
+        {
+          "name": "Stinger",
+          "path": "/items/stinger",
+          "detail": "Level 22"
+        },
+        {
+          "name": "Iron Dagger",
+          "path": "/items/iron-dagger",
+          "detail": "Level 25"
+        }
+      ],
+      "total": 8
+    }
+  ]
+}

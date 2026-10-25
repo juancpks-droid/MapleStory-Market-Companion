@@ -1,0 +1,199 @@
+{
+  "schemaVersion": 1,
+  "path": "/items/red-potion",
+  "kind": "item",
+  "name": "Red Potion",
+  "source": "CCPLZ",
+  "sourceUrl": "https://ccplz.cc/items/red-potion",
+  "checkedAt": "2026-10-25T09:53:32.270Z",
+  "notice": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial.",
+  "fields": [
+    {
+      "label": "Type",
+      "value": "Potions"
+    },
+    {
+      "label": "NPC sell price",
+      "value": "5 mesos"
+    },
+    {
+      "label": "NPC buy price (lowest recorded)",
+      "value": "50 mesos"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Dropped by",
+      "links": [
+        {
+          "name": "Axe Stump",
+          "path": "/monsters/axe-stump",
+          "detail": "Level 17, 2.7% drop rate, 37 kills counted"
+        },
+        {
+          "name": "Blue Mushroom",
+          "path": "/monsters/blue-mushroom",
+          "detail": "Level 19, about 2.4%, usual for its kind"
+        },
+        {
+          "name": "Blue Snail",
+          "path": "/monsters/blue-snail",
+          "detail": "Level 2, 2.9% drop rate, 105 kills counted"
+        },
+        {
+          "name": "Bubbling",
+          "path": "/monsters/bubbling",
+          "detail": "Level 15, about 2.4%, usual for its kind"
+        },
+        {
+          "name": "Dark Stump",
+          "path": "/monsters/dark-stump",
+          "detail": "Level 11, 3.4% drop rate, 118 kills counted"
+        },
+        {
+          "name": "Green Mushroom",
+          "path": "/monsters/green-mushroom",
+          "detail": "Level 14, 3.5% drop rate, 620 kills counted"
+        },
+        {
+          "name": "Octopus",
+          "path": "/monsters/octopus",
+          "detail": "Level 12, 4.3% drop rate, 23 kills counted"
+        },
+        {
+          "name": "Orange Mushroom",
+          "path": "/monsters/orange-mushroom",
+          "detail": "Level 8, 2.2% drop rate, 184 kills counted"
+        },
+        {
+          "name": "Pig",
+          "path": "/monsters/pig",
+          "detail": "Level 7, 4% drop rate, 249 kills counted"
+        },
+        {
+          "name": "Red Snail",
+          "path": "/monsters/red-snail",
+          "detail": "Level 4, 1.7% drop rate, 181 kills counted"
+        },
+        {
+          "name": "Shroom",
+          "path": "/monsters/shroom",
+          "detail": "Level 3, about 2.4%, usual for its kind"
+        },
+        {
+          "name": "Slime",
+          "path": "/monsters/slime",
+          "detail": "Level 6, 3.6% drop rate, 769 kills counted"
+        },
+        {
+          "name": "Snail",
+          "path": "/monsters/snail",
+          "detail": "Level 1, 2.9% drop rate, 103 kills counted"
+        },
+        {
+          "name": "Stump",
+          "path": "/monsters/stump",
+          "detail": "Level 5, 3.4% drop rate, 207 kills counted"
+        }
+      ],
+      "total": 14
+    },
+    {
+      "title": "Sold in",
+      "links": [
+        {
+          "name": "Arturo's Shop",
+          "path": "/shops/arturo-s-shop",
+          "detail": ""
+        },
+        {
+          "name": "Dr. Faymus's Shop",
+          "path": "/shops/dr-faymus-s-shop",
+          "detail": ""
+        },
+        {
+          "name": "Len the Fairy's Shop",
+          "path": "/shops/len-the-fairy-s-shop",
+          "detail": ""
+        },
+        {
+          "name": "Lucy's Shop",
+          "path": "/shops/lucy-s-shop",
+          "detail": ""
+        },
+        {
+          "name": "Luma's Shop",
+          "path": "/shops/luma-s-shop",
+          "detail": ""
+        },
+        {
+          "name": "Luna's Shop",
+          "path": "/shops/luna-s-shop",
+          "detail": ""
+        },
+        {
+          "name": "Mina's Shop",
+          "path": "/shops/mina-s-shop",
+          "detail": ""
+        },
+        {
+          "name": "Mr. Sweatbottom's Shop",
+          "path": "/shops/mr-sweatbottom-s-shop",
+          "detail": ""
+        },
+        {
+          "name": "Valen's Shop",
+          "path": "/shops/valen-s-shop",
+          "detail": ""
+        }
+      ],
+      "total": 9
+    },
+    {
+      "title": "Quest rewards",
+      "links": [
+        {
+          "name": "A Fragile Sanctuary (A Heart of Stillness and Wood) (2 of 2)",
+          "path": "/quests/a-heart-of-stillness-and-wood-10619",
+          "detail": "Level 50"
+        },
+        {
+          "name": "I'm Bored (I'm Bored 2)",
+          "path": "/quests/i-m-bored-2",
+          "detail": "Level 11"
+        },
+        {
+          "name": "Mrs. Ming Ming's Second Worry (Estelle's Request)",
+          "path": "/quests/estelle-s-request",
+          "detail": "Level 15"
+        },
+        {
+          "name": "Olaf's Training (Olaf's First Training)",
+          "path": "/quests/olaf-s-first-training",
+          "detail": "Level 8"
+        },
+        {
+          "name": "Phil's Call",
+          "path": "/quests/phil-s-call",
+          "detail": "Level 8"
+        },
+        {
+          "name": "The Reason Behind the Mushroom Studies",
+          "path": "/quests/the-reason-behind-the-mushroom-studies",
+          "detail": "Level 10"
+        },
+        {
+          "name": "To Henesys, the Prairie Town",
+          "path": "/quests/to-henesys-the-prairie-town",
+          "detail": "Level 12"
+        },
+        {
+          "name": "To the Gray City, Kerning City",
+          "path": "/quests/to-the-gray-city-kerning-city",
+          "detail": "Level 12"
+        }
+      ],
+      "total": 8
+    }
+  ]
+}
