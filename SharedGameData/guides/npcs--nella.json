@@ -1,0 +1,101 @@
+{
+  "schemaVersion": 1,
+  "path": "/npcs/nella",
+  "kind": "npc",
+  "name": "Nella (Kerning City)",
+  "source": "CCPLZ",
+  "sourceUrl": "https://ccplz.cc/npcs/nella",
+  "checkedAt": "2026-10-26T10:08:28.530Z",
+  "notice": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial.",
+  "fields": [],
+  "sections": [
+    {
+      "title": "Where to find them",
+      "links": [
+        {
+          "name": "Kerning City",
+          "path": "/maps/kerning-city",
+          "detail": "Victoria Island"
+        }
+      ],
+      "total": 1
+    },
+    {
+      "title": "Quests they start",
+      "links": [
+        {
+          "name": "Nella & Kerning City Citizen's Other Request (Chris's Request)",
+          "path": "/quests/chris-s-request",
+          "detail": "Level 22"
+        },
+        {
+          "name": "Nella & Kerning City Citizen's Other Request (Cutthroat Manny's Request)",
+          "path": "/quests/cutthroat-manny-s-request",
+          "detail": "Level 22"
+        },
+        {
+          "name": "Nella & Kerning City Citizen's Other Request (Dr. Faymus's Request)",
+          "path": "/quests/dr-faymus-s-request",
+          "detail": "Level 22"
+        },
+        {
+          "name": "Nella & Kerning City Citizen's Request (Andre's Request)",
+          "path": "/quests/andre-s-request",
+          "detail": "Level 10"
+        },
+        {
+          "name": "Nella & Kerning City Citizen's Request (Don Hwang's Request)",
+          "path": "/quests/don-hwang-s-request",
+          "detail": "Level 10"
+        },
+        {
+          "name": "Nella & Kerning City Citizen's Request (Shumi's Request)",
+          "path": "/quests/shumi-s-request",
+          "detail": "Level 10"
+        },
+        {
+          "name": "The Doctor Who Never Returned (A Truth Finally Known)",
+          "path": "/quests/a-truth-finally-known",
+          "detail": "Level 37"
+        },
+        {
+          "name": "The Doctor Who Never Returned (The Price of Information)",
+          "path": "/quests/the-price-of-information",
+          "detail": "Level 37"
+        },
+        {
+          "name": "What the City Taught Me (Nella's Old Memory)",
+          "path": "/quests/nella-s-old-memory",
+          "detail": "Level 27"
+        }
+      ],
+      "total": 9
+    },
+    {
+      "title": "Quests they complete",
+      "links": [
+        {
+          "name": "Asking After Nella, the Town Resident",
+          "path": "/quests/asking-after-nella-the-town-resident",
+          "detail": "Level 12"
+        },
+        {
+          "name": "First Greeting with Nella, the Town Resident",
+          "path": "/quests/first-greeting-with-nella-the-town-resident",
+          "detail": "Level 12"
+        },
+        {
+          "name": "The Doctor Who Never Returned (Once a Renowned Doctor)",
+          "path": "/quests/once-a-renowned-doctor",
+          "detail": "Level 37"
+        },
+        {
+          "name": "What the City Taught Me (Too Shy to Say It Himself)",
+          "path": "/quests/too-shy-to-say-it-himself",
+          "detail": "Level 27"
+        }
+      ],
+      "total": 4
+    }
+  ]
+}

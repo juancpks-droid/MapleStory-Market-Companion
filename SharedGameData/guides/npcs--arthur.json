@@ -1,0 +1,237 @@
+{
+  "schemaVersion": 1,
+  "path": "/npcs/arthur",
+  "kind": "npc",
+  "name": "Arthur",
+  "source": "CCPLZ",
+  "sourceUrl": "https://ccplz.cc/npcs/arthur",
+  "checkedAt": "2026-10-26T10:08:10.453Z",
+  "notice": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial.",
+  "fields": [
+    {
+      "label": "Role",
+      "value": "Town Clerk"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Where to find them",
+      "links": [
+        {
+          "name": "Henesys Town Hall",
+          "path": "/maps/henesys-town-hall",
+          "detail": "Victoria Island"
+        }
+      ],
+      "total": 1
+    },
+    {
+      "title": "Quests they start",
+      "links": [
+        {
+          "name": "A Home in Henesys (The Right to Own a Home)",
+          "path": "/quests/the-right-to-own-a-home",
+          "detail": "Level 17"
+        },
+        {
+          "name": "To the Gray City, Kerning City",
+          "path": "/quests/to-the-gray-city-kerning-city",
+          "detail": "Level 12"
+        }
+      ],
+      "total": 2
+    },
+    {
+      "title": "Quests they complete",
+      "links": [
+        {
+          "name": "Donating to Henesys (Blue Mushroom Cap)",
+          "path": "/quests/donating-to-henesys-506025",
+          "detail": "Level 12"
+        },
+        {
+          "name": "Donating to Henesys (Blue Snail Shell)",
+          "path": "/quests/donating-to-henesys",
+          "detail": "Level 12"
+        },
+        {
+          "name": "Donating to Henesys (Charm of the Undead)",
+          "path": "/quests/donating-to-henesys-506027",
+          "detail": "Level 12"
+        },
+        {
+          "name": "Donating to Henesys (Cold Eye Tail)",
+          "path": "/quests/donating-to-henesys-506033",
+          "detail": "Level 12"
+        },
+        {
+          "name": "Donating to Henesys (Curse Eye Tail)",
+          "path": "/quests/donating-to-henesys-506031",
+          "detail": "Level 12"
+        },
+        {
+          "name": "Donating to Henesys (Drake Skull)",
+          "path": "/quests/donating-to-henesys-506035",
+          "detail": "Level 12"
+        },
+        {
+          "name": "Donating to Henesys (Evil Eye Tail)",
+          "path": "/quests/donating-to-henesys-506029",
+          "detail": "Level 12"
+        },
+        {
+          "name": "Donating to Henesys (Green Mushroom Cap)",
+          "path": "/quests/donating-to-henesys-506024",
+          "detail": "Level 12"
+        },
+        {
+          "name": "Donating to Henesys (Horny Mushroom Cap)",
+          "path": "/quests/donating-to-henesys-506026",
+          "detail": "Level 12"
+        },
+        {
+          "name": "Donating to Henesys (Ligator Skin)",
+          "path": "/quests/donating-to-henesys-506030",
+          "detail": "Level 12"
+        },
+        {
+          "name": "Donating to Henesys (Lorang Claw)",
+          "path": "/quests/donating-to-henesys-506032",
+          "detail": "Level 12"
+        },
+        {
+          "name": "Donating to Henesys (Mushroom Spore)",
+          "path": "/quests/donating-to-henesys-506020",
+          "detail": "Level 12"
+        },
+        {
+          "name": "Donating to Henesys (Orange Mushroom Cap)",
+          "path": "/quests/donating-to-henesys-506023",
+          "detail": "Level 12"
+        },
+        {
+          "name": "Donating to Henesys (Red Snail Shell)",
+          "path": "/quests/donating-to-henesys-506021",
+          "detail": "Level 12"
+        },
+        {
+          "name": "Donating to Henesys (Squishy Liquid)",
+          "path": "/quests/donating-to-henesys-506022",
+          "detail": "Level 12"
+        },
+        {
+          "name": "Donating to Henesys (Tortie Shell)",
+          "path": "/quests/donating-to-henesys-506034",
+          "detail": "Level 12"
+        },
+        {
+          "name": "Donating to Henesys (Wild Boar Tooth)",
+          "path": "/quests/donating-to-henesys-506028",
+          "detail": "Level 12"
+        },
+        {
+          "name": "To Henesys, the Prairie Town",
+          "path": "/quests/to-henesys-the-prairie-town",
+          "detail": "Level 12"
+        }
+      ],
+      "total": 18
+    },
+    {
+      "title": "Appears in quests",
+      "links": [
+        {
+          "name": "Asking After Anne, the Town Resident",
+          "path": "/quests/asking-after-anne-the-town-resident",
+          "detail": "Level 12"
+        },
+        {
+          "name": "Asking After Athena Pierce",
+          "path": "/quests/asking-after-athena-pierce",
+          "detail": "Level 12"
+        },
+        {
+          "name": "Asking After Bruce, the Town Resident",
+          "path": "/quests/asking-after-bruce-the-town-resident",
+          "detail": "Level 12"
+        },
+        {
+          "name": "Asking After Camila, the Town Resident",
+          "path": "/quests/asking-after-camila-the-town-resident",
+          "detail": "Level 12"
+        },
+        {
+          "name": "Asking After Chief Stan",
+          "path": "/quests/asking-after-chief-stan",
+          "detail": "Level 12"
+        },
+        {
+          "name": "Asking After Maya, the Town Resident",
+          "path": "/quests/asking-after-maya-the-town-resident",
+          "detail": "Level 12"
+        },
+        {
+          "name": "Asking After Mrs. Ming Ming, the Town Resident.",
+          "path": "/quests/asking-after-mrs-ming-ming-the-town-resident",
+          "detail": "Level 12"
+        },
+        {
+          "name": "Asking After Pia, the Town Resident",
+          "path": "/quests/asking-after-pia-the-town-resident",
+          "detail": "Level 12"
+        },
+        {
+          "name": "Asking After Rina, the Town Resident",
+          "path": "/quests/asking-after-rina-the-town-resident",
+          "detail": "Level 12"
+        },
+        {
+          "name": "First Greeting with Anne, the Town Resident",
+          "path": "/quests/first-greeting-with-anne-the-town-resident",
+          "detail": "Level 12"
+        },
+        {
+          "name": "First Greeting with Athena Pierce",
+          "path": "/quests/first-greeting-with-athena-pierce",
+          "detail": "Level 12"
+        },
+        {
+          "name": "First Greeting with Bruce, the Town Resident",
+          "path": "/quests/first-greeting-with-bruce-the-town-resident",
+          "detail": "Level 12"
+        },
+        {
+          "name": "First Greeting with Camila, the Town Resident",
+          "path": "/quests/first-greeting-with-camila-the-town-resident",
+          "detail": "Level 12"
+        },
+        {
+          "name": "First Greeting with Chief Stan",
+          "path": "/quests/first-greeting-with-chief-stan",
+          "detail": "Level 12"
+        },
+        {
+          "name": "First Greeting with Maya, the Town Resident",
+          "path": "/quests/first-greeting-with-maya-the-town-resident",
+          "detail": "Level 12"
+        },
+        {
+          "name": "First Greeting with Mrs. Ming Ming, the Town Resident",
+          "path": "/quests/first-greeting-with-mrs-ming-ming-the-town-resident",
+          "detail": "Level 12"
+        },
+        {
+          "name": "First Greeting with Pia, the Town Resident",
+          "path": "/quests/first-greeting-with-pia-the-town-resident",
+          "detail": "Level 12"
+        },
+        {
+          "name": "First Greeting with Rina, the Town Resident",
+          "path": "/quests/first-greeting-with-rina-the-town-resident",
+          "detail": "Level 12"
+        }
+      ],
+      "total": 18
+    }
+  ]
+}

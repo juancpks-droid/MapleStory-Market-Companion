@@ -7,13 +7,13 @@
     "category": "Equipment"
   },
   "kind": "npc",
-  "checkedAt": "2026-10-13T15:37:39.237Z",
+  "checkedAt": "2026-10-26T10:07:43.430Z",
   "data": {
     "sell": 12600,
     "buy": null,
     "source": "CCPLZ",
     "url": "https://ccplz.cc/items/brown-starlight",
-    "checkedAt": "2026-10-13T15:37:39.237Z"
+    "checkedAt": "2026-10-26T10:07:43.430Z"
   },
   "provenance": {
     "source": "CCPLZ",

@@ -1,0 +1,210 @@
+{
+  "schemaVersion": 1,
+  "path": "/npcs/community-board-431",
+  "kind": "npc",
+  "name": "Community Board (Kerning City)",
+  "source": "CCPLZ",
+  "sourceUrl": "https://ccplz.cc/npcs/community-board-431",
+  "checkedAt": "2026-10-26T10:08:16.514Z",
+  "notice": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial.",
+  "fields": [],
+  "sections": [
+    {
+      "title": "Where to find them",
+      "links": [
+        {
+          "name": "Kerning City",
+          "path": "/maps/kerning-city",
+          "detail": "Victoria Island"
+        }
+      ],
+      "total": 1
+    },
+    {
+      "title": "Quests they start",
+      "links": [
+        {
+          "name": "Asking After Alex, the Town Resident",
+          "path": "/quests/asking-after-alex-the-town-resident",
+          "detail": "Level 12"
+        },
+        {
+          "name": "Asking After Chun Ji",
+          "path": "/quests/asking-after-chun-ji",
+          "detail": "Level 12"
+        },
+        {
+          "name": "Asking After Dark Lord",
+          "path": "/quests/asking-after-dark-lord",
+          "detail": "Level 12"
+        },
+        {
+          "name": "Asking After Icarus, the Town Resident",
+          "path": "/quests/asking-after-icarus-the-town-resident",
+          "detail": "Level 12"
+        },
+        {
+          "name": "Asking After Jake, the Town Resident",
+          "path": "/quests/asking-after-jake-the-town-resident",
+          "detail": "Level 12"
+        },
+        {
+          "name": "Asking After Jane Doe, the Town Resident",
+          "path": "/quests/asking-after-jane-doe-the-town-resident",
+          "detail": "Level 12"
+        },
+        {
+          "name": "Asking After Mr. Pickall, the Town Resident",
+          "path": "/quests/asking-after-mr-pickall-the-town-resident",
+          "detail": "Level 12"
+        },
+        {
+          "name": "Asking After Nella, the Town Resident",
+          "path": "/quests/asking-after-nella-the-town-resident",
+          "detail": "Level 12"
+        },
+        {
+          "name": "Asking After Shumi, the Town Resident",
+          "path": "/quests/asking-after-shumi-the-town-resident",
+          "detail": "Level 12"
+        },
+        {
+          "name": "Donating to Kerning City (Bubbling's Huge Bubble)",
+          "path": "/quests/donating-to-kerning-city-506124",
+          "detail": "Level 12"
+        },
+        {
+          "name": "Donating to Kerning City (Charm of the Undead)",
+          "path": "/quests/donating-to-kerning-city-506127",
+          "detail": "Level 12"
+        },
+        {
+          "name": "Donating to Kerning City (Cold Eye Tail)",
+          "path": "/quests/donating-to-kerning-city-506134",
+          "detail": "Level 12"
+        },
+        {
+          "name": "Donating to Kerning City (Evil Eye Tail)",
+          "path": "/quests/donating-to-kerning-city-506129",
+          "detail": "Level 12"
+        },
+        {
+          "name": "Donating to Kerning City (Fire Boar's Tooth)",
+          "path": "/quests/donating-to-kerning-city-506131",
+          "detail": "Level 12"
+        },
+        {
+          "name": "Donating to Kerning City (Firewood)",
+          "path": "/quests/donating-to-kerning-city-506125",
+          "detail": "Level 12"
+        },
+        {
+          "name": "Donating to Kerning City (Leaf)",
+          "path": "/quests/donating-to-kerning-city-506121",
+          "detail": "Level 12"
+        },
+        {
+          "name": "Donating to Kerning City (Ligator Skin)",
+          "path": "/quests/donating-to-kerning-city-506130",
+          "detail": "Level 12"
+        },
+        {
+          "name": "Donating to Kerning City (Lupin's Banana)",
+          "path": "/quests/donating-to-kerning-city-506133",
+          "detail": "Level 12"
+        },
+        {
+          "name": "Donating to Kerning City (Medicine With Weird Vibes)",
+          "path": "/quests/donating-to-kerning-city-506136",
+          "detail": "Level 12"
+        },
+        {
+          "name": "Donating to Kerning City (Octopus Leg)",
+          "path": "/quests/donating-to-kerning-city-506123",
+          "detail": "Level 12"
+        },
+        {
+          "name": "Donating to Kerning City (Orange Mushroom Cap)",
+          "path": "/quests/donating-to-kerning-city-506120",
+          "detail": "Level 12"
+        },
+        {
+          "name": "Donating to Kerning City (Pig's Ribbon)",
+          "path": "/quests/donating-to-kerning-city-506122",
+          "detail": "Level 12"
+        },
+        {
+          "name": "Donating to Kerning City (Red Snail Shell)",
+          "path": "/quests/donating-to-kerning-city",
+          "detail": "Level 12"
+        },
+        {
+          "name": "Donating to Kerning City (Stirge Wing)",
+          "path": "/quests/donating-to-kerning-city-506126",
+          "detail": "Level 12"
+        },
+        {
+          "name": "Donating to Kerning City (Tablecloth)",
+          "path": "/quests/donating-to-kerning-city-506132",
+          "detail": "Level 12"
+        },
+        {
+          "name": "Donating to Kerning City (Tortie Shell)",
+          "path": "/quests/donating-to-kerning-city-506135",
+          "detail": "Level 12"
+        },
+        {
+          "name": "Donating to Kerning City (Wild Boar Tooth)",
+          "path": "/quests/donating-to-kerning-city-506128",
+          "detail": "Level 12"
+        },
+        {
+          "name": "First Greeting with Alex, the Town Resident",
+          "path": "/quests/first-greeting-with-alex-the-town-resident",
+          "detail": "Level 12"
+        },
+        {
+          "name": "First Greeting with Chun Ji",
+          "path": "/quests/first-greeting-with-chun-ji",
+          "detail": "Level 12"
+        },
+        {
+          "name": "First Greeting with Dark Lord",
+          "path": "/quests/first-greeting-with-dark-lord",
+          "detail": "Level 12"
+        },
+        {
+          "name": "First Greeting with Icarus, the Town Resident",
+          "path": "/quests/first-greeting-with-icarus-the-town-resident",
+          "detail": "Level 12"
+        },
+        {
+          "name": "First Greeting with Jake, the Town Resident",
+          "path": "/quests/first-greeting-with-jake-the-town-resident",
+          "detail": "Level 12"
+        },
+        {
+          "name": "First Greeting with Jane Doe, the Town Resident",
+          "path": "/quests/first-greeting-with-jane-doe-the-town-resident",
+          "detail": "Level 12"
+        },
+        {
+          "name": "First Greeting with Mr. Pickall, the Town Resident",
+          "path": "/quests/first-greeting-with-mr-pickall-the-town-resident",
+          "detail": "Level 12"
+        },
+        {
+          "name": "First Greeting with Nella, the Town Resident",
+          "path": "/quests/first-greeting-with-nella-the-town-resident",
+          "detail": "Level 12"
+        },
+        {
+          "name": "First Greeting with Shumi, the Town Resident",
+          "path": "/quests/first-greeting-with-shumi-the-town-resident",
+          "detail": "Level 12"
+        }
+      ],
+      "total": 36
+    }
+  ]
+}

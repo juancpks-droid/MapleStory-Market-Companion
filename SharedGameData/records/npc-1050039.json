@@ -7,13 +7,13 @@
     "category": "Equipment"
   },
   "kind": "npc",
-  "checkedAt": "2026-10-13T15:37:45.259Z",
+  "checkedAt": "2026-10-26T10:07:49.519Z",
   "data": {
     "sell": 12600,
     "buy": null,
     "source": "CCPLZ",
     "url": "https://ccplz.cc/items/dark-starlight",
-    "checkedAt": "2026-10-13T15:37:45.259Z"
+    "checkedAt": "2026-10-26T10:07:49.519Z"
   },
   "provenance": {
     "source": "CCPLZ",

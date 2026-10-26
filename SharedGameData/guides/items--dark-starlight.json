@@ -5,7 +5,7 @@
   "name": "Dark Starlight",
   "source": "CCPLZ",
   "sourceUrl": "https://ccplz.cc/items/dark-starlight",
-  "checkedAt": "2026-10-13T15:37:45.259Z",
+  "checkedAt": "2026-10-26T10:07:49.519Z",
   "notice": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial.",
   "fields": [
     {
@@ -66,22 +66,12 @@
       "title": "Dropped by",
       "links": [
         {
-          "name": "Chirppy",
-          "path": "/monsters/chirppy",
-          "detail": "Level 31, 0.08% historical rate"
-        },
-        {
           "name": "Dark Stone Golem",
           "path": "/monsters/dark-stone-golem",
-          "detail": "Level 58, 0.07% historical rate"
-        },
-        {
-          "name": "Zombie Lupin",
-          "path": "/monsters/zombie-lupin",
-          "detail": "Level 41, 0.07% historical rate"
+          "detail": "Level 58, about 0.22%, usual for its kind"
         }
       ],
-      "total": 3
+      "total": 1
     },
     {
       "title": "Similar equipment",

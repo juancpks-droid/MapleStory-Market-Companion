@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "path": "/items/horny-mushroom-cap",
+  "kind": "item",
+  "name": "Horny Mushroom Cap",
+  "source": "CCPLZ",
+  "sourceUrl": "https://ccplz.cc/items/horny-mushroom-cap",
+  "checkedAt": "2026-10-26T10:08:01.552Z",
+  "notice": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial.",
+  "fields": [
+    {
+      "label": "Type",
+      "value": "Monster drops"
+    },
+    {
+      "label": "NPC sell price",
+      "value": "22 mesos"
+    },
+    {
+      "label": "Stack limit",
+      "value": "200"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Dropped by",
+      "links": [
+        {
+          "name": "Horny Mushroom",
+          "path": "/monsters/horny-mushroom",
+          "detail": "Level 22, 46% drop rate, 633 kills counted"
+        }
+      ],
+      "total": 1
+    },
+    {
+      "title": "Needed for quests",
+      "links": [
+        {
+          "name": "Collecting For Maya (Maya's First Collection)",
+          "path": "/quests/maya-s-first-collection",
+          "detail": "Level 30"
+        },
+        {
+          "name": "Donating to Henesys (Horny Mushroom Cap)",
+          "path": "/quests/donating-to-henesys-506026",
+          "detail": "Level 12"
+        },
+        {
+          "name": "Jane and the Mushroom",
+          "path": "/quests/jane-and-the-mushroom",
+          "detail": "Level 20"
+        },
+        {
+          "name": "Nella & Kerning City Citizen's Other Request (Dr. Faymus's Request)",
+          "path": "/quests/dr-faymus-s-request",
+          "detail": "Level 22"
+        },
+        {
+          "name": "Ronnie & the Fairies Building a New House (First Material Delivery for Building a New House)",
+          "path": "/quests/first-material-delivery-for-building-a-new-house",
+          "detail": "Level 41"
+        }
+      ],
+      "total": 5
+    }
+  ]
+}

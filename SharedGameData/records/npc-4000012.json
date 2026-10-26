@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "item": {
+    "key": "gms83:4000012",
+    "name": "Green Mushroom Cap",
+    "id": "4000012",
+    "category": "Etc"
+  },
+  "kind": "npc",
+  "checkedAt": "2026-10-26T10:07:58.468Z",
+  "data": {
+    "sell": 14,
+    "buy": null,
+    "source": "CCPLZ",
+    "url": "https://ccplz.cc/items/green-mushroom-cap",
+    "checkedAt": "2026-10-26T10:07:58.468Z"
+  },
+  "provenance": {
+    "source": "CCPLZ",
+    "sourceUrl": "https://ccplz.cc/items/green-mushroom-cap",
+    "coverage": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial."
+  }
+}

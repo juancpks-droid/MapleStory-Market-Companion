@@ -5,7 +5,7 @@
   "name": "Brown Starlight",
   "source": "CCPLZ",
   "sourceUrl": "https://ccplz.cc/items/brown-starlight",
-  "checkedAt": "2026-10-13T15:37:39.237Z",
+  "checkedAt": "2026-10-26T10:07:43.430Z",
   "notice": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial.",
   "fields": [
     {
@@ -64,26 +64,10 @@
         {
           "name": "Cold Eye",
           "path": "/monsters/cold-eye",
-          "detail": "Level 40"
+          "detail": "Level 40, about 0.22%, usual for its kind"
         }
       ],
       "total": 1
-    },
-    {
-      "title": "Also dropped by, in older versions",
-      "links": [
-        {
-          "name": "Flyeye",
-          "path": "/monsters/flyeye",
-          "detail": "Level 41, 0.07% historical rate"
-        },
-        {
-          "name": "Jr. Cellion",
-          "path": "/monsters/jr-cellion",
-          "detail": "Level 33, 0.07% historical rate"
-        }
-      ],
-      "total": 2
     },
     {
       "title": "Similar equipment",

@@ -1,0 +1,454 @@
+{
+  "schemaVersion": 1,
+  "path": "/maps/henesys",
+  "kind": "map",
+  "name": "Henesys",
+  "source": "CCPLZ",
+  "sourceUrl": "https://ccplz.cc/maps/henesys",
+  "checkedAt": "2026-10-26T10:08:04.417Z",
+  "notice": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial.",
+  "fields": [
+    {
+      "label": "Region",
+      "value": "Victoria Island"
+    },
+    {
+      "label": "Street",
+      "value": "Victoria Road"
+    },
+    {
+      "label": "Type",
+      "value": "Town"
+    }
+  ],
+  "sections": [
+    {
+      "title": "NPCs",
+      "links": [
+        {
+          "name": "Bianca",
+          "path": "/npcs/bianca",
+          "detail": "Housing Registrar"
+        },
+        {
+          "name": "Bruce",
+          "path": "/npcs/bruce",
+          "detail": ""
+        },
+        {
+          "name": "Camila",
+          "path": "/npcs/camila",
+          "detail": ""
+        },
+        {
+          "name": "Chief Stan",
+          "path": "/npcs/chief-stan",
+          "detail": ""
+        },
+        {
+          "name": "Community Board (Henesys)",
+          "path": "/npcs/community-board",
+          "detail": ""
+        },
+        {
+          "name": "Doorbell",
+          "path": "/npcs/doorbell",
+          "detail": ""
+        },
+        {
+          "name": "Jay",
+          "path": "/npcs/jay",
+          "detail": ""
+        },
+        {
+          "name": "Malady",
+          "path": "/npcs/malady",
+          "detail": "Witch at Large - Halloween"
+        },
+        {
+          "name": "Maple Administrator (Henesys)",
+          "path": "/npcs/maple-administrator-9010000",
+          "detail": ""
+        },
+        {
+          "name": "Mrs. Ming Ming",
+          "path": "/npcs/mrs-ming-ming",
+          "detail": ""
+        },
+        {
+          "name": "Regular Cab",
+          "path": "/npcs/regular-cab",
+          "detail": ""
+        },
+        {
+          "name": "Rina",
+          "path": "/npcs/rina",
+          "detail": ""
+        }
+      ],
+      "total": 12
+    },
+    {
+      "title": "Connected maps",
+      "links": [
+        {
+          "name": "An Empty House",
+          "path": "/maps/an-empty-house",
+          "detail": "Hidden Street"
+        },
+        {
+          "name": "Henesys",
+          "path": "/maps/henesys",
+          "detail": "Victoria Road"
+        },
+        {
+          "name": "Henesys Hunting Ground I",
+          "path": "/maps/henesys-hunting-ground-i",
+          "detail": "Victoria Road"
+        },
+        {
+          "name": "Henesys Market",
+          "path": "/maps/henesys-market",
+          "detail": "Victoria Road"
+        },
+        {
+          "name": "Henesys Park",
+          "path": "/maps/henesys-park",
+          "detail": "Victoria Road"
+        },
+        {
+          "name": "Henesys Town Hall",
+          "path": "/maps/henesys-town-hall",
+          "detail": "Victoria Road"
+        },
+        {
+          "name": "Henesys Townstreet",
+          "path": "/maps/henesys-townstreet",
+          "detail": "Victoria Road"
+        },
+        {
+          "name": "The Hill East of Henesys",
+          "path": "/maps/the-hill-east-of-henesys",
+          "detail": "Victoria Road"
+        },
+        {
+          "name": "The Road to the Dungeon",
+          "path": "/maps/the-road-to-the-dungeon",
+          "detail": "Warning Street"
+        },
+        {
+          "name": "Yellow Mushroom House",
+          "path": "/maps/victoria-road",
+          "detail": "Victoria Road"
+        }
+      ],
+      "total": 10
+    },
+    {
+      "title": "Quests set here",
+      "links": [
+        {
+          "name": "\"Mar\" the Fairy and the Water of Life",
+          "path": "/quests/mar-the-fairy-and-the-water-of-life",
+          "detail": ""
+        },
+        {
+          "name": "[Event] Founder's First Step",
+          "path": "/quests/event-founder-s-first-step",
+          "detail": "Level 10"
+        },
+        {
+          "name": "[Event] Gathering Leaves",
+          "path": "/quests/event-gathering-leaves",
+          "detail": "Level 10"
+        },
+        {
+          "name": "[Event] Growing Leaf",
+          "path": "/quests/event-growing-leaf",
+          "detail": "Level 10"
+        },
+        {
+          "name": "[Event] Halloween Candies",
+          "path": "/quests/event-halloween-candies",
+          "detail": "Level 10"
+        },
+        {
+          "name": "[Event] The Journey Begins",
+          "path": "/quests/event-the-journey-begins",
+          "detail": "Level 10"
+        },
+        {
+          "name": "[Event] The Marks We Leave Behind",
+          "path": "/quests/event-the-marks-we-leave-behind",
+          "detail": "Level 25"
+        },
+        {
+          "name": "[Event] Trick or Treat!",
+          "path": "/quests/event-trick-or-treat",
+          "detail": "Level 10"
+        },
+        {
+          "name": "A Carpenter in My Own Right!",
+          "path": "/quests/a-carpenter-in-my-own-right",
+          "detail": "Level 25"
+        },
+        {
+          "name": "A Family Reunited (A Father's Love for His Daughter)",
+          "path": "/quests/a-father-s-love-for-his-daughter",
+          "detail": "Level 17"
+        },
+        {
+          "name": "A Family Reunited (Bruce's Cooking Ingredients)",
+          "path": "/quests/bruce-s-cooking-ingredients",
+          "detail": "Level 17"
+        },
+        {
+          "name": "A Family Reunited (Bruce's Dilemma)",
+          "path": "/quests/bruce-s-dilemma",
+          "detail": "Level 17"
+        },
+        {
+          "name": "A Family Reunited (Mrs. Ming Ming's Advice)",
+          "path": "/quests/mrs-ming-ming-s-advice",
+          "detail": "Level 17"
+        },
+        {
+          "name": "A Family Reunited (The Best Dad)",
+          "path": "/quests/the-best-dad",
+          "detail": "Level 17"
+        },
+        {
+          "name": "A Gift for a Citizen of Honor (A Box Hidden Long Ago)",
+          "path": "/quests/a-box-hidden-long-ago",
+          "detail": "Level 57"
+        },
+        {
+          "name": "A Gift for a Citizen of Honor (A Worn-Out Bow)",
+          "path": "/quests/a-worn-out-bow",
+          "detail": "Level 57"
+        },
+        {
+          "name": "A Gift for a Citizen of Honor (Becoming a Citizen of Honor)",
+          "path": "/quests/becoming-a-citizen-of-honor",
+          "detail": "Level 57"
+        },
+        {
+          "name": "A Home in Henesys (Looking for a House)",
+          "path": "/quests/looking-for-a-house",
+          "detail": "Level 17"
+        },
+        {
+          "name": "A Marble of Friendship (A Gift for Pia)",
+          "path": "/quests/a-gift-for-pia",
+          "detail": "Level 37"
+        },
+        {
+          "name": "A Marble of Friendship (A Marble Made With Care)",
+          "path": "/quests/a-marble-made-with-care",
+          "detail": "Level 37"
+        },
+        {
+          "name": "A Marble of Friendship (A Promise Between Three Friends)",
+          "path": "/quests/a-promise-between-three-friends",
+          "detail": "Level 37"
+        },
+        {
+          "name": "A Marble of Friendship (Materials for a Special Marble)",
+          "path": "/quests/materials-for-a-special-marble",
+          "detail": "Level 37"
+        },
+        {
+          "name": "After the Festival Ends... (Chief Stan's Hammer)",
+          "path": "/quests/chief-stan-s-hammer",
+          "detail": "Level 27"
+        },
+        {
+          "name": "After the Festival Ends... (Chief Stan's Past)",
+          "path": "/quests/chief-stan-s-past",
+          "detail": "Level 27"
+        },
+        {
+          "name": "After the Festival Ends... (Memories of Youth)",
+          "path": "/quests/memories-of-youth",
+          "detail": "Level 27"
+        },
+        {
+          "name": "After the Festival Ends... (Mrs. Ming Ming's Concern)",
+          "path": "/quests/mrs-ming-ming-s-concern",
+          "detail": "Level 27"
+        },
+        {
+          "name": "After the Festival Ends... (Regained Vitality)",
+          "path": "/quests/regained-vitality",
+          "detail": "Level 27"
+        },
+        {
+          "name": "Alex the Runaway Kid (Alex's Request)",
+          "path": "/quests/alex-s-request",
+          "detail": "Level 18"
+        },
+        {
+          "name": "Alex the Runaway Kid (Mother's Gold Watch)",
+          "path": "/quests/mother-s-gold-watch",
+          "detail": "Level 18"
+        },
+        {
+          "name": "Alex the Runaway Kid (Talking to Stan)",
+          "path": "/quests/talking-to-stan",
+          "detail": "Level 18"
+        },
+        {
+          "name": "Another of Maya's Collections (Maya's Last Collection)",
+          "path": "/quests/maya-s-last-collection",
+          "detail": "Level 47"
+        },
+        {
+          "name": "Asking After Anne, the Town Resident",
+          "path": "/quests/asking-after-anne-the-town-resident",
+          "detail": "Level 12"
+        },
+        {
+          "name": "Asking After Bruce, the Town Resident",
+          "path": "/quests/asking-after-bruce-the-town-resident",
+          "detail": "Level 12"
+        },
+        {
+          "name": "Asking After Camila, the Town Resident",
+          "path": "/quests/asking-after-camila-the-town-resident",
+          "detail": "Level 12"
+        },
+        {
+          "name": "Asking After Maya, the Town Resident",
+          "path": "/quests/asking-after-maya-the-town-resident",
+          "detail": "Level 12"
+        },
+        {
+          "name": "Asking After Mrs. Ming Ming, the Town Resident.",
+          "path": "/quests/asking-after-mrs-ming-ming-the-town-resident",
+          "detail": "Level 12"
+        },
+        {
+          "name": "Asking After Pia, the Town Resident",
+          "path": "/quests/asking-after-pia-the-town-resident",
+          "detail": "Level 12"
+        },
+        {
+          "name": "Asking After Rina, the Town Resident",
+          "path": "/quests/asking-after-rina-the-town-resident",
+          "detail": "Level 12"
+        },
+        {
+          "name": "Building a New House For Blackbull",
+          "path": "/quests/building-a-new-house-for-blackbull",
+          "detail": "Level 48"
+        },
+        {
+          "name": "Camila's Gem",
+          "path": "/quests/camila-s-gem",
+          "detail": "Level 24"
+        },
+        {
+          "name": "Caretaker's Ledger (The Filing Error)",
+          "path": "/quests/the-filing-error",
+          "detail": "Level 28"
+        },
+        {
+          "name": "Collecting For Maya (Maya's First Collection)",
+          "path": "/quests/maya-s-first-collection",
+          "detail": "Level 30"
+        },
+        {
+          "name": "Donating to Henesys (Blue Mushroom Cap)",
+          "path": "/quests/donating-to-henesys-506025",
+          "detail": "Level 12"
+        },
+        {
+          "name": "Donating to Henesys (Blue Snail Shell)",
+          "path": "/quests/donating-to-henesys",
+          "detail": "Level 12"
+        },
+        {
+          "name": "Donating to Henesys (Charm of the Undead)",
+          "path": "/quests/donating-to-henesys-506027",
+          "detail": "Level 12"
+        },
+        {
+          "name": "Donating to Henesys (Cold Eye Tail)",
+          "path": "/quests/donating-to-henesys-506033",
+          "detail": "Level 12"
+        },
+        {
+          "name": "Donating to Henesys (Curse Eye Tail)",
+          "path": "/quests/donating-to-henesys-506031",
+          "detail": "Level 12"
+        },
+        {
+          "name": "Donating to Henesys (Drake Skull)",
+          "path": "/quests/donating-to-henesys-506035",
+          "detail": "Level 12"
+        },
+        {
+          "name": "Donating to Henesys (Evil Eye Tail)",
+          "path": "/quests/donating-to-henesys-506029",
+          "detail": "Level 12"
+        },
+        {
+          "name": "Donating to Henesys (Green Mushroom Cap)",
+          "path": "/quests/donating-to-henesys-506024",
+          "detail": "Level 12"
+        },
+        {
+          "name": "Donating to Henesys (Horny Mushroom Cap)",
+          "path": "/quests/donating-to-henesys-506026",
+          "detail": "Level 12"
+        },
+        {
+          "name": "Donating to Henesys (Ligator Skin)",
+          "path": "/quests/donating-to-henesys-506030",
+          "detail": "Level 12"
+        },
+        {
+          "name": "Donating to Henesys (Lorang Claw)",
+          "path": "/quests/donating-to-henesys-506032",
+          "detail": "Level 12"
+        },
+        {
+          "name": "Donating to Henesys (Mushroom Spore)",
+          "path": "/quests/donating-to-henesys-506020",
+          "detail": "Level 12"
+        },
+        {
+          "name": "Donating to Henesys (Orange Mushroom Cap)",
+          "path": "/quests/donating-to-henesys-506023",
+          "detail": "Level 12"
+        },
+        {
+          "name": "Donating to Henesys (Red Snail Shell)",
+          "path": "/quests/donating-to-henesys-506021",
+          "detail": "Level 12"
+        },
+        {
+          "name": "Donating to Henesys (Squishy Liquid)",
+          "path": "/quests/donating-to-henesys-506022",
+          "detail": "Level 12"
+        },
+        {
+          "name": "Donating to Henesys (Tortie Shell)",
+          "path": "/quests/donating-to-henesys-506034",
+          "detail": "Level 12"
+        },
+        {
+          "name": "Donating to Henesys (Wild Boar Tooth)",
+          "path": "/quests/donating-to-henesys-506028",
+          "detail": "Level 12"
+        },
+        {
+          "name": "Dr. Betty's Research on Plants (Research on Animal Fossils)",
+          "path": "/quests/research-on-animal-fossils",
+          "detail": "Level 17"
+        }
+      ],
+      "total": 60
+    }
+  ]
+}

@@ -1,0 +1,494 @@
+{
+  "schemaVersion": 1,
+  "path": "/maps/kerning-city",
+  "kind": "map",
+  "name": "Kerning City",
+  "source": "CCPLZ",
+  "sourceUrl": "https://ccplz.cc/maps/kerning-city",
+  "checkedAt": "2026-10-26T10:08:22.462Z",
+  "notice": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial.",
+  "fields": [
+    {
+      "label": "Region",
+      "value": "Victoria Island"
+    },
+    {
+      "label": "Street",
+      "value": "Victoria Road"
+    },
+    {
+      "label": "Type",
+      "value": "Town"
+    }
+  ],
+  "sections": [
+    {
+      "title": "NPCs",
+      "links": [
+        {
+          "name": "Alex",
+          "path": "/npcs/alex",
+          "detail": ""
+        },
+        {
+          "name": "Community Board (Kerning City)",
+          "path": "/npcs/community-board-431",
+          "detail": ""
+        },
+        {
+          "name": "Doorbell",
+          "path": "/npcs/doorbell",
+          "detail": ""
+        },
+        {
+          "name": "Icarus",
+          "path": "/npcs/icarus",
+          "detail": ""
+        },
+        {
+          "name": "JM From tha Streetz",
+          "path": "/npcs/jm-from-tha-streetz",
+          "detail": "Leatherworker"
+        },
+        {
+          "name": "Lakelis",
+          "path": "/npcs/lakelis",
+          "detail": ""
+        },
+        {
+          "name": "Leatherworking Station",
+          "path": "/npcs/leatherworking-station",
+          "detail": ""
+        },
+        {
+          "name": "Malady",
+          "path": "/npcs/malady",
+          "detail": "Witch at Large - Halloween"
+        },
+        {
+          "name": "Maple Administrator (Henesys)",
+          "path": "/npcs/maple-administrator-9010000",
+          "detail": ""
+        },
+        {
+          "name": "Mong from Kong",
+          "path": "/npcs/mong-from-kong",
+          "detail": ""
+        },
+        {
+          "name": "Mr. Hong",
+          "path": "/npcs/mr-hong",
+          "detail": "Storage Keeper"
+        },
+        {
+          "name": "Mr. Pickall",
+          "path": "/npcs/mr-pickall",
+          "detail": "Master of Lock-Picking"
+        },
+        {
+          "name": "Nella (Kerning City)",
+          "path": "/npcs/nella",
+          "detail": ""
+        },
+        {
+          "name": "Regular Cab",
+          "path": "/npcs/regular-cab",
+          "detail": ""
+        },
+        {
+          "name": "Scarlett",
+          "path": "/npcs/scarlett",
+          "detail": "Housing Registrar"
+        },
+        {
+          "name": "Shumi",
+          "path": "/npcs/shumi",
+          "detail": ""
+        },
+        {
+          "name": "Weaponcrafting Station",
+          "path": "/npcs/weaponcrafting-station",
+          "detail": ""
+        }
+      ],
+      "total": 17
+    },
+    {
+      "title": "Connected maps",
+      "links": [
+        {
+          "name": "Backalley Semi-Basement (Other)",
+          "path": "/maps/backalley-semi-basement-88001000",
+          "detail": "Victoria Road"
+        },
+        {
+          "name": "Kerning City",
+          "path": "/maps/kerning-city",
+          "detail": "Victoria Road"
+        },
+        {
+          "name": "Kerning City Civic Center",
+          "path": "/maps/kerning-city-civic-center",
+          "detail": "Victoria Road"
+        },
+        {
+          "name": "Kerning City Construction Site",
+          "path": "/maps/kerning-city-construction-site",
+          "detail": "Victoria Road"
+        },
+        {
+          "name": "Kerning City Hair Salon",
+          "path": "/maps/kerning-city-hair-salon",
+          "detail": "Victoria Road"
+        },
+        {
+          "name": "Kerning City Pharmacy",
+          "path": "/maps/kerning-city-pharmacy",
+          "detail": "Victoria Road"
+        },
+        {
+          "name": "Kerning City Repair Shop",
+          "path": "/maps/kerning-city-repair-shop",
+          "detail": "Victoria Road"
+        },
+        {
+          "name": "Kerning City Self-Defence Item Store",
+          "path": "/maps/kerning-city-self-defence-item-store",
+          "detail": "Victoria Road"
+        },
+        {
+          "name": "Niora Hospital",
+          "path": "/maps/niora-hospital",
+          "detail": "Victoria Road"
+        },
+        {
+          "name": "Subway Ticketing Booth",
+          "path": "/maps/subway-ticketing-booth",
+          "detail": "Victoria Road"
+        },
+        {
+          "name": "Sunset Sky",
+          "path": "/maps/sunset-sky",
+          "detail": "Victoria Road"
+        },
+        {
+          "name": "The Swamp of Despair I",
+          "path": "/maps/the-swamp-of-despair-i",
+          "detail": "Warning Street"
+        },
+        {
+          "name": "Thieves' Hideout",
+          "path": "/maps/thieves-hideout",
+          "detail": "Victoria Road"
+        }
+      ],
+      "total": 13
+    },
+    {
+      "title": "Quests set here",
+      "links": [
+        {
+          "name": "[Construction Site B1] What Shumi Lost ([Construction Site B2] Shumi's Lost Roll of Cash)",
+          "path": "/quests/construction-site-b2-shumi-s-lost-roll-of-cash",
+          "detail": "Level 35"
+        },
+        {
+          "name": "[Construction Site B1] What Shumi Lost ([Construction Site B3] Shumi's Lost Sack of Cash)",
+          "path": "/quests/construction-site-b3-shumi-s-lost-sack-of-cash",
+          "detail": "Level 35"
+        },
+        {
+          "name": "[Construction Site B1] What Shumi Lost (Shumi's Lost Coin)",
+          "path": "/quests/construction-site-b1-shumi-s-lost-coin",
+          "detail": "Level 35"
+        },
+        {
+          "name": "[Event] Halloween Candies",
+          "path": "/quests/event-halloween-candies",
+          "detail": "Level 10"
+        },
+        {
+          "name": "[Event] Trick or Treat!",
+          "path": "/quests/event-trick-or-treat",
+          "detail": "Level 10"
+        },
+        {
+          "name": "A Grudge That Won't Rest (A Name She Couldn't Say)",
+          "path": "/quests/a-name-she-couldn-t-say",
+          "detail": "Level 47"
+        },
+        {
+          "name": "A Grudge That Won't Rest (A Quiet Line of Work)",
+          "path": "/quests/a-quiet-line-of-work",
+          "detail": "Level 47"
+        },
+        {
+          "name": "A Grudge That Won't Rest (Another Lead)",
+          "path": "/quests/another-lead",
+          "detail": "Level 47"
+        },
+        {
+          "name": "A Home in Kerning City (Looking for a House)",
+          "path": "/quests/looking-for-a-house-506163",
+          "detail": "Level 17"
+        },
+        {
+          "name": "A Leatherworker in My Own Right!",
+          "path": "/quests/a-leatherworker-in-my-own-right",
+          "detail": "Level 25"
+        },
+        {
+          "name": "A Marble of Friendship (Materials for a Special Marble)",
+          "path": "/quests/materials-for-a-special-marble",
+          "detail": "Level 37"
+        },
+        {
+          "name": "A Task for a Citizen of Honor (A Missing Comrade)",
+          "path": "/quests/a-missing-comrade",
+          "detail": "Level 57"
+        },
+        {
+          "name": "A Task for a Citizen of Honor (Becoming a Citizen of Honor)",
+          "path": "/quests/becoming-a-citizen-of-honor-506157",
+          "detail": "Level 57"
+        },
+        {
+          "name": "A Task for a Citizen of Honor (The Weight of Truth)",
+          "path": "/quests/the-weight-of-truth",
+          "detail": "Level 57"
+        },
+        {
+          "name": "Alex the Runaway Kid (Alex's Request)",
+          "path": "/quests/alex-s-request",
+          "detail": "Level 18"
+        },
+        {
+          "name": "Alex the Runaway Kid (Mother's Gold Watch)",
+          "path": "/quests/mother-s-gold-watch",
+          "detail": "Level 18"
+        },
+        {
+          "name": "Asking After Alex, the Town Resident",
+          "path": "/quests/asking-after-alex-the-town-resident",
+          "detail": "Level 12"
+        },
+        {
+          "name": "Asking After Chun Ji",
+          "path": "/quests/asking-after-chun-ji",
+          "detail": "Level 12"
+        },
+        {
+          "name": "Asking After Dark Lord",
+          "path": "/quests/asking-after-dark-lord",
+          "detail": "Level 12"
+        },
+        {
+          "name": "Asking After Icarus, the Town Resident",
+          "path": "/quests/asking-after-icarus-the-town-resident",
+          "detail": "Level 12"
+        },
+        {
+          "name": "Asking After Jake, the Town Resident",
+          "path": "/quests/asking-after-jake-the-town-resident",
+          "detail": "Level 12"
+        },
+        {
+          "name": "Asking After Jane Doe, the Town Resident",
+          "path": "/quests/asking-after-jane-doe-the-town-resident",
+          "detail": "Level 12"
+        },
+        {
+          "name": "Asking After Mr. Pickall, the Town Resident",
+          "path": "/quests/asking-after-mr-pickall-the-town-resident",
+          "detail": "Level 12"
+        },
+        {
+          "name": "Asking After Nella, the Town Resident",
+          "path": "/quests/asking-after-nella-the-town-resident",
+          "detail": "Level 12"
+        },
+        {
+          "name": "Asking After Shumi, the Town Resident",
+          "path": "/quests/asking-after-shumi-the-town-resident",
+          "detail": "Level 12"
+        },
+        {
+          "name": "Caretaker's Ledger (The Dark Lord's Signature)",
+          "path": "/quests/the-dark-lord-s-signature",
+          "detail": "Level 28"
+        },
+        {
+          "name": "Caretaker's Ledger (The Faded Ink)",
+          "path": "/quests/the-faded-ink",
+          "detail": "Level 28"
+        },
+        {
+          "name": "Donating to Kerning City (Bubbling's Huge Bubble)",
+          "path": "/quests/donating-to-kerning-city-506124",
+          "detail": "Level 12"
+        },
+        {
+          "name": "Donating to Kerning City (Charm of the Undead)",
+          "path": "/quests/donating-to-kerning-city-506127",
+          "detail": "Level 12"
+        },
+        {
+          "name": "Donating to Kerning City (Cold Eye Tail)",
+          "path": "/quests/donating-to-kerning-city-506134",
+          "detail": "Level 12"
+        },
+        {
+          "name": "Donating to Kerning City (Evil Eye Tail)",
+          "path": "/quests/donating-to-kerning-city-506129",
+          "detail": "Level 12"
+        },
+        {
+          "name": "Donating to Kerning City (Fire Boar's Tooth)",
+          "path": "/quests/donating-to-kerning-city-506131",
+          "detail": "Level 12"
+        },
+        {
+          "name": "Donating to Kerning City (Firewood)",
+          "path": "/quests/donating-to-kerning-city-506125",
+          "detail": "Level 12"
+        },
+        {
+          "name": "Donating to Kerning City (Leaf)",
+          "path": "/quests/donating-to-kerning-city-506121",
+          "detail": "Level 12"
+        },
+        {
+          "name": "Donating to Kerning City (Ligator Skin)",
+          "path": "/quests/donating-to-kerning-city-506130",
+          "detail": "Level 12"
+        },
+        {
+          "name": "Donating to Kerning City (Lupin's Banana)",
+          "path": "/quests/donating-to-kerning-city-506133",
+          "detail": "Level 12"
+        },
+        {
+          "name": "Donating to Kerning City (Medicine With Weird Vibes)",
+          "path": "/quests/donating-to-kerning-city-506136",
+          "detail": "Level 12"
+        },
+        {
+          "name": "Donating to Kerning City (Octopus Leg)",
+          "path": "/quests/donating-to-kerning-city-506123",
+          "detail": "Level 12"
+        },
+        {
+          "name": "Donating to Kerning City (Orange Mushroom Cap)",
+          "path": "/quests/donating-to-kerning-city-506120",
+          "detail": "Level 12"
+        },
+        {
+          "name": "Donating to Kerning City (Pig's Ribbon)",
+          "path": "/quests/donating-to-kerning-city-506122",
+          "detail": "Level 12"
+        },
+        {
+          "name": "Donating to Kerning City (Red Snail Shell)",
+          "path": "/quests/donating-to-kerning-city",
+          "detail": "Level 12"
+        },
+        {
+          "name": "Donating to Kerning City (Stirge Wing)",
+          "path": "/quests/donating-to-kerning-city-506126",
+          "detail": "Level 12"
+        },
+        {
+          "name": "Donating to Kerning City (Tablecloth)",
+          "path": "/quests/donating-to-kerning-city-506132",
+          "detail": "Level 12"
+        },
+        {
+          "name": "Donating to Kerning City (Tortie Shell)",
+          "path": "/quests/donating-to-kerning-city-506135",
+          "detail": "Level 12"
+        },
+        {
+          "name": "Donating to Kerning City (Wild Boar Tooth)",
+          "path": "/quests/donating-to-kerning-city-506128",
+          "detail": "Level 12"
+        },
+        {
+          "name": "First Greeting with Alex, the Town Resident",
+          "path": "/quests/first-greeting-with-alex-the-town-resident",
+          "detail": "Level 12"
+        },
+        {
+          "name": "First Greeting with Chun Ji",
+          "path": "/quests/first-greeting-with-chun-ji",
+          "detail": "Level 12"
+        },
+        {
+          "name": "First Greeting with Dark Lord",
+          "path": "/quests/first-greeting-with-dark-lord",
+          "detail": "Level 12"
+        },
+        {
+          "name": "First Greeting with Icarus, the Town Resident",
+          "path": "/quests/first-greeting-with-icarus-the-town-resident",
+          "detail": "Level 12"
+        },
+        {
+          "name": "First Greeting with Jake, the Town Resident",
+          "path": "/quests/first-greeting-with-jake-the-town-resident",
+          "detail": "Level 12"
+        },
+        {
+          "name": "First Greeting with Jane Doe, the Town Resident",
+          "path": "/quests/first-greeting-with-jane-doe-the-town-resident",
+          "detail": "Level 12"
+        },
+        {
+          "name": "First Greeting with Mr. Pickall, the Town Resident",
+          "path": "/quests/first-greeting-with-mr-pickall-the-town-resident",
+          "detail": "Level 12"
+        },
+        {
+          "name": "First Greeting with Nella, the Town Resident",
+          "path": "/quests/first-greeting-with-nella-the-town-resident",
+          "detail": "Level 12"
+        },
+        {
+          "name": "First Greeting with Shumi, the Town Resident",
+          "path": "/quests/first-greeting-with-shumi-the-town-resident",
+          "detail": "Level 12"
+        },
+        {
+          "name": "First Time Together",
+          "path": "/quests/proof-of-companionship",
+          "detail": "Level 21"
+        },
+        {
+          "name": "I'm Bored (I'm Bored 1)",
+          "path": "/quests/i-m-bored-1",
+          "detail": "Level 11"
+        },
+        {
+          "name": "I'm Bored (I'm Bored 2)",
+          "path": "/quests/i-m-bored-2",
+          "detail": "Level 11"
+        },
+        {
+          "name": "Icarus and the Flying Medicine (In search of Wing the Fairy)",
+          "path": "/quests/in-search-of-wing-the-fairy",
+          "detail": "Level 46"
+        },
+        {
+          "name": "Icarus's Dream (Icarus and the Balloon)",
+          "path": "/quests/icarus-and-the-balloon",
+          "detail": "Level 31"
+        },
+        {
+          "name": "Icarus's Dream (Icarus's Hang Glider)",
+          "path": "/quests/icarus-s-hang-glider",
+          "detail": "Level 31"
+        }
+      ],
+      "total": 60
+    }
+  ]
+}

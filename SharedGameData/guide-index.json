@@ -68,6 +68,11 @@
       "kind": "item"
     },
     {
+      "path": "/npcs/arthur",
+      "name": "Arthur",
+      "kind": "npc"
+    },
+    {
       "path": "/shops/arturo-s-shop",
       "name": "Arturo's Shop",
       "kind": "shop"
@@ -160,6 +165,11 @@
     {
       "path": "/items/blue-moonlight",
       "name": "Blue Moonlight",
+      "kind": "item"
+    },
+    {
+      "path": "/items/blue-mushroom-cap",
+      "name": "Blue Mushroom Cap",
       "kind": "item"
     },
     {
@@ -296,6 +306,16 @@
       "path": "/quests/maya-s-first-collection",
       "name": "Collecting For Maya (Maya's First Collection)",
       "kind": "quest"
+    },
+    {
+      "path": "/npcs/community-board",
+      "name": "Community Board (Henesys)",
+      "kind": "npc"
+    },
+    {
+      "path": "/npcs/community-board-431",
+      "name": "Community Board (Kerning City)",
+      "kind": "npc"
     },
     {
       "path": "/maps/construction-site-north-of-kerning-city",
@@ -538,6 +558,11 @@
       "kind": "item"
     },
     {
+      "path": "/items/green-mushroom-cap",
+      "name": "Green Mushroom Cap",
+      "kind": "item"
+    },
+    {
       "path": "/items/green-pilfer",
       "name": "Green Pilfer",
       "kind": "item"
@@ -588,6 +613,11 @@
       "kind": "item"
     },
     {
+      "path": "/maps/henesys",
+      "name": "Henesys",
+      "kind": "map"
+    },
+    {
       "path": "/maps/henesys-hunting-ground-i",
       "name": "Henesys Hunting Ground I",
       "kind": "map"
@@ -601,6 +631,16 @@
       "path": "/maps/henesys-hunting-ground-iii",
       "name": "Henesys Hunting Ground III",
       "kind": "map"
+    },
+    {
+      "path": "/maps/henesys-town-hall",
+      "name": "Henesys Town Hall",
+      "kind": "map"
+    },
+    {
+      "path": "/items/horny-mushroom-cap",
+      "name": "Horny Mushroom Cap",
+      "kind": "item"
     },
     {
       "path": "/maps/hunting-ground-in-the-deep-forest-i",
@@ -651,6 +691,16 @@
       "path": "/monsters/jr-yeti",
       "name": "Jr. Yeti",
       "kind": "monster"
+    },
+    {
+      "path": "/maps/kerning-city",
+      "name": "Kerning City",
+      "kind": "map"
+    },
+    {
+      "path": "/maps/kerning-city-civic-center",
+      "name": "Kerning City Civic Center",
+      "kind": "map"
     },
     {
       "path": "/maps/kerning-city-construction-site",
@@ -761,6 +811,11 @@
       "path": "/items/nakamaki",
       "name": "Nakamaki",
       "kind": "item"
+    },
+    {
+      "path": "/npcs/nella",
+      "name": "Nella (Kerning City)",
+      "kind": "npc"
     },
     {
       "path": "/quests/don-hwang-s-request",
@@ -908,6 +963,11 @@
       "kind": "item"
     },
     {
+      "path": "/monsters/ribbon-pig",
+      "name": "Ribbon Pig",
+      "kind": "monster"
+    },
+    {
       "path": "/npcs/robin",
       "name": "Robin",
       "kind": "npc"
@@ -931,6 +991,11 @@
       "path": "/quests/collecting-150-cursed-dolls",
       "name": "Rowen the Fairy and the Cursed Doll (Collecting 150 Cursed Dolls)",
       "kind": "quest"
+    },
+    {
+      "path": "/npcs/roxy",
+      "name": "Roxy",
+      "kind": "npc"
     },
     {
       "path": "/items/sai",

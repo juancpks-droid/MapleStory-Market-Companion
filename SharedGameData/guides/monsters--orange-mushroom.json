@@ -5,7 +5,7 @@
   "name": "Orange Mushroom",
   "source": "CCPLZ",
   "sourceUrl": "https://ccplz.cc/monsters/orange-mushroom",
-  "checkedAt": "2026-10-13T15:38:03.222Z",
+  "checkedAt": "2026-10-26T10:08:31.416Z",
   "notice": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial.",
   "fields": [
     {
@@ -204,96 +204,100 @@
       "total": 31
     },
     {
-      "title": "Reported drops",
+      "title": "Drops",
       "links": [
         {
           "name": "Arrows for Bows",
           "path": "/items/arrows-for-bows",
-          "detail": "Arrows for bows, 3% historical rate"
+          "detail": "Arrows for bows, 1.6% drop rate, 184 kills counted"
         },
         {
           "name": "Arrows for Crossbows",
           "path": "/items/arrows-for-crossbows",
-          "detail": "Arrows for crossbows, 3% historical rate"
+          "detail": "Arrows for crossbows, 0.54% drop rate, 184 kills counted"
+        },
+        {
+          "name": "Basic Archer Gloves",
+          "path": "/items/basic-archer-gloves",
+          "detail": "Gloves, about 0.22%, usual for its kind"
         },
         {
           "name": "Bronze Koif",
           "path": "/items/bronze-koif",
-          "detail": "Hat"
+          "detail": "Hat, about 0.22%, usual for its kind"
         },
         {
           "name": "Bronze Ore",
           "path": "/items/bronze-ore",
-          "detail": "Ores & ingots"
+          "detail": "Ores & ingots, 2.2% drop rate, 184 kills counted"
         },
         {
           "name": "Brown Hard Leather Boots",
           "path": "/items/brown-hard-leather-boots",
-          "detail": "Shoes, 0.08% historical rate"
+          "detail": "Shoes, about 0.22%, usual for its kind"
         },
         {
           "name": "Diamond Ore",
           "path": "/items/diamond-ore",
-          "detail": "Gems & gem ores"
+          "detail": "Gems & gem ores, about 1.2%, usual for its kind"
         },
         {
           "name": "Double Axe",
           "path": "/items/double-axe",
-          "detail": "One-handed axe, 0.07% historical rate"
+          "detail": "One-handed axe, about 0.22%, usual for its kind"
         },
         {
           "name": "Green Winter Hat",
           "path": "/items/green-winter-hat",
-          "detail": "Hat"
+          "detail": "Hat, about 0.22%, usual for its kind"
         },
         {
           "name": "Long Sword",
           "path": "/items/long-sword",
-          "detail": "One-handed sword"
+          "detail": "One-handed sword, about 0.22%, usual for its kind"
+        },
+        {
+          "name": "Monster Card",
+          "path": "/items/monster-card",
+          "detail": "Quest items"
+        },
+        {
+          "name": "Omok Piece: Mushroom (for Maple World's Unique Fun: Omok: Make a Slime & Mushroom Omok Set)",
+          "path": "/items/omok-piece-mushroom",
+          "detail": "Quest items"
         },
         {
           "name": "Orange Mushroom Cap",
           "path": "/items/orange-mushroom-cap",
-          "detail": "Monster drops, 60% historical rate"
+          "detail": "Monster drops, 48% drop rate, 184 kills counted"
         },
         {
           "name": "Red Ninja Sandals",
           "path": "/items/red-ninja-sandals",
-          "detail": "Shoes, 0.08% historical rate"
+          "detail": "Shoes, about 0.22%, usual for its kind"
         },
         {
-          "name": "Red Potion (for Olaf's Training: Olaf's First Training)",
+          "name": "Red Potion",
           "path": "/items/red-potion",
-          "detail": "Potions, 10% historical rate"
-        },
-        {
-          "name": "Spear",
-          "path": "/items/spear",
-          "detail": "Spear, 0.05% historical rate"
-        },
-        {
-          "name": "White Gomushin",
-          "path": "/items/white-gomushin",
-          "detail": "Shoes, 0.08% historical rate"
-        }
-      ],
-      "total": 14
-    },
-    {
-      "title": "Older-version drops",
-      "links": [
-        {
-          "name": "Basic Archer Gloves",
-          "path": "/items/basic-archer-gloves",
-          "detail": "Gloves, 0.1% historical rate"
+          "detail": "Potions, 2.2% drop rate, 184 kills counted"
         },
         {
           "name": "Shoes Jump Scroll: Greater",
           "path": "/items/shoes-jump-scroll-greater",
-          "detail": "Shoes scrolls, 0.03% historical rate"
+          "detail": "Shoes scrolls"
+        },
+        {
+          "name": "Spear",
+          "path": "/items/spear",
+          "detail": "Spear, about 0.22%, usual for its kind"
+        },
+        {
+          "name": "White Gomushin",
+          "path": "/items/white-gomushin",
+          "detail": "Shoes, about 0.22%, usual for its kind"
         }
       ],
-      "total": 2
+      "total": 18
     },
     {
       "title": "Quests that need it",
