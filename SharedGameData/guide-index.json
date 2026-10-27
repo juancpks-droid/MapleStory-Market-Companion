@@ -118,6 +118,11 @@
       "kind": "quest"
     },
     {
+      "path": "/items/bindi",
+      "name": "Bindi",
+      "kind": "item"
+    },
+    {
       "path": "/items/black-bennis-chainmail",
       "name": "Black Bennis Chainmail",
       "kind": "item"
@@ -203,6 +208,11 @@
       "kind": "item"
     },
     {
+      "path": "/items/blush",
+      "name": "Blush",
+      "kind": "item"
+    },
+    {
       "path": "/items/bottomwear-def-scroll-intermediate",
       "name": "Bottomwear DEF Scroll: Intermediate",
       "kind": "item"
@@ -228,9 +238,19 @@
       "kind": "item"
     },
     {
+      "path": "/items/brown-apprentice-hat",
+      "name": "Brown Apprentice Hat",
+      "kind": "item"
+    },
+    {
       "path": "/recipes/craft-brown-apprentice-hat",
       "name": "Brown Apprentice Hat",
       "kind": "recipe"
+    },
+    {
+      "path": "/items/brown-ghetto-beanie",
+      "name": "Brown Ghetto Beanie",
+      "kind": "item"
     },
     {
       "path": "/recipes/craft-brown-ghetto-beanie",
@@ -276,6 +296,16 @@
       "path": "/recipes/craft-brown-winter-hat",
       "name": "Brown Winter Hat",
       "kind": "recipe"
+    },
+    {
+      "path": "/npcs/bruce",
+      "name": "Bruce",
+      "kind": "npc"
+    },
+    {
+      "path": "/items/bruise",
+      "name": "Bruise",
+      "kind": "item"
     },
     {
       "path": "/items/cape-int-scroll-intermediate",
@@ -743,6 +773,16 @@
       "kind": "map"
     },
     {
+      "path": "/items/leather-mask",
+      "name": "Leather Mask",
+      "kind": "item"
+    },
+    {
+      "path": "/items/lemon",
+      "name": "Lemon",
+      "kind": "item"
+    },
+    {
       "path": "/items/long-brown-beard",
       "name": "Long Brown Beard",
       "kind": "item"
@@ -873,6 +913,11 @@
       "kind": "map"
     },
     {
+      "path": "/items/pig-s-ribbon",
+      "name": "Pig's Ribbon",
+      "kind": "item"
+    },
+    {
       "path": "/monsters/plateon",
       "name": "Plateon",
       "kind": "monster"
@@ -885,6 +930,11 @@
     {
       "path": "/items/power-elixir",
       "name": "Power Elixir",
+      "kind": "item"
+    },
+    {
+      "path": "/items/processed-cloth",
+      "name": "Processed Cloth",
       "kind": "item"
     },
     {
@@ -963,6 +1013,16 @@
       "kind": "item"
     },
     {
+      "path": "/items/return-scroll-to-henesys",
+      "name": "Return Scroll to Henesys",
+      "kind": "item"
+    },
+    {
+      "path": "/items/return-scroll-to-kerning-city",
+      "name": "Return Scroll to Kerning City",
+      "kind": "item"
+    },
+    {
       "path": "/monsters/ribbon-pig",
       "name": "Ribbon Pig",
       "kind": "monster"
@@ -1026,6 +1086,11 @@
       "path": "/items/shoes-jump-scroll-greater",
       "name": "Shoes Jump Scroll: Greater",
       "kind": "item"
+    },
+    {
+      "path": "/monsters/shroom",
+      "name": "Shroom",
+      "kind": "monster"
     },
     {
       "path": "/maps/sleepy-dungeon-i",

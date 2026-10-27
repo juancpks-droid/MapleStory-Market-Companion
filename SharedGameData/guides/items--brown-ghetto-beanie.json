@@ -1,0 +1,130 @@
+{
+  "schemaVersion": 1,
+  "path": "/items/brown-ghetto-beanie",
+  "kind": "item",
+  "name": "Brown Ghetto Beanie",
+  "source": "CCPLZ",
+  "sourceUrl": "https://ccplz.cc/items/brown-ghetto-beanie",
+  "checkedAt": "2026-10-27T10:03:53.927Z",
+  "notice": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial.",
+  "fields": [
+    {
+      "label": "Type",
+      "value": "Hat"
+    },
+    {
+      "label": "Required level",
+      "value": "10"
+    },
+    {
+      "label": "Class",
+      "value": "Thief"
+    },
+    {
+      "label": "Weapon defense",
+      "value": "+15"
+    },
+    {
+      "label": "Accuracy",
+      "value": "+1"
+    },
+    {
+      "label": "Upgrade slots",
+      "value": "7"
+    },
+    {
+      "label": "NPC sell price",
+      "value": "600 mesos"
+    },
+    {
+      "label": "NPC buy price (lowest recorded)",
+      "value": "1200 mesos"
+    },
+    {
+      "label": "Required STR",
+      "value": "0"
+    },
+    {
+      "label": "Required DEX",
+      "value": "0"
+    },
+    {
+      "label": "Required INT",
+      "value": "0"
+    },
+    {
+      "label": "Required LUK",
+      "value": "10"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Sold in",
+      "links": [
+        {
+          "name": "Don Hwang's Shop",
+          "path": "/shops/don-hwang-s-shop",
+          "detail": ""
+        }
+      ],
+      "total": 1
+    },
+    {
+      "title": "How to craft it",
+      "links": [
+        {
+          "name": "Brown Ghetto Beanie",
+          "path": "/recipes/craft-brown-ghetto-beanie",
+          "detail": "Crafting skill level 2"
+        }
+      ],
+      "total": 1
+    },
+    {
+      "title": "Similar equipment",
+      "links": [
+        {
+          "name": "Black Bandana",
+          "path": "/items/black-bandana",
+          "detail": "Level 10"
+        },
+        {
+          "name": "Black Ghetto Beanie",
+          "path": "/items/black-ghetto-beanie",
+          "detail": "Level 10"
+        },
+        {
+          "name": "Blue Apprentice Hat",
+          "path": "/items/blue-apprentice-hat",
+          "detail": "Level 10"
+        },
+        {
+          "name": "Blue Bandana",
+          "path": "/items/blue-bandana",
+          "detail": "Level 10"
+        },
+        {
+          "name": "Blue Ghetto Beanie",
+          "path": "/items/blue-ghetto-beanie",
+          "detail": "Level 10"
+        },
+        {
+          "name": "Bronze Koif",
+          "path": "/items/bronze-koif",
+          "detail": "Level 10"
+        },
+        {
+          "name": "Brown Apprentice Hat",
+          "path": "/items/brown-apprentice-hat",
+          "detail": "Level 10"
+        },
+        {
+          "name": "Brown Winter Hat",
+          "path": "/items/brown-winter-hat",
+          "detail": "Level 10"
+        }
+      ],
+      "total": 8
+    }
+  ]
+}

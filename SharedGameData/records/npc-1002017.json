@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "item": {
+    "key": "gms83:1002017",
+    "name": "Brown Apprentice Hat",
+    "id": "1002017",
+    "category": "Equipment"
+  },
+  "kind": "npc",
+  "checkedAt": "2026-10-27T10:03:47.941Z",
+  "data": {
+    "sell": 600,
+    "buy": 1200,
+    "source": "CCPLZ",
+    "url": "https://ccplz.cc/items/brown-apprentice-hat",
+    "checkedAt": "2026-10-27T10:03:47.941Z"
+  },
+  "provenance": {
+    "source": "CCPLZ",
+    "sourceUrl": "https://ccplz.cc/items/brown-apprentice-hat",
+    "coverage": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial."
+  }
+}

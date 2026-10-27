@@ -1,0 +1,354 @@
+{
+  "schemaVersion": 1,
+  "path": "/items/processed-cloth",
+  "kind": "item",
+  "name": "Processed Cloth",
+  "source": "CCPLZ",
+  "sourceUrl": "https://ccplz.cc/items/processed-cloth",
+  "checkedAt": "2026-10-27T10:03:50.941Z",
+  "notice": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial.",
+  "fields": [
+    {
+      "label": "Type",
+      "value": "Crafting materials"
+    },
+    {
+      "label": "NPC sell price",
+      "value": "10 mesos"
+    }
+  ],
+  "sections": [
+    {
+      "title": "How to craft it",
+      "links": [
+        {
+          "name": "Processed Cloth (from Animal Fur Bundle + Animal Fur Bundle)",
+          "path": "/recipes/craft-processed-cloth-2-1-2",
+          "detail": "Crafting skill level 1"
+        },
+        {
+          "name": "Processed Cloth (from Leaf + Leaf)",
+          "path": "/recipes/craft-processed-cloth-2-1-1",
+          "detail": "Crafting skill level 1"
+        },
+        {
+          "name": "Processed Cloth (from Pig's Ribbon + Pig's Ribbon)",
+          "path": "/recipes/craft-processed-cloth",
+          "detail": "Crafting skill level 1"
+        },
+        {
+          "name": "Processed Cloth (from Tablecloth + Tablecloth)",
+          "path": "/recipes/craft-processed-cloth-2-9-0",
+          "detail": "Crafting skill level 9"
+        }
+      ],
+      "total": 4
+    },
+    {
+      "title": "Used in crafting",
+      "links": [
+        {
+          "name": "Black Justice Cape",
+          "path": "/recipes/craft-black-justice-cape",
+          "detail": ""
+        },
+        {
+          "name": "Black Lutia",
+          "path": "/recipes/craft-black-lutia",
+          "detail": ""
+        },
+        {
+          "name": "Black Magic Shoes",
+          "path": "/recipes/craft-black-magic-shoes",
+          "detail": ""
+        },
+        {
+          "name": "Black Salt Shoes",
+          "path": "/recipes/craft-black-salt-shoes",
+          "detail": ""
+        },
+        {
+          "name": "Black Wind Shoes",
+          "path": "/recipes/craft-black-wind-shoes",
+          "detail": ""
+        },
+        {
+          "name": "Blood Mesana",
+          "path": "/recipes/craft-blood-mesana",
+          "detail": ""
+        },
+        {
+          "name": "Blue Apprentice Hat",
+          "path": "/recipes/craft-blue-apprentice-hat",
+          "detail": ""
+        },
+        {
+          "name": "Blue Arten",
+          "path": "/recipes/craft-blue-arten",
+          "detail": ""
+        },
+        {
+          "name": "Blue Bandana",
+          "path": "/recipes/craft-blue-bandana",
+          "detail": ""
+        },
+        {
+          "name": "Blue Goldwind Shoes",
+          "path": "/recipes/craft-blue-goldwind-shoes",
+          "detail": ""
+        },
+        {
+          "name": "Blue Justice Cape",
+          "path": "/recipes/craft-blue-justice-cape",
+          "detail": ""
+        },
+        {
+          "name": "Blue Lutia",
+          "path": "/recipes/craft-blue-lutia",
+          "detail": ""
+        },
+        {
+          "name": "Blue Magic Shoes",
+          "path": "/recipes/craft-blue-magic-shoes",
+          "detail": ""
+        },
+        {
+          "name": "Blue Moon Shoes",
+          "path": "/recipes/craft-blue-moon-shoes",
+          "detail": ""
+        },
+        {
+          "name": "Blue Morrican",
+          "path": "/recipes/craft-blue-morrican",
+          "detail": ""
+        },
+        {
+          "name": "Blue Noel",
+          "path": "/recipes/craft-blue-noel",
+          "detail": ""
+        },
+        {
+          "name": "Blue Penance",
+          "path": "/recipes/craft-blue-penance",
+          "detail": ""
+        },
+        {
+          "name": "Brown Apprentice Hat",
+          "path": "/recipes/craft-brown-apprentice-hat",
+          "detail": ""
+        },
+        {
+          "name": "Brown Ghetto Beanie",
+          "path": "/recipes/craft-brown-ghetto-beanie",
+          "detail": ""
+        },
+        {
+          "name": "Cherry Bed",
+          "path": "/recipes/craft-cherry-bed",
+          "detail": ""
+        },
+        {
+          "name": "Dark Arten",
+          "path": "/recipes/craft-dark-arten",
+          "detail": ""
+        },
+        {
+          "name": "Dark Mesana",
+          "path": "/recipes/craft-dark-mesana",
+          "detail": ""
+        },
+        {
+          "name": "Dark Moon Shoes",
+          "path": "/recipes/craft-dark-moon-shoes",
+          "detail": ""
+        },
+        {
+          "name": "Dark Noel",
+          "path": "/recipes/craft-dark-noel",
+          "detail": ""
+        },
+        {
+          "name": "Dark Penance",
+          "path": "/recipes/craft-dark-penance",
+          "detail": ""
+        },
+        {
+          "name": "Gold Moon Shoes",
+          "path": "/recipes/craft-gold-moon-shoes",
+          "detail": ""
+        },
+        {
+          "name": "Green Ghetto Beanie",
+          "path": "/recipes/craft-green-ghetto-beanie",
+          "detail": ""
+        },
+        {
+          "name": "Green Goldwind Shoes",
+          "path": "/recipes/craft-green-goldwind-shoes",
+          "detail": ""
+        },
+        {
+          "name": "Green Morrican",
+          "path": "/recipes/craft-green-morrican",
+          "detail": ""
+        },
+        {
+          "name": "Ice Jeans",
+          "path": "/recipes/craft-ice-jeans",
+          "detail": ""
+        },
+        {
+          "name": "Lemona",
+          "path": "/recipes/craft-lemona",
+          "detail": ""
+        },
+        {
+          "name": "Ocean Mesana",
+          "path": "/recipes/craft-ocean-mesana",
+          "detail": ""
+        },
+        {
+          "name": "Pink Goldwind Shoes",
+          "path": "/recipes/craft-pink-goldwind-shoes",
+          "detail": ""
+        },
+        {
+          "name": "Purple Goldwind Shoes",
+          "path": "/recipes/craft-purple-goldwind-shoes",
+          "detail": ""
+        },
+        {
+          "name": "Purple Morrican",
+          "path": "/recipes/craft-purple-morrican",
+          "detail": ""
+        },
+        {
+          "name": "Purple Salt Shoes",
+          "path": "/recipes/craft-purple-salt-shoes",
+          "detail": ""
+        },
+        {
+          "name": "Red Apprentice Hat",
+          "path": "/recipes/craft-red-apprentice-hat",
+          "detail": ""
+        },
+        {
+          "name": "Red Arten",
+          "path": "/recipes/craft-red-arten",
+          "detail": ""
+        },
+        {
+          "name": "Red Bandana",
+          "path": "/recipes/craft-red-bandana",
+          "detail": ""
+        },
+        {
+          "name": "Red Chair",
+          "path": "/recipes/craft-red-chair",
+          "detail": ""
+        },
+        {
+          "name": "Red Justice Cape",
+          "path": "/recipes/craft-red-justice-cape",
+          "detail": ""
+        },
+        {
+          "name": "Red Lutia",
+          "path": "/recipes/craft-red-lutia",
+          "detail": ""
+        },
+        {
+          "name": "Red Magic Shoes",
+          "path": "/recipes/craft-red-magic-shoes",
+          "detail": ""
+        },
+        {
+          "name": "Red Moon Shoes",
+          "path": "/recipes/craft-red-moon-shoes",
+          "detail": ""
+        },
+        {
+          "name": "Red Noel",
+          "path": "/recipes/craft-red-noel",
+          "detail": ""
+        },
+        {
+          "name": "Red Penance",
+          "path": "/recipes/craft-red-penance",
+          "detail": ""
+        },
+        {
+          "name": "Red Salt Shoes",
+          "path": "/recipes/craft-red-salt-shoes",
+          "detail": ""
+        },
+        {
+          "name": "Red Starry Bandana",
+          "path": "/recipes/craft-red-starry-bandana",
+          "detail": ""
+        },
+        {
+          "name": "Rustic Bed",
+          "path": "/recipes/craft-rustic-bed",
+          "detail": ""
+        },
+        {
+          "name": "Sandblasted Jeans",
+          "path": "/recipes/craft-sandblasted-jeans",
+          "detail": ""
+        },
+        {
+          "name": "Sewing Machine",
+          "path": "/recipes/craft-sewing-machine",
+          "detail": ""
+        },
+        {
+          "name": "Silver Wind Shoes",
+          "path": "/recipes/craft-silver-wind-shoes",
+          "detail": ""
+        },
+        {
+          "name": "Sky Blue Starry Bandana",
+          "path": "/recipes/craft-sky-blue-starry-bandana",
+          "detail": ""
+        },
+        {
+          "name": "The Red Relaxer",
+          "path": "/recipes/craft-the-red-relaxer-3-5-4",
+          "detail": ""
+        },
+        {
+          "name": "The Yellow Relaxer",
+          "path": "/recipes/craft-the-yellow-relaxer",
+          "detail": ""
+        },
+        {
+          "name": "White Justice Cape",
+          "path": "/recipes/craft-white-justice-cape",
+          "detail": ""
+        },
+        {
+          "name": "White Magic Shoes",
+          "path": "/recipes/craft-white-magic-shoes",
+          "detail": ""
+        },
+        {
+          "name": "Work Gloves",
+          "path": "/recipes/craft-work-gloves",
+          "detail": ""
+        },
+        {
+          "name": "Yellow Starry Bandana",
+          "path": "/recipes/craft-yellow-starry-bandana",
+          "detail": ""
+        },
+        {
+          "name": "Yellow Wind Shoes",
+          "path": "/recipes/craft-yellow-wind-shoes",
+          "detail": ""
+        }
+      ],
+      "total": 60
+    }
+  ]
+}

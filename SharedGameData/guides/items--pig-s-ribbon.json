@@ -1,0 +1,74 @@
+{
+  "schemaVersion": 1,
+  "path": "/items/pig-s-ribbon",
+  "kind": "item",
+  "name": "Pig's Ribbon",
+  "source": "CCPLZ",
+  "sourceUrl": "https://ccplz.cc/items/pig-s-ribbon",
+  "checkedAt": "2026-10-27T10:03:29.941Z",
+  "notice": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial.",
+  "fields": [
+    {
+      "label": "Type",
+      "value": "Monster drops"
+    },
+    {
+      "label": "NPC sell price",
+      "value": "10 mesos"
+    },
+    {
+      "label": "Stack limit",
+      "value": "200"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Dropped by",
+      "links": [
+        {
+          "name": "Ribbon Pig",
+          "path": "/monsters/ribbon-pig",
+          "detail": "Level 10, 48% drop rate, 40 kills counted"
+        }
+      ],
+      "total": 1
+    },
+    {
+      "title": "Needed for quests",
+      "links": [
+        {
+          "name": "Collecting For Maya (Maya's Second Collection)",
+          "path": "/quests/maya-s-second-collection",
+          "detail": "Level 30"
+        },
+        {
+          "name": "Donating to Kerning City (Pig's Ribbon)",
+          "path": "/quests/donating-to-kerning-city-506122",
+          "detail": "Level 12"
+        },
+        {
+          "name": "Mrs. Ming Ming's First Worry",
+          "path": "/quests/mrs-ming-ming-s-first-worry",
+          "detail": "Level 15"
+        },
+        {
+          "name": "Nella & Kerning City Citizen's Request (Don Hwang's Request)",
+          "path": "/quests/don-hwang-s-request",
+          "detail": "Level 10"
+        }
+      ],
+      "total": 4
+    },
+    {
+      "title": "Used in crafting",
+      "links": [
+        {
+          "name": "Processed Cloth (from Pig's Ribbon + Pig's Ribbon)",
+          "path": "/recipes/craft-processed-cloth",
+          "detail": ""
+        }
+      ],
+      "total": 1
+    }
+  ]
+}

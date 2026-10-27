@@ -1,0 +1,53 @@
+{
+  "schemaVersion": 1,
+  "path": "/items/return-scroll-to-henesys",
+  "kind": "item",
+  "name": "Return Scroll to Henesys",
+  "source": "CCPLZ",
+  "sourceUrl": "https://ccplz.cc/items/return-scroll-to-henesys",
+  "checkedAt": "2026-10-27T10:03:45.022Z",
+  "notice": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial.",
+  "fields": [
+    {
+      "label": "Type",
+      "value": "Return scrolls"
+    },
+    {
+      "label": "NPC sell price",
+      "value": "250 mesos"
+    },
+    {
+      "label": "NPC buy price (lowest recorded)",
+      "value": "500 mesos"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Sold in",
+      "links": [
+        {
+          "name": "Luna's Shop",
+          "path": "/shops/luna-s-shop",
+          "detail": ""
+        }
+      ],
+      "total": 1
+    },
+    {
+      "title": "Quest rewards",
+      "links": [
+        {
+          "name": "[Construction Site B1] What Shumi Lost (Shumi's Lost Coin)",
+          "path": "/quests/construction-site-b1-shumi-s-lost-coin",
+          "detail": "Level 35"
+        },
+        {
+          "name": "The Reason Behind the Mushroom Studies",
+          "path": "/quests/the-reason-behind-the-mushroom-studies",
+          "detail": "Level 10"
+        }
+      ],
+      "total": 2
+    }
+  ]
+}

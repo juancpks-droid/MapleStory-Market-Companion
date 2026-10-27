@@ -1,0 +1,86 @@
+{
+  "schemaVersion": 1,
+  "path": "/npcs/bruce",
+  "kind": "npc",
+  "name": "Bruce",
+  "source": "CCPLZ",
+  "sourceUrl": "https://ccplz.cc/npcs/bruce",
+  "checkedAt": "2026-10-27T10:03:38.903Z",
+  "notice": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial.",
+  "fields": [],
+  "sections": [
+    {
+      "title": "Where to find them",
+      "links": [
+        {
+          "name": "Henesys",
+          "path": "/maps/henesys",
+          "detail": "Victoria Island"
+        }
+      ],
+      "total": 1
+    },
+    {
+      "title": "Quests they start",
+      "links": [
+        {
+          "name": "A Family Reunited (A Father's Love for His Daughter)",
+          "path": "/quests/a-father-s-love-for-his-daughter",
+          "detail": "Level 17"
+        },
+        {
+          "name": "A Family Reunited (Bruce's Cooking Ingredients)",
+          "path": "/quests/bruce-s-cooking-ingredients",
+          "detail": "Level 17"
+        },
+        {
+          "name": "A Family Reunited (Bruce's Dilemma)",
+          "path": "/quests/bruce-s-dilemma",
+          "detail": "Level 17"
+        },
+        {
+          "name": "I Need to Find My Daughter (I Need to Find My Daughter 1)",
+          "path": "/quests/i-need-to-find-my-daughter-1",
+          "detail": "Level 11"
+        },
+        {
+          "name": "The Reason Behind the Mushroom Studies",
+          "path": "/quests/the-reason-behind-the-mushroom-studies",
+          "detail": "Level 10"
+        }
+      ],
+      "total": 5
+    },
+    {
+      "title": "Quests they complete",
+      "links": [
+        {
+          "name": "A Family Reunited (Mrs. Ming Ming's Advice)",
+          "path": "/quests/mrs-ming-ming-s-advice",
+          "detail": "Level 17"
+        },
+        {
+          "name": "A Family Reunited (The Best Dad)",
+          "path": "/quests/the-best-dad",
+          "detail": "Level 17"
+        },
+        {
+          "name": "Asking After Bruce, the Town Resident",
+          "path": "/quests/asking-after-bruce-the-town-resident",
+          "detail": "Level 12"
+        },
+        {
+          "name": "First Greeting with Bruce, the Town Resident",
+          "path": "/quests/first-greeting-with-bruce-the-town-resident",
+          "detail": "Level 12"
+        },
+        {
+          "name": "I Need to Find My Daughter (I Need to Find My Daughter 2)",
+          "path": "/quests/i-need-to-find-my-daughter-2",
+          "detail": "Level 11"
+        }
+      ],
+      "total": 5
+    }
+  ]
+}

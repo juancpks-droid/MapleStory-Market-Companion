@@ -1,0 +1,210 @@
+{
+  "schemaVersion": 1,
+  "path": "/items/lemon",
+  "kind": "item",
+  "name": "Lemon",
+  "source": "CCPLZ",
+  "sourceUrl": "https://ccplz.cc/items/lemon",
+  "checkedAt": "2026-10-27T10:03:32.976Z",
+  "notice": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial.",
+  "fields": [
+    {
+      "label": "Type",
+      "value": "Fruit & basic food"
+    },
+    {
+      "label": "NPC sell price",
+      "value": "15 mesos"
+    },
+    {
+      "label": "NPC buy price (lowest recorded)",
+      "value": "150 mesos"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Dropped by",
+      "links": [
+        {
+          "name": "Dark Stump",
+          "path": "/monsters/dark-stump",
+          "detail": "Level 11, about 2.4%, usual for its kind"
+        },
+        {
+          "name": "Stirge",
+          "path": "/monsters/stirge",
+          "detail": "Level 20, about 2.4%, usual for its kind"
+        }
+      ],
+      "total": 2
+    },
+    {
+      "title": "Sold in",
+      "links": [
+        {
+          "name": "Arturo's Shop",
+          "path": "/shops/arturo-s-shop",
+          "detail": ""
+        },
+        {
+          "name": "Dr. Faymus's Shop",
+          "path": "/shops/dr-faymus-s-shop",
+          "detail": ""
+        },
+        {
+          "name": "Len the Fairy's Shop",
+          "path": "/shops/len-the-fairy-s-shop",
+          "detail": ""
+        },
+        {
+          "name": "Luma's Shop",
+          "path": "/shops/luma-s-shop",
+          "detail": ""
+        },
+        {
+          "name": "Luna's Shop",
+          "path": "/shops/luna-s-shop",
+          "detail": ""
+        },
+        {
+          "name": "Mina's Shop",
+          "path": "/shops/mina-s-shop",
+          "detail": ""
+        },
+        {
+          "name": "Mr. Sweatbottom's Shop",
+          "path": "/shops/mr-sweatbottom-s-shop",
+          "detail": ""
+        },
+        {
+          "name": "Valen's Shop",
+          "path": "/shops/valen-s-shop",
+          "detail": ""
+        }
+      ],
+      "total": 8
+    },
+    {
+      "title": "Quest rewards",
+      "links": [
+        {
+          "name": "A Fragile Sanctuary (The Sage's Burden) (2 of 2)",
+          "path": "/quests/the-sage-s-burden-10620",
+          "detail": "Level 50"
+        },
+        {
+          "name": "Asking After Alex, the Town Resident",
+          "path": "/quests/asking-after-alex-the-town-resident",
+          "detail": "Level 12"
+        },
+        {
+          "name": "Asking After Anne, the Town Resident",
+          "path": "/quests/asking-after-anne-the-town-resident",
+          "detail": "Level 12"
+        },
+        {
+          "name": "Asking After Bruce, the Town Resident",
+          "path": "/quests/asking-after-bruce-the-town-resident",
+          "detail": "Level 12"
+        },
+        {
+          "name": "Asking After Camila, the Town Resident",
+          "path": "/quests/asking-after-camila-the-town-resident",
+          "detail": "Level 12"
+        },
+        {
+          "name": "Asking After Icarus, the Town Resident",
+          "path": "/quests/asking-after-icarus-the-town-resident",
+          "detail": "Level 12"
+        },
+        {
+          "name": "Asking After Jake, the Town Resident",
+          "path": "/quests/asking-after-jake-the-town-resident",
+          "detail": "Level 12"
+        },
+        {
+          "name": "Asking After Jane Doe, the Town Resident",
+          "path": "/quests/asking-after-jane-doe-the-town-resident",
+          "detail": "Level 12"
+        },
+        {
+          "name": "Asking After Maya, the Town Resident",
+          "path": "/quests/asking-after-maya-the-town-resident",
+          "detail": "Level 12"
+        },
+        {
+          "name": "Asking After Mr. Pickall, the Town Resident",
+          "path": "/quests/asking-after-mr-pickall-the-town-resident",
+          "detail": "Level 12"
+        },
+        {
+          "name": "Asking After Mrs. Ming Ming, the Town Resident.",
+          "path": "/quests/asking-after-mrs-ming-ming-the-town-resident",
+          "detail": "Level 12"
+        },
+        {
+          "name": "Asking After Nella, the Town Resident",
+          "path": "/quests/asking-after-nella-the-town-resident",
+          "detail": "Level 12"
+        },
+        {
+          "name": "Asking After Pia, the Town Resident",
+          "path": "/quests/asking-after-pia-the-town-resident",
+          "detail": "Level 12"
+        },
+        {
+          "name": "Asking After Rina, the Town Resident",
+          "path": "/quests/asking-after-rina-the-town-resident",
+          "detail": "Level 12"
+        },
+        {
+          "name": "Asking After Shumi, the Town Resident",
+          "path": "/quests/asking-after-shumi-the-town-resident",
+          "detail": "Level 12"
+        },
+        {
+          "name": "Echoes of the Abyss (A Memory of Iron) (2 of 2)",
+          "path": "/quests/a-memory-of-iron-10618",
+          "detail": "Level 45"
+        },
+        {
+          "name": "Mrs. Ming Ming's First Worry",
+          "path": "/quests/mrs-ming-ming-s-first-worry",
+          "detail": "Level 15"
+        },
+        {
+          "name": "Mrs. Ming Ming's Second Worry (Estelle's Special Sauce)",
+          "path": "/quests/estelle-s-special-sauce",
+          "detail": "Level 15"
+        },
+        {
+          "name": "Nella & Kerning City Citizen's Request (Don Hwang's Request)",
+          "path": "/quests/don-hwang-s-request",
+          "detail": "Level 10"
+        },
+        {
+          "name": "Teo's Collection (Teo's Even Weirder Hobby)",
+          "path": "/quests/teo-s-even-weirder-hobby",
+          "detail": "Level 8"
+        },
+        {
+          "name": "What the City Taught Me (Nella's Old Memory)",
+          "path": "/quests/nella-s-old-memory",
+          "detail": "Level 27"
+        }
+      ],
+      "total": 21
+    },
+    {
+      "title": "Needed for quests",
+      "links": [
+        {
+          "name": "Father's Mushroom Stew (How to Enjoy Mushrooms Even More)",
+          "path": "/quests/how-to-enjoy-mushrooms-even-more",
+          "detail": "Level 14"
+        }
+      ],
+      "total": 1
+    }
+  ]
+}

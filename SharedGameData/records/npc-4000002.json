@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "item": {
+    "key": "gms83:4000002",
+    "name": "Pig's Ribbon",
+    "id": "4000002",
+    "category": "Etc"
+  },
+  "kind": "npc",
+  "checkedAt": "2026-10-27T10:03:29.941Z",
+  "data": {
+    "sell": 10,
+    "buy": null,
+    "source": "CCPLZ",
+    "url": "https://ccplz.cc/items/pig-s-ribbon",
+    "checkedAt": "2026-10-27T10:03:29.941Z"
+  },
+  "provenance": {
+    "source": "CCPLZ",
+    "sourceUrl": "https://ccplz.cc/items/pig-s-ribbon",
+    "coverage": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial."
+  }
+}

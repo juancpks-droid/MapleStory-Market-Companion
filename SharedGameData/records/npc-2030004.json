@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "item": {
+    "key": "gms83:2030004",
+    "name": "Return Scroll to Henesys",
+    "id": "2030004",
+    "category": "Use"
+  },
+  "kind": "npc",
+  "checkedAt": "2026-10-27T10:03:45.022Z",
+  "data": {
+    "sell": 250,
+    "buy": 500,
+    "source": "CCPLZ",
+    "url": "https://ccplz.cc/items/return-scroll-to-henesys",
+    "checkedAt": "2026-10-27T10:03:45.022Z"
+  },
+  "provenance": {
+    "source": "CCPLZ",
+    "sourceUrl": "https://ccplz.cc/items/return-scroll-to-henesys",
+    "coverage": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial."
+  }
+}

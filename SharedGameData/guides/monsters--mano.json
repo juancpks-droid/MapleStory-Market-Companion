@@ -5,7 +5,7 @@
   "name": "Mano",
   "source": "CCPLZ",
   "sourceUrl": "https://ccplz.cc/monsters/mano",
-  "checkedAt": "2026-10-13T15:37:57.223Z",
+  "checkedAt": "2026-10-27T10:03:23.925Z",
   "notice": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial.",
   "fields": [
     {
@@ -54,211 +54,60 @@
       "total": 1
     },
     {
-      "title": "Reported drops",
+      "title": "Drops",
       "links": [
         {
-          "name": "Rainbow-colored Snail Shell",
-          "path": "/items/rainbow-colored-snail-shell",
-          "detail": "Invasion items, 20% historical rate"
-        }
-      ],
-      "total": 1
-    },
-    {
-      "title": "Older-version drops",
-      "links": [
-        {
-          "name": "Arrows for Bows",
-          "path": "/items/arrows-for-bows",
-          "detail": "Arrows for bows, 30% historical rate"
-        },
-        {
-          "name": "Arrows for Crossbows",
-          "path": "/items/arrows-for-crossbows",
-          "detail": "Arrows for crossbows, 30% historical rate"
-        },
-        {
-          "name": "Black Bennis Chainmail",
-          "path": "/items/black-bennis-chainmail",
-          "detail": "Topwear, 0.8% historical rate"
-        },
-        {
-          "name": "Black Hunter",
-          "path": "/items/black-hunter",
-          "detail": "Hat, 1.5% historical rate"
-        },
-        {
-          "name": "Black Lappy Boots",
-          "path": "/items/black-lappy-boots",
-          "detail": "Shoes, 0.8% historical rate"
-        },
-        {
-          "name": "Black Sneak",
-          "path": "/items/black-sneak",
-          "detail": "Topwear, 0.8% historical rate"
+          "name": "Armor Crafting Catalyst",
+          "path": "/items/armor-crafting-catalyst",
+          "detail": "Crafting catalysts"
         },
         {
           "name": "Blue Snail Shell",
           "path": "/items/blue-snail-shell",
-          "detail": "Monster drops, 60% historical rate"
-        },
-        {
-          "name": "Bottomwear DEF Scroll: Intermediate",
-          "path": "/items/bottomwear-def-scroll-intermediate",
-          "detail": "Bottomwear scrolls, 0.3% historical rate"
-        },
-        {
-          "name": "Cape INT Scroll: Intermediate",
-          "path": "/items/cape-int-scroll-intermediate",
-          "detail": "Cape scrolls, 0.3% historical rate"
-        },
-        {
-          "name": "Dagger Attack Scroll: Greater",
-          "path": "/items/dagger-attack-scroll-greater",
-          "detail": "Dagger scrolls, 0.3% historical rate"
-        },
-        {
-          "name": "Dark Master Sergeant",
-          "path": "/items/dark-master-sergeant",
-          "detail": "Topwear, 0.8% historical rate"
-        },
-        {
-          "name": "Dark Mesana",
-          "path": "/items/dark-mesana",
-          "detail": "Gloves, 1% historical rate"
-        },
-        {
-          "name": "Dark Savata",
-          "path": "/items/dark-savata",
-          "detail": "Gloves, 1% historical rate"
-        },
-        {
-          "name": "Dark Tiberian",
-          "path": "/items/dark-tiberian",
-          "detail": "Hat, 1.5% historical rate"
-        },
-        {
-          "name": "Dark War Boots",
-          "path": "/items/dark-war-boots",
-          "detail": "Shoes, 0.8% historical rate"
-        },
-        {
-          "name": "Dark Wolfskin",
-          "path": "/items/dark-wolfskin",
-          "detail": "Gloves, 1% historical rate"
-        },
-        {
-          "name": "Earring INT Scroll: Greater",
-          "path": "/items/earring-int-scroll-greater",
-          "detail": "Earring scrolls, 0.3% historical rate"
-        },
-        {
-          "name": "Earring INT Scroll: Intermediate",
-          "path": "/items/earring-int-scroll-intermediate",
-          "detail": "Earring scrolls, 0.3% historical rate"
-        },
-        {
-          "name": "Gold Burgonet Helm",
-          "path": "/items/gold-burgernet-helm",
-          "detail": "Hat, 1.5% historical rate"
-        },
-        {
-          "name": "Gold Sneak",
-          "path": "/items/gold-sneak",
-          "detail": "Topwear, 0.8% historical rate"
+          "detail": "Monster drops"
         },
         {
           "name": "Green Apple",
           "path": "/items/green-apple",
-          "detail": "Fruit & basic food, 20% historical rate"
+          "detail": "Fruit & basic food"
         },
         {
-          "name": "Overall Armor DEX Scroll: Intermediate",
-          "path": "/items/overall-armor-dex-scroll-intermediate",
-          "detail": "Overall scrolls, 0.3% historical rate"
+          "name": "Monster Card",
+          "path": "/items/monster-card",
+          "detail": "Quest items"
         },
         {
-          "name": "Red Doroness Robe",
-          "path": "/items/red-doroness-robe",
-          "detail": "Overall, 0.7% historical rate"
+          "name": "One-Handed Weapon Crafting Catalyst",
+          "path": "/items/one-handed-weapon-crafting-catalyst",
+          "detail": "Crafting catalysts"
         },
         {
-          "name": "Red Jack Boots",
-          "path": "/items/red-jack-boots",
-          "detail": "Shoes, 0.8% historical rate"
-        },
-        {
-          "name": "Red Potion (for Olaf's Training: Olaf's First Training)",
-          "path": "/items/red-potion",
-          "detail": "Potions, 100% historical rate"
-        },
-        {
-          "name": "Red Shark",
-          "path": "/items/red-shark",
-          "detail": "Topwear, 0.8% historical rate"
+          "name": "Rainbow-colored Snail Shell",
+          "path": "/items/rainbow-colored-snail-shell",
+          "detail": "Invasion items"
         },
         {
           "name": "Red Snail Shell",
           "path": "/items/red-snail-shell",
-          "detail": "Monster drops, 60% historical rate"
+          "detail": "Monster drops"
         },
         {
-          "name": "Red Wizardry Hat",
-          "path": "/items/red-wizardry-hat",
-          "detail": "Hat, 1.5% historical rate"
+          "name": "Scroll Crafting Catalyst",
+          "path": "/items/scroll-crafting-catalyst",
+          "detail": "Crafting catalysts"
         },
         {
           "name": "Snail Shell",
           "path": "/items/snail-shell",
-          "detail": "Monster drops, 60% historical rate"
+          "detail": "Monster drops"
         },
         {
-          "name": "Staff Magic Attack Scroll: Intermediate",
-          "path": "/items/staff-magic-attack-scroll-intermediate",
-          "detail": "Staff scrolls, 0.3% historical rate"
-        },
-        {
-          "name": "Sunrise Dew",
-          "path": "/items/sunrise-dew",
-          "detail": "Cooked food, 20% historical rate"
-        },
-        {
-          "name": "Topwear DEF Scroll: Greater",
-          "path": "/items/topwear-def-scroll-greater",
-          "detail": "Topwear scrolls, 0.3% historical rate"
-        },
-        {
-          "name": "Topwear DEF Scroll: Intermediate",
-          "path": "/items/topwear-def-scroll-intermediate",
-          "detail": "Topwear scrolls, 0.3% historical rate"
-        },
-        {
-          "name": "Two-handed Sword Attack Scroll: Intermediate",
-          "path": "/items/two-handed-sword-attack-scroll-intermediate",
-          "detail": "Two-handed sword scrolls, 0.3% historical rate"
-        },
-        {
-          "name": "Wand Magic Attack Scroll: Greater",
-          "path": "/items/wand-magic-attack-scroll-greater",
-          "detail": "Wand scrolls, 0.3% historical rate"
-        },
-        {
-          "name": "Wand Magic Attack Scroll: Intermediate",
-          "path": "/items/wand-magic-attack-scroll-intermediate",
-          "detail": "Wand scrolls, 0.3% historical rate"
-        },
-        {
-          "name": "White Doros Robe",
-          "path": "/items/white-doros-robe",
-          "detail": "Overall, 0.7% historical rate"
-        },
-        {
-          "name": "White Fingerless Gloves",
-          "path": "/items/white-fingerless-gloves",
-          "detail": "Gloves, 1% historical rate"
+          "name": "Two-Handed Weapon Crafting Catalyst",
+          "path": "/items/two-handed-weapon-crafting-catalyst",
+          "detail": "Crafting catalysts"
         }
       ],
-      "total": 38
+      "total": 10
     }
   ]
 }
