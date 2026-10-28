@@ -1,0 +1,130 @@
+{
+  "schemaVersion": 1,
+  "path": "/items/hardwood-wand",
+  "kind": "item",
+  "name": "Hardwood Wand",
+  "source": "CCPLZ",
+  "sourceUrl": "https://ccplz.cc/items/hardwood-wand",
+  "checkedAt": "2026-10-28T10:10:30.131Z",
+  "notice": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial.",
+  "fields": [
+    {
+      "label": "Type",
+      "value": "Wand"
+    },
+    {
+      "label": "Required level",
+      "value": "15"
+    },
+    {
+      "label": "Class",
+      "value": "All classes"
+    },
+    {
+      "label": "Weapon attack",
+      "value": "+23"
+    },
+    {
+      "label": "Magic attack",
+      "value": "+34"
+    },
+    {
+      "label": "Upgrade slots",
+      "value": "7"
+    },
+    {
+      "label": "NPC sell price",
+      "value": "2,500 mesos"
+    },
+    {
+      "label": "NPC buy price (lowest recorded)",
+      "value": "5000 mesos"
+    },
+    {
+      "label": "Required STR",
+      "value": "0"
+    },
+    {
+      "label": "Required DEX",
+      "value": "0"
+    },
+    {
+      "label": "Required INT",
+      "value": "30"
+    },
+    {
+      "label": "Required LUK",
+      "value": "0"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Sold in",
+      "links": [
+        {
+          "name": "Flora the Fairy's Shop",
+          "path": "/shops/flora-the-fairy-s-shop",
+          "detail": ""
+        }
+      ],
+      "total": 1
+    },
+    {
+      "title": "How to craft it",
+      "links": [
+        {
+          "name": "Hardwood Wand",
+          "path": "/recipes/craft-hardwood-wand-3-3-4",
+          "detail": "Crafting skill level 3"
+        }
+      ],
+      "total": 1
+    },
+    {
+      "title": "Similar equipment",
+      "links": [
+        {
+          "name": "Beginner's Wooden Wand",
+          "path": "/items/beginner-s-wooden-wand",
+          "detail": "Level 10"
+        },
+        {
+          "name": "Wooden Wand",
+          "path": "/items/wooden-wand",
+          "detail": "Level 10"
+        },
+        {
+          "name": "Metal Wand",
+          "path": "/items/metal-wand",
+          "detail": "Level 20"
+        },
+        {
+          "name": "Ice Wand",
+          "path": "/items/ice-wand",
+          "detail": "Level 25"
+        },
+        {
+          "name": "Mithril Wand",
+          "path": "/items/mithril-wand",
+          "detail": "Level 30"
+        },
+        {
+          "name": "Wizard Wand",
+          "path": "/items/wizard-wand",
+          "detail": "Level 35"
+        },
+        {
+          "name": "Fairy Wand",
+          "path": "/items/fairy-wand",
+          "detail": "Level 40"
+        },
+        {
+          "name": "Cromi",
+          "path": "/items/cromi",
+          "detail": "Level 50"
+        }
+      ],
+      "total": 8
+    }
+  ]
+}

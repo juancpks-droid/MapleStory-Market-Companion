@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "path": "/items/shield-def-scroll-intermediate",
+  "kind": "item",
+  "name": "Shield DEF Scroll: Intermediate",
+  "source": "CCPLZ",
+  "sourceUrl": "https://ccplz.cc/items/shield-def-scroll-intermediate",
+  "checkedAt": "2026-10-28T10:11:00.088Z",
+  "notice": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial.",
+  "fields": [
+    {
+      "label": "Type",
+      "value": "Shield scrolls"
+    },
+    {
+      "label": "Weapon defense",
+      "value": "+4"
+    },
+    {
+      "label": "Magic defense",
+      "value": "+2"
+    },
+    {
+      "label": "NPC sell price",
+      "value": "1 meso"
+    },
+    {
+      "label": "Success rate (%)",
+      "value": "60"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Dropped by",
+      "links": [
+        {
+          "name": "Mushmom",
+          "path": "/monsters/mushmom",
+          "detail": "Level 40"
+        }
+      ],
+      "total": 1
+    },
+    {
+      "title": "Related items",
+      "links": [
+        {
+          "name": "Shield DEF Scroll: Lesser",
+          "path": "/items/shield-def-scroll-lesser",
+          "detail": ""
+        },
+        {
+          "name": "Shield DEF Scroll: Greater",
+          "path": "/items/shield-def-scroll-greater",
+          "detail": ""
+        },
+        {
+          "name": "Shield DEF Scroll: Chaos",
+          "path": "/items/shield-def-scroll-chaos",
+          "detail": ""
+        }
+      ],
+      "total": 3
+    }
+  ]
+}

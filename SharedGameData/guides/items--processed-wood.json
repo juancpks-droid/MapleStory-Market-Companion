@@ -1,0 +1,350 @@
+{
+  "schemaVersion": 1,
+  "path": "/items/processed-wood",
+  "kind": "item",
+  "name": "Processed Wood",
+  "source": "CCPLZ",
+  "sourceUrl": "https://ccplz.cc/items/processed-wood",
+  "checkedAt": "2026-10-28T10:10:33.154Z",
+  "notice": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial.",
+  "fields": [
+    {
+      "label": "Type",
+      "value": "Crafting materials"
+    },
+    {
+      "label": "NPC sell price",
+      "value": "10 mesos"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Needed for quests",
+      "links": [
+        {
+          "name": "Building a New House For Blackbull",
+          "path": "/quests/building-a-new-house-for-blackbull",
+          "detail": "Level 48"
+        },
+        {
+          "name": "Icarus's Dream (Icarus's Hang Glider)",
+          "path": "/quests/icarus-s-hang-glider",
+          "detail": "Level 31"
+        },
+        {
+          "name": "Vicious in Need of Help",
+          "path": "/quests/vicious-in-need-of-help",
+          "detail": "Level 15"
+        }
+      ],
+      "total": 3
+    },
+    {
+      "title": "How to craft it",
+      "links": [
+        {
+          "name": "Processed Wood (from Tree Branch + Tree Branch)",
+          "path": "/recipes/craft-processed-wood",
+          "detail": "Crafting skill level 1"
+        },
+        {
+          "name": "Processed Wood (from Firewood + Firewood)",
+          "path": "/recipes/craft-processed-wood-3-2-0",
+          "detail": "Crafting skill level 2"
+        },
+        {
+          "name": "Processed Wood (from Processed Wood + Processed Wood)",
+          "path": "/recipes/craft-wooden-baseball-bat",
+          "detail": "Crafting skill level 3"
+        },
+        {
+          "name": "Processed Wood (from Iron Ingot + Iron Ingot)",
+          "path": "/recipes/craft-battle-bow",
+          "detail": "Crafting skill level 5"
+        }
+      ],
+      "total": 4
+    },
+    {
+      "title": "Used in crafting",
+      "links": [
+        {
+          "name": "Adamantium Arrows for Bows (makes 500)",
+          "path": "/recipes/craft-adamantium-arrows-for-bows",
+          "detail": ""
+        },
+        {
+          "name": "Anvil",
+          "path": "/recipes/craft-anvil",
+          "detail": ""
+        },
+        {
+          "name": "Arcane Station",
+          "path": "/recipes/craft-arcane-station",
+          "detail": ""
+        },
+        {
+          "name": "Arrows for Bows (makes 500)",
+          "path": "/recipes/craft-arrows-for-bows",
+          "detail": ""
+        },
+        {
+          "name": "Arrows for Crossbows (makes 500)",
+          "path": "/recipes/craft-arrows-for-crossbows",
+          "detail": ""
+        },
+        {
+          "name": "Balanche",
+          "path": "/recipes/craft-balanche",
+          "detail": ""
+        },
+        {
+          "name": "Battle Bow",
+          "path": "/recipes/craft-mountain-crossbow",
+          "detail": ""
+        },
+        {
+          "name": "Battle Crossbow",
+          "path": "/recipes/craft-hardwood-wand",
+          "detail": ""
+        },
+        {
+          "name": "Bronze Arrows for Bows (makes 500)",
+          "path": "/recipes/craft-bronze-arrows-for-bows",
+          "detail": ""
+        },
+        {
+          "name": "Bronze Arrows for Crossbows (makes 500)",
+          "path": "/recipes/craft-bronze-arrows-for-crossbows",
+          "detail": ""
+        },
+        {
+          "name": "Cherry Bed",
+          "path": "/recipes/craft-cherry-bed",
+          "detail": ""
+        },
+        {
+          "name": "Cherry Wardrobe",
+          "path": "/recipes/craft-cherry-wardrobe",
+          "detail": ""
+        },
+        {
+          "name": "Composite Bow",
+          "path": "/recipes/craft-battle-crossbow",
+          "detail": ""
+        },
+        {
+          "name": "Crescent Polearm",
+          "path": "/recipes/craft-crescent-polearm",
+          "detail": ""
+        },
+        {
+          "name": "Crossbow",
+          "path": "/recipes/craft-crossbow",
+          "detail": ""
+        },
+        {
+          "name": "Eagle Crow",
+          "path": "/recipes/craft-eagle-crow",
+          "detail": ""
+        },
+        {
+          "name": "Hammer",
+          "path": "/recipes/craft-hammer",
+          "detail": ""
+        },
+        {
+          "name": "Hardwood Wand",
+          "path": "/recipes/craft-hardwood-wand-3-3-4",
+          "detail": ""
+        },
+        {
+          "name": "Heckler",
+          "path": "/recipes/craft-heckler",
+          "detail": ""
+        },
+        {
+          "name": "Hunter's Bow",
+          "path": "/recipes/craft-hunter-s-bow",
+          "detail": ""
+        },
+        {
+          "name": "Iron Arrows for Bows (makes 500)",
+          "path": "/recipes/craft-iron-arrows-for-bows",
+          "detail": ""
+        },
+        {
+          "name": "Iron Arrows for Crossbows (makes 500)",
+          "path": "/recipes/craft-iron-arrows-for-crossbows",
+          "detail": ""
+        },
+        {
+          "name": "Janitor's Mop",
+          "path": "/recipes/craft-janitor-s-mop",
+          "detail": ""
+        },
+        {
+          "name": "Leatherworking Station",
+          "path": "/recipes/craft-leatherworking-station",
+          "detail": ""
+        },
+        {
+          "name": "Meba",
+          "path": "/recipes/craft-meba",
+          "detail": ""
+        },
+        {
+          "name": "Mithril Arrows for Crossbows (makes 500)",
+          "path": "/recipes/craft-mithril-arrows-for-crossbows",
+          "detail": ""
+        },
+        {
+          "name": "Monkey Wrench",
+          "path": "/recipes/craft-monkey-wrench",
+          "detail": ""
+        },
+        {
+          "name": "Mountain Crossbow",
+          "path": "/recipes/craft-plunger",
+          "detail": ""
+        },
+        {
+          "name": "Old Wooden Staff",
+          "path": "/recipes/craft-old-wooden-staff",
+          "detail": ""
+        },
+        {
+          "name": "Olympus",
+          "path": "/recipes/craft-olympus",
+          "detail": ""
+        },
+        {
+          "name": "Pickaxe",
+          "path": "/recipes/craft-pickaxe",
+          "detail": ""
+        },
+        {
+          "name": "Plunger",
+          "path": "/recipes/craft-the-red-relaxer",
+          "detail": ""
+        },
+        {
+          "name": "Pointed Shovel",
+          "path": "/recipes/craft-pointed-shovel",
+          "detail": ""
+        },
+        {
+          "name": "Red Viper",
+          "path": "/recipes/craft-red-viper",
+          "detail": ""
+        },
+        {
+          "name": "Reinforced Safe",
+          "path": "/recipes/craft-reinforced-safe",
+          "detail": ""
+        },
+        {
+          "name": "Reinforced Wooden Chest",
+          "path": "/recipes/craft-reinforced-wooden-chest",
+          "detail": ""
+        },
+        {
+          "name": "Rower",
+          "path": "/recipes/craft-rower",
+          "detail": ""
+        },
+        {
+          "name": "Rustic Bed",
+          "path": "/recipes/craft-rustic-bed",
+          "detail": ""
+        },
+        {
+          "name": "Ryden",
+          "path": "/recipes/craft-ryden",
+          "detail": ""
+        },
+        {
+          "name": "Saw",
+          "path": "/recipes/craft-saw",
+          "detail": ""
+        },
+        {
+          "name": "Scythe",
+          "path": "/recipes/craft-scythe",
+          "detail": ""
+        },
+        {
+          "name": "Sewing Machine",
+          "path": "/recipes/craft-sewing-machine",
+          "detail": ""
+        },
+        {
+          "name": "Silver Crow",
+          "path": "/recipes/craft-silver-crow",
+          "detail": ""
+        },
+        {
+          "name": "Sledgehammer",
+          "path": "/recipes/craft-sledgehammer",
+          "detail": ""
+        },
+        {
+          "name": "Square Shovel",
+          "path": "/recipes/craft-square-shovel",
+          "detail": ""
+        },
+        {
+          "name": "The Red Relaxer",
+          "path": "/recipes/craft-the-red-relaxer-3-5-4",
+          "detail": ""
+        },
+        {
+          "name": "The Yellow Relaxer",
+          "path": "/recipes/craft-the-yellow-relaxer",
+          "detail": ""
+        },
+        {
+          "name": "Vaulter 2000",
+          "path": "/recipes/craft-vaulter-2000",
+          "detail": ""
+        },
+        {
+          "name": "War Bow",
+          "path": "/recipes/craft-war-bow",
+          "detail": ""
+        },
+        {
+          "name": "Weaponcrafting Station",
+          "path": "/recipes/craft-weaponcrafting-station",
+          "detail": ""
+        },
+        {
+          "name": "Wooden Baseball Bat",
+          "path": "/recipes/craft-composite-bow",
+          "detail": ""
+        },
+        {
+          "name": "Wooden Staff",
+          "path": "/recipes/craft-wooden-staff",
+          "detail": ""
+        },
+        {
+          "name": "Wooden Sword",
+          "path": "/recipes/craft-wooden-sword",
+          "detail": ""
+        },
+        {
+          "name": "Wooden Wand",
+          "path": "/recipes/craft-wooden-wand",
+          "detail": ""
+        },
+        {
+          "name": "Woodworking Station",
+          "path": "/recipes/craft-woodworking-station",
+          "detail": ""
+        }
+      ],
+      "total": 55
+    }
+  ]
+}

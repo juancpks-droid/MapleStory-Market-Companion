@@ -1,0 +1,189 @@
+{
+  "schemaVersion": 1,
+  "path": "/items/one-handed-weapon-crafting-catalyst",
+  "kind": "item",
+  "name": "One-Handed Weapon Crafting Catalyst",
+  "source": "CCPLZ",
+  "sourceUrl": "https://ccplz.cc/items/one-handed-weapon-crafting-catalyst",
+  "checkedAt": "2026-10-28T10:10:36.095Z",
+  "notice": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial.",
+  "fields": [
+    {
+      "label": "Type",
+      "value": "Crafting catalysts"
+    },
+    {
+      "label": "NPC sell price",
+      "value": "1,000 mesos"
+    },
+    {
+      "label": "Stack limit",
+      "value": "100"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Dropped by",
+      "links": [
+        {
+          "name": "Crimson Balrog",
+          "path": "/monsters/crimson-balrog",
+          "detail": "Level 100"
+        },
+        {
+          "name": "Mano",
+          "path": "/monsters/mano",
+          "detail": "Level 20"
+        },
+        {
+          "name": "Mushmom",
+          "path": "/monsters/mushmom",
+          "detail": "Level 40"
+        },
+        {
+          "name": "Rotten Mushmom",
+          "path": "/monsters/rotten-mushmom",
+          "detail": "Level 60"
+        },
+        {
+          "name": "Zombie Mushmom",
+          "path": "/monsters/zombie-mushmom",
+          "detail": "Level 55"
+        }
+      ],
+      "total": 5
+    },
+    {
+      "title": "Quest rewards",
+      "links": [
+        {
+          "name": "A Weaponcrafter in My Own Right!",
+          "path": "/quests/a-weaponcrafter-in-my-own-right",
+          "detail": "Level 25"
+        }
+      ],
+      "total": 1
+    },
+    {
+      "title": "Used in crafting",
+      "links": [
+        {
+          "name": "Arc Staff",
+          "path": "/recipes/craft-arc-staff",
+          "detail": ""
+        },
+        {
+          "name": "Cromi",
+          "path": "/recipes/craft-cromi",
+          "detail": ""
+        },
+        {
+          "name": "Emerald Staff",
+          "path": "/recipes/craft-emerald-staff",
+          "detail": ""
+        },
+        {
+          "name": "Fairy Wand",
+          "path": "/recipes/craft-fairy-wand",
+          "detail": ""
+        },
+        {
+          "name": "Gephart",
+          "path": "/recipes/craft-gephart",
+          "detail": ""
+        },
+        {
+          "name": "Halfmoon Zamadar",
+          "path": "/recipes/craft-halfmoon-zamadar",
+          "detail": ""
+        },
+        {
+          "name": "Hammer",
+          "path": "/recipes/craft-hammer",
+          "detail": ""
+        },
+        {
+          "name": "Hardwood Wand",
+          "path": "/recipes/craft-hardwood-wand-3-3-4",
+          "detail": ""
+        },
+        {
+          "name": "Ice Wand",
+          "path": "/recipes/craft-ice-wand",
+          "detail": ""
+        },
+        {
+          "name": "Leather Purse",
+          "path": "/recipes/craft-leather-purse",
+          "detail": ""
+        },
+        {
+          "name": "Metal Wand",
+          "path": "/recipes/craft-metal-wand",
+          "detail": ""
+        },
+        {
+          "name": "Mithril Wand",
+          "path": "/recipes/craft-mithril-wand",
+          "detail": ""
+        },
+        {
+          "name": "Old Wooden Staff",
+          "path": "/recipes/craft-old-wooden-staff",
+          "detail": ""
+        },
+        {
+          "name": "Plunger",
+          "path": "/recipes/craft-the-red-relaxer",
+          "detail": ""
+        },
+        {
+          "name": "Pointed Shovel",
+          "path": "/recipes/craft-pointed-shovel",
+          "detail": ""
+        },
+        {
+          "name": "Sai",
+          "path": "/recipes/craft-sai",
+          "detail": ""
+        },
+        {
+          "name": "Sapphire Staff",
+          "path": "/recipes/craft-sapphire-staff",
+          "detail": ""
+        },
+        {
+          "name": "Saw",
+          "path": "/recipes/craft-saw",
+          "detail": ""
+        },
+        {
+          "name": "Scythe",
+          "path": "/recipes/craft-scythe",
+          "detail": ""
+        },
+        {
+          "name": "Square Shovel",
+          "path": "/recipes/craft-square-shovel",
+          "detail": ""
+        },
+        {
+          "name": "Steel Pipe",
+          "path": "/recipes/craft-steel-pipe",
+          "detail": ""
+        },
+        {
+          "name": "Wizard Staff",
+          "path": "/recipes/craft-wizard-staff",
+          "detail": ""
+        },
+        {
+          "name": "Wizard Wand",
+          "path": "/recipes/craft-wizard-wand",
+          "detail": ""
+        }
+      ],
+      "total": 23
+    }
+  ]
+}

@@ -293,6 +293,11 @@
       "kind": "item"
     },
     {
+      "path": "/items/brown-winter-hat",
+      "name": "Brown Winter Hat",
+      "kind": "item"
+    },
+    {
       "path": "/recipes/craft-brown-winter-hat",
       "name": "Brown Winter Hat",
       "kind": "recipe"
@@ -351,6 +356,11 @@
       "path": "/maps/construction-site-north-of-kerning-city",
       "name": "Construction Site North of Kerning City",
       "kind": "map"
+    },
+    {
+      "path": "/items/crystal-flower-earrings",
+      "name": "Crystal Flower Earrings",
+      "kind": "item"
     },
     {
       "path": "/monsters/curse-eye",
@@ -633,9 +643,19 @@
       "kind": "item"
     },
     {
+      "path": "/items/hardwood-wand",
+      "name": "Hardwood Wand",
+      "kind": "item"
+    },
+    {
       "path": "/recipes/craft-hardwood-wand",
       "name": "Hardwood Wand",
       "kind": "recipe"
+    },
+    {
+      "path": "/items/hat-hp-scroll-intermediate",
+      "name": "Hat HP Scroll: Intermediate",
+      "kind": "item"
     },
     {
       "path": "/items/heart",
@@ -833,6 +853,11 @@
       "kind": "monster"
     },
     {
+      "path": "/items/mushmom-spore",
+      "name": "Mushmom Spore",
+      "kind": "item"
+    },
+    {
       "path": "/maps/mushroom-garden-10001021",
       "name": "Mushroom Garden (Hidden Street)",
       "kind": "map"
@@ -883,6 +908,11 @@
       "kind": "quest"
     },
     {
+      "path": "/items/one-handed-weapon-crafting-catalyst",
+      "name": "One-Handed Weapon Crafting Catalyst",
+      "kind": "item"
+    },
+    {
       "path": "/monsters/orange-mushroom",
       "name": "Orange Mushroom",
       "kind": "monster"
@@ -898,8 +928,18 @@
       "kind": "item"
     },
     {
+      "path": "/items/orange-whitebottom-boots",
+      "name": "Orange Whitebottom Boots",
+      "kind": "item"
+    },
+    {
       "path": "/items/orihalcon-ore",
       "name": "Orihalcon Ore",
+      "kind": "item"
+    },
+    {
+      "path": "/items/overall-armor-def-scroll-intermediate",
+      "name": "Overall Armor DEF Scroll: Intermediate",
       "kind": "item"
     },
     {
@@ -940,6 +980,11 @@
     {
       "path": "/items/processed-leather",
       "name": "Processed Leather",
+      "kind": "item"
+    },
+    {
+      "path": "/items/processed-wood",
+      "name": "Processed Wood",
       "kind": "item"
     },
     {
@@ -1048,6 +1093,11 @@
       "kind": "quest"
     },
     {
+      "path": "/items/rose",
+      "name": "Rose",
+      "kind": "item"
+    },
+    {
       "path": "/quests/collecting-150-cursed-dolls",
       "name": "Rowen the Fairy and the Cursed Doll (Collecting 150 Cursed Dolls)",
       "kind": "quest"
@@ -1080,6 +1130,11 @@
     {
       "path": "/items/sf-ninja-mask",
       "name": "SF Ninja Mask",
+      "kind": "item"
+    },
+    {
+      "path": "/items/shield-def-scroll-intermediate",
+      "name": "Shield DEF Scroll: Intermediate",
       "kind": "item"
     },
     {
@@ -1166,6 +1221,11 @@
       "path": "/items/sniper-potion",
       "name": "Sniper Potion",
       "kind": "item"
+    },
+    {
+      "path": "/maps/someone-else-s-house",
+      "name": "Someone Else's House",
+      "kind": "map"
     },
     {
       "path": "/maps/southperry",

@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "item": {
+    "key": "gms83:1072054",
+    "name": "Orange Whitebottom Boots",
+    "id": "1072054",
+    "category": "Equipment"
+  },
+  "kind": "npc",
+  "checkedAt": "2026-10-28T10:10:48.139Z",
+  "data": {
+    "sell": 1560,
+    "buy": 4680,
+    "source": "CCPLZ",
+    "url": "https://ccplz.cc/items/orange-whitebottom-boots",
+    "checkedAt": "2026-10-28T10:10:48.139Z"
+  },
+  "provenance": {
+    "source": "CCPLZ",
+    "sourceUrl": "https://ccplz.cc/items/orange-whitebottom-boots",
+    "coverage": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial."
+  }
+}

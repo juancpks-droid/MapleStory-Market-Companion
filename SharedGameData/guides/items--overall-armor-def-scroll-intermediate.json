@@ -1,0 +1,92 @@
+{
+  "schemaVersion": 1,
+  "path": "/items/overall-armor-def-scroll-intermediate",
+  "kind": "item",
+  "name": "Overall Armor DEF Scroll: Intermediate",
+  "source": "CCPLZ",
+  "sourceUrl": "https://ccplz.cc/items/overall-armor-def-scroll-intermediate",
+  "checkedAt": "2026-10-28T10:10:57.088Z",
+  "notice": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial.",
+  "fields": [
+    {
+      "label": "Type",
+      "value": "Overall scrolls"
+    },
+    {
+      "label": "Weapon defense",
+      "value": "+4"
+    },
+    {
+      "label": "Magic defense",
+      "value": "+2"
+    },
+    {
+      "label": "NPC sell price",
+      "value": "1 meso"
+    },
+    {
+      "label": "Success rate (%)",
+      "value": "60"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Dropped by",
+      "links": [
+        {
+          "name": "Jr. Yeti",
+          "path": "/monsters/jr-yeti",
+          "detail": ""
+        },
+        {
+          "name": "Red Snail",
+          "path": "/monsters/red-snail",
+          "detail": "Level 4"
+        }
+      ],
+      "total": 2
+    },
+    {
+      "title": "Quest rewards",
+      "links": [
+        {
+          "name": "[Forest of Patience] Sabitrama and the Mysterious Medicine (Sabitrama and the Diet Medicine)",
+          "path": "/quests/forest-of-patience-sabitrama-and-the-diet-medicine",
+          "detail": "Level 25"
+        },
+        {
+          "name": "A Marble of Friendship (A Promise Between Three Friends)",
+          "path": "/quests/a-promise-between-three-friends",
+          "detail": "Level 37"
+        },
+        {
+          "name": "The Doctor Who Never Returned (A Truth Finally Known)",
+          "path": "/quests/a-truth-finally-known",
+          "detail": "Level 37"
+        }
+      ],
+      "total": 3
+    },
+    {
+      "title": "Related items",
+      "links": [
+        {
+          "name": "Overall Armor DEF Scroll: Lesser",
+          "path": "/items/overall-armor-def-scroll-lesser",
+          "detail": ""
+        },
+        {
+          "name": "Overall Armor DEF Scroll: Greater",
+          "path": "/items/overall-armor-def-scroll-greater",
+          "detail": ""
+        },
+        {
+          "name": "Overall Armor DEF Scroll: Chaos",
+          "path": "/items/overall-armor-def-scroll-chaos",
+          "detail": ""
+        }
+      ],
+      "total": 3
+    }
+  ]
+}

@@ -1,0 +1,108 @@
+{
+  "schemaVersion": 1,
+  "path": "/items/crystal-flower-earrings",
+  "kind": "item",
+  "name": "Crystal Flower Earrings",
+  "source": "CCPLZ",
+  "sourceUrl": "https://ccplz.cc/items/crystal-flower-earrings",
+  "checkedAt": "2026-10-28T10:10:51.112Z",
+  "notice": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial.",
+  "fields": [
+    {
+      "label": "Type",
+      "value": "Earring"
+    },
+    {
+      "label": "Required level",
+      "value": "55"
+    },
+    {
+      "label": "Class",
+      "value": "All classes"
+    },
+    {
+      "label": "Magic defense",
+      "value": "+41"
+    },
+    {
+      "label": "Max MP",
+      "value": "+5"
+    },
+    {
+      "label": "Avoidability",
+      "value": "+4"
+    },
+    {
+      "label": "Upgrade slots",
+      "value": "5"
+    },
+    {
+      "label": "NPC sell price",
+      "value": "19,500 mesos"
+    },
+    {
+      "label": "Required STR",
+      "value": "0"
+    },
+    {
+      "label": "Required DEX",
+      "value": "0"
+    },
+    {
+      "label": "Required INT",
+      "value": "0"
+    },
+    {
+      "label": "Required LUK",
+      "value": "0"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Similar equipment",
+      "links": [
+        {
+          "name": "Holy Cross Earrings",
+          "path": "/items/holy-cross-earrings",
+          "detail": "Level 55"
+        },
+        {
+          "name": "Henesys Earrings",
+          "path": "/items/henesys-earrings",
+          "detail": "Level 57"
+        },
+        {
+          "name": "Kerning City Earrings",
+          "path": "/items/kerning-city-earrings",
+          "detail": "Level 57"
+        },
+        {
+          "name": "Red-Hearted Earrings",
+          "path": "/items/red-hearted-earrings",
+          "detail": "Level 50"
+        },
+        {
+          "name": "Skull Earrings",
+          "path": "/items/skull-earrings",
+          "detail": "Level 50"
+        },
+        {
+          "name": "Pink-Flowered Earrings",
+          "path": "/items/pink-flowered-earrings",
+          "detail": "Level 60"
+        },
+        {
+          "name": "Pansy Earrings",
+          "path": "/items/pansy-earrings",
+          "detail": "Level 45"
+        },
+        {
+          "name": "Gold Drop Earrings",
+          "path": "/items/gold-drop-earrings",
+          "detail": "Level 65"
+        }
+      ],
+      "total": 8
+    }
+  ]
+}

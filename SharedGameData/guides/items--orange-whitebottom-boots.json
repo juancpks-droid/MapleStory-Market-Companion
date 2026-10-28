@@ -1,0 +1,139 @@
+{
+  "schemaVersion": 1,
+  "path": "/items/orange-whitebottom-boots",
+  "kind": "item",
+  "name": "Orange Whitebottom Boots",
+  "source": "CCPLZ",
+  "sourceUrl": "https://ccplz.cc/items/orange-whitebottom-boots",
+  "checkedAt": "2026-10-28T10:10:48.139Z",
+  "notice": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial.",
+  "fields": [
+    {
+      "label": "Type",
+      "value": "Shoes"
+    },
+    {
+      "label": "Required level",
+      "value": "26"
+    },
+    {
+      "label": "Class",
+      "value": "All classes"
+    },
+    {
+      "label": "Weapon defense",
+      "value": "+17"
+    },
+    {
+      "label": "Max HP",
+      "value": "+6"
+    },
+    {
+      "label": "Speed",
+      "value": "+2"
+    },
+    {
+      "label": "Upgrade slots",
+      "value": "5"
+    },
+    {
+      "label": "NPC sell price",
+      "value": "1,560 mesos"
+    },
+    {
+      "label": "NPC buy price (lowest recorded)",
+      "value": "4680 mesos"
+    },
+    {
+      "label": "Required STR",
+      "value": "0"
+    },
+    {
+      "label": "Required DEX",
+      "value": "0"
+    },
+    {
+      "label": "Required INT",
+      "value": "0"
+    },
+    {
+      "label": "Required LUK",
+      "value": "0"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Dropped by",
+      "links": [
+        {
+          "name": "Iron Hog",
+          "path": "/monsters/iron-hog",
+          "detail": "Level 28, about 0.22%, usual for its kind"
+        },
+        {
+          "name": "Mushmom",
+          "path": "/monsters/mushmom",
+          "detail": "Level 40"
+        }
+      ],
+      "total": 2
+    },
+    {
+      "title": "Sold in",
+      "links": [
+        {
+          "name": "Sam's Shop",
+          "path": "/shops/sam-s-shop",
+          "detail": ""
+        }
+      ],
+      "total": 1
+    },
+    {
+      "title": "Similar equipment",
+      "links": [
+        {
+          "name": "Blue Whitebottom Boots",
+          "path": "/items/blue-whitebottom-boots",
+          "detail": "Level 26"
+        },
+        {
+          "name": "Pink Whitebottom Boots",
+          "path": "/items/pink-whitebottom-boots",
+          "detail": "Level 26"
+        },
+        {
+          "name": "Red Whitebottom Boots",
+          "path": "/items/red-whitebottom-boots",
+          "detail": "Level 26"
+        },
+        {
+          "name": "Black Lappy Boots",
+          "path": "/items/black-lappy-boots",
+          "detail": "Level 25"
+        },
+        {
+          "name": "Black Wind Shoes",
+          "path": "/items/black-wind-shoes",
+          "detail": "Level 25"
+        },
+        {
+          "name": "Blue Lappy Boots",
+          "path": "/items/blue-lappy-boots",
+          "detail": "Level 25"
+        },
+        {
+          "name": "Brown Jack Boots",
+          "path": "/items/brown-jack-boots",
+          "detail": "Level 25"
+        },
+        {
+          "name": "Dark War Boots",
+          "path": "/items/dark-war-boots",
+          "detail": "Level 25"
+        }
+      ],
+      "total": 8
+    }
+  ]
+}
