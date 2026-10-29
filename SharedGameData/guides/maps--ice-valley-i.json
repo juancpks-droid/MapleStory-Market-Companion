@@ -1,0 +1,74 @@
+{
+  "schemaVersion": 1,
+  "path": "/maps/ice-valley-i",
+  "kind": "map",
+  "name": "Ice Valley I",
+  "source": "CCPLZ",
+  "sourceUrl": "https://ccplz.cc/maps/ice-valley-i",
+  "checkedAt": "2026-10-29T10:13:30.021Z",
+  "notice": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial.",
+  "fields": [
+    {
+      "label": "Region",
+      "value": "Ossyria"
+    },
+    {
+      "label": "Street",
+      "value": "El Nath"
+    },
+    {
+      "label": "Monster levels",
+      "value": "50 to 59"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Monsters",
+      "links": [
+        {
+          "name": "Jr. Yeti",
+          "path": "/monsters/jr-yeti",
+          "detail": "Level 50"
+        },
+        {
+          "name": "Transforming Jr. Yeti",
+          "path": "/monsters/transforming-jr-yeti",
+          "detail": "Level 50"
+        },
+        {
+          "name": "White Fang",
+          "path": "/monsters/white-fang",
+          "detail": "Level 59"
+        }
+      ],
+      "total": 3
+    },
+    {
+      "title": "NPCs",
+      "links": [
+        {
+          "name": "Rock Covered in Snow",
+          "path": "/npcs/rock-covered-in-snow",
+          "detail": ""
+        }
+      ],
+      "total": 1
+    },
+    {
+      "title": "Connected maps",
+      "links": [
+        {
+          "name": "Cold Field II",
+          "path": "/maps/cold-field-ii",
+          "detail": "El Nath"
+        },
+        {
+          "name": "Ice Valley II",
+          "path": "/maps/ice-valley-ii",
+          "detail": "El Nath"
+        }
+      ],
+      "total": 2
+    }
+  ]
+}

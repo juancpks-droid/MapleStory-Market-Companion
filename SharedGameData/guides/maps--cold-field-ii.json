@@ -1,0 +1,83 @@
+{
+  "schemaVersion": 1,
+  "path": "/maps/cold-field-ii",
+  "kind": "map",
+  "name": "Cold Field II",
+  "source": "CCPLZ",
+  "sourceUrl": "https://ccplz.cc/maps/cold-field-ii",
+  "checkedAt": "2026-10-29T10:13:38.947Z",
+  "notice": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial.",
+  "fields": [
+    {
+      "label": "Region",
+      "value": "Ossyria"
+    },
+    {
+      "label": "Street",
+      "value": "El Nath"
+    },
+    {
+      "label": "Monster levels",
+      "value": "50 to 60"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Monsters",
+      "links": [
+        {
+          "name": "Jr. Yeti",
+          "path": "/monsters/jr-yeti",
+          "detail": "Level 50"
+        },
+        {
+          "name": "Transforming Jr. Yeti",
+          "path": "/monsters/transforming-jr-yeti",
+          "detail": "Level 50"
+        },
+        {
+          "name": "Hector",
+          "path": "/monsters/hector",
+          "detail": "Level 55"
+        },
+        {
+          "name": "White Fang",
+          "path": "/monsters/white-fang",
+          "detail": "Level 59"
+        },
+        {
+          "name": "Pepe",
+          "path": "/monsters/pepe",
+          "detail": "Level 60"
+        }
+      ],
+      "total": 5
+    },
+    {
+      "title": "Connected maps",
+      "links": [
+        {
+          "name": "Cold Field I",
+          "path": "/maps/cold-field-i",
+          "detail": "El Nath"
+        },
+        {
+          "name": "Ice Valley I",
+          "path": "/maps/ice-valley-i",
+          "detail": "El Nath"
+        },
+        {
+          "name": "Icy Cold Field",
+          "path": "/maps/icy-cold-field",
+          "detail": "El Nath"
+        },
+        {
+          "name": "The Crown-Flyer",
+          "path": "/maps/the-crown-flyer",
+          "detail": "Hidden Street"
+        }
+      ],
+      "total": 4
+    }
+  ]
+}

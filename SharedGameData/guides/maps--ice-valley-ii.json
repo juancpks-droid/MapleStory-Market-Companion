@@ -1,0 +1,84 @@
+{
+  "schemaVersion": 1,
+  "path": "/maps/ice-valley-ii",
+  "kind": "map",
+  "name": "Ice Valley II",
+  "source": "CCPLZ",
+  "sourceUrl": "https://ccplz.cc/maps/ice-valley-ii",
+  "checkedAt": "2026-10-29T10:13:32.981Z",
+  "notice": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial.",
+  "fields": [
+    {
+      "label": "Region",
+      "value": "Ossyria"
+    },
+    {
+      "label": "Street",
+      "value": "El Nath"
+    },
+    {
+      "label": "Monster levels",
+      "value": "50 to 78"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Monsters",
+      "links": [
+        {
+          "name": "Jr. Yeti",
+          "path": "/monsters/jr-yeti",
+          "detail": "Level 50"
+        },
+        {
+          "name": "Transforming Jr. Yeti",
+          "path": "/monsters/transforming-jr-yeti",
+          "detail": "Level 50"
+        },
+        {
+          "name": "White Fang",
+          "path": "/monsters/white-fang",
+          "detail": "Level 59"
+        },
+        {
+          "name": "Yeti",
+          "path": "/monsters/yeti",
+          "detail": "Level 65"
+        },
+        {
+          "name": "Yeti and Pepe",
+          "path": "/monsters/yeti-and-pepe",
+          "detail": "Level 78"
+        }
+      ],
+      "total": 5
+    },
+    {
+      "title": "NPCs",
+      "links": [
+        {
+          "name": "Glibber",
+          "path": "/npcs/glibber",
+          "detail": "Merchant"
+        },
+        {
+          "name": "Jeff",
+          "path": "/npcs/jeff",
+          "detail": "Dungeon Guide"
+        }
+      ],
+      "total": 2
+    },
+    {
+      "title": "Connected maps",
+      "links": [
+        {
+          "name": "Ice Valley I",
+          "path": "/maps/ice-valley-i",
+          "detail": "El Nath"
+        }
+      ],
+      "total": 1
+    }
+  ]
+}

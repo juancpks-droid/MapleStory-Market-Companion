@@ -338,6 +338,11 @@
       "kind": "monster"
     },
     {
+      "path": "/maps/cold-field-ii",
+      "name": "Cold Field II",
+      "kind": "map"
+    },
+    {
       "path": "/quests/maya-s-first-collection",
       "name": "Collecting For Maya (Maya's First Collection)",
       "kind": "quest"
@@ -710,6 +715,21 @@
     {
       "path": "/maps/hunting-ground-middle-of-the-forest-ii",
       "name": "Hunting Ground Middle of the Forest II",
+      "kind": "map"
+    },
+    {
+      "path": "/maps/ice-valley-i",
+      "name": "Ice Valley I",
+      "kind": "map"
+    },
+    {
+      "path": "/maps/ice-valley-ii",
+      "name": "Ice Valley II",
+      "kind": "map"
+    },
+    {
+      "path": "/maps/icy-cold-field",
+      "name": "Icy Cold Field",
       "kind": "map"
     },
     {
@@ -1133,6 +1153,11 @@
       "kind": "item"
     },
     {
+      "path": "/maps/sharp-cliff-i",
+      "name": "Sharp Cliff I",
+      "kind": "map"
+    },
+    {
       "path": "/items/shield-def-scroll-intermediate",
       "name": "Shield DEF Scroll: Intermediate",
       "kind": "item"
@@ -1140,6 +1165,16 @@
     {
       "path": "/items/shoes-jump-scroll-greater",
       "name": "Shoes Jump Scroll: Greater",
+      "kind": "item"
+    },
+    {
+      "path": "/items/shoes-jump-scroll-intermediate",
+      "name": "Shoes Jump Scroll: Intermediate",
+      "kind": "item"
+    },
+    {
+      "path": "/items/shoes-speed-scroll-intermediate",
+      "name": "Shoes Speed Scroll: Intermediate",
       "kind": "item"
     },
     {
@@ -1253,6 +1288,11 @@
       "kind": "monster"
     },
     {
+      "path": "/items/steel-tower-shield",
+      "name": "Steel Tower Shield",
+      "kind": "item"
+    },
+    {
       "path": "/items/sunrise-dew",
       "name": "Sunrise Dew",
       "kind": "item"
@@ -1275,6 +1315,11 @@
     {
       "path": "/maps/the-cave-of-trial-iii",
       "name": "The Cave of Trial III",
+      "kind": "map"
+    },
+    {
+      "path": "/maps/the-crown-flyer",
+      "name": "The Crown-Flyer",
       "kind": "map"
     },
     {
@@ -1346,6 +1391,11 @@
       "path": "/maps/thicket-around-the-beach-iii",
       "name": "Thicket Around the Beach III",
       "kind": "map"
+    },
+    {
+      "path": "/items/thorns",
+      "name": "Thorns",
+      "kind": "item"
     },
     {
       "path": "/maps/tomato-field",
@@ -1421,6 +1471,16 @@
       "path": "/items/wand-magic-attack-scroll-intermediate",
       "name": "Wand Magic Attack Scroll: Intermediate",
       "kind": "item"
+    },
+    {
+      "path": "/maps/watch-out-for-icy-path-i",
+      "name": "Watch Out for Icy Path I",
+      "kind": "map"
+    },
+    {
+      "path": "/maps/watch-out-for-icy-path-ii",
+      "name": "Watch Out for Icy Path II",
+      "kind": "map"
     },
     {
       "path": "/maps/west-domain-of-perion",

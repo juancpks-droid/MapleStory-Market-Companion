@@ -1,0 +1,116 @@
+{
+  "schemaVersion": 1,
+  "path": "/items/steel-tower-shield",
+  "kind": "item",
+  "name": "Steel Tower Shield",
+  "source": "CCPLZ",
+  "sourceUrl": "https://ccplz.cc/items/steel-tower-shield",
+  "checkedAt": "2026-10-29T10:13:11.966Z",
+  "notice": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial.",
+  "fields": [
+    {
+      "label": "Type",
+      "value": "Shield"
+    },
+    {
+      "label": "Required level",
+      "value": "40"
+    },
+    {
+      "label": "Class",
+      "value": "Warrior"
+    },
+    {
+      "label": "Weapon defense",
+      "value": "+130"
+    },
+    {
+      "label": "Upgrade slots",
+      "value": "7"
+    },
+    {
+      "label": "NPC sell price",
+      "value": "14,000 mesos"
+    },
+    {
+      "label": "Required STR",
+      "value": "70"
+    },
+    {
+      "label": "Required DEX",
+      "value": "30"
+    },
+    {
+      "label": "Required INT",
+      "value": "0"
+    },
+    {
+      "label": "Required LUK",
+      "value": "0"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Used in crafting",
+      "links": [
+        {
+          "name": "Adamantium Tower Shield",
+          "path": "/recipes/craft-adamantium-tower-shield",
+          "detail": ""
+        },
+        {
+          "name": "Mithril Tower Shield",
+          "path": "/recipes/craft-mithril-tower-shield",
+          "detail": ""
+        }
+      ],
+      "total": 2
+    },
+    {
+      "title": "Similar equipment",
+      "links": [
+        {
+          "name": "Adamantium Tower Shield",
+          "path": "/items/adamantium-tower-shield",
+          "detail": "Level 40"
+        },
+        {
+          "name": "Mithril Tower Shield",
+          "path": "/items/mithril-tower-shield",
+          "detail": "Level 40"
+        },
+        {
+          "name": "Battle Shield",
+          "path": "/items/battle-shield",
+          "detail": "Level 35"
+        },
+        {
+          "name": "Esther Shield",
+          "path": "/items/esther-shield",
+          "detail": "Level 35"
+        },
+        {
+          "name": "Red Cross Shield",
+          "path": "/items/red-cross-shield",
+          "detail": "Level 30"
+        },
+        {
+          "name": "Skull Shield",
+          "path": "/items/skull-shield",
+          "detail": "Level 50"
+        },
+        {
+          "name": "Red Triangular Shield",
+          "path": "/items/red-triangular-shield",
+          "detail": "Level 25"
+        },
+        {
+          "name": "Jurgen Wristguard",
+          "path": "/items/jurgen-wristguard",
+          "detail": "Level 22"
+        }
+      ],
+      "total": 8
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "schemaVersion": 1,
+  "path": "/items/shoes-jump-scroll-intermediate",
+  "kind": "item",
+  "name": "Shoes Jump Scroll: Intermediate",
+  "source": "CCPLZ",
+  "sourceUrl": "https://ccplz.cc/items/shoes-jump-scroll-intermediate",
+  "checkedAt": "2026-10-29T10:13:05.959Z",
+  "notice": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial.",
+  "fields": [
+    {
+      "label": "Type",
+      "value": "Shoes scrolls"
+    },
+    {
+      "label": "Jump",
+      "value": "+2"
+    },
+    {
+      "label": "NPC sell price",
+      "value": "1 meso"
+    },
+    {
+      "label": "Success rate (%)",
+      "value": "60"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Related items",
+      "links": [
+        {
+          "name": "Shoes Jump Scroll: Lesser",
+          "path": "/items/shoes-jump-scroll-lesser",
+          "detail": ""
+        },
+        {
+          "name": "Shoes Jump Scroll: Greater",
+          "path": "/items/shoes-jump-scroll-greater",
+          "detail": ""
+        },
+        {
+          "name": "Shoes Jump Scroll: Chaos",
+          "path": "/items/shoes-jump-scroll-chaos",
+          "detail": ""
+        }
+      ],
+      "total": 3
+    }
+  ]
+}

@@ -5,7 +5,7 @@
   "name": "The Reason Behind the Mushroom Studies",
   "source": "CCPLZ",
   "sourceUrl": "https://ccplz.cc/quests/the-reason-behind-the-mushroom-studies",
-  "checkedAt": "2026-10-13T15:38:21.218Z",
+  "checkedAt": "2026-10-29T10:12:50.945Z",
   "notice": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial.",
   "fields": [
     {
@@ -77,7 +77,7 @@
       "title": "Item rewards",
       "links": [
         {
-          "name": "Red Potion (for Olaf's Training: Olaf's First Training)",
+          "name": "Red Potion",
           "path": "/items/red-potion",
           "detail": ""
         },

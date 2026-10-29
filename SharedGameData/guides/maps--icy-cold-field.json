@@ -1,0 +1,90 @@
+{
+  "schemaVersion": 1,
+  "path": "/maps/icy-cold-field",
+  "kind": "map",
+  "name": "Icy Cold Field",
+  "source": "CCPLZ",
+  "sourceUrl": "https://ccplz.cc/maps/icy-cold-field",
+  "checkedAt": "2026-10-29T10:13:26.948Z",
+  "notice": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial.",
+  "fields": [
+    {
+      "label": "Region",
+      "value": "Ossyria"
+    },
+    {
+      "label": "Street",
+      "value": "El Nath"
+    },
+    {
+      "label": "Monster levels",
+      "value": "50 to 65"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Monsters",
+      "links": [
+        {
+          "name": "Jr. Yeti",
+          "path": "/monsters/jr-yeti",
+          "detail": "Level 50"
+        },
+        {
+          "name": "Transforming Jr. Yeti",
+          "path": "/monsters/transforming-jr-yeti",
+          "detail": "Level 50"
+        },
+        {
+          "name": "Yeti",
+          "path": "/monsters/yeti",
+          "detail": "Level 65"
+        }
+      ],
+      "total": 3
+    },
+    {
+      "title": "NPCs",
+      "links": [
+        {
+          "name": "Sergeant Bravo",
+          "path": "/npcs/sergeant-bravo",
+          "detail": ""
+        }
+      ],
+      "total": 1
+    },
+    {
+      "title": "Connected maps",
+      "links": [
+        {
+          "name": "Cold Field II",
+          "path": "/maps/cold-field-ii",
+          "detail": "El Nath"
+        }
+      ],
+      "total": 1
+    },
+    {
+      "title": "Quests set here",
+      "links": [
+        {
+          "name": "Alpha Platoon's Network of Communication (A Report from Sergeant Bravo)",
+          "path": "/quests/a-report-from-sergeant-bravo",
+          "detail": "Level 40"
+        },
+        {
+          "name": "Alpha Platoon's Network of Communication (A Request from Sergeant Bravo)",
+          "path": "/quests/a-request-from-sergeant-bravo",
+          "detail": "Level 40"
+        },
+        {
+          "name": "Alpha Platoon's Network of Communication (Missing Sergeant Bravo)",
+          "path": "/quests/missing-sergeant-bravo",
+          "detail": "Level 40"
+        }
+      ],
+      "total": 3
+    }
+  ]
+}

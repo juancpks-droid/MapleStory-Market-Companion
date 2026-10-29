@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "publishedAt": "2026-10-28T10:11:00.186Z",
+  "publishedAt": "2026-10-29T10:13:39.025Z",
   "catalogItems": 12726,
-  "guideRecords": 292,
-  "referenceRecords": 133,
+  "guideRecords": 304,
+  "referenceRecords": 137,
   "entries": [
     {
       "file": "guides/items--5-o-clock-shadow.json",
@@ -770,9 +770,9 @@
     },
     {
       "file": "guides/items--orange-potion.json",
-      "bytes": 5894,
-      "sha256": "ed345ffc27679b3da4ed8c8677d729310fc3dcbdf243637ec2b24b8a5e313862",
-      "checkedAt": "2026-10-21T09:58:10.596Z",
+      "bytes": 6647,
+      "sha256": "901a67f8564f028f19a62eb8943f22cea38366764c28ee988afb95cb6f511d77",
+      "checkedAt": "2026-10-29T10:12:59.957Z",
       "kind": "item"
     },
     {
@@ -1000,6 +1000,20 @@
       "kind": "item"
     },
     {
+      "file": "guides/items--shoes-jump-scroll-intermediate.json",
+      "bytes": 1295,
+      "sha256": "9876862a80f8a4e4bfe1d1b4117db2c4ade72e90bbebf8acaf8ba77c46ac643d",
+      "checkedAt": "2026-10-29T10:13:05.959Z",
+      "kind": "item"
+    },
+    {
+      "file": "guides/items--shoes-speed-scroll-intermediate.json",
+      "bytes": 1634,
+      "sha256": "9893a8ea0f6ce84a37953e550a0504751c31efcefa2ef2f78cc00a45b322b8f3",
+      "checkedAt": "2026-10-29T10:13:09.063Z",
+      "kind": "item"
+    },
+    {
       "file": "guides/items--slime-bubble.json",
       "bytes": 1460,
       "sha256": "01c1a3f3134d0c9e7ef4928509527cbc23a2f7ab8c295365dfce34488dacd21d",
@@ -1042,6 +1056,13 @@
       "kind": "item"
     },
     {
+      "file": "guides/items--steel-tower-shield.json",
+      "bytes": 2695,
+      "sha256": "ab6020cb52899020e5fb4628d47e363b3655b7b60fd0900a1a3ba56dae46f592",
+      "checkedAt": "2026-10-29T10:13:11.966Z",
+      "kind": "item"
+    },
+    {
       "file": "guides/items--sunrise-dew.json",
       "bytes": 593,
       "sha256": "b985eddb65faa14b99c4f5ec75c082cf9ea14004c64c73b5a00a57348c8fb579",
@@ -1060,6 +1081,13 @@
       "bytes": 3727,
       "sha256": "2fe051646e2632071e8e2400dac41b8b9fbc2766986fc513f33e3c59c13c80ec",
       "checkedAt": "2026-10-19T10:00:43.861Z",
+      "kind": "item"
+    },
+    {
+      "file": "guides/items--thorns.json",
+      "bytes": 2140,
+      "sha256": "ac7b94c343930ed0bcef446ca289832348a3af48f2d9d9b3093fef8683a8b49e",
+      "checkedAt": "2026-10-29T10:13:14.937Z",
       "kind": "item"
     },
     {
@@ -1141,9 +1169,9 @@
     },
     {
       "file": "guides/items--white-potion.json",
-      "bytes": 12616,
-      "sha256": "6126c305ac40c4369a029eaf21ea6cfe4e0e626b373ef7330a36c636c7f4d38f",
-      "checkedAt": "2026-10-21T09:58:13.550Z",
+      "bytes": 9775,
+      "sha256": "98db41ecff8383797a85422ab59a662c5d92d794d3a227d3d4576ad47bb08727",
+      "checkedAt": "2026-10-29T10:13:02.937Z",
       "kind": "item"
     },
     {
@@ -1186,6 +1214,13 @@
       "bytes": 1416,
       "sha256": "462175aa3c2d9f1dbf99d4470f198c21acbd51e90454870bc67cd21697430fe9",
       "checkedAt": "2026-10-24T09:53:32.123Z",
+      "kind": "map"
+    },
+    {
+      "file": "guides/maps--cold-field-ii.json",
+      "bytes": 1970,
+      "sha256": "ff9fc95aef87b45f686eba29d138781caa20292218a2bfe92e3226824bfacd85",
+      "checkedAt": "2026-10-29T10:13:38.947Z",
       "kind": "map"
     },
     {
@@ -1301,6 +1336,27 @@
       "kind": "map"
     },
     {
+      "file": "guides/maps--ice-valley-i.json",
+      "bytes": 1685,
+      "sha256": "d4a80277a16059aeac8ddd09e3ba9b6a71ea9bfd16edda9085af9ee0404286ee",
+      "checkedAt": "2026-10-29T10:13:30.021Z",
+      "kind": "map"
+    },
+    {
+      "file": "guides/maps--ice-valley-ii.json",
+      "bytes": 1902,
+      "sha256": "e9643c30b288d06c1aee62584ab77cf12589969a4cac7369e1a07a19c3c82698",
+      "checkedAt": "2026-10-29T10:13:32.981Z",
+      "kind": "map"
+    },
+    {
+      "file": "guides/maps--icy-cold-field.json",
+      "bytes": 2228,
+      "sha256": "2f44cc2fa8ed7f5c9988eeb9c2d57fca0c72e8395b5961a5219f4193da83b36b",
+      "checkedAt": "2026-10-29T10:13:26.948Z",
+      "kind": "map"
+    },
+    {
       "file": "guides/maps--in-a-small-forest.json",
       "bytes": 1623,
       "sha256": "71906f85618401b93fcd9edd226a8af60f76ef8a00347cf96ad2eb5f0560b8cb",
@@ -1413,6 +1469,13 @@
       "kind": "map"
     },
     {
+      "file": "guides/maps--sharp-cliff-i.json",
+      "bytes": 1764,
+      "sha256": "5ff26ab9189db9ec8a6363a40678213e70fd9aa35e9d263151b6f25fb2d04175",
+      "checkedAt": "2026-10-29T10:13:35.983Z",
+      "kind": "map"
+    },
+    {
       "file": "guides/maps--sleepy-dungeon-i.json",
       "bytes": 2162,
       "sha256": "fa98d7958ba49e2bcd214015682411806c254dfbd7e29602d62156941bff8e76",
@@ -1515,6 +1578,13 @@
       "bytes": 1611,
       "sha256": "4991c52d16740f77ed39edad72011da856dbd058b94c16cf56bbb99163efdaa0",
       "checkedAt": "2026-10-18T09:51:23.559Z",
+      "kind": "map"
+    },
+    {
+      "file": "guides/maps--the-crown-flyer.json",
+      "bytes": 1202,
+      "sha256": "af985936aebba9a74159f55422cbdb8ba8cde7b3d07972dd73a0cb1ec29aa4a0",
+      "checkedAt": "2026-10-29T10:13:23.941Z",
       "kind": "map"
     },
     {
@@ -1648,6 +1718,20 @@
       "bytes": 1284,
       "sha256": "22b7f6a7d1b2f85204573a2c66e60e50f4bad358cf18d5c7977c1390c0bf5613",
       "checkedAt": "2026-10-17T09:50:26.928Z",
+      "kind": "map"
+    },
+    {
+      "file": "guides/maps--watch-out-for-icy-path-i.json",
+      "bytes": 1389,
+      "sha256": "19ba1e9a96b18164d7c6403fdf818b93163a8434d13785b74092ff8cf1436413",
+      "checkedAt": "2026-10-29T10:13:18.000Z",
+      "kind": "map"
+    },
+    {
+      "file": "guides/maps--watch-out-for-icy-path-ii.json",
+      "bytes": 1377,
+      "sha256": "88f30402eefd313aa6a4c78f12c77b6510167fd72b1fa7ee403a66a4aad223c1",
+      "checkedAt": "2026-10-29T10:13:20.959Z",
       "kind": "map"
     },
     {
@@ -1933,8 +2017,8 @@
     {
       "file": "guides/quests--don-hwang-s-request.json",
       "bytes": 2333,
-      "sha256": "708d8386048a734118b5536e611162e7db5880a8ca8fabd762f1bb5c051a1abc",
-      "checkedAt": "2026-10-13T15:38:18.221Z",
+      "sha256": "661d8f3e81f5ad1c66664db961b0b92393b5e125aff0d851630150d5df6bed63",
+      "checkedAt": "2026-10-29T10:12:47.981Z",
       "kind": "quest"
     },
     {
@@ -1995,23 +2079,23 @@
     },
     {
       "file": "guides/quests--the-reason-behind-the-mushroom-studies.json",
-      "bytes": 2345,
-      "sha256": "6b702afffe52cd16a0b496dc584aa11fde66ee42199d8f86427e7b9a197eff6d",
-      "checkedAt": "2026-10-13T15:38:21.218Z",
+      "bytes": 2300,
+      "sha256": "cc9e7a5304df06e274c79475b7772cadc0dd046be674b3ce8d66822f3b4e016f",
+      "checkedAt": "2026-10-29T10:12:50.945Z",
       "kind": "quest"
     },
     {
       "file": "guides/recipes--craft-brown-apprentice-hat.json",
       "bytes": 2420,
-      "sha256": "959850c0a4b9b8cfa9b2ec223e1c09e8a3f0c1dbf72fc068fc7fedc2c5fd3142",
-      "checkedAt": "2026-10-13T15:38:24.218Z",
+      "sha256": "4dec0f800dbc17fa3b4c906056bffc75835489ad19c9fcd36f2643d8fd147cd9",
+      "checkedAt": "2026-10-29T10:12:53.964Z",
       "kind": "recipe"
     },
     {
       "file": "guides/recipes--craft-brown-ghetto-beanie.json",
       "bytes": 2413,
-      "sha256": "a5aaf0fba66298e7aadc0fd7bf7cade58880a1da3ae14b0ce39668fea0de99fc",
-      "checkedAt": "2026-10-13T15:38:27.265Z",
+      "sha256": "bba1b59d7441d27aa9f6d1f1aaaa868a6aa26b369458d2d4cf3aaf7f043effcb",
+      "checkedAt": "2026-10-29T10:12:57.066Z",
       "kind": "recipe"
     },
     {
@@ -2477,6 +2561,13 @@
       "kind": "npc"
     },
     {
+      "file": "records/npc-1092012.json",
+      "bytes": 702,
+      "sha256": "5fb92d8bee0c658f757f17e0c123be81ccb3b73bca7f1ffc8ded48a3ac025e92",
+      "checkedAt": "2026-10-29T10:13:11.966Z",
+      "kind": "npc"
+    },
+    {
       "file": "records/npc-1302007.json",
       "bytes": 677,
       "sha256": "c41281d8525f253094409f85c6d3b63a106d5664731300ae1e4e7e87758cb0e1",
@@ -2533,6 +2624,13 @@
       "kind": "npc"
     },
     {
+      "file": "records/npc-1382006.json",
+      "bytes": 666,
+      "sha256": "22ca34871613e68d823b2d2d601219563139a1f2af99f18cc099b1cbdf4f3947",
+      "checkedAt": "2026-10-29T10:13:14.937Z",
+      "kind": "npc"
+    },
+    {
       "file": "records/npc-1402002.json",
       "bytes": 672,
       "sha256": "50126e2c7dda495d20e481f10eaf4937faf17f9e1a0ee0375474db419551b265",
@@ -2570,15 +2668,15 @@
     {
       "file": "records/npc-2000001.json",
       "bytes": 677,
-      "sha256": "da5b263b71a66217c14353116f766df2738ba6893a308ec8d460a40d41b996bf",
-      "checkedAt": "2026-10-21T09:58:10.596Z",
+      "sha256": "db96c3e5aa89a69731ff1e8d6c87503ea82518ef8e08935e4c82b68163ba5514",
+      "checkedAt": "2026-10-29T10:12:59.957Z",
       "kind": "npc"
     },
     {
       "file": "records/npc-2000002.json",
       "bytes": 674,
-      "sha256": "3d5dd4c2fcd934f5d6d0020314c2e80485a7f01d2487d9049f803ad9a75f8466",
-      "checkedAt": "2026-10-21T09:58:13.550Z",
+      "sha256": "e2489e4f086230920c22a95f43dd54ec663cf39dd2bbeef012119318f8add28e",
+      "checkedAt": "2026-10-29T10:13:02.937Z",
       "kind": "npc"
     },
     {
@@ -2883,10 +2981,24 @@
       "kind": "npc"
     },
     {
+      "file": "records/npc-classic-2040701.json",
+      "bytes": 731,
+      "sha256": "d600ddf228523a6c0a4c8216e4c3bbbaadf2a7884ec46822983014d5242e28b3",
+      "checkedAt": "2026-10-29T10:13:05.959Z",
+      "kind": "npc"
+    },
+    {
       "file": "records/npc-classic-2040702.json",
       "bytes": 716,
       "sha256": "27df348a46580abe995881addd9c4cd2bae78bc71f6ed54ce39d788e728180be",
       "checkedAt": "2026-10-25T09:53:47.377Z",
+      "kind": "npc"
+    },
+    {
+      "file": "records/npc-classic-2040705.json",
+      "bytes": 734,
+      "sha256": "a1f583238dd8b6baea219feebf80c93ecaac085c92a7012203d98bb455693a6c",
+      "checkedAt": "2026-10-29T10:13:09.063Z",
       "kind": "npc"
     },
     {

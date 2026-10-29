@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "item": {
+    "key": "classic:2040701",
+    "name": "Shoes Jump Scroll: Intermediate",
+    "id": "2040701",
+    "category": "Use"
+  },
+  "kind": "npc",
+  "checkedAt": "2026-10-29T10:13:05.959Z",
+  "data": {
+    "sell": 1,
+    "buy": null,
+    "source": "CCPLZ",
+    "url": "https://ccplz.cc/items/shoes-jump-scroll-intermediate",
+    "checkedAt": "2026-10-29T10:13:05.959Z"
+  },
+  "provenance": {
+    "source": "CCPLZ",
+    "sourceUrl": "https://ccplz.cc/items/shoes-jump-scroll-intermediate",
+    "coverage": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial."
+  }
+}

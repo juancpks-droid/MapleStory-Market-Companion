@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 1,
+  "path": "/maps/sharp-cliff-i",
+  "kind": "map",
+  "name": "Sharp Cliff I",
+  "source": "CCPLZ",
+  "sourceUrl": "https://ccplz.cc/maps/sharp-cliff-i",
+  "checkedAt": "2026-10-29T10:13:35.983Z",
+  "notice": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial.",
+  "fields": [
+    {
+      "label": "Region",
+      "value": "Ossyria"
+    },
+    {
+      "label": "Street",
+      "value": "El Nath"
+    },
+    {
+      "label": "Monster levels",
+      "value": "50 to 68"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Monsters",
+      "links": [
+        {
+          "name": "Jr. Yeti",
+          "path": "/monsters/jr-yeti",
+          "detail": "Level 50"
+        },
+        {
+          "name": "Transforming Jr. Yeti",
+          "path": "/monsters/transforming-jr-yeti",
+          "detail": "Level 50"
+        },
+        {
+          "name": "Dark Jr. Yeti",
+          "path": "/monsters/dark-jr-yeti",
+          "detail": "Level 56"
+        },
+        {
+          "name": "Transforming Dark Jr. Yeti",
+          "path": "/monsters/transforming-dark-jr-yeti",
+          "detail": "Level 56"
+        },
+        {
+          "name": "Dark Yeti",
+          "path": "/monsters/dark-yeti",
+          "detail": "Level 68"
+        }
+      ],
+      "total": 5
+    },
+    {
+      "title": "Connected maps",
+      "links": [
+        {
+          "name": "Ice Valley II",
+          "path": "/maps/ice-valley-ii",
+          "detail": "El Nath"
+        },
+        {
+          "name": "Sharp Cliff II",
+          "path": "/maps/sharp-cliff-ii",
+          "detail": "El Nath"
+        }
+      ],
+      "total": 2
+    }
+  ]
+}
