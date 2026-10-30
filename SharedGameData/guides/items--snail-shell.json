@@ -5,7 +5,7 @@
   "name": "Snail Shell",
   "source": "CCPLZ",
   "sourceUrl": "https://ccplz.cc/items/snail-shell",
-  "checkedAt": "2026-10-21T09:57:58.699Z",
+  "checkedAt": "2026-10-30T10:13:21.160Z",
   "notice": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial.",
   "fields": [
     {
@@ -26,20 +26,25 @@
       "title": "Dropped by",
       "links": [
         {
-          "name": "Snail",
-          "path": "/monsters/snail",
-          "detail": "Level 1, 60% historical rate"
-        }
-      ],
-      "total": 1
-    },
-    {
-      "title": "Also dropped by, in older versions",
-      "links": [
-        {
           "name": "Mano",
           "path": "/monsters/mano",
-          "detail": "Level 20, 60% historical rate"
+          "detail": "Level 20"
+        },
+        {
+          "name": "Snail",
+          "path": "/monsters/snail",
+          "detail": "Level 1, 51% drop rate, 103 kills counted"
+        }
+      ],
+      "total": 2
+    },
+    {
+      "title": "Needed for quests",
+      "links": [
+        {
+          "name": "Legend of the Snail (Snail Hunt)",
+          "path": "/quests/snail-hunt",
+          "detail": "Level 20"
         }
       ],
       "total": 1

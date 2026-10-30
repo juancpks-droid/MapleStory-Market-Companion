@@ -1,0 +1,159 @@
+{
+  "schemaVersion": 1,
+  "path": "/items/leather",
+  "kind": "item",
+  "name": "Leather",
+  "source": "CCPLZ",
+  "sourceUrl": "https://ccplz.cc/items/leather",
+  "checkedAt": "2026-10-30T10:13:42.138Z",
+  "notice": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial.",
+  "fields": [
+    {
+      "label": "Type",
+      "value": "Monster drops"
+    },
+    {
+      "label": "NPC sell price",
+      "value": "10 mesos"
+    },
+    {
+      "label": "Stack limit",
+      "value": "200"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Dropped by",
+      "links": [
+        {
+          "name": "Cellion",
+          "path": "/monsters/cellion",
+          "detail": ""
+        },
+        {
+          "name": "Cerebes",
+          "path": "/monsters/cerebes",
+          "detail": ""
+        },
+        {
+          "name": "Fire Boar",
+          "path": "/monsters/fire-boar",
+          "detail": "Level 32"
+        },
+        {
+          "name": "Grupin",
+          "path": "/monsters/grupin",
+          "detail": ""
+        },
+        {
+          "name": "Hector",
+          "path": "/monsters/hector",
+          "detail": ""
+        },
+        {
+          "name": "Iron Hog",
+          "path": "/monsters/iron-hog",
+          "detail": "Level 28"
+        },
+        {
+          "name": "Jr. Cellion",
+          "path": "/monsters/jr-cellion",
+          "detail": ""
+        },
+        {
+          "name": "Jr. Grupin",
+          "path": "/monsters/jr-grupin",
+          "detail": ""
+        },
+        {
+          "name": "Jr. Lioner",
+          "path": "/monsters/jr-lioner",
+          "detail": ""
+        },
+        {
+          "name": "Jr. Yeti",
+          "path": "/monsters/jr-yeti",
+          "detail": ""
+        },
+        {
+          "name": "Lupin",
+          "path": "/monsters/lupin",
+          "detail": "Level 37"
+        },
+        {
+          "name": "Pig",
+          "path": "/monsters/pig",
+          "detail": "Level 7, 4.8% drop rate, 249 kills counted"
+        },
+        {
+          "name": "Ribbon Pig",
+          "path": "/monsters/ribbon-pig",
+          "detail": "Level 10, 7.5% drop rate, 40 kills counted"
+        },
+        {
+          "name": "Transformed Dark Yeti",
+          "path": "/monsters/transformed-dark-yeti",
+          "detail": ""
+        },
+        {
+          "name": "White Fang",
+          "path": "/monsters/white-fang",
+          "detail": ""
+        },
+        {
+          "name": "Wild Boar",
+          "path": "/monsters/wild-boar",
+          "detail": "Level 25"
+        },
+        {
+          "name": "Wild Kargo",
+          "path": "/monsters/wild-kargo",
+          "detail": "Level 62"
+        },
+        {
+          "name": "Yeti",
+          "path": "/monsters/yeti",
+          "detail": ""
+        },
+        {
+          "name": "Zombie Lupin",
+          "path": "/monsters/zombie-lupin",
+          "detail": "Level 41"
+        }
+      ],
+      "total": 19
+    },
+    {
+      "title": "Needed for quests",
+      "links": [
+        {
+          "name": "JM From tha Streetz Looking for a Partner",
+          "path": "/quests/jm-from-tha-streetz-looking-for-a-partner",
+          "detail": "Level 10"
+        },
+        {
+          "name": "Nella & Kerning City Citizen's Other Request (Chris's Request)",
+          "path": "/quests/chris-s-request",
+          "detail": "Level 22"
+        }
+      ],
+      "total": 2
+    },
+    {
+      "title": "Used in crafting",
+      "links": [
+        {
+          "name": "Processed Leather (from Leather + Leather)",
+          "path": "/recipes/craft-processed-leather",
+          "detail": ""
+        },
+        {
+          "name": "Processed Parchment",
+          "path": "/recipes/craft-processed-parchment",
+          "detail": ""
+        }
+      ],
+      "total": 2
+    }
+  ]
+}

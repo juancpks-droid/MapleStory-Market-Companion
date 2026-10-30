@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "path": "/items/jr-yeti-skin",
+  "kind": "item",
+  "name": "Jr. Yeti Skin",
+  "source": "CCPLZ",
+  "sourceUrl": "https://ccplz.cc/items/jr-yeti-skin",
+  "checkedAt": "2026-10-30T10:13:39.160Z",
+  "notice": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial.",
+  "fields": [
+    {
+      "label": "Type",
+      "value": "Monster drops"
+    },
+    {
+      "label": "NPC sell price",
+      "value": "50 mesos"
+    },
+    {
+      "label": "Stack limit",
+      "value": "200"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Dropped by",
+      "links": [
+        {
+          "name": "Jr. Yeti",
+          "path": "/monsters/jr-yeti",
+          "detail": ""
+        }
+      ],
+      "total": 1
+    }
+  ]
+}

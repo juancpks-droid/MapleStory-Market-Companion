@@ -1,0 +1,108 @@
+{
+  "schemaVersion": 1,
+  "path": "/items/blue-lumati",
+  "kind": "item",
+  "name": "Blue Lumati",
+  "source": "CCPLZ",
+  "sourceUrl": "https://ccplz.cc/items/blue-lumati",
+  "checkedAt": "2026-10-30T10:13:27.152Z",
+  "notice": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial.",
+  "fields": [
+    {
+      "label": "Type",
+      "value": "Overall"
+    },
+    {
+      "label": "Required level",
+      "value": "50"
+    },
+    {
+      "label": "Class",
+      "value": "Bowman"
+    },
+    {
+      "label": "Weapon defense",
+      "value": "+106"
+    },
+    {
+      "label": "STR",
+      "value": "+5"
+    },
+    {
+      "label": "DEX",
+      "value": "+5"
+    },
+    {
+      "label": "Upgrade slots",
+      "value": "10"
+    },
+    {
+      "label": "NPC sell price",
+      "value": "19,800 mesos"
+    },
+    {
+      "label": "Required STR",
+      "value": "40"
+    },
+    {
+      "label": "Required DEX",
+      "value": "90"
+    },
+    {
+      "label": "Required INT",
+      "value": "0"
+    },
+    {
+      "label": "Required LUK",
+      "value": "0"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Similar equipment",
+      "links": [
+        {
+          "name": "Blue Calaf",
+          "path": "/items/blue-calaf",
+          "detail": "Level 50"
+        },
+        {
+          "name": "Blue Calas",
+          "path": "/items/blue-calas",
+          "detail": "Level 50"
+        },
+        {
+          "name": "Blue-Lined Kismet",
+          "path": "/items/blue-lined-kismet",
+          "detail": "Level 50"
+        },
+        {
+          "name": "Dark Calaf",
+          "path": "/items/dark-calaf",
+          "detail": "Level 50"
+        },
+        {
+          "name": "Dark Calas",
+          "path": "/items/dark-calas",
+          "detail": "Level 50"
+        },
+        {
+          "name": "Green Lumati",
+          "path": "/items/green-lumati",
+          "detail": "Level 50"
+        },
+        {
+          "name": "Orange Calaf",
+          "path": "/items/orange-calaf",
+          "detail": "Level 50"
+        },
+        {
+          "name": "Orange Calas",
+          "path": "/items/orange-calas",
+          "detail": "Level 50"
+        }
+      ],
+      "total": 8
+    }
+  ]
+}

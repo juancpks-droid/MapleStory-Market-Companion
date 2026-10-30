@@ -1,0 +1,131 @@
+{
+  "schemaVersion": 1,
+  "path": "/items/purple-salt-shoes",
+  "kind": "item",
+  "name": "Purple Salt Shoes",
+  "source": "CCPLZ",
+  "sourceUrl": "https://ccplz.cc/items/purple-salt-shoes",
+  "checkedAt": "2026-10-30T10:13:48.141Z",
+  "notice": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial.",
+  "fields": [
+    {
+      "label": "Type",
+      "value": "Shoes"
+    },
+    {
+      "label": "Required level",
+      "value": "35"
+    },
+    {
+      "label": "Class",
+      "value": "Magician"
+    },
+    {
+      "label": "Weapon defense",
+      "value": "+10"
+    },
+    {
+      "label": "Magic defense",
+      "value": "+11"
+    },
+    {
+      "label": "LUK",
+      "value": "+1"
+    },
+    {
+      "label": "Max HP",
+      "value": "+5"
+    },
+    {
+      "label": "Avoidability",
+      "value": "+3"
+    },
+    {
+      "label": "Speed",
+      "value": "+2"
+    },
+    {
+      "label": "Upgrade slots",
+      "value": "5"
+    },
+    {
+      "label": "NPC sell price",
+      "value": "3,000 mesos"
+    },
+    {
+      "label": "Required STR",
+      "value": "0"
+    },
+    {
+      "label": "Required DEX",
+      "value": "0"
+    },
+    {
+      "label": "Required INT",
+      "value": "60"
+    },
+    {
+      "label": "Required LUK",
+      "value": "25"
+    }
+  ],
+  "sections": [
+    {
+      "title": "How to craft it",
+      "links": [
+        {
+          "name": "Purple Salt Shoes",
+          "path": "/recipes/craft-purple-salt-shoes",
+          "detail": "Crafting skill level 7"
+        }
+      ],
+      "total": 1
+    },
+    {
+      "title": "Similar equipment",
+      "links": [
+        {
+          "name": "Black Salt Shoes",
+          "path": "/items/black-salt-shoes",
+          "detail": "Level 35"
+        },
+        {
+          "name": "Blue Silky Boots",
+          "path": "/items/blue-silky-boots",
+          "detail": "Level 35"
+        },
+        {
+          "name": "Blue White-Lined Boots",
+          "path": "/items/blue-white-lined-boots",
+          "detail": "Level 35"
+        },
+        {
+          "name": "Dark Trigger",
+          "path": "/items/dark-trigger",
+          "detail": "Level 35"
+        },
+        {
+          "name": "Green Silky Boots",
+          "path": "/items/green-silky-boots",
+          "detail": "Level 35"
+        },
+        {
+          "name": "Green White-Lined Boots",
+          "path": "/items/green-white-lined-boots",
+          "detail": "Level 35"
+        },
+        {
+          "name": "Mithril Trigger",
+          "path": "/items/mithril-trigger",
+          "detail": "Level 35"
+        },
+        {
+          "name": "Red Salt Shoes",
+          "path": "/items/red-salt-shoes",
+          "detail": "Level 35"
+        }
+      ],
+      "total": 8
+    }
+  ]
+}

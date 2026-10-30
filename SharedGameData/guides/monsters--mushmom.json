@@ -5,7 +5,7 @@
   "name": "Mushmom",
   "source": "CCPLZ",
   "sourceUrl": "https://ccplz.cc/monsters/mushmom",
-  "checkedAt": "2026-10-13T17:07:45.463Z",
+  "checkedAt": "2026-10-30T10:13:06.129Z",
   "notice": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial.",
   "fields": [
     {
@@ -58,12 +58,27 @@
       "total": 1
     },
     {
-      "title": "Reported drops",
+      "title": "Drops",
       "links": [
+        {
+          "name": "Armor Crafting Catalyst",
+          "path": "/items/armor-crafting-catalyst",
+          "detail": "Crafting catalysts"
+        },
+        {
+          "name": "Blue Potion",
+          "path": "/items/blue-potion",
+          "detail": "Potions"
+        },
+        {
+          "name": "Elixir",
+          "path": "/items/elixir",
+          "detail": "Potions"
+        },
         {
           "name": "Gloves Attack Scroll: Intermediate",
           "path": "/items/gloves-attack-scroll-intermediate",
-          "detail": "Gloves scrolls, 0.3% historical rate"
+          "detail": "Gloves scrolls"
         },
         {
           "name": "Ilbi Throwing Stars",
@@ -73,86 +88,40 @@
         {
           "name": "Mushmom Spore",
           "path": "/items/mushmom-spore",
-          "detail": "Monster drops, 60% historical rate"
+          "detail": "Monster drops"
+        },
+        {
+          "name": "One-Handed Weapon Crafting Catalyst",
+          "path": "/items/one-handed-weapon-crafting-catalyst",
+          "detail": "Crafting catalysts"
+        },
+        {
+          "name": "Orange Potion",
+          "path": "/items/orange-potion",
+          "detail": "Potions"
         },
         {
           "name": "Orange Whitebottom Boots",
           "path": "/items/orange-whitebottom-boots",
           "detail": "Shoes"
-        }
-      ],
-      "total": 4
-    },
-    {
-      "title": "Older-version drops",
-      "links": [
-        {
-          "name": "Bottomwear DEF Scroll: Intermediate",
-          "path": "/items/bottomwear-def-scroll-intermediate",
-          "detail": "Bottomwear scrolls, 0.3% historical rate"
         },
         {
-          "name": "Cape Magic Def. Scroll: Intermediate",
-          "path": "/items/cape-magic-def-scroll-intermediate",
-          "detail": "Cape scrolls, 0.3% historical rate"
-        },
-        {
-          "name": "Crystal Flower Earrings",
-          "path": "/items/crystal-flower-earrings",
-          "detail": "Earring, 1% historical rate"
-        },
-        {
-          "name": "Earring INT Scroll: Intermediate",
-          "path": "/items/earring-int-scroll-intermediate",
-          "detail": "Earring scrolls, 0.3% historical rate"
-        },
-        {
-          "name": "Hat HP Scroll: Intermediate",
-          "path": "/items/hat-hp-scroll-intermediate",
-          "detail": "Hat scrolls, 0.3% historical rate"
-        },
-        {
-          "name": "Overall Armor DEF Scroll: Intermediate",
-          "path": "/items/overall-armor-def-scroll-intermediate",
-          "detail": "Overall scrolls, 0.3% historical rate"
-        },
-        {
-          "name": "Overall Armor DEX Scroll: Intermediate",
-          "path": "/items/overall-armor-dex-scroll-intermediate",
-          "detail": "Overall scrolls, 0.3% historical rate"
+          "name": "Scroll Crafting Catalyst",
+          "path": "/items/scroll-crafting-catalyst",
+          "detail": "Crafting catalysts"
         },
         {
           "name": "Shield DEF Scroll: Intermediate",
           "path": "/items/shield-def-scroll-intermediate",
-          "detail": "Shield scrolls, 0.3% historical rate"
+          "detail": "Shield scrolls"
         },
         {
-          "name": "Shoes Jump Scroll: Intermediate",
-          "path": "/items/shoes-jump-scroll-intermediate",
-          "detail": "Shoes scrolls, 0.3% historical rate"
-        },
-        {
-          "name": "Shoes Speed Scroll: Intermediate",
-          "path": "/items/shoes-speed-scroll-intermediate",
-          "detail": "Shoes scrolls, 0.3% historical rate"
-        },
-        {
-          "name": "Steel Tower Shield",
-          "path": "/items/steel-tower-shield",
-          "detail": "Shield, 0.7% historical rate"
-        },
-        {
-          "name": "Thorns",
-          "path": "/items/thorns",
-          "detail": "Staff, 0.7% historical rate"
-        },
-        {
-          "name": "Topwear DEF Scroll: Intermediate",
-          "path": "/items/topwear-def-scroll-intermediate",
-          "detail": "Topwear scrolls, 0.3% historical rate"
+          "name": "Two-Handed Weapon Crafting Catalyst",
+          "path": "/items/two-handed-weapon-crafting-catalyst",
+          "detail": "Crafting catalysts"
         }
       ],
-      "total": 13
+      "total": 12
     }
   ]
 }

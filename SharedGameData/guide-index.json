@@ -93,6 +93,11 @@
       "kind": "item"
     },
     {
+      "path": "/recipes/craft-hardwood-wand",
+      "name": "Battle Crossbow",
+      "kind": "recipe"
+    },
+    {
       "path": "/items/battle-scar",
       "name": "Battle Scar",
       "kind": "item"
@@ -165,6 +170,16 @@
     {
       "path": "/items/blood-moss-boots",
       "name": "Blood Moss Boots",
+      "kind": "item"
+    },
+    {
+      "path": "/items/blue-anakarune",
+      "name": "Blue Anakarune",
+      "kind": "item"
+    },
+    {
+      "path": "/items/blue-lumati",
+      "name": "Blue Lumati",
       "kind": "item"
     },
     {
@@ -363,6 +378,16 @@
       "kind": "map"
     },
     {
+      "path": "/items/crescent-polearm",
+      "name": "Crescent Polearm",
+      "kind": "item"
+    },
+    {
+      "path": "/items/crossbow-attack-scroll-greater",
+      "name": "Crossbow Attack Scroll: Greater",
+      "kind": "item"
+    },
+    {
       "path": "/items/crystal-flower-earrings",
       "name": "Crystal Flower Earrings",
       "kind": "item"
@@ -480,6 +505,11 @@
     {
       "path": "/items/earring-int-scroll-intermediate",
       "name": "Earring INT Scroll: Intermediate",
+      "kind": "item"
+    },
+    {
+      "path": "/items/earring-luk-scroll-intermediate",
+      "name": "Earring LUK Scroll: Intermediate",
       "kind": "item"
     },
     {
@@ -653,11 +683,6 @@
       "kind": "item"
     },
     {
-      "path": "/recipes/craft-hardwood-wand",
-      "name": "Hardwood Wand",
-      "kind": "recipe"
-    },
-    {
       "path": "/items/hat-hp-scroll-intermediate",
       "name": "Hat HP Scroll: Intermediate",
       "kind": "item"
@@ -763,6 +788,11 @@
       "kind": "monster"
     },
     {
+      "path": "/items/jr-yeti-skin",
+      "name": "Jr. Yeti Skin",
+      "kind": "item"
+    },
+    {
       "path": "/maps/kerning-city",
       "name": "Kerning City",
       "kind": "map"
@@ -811,6 +841,11 @@
       "path": "/maps/l-forest-iii",
       "name": "L Forest III",
       "kind": "map"
+    },
+    {
+      "path": "/items/leather",
+      "name": "Leather",
+      "kind": "item"
     },
     {
       "path": "/items/leather-mask",
@@ -866,6 +901,11 @@
       "path": "/quests/delivering-the-weird-medicine",
       "name": "Maya and the Weird Medicine (Delivering the Weird Medicine)",
       "kind": "quest"
+    },
+    {
+      "path": "/items/mithril-wolfskin",
+      "name": "Mithril Wolfskin",
+      "kind": "item"
     },
     {
       "path": "/monsters/mushmom",
@@ -1013,6 +1053,11 @@
       "kind": "item"
     },
     {
+      "path": "/items/purple-salt-shoes",
+      "name": "Purple Salt Shoes",
+      "kind": "item"
+    },
+    {
       "path": "/items/rainbow-colored-snail-shell",
       "name": "Rainbow-colored Snail Shell",
       "kind": "item"
@@ -1020,6 +1065,11 @@
     {
       "path": "/items/razor",
       "name": "Razor",
+      "kind": "item"
+    },
+    {
+      "path": "/items/red-anakarune",
+      "name": "Red Anakarune",
       "kind": "item"
     },
     {

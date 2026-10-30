@@ -1,0 +1,83 @@
+{
+  "schemaVersion": 1,
+  "path": "/items/earring-luk-scroll-intermediate",
+  "kind": "item",
+  "name": "Earring LUK Scroll: Intermediate",
+  "source": "CCPLZ",
+  "sourceUrl": "https://ccplz.cc/items/earring-luk-scroll-intermediate",
+  "checkedAt": "2026-10-30T10:13:36.274Z",
+  "notice": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial.",
+  "fields": [
+    {
+      "label": "Type",
+      "value": "Earring scrolls"
+    },
+    {
+      "label": "LUK",
+      "value": "+2"
+    },
+    {
+      "label": "NPC sell price",
+      "value": "1 meso"
+    },
+    {
+      "label": "Success rate (%)",
+      "value": "60"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Dropped by",
+      "links": [
+        {
+          "name": "Rafflesia",
+          "path": "/monsters/rafflesia",
+          "detail": "Level 47"
+        }
+      ],
+      "total": 1
+    },
+    {
+      "title": "Quest rewards",
+      "links": [
+        {
+          "name": "After the Festival Ends... (Regained Vitality)",
+          "path": "/quests/regained-vitality",
+          "detail": "Level 27"
+        },
+        {
+          "name": "First Time Together",
+          "path": "/quests/proof-of-companionship",
+          "detail": "Level 21"
+        },
+        {
+          "name": "What the City Taught Me (Not Ready to Go Home Yet)",
+          "path": "/quests/not-ready-to-go-home-yet",
+          "detail": "Level 27"
+        }
+      ],
+      "total": 3
+    },
+    {
+      "title": "Related items",
+      "links": [
+        {
+          "name": "Earring LUK Scroll: Lesser",
+          "path": "/items/earring-luk-scroll-lesser",
+          "detail": ""
+        },
+        {
+          "name": "Earring LUK Scroll: Greater",
+          "path": "/items/earring-luk-scroll-greater",
+          "detail": ""
+        },
+        {
+          "name": "Earring LUK Scroll: Chaos",
+          "path": "/items/earring-luk-scroll-chaos",
+          "detail": ""
+        }
+      ],
+      "total": 3
+    }
+  ]
+}

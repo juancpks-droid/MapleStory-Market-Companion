@@ -2,10 +2,10 @@
   "schemaVersion": 1,
   "path": "/recipes/craft-hardwood-wand",
   "kind": "recipe",
-  "name": "Hardwood Wand",
+  "name": "Battle Crossbow",
   "source": "CCPLZ",
   "sourceUrl": "https://ccplz.cc/recipes/craft-hardwood-wand",
-  "checkedAt": "2026-10-13T17:07:42.463Z",
+  "checkedAt": "2026-10-30T10:13:03.164Z",
   "notice": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial.",
   "fields": [
     {
@@ -18,7 +18,7 @@
     },
     {
       "label": "Meso cost",
-      "value": "1,500"
+      "value": "3,500"
     },
     {
       "label": "Crafts",
@@ -30,7 +30,7 @@
     },
     {
       "label": "Crafting fee (mesos)",
-      "value": "1500"
+      "value": "3500"
     },
     {
       "label": "Result quantity",
@@ -46,8 +46,8 @@
       "title": "Makes",
       "links": [
         {
-          "name": "Hardwood Wand",
-          "path": "/items/hardwood-wand",
+          "name": "Battle Crossbow",
+          "path": "/items/battle-crossbow",
           "detail": ""
         }
       ],
@@ -57,14 +57,14 @@
       "title": "Ingredients",
       "links": [
         {
-          "name": "Orange Mushroom Cap",
-          "path": "/items/orange-mushroom-cap",
-          "detail": "x30"
-        },
-        {
           "name": "Processed Wood",
           "path": "/items/processed-wood",
           "detail": "x5"
+        },
+        {
+          "name": "Screw",
+          "path": "/items/screw",
+          "detail": "x9"
         }
       ],
       "total": 2
@@ -73,8 +73,8 @@
       "title": "Optional catalyst",
       "links": [
         {
-          "name": "One-Handed Weapon Crafting Catalyst",
-          "path": "/items/one-handed-weapon-crafting-catalyst",
+          "name": "Two-Handed Weapon Crafting Catalyst",
+          "path": "/items/two-handed-weapon-crafting-catalyst",
           "detail": ""
         }
       ],
@@ -84,8 +84,8 @@
       "title": "Result",
       "links": [
         {
-          "name": "Hardwood Wand",
-          "path": "/items/hardwood-wand",
+          "name": "Battle Crossbow",
+          "path": "/items/battle-crossbow",
           "detail": "Quantity: 1"
         }
       ],
@@ -95,8 +95,8 @@
       "title": "Catalyst",
       "links": [
         {
-          "name": "One-Handed Weapon Crafting Catalyst",
-          "path": "/items/one-handed-weapon-crafting-catalyst",
+          "name": "Two-Handed Weapon Crafting Catalyst",
+          "path": "/items/two-handed-weapon-crafting-catalyst",
           "detail": "Quantity: 1"
         }
       ],

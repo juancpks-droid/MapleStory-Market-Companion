@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "item": {
+    "key": "gms83:1051037",
+    "name": "Blue Lumati",
+    "id": "1051037",
+    "category": "Equipment"
+  },
+  "kind": "npc",
+  "checkedAt": "2026-10-30T10:13:27.152Z",
+  "data": {
+    "sell": 19800,
+    "buy": null,
+    "source": "CCPLZ",
+    "url": "https://ccplz.cc/items/blue-lumati",
+    "checkedAt": "2026-10-30T10:13:27.152Z"
+  },
+  "provenance": {
+    "source": "CCPLZ",
+    "sourceUrl": "https://ccplz.cc/items/blue-lumati",
+    "coverage": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial."
+  }
+}

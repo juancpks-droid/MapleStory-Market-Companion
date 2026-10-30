@@ -5,7 +5,7 @@
   "name": "Jr. Yeti",
   "source": "CCPLZ",
   "sourceUrl": "https://ccplz.cc/monsters/jr-yeti",
-  "checkedAt": "2026-10-13T17:07:48.454Z",
+  "checkedAt": "2026-10-30T10:13:09.267Z",
   "notice": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial.",
   "fields": [
     {
@@ -96,97 +96,62 @@
       "title": "Drops",
       "links": [
         {
-          "name": "Blue Anakarune",
-          "path": "/items/blue-anakarune",
-          "detail": "Overall, 0.07% historical rate"
+          "name": "Animal Fur Bundle",
+          "path": "/items/animal-fur-bundle",
+          "detail": "Monster drops"
         },
         {
-          "name": "Blue Lumati",
-          "path": "/items/blue-lumati",
-          "detail": "Overall, 0.07% historical rate"
+          "name": "Arrows for Bows",
+          "path": "/items/arrows-for-bows",
+          "detail": "Arrows for bows, about 1.1%, usual for its kind"
         },
         {
-          "name": "Blue Potion (for Olaf's Training: Olaf's First Training)",
+          "name": "Arrows for Crossbows",
+          "path": "/items/arrows-for-crossbows",
+          "detail": "Arrows for crossbows, about 1.1%, usual for its kind"
+        },
+        {
+          "name": "Blue Potion",
           "path": "/items/blue-potion",
-          "detail": "Potions, 10% historical rate"
+          "detail": "Potions, about 2.4%, usual for its kind"
         },
         {
-          "name": "Crescent Polearm",
-          "path": "/items/crescent-polearm",
-          "detail": "Polearm, 0.07% historical rate"
-        },
-        {
-          "name": "Crossbow Attack Scroll: Greater",
-          "path": "/items/crossbow-attack-scroll-greater",
-          "detail": "Crossbow scrolls, 0.03% historical rate"
-        },
-        {
-          "name": "Earring LUK Scroll: Intermediate",
-          "path": "/items/earring-luk-scroll-intermediate",
-          "detail": "Earring scrolls, 0.03% historical rate"
-        },
-        {
-          "name": "Elixir",
-          "path": "/items/elixir",
-          "detail": "Potions, 2% historical rate"
-        },
-        {
-          "name": "Gloves Attack Scroll: Intermediate",
-          "path": "/items/gloves-attack-scroll-intermediate",
-          "detail": "Gloves scrolls, 0.03% historical rate"
+          "name": "Dexterity Crystal Ore",
+          "path": "/items/dexterity-crystal-ore",
+          "detail": "Crafting materials"
         },
         {
           "name": "Jr. Yeti Skin",
           "path": "/items/jr-yeti-skin",
-          "detail": "Monster drops, 60% historical rate"
+          "detail": "Monster drops"
         },
         {
           "name": "Leather",
           "path": "/items/leather",
-          "detail": "Monster drops, 5% historical rate"
+          "detail": "Monster drops"
         },
         {
-          "name": "Mithril Wolfskin",
-          "path": "/items/mithril-wolfskin",
-          "detail": "Gloves, 0.1% historical rate"
+          "name": "Mithril Ore",
+          "path": "/items/mithril-ore",
+          "detail": "Ores & ingots, about 1.2%, usual for its kind"
         },
         {
-          "name": "Purple Salt Shoes",
-          "path": "/items/purple-salt-shoes",
-          "detail": "Shoes, 0.08% historical rate"
+          "name": "Opal Ore",
+          "path": "/items/opal-ore",
+          "detail": "Gems & gem ores, about 1.2%, usual for its kind"
         },
         {
-          "name": "Red Anakarune",
-          "path": "/items/red-anakarune",
-          "detail": "Overall, 0.07% historical rate"
-        },
-        {
-          "name": "Red Viper",
-          "path": "/items/red-viper",
-          "detail": "Bow, 0.05% historical rate"
-        },
-        {
-          "name": "Soft Feather",
-          "path": "/items/soft-feather",
-          "detail": "Crafting materials, 20% historical rate"
-        },
-        {
-          "name": "Umber Mantis",
-          "path": "/items/umber-mantis",
-          "detail": "Topwear, 0.08% historical rate"
-        },
-        {
-          "name": "Umber Mantis Pants",
-          "path": "/items/umber-mantis-pants",
-          "detail": "Bottomwear, 0.08% historical rate"
+          "name": "Overall Armor DEF Scroll: Intermediate",
+          "path": "/items/overall-armor-def-scroll-intermediate",
+          "detail": "Overall scrolls"
         },
         {
           "name": "White Potion",
           "path": "/items/white-potion",
-          "detail": "Potions, 10% historical rate"
+          "detail": "Potions, about 2.4%, usual for its kind"
         }
       ],
-      "total": 18
+      "total": 11
     }
   ]
 }
