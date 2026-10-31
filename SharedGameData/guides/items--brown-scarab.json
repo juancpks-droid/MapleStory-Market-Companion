@@ -1,0 +1,100 @@
+{
+  "schemaVersion": 1,
+  "path": "/items/brown-scarab",
+  "kind": "item",
+  "name": "Brown Scarab",
+  "source": "CCPLZ",
+  "sourceUrl": "https://ccplz.cc/items/brown-scarab",
+  "checkedAt": "2026-10-31T10:00:25.293Z",
+  "notice": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial.",
+  "fields": [
+    {
+      "label": "Type",
+      "value": "Claw"
+    },
+    {
+      "label": "Required level",
+      "value": "70"
+    },
+    {
+      "label": "Class",
+      "value": "Thief"
+    },
+    {
+      "label": "Weapon attack",
+      "value": "+46"
+    },
+    {
+      "label": "Upgrade slots",
+      "value": "7"
+    },
+    {
+      "label": "NPC sell price",
+      "value": "26,500 mesos"
+    },
+    {
+      "label": "Required STR",
+      "value": "0"
+    },
+    {
+      "label": "Required DEX",
+      "value": "70"
+    },
+    {
+      "label": "Required INT",
+      "value": "0"
+    },
+    {
+      "label": "Required LUK",
+      "value": "145"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Similar equipment",
+      "links": [
+        {
+          "name": "Black Scarab",
+          "path": "/items/black-scarab",
+          "detail": "Level 70"
+        },
+        {
+          "name": "Blue Scarab",
+          "path": "/items/blue-scarab",
+          "detail": "Level 70"
+        },
+        {
+          "name": "Green Scarab",
+          "path": "/items/green-scarab",
+          "detail": "Level 70"
+        },
+        {
+          "name": "Blood Gigantic",
+          "path": "/items/blood-gigantic",
+          "detail": "Level 60"
+        },
+        {
+          "name": "Bronze Gigantic",
+          "path": "/items/bronze-gigantic",
+          "detail": "Level 60"
+        },
+        {
+          "name": "Dark Gigantic",
+          "path": "/items/dark-gigantic",
+          "detail": "Level 60"
+        },
+        {
+          "name": "Sapphire Gigantic",
+          "path": "/items/sapphire-gigantic",
+          "detail": "Level 60"
+        },
+        {
+          "name": "Blood Slain",
+          "path": "/items/blood-slain",
+          "detail": "Level 50"
+        }
+      ],
+      "total": 8
+    }
+  ]
+}

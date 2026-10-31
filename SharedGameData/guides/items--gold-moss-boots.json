@@ -1,0 +1,112 @@
+{
+  "schemaVersion": 1,
+  "path": "/items/gold-moss-boots",
+  "kind": "item",
+  "name": "Gold Moss Boots",
+  "source": "CCPLZ",
+  "sourceUrl": "https://ccplz.cc/items/gold-moss-boots",
+  "checkedAt": "2026-10-31T10:00:31.228Z",
+  "notice": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial.",
+  "fields": [
+    {
+      "label": "Type",
+      "value": "Shoes"
+    },
+    {
+      "label": "Required level",
+      "value": "60"
+    },
+    {
+      "label": "Class",
+      "value": "Thief"
+    },
+    {
+      "label": "Weapon defense",
+      "value": "+30"
+    },
+    {
+      "label": "DEX",
+      "value": "+3"
+    },
+    {
+      "label": "Avoidability",
+      "value": "+6"
+    },
+    {
+      "label": "Speed",
+      "value": "+3"
+    },
+    {
+      "label": "Upgrade slots",
+      "value": "5"
+    },
+    {
+      "label": "NPC sell price",
+      "value": "9,000 mesos"
+    },
+    {
+      "label": "Required STR",
+      "value": "0"
+    },
+    {
+      "label": "Required DEX",
+      "value": "50"
+    },
+    {
+      "label": "Required INT",
+      "value": "0"
+    },
+    {
+      "label": "Required LUK",
+      "value": "110"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Similar equipment",
+      "links": [
+        {
+          "name": "Blood Camel Boots",
+          "path": "/items/blood-camel-boots",
+          "detail": "Level 60"
+        },
+        {
+          "name": "Blood Moss Boots",
+          "path": "/items/blood-moss-boots",
+          "detail": "Level 60"
+        },
+        {
+          "name": "Blue Goldrunners",
+          "path": "/items/blue-goldrunners",
+          "detail": "Level 60"
+        },
+        {
+          "name": "Blue Gore Boots",
+          "path": "/items/blue-gore-boots",
+          "detail": "Level 60"
+        },
+        {
+          "name": "Dark Moss Boots",
+          "path": "/items/dark-moss-boots",
+          "detail": "Level 60"
+        },
+        {
+          "name": "Green Goldrunners",
+          "path": "/items/green-goldrunners",
+          "detail": "Level 60"
+        },
+        {
+          "name": "Green Gore Boots",
+          "path": "/items/green-gore-boots",
+          "detail": "Level 60"
+        },
+        {
+          "name": "Orange Goldrunners",
+          "path": "/items/orange-goldrunners",
+          "detail": "Level 60"
+        }
+      ],
+      "total": 8
+    }
+  ]
+}

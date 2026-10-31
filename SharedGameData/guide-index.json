@@ -293,6 +293,11 @@
       "kind": "item"
     },
     {
+      "path": "/items/brown-scarab",
+      "name": "Brown Scarab",
+      "kind": "item"
+    },
+    {
       "path": "/items/brown-skullcap",
       "name": "Brown Skullcap",
       "kind": "item"
@@ -578,6 +583,11 @@
       "kind": "item"
     },
     {
+      "path": "/items/gigantic-sledge",
+      "name": "Gigantic Sledge",
+      "kind": "item"
+    },
+    {
       "path": "/items/gloves-attack-scroll-chaos",
       "name": "Gloves Attack Scroll: Chaos",
       "kind": "item"
@@ -603,6 +613,11 @@
       "kind": "item"
     },
     {
+      "path": "/items/gold-moss-boots",
+      "name": "Gold Moss Boots",
+      "kind": "item"
+    },
+    {
       "path": "/items/gold-sneak",
       "name": "Gold Sneak",
       "kind": "item"
@@ -623,8 +638,18 @@
       "kind": "item"
     },
     {
+      "path": "/items/green-elf-shoes",
+      "name": "Green Elf Shoes",
+      "kind": "item"
+    },
+    {
       "path": "/items/green-headband",
       "name": "Green Headband",
+      "kind": "item"
+    },
+    {
+      "path": "/items/green-ice-queen-skirt",
+      "name": "Green Ice Queen Skirt",
       "kind": "item"
     },
     {
@@ -1023,6 +1048,11 @@
       "kind": "monster"
     },
     {
+      "path": "/items/plateon-s-helmet",
+      "name": "Plateon's Helmet",
+      "kind": "item"
+    },
+    {
       "path": "/items/power-crystal-ore",
       "name": "Power Crystal Ore",
       "kind": "item"
@@ -1120,6 +1150,11 @@
     {
       "path": "/items/red-snail-shell",
       "name": "Red Snail Shell",
+      "kind": "item"
+    },
+    {
+      "path": "/items/red-viper",
+      "name": "Red Viper",
       "kind": "item"
     },
     {
@@ -1305,6 +1340,11 @@
     {
       "path": "/items/sniper-potion",
       "name": "Sniper Potion",
+      "kind": "item"
+    },
+    {
+      "path": "/items/soft-feather",
+      "name": "Soft Feather",
       "kind": "item"
     },
     {
@@ -1510,6 +1550,16 @@
     {
       "path": "/items/two-handed-sword-attack-scroll-intermediate",
       "name": "Two-handed Sword Attack Scroll: Intermediate",
+      "kind": "item"
+    },
+    {
+      "path": "/items/umber-mantis",
+      "name": "Umber Mantis",
+      "kind": "item"
+    },
+    {
+      "path": "/items/umber-mantis-pants",
+      "name": "Umber Mantis Pants",
       "kind": "item"
     },
     {

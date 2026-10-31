@@ -1,0 +1,122 @@
+{
+  "schemaVersion": 1,
+  "path": "/items/red-viper",
+  "kind": "item",
+  "name": "Red Viper",
+  "source": "CCPLZ",
+  "sourceUrl": "https://ccplz.cc/items/red-viper",
+  "checkedAt": "2026-10-31T10:00:13.130Z",
+  "notice": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial.",
+  "fields": [
+    {
+      "label": "Type",
+      "value": "Bow"
+    },
+    {
+      "label": "Required level",
+      "value": "35"
+    },
+    {
+      "label": "Class",
+      "value": "Bowman"
+    },
+    {
+      "label": "Weapon attack",
+      "value": "+52"
+    },
+    {
+      "label": "Upgrade slots",
+      "value": "7"
+    },
+    {
+      "label": "NPC sell price",
+      "value": "9,000 mesos"
+    },
+    {
+      "label": "Required STR",
+      "value": "35"
+    },
+    {
+      "label": "Required DEX",
+      "value": "75"
+    },
+    {
+      "label": "Required INT",
+      "value": "0"
+    },
+    {
+      "label": "Required LUK",
+      "value": "0"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Dropped by",
+      "links": [
+        {
+          "name": "Fire Boar",
+          "path": "/monsters/fire-boar",
+          "detail": "Level 32, about 0.22%, usual for its kind"
+        }
+      ],
+      "total": 1
+    },
+    {
+      "title": "How to craft it",
+      "links": [
+        {
+          "name": "Red Viper",
+          "path": "/recipes/craft-red-viper",
+          "detail": "Crafting skill level 7"
+        }
+      ],
+      "total": 1
+    },
+    {
+      "title": "Similar equipment",
+      "links": [
+        {
+          "name": "Ryden",
+          "path": "/items/ryden",
+          "detail": "Level 30"
+        },
+        {
+          "name": "Vaulter 2000",
+          "path": "/items/vaulter-2000",
+          "detail": "Level 40"
+        },
+        {
+          "name": "Battle Bow",
+          "path": "/items/battle-bow",
+          "detail": "Level 25"
+        },
+        {
+          "name": "Hunter's Bow",
+          "path": "/items/hunter-s-bow",
+          "detail": "Level 20"
+        },
+        {
+          "name": "Olympus",
+          "path": "/items/olympus",
+          "detail": "Level 50"
+        },
+        {
+          "name": "Composite Bow",
+          "path": "/items/composite-bow",
+          "detail": "Level 15"
+        },
+        {
+          "name": "Beginner's War Bow",
+          "path": "/items/beginner-s-war-bow",
+          "detail": "Level 10"
+        },
+        {
+          "name": "War Bow",
+          "path": "/items/war-bow",
+          "detail": "Level 10"
+        }
+      ],
+      "total": 8
+    }
+  ]
+}

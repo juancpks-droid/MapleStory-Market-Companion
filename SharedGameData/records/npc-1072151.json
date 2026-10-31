@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "item": {
+    "key": "gms83:1072151",
+    "name": "Gold Moss Boots",
+    "id": "1072151",
+    "category": "Equipment"
+  },
+  "kind": "npc",
+  "checkedAt": "2026-10-31T10:00:31.228Z",
+  "data": {
+    "sell": 9000,
+    "buy": null,
+    "source": "CCPLZ",
+    "url": "https://ccplz.cc/items/gold-moss-boots",
+    "checkedAt": "2026-10-31T10:00:31.228Z"
+  },
+  "provenance": {
+    "source": "CCPLZ",
+    "sourceUrl": "https://ccplz.cc/items/gold-moss-boots",
+    "coverage": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial."
+  }
+}

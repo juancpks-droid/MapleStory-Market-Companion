@@ -5,7 +5,7 @@
   "name": "Plateon",
   "source": "CCPLZ",
   "sourceUrl": "https://ccplz.cc/monsters/plateon",
-  "checkedAt": "2026-10-13T17:07:51.463Z",
+  "checkedAt": "2026-10-31T09:59:49.141Z",
   "notice": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial.",
   "fields": [
     {
@@ -50,102 +50,12 @@
       "title": "Drops",
       "links": [
         {
-          "name": "Arrows for Bows",
-          "path": "/items/arrows-for-bows",
-          "detail": "Arrows for bows, 3% historical rate"
-        },
-        {
-          "name": "Arrows for Crossbows",
-          "path": "/items/arrows-for-crossbows",
-          "detail": "Arrows for crossbows, 3% historical rate"
-        },
-        {
-          "name": "Brown Scarab",
-          "path": "/items/brown-scarab",
-          "detail": "Claw, 0.08% historical rate"
-        },
-        {
-          "name": "Elixir",
-          "path": "/items/elixir",
-          "detail": "Potions, 2% historical rate"
-        },
-        {
-          "name": "Gigantic Sledge",
-          "path": "/items/gigantic-sledge",
-          "detail": "Two-handed blunt, 0.05% historical rate"
-        },
-        {
-          "name": "Gloves Attack Scroll: Intermediate",
-          "path": "/items/gloves-attack-scroll-intermediate",
-          "detail": "Gloves scrolls, 0.03% historical rate"
-        },
-        {
-          "name": "Gold Moss Boots",
-          "path": "/items/gold-moss-boots",
-          "detail": "Shoes, 0.08% historical rate"
-        },
-        {
-          "name": "Green Elf Shoes",
-          "path": "/items/green-elf-shoes",
-          "detail": "Shoes, 0.08% historical rate"
-        },
-        {
-          "name": "Green Ice Queen Skirt",
-          "path": "/items/green-ice-queen-skirt",
-          "detail": "Bottomwear, 0.08% historical rate"
-        },
-        {
-          "name": "Mana Elixir",
-          "path": "/items/mana-elixir",
-          "detail": "Potions, 2% historical rate"
-        },
-        {
           "name": "Plateon's Helmet",
           "path": "/items/plateon-s-helmet",
-          "detail": "Monster drops, 60% historical rate"
-        },
-        {
-          "name": "Red Tai",
-          "path": "/items/red-tai",
-          "detail": "Overall, 0.08% historical rate"
-        },
-        {
-          "name": "Sapphire Camel Boots",
-          "path": "/items/sapphire-camel-boots",
-          "detail": "Shoes, 0.08% historical rate"
-        },
-        {
-          "name": "Shield DEF Scroll: Intermediate",
-          "path": "/items/shield-def-scroll-intermediate",
-          "detail": "Shield scrolls, 0.03% historical rate"
-        },
-        {
-          "name": "The Summoning Rock",
-          "path": "/items/the-summoning-rock",
-          "detail": "Magic rocks, 1% historical rate"
-        },
-        {
-          "name": "White Anakamoon",
-          "path": "/items/white-anakamoon",
-          "detail": "Overall, 0.08% historical rate"
-        },
-        {
-          "name": "White Nightfox",
-          "path": "/items/white-nightfox",
-          "detail": "Hat, 0.08% historical rate"
-        },
-        {
-          "name": "White Potion",
-          "path": "/items/white-potion",
-          "detail": "Potions, 10% historical rate"
-        },
-        {
-          "name": "Wisdom Crystal Ore",
-          "path": "/items/wisdom-crystal-ore",
-          "detail": "Crafting materials, 1% historical rate"
+          "detail": "Monster drops"
         }
       ],
-      "total": 19
+      "total": 1
     }
   ]
 }

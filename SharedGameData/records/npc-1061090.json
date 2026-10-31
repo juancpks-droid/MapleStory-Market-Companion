@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "item": {
+    "key": "gms83:1061090",
+    "name": "Green Ice Queen Skirt",
+    "id": "1061090",
+    "category": "Equipment"
+  },
+  "kind": "npc",
+  "checkedAt": "2026-10-31T10:00:37.161Z",
+  "data": {
+    "sell": 12000,
+    "buy": null,
+    "source": "CCPLZ",
+    "url": "https://ccplz.cc/items/green-ice-queen-skirt",
+    "checkedAt": "2026-10-31T10:00:37.161Z"
+  },
+  "provenance": {
+    "source": "CCPLZ",
+    "sourceUrl": "https://ccplz.cc/items/green-ice-queen-skirt",
+    "coverage": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial."
+  }
+}

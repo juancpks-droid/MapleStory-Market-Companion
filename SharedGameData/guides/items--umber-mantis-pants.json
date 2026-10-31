@@ -1,0 +1,104 @@
+{
+  "schemaVersion": 1,
+  "path": "/items/umber-mantis-pants",
+  "kind": "item",
+  "name": "Umber Mantis Pants",
+  "source": "CCPLZ",
+  "sourceUrl": "https://ccplz.cc/items/umber-mantis-pants",
+  "checkedAt": "2026-10-31T10:00:22.242Z",
+  "notice": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial.",
+  "fields": [
+    {
+      "label": "Type",
+      "value": "Bottomwear"
+    },
+    {
+      "label": "Required level",
+      "value": "60"
+    },
+    {
+      "label": "Class",
+      "value": "Thief"
+    },
+    {
+      "label": "Weapon defense",
+      "value": "+47"
+    },
+    {
+      "label": "LUK",
+      "value": "+6"
+    },
+    {
+      "label": "Upgrade slots",
+      "value": "7"
+    },
+    {
+      "label": "NPC sell price",
+      "value": "12,000 mesos"
+    },
+    {
+      "label": "Required STR",
+      "value": "0"
+    },
+    {
+      "label": "Required DEX",
+      "value": "50"
+    },
+    {
+      "label": "Required INT",
+      "value": "0"
+    },
+    {
+      "label": "Required LUK",
+      "value": "110"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Similar equipment",
+      "links": [
+        {
+          "name": "Bloody Mantis Pants",
+          "path": "/items/bloody-mantis-pants",
+          "detail": "Level 60"
+        },
+        {
+          "name": "Blue Ice Queen Skirt",
+          "path": "/items/blue-ice-queen-skirt",
+          "detail": "Level 60"
+        },
+        {
+          "name": "Blue Orientican Pants",
+          "path": "/items/blue-orientican-pants",
+          "detail": "Level 60"
+        },
+        {
+          "name": "Dark Orientican Pants",
+          "path": "/items/dark-orientican-pants",
+          "detail": "Level 60"
+        },
+        {
+          "name": "Dark Scorpio Pants",
+          "path": "/items/dark-scorpio-pants",
+          "detail": "Level 60"
+        },
+        {
+          "name": "Green Ice Queen Skirt",
+          "path": "/items/green-ice-queen-skirt",
+          "detail": "Level 60"
+        },
+        {
+          "name": "Green Orientican Pants",
+          "path": "/items/green-orientican-pants",
+          "detail": "Level 60"
+        },
+        {
+          "name": "Light Mantis Pants",
+          "path": "/items/light-mantis-pants",
+          "detail": "Level 60"
+        }
+      ],
+      "total": 8
+    }
+  ]
+}

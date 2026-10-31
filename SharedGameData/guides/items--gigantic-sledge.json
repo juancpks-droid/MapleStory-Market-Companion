@@ -1,0 +1,100 @@
+{
+  "schemaVersion": 1,
+  "path": "/items/gigantic-sledge",
+  "kind": "item",
+  "name": "Gigantic Sledge",
+  "source": "CCPLZ",
+  "sourceUrl": "https://ccplz.cc/items/gigantic-sledge",
+  "checkedAt": "2026-10-31T10:00:28.257Z",
+  "notice": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial.",
+  "fields": [
+    {
+      "label": "Type",
+      "value": "Two-handed blunt"
+    },
+    {
+      "label": "Required level",
+      "value": "70"
+    },
+    {
+      "label": "Class",
+      "value": "Warrior"
+    },
+    {
+      "label": "Weapon attack",
+      "value": "+95"
+    },
+    {
+      "label": "Upgrade slots",
+      "value": "7"
+    },
+    {
+      "label": "NPC sell price",
+      "value": "26,500 mesos"
+    },
+    {
+      "label": "Required STR",
+      "value": "145"
+    },
+    {
+      "label": "Required DEX",
+      "value": "70"
+    },
+    {
+      "label": "Required INT",
+      "value": "0"
+    },
+    {
+      "label": "Required LUK",
+      "value": "0"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Similar equipment",
+      "links": [
+        {
+          "name": "The Blessing",
+          "path": "/items/the-blessing",
+          "detail": "Level 60"
+        },
+        {
+          "name": "Golden Mole",
+          "path": "/items/golden-mole",
+          "detail": "Level 50"
+        },
+        {
+          "name": "Titan",
+          "path": "/items/titan",
+          "detail": "Level 40"
+        },
+        {
+          "name": "Sledgehammer",
+          "path": "/items/sledgehammer",
+          "detail": "Level 35"
+        },
+        {
+          "name": "Mithril Maul",
+          "path": "/items/mithril-maul",
+          "detail": "Level 30"
+        },
+        {
+          "name": "Monkey Wrench",
+          "path": "/items/monkey-wrench",
+          "detail": "Level 25"
+        },
+        {
+          "name": "Square Hammer",
+          "path": "/items/square-hammer",
+          "detail": "Level 20"
+        },
+        {
+          "name": "Heavy Mace",
+          "path": "/items/heavy-mace",
+          "detail": "Level 15"
+        }
+      ],
+      "total": 8
+    }
+  ]
+}
