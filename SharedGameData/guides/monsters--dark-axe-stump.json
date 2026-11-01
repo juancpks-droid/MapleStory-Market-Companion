@@ -1,0 +1,308 @@
+{
+  "schemaVersion": 1,
+  "path": "/monsters/dark-axe-stump",
+  "kind": "monster",
+  "name": "Dark Axe Stump",
+  "source": "CCPLZ",
+  "sourceUrl": "https://ccplz.cc/monsters/dark-axe-stump",
+  "checkedAt": "2026-11-01T10:05:09.641Z",
+  "notice": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial.",
+  "fields": [
+    {
+      "label": "Level",
+      "value": "23"
+    },
+    {
+      "label": "HP",
+      "value": "547"
+    },
+    {
+      "label": "EXP",
+      "value": "43"
+    },
+    {
+      "label": "MP",
+      "value": "30"
+    },
+    {
+      "label": "Attack",
+      "value": "117"
+    },
+    {
+      "label": "Defense",
+      "value": "30"
+    },
+    {
+      "label": "Accuracy",
+      "value": "87"
+    },
+    {
+      "label": "Avoidability",
+      "value": "11"
+    },
+    {
+      "label": "Weak to",
+      "value": "Fire"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Where it spawns",
+      "links": [
+        {
+          "name": "East Rocky Mountain V",
+          "path": "/maps/east-rocky-mountain-v",
+          "detail": "Victoria Island, 25 spawn points"
+        },
+        {
+          "name": "East Rocky Mountain IV",
+          "path": "/maps/east-rocky-mountain-iv",
+          "detail": "Victoria Island, 23 spawn points"
+        },
+        {
+          "name": "East Rocky Mountain VI",
+          "path": "/maps/east-rocky-mountain-vi",
+          "detail": "Victoria Island, 17 spawn points"
+        },
+        {
+          "name": "Perion Dungeon Entrance",
+          "path": "/maps/perion-dungeon-entrance",
+          "detail": "Victoria Island, 15 spawn points"
+        },
+        {
+          "name": "East Rocky Mountain VII",
+          "path": "/maps/east-rocky-mountain-vii",
+          "detail": "Victoria Island, 15 spawn points"
+        },
+        {
+          "name": "West Rocky Mountain IV",
+          "path": "/maps/west-rocky-mountain-iv",
+          "detail": "Victoria Island, 14 spawn points"
+        },
+        {
+          "name": "The Burnt Land III",
+          "path": "/maps/the-burnt-land-iii",
+          "detail": "Victoria Island, 13 spawn points"
+        },
+        {
+          "name": "The Burnt Land II",
+          "path": "/maps/the-burnt-land-ii",
+          "detail": "Victoria Island, 12 spawn points"
+        },
+        {
+          "name": "Rocky Road III",
+          "path": "/maps/rocky-road-iii",
+          "detail": "Victoria Island, 11 spawn points"
+        },
+        {
+          "name": "Deep Valley III",
+          "path": "/maps/deep-valley-iii",
+          "detail": "Victoria Island, 11 spawn points"
+        },
+        {
+          "name": "The Burnt Land IV",
+          "path": "/maps/the-burnt-land-iv",
+          "detail": "Victoria Island, 10 spawn points"
+        },
+        {
+          "name": "The Burnt Land V",
+          "path": "/maps/the-burnt-land-v",
+          "detail": "Victoria Island, 10 spawn points"
+        },
+        {
+          "name": "East Domain of Perion",
+          "path": "/maps/east-domain-of-perion",
+          "detail": "Victoria Island, 10 spawn points"
+        },
+        {
+          "name": "West Rocky Mountain III",
+          "path": "/maps/west-rocky-mountain-iii",
+          "detail": "Victoria Island, 9 spawn points"
+        },
+        {
+          "name": "Deep Valley I",
+          "path": "/maps/deep-valley-i",
+          "detail": "Victoria Island, 8 spawn points"
+        },
+        {
+          "name": "The Burnt Land I",
+          "path": "/maps/the-burnt-land-i",
+          "detail": "Victoria Island, 7 spawn points"
+        },
+        {
+          "name": "Land of Wild Boar",
+          "path": "/maps/land-of-wild-boar",
+          "detail": "Victoria Island, 7 spawn points"
+        },
+        {
+          "name": "Sleepy Dungeon II",
+          "path": "/maps/sleepy-dungeon-ii",
+          "detail": "Victoria Island, 7 spawn points"
+        },
+        {
+          "name": "Damp Tree-Forest",
+          "path": "/maps/damp-tree-forest",
+          "detail": "Victoria Island, 6 spawn points"
+        },
+        {
+          "name": "Over the Wall",
+          "path": "/maps/over-the-wall",
+          "detail": "Victoria Island, 5 spawn points"
+        },
+        {
+          "name": "Deep Valley II",
+          "path": "/maps/deep-valley-ii",
+          "detail": "Victoria Island, 5 spawn points"
+        },
+        {
+          "name": "Rocky Road II",
+          "path": "/maps/rocky-road-ii",
+          "detail": "Victoria Island, 5 spawn points"
+        },
+        {
+          "name": "Parched Land",
+          "path": "/maps/parched-land",
+          "detail": "Victoria Island, 2 spawn points"
+        },
+        {
+          "name": "The Land of Wild Boar II",
+          "path": "/maps/the-land-of-wild-boar-ii",
+          "detail": "Victoria Island, 2 spawn points"
+        },
+        {
+          "name": "Deep Forest",
+          "path": "/maps/deep-forest",
+          "detail": "Victoria Island, 2 spawn points"
+        }
+      ],
+      "total": 25
+    },
+    {
+      "title": "Drops",
+      "links": [
+        {
+          "name": "Black Jester",
+          "path": "/items/black-jester",
+          "detail": "Hat, about 0.22%, usual for its kind"
+        },
+        {
+          "name": "Blue Legolier",
+          "path": "/items/blue-legolier",
+          "detail": "Topwear, about 0.22%, usual for its kind"
+        },
+        {
+          "name": "Blue Potion",
+          "path": "/items/blue-potion",
+          "detail": "Potions, about 2.4%, usual for its kind"
+        },
+        {
+          "name": "Bronze Football Helmet",
+          "path": "/items/bronze-football-helmet",
+          "detail": "Hat, about 0.22%, usual for its kind"
+        },
+        {
+          "name": "Brown Matty",
+          "path": "/items/brown-matty",
+          "detail": "Hat, about 0.22%, usual for its kind"
+        },
+        {
+          "name": "Diamond Ore",
+          "path": "/items/diamond-ore",
+          "detail": "Gems & gem ores, about 1.2%, usual for its kind"
+        },
+        {
+          "name": "Firewood",
+          "path": "/items/firewood",
+          "detail": "Monster drops, 30% drop rate, 10 kills counted"
+        },
+        {
+          "name": "Green Able Armor Skirt",
+          "path": "/items/green-able-armor-skirt",
+          "detail": "Bottomwear, about 0.22%, usual for its kind"
+        },
+        {
+          "name": "Green Legolier",
+          "path": "/items/green-legolier",
+          "detail": "Topwear, about 0.22%, usual for its kind"
+        },
+        {
+          "name": "Iron Ore",
+          "path": "/items/iron-ore",
+          "detail": "Ores & ingots, about 1.2%, usual for its kind"
+        },
+        {
+          "name": "Machete",
+          "path": "/items/machete",
+          "detail": "One-handed sword, about 0.22%, usual for its kind"
+        },
+        {
+          "name": "Monster Card",
+          "path": "/items/monster-card",
+          "detail": "Quest items"
+        },
+        {
+          "name": "Old Wooden Staff",
+          "path": "/items/old-wooden-staff",
+          "detail": "Staff, about 0.22%, usual for its kind"
+        },
+        {
+          "name": "One-Handed Sword Attack Scroll: Greater",
+          "path": "/items/one-handed-sword-attack-scroll-greater",
+          "detail": "One-handed sword scrolls"
+        },
+        {
+          "name": "Orange Potion",
+          "path": "/items/orange-potion",
+          "detail": "Potions, about 2.4%, usual for its kind"
+        },
+        {
+          "name": "Orihalcon Ore",
+          "path": "/items/orihalcon-ore",
+          "detail": "Ores & ingots, about 1.2%, usual for its kind"
+        },
+        {
+          "name": "Red Pole-Feather Hat",
+          "path": "/items/red-pole-feather-hat",
+          "detail": "Hat, about 0.22%, usual for its kind"
+        },
+        {
+          "name": "Sap of Ancient Tree",
+          "path": "/items/sap-of-ancient-tree",
+          "detail": "Tonics, about 2.4%, usual for its kind"
+        },
+        {
+          "name": "Stump's Teardrop",
+          "path": "/items/stump-s-teardrop",
+          "detail": "Quest items"
+        },
+        {
+          "name": "Wooden Top",
+          "path": "/items/wooden-top",
+          "detail": "Throwing stars"
+        }
+      ],
+      "total": 20
+    },
+    {
+      "title": "Quests that need it",
+      "links": [
+        {
+          "name": "A Blacksmith in My Own Right!",
+          "path": "/quests/a-blacksmith-in-my-own-right",
+          "detail": "Level 25"
+        },
+        {
+          "name": "A Carpenter in My Own Right!",
+          "path": "/quests/a-carpenter-in-my-own-right",
+          "detail": "Level 25"
+        },
+        {
+          "name": "Jane the Alchemist (Jane's Final Challenge)",
+          "path": "/quests/jane-s-final-challenge",
+          "detail": "Level 44"
+        }
+      ],
+      "total": 3
+    }
+  ]
+}

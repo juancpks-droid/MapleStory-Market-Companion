@@ -1,0 +1,199 @@
+{
+  "schemaVersion": 1,
+  "path": "/items/dragon-skin",
+  "kind": "item",
+  "name": "Dragon Skin",
+  "source": "CCPLZ",
+  "sourceUrl": "https://ccplz.cc/items/dragon-skin",
+  "checkedAt": "2026-11-01T10:05:15.656Z",
+  "notice": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial.",
+  "fields": [
+    {
+      "label": "Type",
+      "value": "Monster drops"
+    },
+    {
+      "label": "NPC sell price",
+      "value": "200 mesos"
+    },
+    {
+      "label": "Stack limit",
+      "value": "200"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Dropped by",
+      "links": [
+        {
+          "name": "Copper Drake",
+          "path": "/monsters/copper-drake",
+          "detail": "Level 45"
+        },
+        {
+          "name": "Drake",
+          "path": "/monsters/drake",
+          "detail": "Level 50"
+        },
+        {
+          "name": "Red Drake",
+          "path": "/monsters/red-drake",
+          "detail": "Level 60"
+        }
+      ],
+      "total": 3
+    },
+    {
+      "title": "Needed for quests",
+      "links": [
+        {
+          "name": "A Gift for a Citizen of Honor (A Craftsman's Touch)",
+          "path": "/quests/a-craftsman-s-touch",
+          "detail": "Level 57"
+        },
+        {
+          "name": "Jane the Alchemist (Jane's Final Challenge)",
+          "path": "/quests/jane-s-final-challenge",
+          "detail": "Level 44"
+        },
+        {
+          "name": "Luke the Security Guy's Wish to Travel",
+          "path": "/quests/luke-the-security-guy-s-wish-to-travel",
+          "detail": "Level 46"
+        },
+        {
+          "name": "Pia's Present For a Friend",
+          "path": "/quests/pia-s-present-for-a-friend",
+          "detail": "Level 42"
+        },
+        {
+          "name": "Ronnie & the Fairies Building a New House (Last Material Delivery for Building a New House)",
+          "path": "/quests/last-material-delivery-for-building-a-new-house",
+          "detail": "Level 41"
+        }
+      ],
+      "total": 5
+    },
+    {
+      "title": "Used in crafting",
+      "links": [
+        {
+          "name": "Blue Goldwind Shoes",
+          "path": "/recipes/craft-blue-goldwind-shoes",
+          "detail": ""
+        },
+        {
+          "name": "Blue Goni Shoes",
+          "path": "/recipes/craft-blue-goni-shoes",
+          "detail": ""
+        },
+        {
+          "name": "Blue Moon Gloves",
+          "path": "/recipes/craft-blue-moon-gloves",
+          "detail": ""
+        },
+        {
+          "name": "Blue Steel-Tip Boots",
+          "path": "/recipes/craft-blue-steel-tip-boots",
+          "detail": ""
+        },
+        {
+          "name": "Blue Willow",
+          "path": "/recipes/craft-blue-willow",
+          "detail": ""
+        },
+        {
+          "name": "Brown Moon Gloves",
+          "path": "/recipes/craft-brown-moon-gloves",
+          "detail": ""
+        },
+        {
+          "name": "Brown Steel-Tip Boots",
+          "path": "/recipes/craft-brown-steel-tip-boots",
+          "detail": ""
+        },
+        {
+          "name": "Dark Willow",
+          "path": "/recipes/craft-dark-willow",
+          "detail": ""
+        },
+        {
+          "name": "Emerald Hildon Boots",
+          "path": "/recipes/craft-emerald-hildon-boots",
+          "detail": ""
+        },
+        {
+          "name": "Gold Hildon Boots",
+          "path": "/recipes/craft-gold-hildon-boots",
+          "detail": ""
+        },
+        {
+          "name": "Green Goldwind Shoes",
+          "path": "/recipes/craft-green-goldwind-shoes",
+          "detail": ""
+        },
+        {
+          "name": "Green Goni Shoes",
+          "path": "/recipes/craft-green-goni-shoes",
+          "detail": ""
+        },
+        {
+          "name": "Green Steel-Tip Boots",
+          "path": "/recipes/craft-green-steel-tip-boots",
+          "detail": ""
+        },
+        {
+          "name": "Mithril Hildon Boots",
+          "path": "/recipes/craft-mithril-hildon-boots",
+          "detail": ""
+        },
+        {
+          "name": "Orihalcon Hildon Boots",
+          "path": "/recipes/craft-orihalcon-hildon-boots",
+          "detail": ""
+        },
+        {
+          "name": "Pink Goldwind Shoes",
+          "path": "/recipes/craft-pink-goldwind-shoes",
+          "detail": ""
+        },
+        {
+          "name": "Purple Goldwind Shoes",
+          "path": "/recipes/craft-purple-goldwind-shoes",
+          "detail": ""
+        },
+        {
+          "name": "Purple Goni Shoes",
+          "path": "/recipes/craft-purple-goni-shoes",
+          "detail": ""
+        },
+        {
+          "name": "Purple Steel-Tip Boots",
+          "path": "/recipes/craft-purple-steel-tip-boots",
+          "detail": ""
+        },
+        {
+          "name": "Red Goni Shoes",
+          "path": "/recipes/craft-red-goni-shoes",
+          "detail": ""
+        },
+        {
+          "name": "Red Moon Gloves",
+          "path": "/recipes/craft-red-moon-gloves",
+          "detail": ""
+        },
+        {
+          "name": "Red Willow",
+          "path": "/recipes/craft-red-willow",
+          "detail": ""
+        },
+        {
+          "name": "Steel Slain",
+          "path": "/recipes/craft-steel-slain",
+          "detail": ""
+        }
+      ],
+      "total": 23
+    }
+  ]
+}

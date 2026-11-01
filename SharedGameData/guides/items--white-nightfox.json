@@ -1,0 +1,104 @@
+{
+  "schemaVersion": 1,
+  "path": "/items/white-nightfox",
+  "kind": "item",
+  "name": "White Nightfox",
+  "source": "CCPLZ",
+  "sourceUrl": "https://ccplz.cc/items/white-nightfox",
+  "checkedAt": "2026-11-01T10:04:57.649Z",
+  "notice": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial.",
+  "fields": [
+    {
+      "label": "Type",
+      "value": "Hat"
+    },
+    {
+      "label": "Required level",
+      "value": "70"
+    },
+    {
+      "label": "Class",
+      "value": "Thief"
+    },
+    {
+      "label": "Weapon defense",
+      "value": "+51"
+    },
+    {
+      "label": "LUK",
+      "value": "+7"
+    },
+    {
+      "label": "Upgrade slots",
+      "value": "7"
+    },
+    {
+      "label": "NPC sell price",
+      "value": "11,400 mesos"
+    },
+    {
+      "label": "Required STR",
+      "value": "0"
+    },
+    {
+      "label": "Required DEX",
+      "value": "60"
+    },
+    {
+      "label": "Required INT",
+      "value": "0"
+    },
+    {
+      "label": "Required LUK",
+      "value": "130"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Similar equipment",
+      "links": [
+        {
+          "name": "Beige Patriot",
+          "path": "/items/beige-patriot",
+          "detail": "Level 70"
+        },
+        {
+          "name": "Blood Nightfox",
+          "path": "/items/blood-nightfox",
+          "detail": "Level 70"
+        },
+        {
+          "name": "Blue Infinium Circlet",
+          "path": "/items/blue-infinium-circlet",
+          "detail": "Level 70"
+        },
+        {
+          "name": "Blue Nightfox",
+          "path": "/items/blue-nightfox",
+          "detail": "Level 70"
+        },
+        {
+          "name": "Blue Patriot",
+          "path": "/items/blue-patriot",
+          "detail": "Level 70"
+        },
+        {
+          "name": "Bronze Planet",
+          "path": "/items/bronze-planet",
+          "detail": "Level 70"
+        },
+        {
+          "name": "Brown Nightfox",
+          "path": "/items/brown-nightfox",
+          "detail": "Level 70"
+        },
+        {
+          "name": "Dark Infinium Circlet",
+          "path": "/items/dark-infinium-circlet",
+          "detail": "Level 70"
+        }
+      ],
+      "total": 8
+    }
+  ]
+}

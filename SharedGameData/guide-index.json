@@ -418,6 +418,11 @@
       "kind": "map"
     },
     {
+      "path": "/monsters/dark-axe-stump",
+      "name": "Dark Axe Stump",
+      "kind": "monster"
+    },
+    {
       "path": "/monsters/dark-leatty",
       "name": "Dark Leatty",
       "kind": "monster"
@@ -496,6 +501,16 @@
       "path": "/items/double-axe",
       "name": "Double Axe",
       "kind": "item"
+    },
+    {
+      "path": "/items/dragon-skin",
+      "name": "Dragon Skin",
+      "kind": "item"
+    },
+    {
+      "path": "/monsters/drake",
+      "name": "Drake",
+      "kind": "monster"
     },
     {
       "path": "/maps/drake-s-meal-table",
@@ -788,8 +803,18 @@
       "kind": "map"
     },
     {
+      "path": "/npcs/jane",
+      "name": "Jane",
+      "kind": "npc"
+    },
+    {
       "path": "/quests/jane-s-final-challenge",
       "name": "Jane the Alchemist (Jane's Final Challenge)",
+      "kind": "quest"
+    },
+    {
+      "path": "/quests/jane-s-second-challenge",
+      "name": "Jane the Alchemist (Jane's Second Challenge)",
       "kind": "quest"
     },
     {
@@ -1153,6 +1178,11 @@
       "kind": "item"
     },
     {
+      "path": "/items/red-tai",
+      "name": "Red Tai",
+      "kind": "item"
+    },
+    {
       "path": "/items/red-viper",
       "name": "Red Viper",
       "kind": "item"
@@ -1226,6 +1256,11 @@
       "path": "/quests/sam-s-suggestion",
       "name": "Sam's Suggestion",
       "kind": "quest"
+    },
+    {
+      "path": "/items/sapphire-camel-boots",
+      "name": "Sapphire Camel Boots",
+      "kind": "item"
     },
     {
       "path": "/items/scimitar",
@@ -1468,6 +1503,11 @@
       "kind": "map"
     },
     {
+      "path": "/items/the-summoning-rock",
+      "name": "The Summoning Rock",
+      "kind": "item"
+    },
+    {
       "path": "/maps/thicket-around-the-beach-i",
       "name": "Thicket Around the Beach I",
       "kind": "map"
@@ -1588,6 +1628,11 @@
       "kind": "map"
     },
     {
+      "path": "/items/white-anakamoon",
+      "name": "White Anakamoon",
+      "kind": "item"
+    },
+    {
       "path": "/items/white-doros-robe",
       "name": "White Doros Robe",
       "kind": "item"
@@ -1603,6 +1648,11 @@
       "kind": "item"
     },
     {
+      "path": "/items/white-nightfox",
+      "name": "White Nightfox",
+      "kind": "item"
+    },
+    {
       "path": "/items/white-potion",
       "name": "White Potion",
       "kind": "item"
@@ -1610,6 +1660,11 @@
     {
       "path": "/items/white-undershirt",
       "name": "White Undershirt",
+      "kind": "item"
+    },
+    {
+      "path": "/items/wisdom-crystal-ore",
+      "name": "Wisdom Crystal Ore",
       "kind": "item"
     },
     {

@@ -1,0 +1,43 @@
+{
+  "schemaVersion": 1,
+  "path": "/items/the-summoning-rock",
+  "kind": "item",
+  "name": "The Summoning Rock",
+  "source": "CCPLZ",
+  "sourceUrl": "https://ccplz.cc/items/the-summoning-rock",
+  "checkedAt": "2026-11-01T10:04:51.762Z",
+  "notice": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial.",
+  "fields": [
+    {
+      "label": "Type",
+      "value": "Magic rocks"
+    },
+    {
+      "label": "NPC sell price",
+      "value": "1 meso"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Dropped by",
+      "links": [
+        {
+          "name": "Dark Leatty",
+          "path": "/monsters/dark-leatty",
+          "detail": ""
+        },
+        {
+          "name": "Leatty",
+          "path": "/monsters/leatty",
+          "detail": ""
+        },
+        {
+          "name": "White Fang",
+          "path": "/monsters/white-fang",
+          "detail": ""
+        }
+      ],
+      "total": 3
+    }
+  ]
+}

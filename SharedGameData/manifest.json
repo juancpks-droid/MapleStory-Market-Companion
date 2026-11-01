@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "publishedAt": "2026-10-31T10:00:40.218Z",
+  "publishedAt": "2026-11-01T10:05:15.722Z",
   "catalogItems": 12726,
-  "guideRecords": 324,
-  "referenceRecords": 157,
+  "guideRecords": 335,
+  "referenceRecords": 164,
   "entries": [
     {
       "file": "guides/items--5-o-clock-shadow.json",
@@ -489,6 +489,13 @@
       "kind": "item"
     },
     {
+      "file": "guides/items--dragon-skin.json",
+      "bytes": 5377,
+      "sha256": "cf806f2f2f34fb356efad5d2a6ecee95892b134efc978eb26dee1591e8f62706",
+      "checkedAt": "2026-11-01T10:05:15.656Z",
+      "kind": "item"
+    },
+    {
       "file": "guides/items--earring-int-scroll-greater.json",
       "bytes": 1822,
       "sha256": "4d53a0007afd760ffdb457bef9470e8a8f92e07330063bfeed1629cc8bff1f22",
@@ -575,15 +582,15 @@
     {
       "file": "guides/items--gloves-attack-scroll-chaos.json",
       "bytes": 1325,
-      "sha256": "54c2126d3aebadfec53f47009c746458d5398649e988316f1dbb5c3cce259678",
-      "checkedAt": "2026-10-24T09:53:29.113Z",
+      "sha256": "c42fe6aa9c2f587cf7c0295b21776c9b43fffa0a0dfa40212d3de899cb713a85",
+      "checkedAt": "2026-11-01T10:04:42.677Z",
       "kind": "item"
     },
     {
       "file": "guides/items--gloves-attack-scroll-greater.json",
       "bytes": 1583,
-      "sha256": "a392918f4d705d6507c1d858db7f7a668893003ac285d6ae6779e61859ad5b2d",
-      "checkedAt": "2026-10-24T09:53:26.087Z",
+      "sha256": "7e8166d0071e66cad16953bb168392d8726e6df6909243c6f431119a00d65329",
+      "checkedAt": "2026-11-01T10:04:39.669Z",
       "kind": "item"
     },
     {
@@ -596,8 +603,8 @@
     {
       "file": "guides/items--gloves-attack-scroll-lesser.json",
       "bytes": 1818,
-      "sha256": "66803b34f80225264b655daa2742643b014476c00695957749130a46d468bd7e",
-      "checkedAt": "2026-10-24T09:53:23.099Z",
+      "sha256": "a53d15fab34dacd45bab5eb3b413e42144de5a03a75ae2e5ebc26dedf759e2e7",
+      "checkedAt": "2026-11-01T10:04:36.632Z",
       "kind": "item"
     },
     {
@@ -1049,6 +1056,13 @@
       "kind": "item"
     },
     {
+      "file": "guides/items--red-tai.json",
+      "bytes": 2258,
+      "sha256": "3affb9db4a96151edde3f6385ad87ed622253f2ae699d8b9b5b6f6dd39a9dc5d",
+      "checkedAt": "2026-11-01T10:04:45.679Z",
+      "kind": "item"
+    },
+    {
       "file": "guides/items--red-viper.json",
       "bytes": 2650,
       "sha256": "aaad4079dd2a0d8c26c94dbb3af600f3fdda715b734d3f539a115178971fdc69",
@@ -1088,6 +1102,13 @@
       "bytes": 2991,
       "sha256": "e12dd0167b2cf291a72c40a994cec60e6a7590a2df3b415f72ee97a475abc308",
       "checkedAt": "2026-10-19T10:00:40.733Z",
+      "kind": "item"
+    },
+    {
+      "file": "guides/items--sapphire-camel-boots.json",
+      "bytes": 2477,
+      "sha256": "64dc2605875866e62cbb4e57414d8f92c0ff47974f798a3575801f6d46a40539",
+      "checkedAt": "2026-11-01T10:04:48.648Z",
       "kind": "item"
     },
     {
@@ -1210,6 +1231,13 @@
       "kind": "item"
     },
     {
+      "file": "guides/items--the-summoning-rock.json",
+      "bytes": 1045,
+      "sha256": "a2d3da0f6078e8a14c5fc3fb9d691510b65b9f4f326853a7fc71ef0d84618309",
+      "checkedAt": "2026-11-01T10:04:51.762Z",
+      "kind": "item"
+    },
+    {
       "file": "guides/items--thorns.json",
       "bytes": 2140,
       "sha256": "ac7b94c343930ed0bcef446ca289832348a3af48f2d9d9b3093fef8683a8b49e",
@@ -1287,6 +1315,13 @@
       "kind": "item"
     },
     {
+      "file": "guides/items--white-anakamoon.json",
+      "bytes": 2407,
+      "sha256": "c927446b707087a03225f1b3f7a737ff4fe7c17f1cefde1fe8e232737bb54fb6",
+      "checkedAt": "2026-11-01T10:04:54.629Z",
+      "kind": "item"
+    },
+    {
       "file": "guides/items--white-doros-robe.json",
       "bytes": 3036,
       "sha256": "3d5f5a49051512013c93e4576aff210fd5d84b79948f1aa4c94363e20e4186eb",
@@ -1308,6 +1343,13 @@
       "kind": "item"
     },
     {
+      "file": "guides/items--white-nightfox.json",
+      "bytes": 2323,
+      "sha256": "3345012ec451013be462ae259cfce5112bff0fca21cafa49198801a9cfe05fd5",
+      "checkedAt": "2026-11-01T10:04:57.649Z",
+      "kind": "item"
+    },
+    {
       "file": "guides/items--white-potion.json",
       "bytes": 9775,
       "sha256": "98db41ecff8383797a85422ab59a662c5d92d794d3a227d3d4576ad47bb08727",
@@ -1319,6 +1361,13 @@
       "bytes": 2613,
       "sha256": "cfaeecc94128440cbd8ab5e6af90ec61c7a4ffd2e8bbfaf4c3fec373dcf306b2",
       "checkedAt": "2026-10-15T09:57:26.686Z",
+      "kind": "item"
+    },
+    {
+      "file": "guides/items--wisdom-crystal-ore.json",
+      "bytes": 1656,
+      "sha256": "6ff0f00ba1a20e853a1ee29bf852e14903ff37eaadf9ca6557eeed9b447018a0",
+      "checkedAt": "2026-11-01T10:05:00.653Z",
       "kind": "item"
     },
     {
@@ -1373,8 +1422,8 @@
     {
       "file": "guides/maps--dangerous-forest.json",
       "bytes": 1503,
-      "sha256": "bd0f2ce024ae6932f0d948ce3146774a6bd0e1af14cf56639237e2fd3d5c2419",
-      "checkedAt": "2026-10-13T17:08:21.495Z",
+      "sha256": "1bdc5d2c8fc9a0cbbac427817eede06549f538d8d85da3440542809dba533f7a",
+      "checkedAt": "2026-11-01T10:04:33.741Z",
       "kind": "map"
     },
     {
@@ -1681,8 +1730,8 @@
     {
       "file": "guides/maps--snail-hunting-ground-iii.json",
       "bytes": 1508,
-      "sha256": "2626baf5a8e326af8724f694c4933c152a5677eba74f47e29303eb6418813818",
-      "checkedAt": "2026-10-13T17:08:12.493Z",
+      "sha256": "b1a113275bb4406b60654a1e2ae94d341af111d561724be663685de0294f540d",
+      "checkedAt": "2026-11-01T10:04:24.660Z",
       "kind": "map"
     },
     {
@@ -1772,8 +1821,8 @@
     {
       "file": "guides/maps--the-forest-south-of-ellinia.json",
       "bytes": 2432,
-      "sha256": "3de23c7ef9a235b4c7d95d3a5d6ec0da90a11285eed1b8696780fcf17fa195fe",
-      "checkedAt": "2026-10-13T17:08:18.464Z",
+      "sha256": "86d2be4e3a8e97c7d736ec6975b003133823b124f7c48a7aee5573cf7c588034",
+      "checkedAt": "2026-11-01T10:04:30.660Z",
       "kind": "map"
     },
     {
@@ -1793,8 +1842,8 @@
     {
       "file": "guides/maps--thicket-around-the-beach-i.json",
       "bytes": 1788,
-      "sha256": "c15f3a4d4d9d54d96aecc4fb2b09ef717e5c6d6ebf08a83c0ef024829d546beb",
-      "checkedAt": "2026-10-13T17:08:15.486Z",
+      "sha256": "d62f67f06b35b821d540b5f5e1ef76bd7959b98e56144c898a2510272f47f59b",
+      "checkedAt": "2026-11-01T10:04:27.662Z",
       "kind": "map"
     },
     {
@@ -1910,6 +1959,13 @@
       "kind": "monster"
     },
     {
+      "file": "guides/monsters--dark-axe-stump.json",
+      "bytes": 8975,
+      "sha256": "4cc5658897eb5420f3044b7959287563a61ce9a2155743403195846c1bc006c8",
+      "checkedAt": "2026-11-01T10:05:09.641Z",
+      "kind": "monster"
+    },
+    {
       "file": "guides/monsters--dark-leatty.json",
       "bytes": 4199,
       "sha256": "7e34864c4262a3146396ce064e86ab9b4c3265e1e59b3751c7dcbcfccc3e8538",
@@ -1928,6 +1984,13 @@
       "bytes": 5343,
       "sha256": "2d790089bdff1ffa6652f54eac7fec614448dc06c8eca13642f4ee0caa3dfb6a",
       "checkedAt": "2026-10-20T09:56:15.926Z",
+      "kind": "monster"
+    },
+    {
+      "file": "guides/monsters--drake.json",
+      "bytes": 5286,
+      "sha256": "d0db81700689ebd2691fee0fd74a7b8a41c4381c4b9893732249279ac5af7c3a",
+      "checkedAt": "2026-11-01T10:05:12.680Z",
       "kind": "monster"
     },
     {
@@ -2092,6 +2155,13 @@
       "kind": "npc"
     },
     {
+      "file": "guides/npcs--jane.json",
+      "bytes": 1596,
+      "sha256": "474fb1fac16fce30aa968c509c0cfb4327687961a61fa18e34ff9ce4ee175c5e",
+      "checkedAt": "2026-11-01T10:05:03.678Z",
+      "kind": "npc"
+    },
+    {
       "file": "guides/npcs--mai.json",
       "bytes": 1254,
       "sha256": "95c3e18c21d046e21455fdc0e68c2231e7fd33ac39b17e0e6dfba29945948395",
@@ -2187,6 +2257,13 @@
       "bytes": 3029,
       "sha256": "8d2ae74b3d2e6e7eb90f8c45f02cedd9cecdc33ceda9b0a20738a3c2f5fc1881",
       "checkedAt": "2026-10-31T09:59:52.268Z",
+      "kind": "quest"
+    },
+    {
+      "file": "guides/quests--jane-s-second-challenge.json",
+      "bytes": 2453,
+      "sha256": "4e98907b75f7b2a88a793d937dcd3570688eebd14dd2529f7e262df79fe7043a",
+      "checkedAt": "2026-11-01T10:05:06.735Z",
       "kind": "quest"
     },
     {
@@ -2428,6 +2505,13 @@
       "kind": "npc"
     },
     {
+      "file": "records/npc-1002284.json",
+      "bytes": 690,
+      "sha256": "60737a16108122ebcecd5ea51ebfaf23bb5f9ce78a1146f9cfc5521c5b44ce87",
+      "checkedAt": "2026-11-01T10:04:57.649Z",
+      "kind": "npc"
+    },
+    {
       "file": "records/npc-1032019.json",
       "bytes": 717,
       "sha256": "bad371fccba22e4145d57e11b33fcc89806a20e83f2b4a16366f9b3a65523087",
@@ -2537,6 +2621,20 @@
       "bytes": 690,
       "sha256": "bf2a7e08a4afea8fc76861c8f41d764393c15caeebaeb44d2cdee0f8504a45a9",
       "checkedAt": "2026-10-26T10:07:49.519Z",
+      "kind": "npc"
+    },
+    {
+      "file": "records/npc-1050055.json",
+      "bytes": 693,
+      "sha256": "b79d417b9b944de91591b4a81541d339df71ae25d6235153df7e5f81fa55f365",
+      "checkedAt": "2026-11-01T10:04:54.629Z",
+      "kind": "npc"
+    },
+    {
+      "file": "records/npc-1050060.json",
+      "bytes": 669,
+      "sha256": "696d29cd507741025edd47e2e9c95b0b3933119100397648155a6c8c0d5dac04",
+      "checkedAt": "2026-11-01T10:04:45.679Z",
       "kind": "npc"
     },
     {
@@ -2698,6 +2796,13 @@
       "bytes": 698,
       "sha256": "dd465f688b272637c0510c771c1bb5b871645b31f72e5980d085506d66cb9610",
       "checkedAt": "2026-10-30T10:13:48.141Z",
+      "kind": "npc"
+    },
+    {
+      "file": "records/npc-1072147.json",
+      "bytes": 707,
+      "sha256": "5286a3fa7707f1baa908f30b499d471c766ff2c26ec7ba6068273d6a84dfcb20",
+      "checkedAt": "2026-11-01T10:04:48.648Z",
       "kind": "npc"
     },
     {
@@ -3079,6 +3184,13 @@
       "kind": "npc"
     },
     {
+      "file": "records/npc-4000030.json",
+      "bytes": 673,
+      "sha256": "fc9fbe8a3ca2f2d7e51d44dbfb1aadf13bb1c29fc2e096e6f3b18074532a415e",
+      "checkedAt": "2026-11-01T10:05:15.656Z",
+      "kind": "npc"
+    },
+    {
       "file": "records/npc-4000040.json",
       "bytes": 679,
       "sha256": "9e2bc575036058e218ba7085f3f65f1010746b5e9fd1ca0df04ae8277ac8960e",
@@ -3128,10 +3240,24 @@
       "kind": "npc"
     },
     {
+      "file": "records/npc-4004001.json",
+      "bytes": 695,
+      "sha256": "2a154ddd4f782798163515c16c65b8ffc0feb8813f070b7f94b2c9604d280ddc",
+      "checkedAt": "2026-11-01T10:05:00.653Z",
+      "kind": "npc"
+    },
+    {
       "file": "records/npc-4006000.json",
       "bytes": 680,
       "sha256": "610b3b87ecda1f79e7101499457dcf59124b0b592898d66eb93fc1fc99443d70",
       "checkedAt": "2026-10-19T10:00:43.861Z",
+      "kind": "npc"
+    },
+    {
+      "file": "records/npc-4006001.json",
+      "bytes": 692,
+      "sha256": "8d0059bfa1be379afe5588cf7ed9cf2857d0155a71a4b702244b2b2aa13b3601",
+      "checkedAt": "2026-11-01T10:04:51.762Z",
       "kind": "npc"
     },
     {
@@ -3277,8 +3403,8 @@
     {
       "file": "records/npc-classic-2040800.json",
       "bytes": 723,
-      "sha256": "7e449b3e209841ea8ee89be682ca6a508fce974d33f0056d3dadfff041f7c582",
-      "checkedAt": "2026-10-24T09:53:23.099Z",
+      "sha256": "086f43356c75c2a9066b3b5746251cac8cb8575258e8611a70de67e1da5950e1",
+      "checkedAt": "2026-11-01T10:04:36.632Z",
       "kind": "npc"
     },
     {
@@ -3291,15 +3417,15 @@
     {
       "file": "records/npc-classic-2040802.json",
       "bytes": 725,
-      "sha256": "0a7b7545ffbc01971d658f883bb5ef4702d067ee51c15aa0f79d6e3d9a72c242",
-      "checkedAt": "2026-10-24T09:53:26.087Z",
+      "sha256": "9c5821f92508e0ce86270b312ae6532e68cde31bf67d7b284c532ffa4b4cef40",
+      "checkedAt": "2026-11-01T10:04:39.669Z",
       "kind": "npc"
     },
     {
       "file": "records/npc-classic-2040803.json",
       "bytes": 719,
-      "sha256": "e6133a0707a50b92046e94596356cef5c8b119ebdea0513c1afe18766608b515",
-      "checkedAt": "2026-10-24T09:53:29.113Z",
+      "sha256": "80fd3c05d97e50d6ec899824e3ffb09ee166c1e1fafcda81f18725b849d86df4",
+      "checkedAt": "2026-11-01T10:04:42.677Z",
       "kind": "npc"
     },
     {

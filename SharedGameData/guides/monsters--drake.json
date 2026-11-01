@@ -1,0 +1,189 @@
+{
+  "schemaVersion": 1,
+  "path": "/monsters/drake",
+  "kind": "monster",
+  "name": "Drake",
+  "source": "CCPLZ",
+  "sourceUrl": "https://ccplz.cc/monsters/drake",
+  "checkedAt": "2026-11-01T10:05:12.680Z",
+  "notice": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial.",
+  "fields": [
+    {
+      "label": "Level",
+      "value": "50"
+    },
+    {
+      "label": "HP",
+      "value": "3,218"
+    },
+    {
+      "label": "EXP",
+      "value": "133"
+    },
+    {
+      "label": "MP",
+      "value": "150"
+    },
+    {
+      "label": "Attack",
+      "value": "287"
+    },
+    {
+      "label": "Defense",
+      "value": "15"
+    },
+    {
+      "label": "Accuracy",
+      "value": "129"
+    },
+    {
+      "label": "Avoidability",
+      "value": "27"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Where it spawns",
+      "links": [
+        {
+          "name": "Drake's Meal Table",
+          "path": "/maps/drake-s-meal-table",
+          "detail": "Victoria Island, 23 spawn points"
+        },
+        {
+          "name": "The Tunnel That Lost Light I",
+          "path": "/maps/the-tunnel-that-lost-light-i",
+          "detail": "Victoria Island, 20 spawn points"
+        },
+        {
+          "name": "Drake Hunting Ground",
+          "path": "/maps/drake-hunting-ground",
+          "detail": "Victoria Island, 18 spawn points"
+        },
+        {
+          "name": "The Tunnel That Lost Light II",
+          "path": "/maps/the-tunnel-that-lost-light-ii",
+          "detail": "Victoria Island, 15 spawn points"
+        }
+      ],
+      "total": 4
+    },
+    {
+      "title": "Drops",
+      "links": [
+        {
+          "name": "Blue Distinction",
+          "path": "/items/blue-distinction",
+          "detail": "Hat, about 0.22%, usual for its kind"
+        },
+        {
+          "name": "Dark Pilfer",
+          "path": "/items/dark-pilfer",
+          "detail": "Hat, about 0.22%, usual for its kind"
+        },
+        {
+          "name": "Diamond Ore",
+          "path": "/items/diamond-ore",
+          "detail": "Gems & gem ores, about 1.2%, usual for its kind"
+        },
+        {
+          "name": "Dragon Skin",
+          "path": "/items/dragon-skin",
+          "detail": "Monster drops"
+        },
+        {
+          "name": "Drake Skull",
+          "path": "/items/drake-skull",
+          "detail": "Monster drops"
+        },
+        {
+          "name": "Drake's Blood",
+          "path": "/items/drake-s-blood",
+          "detail": "Tonics, about 2.4%, usual for its kind"
+        },
+        {
+          "name": "Drake's Meat",
+          "path": "/items/drake-s-meat",
+          "detail": "Tonics, about 2.4%, usual for its kind"
+        },
+        {
+          "name": "Earring Crit. Damage Scroll: Greater",
+          "path": "/items/earring-crit-damage-scroll-greater",
+          "detail": "Earring scrolls"
+        },
+        {
+          "name": "Gold Ore",
+          "path": "/items/gold-ore",
+          "detail": "Ores & ingots, about 1.2%, usual for its kind"
+        },
+        {
+          "name": "Green Jester",
+          "path": "/items/green-jester",
+          "detail": "Hat, about 0.22%, usual for its kind"
+        },
+        {
+          "name": "Green Lumati",
+          "path": "/items/green-lumati",
+          "detail": "Overall, about 0.22%, usual for its kind"
+        },
+        {
+          "name": "Kumbi Throwing Stars",
+          "path": "/items/kumbi-throwing-stars",
+          "detail": "Throwing stars"
+        },
+        {
+          "name": "Overall Armor LUK Scroll: Intermediate",
+          "path": "/items/overall-armor-luk-scroll-intermediate",
+          "detail": "Overall scrolls"
+        },
+        {
+          "name": "Red Legolia",
+          "path": "/items/red-legolia",
+          "detail": "Topwear, about 0.22%, usual for its kind"
+        },
+        {
+          "name": "Red Legolia Pants",
+          "path": "/items/red-legolia-pants",
+          "detail": "Bottomwear, about 0.22%, usual for its kind"
+        },
+        {
+          "name": "Red Lumati",
+          "path": "/items/red-lumati",
+          "detail": "Overall, about 0.22%, usual for its kind"
+        },
+        {
+          "name": "Sapphire Earrings",
+          "path": "/items/sapphire-earrings",
+          "detail": "Earring, about 0.22%, usual for its kind"
+        },
+        {
+          "name": "Shinkita",
+          "path": "/items/shinkita",
+          "detail": "Dagger, about 0.22%, usual for its kind"
+        },
+        {
+          "name": "Silver Ore",
+          "path": "/items/silver-ore",
+          "detail": "Ores & ingots, about 1.2%, usual for its kind"
+        }
+      ],
+      "total": 19
+    },
+    {
+      "title": "Quests that need it",
+      "links": [
+        {
+          "name": "Jane the Alchemist (Jane's Final Challenge)",
+          "path": "/quests/jane-s-final-challenge",
+          "detail": "Level 44"
+        },
+        {
+          "name": "Ronnie & the Fairies Building a New House (Last Material Delivery for Building a New House)",
+          "path": "/quests/last-material-delivery-for-building-a-new-house",
+          "detail": "Level 41"
+        }
+      ],
+      "total": 2
+    }
+  ]
+}

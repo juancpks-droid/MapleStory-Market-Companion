@@ -1,0 +1,109 @@
+{
+  "schemaVersion": 1,
+  "path": "/quests/jane-s-second-challenge",
+  "kind": "quest",
+  "name": "Jane the Alchemist (Jane's Second Challenge)",
+  "source": "CCPLZ",
+  "sourceUrl": "https://ccplz.cc/quests/jane-s-second-challenge",
+  "checkedAt": "2026-11-01T10:05:06.735Z",
+  "notice": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial.",
+  "fields": [
+    {
+      "label": "Minimum level",
+      "value": "44"
+    },
+    {
+      "label": "Category",
+      "value": "Lith Harbor"
+    },
+    {
+      "label": "EXP reward",
+      "value": "9,940"
+    },
+    {
+      "label": "Meso reward",
+      "value": "1,389"
+    },
+    {
+      "label": "Starts with",
+      "value": "Jane"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Quest NPCs",
+      "links": [
+        {
+          "name": "Jane",
+          "path": "/npcs/jane",
+          "detail": "Starts the quest"
+        }
+      ],
+      "total": 1
+    },
+    {
+      "title": "Complete first",
+      "links": [
+        {
+          "name": "Jane the Alchemist (Jane's First Challenge)",
+          "path": "/quests/jane-s-first-challenge",
+          "detail": ""
+        }
+      ],
+      "total": 1
+    },
+    {
+      "title": "Monsters to defeat",
+      "links": [
+        {
+          "name": "Malady",
+          "path": "/monsters/malady",
+          "detail": "x50"
+        },
+        {
+          "name": "Wraith",
+          "path": "/monsters/wraith",
+          "detail": "x50"
+        }
+      ],
+      "total": 2
+    },
+    {
+      "title": "Items to bring",
+      "links": [
+        {
+          "name": "Drake's Blood",
+          "path": "/items/drake-s-blood",
+          "detail": "x3"
+        },
+        {
+          "name": "Malady's Experimental Frog",
+          "path": "/items/malady-s-experimental-frog",
+          "detail": "x25"
+        },
+        {
+          "name": "Medicine With Weird Vibes",
+          "path": "/items/medicine-with-weird-vibes",
+          "detail": "x25"
+        },
+        {
+          "name": "Mushmom Spore",
+          "path": "/items/mushmom-spore",
+          "detail": "x1"
+        }
+      ],
+      "total": 4
+    },
+    {
+      "title": "Item rewards",
+      "links": [
+        {
+          "name": "Power Elixir",
+          "path": "/items/power-elixir",
+          "detail": ""
+        }
+      ],
+      "total": 1
+    }
+  ]
+}
