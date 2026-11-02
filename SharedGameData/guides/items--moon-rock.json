@@ -1,0 +1,70 @@
+{
+  "schemaVersion": 1,
+  "path": "/items/moon-rock",
+  "kind": "item",
+  "name": "Moon Rock",
+  "source": "CCPLZ",
+  "sourceUrl": "https://ccplz.cc/items/moon-rock",
+  "checkedAt": "2026-11-02T10:26:51.772Z",
+  "notice": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial.",
+  "fields": [
+    {
+      "label": "Type",
+      "value": "Ores & ingots"
+    },
+    {
+      "label": "NPC sell price",
+      "value": "2,000 mesos"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Sold in",
+      "links": [
+        {
+          "name": "Arwen the Fairy's Shop",
+          "path": "/shops/arwen-the-fairy-s-shop",
+          "detail": ""
+        }
+      ],
+      "total": 1
+    },
+    {
+      "title": "Needed for quests",
+      "links": [
+        {
+          "name": "Jane the Alchemist (Jane's Final Challenge)",
+          "path": "/quests/jane-s-final-challenge",
+          "detail": "Level 44"
+        }
+      ],
+      "total": 1
+    },
+    {
+      "title": "Used in crafting",
+      "links": [
+        {
+          "name": "Black Justice Cape",
+          "path": "/recipes/craft-black-justice-cape",
+          "detail": ""
+        },
+        {
+          "name": "Blue Justice Cape",
+          "path": "/recipes/craft-blue-justice-cape",
+          "detail": ""
+        },
+        {
+          "name": "Red Justice Cape",
+          "path": "/recipes/craft-red-justice-cape",
+          "detail": ""
+        },
+        {
+          "name": "White Justice Cape",
+          "path": "/recipes/craft-white-justice-cape",
+          "detail": ""
+        }
+      ],
+      "total": 4
+    }
+  ]
+}

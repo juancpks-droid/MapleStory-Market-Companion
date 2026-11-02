@@ -1,0 +1,106 @@
+{
+  "schemaVersion": 1,
+  "path": "/monsters/crimson-balrog",
+  "kind": "monster",
+  "name": "Crimson Balrog",
+  "source": "CCPLZ",
+  "sourceUrl": "https://ccplz.cc/monsters/crimson-balrog",
+  "checkedAt": "2026-11-02T10:27:21.905Z",
+  "notice": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial.",
+  "fields": [
+    {
+      "label": "Level",
+      "value": "100"
+    },
+    {
+      "label": "HP",
+      "value": "741,240"
+    },
+    {
+      "label": "EXP",
+      "value": "6,000"
+    },
+    {
+      "label": "MP",
+      "value": "700"
+    },
+    {
+      "label": "Attack",
+      "value": "1,192"
+    },
+    {
+      "label": "Defense",
+      "value": "15"
+    },
+    {
+      "label": "Accuracy",
+      "value": "174"
+    },
+    {
+      "label": "Avoidability",
+      "value": "57"
+    },
+    {
+      "label": "Weak to",
+      "value": "Holy"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Drops",
+      "links": [
+        {
+          "name": "Armor Crafting Catalyst",
+          "path": "/items/armor-crafting-catalyst",
+          "detail": "Crafting catalysts"
+        },
+        {
+          "name": "Blue Potion",
+          "path": "/items/blue-potion",
+          "detail": "Potions"
+        },
+        {
+          "name": "Claw Attack Scroll: Greater",
+          "path": "/items/claw-attack-scroll-greater",
+          "detail": "Claw scrolls"
+        },
+        {
+          "name": "Crossbow Attack Scroll: Greater",
+          "path": "/items/crossbow-attack-scroll-greater",
+          "detail": "Crossbow scrolls"
+        },
+        {
+          "name": "Elixir",
+          "path": "/items/elixir",
+          "detail": "Potions"
+        },
+        {
+          "name": "One-Handed Blunt Weapon Attack Scroll: Greater",
+          "path": "/items/one-handed-blunt-weapon-attack-scroll-greater",
+          "detail": "One-handed blunt scrolls"
+        },
+        {
+          "name": "One-Handed Weapon Crafting Catalyst",
+          "path": "/items/one-handed-weapon-crafting-catalyst",
+          "detail": "Crafting catalysts"
+        },
+        {
+          "name": "Polearm Attack Scroll: Greater",
+          "path": "/items/polearm-attack-scroll-greater",
+          "detail": "Polearm scrolls"
+        },
+        {
+          "name": "Two-Handed Weapon Crafting Catalyst",
+          "path": "/items/two-handed-weapon-crafting-catalyst",
+          "detail": "Crafting catalysts"
+        },
+        {
+          "name": "White Potion",
+          "path": "/items/white-potion",
+          "detail": "Potions"
+        }
+      ],
+      "total": 10
+    }
+  ]
+}

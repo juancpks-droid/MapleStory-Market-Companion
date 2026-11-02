@@ -1,0 +1,78 @@
+{
+  "schemaVersion": 1,
+  "path": "/items/gloves-magic-attack-scroll-intermediate",
+  "kind": "item",
+  "name": "Gloves Magic Attack Scroll: Intermediate",
+  "source": "CCPLZ",
+  "sourceUrl": "https://ccplz.cc/items/gloves-magic-attack-scroll-intermediate",
+  "checkedAt": "2026-11-02T10:27:00.798Z",
+  "notice": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial.",
+  "fields": [
+    {
+      "label": "Type",
+      "value": "Gloves scrolls"
+    },
+    {
+      "label": "Magic attack",
+      "value": "+4"
+    },
+    {
+      "label": "NPC sell price",
+      "value": "1 meso"
+    },
+    {
+      "label": "Success rate (%)",
+      "value": "60"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Dropped by",
+      "links": [
+        {
+          "name": "Star Pixie",
+          "path": "/monsters/star-pixie",
+          "detail": ""
+        }
+      ],
+      "total": 1
+    },
+    {
+      "title": "Quest rewards",
+      "links": [
+        {
+          "name": "Jane the Alchemist (Jane's Final Challenge)",
+          "path": "/quests/jane-s-final-challenge",
+          "detail": "Level 44"
+        },
+        {
+          "name": "Rowen the Fairy and the Cursed Doll (Collecting 150 Cursed Dolls)",
+          "path": "/quests/collecting-150-cursed-dolls",
+          "detail": "Level 36"
+        }
+      ],
+      "total": 2
+    },
+    {
+      "title": "Related items",
+      "links": [
+        {
+          "name": "Gloves Magic Attack Scroll: Lesser",
+          "path": "/items/gloves-magic-attack-scroll-lesser",
+          "detail": ""
+        },
+        {
+          "name": "Gloves Magic Attack Scroll: Greater",
+          "path": "/items/gloves-magic-attack-scroll-greater",
+          "detail": ""
+        },
+        {
+          "name": "Gloves Magic Attack Scroll: Chaos",
+          "path": "/items/gloves-magic-attack-scroll-chaos",
+          "detail": ""
+        }
+      ],
+      "total": 3
+    }
+  ]
+}

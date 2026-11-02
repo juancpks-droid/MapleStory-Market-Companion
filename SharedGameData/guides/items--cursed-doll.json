@@ -1,0 +1,84 @@
+{
+  "schemaVersion": 1,
+  "path": "/items/cursed-doll",
+  "kind": "item",
+  "name": "Cursed Doll",
+  "source": "CCPLZ",
+  "sourceUrl": "https://ccplz.cc/items/cursed-doll",
+  "checkedAt": "2026-11-02T10:27:12.804Z",
+  "notice": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial.",
+  "fields": [
+    {
+      "label": "Type",
+      "value": "Monster drops"
+    },
+    {
+      "label": "NPC sell price",
+      "value": "40 mesos"
+    },
+    {
+      "label": "Stack limit",
+      "value": "200"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Dropped by",
+      "links": [
+        {
+          "name": "Zombie Lupin",
+          "path": "/monsters/zombie-lupin",
+          "detail": "Level 41"
+        }
+      ],
+      "total": 1
+    },
+    {
+      "title": "Needed for quests",
+      "links": [
+        {
+          "name": "A Fragile Sanctuary (A Heart of Stillness and Wood) (2 of 2)",
+          "path": "/quests/a-heart-of-stillness-and-wood-10619",
+          "detail": "Level 50"
+        },
+        {
+          "name": "Rowen the Fairy and the Cursed Doll (Collecting 100 Cursed Dolls)",
+          "path": "/quests/collecting-100-cursed-dolls",
+          "detail": "Level 36"
+        },
+        {
+          "name": "Rowen the Fairy and the Cursed Doll (Collecting 150 Cursed Dolls)",
+          "path": "/quests/collecting-150-cursed-dolls",
+          "detail": "Level 36"
+        },
+        {
+          "name": "Rowen the Fairy and the Cursed Doll (Collecting 200 Cursed Dolls)",
+          "path": "/quests/collecting-200-cursed-dolls",
+          "detail": "Level 36"
+        },
+        {
+          "name": "Rowen the Fairy and the Cursed Doll (Collecting 50 Cursed Dolls)",
+          "path": "/quests/collecting-50-cursed-dolls",
+          "detail": "Level 36"
+        },
+        {
+          "name": "Rowen the Fairy and the Cursed Doll (Collecting 70 Cursed Dolls)",
+          "path": "/quests/collecting-70-cursed-dolls",
+          "detail": "Level 36"
+        }
+      ],
+      "total": 6
+    },
+    {
+      "title": "Used in crafting",
+      "links": [
+        {
+          "name": "Brown Pierre Shoes",
+          "path": "/recipes/craft-brown-pierre-shoes",
+          "detail": ""
+        }
+      ],
+      "total": 1
+    }
+  ]
+}

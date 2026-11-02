@@ -1,0 +1,370 @@
+{
+  "schemaVersion": 1,
+  "path": "/maps/ellinia",
+  "kind": "map",
+  "name": "Ellinia",
+  "source": "CCPLZ",
+  "sourceUrl": "https://ccplz.cc/maps/ellinia",
+  "checkedAt": "2026-11-02T10:27:03.778Z",
+  "notice": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial.",
+  "fields": [
+    {
+      "label": "Region",
+      "value": "Victoria Island"
+    },
+    {
+      "label": "Street",
+      "value": "Victoria Road"
+    },
+    {
+      "label": "Type",
+      "value": "Town"
+    }
+  ],
+  "sections": [
+    {
+      "title": "NPCs",
+      "links": [
+        {
+          "name": "Arcane Station",
+          "path": "/npcs/arcane-station",
+          "detail": ""
+        },
+        {
+          "name": "Arwen the Fairy",
+          "path": "/npcs/arwen-the-fairy",
+          "detail": ""
+        },
+        {
+          "name": "Betty",
+          "path": "/npcs/betty",
+          "detail": ""
+        },
+        {
+          "name": "Francois",
+          "path": "/npcs/francois",
+          "detail": "Tailor"
+        },
+        {
+          "name": "Mr. Park",
+          "path": "/npcs/mr-park",
+          "detail": "Storage Keeper"
+        },
+        {
+          "name": "Regular Cab",
+          "path": "/npcs/regular-cab",
+          "detail": ""
+        },
+        {
+          "name": "Rowen the Fairy",
+          "path": "/npcs/rowen-the-fairy",
+          "detail": ""
+        },
+        {
+          "name": "Sewing Machine",
+          "path": "/npcs/sewing-machine",
+          "detail": ""
+        },
+        {
+          "name": "Shane",
+          "path": "/npcs/shane",
+          "detail": ""
+        },
+        {
+          "name": "VIP Cab",
+          "path": "/npcs/vip-cab",
+          "detail": ""
+        },
+        {
+          "name": "Wing the Fairy",
+          "path": "/npcs/wing-the-fairy",
+          "detail": ""
+        },
+        {
+          "name": "Woodcrafting Station",
+          "path": "/npcs/woodworking-station",
+          "detail": ""
+        }
+      ],
+      "total": 12
+    },
+    {
+      "title": "Connected maps",
+      "links": [
+        {
+          "name": "Ellinia",
+          "path": "/maps/ellinia",
+          "detail": "Victoria Road"
+        },
+        {
+          "name": "Ellinia Department Store",
+          "path": "/maps/ellinia-department-store",
+          "detail": "Victoria Road"
+        },
+        {
+          "name": "Ellinia Weapon Store",
+          "path": "/maps/ellinia-weapon-store",
+          "detail": "Victoria Road"
+        },
+        {
+          "name": "Magic Library",
+          "path": "/maps/magic-library",
+          "detail": "Victoria Road"
+        },
+        {
+          "name": "Marr's Forest",
+          "path": "/maps/marr-s-forest",
+          "detail": "Hidden Street"
+        },
+        {
+          "name": "The Field South of Ellinia",
+          "path": "/maps/the-field-south-of-ellinia",
+          "detail": "Victoria Road"
+        },
+        {
+          "name": "The Field Up North of Ellinia",
+          "path": "/maps/the-field-up-north-of-ellinia",
+          "detail": "Victoria Road"
+        }
+      ],
+      "total": 7
+    },
+    {
+      "title": "Shops reported here",
+      "links": [
+        {
+          "name": "Arwen the Fairy's Shop",
+          "path": "/shops/arwen-the-fairy-s-shop",
+          "detail": ""
+        }
+      ],
+      "total": 1
+    },
+    {
+      "title": "Quests set here",
+      "links": [
+        {
+          "name": "\"Mar\" the Fairy and the Water of Life",
+          "path": "/quests/mar-the-fairy-and-the-water-of-life",
+          "detail": ""
+        },
+        {
+          "name": "[Event] A Strange and Familiar Wood",
+          "path": "/quests/event-a-strange-and-familiar-wood",
+          "detail": "Level 10"
+        },
+        {
+          "name": "[Event] Beyond the Unknown",
+          "path": "/quests/event-beyond-the-unknown",
+          "detail": "Level 15"
+        },
+        {
+          "name": "[Forest of Patience] Sabitrama and the Mysterious Medicine (Sabitrama and the Diet Medicine)",
+          "path": "/quests/forest-of-patience-sabitrama-and-the-diet-medicine",
+          "detail": "Level 25"
+        },
+        {
+          "name": "[Forest of Patience] Sabitrama and the Mysterious Medicine (Sabitrama's Anti-Aging Medicine)",
+          "path": "/quests/forest-of-patience-sabitrama-s-anti-aging-medicine",
+          "detail": "Level 50"
+        },
+        {
+          "name": "A Fragile Sanctuary (The Sage's Burden) (2 of 2)",
+          "path": "/quests/the-sage-s-burden-10620",
+          "detail": "Level 50"
+        },
+        {
+          "name": "A Tailor in My Own Right!",
+          "path": "/quests/a-tailor-in-my-own-right",
+          "detail": "Level 25"
+        },
+        {
+          "name": "A Task for a Citizen of Honor (What It Takes)",
+          "path": "/quests/what-it-takes",
+          "detail": "Level 57"
+        },
+        {
+          "name": "Arwen and the Glass Shoe",
+          "path": "/quests/arwen-and-the-glass-shoe",
+          "detail": "Level 29"
+        },
+        {
+          "name": "Dr. Betty's Research on Plants (Research on Animal Fossils)",
+          "path": "/quests/research-on-animal-fossils",
+          "detail": "Level 17"
+        },
+        {
+          "name": "Dr. Betty's Research on Plants (Research on Plant Fossils)",
+          "path": "/quests/research-on-plant-fossils",
+          "detail": "Level 17"
+        },
+        {
+          "name": "Father's Mushroom Stew (How to Enjoy Mushrooms Even More)",
+          "path": "/quests/how-to-enjoy-mushrooms-even-more",
+          "detail": "Level 14"
+        },
+        {
+          "name": "Father's Mushroom Stew (How to Enjoy Mushrooms)",
+          "path": "/quests/how-to-enjoy-mushrooms",
+          "detail": "Level 14"
+        },
+        {
+          "name": "Francois in Need of an Apprentice",
+          "path": "/quests/francois-in-need-of-an-apprentice",
+          "detail": "Level 10"
+        },
+        {
+          "name": "Francois in Need of Help",
+          "path": "/quests/francois-in-need-of-help",
+          "detail": "Level 15"
+        },
+        {
+          "name": "I Need Help on My Homework!",
+          "path": "/quests/i-need-help-on-my-homework",
+          "detail": "Level 10"
+        },
+        {
+          "name": "Icarus and the Flying Medicine (Delivering the Flying Medicine)",
+          "path": "/quests/delivering-the-flying-medicine",
+          "detail": "Level 46"
+        },
+        {
+          "name": "Icarus and the Flying Medicine (In search of Wing the Fairy)",
+          "path": "/quests/in-search-of-wing-the-fairy",
+          "detail": "Level 46"
+        },
+        {
+          "name": "Icarus and the Flying Medicine (The Ingredients for the Flying Medicine)",
+          "path": "/quests/the-ingredients-for-the-flying-medicine",
+          "detail": "Level 46"
+        },
+        {
+          "name": "Jane the Alchemist (Jane's Final Challenge)",
+          "path": "/quests/jane-s-final-challenge",
+          "detail": "Level 44"
+        },
+        {
+          "name": "Legend of the Snail (Hero of the Story)",
+          "path": "/quests/hero-of-the-story",
+          "detail": "Level 20"
+        },
+        {
+          "name": "Legend of the Snail (Snail Hunt)",
+          "path": "/quests/snail-hunt",
+          "detail": "Level 20"
+        },
+        {
+          "name": "Legend of the Snail (What I Learned About Snails)",
+          "path": "/quests/what-i-learned-about-snails",
+          "detail": "Level 20"
+        },
+        {
+          "name": "Luke the Security Guy's Wish to Travel",
+          "path": "/quests/luke-the-security-guy-s-wish-to-travel",
+          "detail": "Level 46"
+        },
+        {
+          "name": "Maya and Her Peculiar Savior (A Name on a Note)",
+          "path": "/quests/a-name-on-a-note",
+          "detail": "Level 47"
+        },
+        {
+          "name": "Mr. Wetbottom's Secret Book (A Clue to the Secret Book)",
+          "path": "/quests/a-clue-to-the-secret-book",
+          "detail": "Level 32"
+        },
+        {
+          "name": "Mr. Wetbottom's Secret Book (Cold Milk)",
+          "path": "/quests/cold-milk",
+          "detail": "Level 32"
+        },
+        {
+          "name": "Mr. Wetbottom's Secret Book (Hungry Ronnie)",
+          "path": "/quests/hungry-ronnie",
+          "detail": "Level 32"
+        },
+        {
+          "name": "Mr. Wetbottom's Secret Book (Thirsty Ronnie)",
+          "path": "/quests/thirsty-ronnie",
+          "detail": "Level 32"
+        },
+        {
+          "name": "Phil's Call",
+          "path": "/quests/phil-s-call",
+          "detail": "Level 8"
+        },
+        {
+          "name": "Pia and the Blue Mushroom",
+          "path": "/quests/pia-and-the-blue-mushroom",
+          "detail": "Level 16"
+        },
+        {
+          "name": "Pia's Present For a Friend",
+          "path": "/quests/pia-s-present-for-a-friend",
+          "detail": "Level 42"
+        },
+        {
+          "name": "Ronnie & the Fairies Building a New House (First Material Delivery for Building a New House)",
+          "path": "/quests/first-material-delivery-for-building-a-new-house",
+          "detail": "Level 41"
+        },
+        {
+          "name": "Rowen the Fairy and the Cursed Doll (Collecting 100 Cursed Dolls)",
+          "path": "/quests/collecting-100-cursed-dolls",
+          "detail": "Level 36"
+        },
+        {
+          "name": "Rowen the Fairy and the Cursed Doll (Collecting 150 Cursed Dolls)",
+          "path": "/quests/collecting-150-cursed-dolls",
+          "detail": "Level 36"
+        },
+        {
+          "name": "Rowen the Fairy and the Cursed Doll (Collecting 200 Cursed Dolls)",
+          "path": "/quests/collecting-200-cursed-dolls",
+          "detail": "Level 36"
+        },
+        {
+          "name": "Rowen the Fairy and the Cursed Doll (Collecting 50 Cursed Dolls)",
+          "path": "/quests/collecting-50-cursed-dolls",
+          "detail": "Level 36"
+        },
+        {
+          "name": "Rowen the Fairy and the Cursed Doll (Collecting 70 Cursed Dolls)",
+          "path": "/quests/collecting-70-cursed-dolls",
+          "detail": "Level 36"
+        },
+        {
+          "name": "The Magician's Next Journey",
+          "path": "/quests/the-magician-s-next-journey",
+          "detail": "Level 30"
+        },
+        {
+          "name": "The Magician's Next Journey (Finding the Instructor)",
+          "path": "/quests/finding-the-instructor-20101",
+          "detail": "Level 30"
+        },
+        {
+          "name": "The Magician's Next Journey (Proof of Qualification)",
+          "path": "/quests/proof-of-qualification-20103",
+          "detail": "Level 30"
+        },
+        {
+          "name": "The Old Tree (A Report for the Doctor)",
+          "path": "/quests/a-report-for-the-doctor",
+          "detail": "Level 34"
+        },
+        {
+          "name": "The Old Tree (Truth of the Rumor-Betty)",
+          "path": "/quests/truth-of-the-rumor-betty",
+          "detail": "Level 34"
+        },
+        {
+          "name": "Winston's Fossil Dig-up (Delivering a Box of Fossils)",
+          "path": "/quests/delivering-a-box-of-fossils",
+          "detail": "Level 17"
+        }
+      ],
+      "total": 44
+    }
+  ]
+}

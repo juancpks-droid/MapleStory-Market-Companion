@@ -7,13 +7,13 @@
     "category": "Use"
   },
   "kind": "npc",
-  "checkedAt": "2026-10-25T09:53:32.270Z",
+  "checkedAt": "2026-11-02T10:26:45.780Z",
   "data": {
     "sell": 5,
     "buy": 50,
     "source": "CCPLZ",
     "url": "https://ccplz.cc/items/red-potion",
-    "checkedAt": "2026-10-25T09:53:32.270Z"
+    "checkedAt": "2026-11-02T10:26:45.780Z"
   },
   "provenance": {
     "source": "CCPLZ",

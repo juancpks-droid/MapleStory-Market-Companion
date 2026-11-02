@@ -113,6 +113,11 @@
       "kind": "map"
     },
     {
+      "path": "/shops/ben-s-shop",
+      "name": "Ben's Shop",
+      "kind": "shop"
+    },
+    {
       "path": "/npcs/biggs",
       "name": "Biggs",
       "kind": "npc"
@@ -388,6 +393,11 @@
       "kind": "item"
     },
     {
+      "path": "/monsters/crimson-balrog",
+      "name": "Crimson Balrog",
+      "kind": "monster"
+    },
+    {
       "path": "/items/crossbow-attack-scroll-greater",
       "name": "Crossbow Attack Scroll: Greater",
       "kind": "item"
@@ -405,6 +415,11 @@
     {
       "path": "/items/curse-eye-tail",
       "name": "Curse Eye Tail",
+      "kind": "item"
+    },
+    {
+      "path": "/items/cursed-doll",
+      "name": "Cursed Doll",
       "kind": "item"
     },
     {
@@ -553,6 +568,16 @@
       "kind": "item"
     },
     {
+      "path": "/maps/ellinia",
+      "name": "Ellinia",
+      "kind": "map"
+    },
+    {
+      "path": "/monsters/fire-sentinel",
+      "name": "Fire Sentinel",
+      "kind": "monster"
+    },
+    {
       "path": "/monsters/firebomb",
       "name": "Firebomb",
       "kind": "monster"
@@ -561,6 +586,11 @@
       "path": "/items/firebomb-flame",
       "name": "Firebomb Flame",
       "kind": "item"
+    },
+    {
+      "path": "/shops/flint-s-shop",
+      "name": "Flint's Shop",
+      "kind": "shop"
     },
     {
       "path": "/monsters/flyeye",
@@ -620,6 +650,16 @@
     {
       "path": "/items/gloves-attack-scroll-lesser",
       "name": "Gloves Attack Scroll: Lesser",
+      "kind": "item"
+    },
+    {
+      "path": "/items/gloves-magic-attack-scroll-greater",
+      "name": "Gloves Magic Attack Scroll: Greater",
+      "kind": "item"
+    },
+    {
+      "path": "/items/gloves-magic-attack-scroll-intermediate",
+      "name": "Gloves Magic Attack Scroll: Intermediate",
       "kind": "item"
     },
     {
@@ -958,6 +998,11 @@
       "kind": "item"
     },
     {
+      "path": "/items/moon-rock",
+      "name": "Moon Rock",
+      "kind": "item"
+    },
+    {
       "path": "/monsters/mushmom",
       "name": "Mushmom",
       "kind": "monster"
@@ -1233,6 +1278,16 @@
       "kind": "item"
     },
     {
+      "path": "/npcs/rowen-the-fairy",
+      "name": "Rowen the Fairy",
+      "kind": "npc"
+    },
+    {
+      "path": "/quests/collecting-100-cursed-dolls",
+      "name": "Rowen the Fairy and the Cursed Doll (Collecting 100 Cursed Dolls)",
+      "kind": "quest"
+    },
+    {
       "path": "/quests/collecting-150-cursed-dolls",
       "name": "Rowen the Fairy and the Cursed Doll (Collecting 150 Cursed Dolls)",
       "kind": "quest"
@@ -1256,6 +1311,11 @@
       "path": "/quests/sam-s-suggestion",
       "name": "Sam's Suggestion",
       "kind": "quest"
+    },
+    {
+      "path": "/items/sap-of-ancient-tree",
+      "name": "Sap of Ancient Tree",
+      "kind": "item"
     },
     {
       "path": "/items/sapphire-camel-boots",

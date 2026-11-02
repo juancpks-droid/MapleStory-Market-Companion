@@ -1,0 +1,105 @@
+{
+  "schemaVersion": 1,
+  "path": "/quests/collecting-100-cursed-dolls",
+  "kind": "quest",
+  "name": "Rowen the Fairy and the Cursed Doll (Collecting 100 Cursed Dolls)",
+  "source": "CCPLZ",
+  "sourceUrl": "https://ccplz.cc/quests/collecting-100-cursed-dolls",
+  "checkedAt": "2026-11-02T10:27:09.782Z",
+  "notice": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial.",
+  "fields": [
+    {
+      "label": "Minimum level",
+      "value": "36"
+    },
+    {
+      "label": "Category",
+      "value": "Ellinia"
+    },
+    {
+      "label": "EXP reward",
+      "value": "7,020"
+    },
+    {
+      "label": "Meso reward",
+      "value": "1,140"
+    },
+    {
+      "label": "Starts with",
+      "value": "Rowen the Fairy"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Quest NPCs",
+      "links": [
+        {
+          "name": "Rowen the Fairy",
+          "path": "/npcs/rowen-the-fairy",
+          "detail": "Starts the quest"
+        }
+      ],
+      "total": 1
+    },
+    {
+      "title": "Complete first",
+      "links": [
+        {
+          "name": "Rowen the Fairy and the Cursed Doll (Collecting 70 Cursed Dolls)",
+          "path": "/quests/collecting-70-cursed-dolls",
+          "detail": ""
+        }
+      ],
+      "total": 1
+    },
+    {
+      "title": "Monsters to defeat",
+      "links": [
+        {
+          "name": "Zombie Lupin",
+          "path": "/monsters/zombie-lupin",
+          "detail": "x100"
+        }
+      ],
+      "total": 1
+    },
+    {
+      "title": "Items to bring",
+      "links": [
+        {
+          "name": "Cursed Doll",
+          "path": "/items/cursed-doll",
+          "detail": "x100"
+        }
+      ],
+      "total": 1
+    },
+    {
+      "title": "Item rewards",
+      "links": [
+        {
+          "name": "Diamond Ore",
+          "path": "/items/diamond-ore",
+          "detail": ""
+        },
+        {
+          "name": "Gold Ore",
+          "path": "/items/gold-ore",
+          "detail": ""
+        }
+      ],
+      "total": 2
+    },
+    {
+      "title": "Where it takes place",
+      "links": [
+        {
+          "name": "Ellinia",
+          "path": "/maps/ellinia",
+          "detail": ""
+        }
+      ],
+      "total": 1
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "schemaVersion": 1,
+  "path": "/npcs/rowen-the-fairy",
+  "kind": "npc",
+  "name": "Rowen the Fairy",
+  "source": "CCPLZ",
+  "sourceUrl": "https://ccplz.cc/npcs/rowen-the-fairy",
+  "checkedAt": "2026-11-02T10:27:06.751Z",
+  "notice": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial.",
+  "fields": [],
+  "sections": [
+    {
+      "title": "Where to find them",
+      "links": [
+        {
+          "name": "Ellinia",
+          "path": "/maps/ellinia",
+          "detail": "Victoria Island"
+        }
+      ],
+      "total": 1
+    },
+    {
+      "title": "Quests they start",
+      "links": [
+        {
+          "name": "Mr. Wetbottom's Secret Book (Cold Milk)",
+          "path": "/quests/cold-milk",
+          "detail": "Level 32"
+        },
+        {
+          "name": "Mr. Wetbottom's Secret Book (Satisfied Ronnie)",
+          "path": "/quests/satisfied-ronnie",
+          "detail": "Level 32"
+        },
+        {
+          "name": "Rowen the Fairy and the Cursed Doll (Collecting 100 Cursed Dolls)",
+          "path": "/quests/collecting-100-cursed-dolls",
+          "detail": "Level 36"
+        },
+        {
+          "name": "Rowen the Fairy and the Cursed Doll (Collecting 150 Cursed Dolls)",
+          "path": "/quests/collecting-150-cursed-dolls",
+          "detail": "Level 36"
+        },
+        {
+          "name": "Rowen the Fairy and the Cursed Doll (Collecting 200 Cursed Dolls)",
+          "path": "/quests/collecting-200-cursed-dolls",
+          "detail": "Level 36"
+        },
+        {
+          "name": "Rowen the Fairy and the Cursed Doll (Collecting 50 Cursed Dolls)",
+          "path": "/quests/collecting-50-cursed-dolls",
+          "detail": "Level 36"
+        },
+        {
+          "name": "Rowen the Fairy and the Cursed Doll (Collecting 70 Cursed Dolls)",
+          "path": "/quests/collecting-70-cursed-dolls",
+          "detail": "Level 36"
+        }
+      ],
+      "total": 7
+    },
+    {
+      "title": "Quests they complete",
+      "links": [
+        {
+          "name": "Mr. Wetbottom's Secret Book (Thirsty Ronnie)",
+          "path": "/quests/thirsty-ronnie",
+          "detail": "Level 32"
+        }
+      ],
+      "total": 1
+    }
+  ]
+}
