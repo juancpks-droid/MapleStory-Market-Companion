@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "publishedAt": "2026-11-02T10:27:24.829Z",
+  "publishedAt": "2026-11-03T10:17:22.168Z",
   "catalogItems": 12726,
-  "guideRecords": 347,
+  "guideRecords": 359,
   "referenceRecords": 169,
   "entries": [
     {
@@ -1420,6 +1420,13 @@
       "kind": "map"
     },
     {
+      "file": "guides/maps--a-split-road.json",
+      "bytes": 2132,
+      "sha256": "5dab427d157125440dd9b5625c1d3b47f70caefaa7b7ac5a68a59a9cbbf50144",
+      "checkedAt": "2026-11-03T10:16:52.074Z",
+      "kind": "map"
+    },
+    {
       "file": "guides/maps--an-empty-house.json",
       "bytes": 1352,
       "sha256": "e94c201fd7211275e9a794884c976e475cb8d718923d58b7f36c6379592b1e99",
@@ -1476,6 +1483,34 @@
       "kind": "map"
     },
     {
+      "file": "guides/maps--dungeon-southern-forest-i.json",
+      "bytes": 1148,
+      "sha256": "05ec9d63a8ee74a2bb3f4fc595e0fb39dbc951e9461f20e7a48e690b03cc7759",
+      "checkedAt": "2026-11-03T10:17:10.073Z",
+      "kind": "map"
+    },
+    {
+      "file": "guides/maps--dungeon-southern-forest-ii.json",
+      "bytes": 1291,
+      "sha256": "8b0d98665baa4f9e909071e0989b5ff4a59b4c2949a342a4fec49a9e28d13578",
+      "checkedAt": "2026-11-03T10:17:13.191Z",
+      "kind": "map"
+    },
+    {
+      "file": "guides/maps--dungeon-southern-forest-iii.json",
+      "bytes": 1294,
+      "sha256": "bf3c5e68430fdd6eda4573a9dc720d013b9aa8211ab7d568221d7bf359f88031",
+      "checkedAt": "2026-11-03T10:17:16.054Z",
+      "kind": "map"
+    },
+    {
+      "file": "guides/maps--dungeon-southern-forest-iv.json",
+      "bytes": 1557,
+      "sha256": "b5a809892d0587ad0235c7ac5b42e7db2bf38b46be4568ae4c085f2e134f95a1",
+      "checkedAt": "2026-11-03T10:17:19.065Z",
+      "kind": "map"
+    },
+    {
       "file": "guides/maps--east-domain-of-perion.json",
       "bytes": 2461,
       "sha256": "16e73927b61a0233078d738547349d5c01ab493bb00593b411fc881b73e82b43",
@@ -1485,8 +1520,8 @@
     {
       "file": "guides/maps--east-rocky-mountain-iv.json",
       "bytes": 1669,
-      "sha256": "afaab697537f363c2bc5dd6ec8a9d125a5076fcad0b43aa8234bd2014483e6f8",
-      "checkedAt": "2026-10-13T20:14:10.558Z",
+      "sha256": "c3a629bbdcbf2a93e651ef2f3a429cc3c5f49289658619bc634f3c20301da309",
+      "checkedAt": "2026-11-03T10:16:37.008Z",
       "kind": "map"
     },
     {
@@ -1686,6 +1721,13 @@
       "kind": "map"
     },
     {
+      "file": "guides/maps--right-around-lith-harbor.json",
+      "bytes": 1524,
+      "sha256": "bbfb5bbf9bfeafde6c9333c2f97c67c39376b5aaf4f56ee32cb4ac5c2e3465c0",
+      "checkedAt": "2026-11-03T10:17:01.115Z",
+      "kind": "map"
+    },
+    {
       "file": "guides/maps--rocky-road-i.json",
       "bytes": 1733,
       "sha256": "b763d37afb7a01d70e2da8363397448f9d21fd716f59f987a3e6e9e5e0ff1b29",
@@ -1695,8 +1737,8 @@
     {
       "file": "guides/maps--rocky-road-ii.json",
       "bytes": 1968,
-      "sha256": "c87d8d230e6fedd4c5ea51961f42af9172ec0874c996a64d8e51a69bf9ad3e8f",
-      "checkedAt": "2026-10-13T20:14:04.594Z",
+      "sha256": "ca2e5ffd57d13e7f90798388c78717d8affa45bee18e7c5ef6309cb2794cc959",
+      "checkedAt": "2026-11-03T10:16:31.111Z",
       "kind": "map"
     },
     {
@@ -1751,8 +1793,8 @@
     {
       "file": "guides/maps--snail-garden.json",
       "bytes": 1356,
-      "sha256": "596b570de0c6f4fa8b7d8ac3e5b3f74c10e4f78863933e112ec976ad9c8ed7a5",
-      "checkedAt": "2026-10-13T20:14:07.555Z",
+      "sha256": "474fdaa7a5ede23ea93b1b5fd310f3a395c8f598b8445572ad59c960339d4cb6",
+      "checkedAt": "2026-11-03T10:16:34.072Z",
       "kind": "map"
     },
     {
@@ -1828,8 +1870,8 @@
     {
       "file": "guides/maps--the-field-up-north-of-ellinia.json",
       "bytes": 1717,
-      "sha256": "37d9019ce345aedfe793a22533b703fe40ed04ef9dbf886aa03e675295891332",
-      "checkedAt": "2026-10-13T20:14:13.565Z",
+      "sha256": "6810d612005af966625e655d4784835d7d650833b7654e038367e9fbbec0b30b",
+      "checkedAt": "2026-11-03T10:16:40.098Z",
       "kind": "map"
     },
     {
@@ -1973,10 +2015,17 @@
       "kind": "map"
     },
     {
+      "file": "guides/monsters--axe-stump.json",
+      "bytes": 7494,
+      "sha256": "34b503011dfda419fefc6367bb744363bc3c72c79414287eb6c717d6a647dfa0",
+      "checkedAt": "2026-11-03T10:17:07.033Z",
+      "kind": "monster"
+    },
+    {
       "file": "guides/monsters--blue-snail.json",
-      "bytes": 7048,
-      "sha256": "7d972febf4856125227e563b5551d2084cdff6900285894648517ee9013df26e",
-      "checkedAt": "2026-10-18T02:41:08.156Z",
+      "bytes": 11462,
+      "sha256": "38cd9cf858a9739c7d1f62409a08fbbfc82d0b96ac026e8dd1e6d9ff35404f96",
+      "checkedAt": "2026-11-03T10:16:46.099Z",
       "kind": "monster"
     },
     {
@@ -2064,6 +2113,13 @@
       "kind": "monster"
     },
     {
+      "file": "guides/monsters--green-mushroom.json",
+      "bytes": 12684,
+      "sha256": "7f5bcdb0cfd959bbd06bc050862935c19fedbb44bb6e3b4a9f9fa612dd77a531",
+      "checkedAt": "2026-11-03T10:17:04.013Z",
+      "kind": "monster"
+    },
+    {
       "file": "guides/monsters--green-trixter.json",
       "bytes": 3186,
       "sha256": "878d475b4ceae672ee73479096e87e24248f9b3fa61e01a42ed4d2d5b3cf1b78",
@@ -2127,10 +2183,24 @@
       "kind": "monster"
     },
     {
+      "file": "guides/monsters--pig.json",
+      "bytes": 7190,
+      "sha256": "a18bc65b8fc4f92b36b3809d47717cf3ee3d71107528509e34c877e35449a748",
+      "checkedAt": "2026-11-03T10:17:22.070Z",
+      "kind": "monster"
+    },
+    {
       "file": "guides/monsters--plateon.json",
       "bytes": 1203,
       "sha256": "a5b8c2ce06f03a86c77bc312d85356ae540e74791e82042997bf3f60b9658112",
       "checkedAt": "2026-10-31T09:59:49.141Z",
+      "kind": "monster"
+    },
+    {
+      "file": "guides/monsters--red-snail.json",
+      "bytes": 12827,
+      "sha256": "afda647c4cf29c554d3a915160f53aef31e6fb1545d5bd00645f19d51ab669a7",
+      "checkedAt": "2026-11-03T10:16:49.058Z",
       "kind": "monster"
     },
     {
@@ -2149,9 +2219,9 @@
     },
     {
       "file": "guides/monsters--slime.json",
-      "bytes": 9173,
-      "sha256": "49956924f32aff1bbbb6509a562efe05a472781173be394d0a60b277524aa250",
-      "checkedAt": "2026-10-18T02:37:08.965Z",
+      "bytes": 13513,
+      "sha256": "e49ad255d50ebfa0c61b107ca96797859f6fa80d7fbf3f112a672fc883505584",
+      "checkedAt": "2026-11-03T10:16:58.067Z",
       "kind": "monster"
     },
     {
@@ -2166,6 +2236,20 @@
       "bytes": 5924,
       "sha256": "b61447c7831fc58f52601bac7207422c0b93cc3cfa941ddff0e6dc13cc7468f1",
       "checkedAt": "2026-10-19T10:01:10.750Z",
+      "kind": "monster"
+    },
+    {
+      "file": "guides/monsters--stump.json",
+      "bytes": 10339,
+      "sha256": "20083b649386a34b766237c5dc9e64517e1ca250a60749988119aed3b7cbe00d",
+      "checkedAt": "2026-11-03T10:16:55.042Z",
+      "kind": "monster"
+    },
+    {
+      "file": "guides/monsters--tortie.json",
+      "bytes": 2845,
+      "sha256": "7e96b8d6c4eb91095aa3899cb5865548482f744492d7d06cf87a09a25ab37352",
+      "checkedAt": "2026-11-03T10:16:43.089Z",
       "kind": "monster"
     },
     {

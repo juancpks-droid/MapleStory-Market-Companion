@@ -1,0 +1,258 @@
+{
+  "schemaVersion": 1,
+  "path": "/monsters/axe-stump",
+  "kind": "monster",
+  "name": "Axe Stump",
+  "source": "CCPLZ",
+  "sourceUrl": "https://ccplz.cc/monsters/axe-stump",
+  "checkedAt": "2026-11-03T10:17:07.033Z",
+  "notice": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial.",
+  "fields": [
+    {
+      "label": "Level",
+      "value": "17"
+    },
+    {
+      "label": "HP",
+      "value": "371"
+    },
+    {
+      "label": "EXP",
+      "value": "32"
+    },
+    {
+      "label": "MP",
+      "value": "30"
+    },
+    {
+      "label": "Attack",
+      "value": "75"
+    },
+    {
+      "label": "Defense",
+      "value": "30"
+    },
+    {
+      "label": "Accuracy",
+      "value": "72"
+    },
+    {
+      "label": "Avoidability",
+      "value": "8"
+    },
+    {
+      "label": "Weak to",
+      "value": "Fire"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Where it spawns",
+      "links": [
+        {
+          "name": "The Forest North of Ellinia",
+          "path": "/maps/the-forest-north-of-ellinia",
+          "detail": "Victoria Island, 13 spawn points"
+        },
+        {
+          "name": "East Rocky Mountain II",
+          "path": "/maps/east-rocky-mountain-ii",
+          "detail": "Victoria Island, 12 spawn points"
+        },
+        {
+          "name": "East Rocky Mountain III",
+          "path": "/maps/east-rocky-mountain-iii",
+          "detail": "Victoria Island, 12 spawn points"
+        },
+        {
+          "name": "Deep Valley III",
+          "path": "/maps/deep-valley-iii",
+          "detail": "Victoria Island, 12 spawn points"
+        },
+        {
+          "name": "Over the Wall",
+          "path": "/maps/over-the-wall",
+          "detail": "Victoria Island, 11 spawn points"
+        },
+        {
+          "name": "Deep Valley II",
+          "path": "/maps/deep-valley-ii",
+          "detail": "Victoria Island, 11 spawn points"
+        },
+        {
+          "name": "East Domain of Perion",
+          "path": "/maps/east-domain-of-perion",
+          "detail": "Victoria Island, 8 spawn points"
+        },
+        {
+          "name": "West Rocky Mountain II",
+          "path": "/maps/west-rocky-mountain-ii",
+          "detail": "Victoria Island, 7 spawn points"
+        },
+        {
+          "name": "The Land of Wild Boar II",
+          "path": "/maps/the-land-of-wild-boar-ii",
+          "detail": "Victoria Island, 6 spawn points"
+        },
+        {
+          "name": "East Rocky Mountain IV",
+          "path": "/maps/east-rocky-mountain-iv",
+          "detail": "Victoria Island, 6 spawn points"
+        },
+        {
+          "name": "Parched Land",
+          "path": "/maps/parched-land",
+          "detail": "Victoria Island, 5 spawn points"
+        },
+        {
+          "name": "Rocky Road II",
+          "path": "/maps/rocky-road-ii",
+          "detail": "Victoria Island, 5 spawn points"
+        },
+        {
+          "name": "West Rocky Mountain III",
+          "path": "/maps/west-rocky-mountain-iii",
+          "detail": "Victoria Island, 5 spawn points"
+        },
+        {
+          "name": "West Rocky Mountain I",
+          "path": "/maps/west-rocky-mountain-i",
+          "detail": "Victoria Island, 4 spawn points"
+        },
+        {
+          "name": "Rocky Road III",
+          "path": "/maps/rocky-road-iii",
+          "detail": "Victoria Island, 3 spawn points"
+        },
+        {
+          "name": "East Rocky Mountain VI",
+          "path": "/maps/east-rocky-mountain-vi",
+          "detail": "Victoria Island, 3 spawn points"
+        },
+        {
+          "name": "Construction Site North of Kerning City",
+          "path": "/maps/construction-site-north-of-kerning-city",
+          "detail": "Victoria Island, 2 spawn points"
+        },
+        {
+          "name": "The Forest South of Ellinia",
+          "path": "/maps/the-forest-south-of-ellinia",
+          "detail": "Victoria Island, 2 spawn points"
+        },
+        {
+          "name": "West Rocky Mountain IV",
+          "path": "/maps/west-rocky-mountain-iv",
+          "detail": "Victoria Island, 1 spawn point"
+        },
+        {
+          "name": "Deep Valley I",
+          "path": "/maps/deep-valley-i",
+          "detail": "Victoria Island, 1 spawn point"
+        }
+      ],
+      "total": 20
+    },
+    {
+      "title": "Drops",
+      "links": [
+        {
+          "name": "Arrows for Bows",
+          "path": "/items/arrows-for-bows",
+          "detail": "Arrows for bows, about 1.1%, usual for its kind"
+        },
+        {
+          "name": "Blue Potion",
+          "path": "/items/blue-potion",
+          "detail": "Potions, about 2.4%, usual for its kind"
+        },
+        {
+          "name": "Bronze Ore",
+          "path": "/items/bronze-ore",
+          "detail": "Ores & ingots, about 1.2%, usual for its kind"
+        },
+        {
+          "name": "Brown Robin Hat",
+          "path": "/items/brown-robin-hat",
+          "detail": "Hat, about 0.22%, usual for its kind"
+        },
+        {
+          "name": "Firewood",
+          "path": "/items/firewood",
+          "detail": "Monster drops, 46% drop rate, 37 kills counted"
+        },
+        {
+          "name": "Green Legolier Pants",
+          "path": "/items/green-legolier-pants",
+          "detail": "Bottomwear, about 0.22%, usual for its kind"
+        },
+        {
+          "name": "Monster Card",
+          "path": "/items/monster-card",
+          "detail": "Quest items"
+        },
+        {
+          "name": "One-Handed Blunt Weapon Attack Scroll: Greater",
+          "path": "/items/one-handed-blunt-weapon-attack-scroll-greater",
+          "detail": "One-handed blunt scrolls"
+        },
+        {
+          "name": "Opal Ore",
+          "path": "/items/opal-ore",
+          "detail": "Gems & gem ores, about 1.2%, usual for its kind"
+        },
+        {
+          "name": "Orihalcon Ore",
+          "path": "/items/orihalcon-ore",
+          "detail": "Ores & ingots, 2.7% drop rate, 37 kills counted"
+        },
+        {
+          "name": "Overall Armor STR Scroll: Greater",
+          "path": "/items/overall-armor-str-scroll-greater",
+          "detail": "Overall scrolls"
+        },
+        {
+          "name": "Plant Fossil",
+          "path": "/items/plant-fossil",
+          "detail": "Quest items"
+        },
+        {
+          "name": "Red Potion",
+          "path": "/items/red-potion",
+          "detail": "Potions, 2.7% drop rate, 37 kills counted"
+        },
+        {
+          "name": "Red Qi Pao",
+          "path": "/items/red-qi-pao",
+          "detail": "Topwear, about 0.22%, usual for its kind"
+        },
+        {
+          "name": "Wooden Baseball Bat",
+          "path": "/items/wooden-baseball-bat",
+          "detail": "Two-handed sword, about 0.22%, usual for its kind"
+        }
+      ],
+      "total": 15
+    },
+    {
+      "title": "Quests that need it",
+      "links": [
+        {
+          "name": "Mr. Thunder in Need of Help",
+          "path": "/quests/mr-thunder-in-need-of-help",
+          "detail": "Level 15"
+        },
+        {
+          "name": "Vicious in Need of Help",
+          "path": "/quests/vicious-in-need-of-help",
+          "detail": "Level 15"
+        },
+        {
+          "name": "Winston's Fossil Dig-up (Searching for Fossils)",
+          "path": "/quests/searching-for-fossils",
+          "detail": "Level 17"
+        }
+      ],
+      "total": 3
+    }
+  ]
+}

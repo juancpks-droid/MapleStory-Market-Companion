@@ -1,0 +1,113 @@
+{
+  "schemaVersion": 1,
+  "path": "/monsters/tortie",
+  "kind": "monster",
+  "name": "Tortie",
+  "source": "CCPLZ",
+  "sourceUrl": "https://ccplz.cc/monsters/tortie",
+  "checkedAt": "2026-11-03T10:16:43.089Z",
+  "notice": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial.",
+  "fields": [
+    {
+      "label": "Level",
+      "value": "46"
+    },
+    {
+      "label": "HP",
+      "value": "2,671"
+    },
+    {
+      "label": "EXP",
+      "value": "111"
+    },
+    {
+      "label": "MP",
+      "value": "100"
+    },
+    {
+      "label": "Attack",
+      "value": "243"
+    },
+    {
+      "label": "Defense",
+      "value": "30"
+    },
+    {
+      "label": "Accuracy",
+      "value": "125"
+    },
+    {
+      "label": "Avoidability",
+      "value": "25"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Where it spawns",
+      "links": [
+        {
+          "name": "Hot Sand",
+          "path": "/maps/hot-sand",
+          "detail": "Victoria Island, 25 spawn points"
+        },
+        {
+          "name": "Lorang Lorang Lorang",
+          "path": "/maps/lorang-lorang-lorang",
+          "detail": "Victoria Island, 6 spawn points"
+        },
+        {
+          "name": "Clang and Lorang",
+          "path": "/maps/clang-and-lorang",
+          "detail": "Victoria Island, 6 spawn points"
+        }
+      ],
+      "total": 3
+    },
+    {
+      "title": "Drops",
+      "links": [
+        {
+          "name": "Amethyst Ore",
+          "path": "/items/amethyst-ore",
+          "detail": "Gems & gem ores, about 1.2%, usual for its kind"
+        },
+        {
+          "name": "Blue Potion",
+          "path": "/items/blue-potion",
+          "detail": "Potions, about 2.4%, usual for its kind"
+        },
+        {
+          "name": "Green Huntress Pants",
+          "path": "/items/green-huntress-pants",
+          "detail": "Bottomwear, about 0.22%, usual for its kind"
+        },
+        {
+          "name": "Mithril Ore",
+          "path": "/items/mithril-ore",
+          "detail": "Ores & ingots, about 1.2%, usual for its kind"
+        },
+        {
+          "name": "Purple Fairy Top",
+          "path": "/items/purple-fairy-top",
+          "detail": "Topwear, about 0.22%, usual for its kind"
+        },
+        {
+          "name": "Silver Black Stealer",
+          "path": "/items/silver-black-stealer",
+          "detail": "Topwear, about 0.22%, usual for its kind"
+        },
+        {
+          "name": "Tortie Shell",
+          "path": "/items/tortie-shell",
+          "detail": "Monster drops"
+        },
+        {
+          "name": "White Potion",
+          "path": "/items/white-potion",
+          "detail": "Potions, about 2.4%, usual for its kind"
+        }
+      ],
+      "total": 8
+    }
+  ]
+}

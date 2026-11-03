@@ -1,0 +1,343 @@
+{
+  "schemaVersion": 1,
+  "path": "/monsters/stump",
+  "kind": "monster",
+  "name": "Stump",
+  "source": "CCPLZ",
+  "sourceUrl": "https://ccplz.cc/monsters/stump",
+  "checkedAt": "2026-11-03T10:16:55.042Z",
+  "notice": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial.",
+  "fields": [
+    {
+      "label": "Level",
+      "value": "5"
+    },
+    {
+      "label": "HP",
+      "value": "133"
+    },
+    {
+      "label": "EXP",
+      "value": "10"
+    },
+    {
+      "label": "MP",
+      "value": "30"
+    },
+    {
+      "label": "Attack",
+      "value": "11"
+    },
+    {
+      "label": "Defense",
+      "value": "30"
+    },
+    {
+      "label": "Accuracy",
+      "value": "45"
+    },
+    {
+      "label": "Avoidability",
+      "value": "0"
+    },
+    {
+      "label": "Weak to",
+      "value": "Fire"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Where it spawns",
+      "links": [
+        {
+          "name": "The Tree That Grew II",
+          "path": "/maps/the-tree-that-grew-ii",
+          "detail": "Victoria Island, 28 spawn points"
+        },
+        {
+          "name": "The Tree That Grew III",
+          "path": "/maps/the-tree-that-grew-iii",
+          "detail": "Victoria Island, 27 spawn points"
+        },
+        {
+          "name": "West Rocky Mountain I",
+          "path": "/maps/west-rocky-mountain-i",
+          "detail": "Victoria Island, 27 spawn points"
+        },
+        {
+          "name": "The Field South of Ellinia",
+          "path": "/maps/the-field-south-of-ellinia",
+          "detail": "Victoria Island, 27 spawn points"
+        },
+        {
+          "name": "Kerning City Construction Site",
+          "path": "/maps/kerning-city-construction-site",
+          "detail": "Victoria Island, 24 spawn points"
+        },
+        {
+          "name": "West Street Corner of Perion",
+          "path": "/maps/west-street-corner-of-perion",
+          "detail": "Victoria Island, 24 spawn points"
+        },
+        {
+          "name": "The Forest North of Ellinia",
+          "path": "/maps/the-forest-north-of-ellinia",
+          "detail": "Victoria Island, 21 spawn points"
+        },
+        {
+          "name": "West Rocky Mountain II",
+          "path": "/maps/west-rocky-mountain-ii",
+          "detail": "Victoria Island, 20 spawn points"
+        },
+        {
+          "name": "The Forest South of Ellinia",
+          "path": "/maps/the-forest-south-of-ellinia",
+          "detail": "Victoria Island, 19 spawn points"
+        },
+        {
+          "name": "East Rocky Mountain II",
+          "path": "/maps/east-rocky-mountain-ii",
+          "detail": "Victoria Island, 16 spawn points"
+        },
+        {
+          "name": "A Hill West of Henesys",
+          "path": "/maps/a-hill-west-of-henesys",
+          "detail": "Victoria Island, 16 spawn points"
+        },
+        {
+          "name": "Perion Street Corner",
+          "path": "/maps/perion-street-corner",
+          "detail": "Victoria Island, 15 spawn points"
+        },
+        {
+          "name": "Rocky Road I",
+          "path": "/maps/rocky-road-i",
+          "detail": "Victoria Island, 15 spawn points"
+        },
+        {
+          "name": "Sunset Sky",
+          "path": "/maps/sunset-sky",
+          "detail": "Victoria Island, 15 spawn points"
+        },
+        {
+          "name": "West Domain of Perion",
+          "path": "/maps/west-domain-of-perion",
+          "detail": "Victoria Island, 15 spawn points"
+        },
+        {
+          "name": "East Rocky Mountain I",
+          "path": "/maps/east-rocky-mountain-i",
+          "detail": "Victoria Island, 14 spawn points"
+        },
+        {
+          "name": "The Field Up North of Ellinia",
+          "path": "/maps/the-field-up-north-of-ellinia",
+          "detail": "Victoria Island, 12 spawn points"
+        },
+        {
+          "name": "Henesys Hunting Ground II",
+          "path": "/maps/henesys-hunting-ground-ii",
+          "detail": "Victoria Island, 12 spawn points"
+        },
+        {
+          "name": "Thicket Around the Beach I",
+          "path": "/maps/thicket-around-the-beach-i",
+          "detail": "Victoria Island, 11 spawn points"
+        },
+        {
+          "name": "Thicket Around the Beach III",
+          "path": "/maps/thicket-around-the-beach-iii",
+          "detail": "Victoria Island, 10 spawn points"
+        },
+        {
+          "name": "Henesys Hunting Ground III",
+          "path": "/maps/henesys-hunting-ground-iii",
+          "detail": "Victoria Island, 10 spawn points"
+        },
+        {
+          "name": "West Rocky Mountain III",
+          "path": "/maps/west-rocky-mountain-iii",
+          "detail": "Victoria Island, 9 spawn points"
+        },
+        {
+          "name": "The Tree That Grew I",
+          "path": "/maps/the-tree-that-grew-i",
+          "detail": "Victoria Island, 8 spawn points"
+        },
+        {
+          "name": "East Rocky Mountain III",
+          "path": "/maps/east-rocky-mountain-iii",
+          "detail": "Victoria Island, 8 spawn points"
+        },
+        {
+          "name": "East Domain of Perion",
+          "path": "/maps/east-domain-of-perion",
+          "detail": "Victoria Island, 8 spawn points"
+        },
+        {
+          "name": "Rocky Road II",
+          "path": "/maps/rocky-road-ii",
+          "detail": "Victoria Island, 6 spawn points"
+        },
+        {
+          "name": "Forest West of Henesys",
+          "path": "/maps/forest-west-of-henesys",
+          "detail": "Victoria Island, 5 spawn points"
+        },
+        {
+          "name": "Over the Wall",
+          "path": "/maps/over-the-wall",
+          "detail": "Victoria Island, 4 spawn points"
+        },
+        {
+          "name": "Henesys Hunting Ground I",
+          "path": "/maps/henesys-hunting-ground-i",
+          "detail": "Victoria Island, 4 spawn points"
+        },
+        {
+          "name": "Deep Forest",
+          "path": "/maps/deep-forest",
+          "detail": "Victoria Island, 4 spawn points"
+        },
+        {
+          "name": "L Forest II",
+          "path": "/maps/l-forest-ii",
+          "detail": "Victoria Island, 3 spawn points"
+        },
+        {
+          "name": "L Forest III",
+          "path": "/maps/l-forest-iii",
+          "detail": "Victoria Island, 3 spawn points"
+        },
+        {
+          "name": "Rocky Road III",
+          "path": "/maps/rocky-road-iii",
+          "detail": "Victoria Island, 2 spawn points"
+        },
+        {
+          "name": "L Forest I",
+          "path": "/maps/l-forest-i",
+          "detail": "Victoria Island, 2 spawn points"
+        }
+      ],
+      "total": 34
+    },
+    {
+      "title": "Drops",
+      "links": [
+        {
+          "name": "Arrows for Bows",
+          "path": "/items/arrows-for-bows",
+          "detail": "Arrows for bows, 0.48% drop rate, 207 kills counted"
+        },
+        {
+          "name": "Arrows for Crossbows",
+          "path": "/items/arrows-for-crossbows",
+          "detail": "Arrows for crossbows, 1.4% drop rate, 207 kills counted"
+        },
+        {
+          "name": "Beige Plain Robe",
+          "path": "/items/beige-plain-robe",
+          "detail": "Overall, about 0.22%, usual for its kind"
+        },
+        {
+          "name": "Bronze Ore",
+          "path": "/items/bronze-ore",
+          "detail": "Ores & ingots, 2.4% drop rate, 207 kills counted"
+        },
+        {
+          "name": "Crossbow",
+          "path": "/items/crossbow",
+          "detail": "Crossbow, about 0.22%, usual for its kind"
+        },
+        {
+          "name": "Emerald Ore",
+          "path": "/items/emerald-ore",
+          "detail": "Gems & gem ores, 0.48% drop rate, 207 kills counted"
+        },
+        {
+          "name": "Green Archer Top",
+          "path": "/items/green-archer-top",
+          "detail": "Topwear, about 0.22%, usual for its kind"
+        },
+        {
+          "name": "Juno",
+          "path": "/items/juno",
+          "detail": "Gloves, about 0.22%, usual for its kind"
+        },
+        {
+          "name": "Monster Card",
+          "path": "/items/monster-card",
+          "detail": "Quest items"
+        },
+        {
+          "name": "Omok Table (for Maple World's Unique Fun: Omok: Make a Slime & Mushroom Omok Set)",
+          "path": "/items/omok-table",
+          "detail": "Quest items"
+        },
+        {
+          "name": "Red Potion",
+          "path": "/items/red-potion",
+          "detail": "Potions, 3.4% drop rate, 207 kills counted"
+        },
+        {
+          "name": "Tree Branch",
+          "path": "/items/tree-branch",
+          "detail": "Monster drops, 45% drop rate, 207 kills counted"
+        },
+        {
+          "name": "Triangular Zamadar",
+          "path": "/items/triangular-zamadar",
+          "detail": "Dagger, about 0.22%, usual for its kind"
+        },
+        {
+          "name": "Wooden Club",
+          "path": "/items/wooden-club",
+          "detail": "One-handed blunt, about 0.22%, usual for its kind"
+        },
+        {
+          "name": "Wooden Staff",
+          "path": "/items/wooden-staff",
+          "detail": "Staff, about 0.22%, usual for its kind"
+        },
+        {
+          "name": "Wooden Wand",
+          "path": "/items/wooden-wand",
+          "detail": "Wand, 0.48% drop rate, 207 kills counted"
+        }
+      ],
+      "total": 16
+    },
+    {
+      "title": "Quests that need it",
+      "links": [
+        {
+          "name": "Fixing Blackbull's House",
+          "path": "/quests/fixing-blackbull-s-house",
+          "detail": "Level 11"
+        },
+        {
+          "name": "Olaf's Training (Olaf's First Training)",
+          "path": "/quests/olaf-s-first-training",
+          "detail": "Level 8"
+        },
+        {
+          "name": "Silas Irons in Need of an Apprentice",
+          "path": "/quests/silas-irons-in-need-of-an-apprentice",
+          "detail": "Level 10"
+        },
+        {
+          "name": "The Stump Horror Story",
+          "path": "/quests/the-stump-horror-story",
+          "detail": "Level 10"
+        },
+        {
+          "name": "Vicious in Need of an Apprentice",
+          "path": "/quests/vicious-in-need-of-an-apprentice",
+          "detail": "Level 10"
+        }
+      ],
+      "total": 5
+    }
+  ]
+}

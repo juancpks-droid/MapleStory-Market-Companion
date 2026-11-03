@@ -1,0 +1,404 @@
+{
+  "schemaVersion": 1,
+  "path": "/monsters/green-mushroom",
+  "kind": "monster",
+  "name": "Green Mushroom",
+  "source": "CCPLZ",
+  "sourceUrl": "https://ccplz.cc/monsters/green-mushroom",
+  "checkedAt": "2026-11-03T10:17:04.013Z",
+  "notice": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial.",
+  "fields": [
+    {
+      "label": "Level",
+      "value": "14"
+    },
+    {
+      "label": "HP",
+      "value": "233"
+    },
+    {
+      "label": "EXP",
+      "value": "26"
+    },
+    {
+      "label": "MP",
+      "value": "30"
+    },
+    {
+      "label": "Attack",
+      "value": "54"
+    },
+    {
+      "label": "Defense",
+      "value": "0"
+    },
+    {
+      "label": "Accuracy",
+      "value": "79"
+    },
+    {
+      "label": "Avoidability",
+      "value": "8"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Where it spawns",
+      "links": [
+        {
+          "name": "West Rocky Mountain III",
+          "path": "/maps/west-rocky-mountain-iii",
+          "detail": "Victoria Island, 32 spawn points"
+        },
+        {
+          "name": "Tree Dungeon, Forest Up North IV",
+          "path": "/maps/tree-dungeon-forest-up-north-iv",
+          "detail": "Victoria Island, 31 spawn points"
+        },
+        {
+          "name": "The Forest of Wisdom",
+          "path": "/maps/the-forest-of-wisdom",
+          "detail": "Victoria Island, 30 spawn points"
+        },
+        {
+          "name": "Dungeon, Southern Forest III",
+          "path": "/maps/dungeon-southern-forest-iii",
+          "detail": "Victoria Island, 16 spawn points"
+        },
+        {
+          "name": "Dungeon, Southern Forest II",
+          "path": "/maps/dungeon-southern-forest-ii",
+          "detail": "Victoria Island, 16 spawn points"
+        },
+        {
+          "name": "Tree Dungeon, Forest Up North III",
+          "path": "/maps/tree-dungeon-forest-up-north-iii",
+          "detail": "Victoria Island, 16 spawn points"
+        },
+        {
+          "name": "Swampy Land in a Deep Forest",
+          "path": "/maps/swampy-land-in-a-deep-forest",
+          "detail": "Victoria Island, 16 spawn points"
+        },
+        {
+          "name": "Tree Dungeon, Forest Up North II",
+          "path": "/maps/tree-dungeon-forest-up-north-ii",
+          "detail": "Victoria Island, 14 spawn points"
+        },
+        {
+          "name": "West Domain of Perion",
+          "path": "/maps/west-domain-of-perion",
+          "detail": "Victoria Island, 14 spawn points"
+        },
+        {
+          "name": "Tree Dungeon, Forest Up North V",
+          "path": "/maps/tree-dungeon-forest-up-north-v",
+          "detail": "Victoria Island, 13 spawn points"
+        },
+        {
+          "name": "Henesys Hunting Ground III",
+          "path": "/maps/henesys-hunting-ground-iii",
+          "detail": "Victoria Island, 13 spawn points"
+        },
+        {
+          "name": "Downstairs at the Forest",
+          "path": "/maps/downstairs-at-the-forest",
+          "detail": "Victoria Island, 12 spawn points"
+        },
+        {
+          "name": "East Domain of Perion",
+          "path": "/maps/east-domain-of-perion",
+          "detail": "Victoria Island, 12 spawn points"
+        },
+        {
+          "name": "L Forest III",
+          "path": "/maps/l-forest-iii",
+          "detail": "Victoria Island, 10 spawn points"
+        },
+        {
+          "name": "Monkey Forest I",
+          "path": "/maps/monkey-forest-i",
+          "detail": "Victoria Island, 9 spawn points"
+        },
+        {
+          "name": "Dungeon, Southern Forest IV",
+          "path": "/maps/dungeon-southern-forest-iv",
+          "detail": "Victoria Island, 9 spawn points"
+        },
+        {
+          "name": "Henesys Dungeon Entrance",
+          "path": "/maps/henesys-dungeon-entrance",
+          "detail": "Victoria Island, 9 spawn points"
+        },
+        {
+          "name": "Deep Forest",
+          "path": "/maps/deep-forest",
+          "detail": "Victoria Island, 8 spawn points"
+        },
+        {
+          "name": "The Tree That Grew III",
+          "path": "/maps/the-tree-that-grew-iii",
+          "detail": "Victoria Island, 8 spawn points"
+        },
+        {
+          "name": "The Field South of Ellinia",
+          "path": "/maps/the-field-south-of-ellinia",
+          "detail": "Victoria Island, 8 spawn points"
+        },
+        {
+          "name": "Sunset Sky",
+          "path": "/maps/sunset-sky",
+          "detail": "Victoria Island, 7 spawn points"
+        },
+        {
+          "name": "Sleepy Dungeon II",
+          "path": "/maps/sleepy-dungeon-ii",
+          "detail": "Victoria Island, 7 spawn points"
+        },
+        {
+          "name": "Rocky Road I",
+          "path": "/maps/rocky-road-i",
+          "detail": "Victoria Island, 6 spawn points"
+        },
+        {
+          "name": "Henesys Hunting Ground I",
+          "path": "/maps/henesys-hunting-ground-i",
+          "detail": "Victoria Island, 5 spawn points"
+        },
+        {
+          "name": "West Street Corner of Perion",
+          "path": "/maps/west-street-corner-of-perion",
+          "detail": "Victoria Island, 5 spawn points"
+        },
+        {
+          "name": "Sleepy Dungeon I",
+          "path": "/maps/sleepy-dungeon-i",
+          "detail": "Victoria Island, 4 spawn points"
+        },
+        {
+          "name": "Henesys Hunting Ground II",
+          "path": "/maps/henesys-hunting-ground-ii",
+          "detail": "Victoria Island, 4 spawn points"
+        },
+        {
+          "name": "L Forest II",
+          "path": "/maps/l-forest-ii",
+          "detail": "Victoria Island, 4 spawn points"
+        },
+        {
+          "name": "The Forest South of Ellinia",
+          "path": "/maps/the-forest-south-of-ellinia",
+          "detail": "Victoria Island, 3 spawn points"
+        },
+        {
+          "name": "L Forest I",
+          "path": "/maps/l-forest-i",
+          "detail": "Victoria Island, 3 spawn points"
+        },
+        {
+          "name": "Hunting Ground in the Deep Forest I",
+          "path": "/maps/hunting-ground-in-the-deep-forest-i",
+          "detail": "Victoria Island, 2 spawn points"
+        },
+        {
+          "name": "Kerning City Middle Forest II",
+          "path": "/maps/kerning-city-middle-forest-ii",
+          "detail": "Victoria Island, 2 spawn points"
+        },
+        {
+          "name": "Kerning City Middle Forest III",
+          "path": "/maps/kerning-city-middle-forest-iii",
+          "detail": "Victoria Island, 2 spawn points"
+        },
+        {
+          "name": "Kerning City Construction Site",
+          "path": "/maps/kerning-city-construction-site",
+          "detail": "Victoria Island, 2 spawn points"
+        },
+        {
+          "name": "1st Accompaniment <Bonus>",
+          "path": "/maps/1st-accompaniment-bonus",
+          "detail": "Other, 12 spawn points"
+        }
+      ],
+      "total": 35
+    },
+    {
+      "title": "Drops",
+      "links": [
+        {
+          "name": "Animal Fossil",
+          "path": "/items/animal-fossil",
+          "detail": "Quest items"
+        },
+        {
+          "name": "Arrows for Bows",
+          "path": "/items/arrows-for-bows",
+          "detail": "Arrows for bows, 1.5% drop rate, 620 kills counted"
+        },
+        {
+          "name": "Arrows for Crossbows",
+          "path": "/items/arrows-for-crossbows",
+          "detail": "Arrows for crossbows, 0.65% drop rate, 620 kills counted"
+        },
+        {
+          "name": "Battle Crossbow",
+          "path": "/items/battle-crossbow",
+          "detail": "Crossbow, about 0.22%, usual for its kind"
+        },
+        {
+          "name": "Blue Pao Bottoms",
+          "path": "/items/blue-pao-bottoms",
+          "detail": "Bottomwear, about 0.22%, usual for its kind"
+        },
+        {
+          "name": "Blue Potion",
+          "path": "/items/blue-potion",
+          "detail": "Potions, 0.97% drop rate, 620 kills counted"
+        },
+        {
+          "name": "Blue Qi Pao Pants",
+          "path": "/items/blue-qi-pao-pants",
+          "detail": "Bottomwear, 0.16% drop rate, 620 kills counted"
+        },
+        {
+          "name": "Emerald Ore",
+          "path": "/items/emerald-ore",
+          "detail": "Gems & gem ores, 0.16% drop rate, 620 kills counted"
+        },
+        {
+          "name": "Emerald Staff",
+          "path": "/items/emerald-staff",
+          "detail": "Staff, about 0.22%, usual for its kind"
+        },
+        {
+          "name": "Fragment of Magic",
+          "path": "/items/fragment-of-magic",
+          "detail": "Monster drops, 0.81% drop rate, 620 kills counted"
+        },
+        {
+          "name": "Green Apple",
+          "path": "/items/green-apple",
+          "detail": "Fruit & basic food, about 2.4%, usual for its kind"
+        },
+        {
+          "name": "Green Archer Top",
+          "path": "/items/green-archer-top",
+          "detail": "Topwear, about 0.22%, usual for its kind"
+        },
+        {
+          "name": "Green Bennis Chainmail (Male)",
+          "path": "/items/green-bennis-chainmail",
+          "detail": "Topwear, about 0.22%, usual for its kind"
+        },
+        {
+          "name": "Green Feather Hat",
+          "path": "/items/green-feather-hat",
+          "detail": "Hat, 0.16% drop rate, 620 kills counted"
+        },
+        {
+          "name": "Green Mushroom Cap",
+          "path": "/items/green-mushroom-cap",
+          "detail": "Monster drops, 42% drop rate, 620 kills counted"
+        },
+        {
+          "name": "Green Woodsman Boots",
+          "path": "/items/green-woodsman-boots",
+          "detail": "Shoes, about 0.22%, usual for its kind"
+        },
+        {
+          "name": "Iron Axe",
+          "path": "/items/iron-axe",
+          "detail": "Two-handed axe, about 0.22%, usual for its kind"
+        },
+        {
+          "name": "Mace",
+          "path": "/items/mace",
+          "detail": "One-handed blunt, about 0.22%, usual for its kind"
+        },
+        {
+          "name": "Monster Card",
+          "path": "/items/monster-card",
+          "detail": "Quest items"
+        },
+        {
+          "name": "One-Handed Axe Attack Scroll: Greater",
+          "path": "/items/one-handed-axe-attack-scroll-greater",
+          "detail": "One-handed axe scrolls"
+        },
+        {
+          "name": "Orihalcon Ore",
+          "path": "/items/orihalcon-ore",
+          "detail": "Ores & ingots, about 1.2%, usual for its kind"
+        },
+        {
+          "name": "Pan Lid",
+          "path": "/items/pan-lid",
+          "detail": "Shield, about 0.22%, usual for its kind"
+        },
+        {
+          "name": "Pet Equip Speed Scroll: Lesser",
+          "path": "/items/pet-equip-speed-scroll-lesser",
+          "detail": "Pet equipment scrolls"
+        },
+        {
+          "name": "Purple Arianne",
+          "path": "/items/purple-arianne",
+          "detail": "Topwear, about 0.22%, usual for its kind"
+        },
+        {
+          "name": "Red Potion",
+          "path": "/items/red-potion",
+          "detail": "Potions, 3.5% drop rate, 620 kills counted"
+        },
+        {
+          "name": "Sandblasted Jeans",
+          "path": "/items/sandblasted-jeans",
+          "detail": "Bottomwear, about 0.22%, usual for its kind"
+        },
+        {
+          "name": "Silver Ore",
+          "path": "/items/silver-ore",
+          "detail": "Ores & ingots, 0.81% drop rate, 620 kills counted"
+        }
+      ],
+      "total": 27
+    },
+    {
+      "title": "Quests that need it",
+      "links": [
+        {
+          "name": "Alex the Runaway Kid (Talking to Stan)",
+          "path": "/quests/talking-to-stan",
+          "detail": "Level 18"
+        },
+        {
+          "name": "Chrishrama in Need of Help",
+          "path": "/quests/chrishrama-in-need-of-help",
+          "detail": "Level 15"
+        },
+        {
+          "name": "Father's Mushroom Stew (How to Enjoy Mushrooms Even More)",
+          "path": "/quests/how-to-enjoy-mushrooms-even-more",
+          "detail": "Level 14"
+        },
+        {
+          "name": "Father's Mushroom Stew (How to Enjoy Mushrooms)",
+          "path": "/quests/how-to-enjoy-mushrooms",
+          "detail": "Level 14"
+        },
+        {
+          "name": "Francois in Need of Help",
+          "path": "/quests/francois-in-need-of-help",
+          "detail": "Level 15"
+        },
+        {
+          "name": "Winston's Fossil Dig-up (Searching for Fossils)",
+          "path": "/quests/searching-for-fossils",
+          "detail": "Level 17"
+        }
+      ],
+      "total": 6
+    }
+  ]
+}

@@ -23,6 +23,11 @@
       "kind": "item"
     },
     {
+      "path": "/maps/a-split-road",
+      "name": "A Split Road",
+      "kind": "map"
+    },
+    {
       "path": "/items/adhesive-bandage",
       "name": "Adhesive Bandage",
       "kind": "item"
@@ -86,6 +91,11 @@
       "path": "/items/axe-pole-arm",
       "name": "Axe Pole Arm",
       "kind": "item"
+    },
+    {
+      "path": "/monsters/axe-stump",
+      "name": "Axe Stump",
+      "kind": "monster"
     },
     {
       "path": "/items/basic-archer-gloves",
@@ -533,6 +543,26 @@
       "kind": "map"
     },
     {
+      "path": "/maps/dungeon-southern-forest-i",
+      "name": "Dungeon, Southern Forest I",
+      "kind": "map"
+    },
+    {
+      "path": "/maps/dungeon-southern-forest-ii",
+      "name": "Dungeon, Southern Forest II",
+      "kind": "map"
+    },
+    {
+      "path": "/maps/dungeon-southern-forest-iii",
+      "name": "Dungeon, Southern Forest III",
+      "kind": "map"
+    },
+    {
+      "path": "/maps/dungeon-southern-forest-iv",
+      "name": "Dungeon, Southern Forest IV",
+      "kind": "map"
+    },
+    {
       "path": "/items/earring-int-scroll-greater",
       "name": "Earring INT Scroll: Greater",
       "kind": "item"
@@ -711,6 +741,11 @@
       "path": "/items/green-matty",
       "name": "Green Matty",
       "kind": "item"
+    },
+    {
+      "path": "/monsters/green-mushroom",
+      "name": "Green Mushroom",
+      "kind": "monster"
     },
     {
       "path": "/items/green-mushroom-cap",
@@ -1108,6 +1143,11 @@
       "kind": "map"
     },
     {
+      "path": "/monsters/pig",
+      "name": "Pig",
+      "kind": "monster"
+    },
+    {
       "path": "/items/pig-s-ribbon",
       "name": "Pig's Ribbon",
       "kind": "item"
@@ -1218,6 +1258,11 @@
       "kind": "item"
     },
     {
+      "path": "/monsters/red-snail",
+      "name": "Red Snail",
+      "kind": "monster"
+    },
+    {
       "path": "/items/red-snail-shell",
       "name": "Red Snail Shell",
       "kind": "item"
@@ -1251,6 +1296,11 @@
       "path": "/monsters/ribbon-pig",
       "name": "Ribbon Pig",
       "kind": "monster"
+    },
+    {
+      "path": "/maps/right-around-lith-harbor",
+      "name": "Right Around Lith Harbor",
+      "kind": "map"
     },
     {
       "path": "/npcs/robin",
@@ -1478,6 +1528,11 @@
       "kind": "item"
     },
     {
+      "path": "/monsters/stump",
+      "name": "Stump",
+      "kind": "monster"
+    },
+    {
       "path": "/items/sunrise-dew",
       "name": "Sunrise Dew",
       "kind": "item"
@@ -1611,6 +1666,11 @@
       "path": "/items/topwear-mp-scroll-greater",
       "name": "Topwear MP Scroll: Greater",
       "kind": "item"
+    },
+    {
+      "path": "/monsters/tortie",
+      "name": "Tortie",
+      "kind": "monster"
     },
     {
       "path": "/items/traus",

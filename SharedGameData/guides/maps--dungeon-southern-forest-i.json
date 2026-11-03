@@ -1,0 +1,48 @@
+{
+  "schemaVersion": 1,
+  "path": "/maps/dungeon-southern-forest-i",
+  "kind": "map",
+  "name": "Dungeon, Southern Forest I",
+  "source": "CCPLZ",
+  "sourceUrl": "https://ccplz.cc/maps/dungeon-southern-forest-i",
+  "checkedAt": "2026-11-03T10:17:10.073Z",
+  "notice": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial.",
+  "fields": [
+    {
+      "label": "Region",
+      "value": "Victoria Island"
+    },
+    {
+      "label": "Street",
+      "value": "Victoria Road"
+    },
+    {
+      "label": "Monster levels",
+      "value": "6"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Monsters",
+      "links": [
+        {
+          "name": "Slime",
+          "path": "/monsters/slime",
+          "detail": "Level 6"
+        }
+      ],
+      "total": 1
+    },
+    {
+      "title": "Connected maps",
+      "links": [
+        {
+          "name": "The Forest South of Ellinia",
+          "path": "/maps/the-forest-south-of-ellinia",
+          "detail": "Victoria Road"
+        }
+      ],
+      "total": 1
+    }
+  ]
+}
