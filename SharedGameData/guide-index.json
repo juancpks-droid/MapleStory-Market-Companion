@@ -23,6 +23,11 @@
       "kind": "item"
     },
     {
+      "path": "/maps/a-hill-west-of-henesys",
+      "name": "A Hill West of Henesys",
+      "kind": "map"
+    },
+    {
       "path": "/maps/a-split-road",
       "name": "A Split Road",
       "kind": "map"
@@ -363,6 +368,11 @@
       "kind": "map"
     },
     {
+      "path": "/items/censor",
+      "name": "Censor",
+      "kind": "item"
+    },
+    {
       "path": "/monsters/chirppy",
       "name": "Chirppy",
       "kind": "monster"
@@ -603,6 +613,11 @@
       "kind": "map"
     },
     {
+      "path": "/monsters/fire-boar",
+      "name": "Fire Boar",
+      "kind": "monster"
+    },
+    {
       "path": "/monsters/fire-sentinel",
       "name": "Fire Sentinel",
       "kind": "monster"
@@ -691,6 +706,11 @@
       "path": "/items/gloves-magic-attack-scroll-intermediate",
       "name": "Gloves Magic Attack Scroll: Intermediate",
       "kind": "item"
+    },
+    {
+      "path": "/monsters/glowshroom",
+      "name": "Glowshroom",
+      "kind": "monster"
     },
     {
       "path": "/items/goatee",
@@ -833,6 +853,11 @@
       "kind": "map"
     },
     {
+      "path": "/monsters/horny-mushroom",
+      "name": "Horny Mushroom",
+      "kind": "monster"
+    },
+    {
       "path": "/items/horny-mushroom-cap",
       "name": "Horny Mushroom Cap",
       "kind": "item"
@@ -908,6 +933,16 @@
       "kind": "monster"
     },
     {
+      "path": "/monsters/jr-necki",
+      "name": "Jr. Necki",
+      "kind": "monster"
+    },
+    {
+      "path": "/monsters/jr-wraith",
+      "name": "Jr. Wraith",
+      "kind": "monster"
+    },
+    {
       "path": "/monsters/jr-yeti",
       "name": "Jr. Yeti",
       "kind": "monster"
@@ -946,6 +981,11 @@
       "path": "/maps/kerning-city-middle-forest-iii",
       "name": "Kerning City Middle Forest III",
       "kind": "map"
+    },
+    {
+      "path": "/items/kiss-mark",
+      "name": "Kiss Mark",
+      "kind": "item"
     },
     {
       "path": "/items/knuckle-mace",
@@ -995,6 +1035,11 @@
     {
       "path": "/monsters/lorang",
       "name": "Lorang",
+      "kind": "monster"
+    },
+    {
+      "path": "/monsters/lupin",
+      "name": "Lupin",
       "kind": "monster"
     },
     {
@@ -1348,6 +1393,11 @@
       "kind": "npc"
     },
     {
+      "path": "/items/rudolph-s-red-nose",
+      "name": "Rudolph's Red Nose",
+      "kind": "item"
+    },
+    {
       "path": "/items/sai",
       "name": "Sai",
       "kind": "item"
@@ -1361,6 +1411,11 @@
       "path": "/quests/sam-s-suggestion",
       "name": "Sam's Suggestion",
       "kind": "quest"
+    },
+    {
+      "path": "/items/santa-beard",
+      "name": "Santa Beard",
+      "kind": "item"
     },
     {
       "path": "/items/sap-of-ancient-tree",
@@ -1526,6 +1581,11 @@
       "path": "/items/steel-tower-shield",
       "name": "Steel Tower Shield",
       "kind": "item"
+    },
+    {
+      "path": "/monsters/stirge",
+      "name": "Stirge",
+      "kind": "monster"
     },
     {
       "path": "/monsters/stump",
@@ -1781,6 +1841,11 @@
       "path": "/items/white-undershirt",
       "name": "White Undershirt",
       "kind": "item"
+    },
+    {
+      "path": "/monsters/wild-boar",
+      "name": "Wild Boar",
+      "kind": "monster"
     },
     {
       "path": "/items/wisdom-crystal-ore",

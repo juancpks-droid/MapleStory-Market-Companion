@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "publishedAt": "2026-11-03T10:17:22.168Z",
+  "publishedAt": "2026-11-04T10:29:41.720Z",
   "catalogItems": 12726,
-  "guideRecords": 359,
+  "guideRecords": 372,
   "referenceRecords": 169,
   "entries": [
     {
@@ -381,6 +381,13 @@
       "bytes": 1922,
       "sha256": "d4d64d5433ebc7913a3d66a2278af4e960ee7186bc33678521a2a18ca8bff27f",
       "checkedAt": "2026-10-15T09:57:29.636Z",
+      "kind": "item"
+    },
+    {
+      "file": "guides/items--censor.json",
+      "bytes": 2085,
+      "sha256": "4142f0c9415c87f767fe6c742ffa5b64426b48d02cf347340984c612112479ef",
+      "checkedAt": "2026-11-04T10:29:08.656Z",
       "kind": "item"
     },
     {
@@ -783,6 +790,13 @@
       "kind": "item"
     },
     {
+      "file": "guides/items--kiss-mark.json",
+      "bytes": 1842,
+      "sha256": "2874928af269fed42bfd1eccb288667f8f59fac52821cd7410d9522c119ff2b4",
+      "checkedAt": "2026-11-04T10:29:11.758Z",
+      "kind": "item"
+    },
+    {
       "file": "guides/items--knuckle-mace.json",
       "bytes": 2574,
       "sha256": "20cae4ff097cd661ff35da5fca65e46ef58aae4260145a93a2996d78fb4ffd98",
@@ -1126,10 +1140,24 @@
       "kind": "item"
     },
     {
+      "file": "guides/items--rudolph-s-red-nose.json",
+      "bytes": 2121,
+      "sha256": "fad53a3daf2b4514eb1b9cf6ef80c70a64c5512138a562ad2a1eac23dd386b42",
+      "checkedAt": "2026-11-04T10:29:17.734Z",
+      "kind": "item"
+    },
+    {
       "file": "guides/items--sai.json",
       "bytes": 2991,
       "sha256": "e12dd0167b2cf291a72c40a994cec60e6a7590a2df3b415f72ee97a475abc308",
       "checkedAt": "2026-10-19T10:00:40.733Z",
+      "kind": "item"
+    },
+    {
+      "file": "guides/items--santa-beard.json",
+      "bytes": 2100,
+      "sha256": "c188bbb73e14956640600b52250a8ac905f1ec4f903b3feedb9c42e3767f8adc",
+      "checkedAt": "2026-11-04T10:29:05.584Z",
       "kind": "item"
     },
     {
@@ -1420,6 +1448,13 @@
       "kind": "map"
     },
     {
+      "file": "guides/maps--a-hill-west-of-henesys.json",
+      "bytes": 2051,
+      "sha256": "4e58af706a42c6d7b45c8c09607d8d7a4726f1f5fc2ac41425b0c297ff4e069d",
+      "checkedAt": "2026-11-04T10:29:02.564Z",
+      "kind": "map"
+    },
+    {
       "file": "guides/maps--a-split-road.json",
       "bytes": 2132,
       "sha256": "5dab427d157125440dd9b5625c1d3b47f70caefaa7b7ac5a68a59a9cbbf50144",
@@ -1597,8 +1632,8 @@
     {
       "file": "guides/maps--hunting-ground-middle-of-the-forest-ii.json",
       "bytes": 1686,
-      "sha256": "87dd8b51f9ece078008f64224928c09ce1417c0a44542761e52008caae505720",
-      "checkedAt": "2026-10-13T20:14:16.583Z",
+      "sha256": "227300e416cc274ecc9d18ee325add85d5ebc838fffb3dff91c2460f4b713f67",
+      "checkedAt": "2026-11-04T10:28:50.578Z",
       "kind": "map"
     },
     {
@@ -1730,8 +1765,8 @@
     {
       "file": "guides/maps--rocky-road-i.json",
       "bytes": 1733,
-      "sha256": "b763d37afb7a01d70e2da8363397448f9d21fd716f59f987a3e6e9e5e0ff1b29",
-      "checkedAt": "2026-10-13T20:14:22.561Z",
+      "sha256": "f7065cc5986b8386872b72e7c4a04e1ea84b66721c2aaca2dad9153f0f1fc5af",
+      "checkedAt": "2026-11-04T10:28:56.575Z",
       "kind": "map"
     },
     {
@@ -1933,8 +1968,8 @@
     {
       "file": "guides/maps--thicket-around-the-beach-ii.json",
       "bytes": 1680,
-      "sha256": "8e7963edf1e7c79fd999618a82dab8a1c0604dc7d4faf9d98bc11ac6252fbe8f",
-      "checkedAt": "2026-10-13T20:14:25.584Z",
+      "sha256": "a56ccf67da16f7bd93041852d0e76102b387b6d015ab114d69d9ceea71ca919e",
+      "checkedAt": "2026-11-04T10:28:59.524Z",
       "kind": "map"
     },
     {
@@ -1947,8 +1982,8 @@
     {
       "file": "guides/maps--tomato-field.json",
       "bytes": 1491,
-      "sha256": "a93f4fc4043d8f2e7273ae903b28e1fe94292095206d0e39b23b30e52143ae03",
-      "checkedAt": "2026-10-13T20:14:19.557Z",
+      "sha256": "7504d7a1bef0e8870da0fd5c47b64d67a50b9592ba7fb97f4a76e6ea3af00bf5",
+      "checkedAt": "2026-11-04T10:28:53.563Z",
       "kind": "map"
     },
     {
@@ -2092,6 +2127,13 @@
       "kind": "monster"
     },
     {
+      "file": "guides/monsters--fire-boar.json",
+      "bytes": 9137,
+      "sha256": "63895a2e4f8f6923d8787d272383f51670e14a92ce2e80770e63179a76febb51",
+      "checkedAt": "2026-11-04T10:29:20.573Z",
+      "kind": "monster"
+    },
+    {
       "file": "guides/monsters--fire-sentinel.json",
       "bytes": 2261,
       "sha256": "074f9ae9e87bca552e592d1b12f5f83b4fb6eddc57c881ffaa10d71f3f8bd49f",
@@ -2113,6 +2155,13 @@
       "kind": "monster"
     },
     {
+      "file": "guides/monsters--glowshroom.json",
+      "bytes": 2491,
+      "sha256": "2783a85bcf256789c9b3b2df16db98bc523dc9ebaebe71cd3d5bcfc567890fb6",
+      "checkedAt": "2026-11-04T10:29:23.553Z",
+      "kind": "monster"
+    },
+    {
       "file": "guides/monsters--green-mushroom.json",
       "bytes": 12684,
       "sha256": "7f5bcdb0cfd959bbd06bc050862935c19fedbb44bb6e3b4a9f9fa612dd77a531",
@@ -2124,6 +2173,13 @@
       "bytes": 3186,
       "sha256": "878d475b4ceae672ee73479096e87e24248f9b3fa61e01a42ed4d2d5b3cf1b78",
       "checkedAt": "2026-10-19T10:01:07.744Z",
+      "kind": "monster"
+    },
+    {
+      "file": "guides/monsters--horny-mushroom.json",
+      "bytes": 10628,
+      "sha256": "318ef15de5e7b574417efe0cdcacd8eba2122dad15b8179610dd48130cad1c76",
+      "checkedAt": "2026-11-04T10:29:26.537Z",
       "kind": "monster"
     },
     {
@@ -2148,6 +2204,20 @@
       "kind": "monster"
     },
     {
+      "file": "guides/monsters--jr-necki.json",
+      "bytes": 7308,
+      "sha256": "5c2d990794ac2a3b8f510b8e8b724467018637c1be5351769d107133f21fa1d3",
+      "checkedAt": "2026-11-04T10:29:29.577Z",
+      "kind": "monster"
+    },
+    {
+      "file": "guides/monsters--jr-wraith.json",
+      "bytes": 6182,
+      "sha256": "d4712be1bfd7025ef4ebd7d9074daf8dc217a43b94ee54fbbbb701d6c509ac40",
+      "checkedAt": "2026-11-04T10:29:32.574Z",
+      "kind": "monster"
+    },
+    {
       "file": "guides/monsters--jr-yeti.json",
       "bytes": 4080,
       "sha256": "84dd4534bad13bc47b67c40ea5ee9ec8b89ca88560a90edbb925970396a2a92d",
@@ -2159,6 +2229,13 @@
       "bytes": 6546,
       "sha256": "f2e2522df5edda0b9029574dd123e052bb0f37620980b4d8feb1612fa2a1ee44",
       "checkedAt": "2026-10-19T10:00:52.742Z",
+      "kind": "monster"
+    },
+    {
+      "file": "guides/monsters--lupin.json",
+      "bytes": 8731,
+      "sha256": "ae81810aa204a5ea6b18dc64964e232e1a9f9d5ce06ad83bedce01e4f5db2809",
+      "checkedAt": "2026-11-04T10:29:35.574Z",
       "kind": "monster"
     },
     {
@@ -2239,6 +2316,13 @@
       "kind": "monster"
     },
     {
+      "file": "guides/monsters--stirge.json",
+      "bytes": 5770,
+      "sha256": "82412ede4647351837cd02b224015fe43d4063e6b2cc32614c2f5c737b163cfe",
+      "checkedAt": "2026-11-04T10:29:38.573Z",
+      "kind": "monster"
+    },
+    {
       "file": "guides/monsters--stump.json",
       "bytes": 10339,
       "sha256": "20083b649386a34b766237c5dc9e64517e1ca250a60749988119aed3b7cbe00d",
@@ -2250,6 +2334,13 @@
       "bytes": 2845,
       "sha256": "7e96b8d6c4eb91095aa3899cb5865548482f744492d7d06cf87a09a25ab37352",
       "checkedAt": "2026-11-03T10:16:43.089Z",
+      "kind": "monster"
+    },
+    {
+      "file": "guides/monsters--wild-boar.json",
+      "bytes": 5934,
+      "sha256": "9c78a1c2a5e3f4c8004c7bff748338bac7e05c31ab477c03ef9f3cd6742c09d9",
+      "checkedAt": "2026-11-04T10:29:41.605Z",
       "kind": "monster"
     },
     {

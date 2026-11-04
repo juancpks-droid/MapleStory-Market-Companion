@@ -1,0 +1,313 @@
+{
+  "schemaVersion": 1,
+  "path": "/monsters/fire-boar",
+  "kind": "monster",
+  "name": "Fire Boar",
+  "source": "CCPLZ",
+  "sourceUrl": "https://ccplz.cc/monsters/fire-boar",
+  "checkedAt": "2026-11-04T10:29:20.573Z",
+  "notice": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial.",
+  "fields": [
+    {
+      "label": "Level",
+      "value": "32"
+    },
+    {
+      "label": "HP",
+      "value": "842"
+    },
+    {
+      "label": "EXP",
+      "value": "60"
+    },
+    {
+      "label": "MP",
+      "value": "0"
+    },
+    {
+      "label": "Attack",
+      "value": "180"
+    },
+    {
+      "label": "Defense",
+      "value": "10"
+    },
+    {
+      "label": "Accuracy",
+      "value": "110"
+    },
+    {
+      "label": "Avoidability",
+      "value": "21"
+    },
+    {
+      "label": "Weak to",
+      "value": "Ice"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Where it spawns",
+      "links": [
+        {
+          "name": "The Burnt Land V",
+          "path": "/maps/the-burnt-land-v",
+          "detail": "Victoria Island, 26 spawn points"
+        },
+        {
+          "name": "The Burnt Land III",
+          "path": "/maps/the-burnt-land-iii",
+          "detail": "Victoria Island, 24 spawn points"
+        },
+        {
+          "name": "Dangerous Valley",
+          "path": "/maps/dangerous-valley",
+          "detail": "Victoria Island, 21 spawn points"
+        },
+        {
+          "name": "The Burnt Land IV",
+          "path": "/maps/the-burnt-land-iv",
+          "detail": "Victoria Island, 21 spawn points"
+        },
+        {
+          "name": "East Rocky Mountain VII",
+          "path": "/maps/east-rocky-mountain-vii",
+          "detail": "Victoria Island, 20 spawn points"
+        },
+        {
+          "name": "The Burnt Land II",
+          "path": "/maps/the-burnt-land-ii",
+          "detail": "Victoria Island, 19 spawn points"
+        },
+        {
+          "name": "The Burnt Land I",
+          "path": "/maps/the-burnt-land-i",
+          "detail": "Victoria Island, 18 spawn points"
+        },
+        {
+          "name": "East Rocky Mountain VI",
+          "path": "/maps/east-rocky-mountain-vi",
+          "detail": "Victoria Island, 10 spawn points"
+        },
+        {
+          "name": "Perion Dungeon Entrance",
+          "path": "/maps/perion-dungeon-entrance",
+          "detail": "Victoria Island, 9 spawn points"
+        },
+        {
+          "name": "Deep Valley III",
+          "path": "/maps/deep-valley-iii",
+          "detail": "Victoria Island, 9 spawn points"
+        },
+        {
+          "name": "Dangerous Valley II",
+          "path": "/maps/dangerous-valley-ii",
+          "detail": "Victoria Island, 8 spawn points"
+        },
+        {
+          "name": "Deep Valley II",
+          "path": "/maps/deep-valley-ii",
+          "detail": "Victoria Island, 5 spawn points"
+        },
+        {
+          "name": "Deep Valley I",
+          "path": "/maps/deep-valley-i",
+          "detail": "Victoria Island, 4 spawn points"
+        },
+        {
+          "name": "East Rocky Mountain V",
+          "path": "/maps/east-rocky-mountain-v",
+          "detail": "Victoria Island, 4 spawn points"
+        }
+      ],
+      "total": 14
+    },
+    {
+      "title": "Drops",
+      "links": [
+        {
+          "name": "Animal Fur Bundle",
+          "path": "/items/animal-fur-bundle",
+          "detail": "Monster drops"
+        },
+        {
+          "name": "Arrows for Crossbows",
+          "path": "/items/arrows-for-crossbows",
+          "detail": "Arrows for crossbows, about 1.1%, usual for its kind"
+        },
+        {
+          "name": "Arwen's Glass Shoe",
+          "path": "/items/arwen-s-glass-shoe",
+          "detail": "Passes & coupons"
+        },
+        {
+          "name": "Black Amoria Skirt",
+          "path": "/items/black-amoria-skirt",
+          "detail": "Bottomwear, about 0.22%, usual for its kind"
+        },
+        {
+          "name": "Blood Fitted Mail",
+          "path": "/items/blood-fitted-mail",
+          "detail": "Overall, about 0.22%, usual for its kind"
+        },
+        {
+          "name": "Blue Amoria Skirt",
+          "path": "/items/blue-amoria-skirt",
+          "detail": "Bottomwear, about 0.22%, usual for its kind"
+        },
+        {
+          "name": "Blue Legolier Pants",
+          "path": "/items/blue-legolier-pants",
+          "detail": "Bottomwear, about 0.22%, usual for its kind"
+        },
+        {
+          "name": "Blue Potion",
+          "path": "/items/blue-potion",
+          "detail": "Potions, about 2.4%, usual for its kind"
+        },
+        {
+          "name": "Brown Martial Arts Pants",
+          "path": "/items/brown-martial-arts-pants",
+          "detail": "Bottomwear, about 0.22%, usual for its kind"
+        },
+        {
+          "name": "Diamond Ore",
+          "path": "/items/diamond-ore",
+          "detail": "Gems & gem ores, about 1.2%, usual for its kind"
+        },
+        {
+          "name": "Earring STR Scroll: Greater",
+          "path": "/items/earring-str-scroll-greater",
+          "detail": "Earring scrolls"
+        },
+        {
+          "name": "Fire Boar's Tooth",
+          "path": "/items/fire-boar-s-tooth",
+          "detail": "Monster drops"
+        },
+        {
+          "name": "Fireman's Axe",
+          "path": "/items/fireman-s-axe",
+          "detail": "One-handed axe, about 0.22%, usual for its kind"
+        },
+        {
+          "name": "Garnet Ore",
+          "path": "/items/garnet-ore",
+          "detail": "Gems & gem ores, about 1.2%, usual for its kind"
+        },
+        {
+          "name": "Golden Pride",
+          "path": "/items/golden-pride",
+          "detail": "Hat, about 0.22%, usual for its kind"
+        },
+        {
+          "name": "Green Knucklevest",
+          "path": "/items/green-knucklevest",
+          "detail": "Topwear, about 0.22%, usual for its kind"
+        },
+        {
+          "name": "Green Pole-Feather Hat",
+          "path": "/items/green-pole-feather-hat",
+          "detail": "Hat, about 0.22%, usual for its kind"
+        },
+        {
+          "name": "Iron Ore",
+          "path": "/items/iron-ore",
+          "detail": "Ores & ingots, about 1.2%, usual for its kind"
+        },
+        {
+          "name": "Leather",
+          "path": "/items/leather",
+          "detail": "Monster drops"
+        },
+        {
+          "name": "Mithril Ore",
+          "path": "/items/mithril-ore",
+          "detail": "Ores & ingots, about 1.2%, usual for its kind"
+        },
+        {
+          "name": "Monster Card",
+          "path": "/items/monster-card",
+          "detail": "Quest items"
+        },
+        {
+          "name": "Orange Potion",
+          "path": "/items/orange-potion",
+          "detail": "Potions, about 2.4%, usual for its kind"
+        },
+        {
+          "name": "Red Amoria Skirt",
+          "path": "/items/red-amoria-skirt",
+          "detail": "Bottomwear, about 0.22%, usual for its kind"
+        },
+        {
+          "name": "Red Guiltian",
+          "path": "/items/red-guiltian",
+          "detail": "Hat, about 0.22%, usual for its kind"
+        },
+        {
+          "name": "Red Guise",
+          "path": "/items/red-guise",
+          "detail": "Hat, about 0.22%, usual for its kind"
+        },
+        {
+          "name": "Red Hawkeye",
+          "path": "/items/red-hawkeye",
+          "detail": "Hat, about 0.22%, usual for its kind"
+        },
+        {
+          "name": "Red Matty",
+          "path": "/items/red-matty",
+          "detail": "Hat, about 0.22%, usual for its kind"
+        },
+        {
+          "name": "Red Pilfer",
+          "path": "/items/red-pilfer",
+          "detail": "Hat, about 0.22%, usual for its kind"
+        },
+        {
+          "name": "Red Shadow",
+          "path": "/items/red-shadow",
+          "detail": "Topwear, about 0.22%, usual for its kind"
+        },
+        {
+          "name": "Red Shadow Pants",
+          "path": "/items/red-shadow-pants",
+          "detail": "Bottomwear, about 0.22%, usual for its kind"
+        },
+        {
+          "name": "Red Viper",
+          "path": "/items/red-viper",
+          "detail": "Bow, about 0.22%, usual for its kind"
+        },
+        {
+          "name": "Ryden",
+          "path": "/items/ryden",
+          "detail": "Bow, about 0.22%, usual for its kind"
+        },
+        {
+          "name": "Topwear HP Scroll: Greater",
+          "path": "/items/topwear-hp-scroll-greater",
+          "detail": "Topwear scrolls"
+        },
+        {
+          "name": "Wolbi Throwing Stars",
+          "path": "/items/wolbi-throwing-stars",
+          "detail": "Throwing stars"
+        }
+      ],
+      "total": 34
+    },
+    {
+      "title": "Quests that need it",
+      "links": [
+        {
+          "name": "Ronnie & the Fairies Building a New House (Third Material Delivery for Building a New House)",
+          "path": "/quests/third-material-delivery-for-building-a-new-house",
+          "detail": "Level 41"
+        }
+      ],
+      "total": 1
+    }
+  ]
+}

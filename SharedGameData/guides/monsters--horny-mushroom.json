@@ -1,0 +1,344 @@
+{
+  "schemaVersion": 1,
+  "path": "/monsters/horny-mushroom",
+  "kind": "monster",
+  "name": "Horny Mushroom",
+  "source": "CCPLZ",
+  "sourceUrl": "https://ccplz.cc/monsters/horny-mushroom",
+  "checkedAt": "2026-11-04T10:29:26.537Z",
+  "notice": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial.",
+  "fields": [
+    {
+      "label": "Level",
+      "value": "22"
+    },
+    {
+      "label": "HP",
+      "value": "403"
+    },
+    {
+      "label": "EXP",
+      "value": "41"
+    },
+    {
+      "label": "MP",
+      "value": "30"
+    },
+    {
+      "label": "Attack",
+      "value": "110"
+    },
+    {
+      "label": "Defense",
+      "value": "10"
+    },
+    {
+      "label": "Accuracy",
+      "value": "94"
+    },
+    {
+      "label": "Avoidability",
+      "value": "13"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Where it spawns",
+      "links": [
+        {
+          "name": "Ant Tunnel IV",
+          "path": "/maps/ant-tunnel-iv",
+          "detail": "Victoria Island, 41 spawn points"
+        },
+        {
+          "name": "Ant Tunnel III",
+          "path": "/maps/ant-tunnel-iii",
+          "detail": "Victoria Island, 38 spawn points"
+        },
+        {
+          "name": "The Swamp of Despair II",
+          "path": "/maps/the-swamp-of-despair-ii",
+          "detail": "Victoria Island, 20 spawn points"
+        },
+        {
+          "name": "Downstairs at the Forest",
+          "path": "/maps/downstairs-at-the-forest",
+          "detail": "Victoria Island, 17 spawn points"
+        },
+        {
+          "name": "Tree Dungeon, Forest Up North III",
+          "path": "/maps/tree-dungeon-forest-up-north-iii",
+          "detail": "Victoria Island, 16 spawn points"
+        },
+        {
+          "name": "Hunting Ground in the Deep Forest II",
+          "path": "/maps/hunting-ground-in-the-deep-forest-ii",
+          "detail": "Victoria Island, 16 spawn points"
+        },
+        {
+          "name": "Deep Ant Tunnel I",
+          "path": "/maps/deep-ant-tunnel-i",
+          "detail": "Victoria Island, 16 spawn points"
+        },
+        {
+          "name": "Ant Tunnel I",
+          "path": "/maps/ant-tunnel-i",
+          "detail": "Victoria Island, 15 spawn points"
+        },
+        {
+          "name": "Tree Dungeon, Forest Up North II",
+          "path": "/maps/tree-dungeon-forest-up-north-ii",
+          "detail": "Victoria Island, 15 spawn points"
+        },
+        {
+          "name": "Tree Dungeon, Forest Up North V",
+          "path": "/maps/tree-dungeon-forest-up-north-v",
+          "detail": "Victoria Island, 15 spawn points"
+        },
+        {
+          "name": "Ant Tunnel II",
+          "path": "/maps/ant-tunnel-ii",
+          "detail": "Victoria Island, 15 spawn points"
+        },
+        {
+          "name": "Tree Dungeon, Forest Up North I",
+          "path": "/maps/tree-dungeon-forest-up-north-i",
+          "detail": "Victoria Island, 14 spawn points"
+        },
+        {
+          "name": "Dungeon, Southern Forest IV",
+          "path": "/maps/dungeon-southern-forest-iv",
+          "detail": "Victoria Island, 13 spawn points"
+        },
+        {
+          "name": "Sleepy Dungeon I",
+          "path": "/maps/sleepy-dungeon-i",
+          "detail": "Victoria Island, 10 spawn points"
+        },
+        {
+          "name": "Deep Ant Tunnel II",
+          "path": "/maps/deep-ant-tunnel-ii",
+          "detail": "Victoria Island, 9 spawn points"
+        },
+        {
+          "name": "Sleepy Dungeon II",
+          "path": "/maps/sleepy-dungeon-ii",
+          "detail": "Victoria Island, 9 spawn points"
+        },
+        {
+          "name": "Swampy Land in a Deep Forest",
+          "path": "/maps/swampy-land-in-a-deep-forest",
+          "detail": "Victoria Island, 9 spawn points"
+        },
+        {
+          "name": "Dark Cave",
+          "path": "/maps/dark-cave",
+          "detail": "Victoria Island, 9 spawn points"
+        },
+        {
+          "name": "Deep Forest",
+          "path": "/maps/deep-forest",
+          "detail": "Victoria Island, 6 spawn points"
+        },
+        {
+          "name": "Dangerous Steam",
+          "path": "/maps/dangerous-steam",
+          "detail": "Victoria Island, 5 spawn points"
+        },
+        {
+          "name": "Ant Tunnel Park",
+          "path": "/maps/ant-tunnel-park",
+          "detail": "Victoria Island, 4 spawn points"
+        },
+        {
+          "name": "The Swamp of Despair I",
+          "path": "/maps/the-swamp-of-despair-i",
+          "detail": "Victoria Island, 3 spawn points"
+        },
+        {
+          "name": "Drake Hunting Ground",
+          "path": "/maps/drake-hunting-ground",
+          "detail": "Victoria Island, 2 spawn points"
+        },
+        {
+          "name": "1st Accompaniment <Bonus>",
+          "path": "/maps/1st-accompaniment-bonus",
+          "detail": "Other, 24 spawn points"
+        }
+      ],
+      "total": 24
+    },
+    {
+      "title": "Drops",
+      "links": [
+        {
+          "name": "Arrows for Bows",
+          "path": "/items/arrows-for-bows",
+          "detail": "Arrows for bows, 0.63% drop rate, 633 kills counted"
+        },
+        {
+          "name": "Arrows for Crossbows",
+          "path": "/items/arrows-for-crossbows",
+          "detail": "Arrows for crossbows, 1.3% drop rate, 633 kills counted"
+        },
+        {
+          "name": "Black Sneak Pants",
+          "path": "/items/black-sneak-pants",
+          "detail": "Bottomwear, 0.16% drop rate, 633 kills counted"
+        },
+        {
+          "name": "Blue Guise",
+          "path": "/items/blue-guise",
+          "detail": "Hat, about 0.22%, usual for its kind"
+        },
+        {
+          "name": "Blue Hawkeye",
+          "path": "/items/blue-hawkeye",
+          "detail": "Hat, about 0.22%, usual for its kind"
+        },
+        {
+          "name": "Blue Jewelry Boots",
+          "path": "/items/blue-jewelry-boots",
+          "detail": "Shoes, about 0.22%, usual for its kind"
+        },
+        {
+          "name": "Blue Pole-Feather Hat",
+          "path": "/items/blue-pole-feather-hat",
+          "detail": "Hat, about 0.22%, usual for its kind"
+        },
+        {
+          "name": "Blue Potion",
+          "path": "/items/blue-potion",
+          "detail": "Potions, 0.95% drop rate, 633 kills counted"
+        },
+        {
+          "name": "Blue Shark",
+          "path": "/items/blue-shark",
+          "detail": "Topwear, about 0.22%, usual for its kind"
+        },
+        {
+          "name": "Bronze Ore",
+          "path": "/items/bronze-ore",
+          "detail": "Ores & ingots, 2.4% drop rate, 633 kills counted"
+        },
+        {
+          "name": "Brown Jester",
+          "path": "/items/brown-jester",
+          "detail": "Hat, about 0.22%, usual for its kind"
+        },
+        {
+          "name": "Cutlus",
+          "path": "/items/cutlus",
+          "detail": "One-handed sword, about 0.22%, usual for its kind"
+        },
+        {
+          "name": "Dark Master Sergeant",
+          "path": "/items/dark-master-sergeant",
+          "detail": "Topwear, about 0.22%, usual for its kind"
+        },
+        {
+          "name": "Gloves Accuracy Scroll: Greater",
+          "path": "/items/gloves-accuracy-scroll-greater",
+          "detail": "Gloves scrolls"
+        },
+        {
+          "name": "Hat Accuracy Scroll: Greater",
+          "path": "/items/hat-accuracy-scroll-greater",
+          "detail": "Hat scrolls"
+        },
+        {
+          "name": "Horny Mushroom Cap",
+          "path": "/items/horny-mushroom-cap",
+          "detail": "Monster drops, 46% drop rate, 633 kills counted"
+        },
+        {
+          "name": "Iron Dagger",
+          "path": "/items/iron-dagger",
+          "detail": "Dagger, about 0.22%, usual for its kind"
+        },
+        {
+          "name": "Magic Potion",
+          "path": "/items/magic-potion",
+          "detail": "Buff potions, 0.95% drop rate, 633 kills counted"
+        },
+        {
+          "name": "Mithril Pole Arm",
+          "path": "/items/mithril-pole-arm",
+          "detail": "Polearm, about 0.22%, usual for its kind"
+        },
+        {
+          "name": "Monster Card",
+          "path": "/items/monster-card",
+          "detail": "Quest items"
+        },
+        {
+          "name": "Orange Potion",
+          "path": "/items/orange-potion",
+          "detail": "Potions, 2.5% drop rate, 633 kills counted"
+        },
+        {
+          "name": "Sapphire Ore",
+          "path": "/items/sapphire-ore",
+          "detail": "Gems & gem ores, about 1.2%, usual for its kind"
+        },
+        {
+          "name": "Sky Sneak Pants",
+          "path": "/items/sky-sneak-pants",
+          "detail": "Bottomwear, 0.16% drop rate, 633 kills counted"
+        },
+        {
+          "name": "Steel Fingerless Gloves",
+          "path": "/items/steel-fingerless-gloves",
+          "detail": "Gloves, about 0.22%, usual for its kind"
+        },
+        {
+          "name": "Steel Shield",
+          "path": "/items/steel-shield",
+          "detail": "Shield, about 0.22%, usual for its kind"
+        },
+        {
+          "name": "Topaz Ore",
+          "path": "/items/topaz-ore",
+          "detail": "Gems & gem ores, 0.32% drop rate, 633 kills counted"
+        },
+        {
+          "name": "Two-handed Axe Attack Scroll: Greater",
+          "path": "/items/two-handed-axe-attack-scroll-greater",
+          "detail": "Two-handed axe scrolls"
+        },
+        {
+          "name": "Two-handed Blunt Weapon Attack Scroll: Greater",
+          "path": "/items/two-handed-blunt-weapon-attack-scroll-greater",
+          "detail": "Two-handed blunt scrolls"
+        }
+      ],
+      "total": 28
+    },
+    {
+      "title": "Quests that need it",
+      "links": [
+        {
+          "name": "An Arcforger in My Own Right!",
+          "path": "/quests/an-arcforger-in-my-own-right",
+          "detail": "Level 25"
+        },
+        {
+          "name": "Jane and the Mushroom",
+          "path": "/quests/jane-and-the-mushroom",
+          "detail": "Level 20"
+        },
+        {
+          "name": "Nella & Kerning City Citizen's Other Request (Dr. Faymus's Request)",
+          "path": "/quests/dr-faymus-s-request",
+          "detail": "Level 22"
+        },
+        {
+          "name": "Ronnie & the Fairies Building a New House (First Material Delivery for Building a New House)",
+          "path": "/quests/first-material-delivery-for-building-a-new-house",
+          "detail": "Level 41"
+        }
+      ],
+      "total": 4
+    }
+  ]
+}

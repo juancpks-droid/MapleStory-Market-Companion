@@ -1,0 +1,97 @@
+{
+  "schemaVersion": 1,
+  "path": "/monsters/glowshroom",
+  "kind": "monster",
+  "name": "Glowshroom",
+  "source": "CCPLZ",
+  "sourceUrl": "https://ccplz.cc/monsters/glowshroom",
+  "checkedAt": "2026-11-04T10:29:23.553Z",
+  "notice": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial.",
+  "fields": [
+    {
+      "label": "Level",
+      "value": "39"
+    },
+    {
+      "label": "HP",
+      "value": "1,377"
+    },
+    {
+      "label": "EXP",
+      "value": "82"
+    },
+    {
+      "label": "MP",
+      "value": "50"
+    },
+    {
+      "label": "Attack",
+      "value": "232"
+    },
+    {
+      "label": "Defense",
+      "value": "10"
+    },
+    {
+      "label": "Accuracy",
+      "value": "118"
+    },
+    {
+      "label": "Avoidability",
+      "value": "25"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Drops",
+      "links": [
+        {
+          "name": "Blue Potion",
+          "path": "/items/blue-potion",
+          "detail": "Potions, about 2.4%, usual for its kind"
+        },
+        {
+          "name": "Blue Steal Pants",
+          "path": "/items/blue-steal-pants",
+          "detail": "Bottomwear, about 0.22%, usual for its kind"
+        },
+        {
+          "name": "Blue Wizard Robe",
+          "path": "/items/blue-wizard-robe",
+          "detail": "Overall, about 0.22%, usual for its kind"
+        },
+        {
+          "name": "Dark Silver Stealer Pants",
+          "path": "/items/dark-silver-stealer-pants",
+          "detail": "Bottomwear, about 0.22%, usual for its kind"
+        },
+        {
+          "name": "Emerald Ore",
+          "path": "/items/emerald-ore",
+          "detail": "Gems & gem ores, about 1.2%, usual for its kind"
+        },
+        {
+          "name": "Glowing Mushroom Spore",
+          "path": "/items/glowing-mushroom-spore",
+          "detail": "Monster drops"
+        },
+        {
+          "name": "Halfmoon Zamadar",
+          "path": "/items/halfmoon-zamadar",
+          "detail": "Dagger, about 0.22%, usual for its kind"
+        },
+        {
+          "name": "Orange Potion",
+          "path": "/items/orange-potion",
+          "detail": "Potions, about 2.4%, usual for its kind"
+        },
+        {
+          "name": "Silver Ore",
+          "path": "/items/silver-ore",
+          "detail": "Ores & ingots, about 1.2%, usual for its kind"
+        }
+      ],
+      "total": 9
+    }
+  ]
+}

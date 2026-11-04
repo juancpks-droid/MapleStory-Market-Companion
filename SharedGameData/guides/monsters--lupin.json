@@ -1,0 +1,299 @@
+{
+  "schemaVersion": 1,
+  "path": "/monsters/lupin",
+  "kind": "monster",
+  "name": "Lupin",
+  "source": "CCPLZ",
+  "sourceUrl": "https://ccplz.cc/monsters/lupin",
+  "checkedAt": "2026-11-04T10:29:35.574Z",
+  "notice": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial.",
+  "fields": [
+    {
+      "label": "Level",
+      "value": "37"
+    },
+    {
+      "label": "HP",
+      "value": "1,336"
+    },
+    {
+      "label": "EXP",
+      "value": "75"
+    },
+    {
+      "label": "MP",
+      "value": "100"
+    },
+    {
+      "label": "Attack",
+      "value": "203"
+    },
+    {
+      "label": "Defense",
+      "value": "0"
+    },
+    {
+      "label": "Accuracy",
+      "value": "116"
+    },
+    {
+      "label": "Avoidability",
+      "value": "27"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Where it spawns",
+      "links": [
+        {
+          "name": "Monkey Swamp I",
+          "path": "/maps/monkey-swamp-i",
+          "detail": "Victoria Island, 28 spawn points"
+        },
+        {
+          "name": "A Look-Out Shed Around the Beach",
+          "path": "/maps/a-look-out-shed-around-the-beach",
+          "detail": "Victoria Island, 27 spawn points"
+        },
+        {
+          "name": "Sleepy Dungeon V",
+          "path": "/maps/sleepy-dungeon-v",
+          "detail": "Victoria Island, 23 spawn points"
+        },
+        {
+          "name": "Hunting Ground in the Deep Forest II",
+          "path": "/maps/hunting-ground-in-the-deep-forest-ii",
+          "detail": "Victoria Island, 15 spawn points"
+        },
+        {
+          "name": "Monkey Forest I",
+          "path": "/maps/monkey-forest-i",
+          "detail": "Victoria Island, 14 spawn points"
+        },
+        {
+          "name": "The Burnt Land IV",
+          "path": "/maps/the-burnt-land-iv",
+          "detail": "Victoria Island, 14 spawn points"
+        },
+        {
+          "name": "Sleepy Dungeon III",
+          "path": "/maps/sleepy-dungeon-iii",
+          "detail": "Victoria Island, 12 spawn points"
+        },
+        {
+          "name": "The Burnt Land V",
+          "path": "/maps/the-burnt-land-v",
+          "detail": "Victoria Island, 12 spawn points"
+        },
+        {
+          "name": "Monkey Swamp II",
+          "path": "/maps/monkey-swamp-ii",
+          "detail": "Victoria Island, 10 spawn points"
+        },
+        {
+          "name": "Monkey Forest II",
+          "path": "/maps/monkey-forest-ii",
+          "detail": "Victoria Island, 10 spawn points"
+        },
+        {
+          "name": "Sleepy Dungeon II",
+          "path": "/maps/sleepy-dungeon-ii",
+          "detail": "Victoria Island, 10 spawn points"
+        },
+        {
+          "name": "Golem's Temple III",
+          "path": "/maps/golem-s-temple-iii",
+          "detail": "Victoria Island, 7 spawn points"
+        },
+        {
+          "name": "The Breathing Rock",
+          "path": "/maps/the-breathing-rock",
+          "detail": "Victoria Island, 6 spawn points"
+        },
+        {
+          "name": "Lorang Lorang",
+          "path": "/maps/lorang-lorang",
+          "detail": "Victoria Island, 5 spawn points"
+        },
+        {
+          "name": "Henesys Dungeon Entrance",
+          "path": "/maps/henesys-dungeon-entrance",
+          "detail": "Victoria Island, 4 spawn points"
+        },
+        {
+          "name": "Golem's Temple II",
+          "path": "/maps/golem-s-temple-ii",
+          "detail": "Victoria Island, 3 spawn points"
+        },
+        {
+          "name": "Golem's Temple I",
+          "path": "/maps/golem-s-temple-i",
+          "detail": "Victoria Island, 3 spawn points"
+        },
+        {
+          "name": "West Rocky Mountain IV",
+          "path": "/maps/west-rocky-mountain-iv",
+          "detail": "Victoria Island, 3 spawn points"
+        },
+        {
+          "name": "East Rocky Mountain VI",
+          "path": "/maps/east-rocky-mountain-vi",
+          "detail": "Victoria Island, 3 spawn points"
+        },
+        {
+          "name": "Downstairs at the Forest",
+          "path": "/maps/downstairs-at-the-forest",
+          "detail": "Victoria Island, 3 spawn points"
+        },
+        {
+          "name": "Sleepy Dungeon I",
+          "path": "/maps/sleepy-dungeon-i",
+          "detail": "Victoria Island, 2 spawn points"
+        },
+        {
+          "name": "L Forest II",
+          "path": "/maps/l-forest-ii",
+          "detail": "Victoria Island, 1 spawn point"
+        }
+      ],
+      "total": 22
+    },
+    {
+      "title": "Drops",
+      "links": [
+        {
+          "name": "Aluminum Baseball Bat",
+          "path": "/items/aluminum-baseball-bat",
+          "detail": "Two-handed sword, about 0.22%, usual for its kind"
+        },
+        {
+          "name": "Animal Fur Bundle",
+          "path": "/items/animal-fur-bundle",
+          "detail": "Monster drops"
+        },
+        {
+          "name": "Arrows for Bows",
+          "path": "/items/arrows-for-bows",
+          "detail": "Arrows for bows, about 1.1%, usual for its kind"
+        },
+        {
+          "name": "Arrows for Crossbows",
+          "path": "/items/arrows-for-crossbows",
+          "detail": "Arrows for crossbows, about 1.1%, usual for its kind"
+        },
+        {
+          "name": "Bazlud",
+          "path": "/items/bazlud",
+          "detail": "Dagger, about 0.22%, usual for its kind"
+        },
+        {
+          "name": "Bronze Chain Boots",
+          "path": "/items/bronze-chain-boots",
+          "detail": "Shoes, about 0.22%, usual for its kind"
+        },
+        {
+          "name": "Bronze Pride",
+          "path": "/items/bronze-pride",
+          "detail": "Hat, about 0.22%, usual for its kind"
+        },
+        {
+          "name": "Brown Legolia",
+          "path": "/items/brown-legolia",
+          "detail": "Topwear, about 0.22%, usual for its kind"
+        },
+        {
+          "name": "Brown Legolier",
+          "path": "/items/brown-legolier",
+          "detail": "Topwear, about 0.22%, usual for its kind"
+        },
+        {
+          "name": "Cape Magic Def. Scroll: Intermediate",
+          "path": "/items/cape-magic-def-scroll-intermediate",
+          "detail": "Cape scrolls"
+        },
+        {
+          "name": "Dark Hunter's Pants",
+          "path": "/items/dark-hunter-s-pants",
+          "detail": "Bottomwear, about 0.22%, usual for its kind"
+        },
+        {
+          "name": "Emerald Ore",
+          "path": "/items/emerald-ore",
+          "detail": "Gems & gem ores, about 1.2%, usual for its kind"
+        },
+        {
+          "name": "Golden Pride",
+          "path": "/items/golden-pride",
+          "detail": "Hat, about 0.22%, usual for its kind"
+        },
+        {
+          "name": "Kumbi Throwing Stars",
+          "path": "/items/kumbi-throwing-stars",
+          "detail": "Throwing stars"
+        },
+        {
+          "name": "Leather",
+          "path": "/items/leather",
+          "detail": "Monster drops"
+        },
+        {
+          "name": "Lupin Doll",
+          "path": "/items/lupin-doll",
+          "detail": "Monster drops"
+        },
+        {
+          "name": "Lupin's Banana",
+          "path": "/items/lupin-s-banana",
+          "detail": "Monster drops"
+        },
+        {
+          "name": "Opal Ore",
+          "path": "/items/opal-ore",
+          "detail": "Gems & gem ores, about 1.2%, usual for its kind"
+        },
+        {
+          "name": "Orange Potion",
+          "path": "/items/orange-potion",
+          "detail": "Potions, about 2.4%, usual for its kind"
+        },
+        {
+          "name": "Red Hunter's Pants",
+          "path": "/items/red-hunter-s-pants",
+          "detail": "Bottomwear, about 0.22%, usual for its kind"
+        },
+        {
+          "name": "Silver Ore",
+          "path": "/items/silver-ore",
+          "detail": "Ores & ingots, about 1.2%, usual for its kind"
+        },
+        {
+          "name": "Staff Magic Attack Scroll: Greater",
+          "path": "/items/staff-magic-attack-scroll-greater",
+          "detail": "Staff scrolls"
+        },
+        {
+          "name": "Stiff Feather",
+          "path": "/items/stiff-feather",
+          "detail": "Crafting materials"
+        },
+        {
+          "name": "Titan",
+          "path": "/items/titan",
+          "detail": "Two-handed blunt, about 0.22%, usual for its kind"
+        }
+      ],
+      "total": 24
+    },
+    {
+      "title": "Quests that need it",
+      "links": [
+        {
+          "name": "Mr. Wetbottom's Secret Book (Hungry Ronnie)",
+          "path": "/quests/hungry-ronnie",
+          "detail": "Level 32"
+        }
+      ],
+      "total": 1
+    }
+  ]
+}
