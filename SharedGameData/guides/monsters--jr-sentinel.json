@@ -1,0 +1,138 @@
+{
+  "schemaVersion": 1,
+  "path": "/monsters/jr-sentinel",
+  "kind": "monster",
+  "name": "Jr. Sentinel",
+  "source": "CCPLZ",
+  "sourceUrl": "https://ccplz.cc/monsters/jr-sentinel",
+  "checkedAt": "2026-11-05T10:26:35.783Z",
+  "notice": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial.",
+  "fields": [
+    {
+      "label": "Level",
+      "value": "26"
+    },
+    {
+      "label": "HP",
+      "value": "531"
+    },
+    {
+      "label": "EXP",
+      "value": "48"
+    },
+    {
+      "label": "MP",
+      "value": "30"
+    },
+    {
+      "label": "Attack",
+      "value": "124"
+    },
+    {
+      "label": "Defense",
+      "value": "10"
+    },
+    {
+      "label": "Accuracy",
+      "value": "102"
+    },
+    {
+      "label": "Avoidability",
+      "value": "15"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Where it spawns",
+      "links": [
+        {
+          "name": "Orbis Tower <14th Floor>",
+          "path": "/maps/orbis-tower-14th-floor",
+          "detail": "Ossyria, 30 spawn points"
+        },
+        {
+          "name": "Orbis Tower <15th Floor>",
+          "path": "/maps/orbis-tower-15th-floor",
+          "detail": "Ossyria, 24 spawn points"
+        },
+        {
+          "name": "Orbis Tower <13th Floor>",
+          "path": "/maps/orbis-tower-13th-floor",
+          "detail": "Ossyria, 15 spawn points"
+        },
+        {
+          "name": "Orbis Tower <6th Floor>",
+          "path": "/maps/orbis-tower-6th-floor",
+          "detail": "Ossyria, 7 spawn points"
+        },
+        {
+          "name": "Orbis Tower <7th Floor>",
+          "path": "/maps/orbis-tower-7th-floor",
+          "detail": "Ossyria, 6 spawn points"
+        }
+      ],
+      "total": 5
+    },
+    {
+      "title": "Drops",
+      "links": [
+        {
+          "name": "Arrows for Bows",
+          "path": "/items/arrows-for-bows",
+          "detail": "Arrows for bows, about 1.1%, usual for its kind"
+        },
+        {
+          "name": "Arrows for Crossbows",
+          "path": "/items/arrows-for-crossbows",
+          "detail": "Arrows for crossbows, about 1.1%, usual for its kind"
+        },
+        {
+          "name": "Blue Potion",
+          "path": "/items/blue-potion",
+          "detail": "Potions, about 2.4%, usual for its kind"
+        },
+        {
+          "name": "Bronze Ore",
+          "path": "/items/bronze-ore",
+          "detail": "Ores & ingots, about 1.2%, usual for its kind"
+        },
+        {
+          "name": "Iron Dagger",
+          "path": "/items/iron-dagger",
+          "detail": "Dagger, about 0.22%, usual for its kind"
+        },
+        {
+          "name": "Jr. Sentinel Shellpiece (for Todd's How-to-Hunt)",
+          "path": "/items/jr-sentinel-shellpiece",
+          "detail": "Monster drops"
+        },
+        {
+          "name": "Luck Crystal Ore",
+          "path": "/items/luck-crystal-ore",
+          "detail": "Crafting materials"
+        },
+        {
+          "name": "Monster Card",
+          "path": "/items/monster-card",
+          "detail": "Quest items"
+        },
+        {
+          "name": "Orange Potion",
+          "path": "/items/orange-potion",
+          "detail": "Potions, about 2.4%, usual for its kind"
+        },
+        {
+          "name": "Subi Throwing Stars",
+          "path": "/items/subi-throwing-stars",
+          "detail": "Throwing stars"
+        },
+        {
+          "name": "Topaz Ore",
+          "path": "/items/topaz-ore",
+          "detail": "Gems & gem ores, about 1.2%, usual for its kind"
+        }
+      ],
+      "total": 11
+    }
+  ]
+}

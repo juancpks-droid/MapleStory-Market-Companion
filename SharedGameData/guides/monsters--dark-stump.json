@@ -1,0 +1,298 @@
+{
+  "schemaVersion": 1,
+  "path": "/monsters/dark-stump",
+  "kind": "monster",
+  "name": "Dark Stump",
+  "source": "CCPLZ",
+  "sourceUrl": "https://ccplz.cc/monsters/dark-stump",
+  "checkedAt": "2026-11-05T10:26:26.764Z",
+  "notice": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial.",
+  "fields": [
+    {
+      "label": "Level",
+      "value": "11"
+    },
+    {
+      "label": "HP",
+      "value": "236"
+    },
+    {
+      "label": "EXP",
+      "value": "21"
+    },
+    {
+      "label": "MP",
+      "value": "30"
+    },
+    {
+      "label": "Attack",
+      "value": "34"
+    },
+    {
+      "label": "Defense",
+      "value": "30"
+    },
+    {
+      "label": "Accuracy",
+      "value": "61"
+    },
+    {
+      "label": "Avoidability",
+      "value": "5"
+    },
+    {
+      "label": "Weak to",
+      "value": "Fire"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Where it spawns",
+      "links": [
+        {
+          "name": "West Domain of Perion",
+          "path": "/maps/west-domain-of-perion",
+          "detail": "Victoria Island, 21 spawn points"
+        },
+        {
+          "name": "East Rocky Mountain V",
+          "path": "/maps/east-rocky-mountain-v",
+          "detail": "Victoria Island, 17 spawn points"
+        },
+        {
+          "name": "East Rocky Mountain IV",
+          "path": "/maps/east-rocky-mountain-iv",
+          "detail": "Victoria Island, 17 spawn points"
+        },
+        {
+          "name": "East Rocky Mountain III",
+          "path": "/maps/east-rocky-mountain-iii",
+          "detail": "Victoria Island, 14 spawn points"
+        },
+        {
+          "name": "West Street Corner of Perion",
+          "path": "/maps/west-street-corner-of-perion",
+          "detail": "Victoria Island, 14 spawn points"
+        },
+        {
+          "name": "The Tree That Grew III",
+          "path": "/maps/the-tree-that-grew-iii",
+          "detail": "Victoria Island, 13 spawn points"
+        },
+        {
+          "name": "East Rocky Mountain I",
+          "path": "/maps/east-rocky-mountain-i",
+          "detail": "Victoria Island, 13 spawn points"
+        },
+        {
+          "name": "The Field South of Ellinia",
+          "path": "/maps/the-field-south-of-ellinia",
+          "detail": "Victoria Island, 13 spawn points"
+        },
+        {
+          "name": "The Tree That Grew II",
+          "path": "/maps/the-tree-that-grew-ii",
+          "detail": "Victoria Island, 12 spawn points"
+        },
+        {
+          "name": "Perion Street Corner",
+          "path": "/maps/perion-street-corner",
+          "detail": "Victoria Island, 11 spawn points"
+        },
+        {
+          "name": "Construction Site North of Kerning City",
+          "path": "/maps/construction-site-north-of-kerning-city",
+          "detail": "Victoria Island, 11 spawn points"
+        },
+        {
+          "name": "The Tree That Grew I",
+          "path": "/maps/the-tree-that-grew-i",
+          "detail": "Victoria Island, 10 spawn points"
+        },
+        {
+          "name": "Perion Dungeon Entrance",
+          "path": "/maps/perion-dungeon-entrance",
+          "detail": "Victoria Island, 10 spawn points"
+        },
+        {
+          "name": "Deep Valley III",
+          "path": "/maps/deep-valley-iii",
+          "detail": "Victoria Island, 10 spawn points"
+        },
+        {
+          "name": "West Rocky Mountain II",
+          "path": "/maps/west-rocky-mountain-ii",
+          "detail": "Victoria Island, 10 spawn points"
+        },
+        {
+          "name": "East Domain of Perion",
+          "path": "/maps/east-domain-of-perion",
+          "detail": "Victoria Island, 10 spawn points"
+        },
+        {
+          "name": "Sunset Sky",
+          "path": "/maps/sunset-sky",
+          "detail": "Victoria Island, 7 spawn points"
+        },
+        {
+          "name": "Deep Valley I",
+          "path": "/maps/deep-valley-i",
+          "detail": "Victoria Island, 6 spawn points"
+        },
+        {
+          "name": "Deep Valley II",
+          "path": "/maps/deep-valley-ii",
+          "detail": "Victoria Island, 5 spawn points"
+        },
+        {
+          "name": "Rocky Road II",
+          "path": "/maps/rocky-road-ii",
+          "detail": "Victoria Island, 5 spawn points"
+        },
+        {
+          "name": "Over the Wall",
+          "path": "/maps/over-the-wall",
+          "detail": "Victoria Island, 4 spawn points"
+        },
+        {
+          "name": "East Rocky Mountain VI",
+          "path": "/maps/east-rocky-mountain-vi",
+          "detail": "Victoria Island, 4 spawn points"
+        },
+        {
+          "name": "Swampy Land in a Deep Forest",
+          "path": "/maps/swampy-land-in-a-deep-forest",
+          "detail": "Victoria Island, 4 spawn points"
+        },
+        {
+          "name": "Rocky Road I",
+          "path": "/maps/rocky-road-i",
+          "detail": "Victoria Island, 3 spawn points"
+        },
+        {
+          "name": "West Rocky Mountain III",
+          "path": "/maps/west-rocky-mountain-iii",
+          "detail": "Victoria Island, 3 spawn points"
+        },
+        {
+          "name": "The Land of Wild Boar II",
+          "path": "/maps/the-land-of-wild-boar-ii",
+          "detail": "Victoria Island, 2 spawn points"
+        },
+        {
+          "name": "Deep Forest",
+          "path": "/maps/deep-forest",
+          "detail": "Victoria Island, 1 spawn point"
+        }
+      ],
+      "total": 27
+    },
+    {
+      "title": "Drops",
+      "links": [
+        {
+          "name": "Arrows for Bows",
+          "path": "/items/arrows-for-bows",
+          "detail": "Arrows for bows, 1.7% drop rate, 118 kills counted"
+        },
+        {
+          "name": "Blue Pao",
+          "path": "/items/blue-pao",
+          "detail": "Topwear, about 0.22%, usual for its kind"
+        },
+        {
+          "name": "Blue Qi Pao",
+          "path": "/items/blue-qi-pao",
+          "detail": "Topwear, about 0.22%, usual for its kind"
+        },
+        {
+          "name": "Bronze Helmet",
+          "path": "/items/bronze-helmet",
+          "detail": "Hat, about 0.22%, usual for its kind"
+        },
+        {
+          "name": "Garnet Ore",
+          "path": "/items/garnet-ore",
+          "detail": "Gems & gem ores, about 1.2%, usual for its kind"
+        },
+        {
+          "name": "Gloves Magic Attack Scroll: Greater",
+          "path": "/items/gloves-magic-attack-scroll-greater",
+          "detail": "Gloves scrolls"
+        },
+        {
+          "name": "Iron Ore",
+          "path": "/items/iron-ore",
+          "detail": "Ores & ingots, 1.7% drop rate, 118 kills counted"
+        },
+        {
+          "name": "Leaf",
+          "path": "/items/leaf",
+          "detail": "Monster drops, 47% drop rate, 118 kills counted"
+        },
+        {
+          "name": "Lemon",
+          "path": "/items/lemon",
+          "detail": "Fruit & basic food, about 2.4%, usual for its kind"
+        },
+        {
+          "name": "Monster Card",
+          "path": "/items/monster-card",
+          "detail": "Quest items"
+        },
+        {
+          "name": "Pole Arm",
+          "path": "/items/pole-arm",
+          "detail": "Polearm, about 0.22%, usual for its kind"
+        },
+        {
+          "name": "Red Potion",
+          "path": "/items/red-potion",
+          "detail": "Potions, 3.4% drop rate, 118 kills counted"
+        },
+        {
+          "name": "Stolen Fence",
+          "path": "/items/stolen-fence",
+          "detail": "Shield, about 0.22%, usual for its kind"
+        },
+        {
+          "name": "Tree Branch",
+          "path": "/items/tree-branch",
+          "detail": "Monster drops, 20% drop rate, 118 kills counted"
+        }
+      ],
+      "total": 14
+    },
+    {
+      "title": "Quests that need it",
+      "links": [
+        {
+          "name": "Chrishrama in Need of an Apprentice",
+          "path": "/quests/chrishrama-in-need-of-an-apprentice",
+          "detail": "Level 10"
+        },
+        {
+          "name": "Fixing Blackbull's House",
+          "path": "/quests/fixing-blackbull-s-house",
+          "detail": "Level 11"
+        },
+        {
+          "name": "Francois in Need of an Apprentice",
+          "path": "/quests/francois-in-need-of-an-apprentice",
+          "detail": "Level 10"
+        },
+        {
+          "name": "Nella & Kerning City Citizen's Request (Shumi's Request)",
+          "path": "/quests/shumi-s-request",
+          "detail": "Level 10"
+        },
+        {
+          "name": "Silas Irons in Need of an Apprentice",
+          "path": "/quests/silas-irons-in-need-of-an-apprentice",
+          "detail": "Level 10"
+        }
+      ],
+      "total": 5
+    }
+  ]
+}

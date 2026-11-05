@@ -1,0 +1,214 @@
+{
+  "schemaVersion": 1,
+  "path": "/monsters/evil-eye",
+  "kind": "monster",
+  "name": "Evil Eye",
+  "source": "CCPLZ",
+  "sourceUrl": "https://ccplz.cc/monsters/evil-eye",
+  "checkedAt": "2026-11-05T10:26:29.763Z",
+  "notice": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial.",
+  "fields": [
+    {
+      "label": "Level",
+      "value": "27"
+    },
+    {
+      "label": "HP",
+      "value": "606"
+    },
+    {
+      "label": "EXP",
+      "value": "50"
+    },
+    {
+      "label": "MP",
+      "value": "50"
+    },
+    {
+      "label": "Attack",
+      "value": "159"
+    },
+    {
+      "label": "Defense",
+      "value": "10"
+    },
+    {
+      "label": "Accuracy",
+      "value": "103"
+    },
+    {
+      "label": "Avoidability",
+      "value": "16"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Where it spawns",
+      "links": [
+        {
+          "name": "The Cave of Evil Eye III",
+          "path": "/maps/the-cave-of-evil-eye-iii",
+          "detail": "Victoria Island, 38 spawn points"
+        },
+        {
+          "name": "The Cave of Evil Eye II",
+          "path": "/maps/the-cave-of-evil-eye-ii",
+          "detail": "Victoria Island, 36 spawn points"
+        },
+        {
+          "name": "Ant Tunnel Park",
+          "path": "/maps/ant-tunnel-park",
+          "detail": "Victoria Island, 31 spawn points"
+        },
+        {
+          "name": "The Cave of Evil Eye IV",
+          "path": "/maps/the-cave-of-evil-eye-iv",
+          "detail": "Victoria Island, 23 spawn points"
+        },
+        {
+          "name": "Deep Ant Tunnel I",
+          "path": "/maps/deep-ant-tunnel-i",
+          "detail": "Victoria Island, 21 spawn points"
+        },
+        {
+          "name": "The Cave of Evil Eye I",
+          "path": "/maps/the-cave-of-evil-eye-i",
+          "detail": "Victoria Island, 19 spawn points"
+        },
+        {
+          "name": "Deep Ant Tunnel II",
+          "path": "/maps/deep-ant-tunnel-ii",
+          "detail": "Victoria Island, 16 spawn points"
+        }
+      ],
+      "total": 7
+    },
+    {
+      "title": "Drops",
+      "links": [
+        {
+          "name": "Blue Potion",
+          "path": "/items/blue-potion",
+          "detail": "Potions, about 2.4%, usual for its kind"
+        },
+        {
+          "name": "Brown Guise",
+          "path": "/items/brown-guise",
+          "detail": "Hat, about 0.22%, usual for its kind"
+        },
+        {
+          "name": "Brown Hawkeye",
+          "path": "/items/brown-hawkeye",
+          "detail": "Hat, about 0.22%, usual for its kind"
+        },
+        {
+          "name": "Cutlus",
+          "path": "/items/cutlus",
+          "detail": "One-handed sword, about 0.22%, usual for its kind"
+        },
+        {
+          "name": "Evil Eye Tail",
+          "path": "/items/evil-eye-tail",
+          "detail": "Monster drops, 48% drop rate, 61 kills counted"
+        },
+        {
+          "name": "Fork on a Stick",
+          "path": "/items/fork-on-a-stick",
+          "detail": "Spear, about 0.22%, usual for its kind"
+        },
+        {
+          "name": "Forked Spear",
+          "path": "/items/forked-spear",
+          "detail": "Spear, about 0.22%, usual for its kind"
+        },
+        {
+          "name": "Green Avelin",
+          "path": "/items/green-avelin",
+          "detail": "Topwear, about 0.22%, usual for its kind"
+        },
+        {
+          "name": "Hat HP Scroll: Greater",
+          "path": "/items/hat-hp-scroll-greater",
+          "detail": "Hat scrolls"
+        },
+        {
+          "name": "Ice Wand",
+          "path": "/items/ice-wand",
+          "detail": "Wand, about 0.22%, usual for its kind"
+        },
+        {
+          "name": "Mithril Maul",
+          "path": "/items/mithril-maul",
+          "detail": "Two-handed blunt, about 0.22%, usual for its kind"
+        },
+        {
+          "name": "Monster Card",
+          "path": "/items/monster-card",
+          "detail": "Quest items"
+        },
+        {
+          "name": "Orange Potion",
+          "path": "/items/orange-potion",
+          "detail": "Potions, 6.6% drop rate, 61 kills counted"
+        },
+        {
+          "name": "Pink Jester",
+          "path": "/items/pink-jester",
+          "detail": "Hat, about 0.22%, usual for its kind"
+        },
+        {
+          "name": "Polearm Attack Scroll: Greater",
+          "path": "/items/polearm-attack-scroll-greater",
+          "detail": "Polearm scrolls"
+        },
+        {
+          "name": "Red Knucklevest",
+          "path": "/items/red-knucklevest",
+          "detail": "Topwear, about 0.22%, usual for its kind"
+        },
+        {
+          "name": "Sapphire Ore",
+          "path": "/items/sapphire-ore",
+          "detail": "Gems & gem ores, about 1.2%, usual for its kind"
+        },
+        {
+          "name": "Silver Ore",
+          "path": "/items/silver-ore",
+          "detail": "Ores & ingots, about 1.2%, usual for its kind"
+        },
+        {
+          "name": "Speed Potion",
+          "path": "/items/speed-potion",
+          "detail": "Buff potions, about 2.4%, usual for its kind"
+        },
+        {
+          "name": "War Hammer",
+          "path": "/items/war-hammer",
+          "detail": "One-handed blunt, about 0.22%, usual for its kind"
+        },
+        {
+          "name": "White Crusader Chainmail",
+          "path": "/items/white-crusader-chainmail",
+          "detail": "Overall, about 0.22%, usual for its kind"
+        },
+        {
+          "name": "Yellow Square",
+          "path": "/items/yellow-square",
+          "detail": "Earring, about 0.22%, usual for its kind"
+        }
+      ],
+      "total": 22
+    },
+    {
+      "title": "Quests that need it",
+      "links": [
+        {
+          "name": "Nella & Kerning City Citizen's Other Request (Cutthroat Manny's Request)",
+          "path": "/quests/cutthroat-manny-s-request",
+          "detail": "Level 22"
+        }
+      ],
+      "total": 1
+    }
+  ]
+}

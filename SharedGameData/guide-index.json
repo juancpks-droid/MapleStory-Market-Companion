@@ -183,6 +183,11 @@
       "kind": "item"
     },
     {
+      "path": "/monsters/black-ratz",
+      "name": "Black Ratz",
+      "kind": "monster"
+    },
+    {
       "path": "/items/black-sneak",
       "name": "Black Sneak",
       "kind": "item"
@@ -206,6 +211,11 @@
       "path": "/items/blue-moonlight",
       "name": "Blue Moonlight",
       "kind": "item"
+    },
+    {
+      "path": "/monsters/blue-mushroom",
+      "name": "Blue Mushroom",
+      "kind": "monster"
     },
     {
       "path": "/items/blue-mushroom-cap",
@@ -498,6 +508,11 @@
       "kind": "monster"
     },
     {
+      "path": "/monsters/dark-stump",
+      "name": "Dark Stump",
+      "kind": "monster"
+    },
+    {
       "path": "/items/dark-tiberian",
       "name": "Dark Tiberian",
       "kind": "item"
@@ -536,6 +551,11 @@
       "path": "/items/double-axe",
       "name": "Double Axe",
       "kind": "item"
+    },
+    {
+      "path": "/shops/dr-faymus-s-shop",
+      "name": "Dr. Faymus's Shop",
+      "kind": "shop"
     },
     {
       "path": "/items/dragon-skin",
@@ -611,6 +631,11 @@
       "path": "/maps/ellinia",
       "name": "Ellinia",
       "kind": "map"
+    },
+    {
+      "path": "/monsters/evil-eye",
+      "name": "Evil Eye",
+      "kind": "monster"
     },
     {
       "path": "/monsters/fire-boar",
@@ -883,6 +908,11 @@
       "kind": "map"
     },
     {
+      "path": "/monsters/ice-sentinel",
+      "name": "Ice Sentinel",
+      "kind": "monster"
+    },
+    {
       "path": "/maps/ice-valley-i",
       "name": "Ice Valley I",
       "kind": "map"
@@ -935,6 +965,11 @@
     {
       "path": "/monsters/jr-necki",
       "name": "Jr. Necki",
+      "kind": "monster"
+    },
+    {
+      "path": "/monsters/jr-sentinel",
+      "name": "Jr. Sentinel",
       "kind": "monster"
     },
     {
@@ -1023,6 +1058,11 @@
       "kind": "item"
     },
     {
+      "path": "/shops/len-the-fairy-s-shop",
+      "name": "Len the Fairy's Shop",
+      "kind": "shop"
+    },
+    {
       "path": "/items/long-brown-beard",
       "name": "Long Brown Beard",
       "kind": "item"
@@ -1036,6 +1076,11 @@
       "path": "/monsters/lorang",
       "name": "Lorang",
       "kind": "monster"
+    },
+    {
+      "path": "/shops/lucy-s-shop",
+      "name": "Lucy's Shop",
+      "kind": "shop"
     },
     {
       "path": "/monsters/lupin",
@@ -1248,6 +1293,11 @@
       "kind": "item"
     },
     {
+      "path": "/monsters/ratz",
+      "name": "Ratz",
+      "kind": "monster"
+    },
+    {
       "path": "/items/razor",
       "name": "Razor",
       "kind": "item"
@@ -1431,6 +1481,11 @@
       "path": "/items/scimitar",
       "name": "Scimitar",
       "kind": "item"
+    },
+    {
+      "path": "/monsters/sentinel",
+      "name": "Sentinel",
+      "kind": "monster"
     },
     {
       "path": "/items/sf-ninja-mask",
@@ -1768,6 +1823,11 @@
       "kind": "map"
     },
     {
+      "path": "/monsters/trixter",
+      "name": "Trixter",
+      "kind": "monster"
+    },
+    {
       "path": "/items/two-handed-sword-attack-scroll-intermediate",
       "name": "Two-handed Sword Attack Scroll: Intermediate",
       "kind": "item"
@@ -1860,6 +1920,11 @@
     {
       "path": "/monsters/zombie-lupin",
       "name": "Zombie Lupin",
+      "kind": "monster"
+    },
+    {
+      "path": "/monsters/zombie-mushroom",
+      "name": "Zombie Mushroom",
       "kind": "monster"
     }
   ]

@@ -1,0 +1,239 @@
+{
+  "schemaVersion": 1,
+  "path": "/monsters/blue-mushroom",
+  "kind": "monster",
+  "name": "Blue Mushroom",
+  "source": "CCPLZ",
+  "sourceUrl": "https://ccplz.cc/monsters/blue-mushroom",
+  "checkedAt": "2026-11-05T10:26:23.803Z",
+  "notice": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial.",
+  "fields": [
+    {
+      "label": "Level",
+      "value": "19"
+    },
+    {
+      "label": "HP",
+      "value": "342"
+    },
+    {
+      "label": "EXP",
+      "value": "35"
+    },
+    {
+      "label": "MP",
+      "value": "30"
+    },
+    {
+      "label": "Attack",
+      "value": "89"
+    },
+    {
+      "label": "Defense",
+      "value": "10"
+    },
+    {
+      "label": "Accuracy",
+      "value": "85"
+    },
+    {
+      "label": "Avoidability",
+      "value": "11"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Where it spawns",
+      "links": [
+        {
+          "name": "The Blue Mushroom Forest",
+          "path": "/maps/the-blue-mushroom-forest",
+          "detail": "Victoria Island, 16 spawn points"
+        },
+        {
+          "name": "The Breathing Rock",
+          "path": "/maps/the-breathing-rock",
+          "detail": "Victoria Island, 12 spawn points"
+        },
+        {
+          "name": "The Entrance of Golem's Temple",
+          "path": "/maps/the-entrance-of-golem-s-temple",
+          "detail": "Victoria Island, 12 spawn points"
+        },
+        {
+          "name": "The Road to the Dungeon",
+          "path": "/maps/the-road-to-the-dungeon",
+          "detail": "Victoria Island, 11 spawn points"
+        },
+        {
+          "name": "Golem's Temple IV",
+          "path": "/maps/golem-s-temple-iv",
+          "detail": "Victoria Island, 7 spawn points"
+        },
+        {
+          "name": "Golem's Temple I",
+          "path": "/maps/golem-s-temple-i",
+          "detail": "Victoria Island, 7 spawn points"
+        },
+        {
+          "name": "Golem's Temple III",
+          "path": "/maps/golem-s-temple-iii",
+          "detail": "Victoria Island, 5 spawn points"
+        },
+        {
+          "name": "Henesys Dungeon Entrance",
+          "path": "/maps/henesys-dungeon-entrance",
+          "detail": "Victoria Island, 5 spawn points"
+        },
+        {
+          "name": "Golem's Temple II",
+          "path": "/maps/golem-s-temple-ii",
+          "detail": "Victoria Island, 4 spawn points"
+        },
+        {
+          "name": "L Forest III",
+          "path": "/maps/l-forest-iii",
+          "detail": "Victoria Island, 4 spawn points"
+        },
+        {
+          "name": "Caution Falling Down",
+          "path": "/maps/caution-falling-down",
+          "detail": "Victoria Island, 3 spawn points"
+        },
+        {
+          "name": "Northern Top of Construction Site",
+          "path": "/maps/northern-top-of-construction-site",
+          "detail": "Victoria Island, 3 spawn points"
+        },
+        {
+          "name": "L Forest II",
+          "path": "/maps/l-forest-ii",
+          "detail": "Victoria Island, 2 spawn points"
+        },
+        {
+          "name": "The Forest East of Henesys",
+          "path": "/maps/the-forest-east-of-henesys",
+          "detail": "Victoria Island, 2 spawn points"
+        },
+        {
+          "name": "Dungeon, Southern Forest IV",
+          "path": "/maps/dungeon-southern-forest-iv",
+          "detail": "Victoria Island, 1 spawn point"
+        },
+        {
+          "name": "Construction Site North of Kerning City",
+          "path": "/maps/construction-site-north-of-kerning-city",
+          "detail": "Victoria Island, 1 spawn point"
+        }
+      ],
+      "total": 16
+    },
+    {
+      "title": "Drops",
+      "links": [
+        {
+          "name": "Arrows for Crossbows",
+          "path": "/items/arrows-for-crossbows",
+          "detail": "Arrows for crossbows, 3.3% drop rate, 30 kills counted"
+        },
+        {
+          "name": "Black Knucklevest Pants",
+          "path": "/items/black-knucklevest-pants",
+          "detail": "Bottomwear, about 0.22%, usual for its kind"
+        },
+        {
+          "name": "Blue Mushroom Cap",
+          "path": "/items/blue-mushroom-cap",
+          "detail": "Monster drops, 47% drop rate, 30 kills counted"
+        },
+        {
+          "name": "Blue Potion",
+          "path": "/items/blue-potion",
+          "detail": "Potions, about 2.4%, usual for its kind"
+        },
+        {
+          "name": "Blue Wizardry Hat",
+          "path": "/items/blue-wizardry-hat",
+          "detail": "Hat, about 0.22%, usual for its kind"
+        },
+        {
+          "name": "Blue Woodsman Boots",
+          "path": "/items/blue-woodsman-boots",
+          "detail": "Shoes, about 0.22%, usual for its kind"
+        },
+        {
+          "name": "Brown Lamelle",
+          "path": "/items/brown-lamelle",
+          "detail": "Topwear, about 0.22%, usual for its kind"
+        },
+        {
+          "name": "Gloves Crit. Rate Scroll: Greater",
+          "path": "/items/gloves-crit-rate-scroll-greater",
+          "detail": "Gloves scrolls"
+        },
+        {
+          "name": "Gold Ore",
+          "path": "/items/gold-ore",
+          "detail": "Ores & ingots, 3.3% drop rate, 30 kills counted"
+        },
+        {
+          "name": "Green Loosecap",
+          "path": "/items/green-loosecap",
+          "detail": "Hat, about 0.22%, usual for its kind"
+        },
+        {
+          "name": "Magic Potion",
+          "path": "/items/magic-potion",
+          "detail": "Buff potions, about 2.4%, usual for its kind"
+        },
+        {
+          "name": "Monster Card",
+          "path": "/items/monster-card",
+          "detail": "Quest items"
+        },
+        {
+          "name": "Red Potion",
+          "path": "/items/red-potion",
+          "detail": "Potions, about 2.4%, usual for its kind"
+        },
+        {
+          "name": "Sapphire Ore",
+          "path": "/items/sapphire-ore",
+          "detail": "Gems & gem ores, about 1.2%, usual for its kind"
+        },
+        {
+          "name": "Topaz Ore",
+          "path": "/items/topaz-ore",
+          "detail": "Gems & gem ores, about 1.2%, usual for its kind"
+        },
+        {
+          "name": "Two-handed Sword Attack Scroll: Greater",
+          "path": "/items/two-handed-sword-attack-scroll-greater",
+          "detail": "Two-handed sword scrolls"
+        },
+        {
+          "name": "Wizard Staff",
+          "path": "/items/wizard-staff",
+          "detail": "Staff, about 0.22%, usual for its kind"
+        }
+      ],
+      "total": 17
+    },
+    {
+      "title": "Quests that need it",
+      "links": [
+        {
+          "name": "Alex the Runaway Kid (Talking to Stan)",
+          "path": "/quests/talking-to-stan",
+          "detail": "Level 18"
+        },
+        {
+          "name": "Jane and the Mushroom",
+          "path": "/quests/jane-and-the-mushroom",
+          "detail": "Level 20"
+        }
+      ],
+      "total": 2
+    }
+  ]
+}

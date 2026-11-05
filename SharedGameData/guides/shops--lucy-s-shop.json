@@ -1,0 +1,80 @@
+{
+  "schemaVersion": 1,
+  "path": "/shops/lucy-s-shop",
+  "kind": "shop",
+  "name": "Lucy's Shop",
+  "source": "CCPLZ",
+  "sourceUrl": "https://ccplz.cc/shops/lucy-s-shop",
+  "checkedAt": "2026-11-05T10:26:53.811Z",
+  "notice": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial.",
+  "fields": [
+    {
+      "label": "Shopkeeper",
+      "value": "Lucy"
+    },
+    {
+      "label": "Location",
+      "value": "Amherst Department Store"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Reported stock",
+      "links": [
+        {
+          "name": "Apple",
+          "path": "/items/apple",
+          "detail": "Fruit & basic food, 20 mesos"
+        },
+        {
+          "name": "Egg",
+          "path": "/items/egg",
+          "detail": "Fruit & basic food, 30 mesos"
+        },
+        {
+          "name": "Pet Food",
+          "path": "/items/pet-food",
+          "detail": "Pet food, 35 mesos"
+        },
+        {
+          "name": "Orange",
+          "path": "/items/orange",
+          "detail": "Fruit & basic food, 50 mesos"
+        },
+        {
+          "name": "Red Potion",
+          "path": "/items/red-potion",
+          "detail": "Potions, 50 mesos"
+        },
+        {
+          "name": "Orange Potion",
+          "path": "/items/orange-potion",
+          "detail": "Potions, 150 mesos"
+        }
+      ],
+      "total": 6
+    },
+    {
+      "title": "Shopkeeper",
+      "links": [
+        {
+          "name": "Lucy",
+          "path": "/npcs/lucy",
+          "detail": ""
+        }
+      ],
+      "total": 1
+    },
+    {
+      "title": "Location",
+      "links": [
+        {
+          "name": "Amherst Department Store",
+          "path": "/maps/amherst-department-store",
+          "detail": ""
+        }
+      ],
+      "total": 1
+    }
+  ]
+}

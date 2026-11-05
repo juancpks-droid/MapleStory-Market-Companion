@@ -1,0 +1,238 @@
+{
+  "schemaVersion": 1,
+  "path": "/monsters/zombie-mushroom",
+  "kind": "monster",
+  "name": "Zombie Mushroom",
+  "source": "CCPLZ",
+  "sourceUrl": "https://ccplz.cc/monsters/zombie-mushroom",
+  "checkedAt": "2026-11-05T10:26:17.792Z",
+  "notice": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial.",
+  "fields": [
+    {
+      "label": "Level",
+      "value": "24"
+    },
+    {
+      "label": "HP",
+      "value": "436"
+    },
+    {
+      "label": "EXP",
+      "value": "45"
+    },
+    {
+      "label": "MP",
+      "value": "30"
+    },
+    {
+      "label": "Attack",
+      "value": "124"
+    },
+    {
+      "label": "Defense",
+      "value": "15"
+    },
+    {
+      "label": "Accuracy",
+      "value": "99"
+    },
+    {
+      "label": "Avoidability",
+      "value": "14"
+    },
+    {
+      "label": "Weak to",
+      "value": "Holy"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Where it spawns",
+      "links": [
+        {
+          "name": "Ant Tunnel III",
+          "path": "/maps/ant-tunnel-iii",
+          "detail": "Victoria Island, 61 spawn points"
+        },
+        {
+          "name": "Ant Tunnel II",
+          "path": "/maps/ant-tunnel-ii",
+          "detail": "Victoria Island, 32 spawn points"
+        },
+        {
+          "name": "Deep Ant Tunnel I",
+          "path": "/maps/deep-ant-tunnel-i",
+          "detail": "Victoria Island, 29 spawn points"
+        },
+        {
+          "name": "Ant Tunnel Park",
+          "path": "/maps/ant-tunnel-park",
+          "detail": "Victoria Island, 23 spawn points"
+        },
+        {
+          "name": "Ant Tunnel IV",
+          "path": "/maps/ant-tunnel-iv",
+          "detail": "Victoria Island, 23 spawn points"
+        },
+        {
+          "name": "Ant Tunnel I",
+          "path": "/maps/ant-tunnel-i",
+          "detail": "Victoria Island, 11 spawn points"
+        },
+        {
+          "name": "Deep Ant Tunnel II",
+          "path": "/maps/deep-ant-tunnel-ii",
+          "detail": "Victoria Island, 9 spawn points"
+        },
+        {
+          "name": "Dark Cave",
+          "path": "/maps/dark-cave",
+          "detail": "Victoria Island, 7 spawn points"
+        },
+        {
+          "name": "Dangerous Steam",
+          "path": "/maps/dangerous-steam",
+          "detail": "Victoria Island, 6 spawn points"
+        },
+        {
+          "name": "The Grave of Mushmom",
+          "path": "/maps/the-grave-of-mushmom",
+          "detail": "Victoria Island, 13 spawn points"
+        }
+      ],
+      "total": 10
+    },
+    {
+      "title": "Drops",
+      "links": [
+        {
+          "name": "Arrows for Bows",
+          "path": "/items/arrows-for-bows",
+          "detail": "Arrows for bows, about 1.1%, usual for its kind"
+        },
+        {
+          "name": "Arrows for Crossbows",
+          "path": "/items/arrows-for-crossbows",
+          "detail": "Arrows for crossbows, about 1.1%, usual for its kind"
+        },
+        {
+          "name": "Blue Chaos Robe",
+          "path": "/items/blue-chaos-robe",
+          "detail": "Overall, about 0.22%, usual for its kind"
+        },
+        {
+          "name": "Blue Pole-Feather Hat",
+          "path": "/items/blue-pole-feather-hat",
+          "detail": "Hat, about 0.22%, usual for its kind"
+        },
+        {
+          "name": "Blue Potion",
+          "path": "/items/blue-potion",
+          "detail": "Potions, about 2.4%, usual for its kind"
+        },
+        {
+          "name": "Brown Burgler",
+          "path": "/items/brown-burgler",
+          "detail": "Hat, about 0.22%, usual for its kind"
+        },
+        {
+          "name": "Charm of the Undead",
+          "path": "/items/charm-of-the-undead",
+          "detail": "Monster drops"
+        },
+        {
+          "name": "Claw Attack Scroll: Intermediate",
+          "path": "/items/claw-attack-scroll-intermediate",
+          "detail": "Claw scrolls"
+        },
+        {
+          "name": "Dexterity Potion",
+          "path": "/items/dexterity-potion",
+          "detail": "Buff potions, about 2.4%, usual for its kind"
+        },
+        {
+          "name": "Emerald Ore",
+          "path": "/items/emerald-ore",
+          "detail": "Gems & gem ores, about 1.2%, usual for its kind"
+        },
+        {
+          "name": "Gold Ore",
+          "path": "/items/gold-ore",
+          "detail": "Ores & ingots, about 1.2%, usual for its kind"
+        },
+        {
+          "name": "Iron Dagger",
+          "path": "/items/iron-dagger",
+          "detail": "Dagger, about 0.22%, usual for its kind"
+        },
+        {
+          "name": "Monster Card",
+          "path": "/items/monster-card",
+          "detail": "Quest items"
+        },
+        {
+          "name": "Nakamaki",
+          "path": "/items/nakamaki",
+          "detail": "Spear, about 0.22%, usual for its kind"
+        },
+        {
+          "name": "Orange Potion",
+          "path": "/items/orange-potion",
+          "detail": "Potions, about 2.4%, usual for its kind"
+        },
+        {
+          "name": "Pink Jester",
+          "path": "/items/pink-jester",
+          "detail": "Hat, about 0.22%, usual for its kind"
+        },
+        {
+          "name": "Red Hwarang Shirt",
+          "path": "/items/red-hwarang-shirt",
+          "detail": "Topwear, about 0.22%, usual for its kind"
+        },
+        {
+          "name": "Spear Attack Scroll: Greater",
+          "path": "/items/spear-attack-scroll-greater",
+          "detail": "Spear scrolls"
+        },
+        {
+          "name": "Two-handed Blunt Weapon Attack Scroll: Greater",
+          "path": "/items/two-handed-blunt-weapon-attack-scroll-greater",
+          "detail": "Two-handed blunt scrolls"
+        },
+        {
+          "name": "Weighted Earrings",
+          "path": "/items/weighted-earrings",
+          "detail": "Earring, about 0.22%, usual for its kind"
+        },
+        {
+          "name": "White Chaos Robe",
+          "path": "/items/white-chaos-robe",
+          "detail": "Overall, about 0.22%, usual for its kind"
+        }
+      ],
+      "total": 21
+    },
+    {
+      "title": "Quests that need it",
+      "links": [
+        {
+          "name": "A Blacksmith in My Own Right!",
+          "path": "/quests/a-blacksmith-in-my-own-right",
+          "detail": "Level 25"
+        },
+        {
+          "name": "Maya and the Weird Medicine (Arcon's Blood?)",
+          "path": "/quests/arcon-s-blood",
+          "detail": "Level 21"
+        },
+        {
+          "name": "Mystery of Niora Hospital (Stranger's Identity)",
+          "path": "/quests/stranger-s-identity",
+          "detail": "Level 23"
+        }
+      ],
+      "total": 3
+    }
+  ]
+}
