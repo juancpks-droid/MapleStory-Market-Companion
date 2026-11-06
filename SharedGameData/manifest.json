@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "publishedAt": "2026-11-05T10:26:53.929Z",
+  "publishedAt": "2026-11-06T10:25:03.343Z",
   "catalogItems": 12726,
-  "guideRecords": 385,
+  "guideRecords": 397,
   "referenceRecords": 169,
   "entries": [
     {
@@ -911,8 +911,8 @@
     {
       "file": "guides/items--orange-potion.json",
       "bytes": 6647,
-      "sha256": "901a67f8564f028f19a62eb8943f22cea38366764c28ee988afb95cb6f511d77",
-      "checkedAt": "2026-10-29T10:12:59.957Z",
+      "sha256": "177df2fad9050d92b50467ee7779d7a6b0cdcc2d00c25f7441a71d128a015f62",
+      "checkedAt": "2026-11-06T10:24:24.278Z",
       "kind": "item"
     },
     {
@@ -1415,8 +1415,8 @@
     {
       "file": "guides/items--white-potion.json",
       "bytes": 9775,
-      "sha256": "98db41ecff8383797a85422ab59a662c5d92d794d3a227d3d4576ad47bb08727",
-      "checkedAt": "2026-10-29T10:13:02.937Z",
+      "sha256": "f8f973bf660e1061f74c7a87586f7aa5b33ca46d5c02918372584ed93a126860",
+      "checkedAt": "2026-11-06T10:24:27.297Z",
       "kind": "item"
     },
     {
@@ -1553,10 +1553,31 @@
       "kind": "map"
     },
     {
+      "file": "guides/maps--east-rocky-mountain-i.json",
+      "bytes": 1783,
+      "sha256": "145879f8ec8ebf512bff7704afe8287a59bd002d9e595b1b82c05a0d20690898",
+      "checkedAt": "2026-11-06T10:25:03.226Z",
+      "kind": "map"
+    },
+    {
+      "file": "guides/maps--east-rocky-mountain-iii.json",
+      "bytes": 1661,
+      "sha256": "a65150ae2126d797ecf4d6a6188145b300b99565f99e9fb97ddf727c6e809ad1",
+      "checkedAt": "2026-11-06T10:24:51.253Z",
+      "kind": "map"
+    },
+    {
       "file": "guides/maps--east-rocky-mountain-iv.json",
       "bytes": 1669,
       "sha256": "c3a629bbdcbf2a93e651ef2f3a429cc3c5f49289658619bc634f3c20301da309",
       "checkedAt": "2026-11-03T10:16:37.008Z",
+      "kind": "map"
+    },
+    {
+      "file": "guides/maps--east-rocky-mountain-v.json",
+      "bytes": 1805,
+      "sha256": "d9751f8070b4f96b1e5a31e7f678f5602bfb09ab7154887105cb3d77c63bd292",
+      "checkedAt": "2026-11-06T10:24:54.259Z",
       "kind": "map"
     },
     {
@@ -1751,8 +1772,8 @@
     {
       "file": "guides/maps--perion-street-corner.json",
       "bytes": 1875,
-      "sha256": "f908e88b2461c3ee47d7ef2fb2a99bb677a2f146259b2d85cf8ce3b6168c2ea8",
-      "checkedAt": "2026-10-14T09:56:33.861Z",
+      "sha256": "a98b556563aba62443a1db2d27b02a36f4fb0f2bbedf3cd35d86296bf3e47bbc",
+      "checkedAt": "2026-11-06T10:24:18.244Z",
       "kind": "map"
     },
     {
@@ -1774,6 +1795,13 @@
       "bytes": 1968,
       "sha256": "ca2e5ffd57d13e7f90798388c78717d8affa45bee18e7c5ef6309cb2794cc959",
       "checkedAt": "2026-11-03T10:16:31.111Z",
+      "kind": "map"
+    },
+    {
+      "file": "guides/maps--rocky-road-iii.json",
+      "bytes": 1887,
+      "sha256": "296a28f61c3bc252030b48504aad6449c4e110b88e3c5d77676b1837f63b1a52",
+      "checkedAt": "2026-11-06T10:24:48.233Z",
       "kind": "map"
     },
     {
@@ -1821,8 +1849,8 @@
     {
       "file": "guides/maps--snail-field-of-flowers.json",
       "bytes": 1507,
-      "sha256": "deceea5b410c5151849def4cbc08685d30bf0c7610b81202576c6386152119a7",
-      "checkedAt": "2026-10-13T20:14:43.568Z",
+      "sha256": "f10aed992b384251da95ede36c5b49c6303a0b4d7b88970796b77edd9565ec6b",
+      "checkedAt": "2026-11-06T10:24:15.242Z",
       "kind": "map"
     },
     {
@@ -1912,8 +1940,8 @@
     {
       "file": "guides/maps--the-field-west-of-amherst.json",
       "bytes": 2674,
-      "sha256": "39cb1a378e8fceaf835e0325e454c3212d22bc4f1a2043c794510e743713299e",
-      "checkedAt": "2026-10-13T20:14:40.570Z",
+      "sha256": "cb60b8293ca882fd5a842462297d540ac26c441bf1d637f5ece0cad9032b33fd",
+      "checkedAt": "2026-11-06T10:24:12.252Z",
       "kind": "map"
     },
     {
@@ -1956,6 +1984,13 @@
       "bytes": 2946,
       "sha256": "d6f5edede9ecd39e172e6539dba00f24a493c8ef5f3ebfcd93eb7d24f12d637b",
       "checkedAt": "2026-10-24T09:53:38.090Z",
+      "kind": "map"
+    },
+    {
+      "file": "guides/maps--the-tree-that-grew-i.json",
+      "bytes": 1840,
+      "sha256": "a25618a11e17887e5d8d4fd30baf426ccab21ca3b6ac648e26d934ccf6924d51",
+      "checkedAt": "2026-11-06T10:25:00.230Z",
       "kind": "map"
     },
     {
@@ -2045,8 +2080,8 @@
     {
       "file": "guides/maps--west-domain-of-perion.json",
       "bytes": 2086,
-      "sha256": "4646b0f3a8b85e1ed27434deb3391e13e896ad9e0f43c8bb2f78882a7c6d009d",
-      "checkedAt": "2026-10-14T09:56:36.840Z",
+      "sha256": "550d2745c4f32a24f90cc132241dfc4732575f93ab470bfd93855ef20fccce19",
+      "checkedAt": "2026-11-06T10:24:21.218Z",
       "kind": "map"
     },
     {
@@ -2456,6 +2491,13 @@
       "kind": "npc"
     },
     {
+      "file": "guides/npcs--fully-bloomed-bluebell.json",
+      "bytes": 744,
+      "sha256": "113151024a3b570708c0caabd43ae70195f552964dbd88792c41b171621c8914",
+      "checkedAt": "2026-11-06T10:24:57.228Z",
+      "kind": "npc"
+    },
+    {
       "file": "guides/npcs--jane.json",
       "bytes": 1596,
       "sha256": "474fb1fac16fce30aa968c509c0cfb4327687961a61fa18e34ff9ce4ee175c5e",
@@ -2610,6 +2652,13 @@
       "kind": "quest"
     },
     {
+      "file": "guides/quests--the-filing-error.json",
+      "bytes": 2580,
+      "sha256": "e2980e338466e2c119a448d9c49bc55472d5744033331b8a0343b933e68befbe",
+      "checkedAt": "2026-11-06T10:24:45.281Z",
+      "kind": "quest"
+    },
+    {
       "file": "guides/quests--the-reason-behind-the-mushroom-studies.json",
       "bytes": 2300,
       "sha256": "cc9e7a5304df06e274c79475b7772cadc0dd046be674b3ce8d66822f3b4e016f",
@@ -2698,6 +2747,41 @@
       "bytes": 1898,
       "sha256": "26a340ddf4a978b07379d91219d729d93c58b519721a051cef89598536414b57",
       "checkedAt": "2026-11-05T10:26:53.811Z",
+      "kind": "shop"
+    },
+    {
+      "file": "guides/shops--luma-s-shop.json",
+      "bytes": 3163,
+      "sha256": "4519beba964a3ee8f0caee4ff7099d003b0f27fe6f7afa0edde4e4fe69f51110",
+      "checkedAt": "2026-11-06T10:24:30.243Z",
+      "kind": "shop"
+    },
+    {
+      "file": "guides/shops--luna-s-shop.json",
+      "bytes": 4401,
+      "sha256": "362d870e57a439ee0402aa93d93f244fcefe4be233e6ae38c967d61b05e160c8",
+      "checkedAt": "2026-11-06T10:24:33.274Z",
+      "kind": "shop"
+    },
+    {
+      "file": "guides/shops--mina-s-shop.json",
+      "bytes": 3713,
+      "sha256": "8c7b4b313a51ca861768c19ad0b9c54e91f35c9fdba426c67dc5a311ef3cf6d0",
+      "checkedAt": "2026-11-06T10:24:36.220Z",
+      "kind": "shop"
+    },
+    {
+      "file": "guides/shops--mr-sweatbottom-s-shop.json",
+      "bytes": 3436,
+      "sha256": "6d2ed97977412b04f3823f9e316177059a4426e4ff39b4311c5f98477b04045d",
+      "checkedAt": "2026-11-06T10:24:39.240Z",
+      "kind": "shop"
+    },
+    {
+      "file": "guides/shops--valen-s-shop.json",
+      "bytes": 4534,
+      "sha256": "79f16f8cddd9a3aac1260ac0449e874aec550d9de4f04636fafea01b7dc8706c",
+      "checkedAt": "2026-11-06T10:24:42.222Z",
       "kind": "shop"
     },
     {
@@ -3361,15 +3445,15 @@
     {
       "file": "records/npc-2000001.json",
       "bytes": 677,
-      "sha256": "db96c3e5aa89a69731ff1e8d6c87503ea82518ef8e08935e4c82b68163ba5514",
-      "checkedAt": "2026-10-29T10:12:59.957Z",
+      "sha256": "cb9b2ad376cbb82fa9eb8a8902a261d8bf70b539de92efebaa9572bee21d9314",
+      "checkedAt": "2026-11-06T10:24:24.278Z",
       "kind": "npc"
     },
     {
       "file": "records/npc-2000002.json",
       "bytes": 674,
-      "sha256": "e2489e4f086230920c22a95f43dd54ec663cf39dd2bbeef012119318f8add28e",
-      "checkedAt": "2026-10-29T10:13:02.937Z",
+      "sha256": "c01c228800b8a3c6c94ad684ca409c97ad3667867addab0babf191744bae992d",
+      "checkedAt": "2026-11-06T10:24:27.297Z",
       "kind": "npc"
     },
     {

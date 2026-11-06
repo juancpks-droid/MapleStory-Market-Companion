@@ -1,0 +1,112 @@
+{
+  "schemaVersion": 1,
+  "path": "/quests/the-filing-error",
+  "kind": "quest",
+  "name": "Caretaker's Ledger (The Filing Error)",
+  "source": "CCPLZ",
+  "sourceUrl": "https://ccplz.cc/quests/the-filing-error",
+  "checkedAt": "2026-11-06T10:24:45.281Z",
+  "notice": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial.",
+  "fields": [
+    {
+      "label": "Minimum level",
+      "value": "28"
+    },
+    {
+      "label": "Category",
+      "value": "Ellinia"
+    },
+    {
+      "label": "EXP reward",
+      "value": "4,090"
+    },
+    {
+      "label": "Meso reward",
+      "value": "892"
+    },
+    {
+      "label": "Starts with",
+      "value": "Lyn the Librarian"
+    },
+    {
+      "label": "Turn in to",
+      "value": "Chief Stan"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Quest NPCs",
+      "links": [
+        {
+          "name": "Lyn the Librarian",
+          "path": "/npcs/lyn-the-librarian",
+          "detail": "Starts the quest"
+        },
+        {
+          "name": "Chief Stan",
+          "path": "/npcs/chief-stan",
+          "detail": "Completes the quest"
+        }
+      ],
+      "total": 2
+    },
+    {
+      "title": "Items to bring",
+      "links": [
+        {
+          "name": "Torn Ledger Pages",
+          "path": "/items/torn-ledger-pages",
+          "detail": "x25"
+        }
+      ],
+      "total": 1
+    },
+    {
+      "title": "Item rewards",
+      "links": [
+        {
+          "name": "Blue Potion",
+          "path": "/items/blue-potion",
+          "detail": ""
+        },
+        {
+          "name": "Orange Potion",
+          "path": "/items/orange-potion",
+          "detail": ""
+        }
+      ],
+      "total": 2
+    },
+    {
+      "title": "Where it takes place",
+      "links": [
+        {
+          "name": "Henesys",
+          "path": "/maps/henesys",
+          "detail": ""
+        },
+        {
+          "name": "Magic Library",
+          "path": "/maps/magic-library",
+          "detail": ""
+        },
+        {
+          "name": "Someone Else's House",
+          "path": "/maps/someone-else-s-house",
+          "detail": ""
+        },
+        {
+          "name": "Tree Dungeon, Forest Up North VI",
+          "path": "/maps/tree-dungeon-forest-up-north-vi",
+          "detail": ""
+        },
+        {
+          "name": "Tree Dungeon, Forest Up North VII",
+          "path": "/maps/tree-dungeon-forest-up-north-vii",
+          "detail": ""
+        }
+      ],
+      "total": 5
+    }
+  ]
+}

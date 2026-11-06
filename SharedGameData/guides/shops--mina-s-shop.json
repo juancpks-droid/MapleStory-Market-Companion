@@ -1,0 +1,140 @@
+{
+  "schemaVersion": 1,
+  "path": "/shops/mina-s-shop",
+  "kind": "shop",
+  "name": "Mina's Shop",
+  "source": "CCPLZ",
+  "sourceUrl": "https://ccplz.cc/shops/mina-s-shop",
+  "checkedAt": "2026-11-06T10:24:36.220Z",
+  "notice": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial.",
+  "fields": [
+    {
+      "label": "Shopkeeper",
+      "value": "Mina"
+    },
+    {
+      "label": "Location",
+      "value": "Lith Harbor Department Store"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Reported stock",
+      "links": [
+        {
+          "name": "Arrows for Bows",
+          "path": "/items/arrows-for-bows",
+          "detail": "Arrows for bows, 1 mesos"
+        },
+        {
+          "name": "Arrows for Crossbows",
+          "path": "/items/arrows-for-crossbows",
+          "detail": "Arrows for crossbows, 1 mesos"
+        },
+        {
+          "name": "Apple",
+          "path": "/items/apple",
+          "detail": "Fruit & basic food, 20 mesos"
+        },
+        {
+          "name": "Egg",
+          "path": "/items/egg",
+          "detail": "Fruit & basic food, 30 mesos"
+        },
+        {
+          "name": "Pet Food",
+          "path": "/items/pet-food",
+          "detail": "Pet food, 35 mesos"
+        },
+        {
+          "name": "Orange",
+          "path": "/items/orange",
+          "detail": "Fruit & basic food, 50 mesos"
+        },
+        {
+          "name": "Red Potion",
+          "path": "/items/red-potion",
+          "detail": "Potions, 50 mesos"
+        },
+        {
+          "name": "Meat",
+          "path": "/items/meat",
+          "detail": "Fruit & basic food, 80 mesos"
+        },
+        {
+          "name": "Lemon",
+          "path": "/items/lemon",
+          "detail": "Fruit & basic food, 150 mesos"
+        },
+        {
+          "name": "Orange Potion",
+          "path": "/items/orange-potion",
+          "detail": "Potions, 150 mesos"
+        },
+        {
+          "name": "Blue Potion",
+          "path": "/items/blue-potion",
+          "detail": "Potions, 220 mesos"
+        },
+        {
+          "name": "White Potion",
+          "path": "/items/white-potion",
+          "detail": "Potions, 350 mesos"
+        },
+        {
+          "name": "Return Scroll - Nearest Town",
+          "path": "/items/return-scroll-nearest-town",
+          "detail": "Return scrolls, 400 mesos"
+        },
+        {
+          "name": "Return Scroll to Lith Harbor",
+          "path": "/items/return-scroll-to-lith-harbor",
+          "detail": "Return scrolls, 500 mesos"
+        },
+        {
+          "name": "Speed Potion",
+          "path": "/items/speed-potion",
+          "detail": "Buff potions, 500 mesos"
+        },
+        {
+          "name": "Subi Throwing Stars",
+          "path": "/items/subi-throwing-stars",
+          "detail": "Throwing stars, 500 mesos"
+        },
+        {
+          "name": "Warrior Potion",
+          "path": "/items/warrior-potion",
+          "detail": "Buff potions, 500 mesos"
+        },
+        {
+          "name": "Sky-blue Wooden Chair",
+          "path": "/items/sky-blue-wooden-chair",
+          "detail": "Chairs, 1,000 mesos"
+        }
+      ],
+      "total": 18
+    },
+    {
+      "title": "Shopkeeper",
+      "links": [
+        {
+          "name": "Mina",
+          "path": "/npcs/mina",
+          "detail": ""
+        }
+      ],
+      "total": 1
+    },
+    {
+      "title": "Location",
+      "links": [
+        {
+          "name": "Lith Harbor Department Store",
+          "path": "/maps/lith-harbor-department-store",
+          "detail": ""
+        }
+      ],
+      "total": 1
+    }
+  ]
+}

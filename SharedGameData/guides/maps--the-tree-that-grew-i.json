@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 1,
+  "path": "/maps/the-tree-that-grew-i",
+  "kind": "map",
+  "name": "The Tree That Grew I",
+  "source": "CCPLZ",
+  "sourceUrl": "https://ccplz.cc/maps/the-tree-that-grew-i",
+  "checkedAt": "2026-11-06T10:25:00.230Z",
+  "notice": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial.",
+  "fields": [
+    {
+      "label": "Region",
+      "value": "Victoria Island"
+    },
+    {
+      "label": "Street",
+      "value": "Victoria Road"
+    },
+    {
+      "label": "Monster levels",
+      "value": "5 to 11"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Monsters",
+      "links": [
+        {
+          "name": "Stump",
+          "path": "/monsters/stump",
+          "detail": "Level 5"
+        },
+        {
+          "name": "Slime",
+          "path": "/monsters/slime",
+          "detail": "Level 6"
+        },
+        {
+          "name": "Dark Stump",
+          "path": "/monsters/dark-stump",
+          "detail": "Level 11"
+        }
+      ],
+      "total": 3
+    },
+    {
+      "title": "Connected maps",
+      "links": [
+        {
+          "name": "The Field Up North of Ellinia",
+          "path": "/maps/the-field-up-north-of-ellinia",
+          "detail": "Victoria Road"
+        },
+        {
+          "name": "The Forest North of Ellinia",
+          "path": "/maps/the-forest-north-of-ellinia",
+          "detail": "Victoria Road"
+        },
+        {
+          "name": "The Tree That Grew I",
+          "path": "/maps/the-tree-that-grew-i",
+          "detail": "Victoria Road"
+        },
+        {
+          "name": "The Tree That Grew II",
+          "path": "/maps/the-tree-that-grew-ii",
+          "detail": "Victoria Road"
+        }
+      ],
+      "total": 4
+    }
+  ]
+}

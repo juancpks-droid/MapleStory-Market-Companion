@@ -7,13 +7,13 @@
     "category": "Use"
   },
   "kind": "npc",
-  "checkedAt": "2026-10-29T10:12:59.957Z",
+  "checkedAt": "2026-11-06T10:24:24.278Z",
   "data": {
     "sell": 15,
     "buy": 150,
     "source": "CCPLZ",
     "url": "https://ccplz.cc/items/orange-potion",
-    "checkedAt": "2026-10-29T10:12:59.957Z"
+    "checkedAt": "2026-11-06T10:24:24.278Z"
   },
   "provenance": {
     "source": "CCPLZ",

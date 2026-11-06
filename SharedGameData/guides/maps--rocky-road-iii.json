@@ -1,0 +1,78 @@
+{
+  "schemaVersion": 1,
+  "path": "/maps/rocky-road-iii",
+  "kind": "map",
+  "name": "Rocky Road III",
+  "source": "CCPLZ",
+  "sourceUrl": "https://ccplz.cc/maps/rocky-road-iii",
+  "checkedAt": "2026-11-06T10:24:48.233Z",
+  "notice": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial.",
+  "fields": [
+    {
+      "label": "Region",
+      "value": "Victoria Island"
+    },
+    {
+      "label": "Street",
+      "value": "Victoria Road"
+    },
+    {
+      "label": "Monster levels",
+      "value": "4 to 25"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Monsters",
+      "links": [
+        {
+          "name": "Red Snail",
+          "path": "/monsters/red-snail",
+          "detail": "Level 4"
+        },
+        {
+          "name": "Stump",
+          "path": "/monsters/stump",
+          "detail": "Level 5"
+        },
+        {
+          "name": "Axe Stump",
+          "path": "/monsters/axe-stump",
+          "detail": "Level 17"
+        },
+        {
+          "name": "Dark Axe Stump",
+          "path": "/monsters/dark-axe-stump",
+          "detail": "Level 23"
+        },
+        {
+          "name": "Wild Boar",
+          "path": "/monsters/wild-boar",
+          "detail": "Level 25"
+        }
+      ],
+      "total": 5
+    },
+    {
+      "title": "Connected maps",
+      "links": [
+        {
+          "name": "East Domain of Perion",
+          "path": "/maps/east-domain-of-perion",
+          "detail": "Victoria Road"
+        },
+        {
+          "name": "Excavation Site I",
+          "path": "/maps/excavation-site-i",
+          "detail": "Victoria Road"
+        },
+        {
+          "name": "Rocky Road II",
+          "path": "/maps/rocky-road-ii",
+          "detail": "Victoria Road"
+        }
+      ],
+      "total": 3
+    }
+  ]
+}

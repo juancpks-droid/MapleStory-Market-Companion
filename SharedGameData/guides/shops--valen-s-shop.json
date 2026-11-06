@@ -1,0 +1,175 @@
+{
+  "schemaVersion": 1,
+  "path": "/shops/valen-s-shop",
+  "kind": "shop",
+  "name": "Valen's Shop",
+  "source": "CCPLZ",
+  "sourceUrl": "https://ccplz.cc/shops/valen-s-shop",
+  "checkedAt": "2026-11-06T10:24:42.222Z",
+  "notice": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial.",
+  "fields": [
+    {
+      "label": "Shopkeeper",
+      "value": "Valen"
+    },
+    {
+      "label": "Location",
+      "value": "Florina Beach"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Reported stock",
+      "links": [
+        {
+          "name": "Arrows for Bows",
+          "path": "/items/arrows-for-bows",
+          "detail": "Arrows for bows, 1 mesos"
+        },
+        {
+          "name": "Arrows for Crossbows",
+          "path": "/items/arrows-for-crossbows",
+          "detail": "Arrows for crossbows, 1 mesos"
+        },
+        {
+          "name": "Apple",
+          "path": "/items/apple",
+          "detail": "Fruit & basic food, 20 mesos"
+        },
+        {
+          "name": "Egg",
+          "path": "/items/egg",
+          "detail": "Fruit & basic food, 30 mesos"
+        },
+        {
+          "name": "Pet Food",
+          "path": "/items/pet-food",
+          "detail": "Pet food, 40 mesos"
+        },
+        {
+          "name": "Orange",
+          "path": "/items/orange",
+          "detail": "Fruit & basic food, 50 mesos"
+        },
+        {
+          "name": "Red Potion",
+          "path": "/items/red-potion",
+          "detail": "Potions, 50 mesos"
+        },
+        {
+          "name": "Fried Chicken",
+          "path": "/items/fried-chicken",
+          "detail": "Cooked food, 60 mesos"
+        },
+        {
+          "name": "Meat",
+          "path": "/items/meat",
+          "detail": "Fruit & basic food, 80 mesos"
+        },
+        {
+          "name": "Cake",
+          "path": "/items/cake",
+          "detail": "Cooked food, 150 mesos"
+        },
+        {
+          "name": "Lemon",
+          "path": "/items/lemon",
+          "detail": "Fruit & basic food, 150 mesos"
+        },
+        {
+          "name": "Orange Potion",
+          "path": "/items/orange-potion",
+          "detail": "Potions, 150 mesos"
+        },
+        {
+          "name": "Hot Dog",
+          "path": "/items/hot-dog",
+          "detail": "Cooked food, 180 mesos"
+        },
+        {
+          "name": "Blue Potion",
+          "path": "/items/blue-potion",
+          "detail": "Potions, 220 mesos"
+        },
+        {
+          "name": "Salad",
+          "path": "/items/salad",
+          "detail": "Cooked food, 220 mesos"
+        },
+        {
+          "name": "Pizza",
+          "path": "/items/pizza",
+          "detail": "Cooked food, 252 mesos"
+        },
+        {
+          "name": "Hamburger",
+          "path": "/items/hamburger",
+          "detail": "Cooked food, 350 mesos"
+        },
+        {
+          "name": "White Potion",
+          "path": "/items/white-potion",
+          "detail": "Potions, 350 mesos"
+        },
+        {
+          "name": "Hot Dog Supreme",
+          "path": "/items/hot-dog-supreme",
+          "detail": "Cooked food, 480 mesos"
+        },
+        {
+          "name": "Subi Throwing Stars",
+          "path": "/items/subi-throwing-stars",
+          "detail": "Throwing stars, 500 mesos"
+        },
+        {
+          "name": "Unagi",
+          "path": "/items/unagi",
+          "detail": "Drinks & porridge, 1,000 mesos"
+        },
+        {
+          "name": "Pure Water",
+          "path": "/items/pure-water",
+          "detail": "Drinks & porridge, 1,120 mesos"
+        },
+        {
+          "name": "Ice Cream Pop",
+          "path": "/items/ice-cream-pop",
+          "detail": "Cooked food, 1,500 mesos"
+        },
+        {
+          "name": "Watermelon",
+          "path": "/items/watermelon",
+          "detail": "Fruit & basic food, 1,920 mesos"
+        },
+        {
+          "name": "Red Bean Sundae",
+          "path": "/items/red-bean-sundae",
+          "detail": "Cooked food, 2,250 mesos"
+        }
+      ],
+      "total": 25
+    },
+    {
+      "title": "Shopkeeper",
+      "links": [
+        {
+          "name": "Valen",
+          "path": "/npcs/valen",
+          "detail": ""
+        }
+      ],
+      "total": 1
+    },
+    {
+      "title": "Location",
+      "links": [
+        {
+          "name": "Florina Beach",
+          "path": "/maps/florina-beach",
+          "detail": ""
+        }
+      ],
+      "total": 1
+    }
+  ]
+}

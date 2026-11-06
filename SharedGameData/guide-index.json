@@ -373,6 +373,11 @@
       "kind": "item"
     },
     {
+      "path": "/quests/the-filing-error",
+      "name": "Caretaker's Ledger (The Filing Error)",
+      "kind": "quest"
+    },
+    {
       "path": "/maps/caution-falling-down",
       "name": "Caution Falling Down",
       "kind": "map"
@@ -613,8 +618,23 @@
       "kind": "map"
     },
     {
+      "path": "/maps/east-rocky-mountain-i",
+      "name": "East Rocky Mountain I",
+      "kind": "map"
+    },
+    {
+      "path": "/maps/east-rocky-mountain-iii",
+      "name": "East Rocky Mountain III",
+      "kind": "map"
+    },
+    {
       "path": "/maps/east-rocky-mountain-iv",
       "name": "East Rocky Mountain IV",
+      "kind": "map"
+    },
+    {
+      "path": "/maps/east-rocky-mountain-v",
+      "name": "East Rocky Mountain V",
       "kind": "map"
     },
     {
@@ -681,6 +701,11 @@
       "path": "/items/fruit-knife",
       "name": "Fruit Knife",
       "kind": "item"
+    },
+    {
+      "path": "/npcs/fully-bloomed-bluebell",
+      "name": "Fully Bloomed Bluebell",
+      "kind": "npc"
     },
     {
       "path": "/items/garnet-ore",
@@ -1083,6 +1108,16 @@
       "kind": "shop"
     },
     {
+      "path": "/shops/luma-s-shop",
+      "name": "Luma's Shop",
+      "kind": "shop"
+    },
+    {
+      "path": "/shops/luna-s-shop",
+      "name": "Luna's Shop",
+      "kind": "shop"
+    },
+    {
       "path": "/monsters/lupin",
       "name": "Lupin",
       "kind": "monster"
@@ -1118,6 +1153,11 @@
       "kind": "quest"
     },
     {
+      "path": "/shops/mina-s-shop",
+      "name": "Mina's Shop",
+      "kind": "shop"
+    },
+    {
       "path": "/items/mithril-wolfskin",
       "name": "Mithril Wolfskin",
       "kind": "item"
@@ -1126,6 +1166,11 @@
       "path": "/items/moon-rock",
       "name": "Moon Rock",
       "kind": "item"
+    },
+    {
+      "path": "/shops/mr-sweatbottom-s-shop",
+      "name": "Mr. Sweatbottom's Shop",
+      "kind": "shop"
     },
     {
       "path": "/monsters/mushmom",
@@ -1410,6 +1455,11 @@
     {
       "path": "/maps/rocky-road-ii",
       "name": "Rocky Road II",
+      "kind": "map"
+    },
+    {
+      "path": "/maps/rocky-road-iii",
+      "name": "Rocky Road III",
       "kind": "map"
     },
     {
@@ -1738,6 +1788,11 @@
       "kind": "item"
     },
     {
+      "path": "/maps/the-tree-that-grew-i",
+      "name": "The Tree That Grew I",
+      "kind": "map"
+    },
+    {
       "path": "/maps/thicket-around-the-beach-i",
       "name": "Thicket Around the Beach I",
       "kind": "map"
@@ -1841,6 +1896,11 @@
       "path": "/items/umber-mantis-pants",
       "name": "Umber Mantis Pants",
       "kind": "item"
+    },
+    {
+      "path": "/shops/valen-s-shop",
+      "name": "Valen's Shop",
+      "kind": "shop"
     },
     {
       "path": "/items/wand-magic-attack-scroll-greater",
