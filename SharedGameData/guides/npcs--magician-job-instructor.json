@@ -1,0 +1,51 @@
+{
+  "schemaVersion": 1,
+  "path": "/npcs/magician-job-instructor",
+  "kind": "npc",
+  "name": "Magician Job Instructor (The Forest North of Ellinia)",
+  "source": "CCPLZ",
+  "sourceUrl": "https://ccplz.cc/npcs/magician-job-instructor",
+  "checkedAt": "2026-11-07T10:08:35.427Z",
+  "notice": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial.",
+  "fields": [],
+  "sections": [
+    {
+      "title": "Where to find them",
+      "links": [
+        {
+          "name": "The Forest North of Ellinia",
+          "path": "/maps/the-forest-north-of-ellinia",
+          "detail": "Victoria Island"
+        }
+      ],
+      "total": 1
+    },
+    {
+      "title": "Quests they start",
+      "links": [
+        {
+          "name": "The Magician's Next Journey (Proof of Qualification)",
+          "path": "/quests/proof-of-qualification-20103",
+          "detail": "Level 30"
+        },
+        {
+          "name": "The Magician's Next Journey (Test of Qualification)",
+          "path": "/quests/test-of-qualification-20102",
+          "detail": "Level 30"
+        }
+      ],
+      "total": 2
+    },
+    {
+      "title": "Quests they complete",
+      "links": [
+        {
+          "name": "The Magician's Next Journey (Finding the Instructor)",
+          "path": "/quests/finding-the-instructor-20101",
+          "detail": "Level 30"
+        }
+      ],
+      "total": 1
+    }
+  ]
+}

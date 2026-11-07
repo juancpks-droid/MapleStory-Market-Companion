@@ -463,6 +463,11 @@
       "kind": "item"
     },
     {
+      "path": "/maps/damp-tree-forest",
+      "name": "Damp Tree-Forest",
+      "kind": "map"
+    },
+    {
       "path": "/maps/dangerous-forest",
       "name": "Dangerous Forest",
       "kind": "map"
@@ -1123,6 +1128,11 @@
       "kind": "monster"
     },
     {
+      "path": "/npcs/magician-job-instructor",
+      "name": "Magician Job Instructor (The Forest North of Ellinia)",
+      "kind": "npc"
+    },
+    {
       "path": "/npcs/mai",
       "name": "Mai",
       "kind": "npc"
@@ -1773,6 +1783,16 @@
       "kind": "item"
     },
     {
+      "path": "/quests/finding-the-instructor-20101",
+      "name": "The Magician's Next Journey (Finding the Instructor)",
+      "kind": "quest"
+    },
+    {
+      "path": "/quests/test-of-qualification-20102",
+      "name": "The Magician's Next Journey (Test of Qualification)",
+      "kind": "quest"
+    },
+    {
       "path": "/quests/the-reason-behind-the-mushroom-studies",
       "name": "The Reason Behind the Mushroom Studies",
       "kind": "quest"
@@ -1790,6 +1810,11 @@
     {
       "path": "/maps/the-tree-that-grew-i",
       "name": "The Tree That Grew I",
+      "kind": "map"
+    },
+    {
+      "path": "/maps/the-tree-tunnel-at-the-forest-up-north",
+      "name": "The Tree Tunnel At the Forest Up North",
       "kind": "map"
     },
     {
@@ -1848,8 +1873,33 @@
       "kind": "item"
     },
     {
+      "path": "/maps/tree-dungeon-forest-up-north-i",
+      "name": "Tree Dungeon, Forest Up North I",
+      "kind": "map"
+    },
+    {
+      "path": "/maps/tree-dungeon-forest-up-north-ii",
+      "name": "Tree Dungeon, Forest Up North II",
+      "kind": "map"
+    },
+    {
+      "path": "/maps/tree-dungeon-forest-up-north-iii",
+      "name": "Tree Dungeon, Forest Up North III",
+      "kind": "map"
+    },
+    {
+      "path": "/maps/tree-dungeon-forest-up-north-iv",
+      "name": "Tree Dungeon, Forest Up North IV",
+      "kind": "map"
+    },
+    {
       "path": "/maps/tree-dungeon-forest-up-north-ix",
       "name": "Tree Dungeon, Forest Up North IX",
+      "kind": "map"
+    },
+    {
+      "path": "/maps/tree-dungeon-forest-up-north-v",
+      "name": "Tree Dungeon, Forest Up North V",
       "kind": "map"
     },
     {

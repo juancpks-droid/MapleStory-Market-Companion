@@ -1,0 +1,75 @@
+{
+  "schemaVersion": 1,
+  "path": "/maps/the-tree-tunnel-at-the-forest-up-north",
+  "kind": "map",
+  "name": "The Tree Tunnel At the Forest Up North",
+  "source": "CCPLZ",
+  "sourceUrl": "https://ccplz.cc/maps/the-tree-tunnel-at-the-forest-up-north",
+  "checkedAt": "2026-11-07T10:08:38.427Z",
+  "notice": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial.",
+  "fields": [
+    {
+      "label": "Region",
+      "value": "Victoria Island"
+    },
+    {
+      "label": "Street",
+      "value": "Victoria Road"
+    }
+  ],
+  "sections": [
+    {
+      "title": "NPCs",
+      "links": [
+        {
+          "name": "Ronnie",
+          "path": "/npcs/ronnie",
+          "detail": ""
+        }
+      ],
+      "total": 1
+    },
+    {
+      "title": "Connected maps",
+      "links": [
+        {
+          "name": "The Forest North of Ellinia",
+          "path": "/maps/the-forest-north-of-ellinia",
+          "detail": "Victoria Road"
+        }
+      ],
+      "total": 1
+    },
+    {
+      "title": "Quests set here",
+      "links": [
+        {
+          "name": "[Event] Beyond the Unknown",
+          "path": "/quests/event-beyond-the-unknown",
+          "detail": "Level 15"
+        },
+        {
+          "name": "Ronnie & the Fairies Building a New House (First Material Delivery for Building a New House)",
+          "path": "/quests/first-material-delivery-for-building-a-new-house",
+          "detail": "Level 41"
+        },
+        {
+          "name": "Ronnie & the Fairies Building a New House (Last Material Delivery for Building a New House)",
+          "path": "/quests/last-material-delivery-for-building-a-new-house",
+          "detail": "Level 41"
+        },
+        {
+          "name": "Ronnie & the Fairies Building a New House (Second Material Delivery for Building a New House)",
+          "path": "/quests/second-material-delivery-for-building-a-new-house",
+          "detail": "Level 41"
+        },
+        {
+          "name": "Ronnie & the Fairies Building a New House (Third Material Delivery for Building a New House)",
+          "path": "/quests/third-material-delivery-for-building-a-new-house",
+          "detail": "Level 41"
+        }
+      ],
+      "total": 5
+    }
+  ]
+}

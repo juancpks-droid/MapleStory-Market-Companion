@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "publishedAt": "2026-11-06T10:25:03.343Z",
+  "publishedAt": "2026-11-07T10:09:02.466Z",
   "catalogItems": 12726,
-  "guideRecords": 397,
+  "guideRecords": 407,
   "referenceRecords": 169,
   "entries": [
     {
@@ -540,8 +540,8 @@
     {
       "file": "guides/items--elixir.json",
       "bytes": 2934,
-      "sha256": "2ba3c6bb113c41a3f56ff7c091e34c411bcb49a9739c6e6e671671f64945bf7e",
-      "checkedAt": "2026-10-30T10:13:15.168Z",
+      "sha256": "32a362e990f061e98fbb98ea914936e9f910940d4d98f47e7529db34f944c35f",
+      "checkedAt": "2026-11-07T10:08:26.556Z",
       "kind": "item"
     },
     {
@@ -841,8 +841,8 @@
     {
       "file": "guides/items--mana-elixir.json",
       "bytes": 1570,
-      "sha256": "7b2a67b2b5c7eacbf935c575a9a93f83d627b0dc72b2e8a47fd3703a7f7e6191",
-      "checkedAt": "2026-10-30T10:13:12.132Z",
+      "sha256": "80b1adbc9f9e70f4d0dad9a91f8572036e81232bdc556ae150dab623a1fee344",
+      "checkedAt": "2026-11-07T10:08:23.456Z",
       "kind": "item"
     },
     {
@@ -967,8 +967,8 @@
     {
       "file": "guides/items--power-elixir.json",
       "bytes": 854,
-      "sha256": "7827c7b90e457f15927d46c93912b5e7ef2c30d822901509d9180a6cf3f4b398",
-      "checkedAt": "2026-10-30T10:13:18.167Z",
+      "sha256": "f1160859da681bcc770a2660b2b079b74e8aad1ee1be300e6365a748686fde74",
+      "checkedAt": "2026-11-07T10:08:29.454Z",
       "kind": "item"
     },
     {
@@ -1226,8 +1226,8 @@
     {
       "file": "guides/items--snail-shell.json",
       "bytes": 1594,
-      "sha256": "9efb00a70b64c38002fea7dc4e3557a3ef30fbb77d18d35546cfb85e93ab7590",
-      "checkedAt": "2026-10-30T10:13:21.160Z",
+      "sha256": "5002ae83c36552de94349aa3a4099b3cb618504192c5c2f7b81b3b0396a7a40f",
+      "checkedAt": "2026-11-07T10:08:32.433Z",
       "kind": "item"
     },
     {
@@ -1443,8 +1443,8 @@
     {
       "file": "guides/maps--3-way-road-split.json",
       "bytes": 2457,
-      "sha256": "801d9dd298ef2d4a0051a1719944498ad1328c5449e896e57d204100e539f1a5",
-      "checkedAt": "2026-10-14T09:56:42.869Z",
+      "sha256": "74c4968fee5aff0b867d60fd7fc23904d46ca6dc5f99f1ff42085806a9686c96",
+      "checkedAt": "2026-11-07T10:08:14.417Z",
       "kind": "map"
     },
     {
@@ -1494,6 +1494,13 @@
       "bytes": 3016,
       "sha256": "86166f2fc407d9017d5161e2b6113f32cc6c6bcb6ebe8bd2b61b9f7bb8e1a845",
       "checkedAt": "2026-10-23T09:58:02.460Z",
+      "kind": "map"
+    },
+    {
+      "file": "guides/maps--damp-tree-forest.json",
+      "bytes": 1726,
+      "sha256": "2ad91638fca67511770d80762004d6c018236f2ed4bbf0c05e31a57f122cf525",
+      "checkedAt": "2026-11-07T10:09:02.414Z",
       "kind": "map"
     },
     {
@@ -1716,8 +1723,8 @@
     {
       "file": "guides/maps--kerning-city-middle-forest-iii.json",
       "bytes": 2041,
-      "sha256": "40929d21ae5403cd3af6ea3b3d020e306aa74b3005680c19b048b461e42f4479",
-      "checkedAt": "2026-10-14T09:56:39.873Z",
+      "sha256": "f95f655599f4393cc082884fadcb4005b427f5286479ac33fa63c7d84a53840b",
+      "checkedAt": "2026-11-07T10:08:11.472Z",
       "kind": "map"
     },
     {
@@ -1744,8 +1751,8 @@
     {
       "file": "guides/maps--l-forest-iii.json",
       "bytes": 2344,
-      "sha256": "4332a5a3525d89b85f5db1dd673cc5e13c97bea4d187f75596839b5683c7746a",
-      "checkedAt": "2026-10-14T09:56:45.889Z",
+      "sha256": "ebebd7aa5251e6310442cdc5bf8462ccf98a858975721a52ea9005f9f0a0d242",
+      "checkedAt": "2026-11-07T10:08:17.545Z",
       "kind": "map"
     },
     {
@@ -1926,8 +1933,8 @@
     {
       "file": "guides/maps--the-field-east-of-amherst.json",
       "bytes": 1626,
-      "sha256": "4aa10536b7385bf29b0207272c36684d9b817ce33bc3d238c9dbfeaea2589195",
-      "checkedAt": "2026-10-14T09:56:49.074Z",
+      "sha256": "8b9d10cb2420474870cce3ffc35d2ac79f9c24b26db2dbc9a5fc2210e595584d",
+      "checkedAt": "2026-11-07T10:08:20.514Z",
       "kind": "map"
     },
     {
@@ -1994,6 +2001,13 @@
       "kind": "map"
     },
     {
+      "file": "guides/maps--the-tree-tunnel-at-the-forest-up-north.json",
+      "bytes": 2327,
+      "sha256": "dc35314c4c9a793a9ae3253e9f8107d9de77ecf9b44dde906f8cda802480ccb7",
+      "checkedAt": "2026-11-07T10:08:38.427Z",
+      "kind": "map"
+    },
+    {
       "file": "guides/maps--thicket-around-the-beach-i.json",
       "bytes": 1788,
       "sha256": "d62f67f06b35b821d540b5f5e1ef76bd7959b98e56144c898a2510272f47f59b",
@@ -2022,10 +2036,45 @@
       "kind": "map"
     },
     {
+      "file": "guides/maps--tree-dungeon-forest-up-north-i.json",
+      "bytes": 1303,
+      "sha256": "8799abf51675cff43ee2a2d5f770b865ee1310df48a7253621633a0b17514e05",
+      "checkedAt": "2026-11-07T10:08:41.408Z",
+      "kind": "map"
+    },
+    {
+      "file": "guides/maps--tree-dungeon-forest-up-north-ii.json",
+      "bytes": 1440,
+      "sha256": "f3e5110d4e3ffdeaa512fdac199d88307bbee89b89774177df567e1ae4224413",
+      "checkedAt": "2026-11-07T10:08:44.406Z",
+      "kind": "map"
+    },
+    {
+      "file": "guides/maps--tree-dungeon-forest-up-north-iii.json",
+      "bytes": 1443,
+      "sha256": "98bbd03b7ca293e8ce2efaf9cba6095530465698e992f4fcb865208845091661",
+      "checkedAt": "2026-11-07T10:08:47.448Z",
+      "kind": "map"
+    },
+    {
+      "file": "guides/maps--tree-dungeon-forest-up-north-iv.json",
+      "bytes": 1306,
+      "sha256": "7e15d9201925c4e3cebec00b8fe18ac5cf2b2827dbd89ad2fa37a78ee1c92e11",
+      "checkedAt": "2026-11-07T10:08:50.416Z",
+      "kind": "map"
+    },
+    {
       "file": "guides/maps--tree-dungeon-forest-up-north-ix.json",
       "bytes": 1176,
       "sha256": "be2d15f525d427878de9126dcb10bf41ae13b1cbe2b93e9bdd87f1195a9f14d5",
       "checkedAt": "2026-10-16T09:57:14.195Z",
+      "kind": "map"
+    },
+    {
+      "file": "guides/maps--tree-dungeon-forest-up-north-v.json",
+      "bytes": 1437,
+      "sha256": "6760563988813444dde460b4870da365dd96b0e1e9c2075d241eefe0e02d095b",
+      "checkedAt": "2026-11-07T10:08:53.440Z",
       "kind": "map"
     },
     {
@@ -2505,6 +2554,13 @@
       "kind": "npc"
     },
     {
+      "file": "guides/npcs--magician-job-instructor.json",
+      "bytes": 1508,
+      "sha256": "f358ae4e429d8f3ab521d1c0a9e3441946c7c32dd266b77487d54d67a966d711",
+      "checkedAt": "2026-11-07T10:08:35.427Z",
+      "kind": "npc"
+    },
+    {
       "file": "guides/npcs--mai.json",
       "bytes": 1254,
       "sha256": "95c3e18c21d046e21455fdc0e68c2231e7fd33ac39b17e0e6dfba29945948395",
@@ -2603,6 +2659,13 @@
       "kind": "quest"
     },
     {
+      "file": "guides/quests--finding-the-instructor-20101.json",
+      "bytes": 2189,
+      "sha256": "1a36d1ede92671cf7ed003d0dd6af3d5f59aec573c18a4c062324a7a0bda2570",
+      "checkedAt": "2026-11-07T10:08:56.428Z",
+      "kind": "quest"
+    },
+    {
       "file": "guides/quests--first-material-delivery-for-building-a-new-house.json",
       "bytes": 2830,
       "sha256": "1d11225aa020390bfbad928b5d491ca8552d52a52ab22ed042bbd86cdd8c1333",
@@ -2649,6 +2712,13 @@
       "bytes": 1557,
       "sha256": "5ba0f01fa5294cff4aa7c3c6b3abe335bbdc34a40e178590dbd00f6232c7bef0",
       "checkedAt": "2026-10-22T09:59:15.544Z",
+      "kind": "quest"
+    },
+    {
+      "file": "guides/quests--test-of-qualification-20102.json",
+      "bytes": 1826,
+      "sha256": "fb58a3ebbad99ab323893e97e826e96f369d3d7f569ab7e3c456398c7ebf408f",
+      "checkedAt": "2026-11-07T10:08:59.442Z",
       "kind": "quest"
     },
     {
@@ -3466,22 +3536,22 @@
     {
       "file": "records/npc-2000004.json",
       "bytes": 658,
-      "sha256": "cda6c6568bef38782b23d1c26b0ed025ce0ad30b57c73e9b52228b67bc24b038",
-      "checkedAt": "2026-10-30T10:13:15.168Z",
+      "sha256": "017f77c515d4bada109306be5245b0a783386276df1a11c9599eed26b4d285cf",
+      "checkedAt": "2026-11-07T10:08:26.556Z",
       "kind": "npc"
     },
     {
       "file": "records/npc-2000005.json",
       "bytes": 677,
-      "sha256": "b7de4cd12b1dcd27f4240d41e05c476fee4d8edbcc092de52bf8c58207b7b77f",
-      "checkedAt": "2026-10-30T10:13:18.167Z",
+      "sha256": "6663617b0184f97f81592379746f5cbf7e1209993fb1446461e748f5dd260bba",
+      "checkedAt": "2026-11-07T10:08:29.454Z",
       "kind": "npc"
     },
     {
       "file": "records/npc-2000006.json",
       "bytes": 674,
-      "sha256": "276990cbab7cb957c2773c7d503b7f8dcf7173c2d77f683ad5993bfc04aaa675",
-      "checkedAt": "2026-10-30T10:13:12.132Z",
+      "sha256": "b4ecd617b81974834a4b58cc67968cee0f263e8dfe1dc247ca65545a63e385e1",
+      "checkedAt": "2026-11-07T10:08:23.456Z",
       "kind": "npc"
     },
     {
@@ -3613,8 +3683,8 @@
     {
       "file": "records/npc-4000019.json",
       "bytes": 671,
-      "sha256": "8384e6180f6ed595a2e6b08b16c8953975211e8658483842208b0309f8e1d410",
-      "checkedAt": "2026-10-30T10:13:21.160Z",
+      "sha256": "71586bb78640c12a03fb2efcd2cc140b85dfaca2eef50a9d8cc899ce434c72a2",
+      "checkedAt": "2026-11-07T10:08:32.433Z",
       "kind": "npc"
     },
     {

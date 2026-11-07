@@ -1,0 +1,53 @@
+{
+  "schemaVersion": 1,
+  "path": "/maps/tree-dungeon-forest-up-north-i",
+  "kind": "map",
+  "name": "Tree Dungeon, Forest Up North I",
+  "source": "CCPLZ",
+  "sourceUrl": "https://ccplz.cc/maps/tree-dungeon-forest-up-north-i",
+  "checkedAt": "2026-11-07T10:08:41.408Z",
+  "notice": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial.",
+  "fields": [
+    {
+      "label": "Region",
+      "value": "Victoria Island"
+    },
+    {
+      "label": "Street",
+      "value": "Victoria Road"
+    },
+    {
+      "label": "Monster levels",
+      "value": "6 to 22"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Monsters",
+      "links": [
+        {
+          "name": "Slime",
+          "path": "/monsters/slime",
+          "detail": "Level 6"
+        },
+        {
+          "name": "Horny Mushroom",
+          "path": "/monsters/horny-mushroom",
+          "detail": "Level 22"
+        }
+      ],
+      "total": 2
+    },
+    {
+      "title": "Connected maps",
+      "links": [
+        {
+          "name": "The Forest North of Ellinia",
+          "path": "/maps/the-forest-north-of-ellinia",
+          "detail": "Victoria Road"
+        }
+      ],
+      "total": 1
+    }
+  ]
+}

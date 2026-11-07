@@ -7,13 +7,13 @@
     "category": "Use"
   },
   "kind": "npc",
-  "checkedAt": "2026-10-30T10:13:12.132Z",
+  "checkedAt": "2026-11-07T10:08:23.456Z",
   "data": {
     "sell": 1000,
     "buy": null,
     "source": "CCPLZ",
     "url": "https://ccplz.cc/items/mana-elixir",
-    "checkedAt": "2026-10-30T10:13:12.132Z"
+    "checkedAt": "2026-11-07T10:08:23.456Z"
   },
   "provenance": {
     "source": "CCPLZ",

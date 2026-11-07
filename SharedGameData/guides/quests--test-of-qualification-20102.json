@@ -1,0 +1,70 @@
+{
+  "schemaVersion": 1,
+  "path": "/quests/test-of-qualification-20102",
+  "kind": "quest",
+  "name": "The Magician's Next Journey (Test of Qualification)",
+  "source": "CCPLZ",
+  "sourceUrl": "https://ccplz.cc/quests/test-of-qualification-20102",
+  "checkedAt": "2026-11-07T10:08:59.442Z",
+  "notice": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial.",
+  "fields": [
+    {
+      "label": "Minimum level",
+      "value": "30"
+    },
+    {
+      "label": "Category",
+      "value": "Magician"
+    },
+    {
+      "label": "Starts with",
+      "value": "Magician Job Instructor (The Forest North of Ellinia)"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Quest NPCs",
+      "links": [
+        {
+          "name": "Magician Job Instructor (The Forest North of Ellinia)",
+          "path": "/npcs/magician-job-instructor",
+          "detail": "Starts the quest"
+        }
+      ],
+      "total": 1
+    },
+    {
+      "title": "Complete first",
+      "links": [
+        {
+          "name": "The Magician's Next Journey (Finding the Instructor)",
+          "path": "/quests/finding-the-instructor-20101",
+          "detail": ""
+        }
+      ],
+      "total": 1
+    },
+    {
+      "title": "Items to bring",
+      "links": [
+        {
+          "name": "Dark Marble (for The Magician's Next Journey: Test of Qualification)",
+          "path": "/items/dark-marble-4031019",
+          "detail": "x30"
+        }
+      ],
+      "total": 1
+    },
+    {
+      "title": "Where it takes place",
+      "links": [
+        {
+          "name": "The Forest North of Ellinia",
+          "path": "/maps/the-forest-north-of-ellinia",
+          "detail": ""
+        }
+      ],
+      "total": 1
+    }
+  ]
+}
