@@ -1,0 +1,102 @@
+{
+  "schemaVersion": 1,
+  "path": "/quests/camila-s-gem",
+  "kind": "quest",
+  "name": "Camila's Gem",
+  "source": "CCPLZ",
+  "sourceUrl": "https://ccplz.cc/quests/camila-s-gem",
+  "checkedAt": "2026-11-08T10:09:21.664Z",
+  "notice": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial.",
+  "fields": [
+    {
+      "label": "Minimum level",
+      "value": "24"
+    },
+    {
+      "label": "Category",
+      "value": "Henesys"
+    },
+    {
+      "label": "EXP reward",
+      "value": "2,750"
+    },
+    {
+      "label": "Meso reward",
+      "value": "775"
+    },
+    {
+      "label": "Starts with",
+      "value": "Camila"
+    },
+    {
+      "label": "Turn in to",
+      "value": "Utah"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Quest NPCs",
+      "links": [
+        {
+          "name": "Camila",
+          "path": "/npcs/camila",
+          "detail": "Starts the quest"
+        },
+        {
+          "name": "Utah",
+          "path": "/npcs/utah",
+          "detail": "Completes the quest"
+        }
+      ],
+      "total": 2
+    },
+    {
+      "title": "Items to bring",
+      "links": [
+        {
+          "name": "Sparkling Glass Marble",
+          "path": "/items/sparkling-glass-marble",
+          "detail": "x1"
+        }
+      ],
+      "total": 1
+    },
+    {
+      "title": "Item rewards",
+      "links": [
+        {
+          "name": "Cake",
+          "path": "/items/cake",
+          "detail": ""
+        },
+        {
+          "name": "Pig Illustrated",
+          "path": "/items/pig-illustrated",
+          "detail": ""
+        }
+      ],
+      "total": 2
+    },
+    {
+      "title": "Where it takes place",
+      "links": [
+        {
+          "name": "Henesys",
+          "path": "/maps/henesys",
+          "detail": ""
+        },
+        {
+          "name": "The Forest East of Henesys",
+          "path": "/maps/the-forest-east-of-henesys",
+          "detail": ""
+        },
+        {
+          "name": "Utah's Pig Farm",
+          "path": "/maps/utah-s-pig-farm",
+          "detail": ""
+        }
+      ],
+      "total": 3
+    }
+  ]
+}

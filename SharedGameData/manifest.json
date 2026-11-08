@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "publishedAt": "2026-11-07T10:09:02.466Z",
+  "publishedAt": "2026-11-08T10:09:33.749Z",
   "catalogItems": 12726,
-  "guideRecords": 407,
+  "guideRecords": 417,
   "referenceRecords": 169,
   "entries": [
     {
@@ -239,8 +239,8 @@
     {
       "file": "guides/items--blue-snail-shell.json",
       "bytes": 2061,
-      "sha256": "508082b0ad73ba8cf72a1d26954b4bbe7f64d5cb54f1b29b358b9ee61a850851",
-      "checkedAt": "2026-10-31T10:00:01.158Z",
+      "sha256": "48e467af3718a53e63b45aa2e19586dff5b58cdc27ad0fa2a9d674cf8902306a",
+      "checkedAt": "2026-11-08T10:08:54.769Z",
       "kind": "item"
     },
     {
@@ -869,8 +869,8 @@
     {
       "file": "guides/items--mushroom-spore.json",
       "bytes": 1339,
-      "sha256": "543c249a1af6e951dd6cbdc33fe0317f3858f237a4382937a713478dbc48dce8",
-      "checkedAt": "2026-10-31T10:00:10.160Z",
+      "sha256": "cfbd5c35c248f9d75d40fd2e39bbaa0fc28f1cbea474b8b5ded4839bbb530486",
+      "checkedAt": "2026-11-08T10:09:03.673Z",
       "kind": "item"
     },
     {
@@ -904,8 +904,8 @@
     {
       "file": "guides/items--orange-mushroom-cap.json",
       "bytes": 2715,
-      "sha256": "dede083d4637cccce48f3d3bc49930ef0fc31b5255f038555bf26bdf8fbb0b8a",
-      "checkedAt": "2026-10-31T10:00:04.124Z",
+      "sha256": "8d22c9324b93858bc5234667e497503f19b6affffe6151f3ca7f7c744536ef36",
+      "checkedAt": "2026-11-08T10:08:57.713Z",
       "kind": "item"
     },
     {
@@ -1219,8 +1219,8 @@
     {
       "file": "guides/items--slime-bubble.json",
       "bytes": 1460,
-      "sha256": "19928ede45570efd736fcec7d57dfcf30984872c6654a5a504514fe6b91259dd",
-      "checkedAt": "2026-10-31T10:00:07.156Z",
+      "sha256": "0d942b7566b2bcd57e98d116ca4679e244ee5c7a1e15d8d2cfae8e224c99e6a3",
+      "checkedAt": "2026-11-08T10:09:00.677Z",
       "kind": "item"
     },
     {
@@ -1462,6 +1462,20 @@
       "kind": "map"
     },
     {
+      "file": "guides/maps--amherst-townstreet.json",
+      "bytes": 1033,
+      "sha256": "9e515e2578e0abc8d013b801974f6e2386354b12ec69fcc812dcfe774e0e46ea",
+      "checkedAt": "2026-11-08T10:09:27.657Z",
+      "kind": "map"
+    },
+    {
+      "file": "guides/maps--amherst.json",
+      "bytes": 2618,
+      "sha256": "f67be33b02d796c8ab3ab8d2f2223741cd77efd34a9d60ac42b9cb0532f16a13",
+      "checkedAt": "2026-11-08T10:09:24.692Z",
+      "kind": "map"
+    },
+    {
       "file": "guides/maps--an-empty-house.json",
       "bytes": 1352,
       "sha256": "e94c201fd7211275e9a794884c976e475cb8d718923d58b7f36c6379592b1e99",
@@ -1555,8 +1569,8 @@
     {
       "file": "guides/maps--east-domain-of-perion.json",
       "bytes": 2461,
-      "sha256": "16e73927b61a0233078d738547349d5c01ab493bb00593b411fc881b73e82b43",
-      "checkedAt": "2026-10-14T09:56:54.849Z",
+      "sha256": "06148c03053785f0abfb904222cbe0c5ad651f47a6eeed9127266d101693cbaf",
+      "checkedAt": "2026-11-08T10:08:45.669Z",
       "kind": "map"
     },
     {
@@ -1639,15 +1653,15 @@
     {
       "file": "guides/maps--hunting-ground-in-the-deep-forest-i.json",
       "bytes": 2091,
-      "sha256": "068ace3e28d1081e26d8ac3e14156b407196590e8f6960a2cb78ab66fb6d15a3",
-      "checkedAt": "2026-10-14T09:56:57.884Z",
+      "sha256": "c3ebbebeda0478edc63a2b34e65c727ca8db6e84acee026c700917a72d0ed90c",
+      "checkedAt": "2026-11-08T10:08:48.670Z",
       "kind": "map"
     },
     {
       "file": "guides/maps--hunting-ground-in-the-deep-forest-ii.json",
       "bytes": 1679,
-      "sha256": "59825007f49b566b9d0f29befc61156bba1f53c9052cee06f2bfbd5511f95117",
-      "checkedAt": "2026-10-14T09:57:00.843Z",
+      "sha256": "4e2b1c9257e3e8fac0d1c902fd648c1f85d1a16d9bc0fa91a9aaf70ca812631a",
+      "checkedAt": "2026-11-08T10:08:51.706Z",
       "kind": "map"
     },
     {
@@ -1774,6 +1788,13 @@
       "bytes": 1473,
       "sha256": "067a65eb002f8fd82a9260273bad8ca364c5b2c25706b9d1b4f989e1f583af71",
       "checkedAt": "2026-10-23T09:58:26.459Z",
+      "kind": "map"
+    },
+    {
+      "file": "guides/maps--perion-dungeon-entrance.json",
+      "bytes": 2083,
+      "sha256": "fb1f2f7320db127a645a57cc2292ea408c16c0001dad28dd476afa0fb2148e62",
+      "checkedAt": "2026-11-08T10:09:06.690Z",
       "kind": "map"
     },
     {
@@ -1910,6 +1931,20 @@
       "kind": "map"
     },
     {
+      "file": "guides/maps--swampy-land-in-a-deep-forest.json",
+      "bytes": 2203,
+      "sha256": "05cc994afe803790573675fa90c518641e9a2571d9c561aaf4396b42de0d5ef6",
+      "checkedAt": "2026-11-08T10:09:09.683Z",
+      "kind": "map"
+    },
+    {
+      "file": "guides/maps--the-blue-mushroom-forest.json",
+      "bytes": 1528,
+      "sha256": "e037d6668aa2cba386ab3a7b238f57fa364de7e7fa7b789ddf0c806ba7bcef00",
+      "checkedAt": "2026-11-08T10:09:12.686Z",
+      "kind": "map"
+    },
+    {
       "file": "guides/maps--the-cave-of-trial-i.json",
       "bytes": 1479,
       "sha256": "bcbc5bc571c05448ba899f9ba2f2d6ce841a61bd2fb6e5c80b5ef59347ddd6f5",
@@ -1968,8 +2003,8 @@
     {
       "file": "guides/maps--the-forest-of-wisdom.json",
       "bytes": 1985,
-      "sha256": "664a0f05f3efbeb27e1ac7c0ea402a9203d93932fc31800bbe10374fa233e590",
-      "checkedAt": "2026-10-14T09:56:51.852Z",
+      "sha256": "7307950cffdd3b00082aec2318bf33134f4dc1e9e13e7090dea25f7f49e8911e",
+      "checkedAt": "2026-11-08T10:08:42.681Z",
       "kind": "map"
     },
     {
@@ -1984,6 +2019,13 @@
       "bytes": 2196,
       "sha256": "4a25c3ee27f2d4502accc1309246907b8b15abd7b008df22b6e50718b3980e75",
       "checkedAt": "2026-10-24T09:53:41.091Z",
+      "kind": "map"
+    },
+    {
+      "file": "guides/maps--the-rain-forest-east-of-henesys.json",
+      "bytes": 1446,
+      "sha256": "564e2e2e48bde3a61d75ddf6b3c177b6e28ffd8a4e9d589626235ccc9f315c0d",
+      "checkedAt": "2026-11-08T10:09:15.700Z",
       "kind": "map"
     },
     {
@@ -2113,6 +2155,13 @@
       "kind": "map"
     },
     {
+      "file": "guides/maps--utah-s-pig-farm.json",
+      "bytes": 1675,
+      "sha256": "4d0501e706cece9bc2a133b7d0bdeba94a9e8cd1ca9dce786bb3e5917e4ff8a2",
+      "checkedAt": "2026-11-08T10:09:18.676Z",
+      "kind": "map"
+    },
+    {
       "file": "guides/maps--watch-out-for-icy-path-i.json",
       "bytes": 1389,
       "sha256": "19ba1e9a96b18164d7c6403fdf818b93163a8434d13785b74092ff8cf1436413",
@@ -2141,10 +2190,24 @@
       "kind": "monster"
     },
     {
+      "file": "guides/monsters--bain.json",
+      "bytes": 2233,
+      "sha256": "3f08217db6027a13e3ea2854f413527a3602c411292bfcb7ca292a06079f7905",
+      "checkedAt": "2026-11-08T10:09:30.659Z",
+      "kind": "monster"
+    },
+    {
       "file": "guides/monsters--black-ratz.json",
       "bytes": 1208,
       "sha256": "8df970ad7a2effdbf4d5b09c301ade43942223a5982c966dc022a10a64173a28",
       "checkedAt": "2026-11-05T10:26:20.783Z",
+      "kind": "monster"
+    },
+    {
+      "file": "guides/monsters--block-golem.json",
+      "bytes": 1212,
+      "sha256": "8ee905be8497995ab6175943b5f4621e2ab0e709830ac6e8aa346e50c0851dfa",
+      "checkedAt": "2026-11-08T10:09:33.657Z",
       "kind": "monster"
     },
     {
@@ -2614,6 +2677,13 @@
       "bytes": 1844,
       "sha256": "c14ee75b4a4520ebacfb65fc4c6dc2b45eb21f74bd1ee5e0f2a7740563e274b0",
       "checkedAt": "2026-10-28T10:10:09.130Z",
+      "kind": "quest"
+    },
+    {
+      "file": "guides/quests--camila-s-gem.json",
+      "bytes": 2195,
+      "sha256": "5761479bad38406fc7116ce89339ec055a51f185ffae7d22fdd5c3cfc9e7f26a",
+      "checkedAt": "2026-11-08T10:09:21.664Z",
       "kind": "quest"
     },
     {
@@ -3613,15 +3683,15 @@
     {
       "file": "records/npc-4000000.json",
       "bytes": 686,
-      "sha256": "72aef5d62e334745e230870d87e516a03c7a2c2848fb3c7d93221a66563fbfb9",
-      "checkedAt": "2026-10-31T10:00:01.158Z",
+      "sha256": "b76b89f26e4bd12df1507cf66d38c524512c4d15b1f39b69013896e6f24ed67f",
+      "checkedAt": "2026-11-08T10:08:54.769Z",
       "kind": "npc"
     },
     {
       "file": "records/npc-4000001.json",
       "bytes": 695,
-      "sha256": "a953d783a832c47fd1c10784913ef5538f4118fbbc03ff15face83843af3458d",
-      "checkedAt": "2026-10-31T10:00:04.124Z",
+      "sha256": "dfa33d2bf2e873dd487a2c30fb34a711ac74ce262dcc02d28a8c2135fd90810c",
+      "checkedAt": "2026-11-08T10:08:57.713Z",
       "kind": "npc"
     },
     {
@@ -3641,15 +3711,15 @@
     {
       "file": "records/npc-4000010.json",
       "bytes": 675,
-      "sha256": "a596b7e6f1625113b4d6829c79657fbcf449aaa1c08842f36878f56cbf40a9c7",
-      "checkedAt": "2026-10-31T10:00:07.156Z",
+      "sha256": "42ec0879f084615f5cd64a073e9f917c03d2db6c51af1ac28cf8041689e50798",
+      "checkedAt": "2026-11-08T10:09:00.677Z",
       "kind": "npc"
     },
     {
       "file": "records/npc-4000011.json",
       "bytes": 680,
-      "sha256": "615ae33190a91d6eb58f50589588c07400e35bba571bea8eead5d84f1325f122",
-      "checkedAt": "2026-10-31T10:00:10.160Z",
+      "sha256": "c9fde708588c1aedf933fab19067dcf747e5fa520c7f374c09ec6b213dbcc635",
+      "checkedAt": "2026-11-08T10:09:03.673Z",
       "kind": "npc"
     },
     {

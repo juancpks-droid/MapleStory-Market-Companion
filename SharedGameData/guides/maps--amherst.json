@@ -1,0 +1,104 @@
+{
+  "schemaVersion": 1,
+  "path": "/maps/amherst",
+  "kind": "map",
+  "name": "Amherst",
+  "source": "CCPLZ",
+  "sourceUrl": "https://ccplz.cc/maps/amherst",
+  "checkedAt": "2026-11-08T10:09:24.692Z",
+  "notice": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial.",
+  "fields": [
+    {
+      "label": "Region",
+      "value": "Maple Island"
+    },
+    {
+      "label": "Street",
+      "value": "Rainbow Street"
+    },
+    {
+      "label": "Type",
+      "value": "Town"
+    }
+  ],
+  "sections": [
+    {
+      "title": "NPCs",
+      "links": [
+        {
+          "name": "Lucas",
+          "path": "/npcs/lucas",
+          "detail": ""
+        },
+        {
+          "name": "Pio",
+          "path": "/npcs/pio",
+          "detail": ""
+        },
+        {
+          "name": "Rain",
+          "path": "/npcs/rain",
+          "detail": ""
+        }
+      ],
+      "total": 3
+    },
+    {
+      "title": "Connected maps",
+      "links": [
+        {
+          "name": "Amherst Department Store",
+          "path": "/maps/amherst-department-store",
+          "detail": "Rainbow Street"
+        },
+        {
+          "name": "Amherst Townstreet",
+          "path": "/maps/amherst-townstreet",
+          "detail": "Rainbow Street"
+        },
+        {
+          "name": "Amherst Weapon Store",
+          "path": "/maps/amherst-weapon-store",
+          "detail": "Rainbow Street"
+        },
+        {
+          "name": "The Field East of Amherst",
+          "path": "/maps/the-field-east-of-amherst",
+          "detail": "Rainbow Street"
+        },
+        {
+          "name": "The Field West of Amherst",
+          "path": "/maps/the-field-west-of-amherst",
+          "detail": "Rainbow Street"
+        }
+      ],
+      "total": 5
+    },
+    {
+      "title": "Quests set here",
+      "links": [
+        {
+          "name": "Pio's Collecting Recycled Goods",
+          "path": "/quests/pio-s-collecting-recycled-goods",
+          "detail": "Level 5"
+        },
+        {
+          "name": "Please bring this letter to Lucas (Letter for Lucas)",
+          "path": "/quests/letter-for-lucas",
+          "detail": "Level 2"
+        },
+        {
+          "name": "Please bring this letter to Lucas (Lucas's Reply)",
+          "path": "/quests/lucas-s-reply",
+          "detail": ""
+        },
+        {
+          "name": "Rain's Maple Quiz (Rain's Maple Quiz 1)",
+          "path": "/quests/rain-s-maple-quiz-1",
+          "detail": "Level 5"
+        }
+      ],
+      "total": 4
+    }
+  ]
+}

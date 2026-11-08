@@ -1,0 +1,42 @@
+{
+  "schemaVersion": 1,
+  "path": "/maps/amherst-townstreet",
+  "kind": "map",
+  "name": "Amherst Townstreet",
+  "source": "CCPLZ",
+  "sourceUrl": "https://ccplz.cc/maps/amherst-townstreet",
+  "checkedAt": "2026-11-08T10:09:27.657Z",
+  "notice": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial.",
+  "fields": [
+    {
+      "label": "Region",
+      "value": "Maple Island"
+    },
+    {
+      "label": "Street",
+      "value": "Rainbow Street"
+    },
+    {
+      "label": "Type",
+      "value": "Town"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Connected maps",
+      "links": [
+        {
+          "name": "Amherst",
+          "path": "/maps/amherst",
+          "detail": "Rainbow Street"
+        },
+        {
+          "name": "Snail Field of Flowers",
+          "path": "/maps/snail-field-of-flowers",
+          "detail": "Rainbow Street"
+        }
+      ],
+      "total": 2
+    }
+  ]
+}

@@ -7,13 +7,13 @@
     "category": "Etc"
   },
   "kind": "npc",
-  "checkedAt": "2026-10-31T10:00:07.156Z",
+  "checkedAt": "2026-11-08T10:09:00.677Z",
   "data": {
     "sell": 50,
     "buy": null,
     "source": "CCPLZ",
     "url": "https://ccplz.cc/items/slime-bubble",
-    "checkedAt": "2026-10-31T10:00:07.156Z"
+    "checkedAt": "2026-11-08T10:09:00.677Z"
   },
   "provenance": {
     "source": "CCPLZ",

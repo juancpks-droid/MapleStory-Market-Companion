@@ -43,6 +43,16 @@
       "kind": "item"
     },
     {
+      "path": "/maps/amherst",
+      "name": "Amherst",
+      "kind": "map"
+    },
+    {
+      "path": "/maps/amherst-townstreet",
+      "name": "Amherst Townstreet",
+      "kind": "map"
+    },
+    {
       "path": "/maps/an-empty-house",
       "name": "An Empty House",
       "kind": "map"
@@ -100,6 +110,11 @@
     {
       "path": "/monsters/axe-stump",
       "name": "Axe Stump",
+      "kind": "monster"
+    },
+    {
+      "path": "/monsters/bain",
+      "name": "Bain",
       "kind": "monster"
     },
     {
@@ -191,6 +206,11 @@
       "path": "/items/black-sneak",
       "name": "Black Sneak",
       "kind": "item"
+    },
+    {
+      "path": "/monsters/block-golem",
+      "name": "Block Golem",
+      "kind": "monster"
     },
     {
       "path": "/items/blood-moss-boots",
@@ -361,6 +381,11 @@
       "path": "/items/bruise",
       "name": "Bruise",
       "kind": "item"
+    },
+    {
+      "path": "/quests/camila-s-gem",
+      "name": "Camila's Gem",
+      "kind": "quest"
     },
     {
       "path": "/items/cape-int-scroll-intermediate",
@@ -1283,6 +1308,11 @@
       "kind": "item"
     },
     {
+      "path": "/maps/perion-dungeon-entrance",
+      "name": "Perion Dungeon Entrance",
+      "kind": "map"
+    },
+    {
       "path": "/maps/perion-street-corner",
       "name": "Perion Street Corner",
       "kind": "map"
@@ -1718,9 +1748,19 @@
       "kind": "map"
     },
     {
+      "path": "/maps/swampy-land-in-a-deep-forest",
+      "name": "Swampy Land in a Deep Forest",
+      "kind": "map"
+    },
+    {
       "path": "/items/sword",
       "name": "Sword",
       "kind": "item"
+    },
+    {
+      "path": "/maps/the-blue-mushroom-forest",
+      "name": "The Blue Mushroom Forest",
+      "kind": "map"
     },
     {
       "path": "/maps/the-cave-of-trial-i",
@@ -1791,6 +1831,11 @@
       "path": "/quests/test-of-qualification-20102",
       "name": "The Magician's Next Journey (Test of Qualification)",
       "kind": "quest"
+    },
+    {
+      "path": "/maps/the-rain-forest-east-of-henesys",
+      "name": "The Rain-Forest East of Henesys",
+      "kind": "map"
     },
     {
       "path": "/quests/the-reason-behind-the-mushroom-studies",
@@ -1946,6 +1991,11 @@
       "path": "/items/umber-mantis-pants",
       "name": "Umber Mantis Pants",
       "kind": "item"
+    },
+    {
+      "path": "/maps/utah-s-pig-farm",
+      "name": "Utah's Pig Farm",
+      "kind": "map"
     },
     {
       "path": "/shops/valen-s-shop",
