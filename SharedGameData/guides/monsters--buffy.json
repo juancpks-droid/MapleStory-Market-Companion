@@ -1,0 +1,57 @@
+{
+  "schemaVersion": 1,
+  "path": "/monsters/buffy",
+  "kind": "monster",
+  "name": "Buffy",
+  "source": "CCPLZ",
+  "sourceUrl": "https://ccplz.cc/monsters/buffy",
+  "checkedAt": "2026-11-09T10:20:07.499Z",
+  "notice": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial.",
+  "fields": [
+    {
+      "label": "Level",
+      "value": "62"
+    },
+    {
+      "label": "HP",
+      "value": "5,057"
+    },
+    {
+      "label": "EXP",
+      "value": "229"
+    },
+    {
+      "label": "MP",
+      "value": "50"
+    },
+    {
+      "label": "Attack",
+      "value": "315"
+    },
+    {
+      "label": "Defense",
+      "value": "10"
+    },
+    {
+      "label": "Accuracy",
+      "value": "138"
+    },
+    {
+      "label": "Avoidability",
+      "value": "35"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Drops",
+      "links": [
+        {
+          "name": "Buffy Hat",
+          "path": "/items/buffy-hat",
+          "detail": "Monster drops"
+        }
+      ],
+      "total": 1
+    }
+  ]
+}

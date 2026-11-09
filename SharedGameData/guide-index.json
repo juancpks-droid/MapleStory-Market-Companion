@@ -213,6 +213,11 @@
       "kind": "monster"
     },
     {
+      "path": "/monsters/bloctopus",
+      "name": "Bloctopus",
+      "kind": "monster"
+    },
+    {
       "path": "/items/blood-moss-boots",
       "name": "Blood Moss Boots",
       "kind": "item"
@@ -363,6 +368,11 @@
       "kind": "item"
     },
     {
+      "path": "/monsters/brown-teddy",
+      "name": "Brown Teddy",
+      "kind": "monster"
+    },
+    {
       "path": "/items/brown-winter-hat",
       "name": "Brown Winter Hat",
       "kind": "item"
@@ -381,6 +391,16 @@
       "path": "/items/bruise",
       "name": "Bruise",
       "kind": "item"
+    },
+    {
+      "path": "/monsters/buffoon",
+      "name": "Buffoon",
+      "kind": "monster"
+    },
+    {
+      "path": "/monsters/buffy",
+      "name": "Buffy",
+      "kind": "monster"
     },
     {
       "path": "/quests/camila-s-gem",
@@ -413,8 +433,18 @@
       "kind": "item"
     },
     {
+      "path": "/monsters/cerebes",
+      "name": "Cerebes",
+      "kind": "monster"
+    },
+    {
       "path": "/monsters/chirppy",
       "name": "Chirppy",
+      "kind": "monster"
+    },
+    {
+      "path": "/monsters/chronos",
+      "name": "Chronos",
       "kind": "monster"
     },
     {
@@ -528,6 +558,11 @@
       "kind": "monster"
     },
     {
+      "path": "/monsters/dark-pepe",
+      "name": "Dark Pepe",
+      "kind": "monster"
+    },
+    {
       "path": "/items/dark-savata",
       "name": "Dark Savata",
       "kind": "item"
@@ -561,6 +596,21 @@
       "path": "/items/dark-wolfskin",
       "name": "Dark Wolfskin",
       "kind": "item"
+    },
+    {
+      "path": "/monsters/dark-yeti-and-pepe",
+      "name": "Dark Yeti and Pepe",
+      "kind": "monster"
+    },
+    {
+      "path": "/monsters/death-teddy",
+      "name": "Death Teddy",
+      "kind": "monster"
+    },
+    {
+      "path": "/monsters/deep-buffoon",
+      "name": "Deep Buffoon",
+      "kind": "monster"
     },
     {
       "path": "/maps/deep-forest",
@@ -606,6 +656,11 @@
       "path": "/maps/drake-s-meal-table",
       "name": "Drake's Meal Table",
       "kind": "map"
+    },
+    {
+      "path": "/monsters/drumming-bunny",
+      "name": "Drumming Bunny",
+      "kind": "monster"
     },
     {
       "path": "/maps/dungeon-southern-forest-i",

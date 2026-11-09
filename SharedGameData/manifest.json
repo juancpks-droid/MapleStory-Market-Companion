@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "publishedAt": "2026-11-08T10:09:33.749Z",
+  "publishedAt": "2026-11-09T10:20:28.652Z",
   "catalogItems": 12726,
-  "guideRecords": 417,
+  "guideRecords": 428,
   "referenceRecords": 169,
   "entries": [
     {
@@ -70,9 +70,9 @@
     },
     {
       "file": "guides/items--arrows-for-bows.json",
-      "bytes": 10684,
-      "sha256": "c8aaf60be74a0796e102ccca76f936b03c87f927ee40b20e54de13ed66de1457",
-      "checkedAt": "2026-10-14T09:57:12.842Z",
+      "bytes": 9826,
+      "sha256": "7a05aba4bad53e5b5d8fd0dc4b9e6b52816453d77ce2bbcf6ac932c97d253f0d",
+      "checkedAt": "2026-11-09T10:19:46.496Z",
       "kind": "item"
     },
     {
@@ -596,15 +596,15 @@
     {
       "file": "guides/items--gloves-attack-scroll-chaos.json",
       "bytes": 1325,
-      "sha256": "c42fe6aa9c2f587cf7c0295b21776c9b43fffa0a0dfa40212d3de899cb713a85",
-      "checkedAt": "2026-11-01T10:04:42.677Z",
+      "sha256": "8867f104623b94c1e8936423a56066b15b3bbcb48f93a9abf30f439c5f8ce967",
+      "checkedAt": "2026-11-09T10:19:55.549Z",
       "kind": "item"
     },
     {
       "file": "guides/items--gloves-attack-scroll-greater.json",
       "bytes": 1583,
-      "sha256": "7e8166d0071e66cad16953bb168392d8726e6df6909243c6f431119a00d65329",
-      "checkedAt": "2026-11-01T10:04:39.669Z",
+      "sha256": "857787c899c48ade8e46db51e3b8555f0594a86a7a92eab6c2d0a928292721c8",
+      "checkedAt": "2026-11-09T10:19:52.541Z",
       "kind": "item"
     },
     {
@@ -617,8 +617,8 @@
     {
       "file": "guides/items--gloves-attack-scroll-lesser.json",
       "bytes": 1818,
-      "sha256": "a53d15fab34dacd45bab5eb3b413e42144de5a03a75ae2e5ebc26dedf759e2e7",
-      "checkedAt": "2026-11-01T10:04:36.632Z",
+      "sha256": "455dff934cc72336fc002880233dbf2f3e6ef1b19d16090769c380fdf279bcfc",
+      "checkedAt": "2026-11-09T10:19:49.520Z",
       "kind": "item"
     },
     {
@@ -1485,8 +1485,8 @@
     {
       "file": "guides/maps--beach-hunting-ground.json",
       "bytes": 2115,
-      "sha256": "3d3f5d273c7527643d14b40a3d1bf2e144f42435f52a32da118f53bdafcb1bd6",
-      "checkedAt": "2026-10-14T09:57:09.854Z",
+      "sha256": "768c0c0d925f2babcc803bfb3bbff0edfbac488ac4e24ce8cabca32d245d9cab",
+      "checkedAt": "2026-11-09T10:19:43.611Z",
       "kind": "map"
     },
     {
@@ -1534,8 +1534,8 @@
     {
       "file": "guides/maps--drake-s-meal-table.json",
       "bytes": 1597,
-      "sha256": "70273322a6b33e8df3c82b99357b4e09718c046a6ec4a0a1a4de634fe2115915",
-      "checkedAt": "2026-10-14T09:57:06.890Z",
+      "sha256": "b0d561e61719636498b0852d71193d773db296ab5375784bdc5b678a32c1bdfc",
+      "checkedAt": "2026-11-09T10:19:40.512Z",
       "kind": "map"
     },
     {
@@ -1758,8 +1758,8 @@
     {
       "file": "guides/maps--l-forest-ii.json",
       "bytes": 2558,
-      "sha256": "c36895b6ed93dbd92858a560ac85d61629f4f34a18973ad6fe6a12f9db7f6669",
-      "checkedAt": "2026-10-14T09:57:03.846Z",
+      "sha256": "b2b78fa97d0fbd503bc839fad93b68f4735de6028b0d30617a83139e75d647b5",
+      "checkedAt": "2026-11-09T10:19:37.645Z",
       "kind": "map"
     },
     {
@@ -2211,6 +2211,13 @@
       "kind": "monster"
     },
     {
+      "file": "guides/monsters--bloctopus.json",
+      "bytes": 1150,
+      "sha256": "66be1050807e4bfcc679b8d6efdce9fb60fc177fe136f19170da88323dcce767",
+      "checkedAt": "2026-11-09T10:19:58.500Z",
+      "kind": "monster"
+    },
+    {
       "file": "guides/monsters--blue-mushroom.json",
       "bytes": 7028,
       "sha256": "8f3267cf8679f6b3a2484bfd7a45160d4df64657249ca516a5c5734ae1a706d9",
@@ -2225,10 +2232,45 @@
       "kind": "monster"
     },
     {
+      "file": "guides/monsters--brown-teddy.json",
+      "bytes": 1334,
+      "sha256": "e81c3a7de6836200ef45bd446b6b17434cd79e950042c93ded5ba7d97658287c",
+      "checkedAt": "2026-11-09T10:20:01.530Z",
+      "kind": "monster"
+    },
+    {
+      "file": "guides/monsters--buffoon.json",
+      "bytes": 1215,
+      "sha256": "32fe1b3b146f6e4c6130c62049c747458486b044f7afaf04375f02a05e7b3d1a",
+      "checkedAt": "2026-11-09T10:20:04.508Z",
+      "kind": "monster"
+    },
+    {
+      "file": "guides/monsters--buffy.json",
+      "bytes": 1120,
+      "sha256": "4159aa84ac0b6a9dbb677563d338cb32d0bdbe8115279b14363e3010463cd5b7",
+      "checkedAt": "2026-11-09T10:20:07.499Z",
+      "kind": "monster"
+    },
+    {
+      "file": "guides/monsters--cerebes.json",
+      "bytes": 3216,
+      "sha256": "16823276602ecc7ef478ce8c00942c98e777af5f0da35bdc0e50bd406cbbb679",
+      "checkedAt": "2026-11-09T10:20:10.502Z",
+      "kind": "monster"
+    },
+    {
       "file": "guides/monsters--chirppy.json",
       "bytes": 4001,
       "sha256": "75d016cc1a15208cb38ef38243ed34366929292ac7c390b5e9c67408e3e04671",
       "checkedAt": "2026-10-20T09:56:12.920Z",
+      "kind": "monster"
+    },
+    {
+      "file": "guides/monsters--chronos.json",
+      "bytes": 1112,
+      "sha256": "9fbd4c8bf161f80d3d962a13931cee88583bcd33fc0648768f70ba6718391111",
+      "checkedAt": "2026-11-09T10:20:13.531Z",
       "kind": "monster"
     },
     {
@@ -2274,6 +2316,13 @@
       "kind": "monster"
     },
     {
+      "file": "guides/monsters--dark-pepe.json",
+      "bytes": 1756,
+      "sha256": "6876938e65065a1ee0b80d16656d2a6fa35cd84f20139420d8d4b70f9b04ce15",
+      "checkedAt": "2026-11-09T10:20:16.548Z",
+      "kind": "monster"
+    },
+    {
       "file": "guides/monsters--dark-stone-golem.json",
       "bytes": 5343,
       "sha256": "2d790089bdff1ffa6652f54eac7fec614448dc06c8eca13642f4ee0caa3dfb6a",
@@ -2288,10 +2337,38 @@
       "kind": "monster"
     },
     {
+      "file": "guides/monsters--dark-yeti-and-pepe.json",
+      "bytes": 1967,
+      "sha256": "f465a7b667826b77f3f0f48f100d7f06487262c95f41ae9ce29a7f78a1b0930e",
+      "checkedAt": "2026-11-09T10:20:19.523Z",
+      "kind": "monster"
+    },
+    {
+      "file": "guides/monsters--death-teddy.json",
+      "bytes": 1222,
+      "sha256": "0d7b2d97a5982060458d0676192e6d6a9af2d3312789379fe8dee05fa641ec11",
+      "checkedAt": "2026-11-09T10:20:22.502Z",
+      "kind": "monster"
+    },
+    {
+      "file": "guides/monsters--deep-buffoon.json",
+      "bytes": 1234,
+      "sha256": "a7998310fffcf7649d2e0ed606313c80a6711e3900b0f8ae1c23ad78340de5b7",
+      "checkedAt": "2026-11-09T10:20:25.540Z",
+      "kind": "monster"
+    },
+    {
       "file": "guides/monsters--drake.json",
       "bytes": 5286,
       "sha256": "d0db81700689ebd2691fee0fd74a7b8a41c4381c4b9893732249279ac5af7c3a",
       "checkedAt": "2026-11-01T10:05:12.680Z",
+      "kind": "monster"
+    },
+    {
+      "file": "guides/monsters--drumming-bunny.json",
+      "bytes": 1271,
+      "sha256": "7f6719f5fa47fe5c36620321b236a1ea35b77e5835f8feb365e385b68192eb9f",
+      "checkedAt": "2026-11-09T10:20:28.555Z",
       "kind": "monster"
     },
     {
@@ -3998,8 +4075,8 @@
     {
       "file": "records/npc-classic-2040800.json",
       "bytes": 723,
-      "sha256": "086f43356c75c2a9066b3b5746251cac8cb8575258e8611a70de67e1da5950e1",
-      "checkedAt": "2026-11-01T10:04:36.632Z",
+      "sha256": "ec6aa916359cdd20f8ffde5928dc7df156f4d42ab008431a021154f02b83eb4a",
+      "checkedAt": "2026-11-09T10:19:49.520Z",
       "kind": "npc"
     },
     {
@@ -4012,15 +4089,15 @@
     {
       "file": "records/npc-classic-2040802.json",
       "bytes": 725,
-      "sha256": "9c5821f92508e0ce86270b312ae6532e68cde31bf67d7b284c532ffa4b4cef40",
-      "checkedAt": "2026-11-01T10:04:39.669Z",
+      "sha256": "37e31836579bc6754b0d06db704261fe8bd8f267ad7a11ed34258fcf04c58a1b",
+      "checkedAt": "2026-11-09T10:19:52.541Z",
       "kind": "npc"
     },
     {
       "file": "records/npc-classic-2040803.json",
       "bytes": 719,
-      "sha256": "80fd3c05d97e50d6ec899824e3ffb09ee166c1e1fafcda81f18725b849d86df4",
-      "checkedAt": "2026-11-01T10:04:42.677Z",
+      "sha256": "b19d72fa04efad3081d9b5879a0ac8b9279f439ae9a0f7f4e2268d4ec44d5f40",
+      "checkedAt": "2026-11-09T10:19:55.549Z",
       "kind": "npc"
     },
     {

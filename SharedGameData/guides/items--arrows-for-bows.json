@@ -5,7 +5,7 @@
   "name": "Arrows for Bows",
   "source": "CCPLZ",
   "sourceUrl": "https://ccplz.cc/items/arrows-for-bows",
-  "checkedAt": "2026-10-14T09:57:12.842Z",
+  "checkedAt": "2026-11-09T10:19:46.496Z",
   "notice": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial.",
   "fields": [
     {
@@ -26,285 +26,239 @@
       "title": "Dropped by",
       "links": [
         {
+          "name": "Axe Stump",
+          "path": "/monsters/axe-stump",
+          "detail": "Level 17, about 1.1%, usual for its kind"
+        },
+        {
           "name": "Blue Snail",
           "path": "/monsters/blue-snail",
-          "detail": "Level 2, 3% historical rate"
+          "detail": "Level 2, about 1.1%, usual for its kind"
         },
         {
           "name": "Bubbling",
           "path": "/monsters/bubbling",
-          "detail": "Level 15, 3% historical rate"
+          "detail": "Level 15, about 1.1%, usual for its kind"
         },
         {
-          "name": "Horny Mushroom",
-          "path": "/monsters/horny-mushroom",
-          "detail": "Level 22, 3% historical rate"
+          "name": "Cellion",
+          "path": "/monsters/cellion",
+          "detail": "about 1.1%, usual for its kind"
         },
         {
-          "name": "Orange Mushroom",
-          "path": "/monsters/orange-mushroom",
-          "detail": "Level 8, 3% historical rate"
+          "name": "Cerebes",
+          "path": "/monsters/cerebes",
+          "detail": "about 1.1%, usual for its kind"
         },
         {
-          "name": "Red Snail",
-          "path": "/monsters/red-snail",
-          "detail": "Level 4, 3% historical rate"
+          "name": "Coolie Zombie",
+          "path": "/monsters/coolie-zombie",
+          "detail": "about 1.1%, usual for its kind"
         },
         {
-          "name": "Shroom",
-          "path": "/monsters/shroom",
-          "detail": "Level 3, 3% historical rate"
+          "name": "Dark Jr. Yeti",
+          "path": "/monsters/dark-jr-yeti",
+          "detail": "about 1.1%, usual for its kind"
         },
         {
-          "name": "Slime",
-          "path": "/monsters/slime",
-          "detail": "Level 6, 3% historical rate"
-        },
-        {
-          "name": "Snail",
-          "path": "/monsters/snail",
-          "detail": "Level 1, 3% historical rate"
-        }
-      ],
-      "total": 8
-    },
-    {
-      "title": "Also dropped by, in older versions",
-      "links": [
-        {
-          "name": "Axe Stump",
-          "path": "/monsters/axe-stump",
-          "detail": "Level 17, 3% historical rate"
-        },
-        {
-          "name": "Barnard Gray",
-          "path": "/monsters/barnard-gray",
-          "detail": "Level 40, 3% historical rate"
-        },
-        {
-          "name": "Black Ratz",
-          "path": "/monsters/black-ratz",
-          "detail": "Level 34, 3% historical rate"
-        },
-        {
-          "name": "Block Golem",
-          "path": "/monsters/block-golem",
-          "detail": "Level 42, 3% historical rate"
-        },
-        {
-          "name": "Blue Mushroom",
-          "path": "/monsters/blue-mushroom",
-          "detail": "Level 19, 3% historical rate"
-        },
-        {
-          "name": "Chirppy",
-          "path": "/monsters/chirppy",
-          "detail": "Level 31, 3% historical rate"
-        },
-        {
-          "name": "Curse Eye",
-          "path": "/monsters/curse-eye",
-          "detail": "Level 33, 3% historical rate"
-        },
-        {
-          "name": "Dark Axe Stump",
-          "path": "/monsters/dark-axe-stump",
-          "detail": "Level 23, 3% historical rate"
+          "name": "Dark Leatty",
+          "path": "/monsters/dark-leatty",
+          "detail": "about 1.1%, usual for its kind"
         },
         {
           "name": "Dark Stump",
           "path": "/monsters/dark-stump",
-          "detail": "Level 11, 3% historical rate"
-        },
-        {
-          "name": "Drumming Bunny",
-          "path": "/monsters/drumming-bunny",
-          "detail": "Level 31, 3% historical rate"
-        },
-        {
-          "name": "Evil Eye",
-          "path": "/monsters/evil-eye",
-          "detail": "Level 27, 3% historical rate"
+          "detail": "Level 11, 1.7% drop rate, 118 kills counted"
         },
         {
           "name": "Green Mushroom",
           "path": "/monsters/green-mushroom",
-          "detail": "Level 14, 3% historical rate"
+          "detail": "Level 14, 1.5% drop rate, 620 kills counted"
         },
         {
-          "name": "Green Trixter",
-          "path": "/monsters/green-trixter",
-          "detail": "Level 28, 3% historical rate"
+          "name": "Grupin",
+          "path": "/monsters/grupin",
+          "detail": "about 1.1%, usual for its kind"
         },
         {
           "name": "Hector",
           "path": "/monsters/hector",
-          "detail": "Level 55, 3% historical rate"
+          "detail": "about 1.1%, usual for its kind"
         },
         {
-          "name": "Helly",
-          "path": "/monsters/helly",
-          "detail": "Level 36, 3% historical rate"
+          "name": "Horny Mushroom",
+          "path": "/monsters/horny-mushroom",
+          "detail": "Level 22, 0.63% drop rate, 633 kills counted"
         },
         {
           "name": "Iron Hog",
           "path": "/monsters/iron-hog",
-          "detail": "Level 28, 3% historical rate"
+          "detail": "Level 28, about 1.1%, usual for its kind"
+        },
+        {
+          "name": "Jr. Cellion",
+          "path": "/monsters/jr-cellion",
+          "detail": "about 1.1%, usual for its kind"
         },
         {
           "name": "Jr. Cerebes",
           "path": "/monsters/jr-cerebes",
-          "detail": "Level 43, 3% historical rate"
+          "detail": "about 1.1%, usual for its kind"
         },
         {
-          "name": "King Bloctopus",
-          "path": "/monsters/king-bloctopus",
-          "detail": "Level 38, 3% historical rate"
+          "name": "Jr. Grupin",
+          "path": "/monsters/jr-grupin",
+          "detail": "about 1.1%, usual for its kind"
+        },
+        {
+          "name": "Jr. Lioner",
+          "path": "/monsters/jr-lioner",
+          "detail": "about 1.1%, usual for its kind"
+        },
+        {
+          "name": "Jr. Pepe",
+          "path": "/monsters/jr-pepe",
+          "detail": "about 1.1%, usual for its kind"
+        },
+        {
+          "name": "Jr. Sentinel",
+          "path": "/monsters/jr-sentinel",
+          "detail": "about 1.1%, usual for its kind"
+        },
+        {
+          "name": "Jr. Wraith",
+          "path": "/monsters/jr-wraith",
+          "detail": "Level 34, about 1.1%, usual for its kind"
+        },
+        {
+          "name": "Jr. Yeti",
+          "path": "/monsters/jr-yeti",
+          "detail": "about 1.1%, usual for its kind"
+        },
+        {
+          "name": "Ligator",
+          "path": "/monsters/ligator",
+          "detail": "Level 31, about 1.1%, usual for its kind"
+        },
+        {
+          "name": "Lucida",
+          "path": "/monsters/lucida",
+          "detail": "about 1.1%, usual for its kind"
         },
         {
           "name": "Lunar Pixie",
           "path": "/monsters/lunar-pixie",
-          "detail": "Level 45, 3% historical rate"
+          "detail": "about 1.1%, usual for its kind"
         },
         {
-          "name": "Mano",
-          "path": "/monsters/mano",
-          "detail": "Level 20, 30% historical rate"
+          "name": "Lupin",
+          "path": "/monsters/lupin",
+          "detail": "Level 37, about 1.1%, usual for its kind"
         },
         {
-          "name": "Master Robo",
-          "path": "/monsters/master-robo",
-          "detail": "Level 44, 3% historical rate"
+          "name": "Luster Pixie",
+          "path": "/monsters/luster-pixie",
+          "detail": "about 1.1%, usual for its kind"
         },
         {
-          "name": "Mateon",
-          "path": "/monsters/mateon",
-          "detail": "Level 41, 3% historical rate"
+          "name": "Myewood",
+          "path": "/monsters/myewood",
+          "detail": "Level 54, about 1.1%, usual for its kind"
         },
         {
-          "name": "Mecateon",
-          "path": "/monsters/mecateon",
-          "detail": "Level 48, 3% historical rate"
+          "name": "Nependeath",
+          "path": "/monsters/nependeath",
+          "detail": "about 1.1%, usual for its kind"
         },
         {
           "name": "Octopus",
           "path": "/monsters/octopus",
-          "detail": "Level 12, 3% historical rate"
+          "detail": "Level 12, about 1.1%, usual for its kind"
+        },
+        {
+          "name": "Orange Mushroom",
+          "path": "/monsters/orange-mushroom",
+          "detail": "Level 8, 1.6% drop rate, 184 kills counted"
+        },
+        {
+          "name": "Pepe",
+          "path": "/monsters/pepe",
+          "detail": "about 1.1%, usual for its kind"
         },
         {
           "name": "Pig",
           "path": "/monsters/pig",
-          "detail": "Level 7, 3% historical rate"
+          "detail": "Level 7, 1.2% drop rate, 249 kills counted"
         },
         {
-          "name": "Pink Teddy",
-          "path": "/monsters/pink-teddy",
-          "detail": "Level 32, 3% historical rate"
-        },
-        {
-          "name": "Planey",
-          "path": "/monsters/planey",
-          "detail": "Level 38, 3% historical rate"
-        },
-        {
-          "name": "Plateon",
-          "path": "/monsters/plateon",
-          "detail": "Level 44, 3% historical rate"
-        },
-        {
-          "name": "Platoon Chronos",
-          "path": "/monsters/platoon-chronos",
-          "detail": "Level 41, 3% historical rate"
-        },
-        {
-          "name": "Propelly",
-          "path": "/monsters/propelly",
-          "detail": "Level 37, 3% historical rate"
-        },
-        {
-          "name": "Ratz",
-          "path": "/monsters/ratz",
-          "detail": "Level 32, 3% historical rate"
+          "name": "Red Snail",
+          "path": "/monsters/red-snail",
+          "detail": "Level 4, 1.7% drop rate, 181 kills counted"
         },
         {
           "name": "Ribbon Pig",
           "path": "/monsters/ribbon-pig",
-          "detail": "Level 10, 3% historical rate"
+          "detail": "Level 10, 5% drop rate, 40 kills counted"
         },
         {
-          "name": "Robo",
-          "path": "/monsters/robo",
-          "detail": "Level 41, 3% historical rate"
+          "name": "Shroom",
+          "path": "/monsters/shroom",
+          "detail": "Level 3, 4.8% drop rate, 21 kills counted"
         },
         {
-          "name": "Roloduck",
-          "path": "/monsters/roloduck",
-          "detail": "Level 34, 3% historical rate"
+          "name": "Slime",
+          "path": "/monsters/slime",
+          "detail": "Level 6, 0.91% drop rate, 769 kills counted"
         },
         {
-          "name": "Sentinel",
-          "path": "/monsters/sentinel",
-          "detail": "Level 30, 3% historical rate"
+          "name": "Snail",
+          "path": "/monsters/snail",
+          "detail": "Level 1, 0.97% drop rate, 103 kills counted"
         },
         {
           "name": "Star Pixie",
           "path": "/monsters/star-pixie",
-          "detail": "Level 35, 3% historical rate"
+          "detail": "about 1.1%, usual for its kind"
         },
         {
           "name": "Stirge",
           "path": "/monsters/stirge",
-          "detail": "Level 20, 3% historical rate"
+          "detail": "Level 20, about 1.1%, usual for its kind"
         },
         {
           "name": "Stump",
           "path": "/monsters/stump",
-          "detail": "Level 5, 3% historical rate"
+          "detail": "Level 5, 0.48% drop rate, 207 kills counted"
         },
         {
-          "name": "Tick",
-          "path": "/monsters/tick",
-          "detail": "Level 34, 3% historical rate"
+          "name": "Transformed Dark Yeti",
+          "path": "/monsters/transformed-dark-yeti",
+          "detail": "about 1.1%, usual for its kind"
         },
         {
-          "name": "Toy Trojan",
-          "path": "/monsters/toy-trojan",
-          "detail": "Level 39, 3% historical rate"
-        },
-        {
-          "name": "Trixter",
-          "path": "/monsters/trixter",
-          "detail": "Level 25, 3% historical rate"
-        },
-        {
-          "name": "Tweeter",
-          "path": "/monsters/tweeter",
-          "detail": "Level 39, 3% historical rate"
-        },
-        {
-          "name": "Ultra Gray",
-          "path": "/monsters/ultra-gray",
-          "detail": "Level 46, 3% historical rate"
+          "name": "Transformed Yeti",
+          "path": "/monsters/transformed-yeti",
+          "detail": "about 1.1%, usual for its kind"
         },
         {
           "name": "White Fang",
           "path": "/monsters/white-fang",
-          "detail": "Level 59, 3% historical rate"
+          "detail": "about 1.1%, usual for its kind"
         },
         {
           "name": "Wild Boar",
           "path": "/monsters/wild-boar",
-          "detail": "Level 25, 3% historical rate"
+          "detail": "Level 25, about 1.1%, usual for its kind"
         },
         {
-          "name": "Zeta Gray",
-          "path": "/monsters/zeta-gray",
-          "detail": "Level 42, 3% historical rate"
+          "name": "Zombie Lupin",
+          "path": "/monsters/zombie-lupin",
+          "detail": "Level 41, about 1.1%, usual for its kind"
         },
         {
           "name": "Zombie Mushroom",
           "path": "/monsters/zombie-mushroom",
-          "detail": "Level 24, 3% historical rate"
+          "detail": "Level 24, about 1.1%, usual for its kind"
         }
       ],
       "total": 47

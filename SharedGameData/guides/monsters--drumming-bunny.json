@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "path": "/monsters/drumming-bunny",
+  "kind": "monster",
+  "name": "Drumming Bunny",
+  "source": "CCPLZ",
+  "sourceUrl": "https://ccplz.cc/monsters/drumming-bunny",
+  "checkedAt": "2026-11-09T10:20:28.555Z",
+  "notice": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial.",
+  "fields": [
+    {
+      "label": "Level",
+      "value": "31"
+    },
+    {
+      "label": "HP",
+      "value": "776"
+    },
+    {
+      "label": "EXP",
+      "value": "59"
+    },
+    {
+      "label": "MP",
+      "value": "50"
+    },
+    {
+      "label": "Attack",
+      "value": "193"
+    },
+    {
+      "label": "Defense",
+      "value": "5"
+    },
+    {
+      "label": "Accuracy",
+      "value": "110"
+    },
+    {
+      "label": "Avoidability",
+      "value": "19"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Drops",
+      "links": [
+        {
+          "name": "Monster Card",
+          "path": "/items/monster-card",
+          "detail": "Quest items"
+        },
+        {
+          "name": "Toy Drum",
+          "path": "/items/toy-drum",
+          "detail": "Monster drops"
+        }
+      ],
+      "total": 2
+    }
+  ]
+}

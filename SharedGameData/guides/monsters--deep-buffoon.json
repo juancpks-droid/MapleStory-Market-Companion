@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "path": "/monsters/deep-buffoon",
+  "kind": "monster",
+  "name": "Deep Buffoon",
+  "source": "CCPLZ",
+  "sourceUrl": "https://ccplz.cc/monsters/deep-buffoon",
+  "checkedAt": "2026-11-09T10:20:25.540Z",
+  "notice": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial.",
+  "fields": [
+    {
+      "label": "Level",
+      "value": "77"
+    },
+    {
+      "label": "HP",
+      "value": "16,412"
+    },
+    {
+      "label": "EXP",
+      "value": "371"
+    },
+    {
+      "label": "MP",
+      "value": "30"
+    },
+    {
+      "label": "Attack",
+      "value": "383"
+    },
+    {
+      "label": "Defense",
+      "value": "20"
+    },
+    {
+      "label": "Accuracy",
+      "value": "148"
+    },
+    {
+      "label": "Avoidability",
+      "value": "43"
+    },
+    {
+      "label": "Weak to",
+      "value": "Ice"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Drops",
+      "links": [
+        {
+          "name": "Deep Buffoon's Rock Piece",
+          "path": "/items/deep-buffoon-s-rock-piece",
+          "detail": "Monster drops"
+        }
+      ],
+      "total": 1
+    }
+  ]
+}

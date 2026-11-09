@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "path": "/monsters/buffoon",
+  "kind": "monster",
+  "name": "Buffoon",
+  "source": "CCPLZ",
+  "sourceUrl": "https://ccplz.cc/monsters/buffoon",
+  "checkedAt": "2026-11-09T10:20:04.508Z",
+  "notice": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial.",
+  "fields": [
+    {
+      "label": "Level",
+      "value": "74"
+    },
+    {
+      "label": "HP",
+      "value": "13,629"
+    },
+    {
+      "label": "EXP",
+      "value": "339"
+    },
+    {
+      "label": "MP",
+      "value": "30"
+    },
+    {
+      "label": "Attack",
+      "value": "369"
+    },
+    {
+      "label": "Defense",
+      "value": "20"
+    },
+    {
+      "label": "Accuracy",
+      "value": "146"
+    },
+    {
+      "label": "Avoidability",
+      "value": "41"
+    },
+    {
+      "label": "Weak to",
+      "value": "Ice"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Drops",
+      "links": [
+        {
+          "name": "Buffoon's Grandpa Clock",
+          "path": "/items/buffoon-s-grandpa-clock",
+          "detail": "Monster drops"
+        }
+      ],
+      "total": 1
+    }
+  ]
+}
