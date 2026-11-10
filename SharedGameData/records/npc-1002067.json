@@ -7,13 +7,13 @@
     "category": "Equipment"
   },
   "kind": "npc",
-  "checkedAt": "2026-10-15T09:57:11.655Z",
+  "checkedAt": "2026-11-10T10:16:31.900Z",
   "data": {
     "sell": 300,
     "buy": 600,
     "source": "CCPLZ",
     "url": "https://ccplz.cc/items/green-headband",
-    "checkedAt": "2026-10-15T09:57:11.655Z"
+    "checkedAt": "2026-11-10T10:16:31.900Z"
   },
   "provenance": {
     "source": "CCPLZ",

@@ -5,7 +5,7 @@
   "name": "Green Headband",
   "source": "CCPLZ",
   "sourceUrl": "https://ccplz.cc/items/green-headband",
-  "checkedAt": "2026-10-15T09:57:11.655Z",
+  "checkedAt": "2026-11-10T10:16:31.900Z",
   "notice": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial.",
   "fields": [
     {
@@ -64,7 +64,7 @@
         {
           "name": "Snail",
           "path": "/monsters/snail",
-          "detail": "Level 1, 0.15% historical rate"
+          "detail": "Level 1, about 0.22%, usual for its kind"
         }
       ],
       "total": 1

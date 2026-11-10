@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "path": "/monsters/dual-ghost-pirate",
+  "kind": "monster",
+  "name": "Dual Ghost Pirate",
+  "source": "CCPLZ",
+  "sourceUrl": "https://ccplz.cc/monsters/dual-ghost-pirate",
+  "checkedAt": "2026-11-10T10:16:40.916Z",
+  "notice": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial.",
+  "fields": [
+    {
+      "label": "Level",
+      "value": "87"
+    },
+    {
+      "label": "HP",
+      "value": "26,396"
+    },
+    {
+      "label": "EXP",
+      "value": "486"
+    },
+    {
+      "label": "MP",
+      "value": "75"
+    },
+    {
+      "label": "Attack",
+      "value": "428"
+    },
+    {
+      "label": "Defense",
+      "value": "25"
+    },
+    {
+      "label": "Accuracy",
+      "value": "153"
+    },
+    {
+      "label": "Avoidability",
+      "value": "43"
+    },
+    {
+      "label": "Weak to",
+      "value": "Fire"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Drops",
+      "links": [
+        {
+          "name": "Dual Pirate's Propeller",
+          "path": "/items/dual-pirate-s-propeller",
+          "detail": "Monster drops"
+        }
+      ],
+      "total": 1
+    }
+  ]
+}

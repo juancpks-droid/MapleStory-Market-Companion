@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "path": "/monsters/helly",
+  "kind": "monster",
+  "name": "Helly",
+  "source": "CCPLZ",
+  "sourceUrl": "https://ccplz.cc/monsters/helly",
+  "checkedAt": "2026-11-10T10:16:52.900Z",
+  "notice": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial.",
+  "fields": [
+    {
+      "label": "Level",
+      "value": "36"
+    },
+    {
+      "label": "HP",
+      "value": "1,123"
+    },
+    {
+      "label": "EXP",
+      "value": "78"
+    },
+    {
+      "label": "MP",
+      "value": "0"
+    },
+    {
+      "label": "Attack",
+      "value": "178"
+    },
+    {
+      "label": "Defense",
+      "value": "10"
+    },
+    {
+      "label": "Accuracy",
+      "value": "125"
+    },
+    {
+      "label": "Avoidability",
+      "value": "22"
+    },
+    {
+      "label": "Weak to",
+      "value": "Lightning"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Drops",
+      "links": [
+        {
+          "name": "Propeller",
+          "path": "/items/propeller",
+          "detail": "Monster drops"
+        }
+      ],
+      "total": 1
+    }
+  ]
+}

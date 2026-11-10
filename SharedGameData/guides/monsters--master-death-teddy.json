@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "path": "/monsters/master-death-teddy",
+  "kind": "monster",
+  "name": "Master Death Teddy",
+  "source": "CCPLZ",
+  "sourceUrl": "https://ccplz.cc/monsters/master-death-teddy",
+  "checkedAt": "2026-11-10T10:17:13.904Z",
+  "notice": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial.",
+  "fields": [
+    {
+      "label": "Level",
+      "value": "89"
+    },
+    {
+      "label": "HP",
+      "value": "23,494"
+    },
+    {
+      "label": "EXP",
+      "value": "511"
+    },
+    {
+      "label": "MP",
+      "value": "150"
+    },
+    {
+      "label": "Attack",
+      "value": "392"
+    },
+    {
+      "label": "Defense",
+      "value": "5"
+    },
+    {
+      "label": "Accuracy",
+      "value": "154"
+    },
+    {
+      "label": "Avoidability",
+      "value": "48"
+    },
+    {
+      "label": "Weak to",
+      "value": "Holy"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Drops",
+      "links": [
+        {
+          "name": "Binding Bridle",
+          "path": "/items/binding-bridle",
+          "detail": "Monster drops"
+        }
+      ],
+      "total": 1
+    }
+  ]
+}

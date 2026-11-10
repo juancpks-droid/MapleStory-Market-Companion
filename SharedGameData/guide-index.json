@@ -663,6 +663,11 @@
       "kind": "monster"
     },
     {
+      "path": "/monsters/dual-ghost-pirate",
+      "name": "Dual Ghost Pirate",
+      "kind": "monster"
+    },
+    {
       "path": "/maps/dungeon-southern-forest-i",
       "name": "Dungeon, Southern Forest I",
       "kind": "map"
@@ -798,6 +803,11 @@
       "kind": "item"
     },
     {
+      "path": "/monsters/gatekeeper",
+      "name": "Gatekeeper",
+      "kind": "monster"
+    },
+    {
       "path": "/items/general-s-mustache-1",
       "name": "General's Mustache (1)",
       "kind": "item"
@@ -808,9 +818,19 @@
       "kind": "item"
     },
     {
+      "path": "/monsters/ghost-pirate",
+      "name": "Ghost Pirate",
+      "kind": "monster"
+    },
+    {
       "path": "/items/gigantic-sledge",
       "name": "Gigantic Sledge",
       "kind": "item"
+    },
+    {
+      "path": "/monsters/gigantic-spirit-viking",
+      "name": "Gigantic Spirit Viking",
+      "kind": "monster"
     },
     {
       "path": "/items/gloves-attack-scroll-chaos",
@@ -961,6 +981,11 @@
       "path": "/items/heart",
       "name": "Heart",
       "kind": "item"
+    },
+    {
+      "path": "/monsters/helly",
+      "name": "Helly",
+      "kind": "monster"
     },
     {
       "path": "/maps/henesys",
@@ -1128,9 +1153,24 @@
       "kind": "map"
     },
     {
+      "path": "/monsters/king-block-golem",
+      "name": "King Block Golem",
+      "kind": "monster"
+    },
+    {
+      "path": "/monsters/king-bloctopus",
+      "name": "King Bloctopus",
+      "kind": "monster"
+    },
+    {
       "path": "/items/kiss-mark",
       "name": "Kiss Mark",
       "kind": "item"
+    },
+    {
+      "path": "/monsters/klock",
+      "name": "Klock",
+      "kind": "monster"
     },
     {
       "path": "/items/knuckle-mace",
@@ -1151,6 +1191,11 @@
       "path": "/maps/l-forest-iii",
       "name": "L Forest III",
       "kind": "map"
+    },
+    {
+      "path": "/monsters/lazy-buffy",
+      "name": "Lazy Buffy",
+      "kind": "monster"
     },
     {
       "path": "/items/leather",
@@ -1185,6 +1230,11 @@
     {
       "path": "/monsters/lorang",
       "name": "Lorang",
+      "kind": "monster"
+    },
+    {
+      "path": "/monsters/lucida",
+      "name": "Lucida",
       "kind": "monster"
     },
     {
@@ -1230,6 +1280,16 @@
     {
       "path": "/monsters/mano",
       "name": "Mano",
+      "kind": "monster"
+    },
+    {
+      "path": "/monsters/master-chronos",
+      "name": "Master Chronos",
+      "kind": "monster"
+    },
+    {
+      "path": "/monsters/master-death-teddy",
+      "name": "Master Death Teddy",
       "kind": "monster"
     },
     {

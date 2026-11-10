@@ -7,13 +7,13 @@
     "category": "Etc"
   },
   "kind": "npc",
-  "checkedAt": "2026-10-15T09:57:08.803Z",
+  "checkedAt": "2026-11-10T10:16:28.965Z",
   "data": {
     "sell": 40,
     "buy": null,
     "source": "CCPLZ",
     "url": "https://ccplz.cc/items/garnet-ore",
-    "checkedAt": "2026-10-15T09:57:08.803Z"
+    "checkedAt": "2026-11-10T10:16:28.965Z"
   },
   "provenance": {
     "source": "CCPLZ",

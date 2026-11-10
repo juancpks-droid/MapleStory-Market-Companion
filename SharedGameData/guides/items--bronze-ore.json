@@ -5,7 +5,7 @@
   "name": "Bronze Ore",
   "source": "CCPLZ",
   "sourceUrl": "https://ccplz.cc/items/bronze-ore",
-  "checkedAt": "2026-10-15T09:57:05.795Z",
+  "checkedAt": "2026-11-10T10:16:25.899Z",
   "notice": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial.",
   "fields": [
     {
@@ -22,37 +22,72 @@
       "title": "Dropped by",
       "links": [
         {
+          "name": "Axe Stump",
+          "path": "/monsters/axe-stump",
+          "detail": "Level 17, about 1.2%, usual for its kind"
+        },
+        {
+          "name": "Coolie Zombie",
+          "path": "/monsters/coolie-zombie",
+          "detail": "about 1.2%, usual for its kind"
+        },
+        {
+          "name": "Croco",
+          "path": "/monsters/croco",
+          "detail": "Level 52, about 1.2%, usual for its kind"
+        },
+        {
           "name": "Horny Mushroom",
           "path": "/monsters/horny-mushroom",
-          "detail": "Level 22"
+          "detail": "Level 22, 2.4% drop rate, 633 kills counted"
+        },
+        {
+          "name": "Jr. Lioner",
+          "path": "/monsters/jr-lioner",
+          "detail": "about 1.2%, usual for its kind"
+        },
+        {
+          "name": "Jr. Sentinel",
+          "path": "/monsters/jr-sentinel",
+          "detail": "about 1.2%, usual for its kind"
         },
         {
           "name": "Orange Mushroom",
           "path": "/monsters/orange-mushroom",
-          "detail": "Level 8"
+          "detail": "Level 8, 2.2% drop rate, 184 kills counted"
         },
         {
           "name": "Rafflesia",
           "path": "/monsters/rafflesia",
-          "detail": "Level 47"
+          "detail": "Level 47, about 1.2%, usual for its kind"
+        },
+        {
+          "name": "Rocky Mask",
+          "path": "/monsters/rocky-mask",
+          "detail": "Level 24, about 1.2%, usual for its kind"
         },
         {
           "name": "Rotten Mushroom",
           "path": "/monsters/rotten-mushroom",
-          "detail": "Level 56"
+          "detail": "Level 56, about 1.2%, usual for its kind"
         },
         {
           "name": "Snail",
           "path": "/monsters/snail",
-          "detail": "Level 1"
+          "detail": "Level 1, 0.97% drop rate, 103 kills counted"
         },
         {
           "name": "Stump",
           "path": "/monsters/stump",
-          "detail": "Level 5"
+          "detail": "Level 5, 2.4% drop rate, 207 kills counted"
+        },
+        {
+          "name": "Werewolf",
+          "path": "/monsters/werewolf",
+          "detail": "about 1.2%, usual for its kind"
         }
       ],
-      "total": 6
+      "total": 13
     },
     {
       "title": "Quest rewards",

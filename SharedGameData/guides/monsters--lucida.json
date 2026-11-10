@@ -1,0 +1,127 @@
+{
+  "schemaVersion": 1,
+  "path": "/monsters/lucida",
+  "kind": "monster",
+  "name": "Lucida",
+  "source": "CCPLZ",
+  "sourceUrl": "https://ccplz.cc/monsters/lucida",
+  "checkedAt": "2026-11-10T10:17:07.908Z",
+  "notice": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial.",
+  "fields": [
+    {
+      "label": "Level",
+      "value": "73"
+    },
+    {
+      "label": "HP",
+      "value": "10,832"
+    },
+    {
+      "label": "EXP",
+      "value": "329"
+    },
+    {
+      "label": "MP",
+      "value": "120"
+    },
+    {
+      "label": "Attack",
+      "value": "365"
+    },
+    {
+      "label": "Defense",
+      "value": "10"
+    },
+    {
+      "label": "Accuracy",
+      "value": "160"
+    },
+    {
+      "label": "Avoidability",
+      "value": "41"
+    },
+    {
+      "label": "Weak to",
+      "value": "Holy"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Where it spawns",
+      "links": [
+        {
+          "name": "Garden of Darkness II",
+          "path": "/maps/garden-of-darkness-ii",
+          "detail": "Ossyria, 15 spawn points"
+        },
+        {
+          "name": "Garden of Darkness I",
+          "path": "/maps/garden-of-darkness-i",
+          "detail": "Ossyria, 14 spawn points"
+        },
+        {
+          "name": "Stairway to the Sky II",
+          "path": "/maps/stairway-to-the-sky-ii",
+          "detail": "Ossyria, 9 spawn points"
+        }
+      ],
+      "total": 3
+    },
+    {
+      "title": "Drops",
+      "links": [
+        {
+          "name": "Arrows for Bows",
+          "path": "/items/arrows-for-bows",
+          "detail": "Arrows for bows, about 1.1%, usual for its kind"
+        },
+        {
+          "name": "Arrows for Crossbows",
+          "path": "/items/arrows-for-crossbows",
+          "detail": "Arrows for crossbows, about 1.1%, usual for its kind"
+        },
+        {
+          "name": "Black Crystal Ore",
+          "path": "/items/black-crystal-ore",
+          "detail": "Gems & gem ores, about 1.2%, usual for its kind"
+        },
+        {
+          "name": "Blue Potion",
+          "path": "/items/blue-potion",
+          "detail": "Potions, about 2.4%, usual for its kind"
+        },
+        {
+          "name": "Dark Lineros",
+          "path": "/items/dark-lineros",
+          "detail": "Overall, about 0.22%, usual for its kind"
+        },
+        {
+          "name": "Fragment of Magic",
+          "path": "/items/fragment-of-magic",
+          "detail": "Monster drops"
+        },
+        {
+          "name": "Lucida Tail",
+          "path": "/items/lucida-tail",
+          "detail": "Monster drops"
+        },
+        {
+          "name": "Luck Crystal Ore",
+          "path": "/items/luck-crystal-ore",
+          "detail": "Crafting materials"
+        },
+        {
+          "name": "Silver Ore",
+          "path": "/items/silver-ore",
+          "detail": "Ores & ingots, about 1.2%, usual for its kind"
+        },
+        {
+          "name": "White Potion",
+          "path": "/items/white-potion",
+          "detail": "Potions, about 2.4%, usual for its kind"
+        }
+      ],
+      "total": 10
+    }
+  ]
+}

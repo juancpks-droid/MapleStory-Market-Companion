@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "path": "/monsters/gigantic-spirit-viking",
+  "kind": "monster",
+  "name": "Gigantic Spirit Viking",
+  "source": "CCPLZ",
+  "sourceUrl": "https://ccplz.cc/monsters/gigantic-spirit-viking",
+  "checkedAt": "2026-11-10T10:16:49.965Z",
+  "notice": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial.",
+  "fields": [
+    {
+      "label": "Level",
+      "value": "98"
+    },
+    {
+      "label": "HP",
+      "value": "40,354"
+    },
+    {
+      "label": "EXP",
+      "value": "634"
+    },
+    {
+      "label": "MP",
+      "value": "75"
+    },
+    {
+      "label": "Attack",
+      "value": "477"
+    },
+    {
+      "label": "Defense",
+      "value": "25"
+    },
+    {
+      "label": "Accuracy",
+      "value": "158"
+    },
+    {
+      "label": "Avoidability",
+      "value": "53"
+    },
+    {
+      "label": "Weak to",
+      "value": "Lightning"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Drops",
+      "links": [
+        {
+          "name": "Gigantic Viking Hat",
+          "path": "/items/gigantic-viking-hat",
+          "detail": "Monster drops"
+        }
+      ],
+      "total": 1
+    }
+  ]
+}

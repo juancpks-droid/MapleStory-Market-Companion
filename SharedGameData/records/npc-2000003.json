@@ -7,13 +7,13 @@
     "category": "Use"
   },
   "kind": "npc",
-  "checkedAt": "2026-11-02T10:26:48.812Z",
+  "checkedAt": "2026-11-10T10:16:37.972Z",
   "data": {
     "sell": 22,
     "buy": 220,
     "source": "CCPLZ",
     "url": "https://ccplz.cc/items/blue-potion",
-    "checkedAt": "2026-11-02T10:26:48.812Z"
+    "checkedAt": "2026-11-10T10:16:37.972Z"
   },
   "provenance": {
     "source": "CCPLZ",

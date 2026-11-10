@@ -7,13 +7,13 @@
     "category": "Etc"
   },
   "kind": "npc",
-  "checkedAt": "2026-10-15T09:57:05.795Z",
+  "checkedAt": "2026-11-10T10:16:25.899Z",
   "data": {
     "sell": 20,
     "buy": null,
     "source": "CCPLZ",
     "url": "https://ccplz.cc/items/bronze-ore",
-    "checkedAt": "2026-10-15T09:57:05.795Z"
+    "checkedAt": "2026-11-10T10:16:25.899Z"
   },
   "provenance": {
     "source": "CCPLZ",
