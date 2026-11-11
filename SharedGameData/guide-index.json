@@ -1293,6 +1293,11 @@
       "kind": "monster"
     },
     {
+      "path": "/monsters/master-soul-teddy",
+      "name": "Master Soul Teddy",
+      "kind": "monster"
+    },
+    {
       "path": "/npcs/maya",
       "name": "Maya",
       "kind": "npc"
@@ -1301,6 +1306,11 @@
       "path": "/quests/delivering-the-weird-medicine",
       "name": "Maya and the Weird Medicine (Delivering the Weird Medicine)",
       "kind": "quest"
+    },
+    {
+      "path": "/monsters/mecateon",
+      "name": "Mecateon",
+      "kind": "monster"
     },
     {
       "path": "/shops/mina-s-shop",
@@ -1423,6 +1433,16 @@
       "kind": "item"
     },
     {
+      "path": "/monsters/panda-teddy",
+      "name": "Panda Teddy",
+      "kind": "monster"
+    },
+    {
+      "path": "/monsters/pepe",
+      "name": "Pepe",
+      "kind": "monster"
+    },
+    {
       "path": "/maps/perion-dungeon-entrance",
       "name": "Perion Dungeon Entrance",
       "kind": "map"
@@ -1443,6 +1463,16 @@
       "kind": "item"
     },
     {
+      "path": "/monsters/pink-teddy",
+      "name": "Pink Teddy",
+      "kind": "monster"
+    },
+    {
+      "path": "/monsters/planey",
+      "name": "Planey",
+      "kind": "monster"
+    },
+    {
       "path": "/monsters/plateon",
       "name": "Plateon",
       "kind": "monster"
@@ -1451,6 +1481,11 @@
       "path": "/items/plateon-s-helmet",
       "name": "Plateon's Helmet",
       "kind": "item"
+    },
+    {
+      "path": "/monsters/platoon-chronos",
+      "name": "Platoon Chronos",
+      "kind": "monster"
     },
     {
       "path": "/items/power-crystal-ore",
@@ -1511,6 +1546,11 @@
       "path": "/items/red-doroness-robe",
       "name": "Red Doroness Robe",
       "kind": "item"
+    },
+    {
+      "path": "/monsters/red-drake",
+      "name": "Red Drake",
+      "kind": "monster"
     },
     {
       "path": "/items/red-duke",
@@ -1616,6 +1656,11 @@
       "path": "/maps/rocky-road-iii",
       "name": "Rocky Road III",
       "kind": "map"
+    },
+    {
+      "path": "/monsters/roloduck",
+      "name": "Roloduck",
+      "kind": "monster"
     },
     {
       "path": "/quests/first-material-delivery-for-building-a-new-house",
@@ -1813,6 +1858,11 @@
       "kind": "map"
     },
     {
+      "path": "/monsters/soul-teddy",
+      "name": "Soul Teddy",
+      "kind": "monster"
+    },
+    {
       "path": "/maps/southperry",
       "name": "Southperry",
       "kind": "map"
@@ -1848,6 +1898,11 @@
       "kind": "monster"
     },
     {
+      "path": "/monsters/stone-golem",
+      "name": "Stone Golem",
+      "kind": "monster"
+    },
+    {
       "path": "/monsters/stump",
       "name": "Stump",
       "kind": "monster"
@@ -1871,6 +1926,11 @@
       "path": "/items/sword",
       "name": "Sword",
       "kind": "item"
+    },
+    {
+      "path": "/monsters/tauromacis",
+      "name": "Tauromacis",
+      "kind": "monster"
     },
     {
       "path": "/maps/the-blue-mushroom-forest",
@@ -1996,6 +2056,16 @@
       "path": "/items/thorns",
       "name": "Thorns",
       "kind": "item"
+    },
+    {
+      "path": "/monsters/tick",
+      "name": "Tick",
+      "kind": "monster"
+    },
+    {
+      "path": "/monsters/tick-tock",
+      "name": "Tick-Tock",
+      "kind": "monster"
     },
     {
       "path": "/maps/tomato-field",

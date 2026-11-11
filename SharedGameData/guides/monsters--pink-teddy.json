@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "path": "/monsters/pink-teddy",
+  "kind": "monster",
+  "name": "Pink Teddy",
+  "source": "CCPLZ",
+  "sourceUrl": "https://ccplz.cc/monsters/pink-teddy",
+  "checkedAt": "2026-11-11T10:22:12.665Z",
+  "notice": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial.",
+  "fields": [
+    {
+      "label": "Level",
+      "value": "32"
+    },
+    {
+      "label": "HP",
+      "value": "1,009"
+    },
+    {
+      "label": "EXP",
+      "value": "62"
+    },
+    {
+      "label": "MP",
+      "value": "50"
+    },
+    {
+      "label": "Attack",
+      "value": "180"
+    },
+    {
+      "label": "Defense",
+      "value": "10"
+    },
+    {
+      "label": "Accuracy",
+      "value": "110"
+    },
+    {
+      "label": "Avoidability",
+      "value": "19"
+    },
+    {
+      "label": "Weak to",
+      "value": "Fire"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Drops",
+      "links": [
+        {
+          "name": "Teddy's Yellow Ribbon",
+          "path": "/items/teddy-s-yellow-ribbon",
+          "detail": "Monster drops"
+        }
+      ],
+      "total": 1
+    }
+  ]
+}

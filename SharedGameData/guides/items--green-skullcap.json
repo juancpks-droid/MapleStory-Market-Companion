@@ -5,7 +5,7 @@
   "name": "Green Skullcap",
   "source": "CCPLZ",
   "sourceUrl": "https://ccplz.cc/items/green-skullcap",
-  "checkedAt": "2026-10-15T09:57:14.681Z",
+  "checkedAt": "2026-11-11T10:21:48.663Z",
   "notice": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial.",
   "fields": [
     {
@@ -56,7 +56,7 @@
         {
           "name": "Snail",
           "path": "/monsters/snail",
-          "detail": "Level 1"
+          "detail": "Level 1, about 0.22%, usual for its kind"
         }
       ],
       "total": 1

@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "path": "/monsters/planey",
+  "kind": "monster",
+  "name": "Planey",
+  "source": "CCPLZ",
+  "sourceUrl": "https://ccplz.cc/monsters/planey",
+  "checkedAt": "2026-11-11T10:22:15.649Z",
+  "notice": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial.",
+  "fields": [
+    {
+      "label": "Level",
+      "value": "38"
+    },
+    {
+      "label": "HP",
+      "value": "1,286"
+    },
+    {
+      "label": "EXP",
+      "value": "86"
+    },
+    {
+      "label": "MP",
+      "value": "0"
+    },
+    {
+      "label": "Attack",
+      "value": "186"
+    },
+    {
+      "label": "Defense",
+      "value": "10"
+    },
+    {
+      "label": "Accuracy",
+      "value": "127"
+    },
+    {
+      "label": "Avoidability",
+      "value": "26"
+    },
+    {
+      "label": "Weak to",
+      "value": "Lightning"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Drops",
+      "links": [
+        {
+          "name": "Plane Controller",
+          "path": "/items/plane-controller",
+          "detail": "Monster drops"
+        }
+      ],
+      "total": 1
+    }
+  ]
+}

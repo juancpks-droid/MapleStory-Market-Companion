@@ -5,7 +5,7 @@
   "name": "Sword",
   "source": "CCPLZ",
   "sourceUrl": "https://ccplz.cc/items/sword",
-  "checkedAt": "2026-10-15T09:57:23.700Z",
+  "checkedAt": "2026-11-11T10:21:54.644Z",
   "notice": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial.",
   "fields": [
     {
@@ -56,12 +56,12 @@
         {
           "name": "Red Snail",
           "path": "/monsters/red-snail",
-          "detail": "Level 4"
+          "detail": "Level 4, about 0.22%, usual for its kind"
         },
         {
           "name": "Snail",
           "path": "/monsters/snail",
-          "detail": "Level 1"
+          "detail": "Level 1, about 0.22%, usual for its kind"
         }
       ],
       "total": 2
@@ -96,11 +96,6 @@
           "detail": ""
         },
         {
-          "name": "Pumpkin Basket",
-          "path": "/items/pumpkin-basket",
-          "detail": ""
-        },
-        {
           "name": "Beginner's Long Sword",
           "path": "/items/beginner-s-long-sword",
           "detail": "Level 10"
@@ -108,6 +103,11 @@
         {
           "name": "Long Sword",
           "path": "/items/long-sword",
+          "detail": "Level 10"
+        },
+        {
+          "name": "Pumpkin Basket",
+          "path": "/items/pumpkin-basket",
           "detail": "Level 10"
         },
         {

@@ -1,0 +1,97 @@
+{
+  "schemaVersion": 1,
+  "path": "/monsters/red-drake",
+  "kind": "monster",
+  "name": "Red Drake",
+  "source": "CCPLZ",
+  "sourceUrl": "https://ccplz.cc/monsters/red-drake",
+  "checkedAt": "2026-11-11T10:22:21.665Z",
+  "notice": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial.",
+  "fields": [
+    {
+      "label": "Level",
+      "value": "60"
+    },
+    {
+      "label": "HP",
+      "value": "5,184"
+    },
+    {
+      "label": "EXP",
+      "value": "211"
+    },
+    {
+      "label": "MP",
+      "value": "120"
+    },
+    {
+      "label": "Attack",
+      "value": "306"
+    },
+    {
+      "label": "Defense",
+      "value": "15"
+    },
+    {
+      "label": "Accuracy",
+      "value": "150"
+    },
+    {
+      "label": "Avoidability",
+      "value": "35"
+    },
+    {
+      "label": "Weak to",
+      "value": "Ice"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Where it spawns",
+      "links": [
+        {
+          "name": "Dangerous Valley II",
+          "path": "/maps/dangerous-valley-ii",
+          "detail": "Victoria Island, 17 spawn points"
+        }
+      ],
+      "total": 1
+    },
+    {
+      "title": "Drops",
+      "links": [
+        {
+          "name": "Brown Moon",
+          "path": "/items/brown-moon",
+          "detail": "Topwear, about 0.22%, usual for its kind"
+        },
+        {
+          "name": "Dark Piettra Skirt",
+          "path": "/items/dark-piettra-skirt",
+          "detail": "Bottomwear, about 0.22%, usual for its kind"
+        },
+        {
+          "name": "Dragon Skin",
+          "path": "/items/dragon-skin",
+          "detail": "Monster drops"
+        },
+        {
+          "name": "Drake Skull",
+          "path": "/items/drake-skull",
+          "detail": "Monster drops"
+        },
+        {
+          "name": "Flaming Feather",
+          "path": "/items/flaming-feather",
+          "detail": "Passes & coupons"
+        },
+        {
+          "name": "Steely Throwing Knives",
+          "path": "/items/steely-throwing-knives",
+          "detail": "Throwing stars"
+        }
+      ],
+      "total": 6
+    }
+  ]
+}

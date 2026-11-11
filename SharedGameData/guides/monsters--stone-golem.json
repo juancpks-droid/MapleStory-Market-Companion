@@ -1,0 +1,158 @@
+{
+  "schemaVersion": 1,
+  "path": "/monsters/stone-golem",
+  "kind": "monster",
+  "name": "Stone Golem",
+  "source": "CCPLZ",
+  "sourceUrl": "https://ccplz.cc/monsters/stone-golem",
+  "checkedAt": "2026-11-11T10:22:30.688Z",
+  "notice": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial.",
+  "fields": [
+    {
+      "label": "Level",
+      "value": "56"
+    },
+    {
+      "label": "HP",
+      "value": "5,134"
+    },
+    {
+      "label": "EXP",
+      "value": "175"
+    },
+    {
+      "label": "MP",
+      "value": "120"
+    },
+    {
+      "label": "Attack",
+      "value": "288"
+    },
+    {
+      "label": "Defense",
+      "value": "30"
+    },
+    {
+      "label": "Accuracy",
+      "value": "120"
+    },
+    {
+      "label": "Avoidability",
+      "value": "30"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Where it spawns",
+      "links": [
+        {
+          "name": "Golem's Temple III",
+          "path": "/maps/golem-s-temple-iii",
+          "detail": "Victoria Island, 10 spawn points"
+        },
+        {
+          "name": "Golem's Temple I",
+          "path": "/maps/golem-s-temple-i",
+          "detail": "Victoria Island, 9 spawn points"
+        },
+        {
+          "name": "The Entrance of Golem's Temple",
+          "path": "/maps/the-entrance-of-golem-s-temple",
+          "detail": "Victoria Island, 9 spawn points"
+        },
+        {
+          "name": "Golem's Temple IV",
+          "path": "/maps/golem-s-temple-iv",
+          "detail": "Victoria Island, 8 spawn points"
+        },
+        {
+          "name": "Golem's Temple II",
+          "path": "/maps/golem-s-temple-ii",
+          "detail": "Victoria Island, 7 spawn points"
+        },
+        {
+          "name": "The Breathing Rock",
+          "path": "/maps/the-breathing-rock",
+          "detail": "Victoria Island, 4 spawn points"
+        },
+        {
+          "name": "Henesys Dungeon Entrance",
+          "path": "/maps/henesys-dungeon-entrance",
+          "detail": "Victoria Island, 3 spawn points"
+        }
+      ],
+      "total": 7
+    },
+    {
+      "title": "Drops",
+      "links": [
+        {
+          "name": "Black Amoria Top",
+          "path": "/items/black-amoria-top",
+          "detail": "Topwear, about 0.22%, usual for its kind"
+        },
+        {
+          "name": "Black Crystal Ore",
+          "path": "/items/black-crystal-ore",
+          "detail": "Gems & gem ores, about 1.2%, usual for its kind"
+        },
+        {
+          "name": "Bow Attack Scroll: Intermediate",
+          "path": "/items/bow-attack-scroll-intermediate",
+          "detail": "Bow scrolls"
+        },
+        {
+          "name": "Crossbow Attack Scroll: Intermediate",
+          "path": "/items/crossbow-attack-scroll-intermediate",
+          "detail": "Crossbow scrolls"
+        },
+        {
+          "name": "Dark Chaos Robe",
+          "path": "/items/dark-chaos-robe",
+          "detail": "Overall, about 0.22%, usual for its kind"
+        },
+        {
+          "name": "Dark Crusader Chainmail",
+          "path": "/items/dark-crusader-chainmail",
+          "detail": "Overall, about 0.22%, usual for its kind"
+        },
+        {
+          "name": "Dark Shadow (Male)",
+          "path": "/items/dark-shadow",
+          "detail": "Topwear, about 0.22%, usual for its kind"
+        },
+        {
+          "name": "Gloves Crit. Rate Scroll: Greater",
+          "path": "/items/gloves-crit-rate-scroll-greater",
+          "detail": "Gloves scrolls"
+        },
+        {
+          "name": "Green Legolia",
+          "path": "/items/green-legolia",
+          "detail": "Topwear, about 0.22%, usual for its kind"
+        },
+        {
+          "name": "Kumbi Throwing Stars",
+          "path": "/items/kumbi-throwing-stars",
+          "detail": "Throwing stars"
+        },
+        {
+          "name": "Red Amoria Top",
+          "path": "/items/red-amoria-top",
+          "detail": "Topwear, about 0.22%, usual for its kind"
+        },
+        {
+          "name": "Red Cross Shield",
+          "path": "/items/red-cross-shield",
+          "detail": "Shield, about 0.22%, usual for its kind"
+        },
+        {
+          "name": "Stone Golem Rubble",
+          "path": "/items/stone-golem-rubble",
+          "detail": "Monster drops"
+        }
+      ],
+      "total": 13
+    }
+  ]
+}

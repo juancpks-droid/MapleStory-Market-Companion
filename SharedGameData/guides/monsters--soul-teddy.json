@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "path": "/monsters/soul-teddy",
+  "kind": "monster",
+  "name": "Soul Teddy",
+  "source": "CCPLZ",
+  "sourceUrl": "https://ccplz.cc/monsters/soul-teddy",
+  "checkedAt": "2026-11-11T10:22:27.647Z",
+  "notice": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial.",
+  "fields": [
+    {
+      "label": "Level",
+      "value": "63"
+    },
+    {
+      "label": "HP",
+      "value": "5,976"
+    },
+    {
+      "label": "EXP",
+      "value": "237"
+    },
+    {
+      "label": "MP",
+      "value": "50"
+    },
+    {
+      "label": "Attack",
+      "value": "351"
+    },
+    {
+      "label": "Defense",
+      "value": "10"
+    },
+    {
+      "label": "Accuracy",
+      "value": "139"
+    },
+    {
+      "label": "Avoidability",
+      "value": "36"
+    },
+    {
+      "label": "Weak to",
+      "value": "Holy"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Drops",
+      "links": [
+        {
+          "name": "Zombie Teddy Bear",
+          "path": "/items/zombie-teddy-bear",
+          "detail": "Monster drops"
+        }
+      ],
+      "total": 1
+    }
+  ]
+}

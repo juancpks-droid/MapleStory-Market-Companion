@@ -1,0 +1,57 @@
+{
+  "schemaVersion": 1,
+  "path": "/monsters/platoon-chronos",
+  "kind": "monster",
+  "name": "Platoon Chronos",
+  "source": "CCPLZ",
+  "sourceUrl": "https://ccplz.cc/monsters/platoon-chronos",
+  "checkedAt": "2026-11-11T10:22:18.679Z",
+  "notice": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial.",
+  "fields": [
+    {
+      "label": "Level",
+      "value": "41"
+    },
+    {
+      "label": "HP",
+      "value": "1,774"
+    },
+    {
+      "label": "EXP",
+      "value": "99"
+    },
+    {
+      "label": "MP",
+      "value": "80"
+    },
+    {
+      "label": "Attack",
+      "value": "221"
+    },
+    {
+      "label": "Defense",
+      "value": "5"
+    },
+    {
+      "label": "Accuracy",
+      "value": "133"
+    },
+    {
+      "label": "Avoidability",
+      "value": "28"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Drops",
+      "links": [
+        {
+          "name": "Cog",
+          "path": "/items/cog",
+          "detail": "Monster drops"
+        }
+      ],
+      "total": 1
+    }
+  ]
+}

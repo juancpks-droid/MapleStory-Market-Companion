@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "path": "/monsters/tick",
+  "kind": "monster",
+  "name": "Tick",
+  "source": "CCPLZ",
+  "sourceUrl": "https://ccplz.cc/monsters/tick",
+  "checkedAt": "2026-11-11T10:22:36.665Z",
+  "notice": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial.",
+  "fields": [
+    {
+      "label": "Level",
+      "value": "34"
+    },
+    {
+      "label": "HP",
+      "value": "982"
+    },
+    {
+      "label": "EXP",
+      "value": "70"
+    },
+    {
+      "label": "MP",
+      "value": "0"
+    },
+    {
+      "label": "Attack",
+      "value": "207"
+    },
+    {
+      "label": "Defense",
+      "value": "10"
+    },
+    {
+      "label": "Accuracy",
+      "value": "112"
+    },
+    {
+      "label": "Avoidability",
+      "value": "21"
+    },
+    {
+      "label": "Weak to",
+      "value": "Lightning"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Drops",
+      "links": [
+        {
+          "name": "Clock Spring",
+          "path": "/items/clock-spring",
+          "detail": "Monster drops"
+        }
+      ],
+      "total": 1
+    }
+  ]
+}

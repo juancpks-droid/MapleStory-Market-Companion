@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "path": "/monsters/panda-teddy",
+  "kind": "monster",
+  "name": "Panda Teddy",
+  "source": "CCPLZ",
+  "sourceUrl": "https://ccplz.cc/monsters/panda-teddy",
+  "checkedAt": "2026-11-11T10:22:06.638Z",
+  "notice": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial.",
+  "fields": [
+    {
+      "label": "Level",
+      "value": "36"
+    },
+    {
+      "label": "HP",
+      "value": "1,497"
+    },
+    {
+      "label": "EXP",
+      "value": "78"
+    },
+    {
+      "label": "MP",
+      "value": "0"
+    },
+    {
+      "label": "Attack",
+      "value": "198"
+    },
+    {
+      "label": "Defense",
+      "value": "10"
+    },
+    {
+      "label": "Accuracy",
+      "value": "114"
+    },
+    {
+      "label": "Avoidability",
+      "value": "22"
+    },
+    {
+      "label": "Weak to",
+      "value": "Fire"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Drops",
+      "links": [
+        {
+          "name": "Panda Doll",
+          "path": "/items/panda-doll",
+          "detail": "Monster drops"
+        }
+      ],
+      "total": 1
+    }
+  ]
+}
