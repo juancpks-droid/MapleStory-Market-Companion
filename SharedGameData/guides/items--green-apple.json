@@ -5,7 +5,7 @@
   "name": "Green Apple",
   "source": "CCPLZ",
   "sourceUrl": "https://ccplz.cc/items/green-apple",
-  "checkedAt": "2026-10-15T09:57:32.687Z",
+  "checkedAt": "2026-11-12T17:39:56.305Z",
   "notice": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial.",
   "fields": [
     {
@@ -22,47 +22,17 @@
       "title": "Dropped by",
       "links": [
         {
-          "name": "Blue Snail",
-          "path": "/monsters/blue-snail",
-          "detail": "Level 2, 2% historical rate"
+          "name": "Green Mushroom",
+          "path": "/monsters/green-mushroom",
+          "detail": "Level 14, about 2.4%, usual for its kind"
         },
         {
           "name": "Mano",
           "path": "/monsters/mano",
-          "detail": "Level 20, 20% historical rate"
-        },
-        {
-          "name": "Pig",
-          "path": "/monsters/pig",
-          "detail": "Level 7, 2% historical rate"
-        },
-        {
-          "name": "Red Snail",
-          "path": "/monsters/red-snail",
-          "detail": "Level 4, 2% historical rate"
-        },
-        {
-          "name": "Shroom",
-          "path": "/monsters/shroom",
-          "detail": "Level 3, 2% historical rate"
-        },
-        {
-          "name": "Slime",
-          "path": "/monsters/slime",
-          "detail": "Level 6, 2% historical rate"
-        },
-        {
-          "name": "Snail",
-          "path": "/monsters/snail",
-          "detail": "Level 1, 2% historical rate"
-        },
-        {
-          "name": "Stump",
-          "path": "/monsters/stump",
-          "detail": "Level 5, 2% historical rate"
+          "detail": "Level 20"
         }
       ],
-      "total": 8
+      "total": 2
     }
   ]
 }

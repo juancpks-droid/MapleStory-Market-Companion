@@ -3,6 +3,11 @@
   "partial": true,
   "entries": [
     {
+      "path": "/quests/construction-site-b3-shumi-s-lost-sack-of-cash",
+      "name": "[Construction Site B1] What Shumi Lost ([Construction Site B3] Shumi's Lost Sack of Cash)",
+      "kind": "quest"
+    },
+    {
       "path": "/maps/3-way-road-split",
       "name": "3-Way Road-Split",
       "kind": "map"
@@ -31,6 +36,11 @@
       "path": "/maps/a-split-road",
       "name": "A Split Road",
       "kind": "map"
+    },
+    {
+      "path": "/quests/what-it-takes",
+      "name": "A Task for a Citizen of Honor (What It Takes)",
+      "kind": "quest"
     },
     {
       "path": "/items/adhesive-bandage",
@@ -115,6 +125,11 @@
     {
       "path": "/monsters/bain",
       "name": "Bain",
+      "kind": "monster"
+    },
+    {
+      "path": "/monsters/barnard-gray",
+      "name": "Barnard Gray",
       "kind": "monster"
     },
     {
@@ -428,6 +443,11 @@
       "kind": "map"
     },
     {
+      "path": "/monsters/cellion",
+      "name": "Cellion",
+      "kind": "monster"
+    },
+    {
       "path": "/items/censor",
       "name": "Censor",
       "kind": "item"
@@ -445,6 +465,11 @@
     {
       "path": "/monsters/chronos",
       "name": "Chronos",
+      "kind": "monster"
+    },
+    {
+      "path": "/monsters/clang",
+      "name": "Clang",
       "kind": "monster"
     },
     {
@@ -2098,6 +2123,11 @@
       "kind": "monster"
     },
     {
+      "path": "/monsters/toy-trojan",
+      "name": "Toy Trojan",
+      "kind": "monster"
+    },
+    {
       "path": "/items/traus",
       "name": "Traus",
       "kind": "item"
@@ -2168,6 +2198,11 @@
       "kind": "item"
     },
     {
+      "path": "/monsters/ultra-gray",
+      "name": "Ultra Gray",
+      "kind": "monster"
+    },
+    {
       "path": "/items/umber-mantis",
       "name": "Umber Mantis",
       "kind": "item"
@@ -2206,6 +2241,11 @@
       "path": "/maps/watch-out-for-icy-path-ii",
       "name": "Watch Out for Icy Path II",
       "kind": "map"
+    },
+    {
+      "path": "/monsters/werewolf",
+      "name": "Werewolf",
+      "kind": "monster"
     },
     {
       "path": "/maps/west-domain-of-perion",
@@ -2253,6 +2293,11 @@
       "kind": "monster"
     },
     {
+      "path": "/monsters/wild-kargo",
+      "name": "Wild Kargo",
+      "kind": "monster"
+    },
+    {
       "path": "/items/wisdom-crystal-ore",
       "name": "Wisdom Crystal Ore",
       "kind": "item"
@@ -2261,6 +2306,21 @@
       "path": "/items/yakuza-scar",
       "name": "Yakuza Scar",
       "kind": "item"
+    },
+    {
+      "path": "/monsters/yeti",
+      "name": "Yeti",
+      "kind": "monster"
+    },
+    {
+      "path": "/monsters/yeti-and-pepe",
+      "name": "Yeti and Pepe",
+      "kind": "monster"
+    },
+    {
+      "path": "/monsters/zeta-gray",
+      "name": "Zeta Gray",
+      "kind": "monster"
     },
     {
       "path": "/monsters/zombie-lupin",

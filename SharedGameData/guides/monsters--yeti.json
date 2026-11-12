@@ -1,0 +1,97 @@
+{
+  "schemaVersion": 1,
+  "path": "/monsters/yeti",
+  "kind": "monster",
+  "name": "Yeti",
+  "source": "CCPLZ",
+  "sourceUrl": "https://ccplz.cc/monsters/yeti",
+  "checkedAt": "2026-11-12T17:40:20.497Z",
+  "notice": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial.",
+  "fields": [
+    {
+      "label": "Level",
+      "value": "65"
+    },
+    {
+      "label": "HP",
+      "value": "8,581"
+    },
+    {
+      "label": "EXP",
+      "value": "254"
+    },
+    {
+      "label": "MP",
+      "value": "30"
+    },
+    {
+      "label": "Attack",
+      "value": "329"
+    },
+    {
+      "label": "Defense",
+      "value": "20"
+    },
+    {
+      "label": "Accuracy",
+      "value": "126"
+    },
+    {
+      "label": "Avoidability",
+      "value": "33"
+    },
+    {
+      "label": "Weak to",
+      "value": "Fire"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Where it spawns",
+      "links": [
+        {
+          "name": "Icy Cold Field",
+          "path": "/maps/icy-cold-field",
+          "detail": "Ossyria, 21 spawn points"
+        },
+        {
+          "name": "Ice Valley II",
+          "path": "/maps/ice-valley-ii",
+          "detail": "Ossyria, 6 spawn points"
+        }
+      ],
+      "total": 2
+    },
+    {
+      "title": "Drops",
+      "links": [
+        {
+          "name": "Amethyst Ore",
+          "path": "/items/amethyst-ore",
+          "detail": "Gems & gem ores, about 1.2%, usual for its kind"
+        },
+        {
+          "name": "Blue Hinkel",
+          "path": "/items/blue-hinkel",
+          "detail": "Bow, about 0.22%, usual for its kind"
+        },
+        {
+          "name": "Holy Spear",
+          "path": "/items/holy-spear",
+          "detail": "Spear, about 0.22%, usual for its kind"
+        },
+        {
+          "name": "Leather",
+          "path": "/items/leather",
+          "detail": "Monster drops"
+        },
+        {
+          "name": "Yeti Horn",
+          "path": "/items/yeti-horn",
+          "detail": "Monster drops"
+        }
+      ],
+      "total": 5
+    }
+  ]
+}

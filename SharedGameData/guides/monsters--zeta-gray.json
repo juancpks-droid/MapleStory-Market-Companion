@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "path": "/monsters/zeta-gray",
+  "kind": "monster",
+  "name": "Zeta Gray",
+  "source": "CCPLZ",
+  "sourceUrl": "https://ccplz.cc/monsters/zeta-gray",
+  "checkedAt": "2026-11-12T17:40:26.510Z",
+  "notice": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial.",
+  "fields": [
+    {
+      "label": "Level",
+      "value": "42"
+    },
+    {
+      "label": "HP",
+      "value": "1,644"
+    },
+    {
+      "label": "EXP",
+      "value": "103"
+    },
+    {
+      "label": "MP",
+      "value": "80"
+    },
+    {
+      "label": "Attack",
+      "value": "225"
+    },
+    {
+      "label": "Defense",
+      "value": "10"
+    },
+    {
+      "label": "Accuracy",
+      "value": "133"
+    },
+    {
+      "label": "Avoidability",
+      "value": "28"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Drops",
+      "links": [
+        {
+          "name": "Small Spaceship",
+          "path": "/items/small-spaceship",
+          "detail": "Monster drops"
+        },
+        {
+          "name": "Wisdom Crystal Ore",
+          "path": "/items/wisdom-crystal-ore",
+          "detail": "Crafting materials"
+        }
+      ],
+      "total": 2
+    }
+  ]
+}

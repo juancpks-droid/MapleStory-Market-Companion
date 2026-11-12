@@ -1,0 +1,94 @@
+{
+  "schemaVersion": 1,
+  "path": "/quests/what-it-takes",
+  "kind": "quest",
+  "name": "A Task for a Citizen of Honor (What It Takes)",
+  "source": "CCPLZ",
+  "sourceUrl": "https://ccplz.cc/quests/what-it-takes",
+  "checkedAt": "2026-11-12T17:40:32.671Z",
+  "notice": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial.",
+  "fields": [
+    {
+      "label": "Minimum level",
+      "value": "57"
+    },
+    {
+      "label": "Category",
+      "value": "Citizenship"
+    },
+    {
+      "label": "EXP reward",
+      "value": "17,800"
+    },
+    {
+      "label": "Meso reward",
+      "value": "1,784"
+    },
+    {
+      "label": "Starts with",
+      "value": "Slade"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Quest NPCs",
+      "links": [
+        {
+          "name": "Slade",
+          "path": "/npcs/slade",
+          "detail": "Starts the quest"
+        }
+      ],
+      "total": 1
+    },
+    {
+      "title": "Complete first",
+      "links": [
+        {
+          "name": "A Task for a Citizen of Honor (An Unbreakable Code)",
+          "path": "/quests/an-unbreakable-code",
+          "detail": ""
+        }
+      ],
+      "total": 1
+    },
+    {
+      "title": "Items to bring",
+      "links": [
+        {
+          "name": "Ink of Truth",
+          "path": "/items/ink-of-truth",
+          "detail": "x1"
+        }
+      ],
+      "total": 1
+    },
+    {
+      "title": "Item rewards",
+      "links": [
+        {
+          "name": "Mana Elixir",
+          "path": "/items/mana-elixir",
+          "detail": ""
+        }
+      ],
+      "total": 1
+    },
+    {
+      "title": "Where it takes place",
+      "links": [
+        {
+          "name": "Ellinia",
+          "path": "/maps/ellinia",
+          "detail": ""
+        },
+        {
+          "name": "The Hermit's Cabin",
+          "path": "/maps/the-hermit-s-cabin",
+          "detail": ""
+        }
+      ],
+      "total": 2
+    }
+  ]
+}

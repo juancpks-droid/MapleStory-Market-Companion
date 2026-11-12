@@ -1,0 +1,117 @@
+{
+  "schemaVersion": 1,
+  "path": "/monsters/clang",
+  "kind": "monster",
+  "name": "Clang",
+  "source": "CCPLZ",
+  "sourceUrl": "https://ccplz.cc/monsters/clang",
+  "checkedAt": "2026-11-12T17:40:47.515Z",
+  "notice": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial.",
+  "fields": [
+    {
+      "label": "Level",
+      "value": "49"
+    },
+    {
+      "label": "HP",
+      "value": "2,899"
+    },
+    {
+      "label": "EXP",
+      "value": "127"
+    },
+    {
+      "label": "MP",
+      "value": "50"
+    },
+    {
+      "label": "Attack",
+      "value": "257"
+    },
+    {
+      "label": "Defense",
+      "value": "15"
+    },
+    {
+      "label": "Accuracy",
+      "value": "128"
+    },
+    {
+      "label": "Avoidability",
+      "value": "30"
+    },
+    {
+      "label": "Weak to",
+      "value": "Lightning"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Where it spawns",
+      "links": [
+        {
+          "name": "Lorang and Clang",
+          "path": "/maps/lorang-and-clang",
+          "detail": "Victoria Island, 29 spawn points"
+        },
+        {
+          "name": "Clang and Lorang",
+          "path": "/maps/clang-and-lorang",
+          "detail": "Victoria Island, 17 spawn points"
+        },
+        {
+          "name": "Hot Sand",
+          "path": "/maps/hot-sand",
+          "detail": "Victoria Island, 13 spawn points"
+        }
+      ],
+      "total": 3
+    },
+    {
+      "title": "Drops",
+      "links": [
+        {
+          "name": "Adamantium Ore",
+          "path": "/items/adamantium-ore",
+          "detail": "Ores & ingots, about 1.2%, usual for its kind"
+        },
+        {
+          "name": "Aquamarine Ore",
+          "path": "/items/aquamarine-ore",
+          "detail": "Gems & gem ores, about 1.2%, usual for its kind"
+        },
+        {
+          "name": "Black Steal",
+          "path": "/items/black-steal",
+          "detail": "Topwear, about 0.22%, usual for its kind"
+        },
+        {
+          "name": "Blue Potion",
+          "path": "/items/blue-potion",
+          "detail": "Potions, about 2.4%, usual for its kind"
+        },
+        {
+          "name": "Clang Claw",
+          "path": "/items/clang-claw",
+          "detail": "Monster drops"
+        },
+        {
+          "name": "Purple Fairy Top",
+          "path": "/items/purple-fairy-top",
+          "detail": "Topwear, about 0.22%, usual for its kind"
+        },
+        {
+          "name": "Silver Black Stealer",
+          "path": "/items/silver-black-stealer",
+          "detail": "Topwear, about 0.22%, usual for its kind"
+        },
+        {
+          "name": "White Potion",
+          "path": "/items/white-potion",
+          "detail": "Potions, about 2.4%, usual for its kind"
+        }
+      ],
+      "total": 8
+    }
+  ]
+}

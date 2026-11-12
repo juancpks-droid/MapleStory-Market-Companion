@@ -1,0 +1,89 @@
+{
+  "schemaVersion": 1,
+  "path": "/quests/construction-site-b3-shumi-s-lost-sack-of-cash",
+  "kind": "quest",
+  "name": "[Construction Site B1] What Shumi Lost ([Construction Site B3] Shumi's Lost Sack of Cash)",
+  "source": "CCPLZ",
+  "sourceUrl": "https://ccplz.cc/quests/construction-site-b3-shumi-s-lost-sack-of-cash",
+  "checkedAt": "2026-11-12T17:40:29.573Z",
+  "notice": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial.",
+  "fields": [
+    {
+      "label": "Minimum level",
+      "value": "35"
+    },
+    {
+      "label": "Category",
+      "value": "Kerning City"
+    },
+    {
+      "label": "EXP reward",
+      "value": "6,720"
+    },
+    {
+      "label": "Meso reward",
+      "value": "10,000"
+    },
+    {
+      "label": "Starts with",
+      "value": "Shumi"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Quest NPCs",
+      "links": [
+        {
+          "name": "Shumi",
+          "path": "/npcs/shumi",
+          "detail": "Starts the quest"
+        }
+      ],
+      "total": 1
+    },
+    {
+      "title": "Complete first",
+      "links": [
+        {
+          "name": "[Construction Site B1] What Shumi Lost ([Construction Site B2] Shumi's Lost Roll of Cash)",
+          "path": "/quests/construction-site-b2-shumi-s-lost-roll-of-cash",
+          "detail": ""
+        }
+      ],
+      "total": 1
+    },
+    {
+      "title": "Items to bring",
+      "links": [
+        {
+          "name": "Shumi's Sack of Cash",
+          "path": "/items/shumi-s-sack-of-cash",
+          "detail": "x1"
+        }
+      ],
+      "total": 1
+    },
+    {
+      "title": "Item rewards",
+      "links": [
+        {
+          "name": "Mana Elixir",
+          "path": "/items/mana-elixir",
+          "detail": ""
+        }
+      ],
+      "total": 1
+    },
+    {
+      "title": "Where it takes place",
+      "links": [
+        {
+          "name": "Kerning City",
+          "path": "/maps/kerning-city",
+          "detail": ""
+        }
+      ],
+      "total": 1
+    }
+  ]
+}

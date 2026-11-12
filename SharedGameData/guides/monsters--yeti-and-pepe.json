@@ -1,0 +1,93 @@
+{
+  "schemaVersion": 1,
+  "path": "/monsters/yeti-and-pepe",
+  "kind": "monster",
+  "name": "Yeti and Pepe",
+  "source": "CCPLZ",
+  "sourceUrl": "https://ccplz.cc/monsters/yeti-and-pepe",
+  "checkedAt": "2026-11-12T17:40:23.501Z",
+  "notice": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial.",
+  "fields": [
+    {
+      "label": "Level",
+      "value": "78"
+    },
+    {
+      "label": "HP",
+      "value": "18,539"
+    },
+    {
+      "label": "EXP",
+      "value": "381"
+    },
+    {
+      "label": "MP",
+      "value": "80"
+    },
+    {
+      "label": "Attack",
+      "value": "387"
+    },
+    {
+      "label": "Defense",
+      "value": "15"
+    },
+    {
+      "label": "Accuracy",
+      "value": "148"
+    },
+    {
+      "label": "Avoidability",
+      "value": "43"
+    },
+    {
+      "label": "Weak to",
+      "value": "Fire"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Where it spawns",
+      "links": [
+        {
+          "name": "Ice Valley II",
+          "path": "/maps/ice-valley-ii",
+          "detail": "Ossyria, 10 spawn points"
+        }
+      ],
+      "total": 1
+    },
+    {
+      "title": "Drops",
+      "links": [
+        {
+          "name": "Pepe Beak",
+          "path": "/items/pepe-beak",
+          "detail": "Monster drops"
+        },
+        {
+          "name": "Yeti Horn",
+          "path": "/items/yeti-horn",
+          "detail": "Monster drops"
+        }
+      ],
+      "total": 2
+    },
+    {
+      "title": "Revives into",
+      "links": [
+        {
+          "name": "Separated Pepe",
+          "path": "/monsters/separated-pepe",
+          "detail": ""
+        },
+        {
+          "name": "Separated Yeti",
+          "path": "/monsters/separated-yeti",
+          "detail": ""
+        }
+      ],
+      "total": 2
+    }
+  ]
+}
