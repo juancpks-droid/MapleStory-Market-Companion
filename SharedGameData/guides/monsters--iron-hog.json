@@ -1,0 +1,203 @@
+{
+  "schemaVersion": 1,
+  "path": "/monsters/iron-hog",
+  "kind": "monster",
+  "name": "Iron Hog",
+  "source": "CCPLZ",
+  "sourceUrl": "https://ccplz.cc/monsters/iron-hog",
+  "checkedAt": "2026-11-13T17:17:54.062Z",
+  "notice": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial.",
+  "fields": [
+    {
+      "label": "Level",
+      "value": "28"
+    },
+    {
+      "label": "HP",
+      "value": "572"
+    },
+    {
+      "label": "EXP",
+      "value": "52"
+    },
+    {
+      "label": "MP",
+      "value": "50"
+    },
+    {
+      "label": "Attack",
+      "value": "136"
+    },
+    {
+      "label": "Defense",
+      "value": "500"
+    },
+    {
+      "label": "Accuracy",
+      "value": "104"
+    },
+    {
+      "label": "Avoidability",
+      "value": "17"
+    },
+    {
+      "label": "Weak to",
+      "value": "Lightning"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Where it spawns",
+      "links": [
+        {
+          "name": "Pig Park II",
+          "path": "/maps/pig-park-ii",
+          "detail": "Victoria Island, 22 spawn points"
+        },
+        {
+          "name": "Pig Park",
+          "path": "/maps/pig-park",
+          "detail": "Victoria Island, 20 spawn points"
+        },
+        {
+          "name": "Someone Else's House",
+          "path": "/maps/someone-else-s-house",
+          "detail": "Victoria Island, 13 spawn points"
+        },
+        {
+          "name": "Henesys Dungeon Entrance",
+          "path": "/maps/henesys-dungeon-entrance",
+          "detail": "Victoria Island, 3 spawn points"
+        },
+        {
+          "name": "The Road to the Dungeon",
+          "path": "/maps/the-road-to-the-dungeon",
+          "detail": "Victoria Island, 2 spawn points"
+        },
+        {
+          "name": "L Forest I",
+          "path": "/maps/l-forest-i",
+          "detail": "Victoria Island, 1 spawn point"
+        },
+        {
+          "name": "The Pig Beach",
+          "path": "/maps/the-pig-beach",
+          "detail": "Victoria Island, 1 spawn point"
+        }
+      ],
+      "total": 7
+    },
+    {
+      "title": "Drops",
+      "links": [
+        {
+          "name": "Adamantium Ore",
+          "path": "/items/adamantium-ore",
+          "detail": "Ores & ingots, about 1.2%, usual for its kind"
+        },
+        {
+          "name": "Animal Fur Bundle",
+          "path": "/items/animal-fur-bundle",
+          "detail": "Monster drops"
+        },
+        {
+          "name": "Arrows for Bows",
+          "path": "/items/arrows-for-bows",
+          "detail": "Arrows for bows, about 1.1%, usual for its kind"
+        },
+        {
+          "name": "Blue Hunter's Pants",
+          "path": "/items/blue-hunter-s-pants",
+          "detail": "Bottomwear, about 0.22%, usual for its kind"
+        },
+        {
+          "name": "Blue Steal",
+          "path": "/items/blue-steal",
+          "detail": "Topwear, about 0.22%, usual for its kind"
+        },
+        {
+          "name": "Dark Engrit",
+          "path": "/items/dark-engrit",
+          "detail": "Overall, about 0.22%, usual for its kind"
+        },
+        {
+          "name": "Dark Silver Stealer",
+          "path": "/items/dark-silver-stealer",
+          "detail": "Topwear, about 0.22%, usual for its kind"
+        },
+        {
+          "name": "Gladius",
+          "path": "/items/gladius",
+          "detail": "One-handed sword, about 0.22%, usual for its kind"
+        },
+        {
+          "name": "Iron Hog's Metal Hoof",
+          "path": "/items/iron-hog-s-metal-hoof",
+          "detail": "Monster drops"
+        },
+        {
+          "name": "Leather",
+          "path": "/items/leather",
+          "detail": "Monster drops"
+        },
+        {
+          "name": "Monster Card",
+          "path": "/items/monster-card",
+          "detail": "Quest items"
+        },
+        {
+          "name": "Orange Potion",
+          "path": "/items/orange-potion",
+          "detail": "Potions, about 2.4%, usual for its kind"
+        },
+        {
+          "name": "Orange Whitebottom Boots",
+          "path": "/items/orange-whitebottom-boots",
+          "detail": "Shoes, about 0.22%, usual for its kind"
+        },
+        {
+          "name": "Red Huntress Pants",
+          "path": "/items/red-huntress-pants",
+          "detail": "Bottomwear, about 0.22%, usual for its kind"
+        },
+        {
+          "name": "Sapphire Ore",
+          "path": "/items/sapphire-ore",
+          "detail": "Gems & gem ores, about 1.2%, usual for its kind"
+        },
+        {
+          "name": "Silver Battle Grieves",
+          "path": "/items/silver-battle-grieves",
+          "detail": "Shoes, about 0.22%, usual for its kind"
+        },
+        {
+          "name": "Sledgehammer",
+          "path": "/items/sledgehammer",
+          "detail": "Two-handed blunt, about 0.22%, usual for its kind"
+        },
+        {
+          "name": "Steel Guards",
+          "path": "/items/steel-guards",
+          "detail": "Claw, about 0.22%, usual for its kind"
+        },
+        {
+          "name": "Topwear HP Scroll: Greater",
+          "path": "/items/topwear-hp-scroll-greater",
+          "detail": "Topwear scrolls"
+        }
+      ],
+      "total": 19
+    },
+    {
+      "title": "Quests that need it",
+      "links": [
+        {
+          "name": "A Weaponcrafter in My Own Right!",
+          "path": "/quests/a-weaponcrafter-in-my-own-right",
+          "detail": "Level 25"
+        }
+      ],
+      "total": 1
+    }
+  ]
+}

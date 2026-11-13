@@ -1,0 +1,138 @@
+{
+  "schemaVersion": 1,
+  "path": "/monsters/hector",
+  "kind": "monster",
+  "name": "Hector",
+  "source": "CCPLZ",
+  "sourceUrl": "https://ccplz.cc/monsters/hector",
+  "checkedAt": "2026-11-13T17:17:51.109Z",
+  "notice": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial.",
+  "fields": [
+    {
+      "label": "Level",
+      "value": "55"
+    },
+    {
+      "label": "HP",
+      "value": "3,665"
+    },
+    {
+      "label": "EXP",
+      "value": "175"
+    },
+    {
+      "label": "MP",
+      "value": "30"
+    },
+    {
+      "label": "Attack",
+      "value": "284"
+    },
+    {
+      "label": "Defense",
+      "value": "20"
+    },
+    {
+      "label": "Accuracy",
+      "value": "133"
+    },
+    {
+      "label": "Avoidability",
+      "value": "32"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Where it spawns",
+      "links": [
+        {
+          "name": "Cold Field I",
+          "path": "/maps/cold-field-i",
+          "detail": "Ossyria, 29 spawn points"
+        },
+        {
+          "name": "Cold Field II",
+          "path": "/maps/cold-field-ii",
+          "detail": "Ossyria, 16 spawn points"
+        },
+        {
+          "name": "Wolf Territory II",
+          "path": "/maps/wolf-territory-ii",
+          "detail": "Ossyria, 14 spawn points"
+        },
+        {
+          "name": "Wolf Territory I",
+          "path": "/maps/wolf-territory-i",
+          "detail": "Ossyria, 12 spawn points"
+        },
+        {
+          "name": "Watch Out for Icy Path II",
+          "path": "/maps/watch-out-for-icy-path-ii",
+          "detail": "Ossyria, 12 spawn points"
+        }
+      ],
+      "total": 5
+    },
+    {
+      "title": "Drops",
+      "links": [
+        {
+          "name": "Animal Fur Bundle",
+          "path": "/items/animal-fur-bundle",
+          "detail": "Monster drops"
+        },
+        {
+          "name": "Arrows for Bows",
+          "path": "/items/arrows-for-bows",
+          "detail": "Arrows for bows, about 1.1%, usual for its kind"
+        },
+        {
+          "name": "Arrows for Crossbows",
+          "path": "/items/arrows-for-crossbows",
+          "detail": "Arrows for crossbows, about 1.1%, usual for its kind"
+        },
+        {
+          "name": "Blue Potion",
+          "path": "/items/blue-potion",
+          "detail": "Potions, about 2.4%, usual for its kind"
+        },
+        {
+          "name": "Hector Tail",
+          "path": "/items/hector-tail",
+          "detail": "Monster drops"
+        },
+        {
+          "name": "Leather",
+          "path": "/items/leather",
+          "detail": "Monster drops"
+        },
+        {
+          "name": "Luck Crystal Ore",
+          "path": "/items/luck-crystal-ore",
+          "detail": "Crafting materials"
+        },
+        {
+          "name": "Opal Ore",
+          "path": "/items/opal-ore",
+          "detail": "Gems & gem ores, about 1.2%, usual for its kind"
+        },
+        {
+          "name": "Red Cleave",
+          "path": "/items/red-cleave",
+          "detail": "Gloves, about 0.22%, usual for its kind"
+        },
+        {
+          "name": "Silver Ore",
+          "path": "/items/silver-ore",
+          "detail": "Ores & ingots, about 1.2%, usual for its kind"
+        },
+        {
+          "name": "White Potion",
+          "path": "/items/white-potion",
+          "detail": "Potions, about 2.4%, usual for its kind"
+        }
+      ],
+      "total": 11
+    }
+  ]
+}

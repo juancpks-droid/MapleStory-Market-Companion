@@ -1,0 +1,133 @@
+{
+  "schemaVersion": 1,
+  "path": "/monsters/croco",
+  "kind": "monster",
+  "name": "Croco",
+  "source": "CCPLZ",
+  "sourceUrl": "https://ccplz.cc/monsters/croco",
+  "checkedAt": "2026-11-13T17:17:39.308Z",
+  "notice": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial.",
+  "fields": [
+    {
+      "label": "Level",
+      "value": "52"
+    },
+    {
+      "label": "HP",
+      "value": "3,136"
+    },
+    {
+      "label": "EXP",
+      "value": "146"
+    },
+    {
+      "label": "MP",
+      "value": "75"
+    },
+    {
+      "label": "Attack",
+      "value": "270"
+    },
+    {
+      "label": "Defense",
+      "value": "10"
+    },
+    {
+      "label": "Accuracy",
+      "value": "131"
+    },
+    {
+      "label": "Avoidability",
+      "value": "31"
+    },
+    {
+      "label": "Weak to",
+      "value": "Fire"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Where it spawns",
+      "links": [
+        {
+          "name": "Dangerous Croko II",
+          "path": "/maps/dangerous-croko-ii",
+          "detail": "Victoria Island, 24 spawn points"
+        },
+        {
+          "name": "Dangerous Croko I",
+          "path": "/maps/dangerous-croko-i",
+          "detail": "Victoria Island, 6 spawn points"
+        }
+      ],
+      "total": 2
+    },
+    {
+      "title": "Drops",
+      "links": [
+        {
+          "name": "Bronze Ore",
+          "path": "/items/bronze-ore",
+          "detail": "Ores & ingots, about 1.2%, usual for its kind"
+        },
+        {
+          "name": "Croco Skin",
+          "path": "/items/croco-skin",
+          "detail": "Monster drops"
+        },
+        {
+          "name": "Diamond Ore",
+          "path": "/items/diamond-ore",
+          "detail": "Gems & gem ores, about 1.2%, usual for its kind"
+        },
+        {
+          "name": "Green China",
+          "path": "/items/green-china",
+          "detail": "Topwear, about 0.22%, usual for its kind"
+        },
+        {
+          "name": "Jacker",
+          "path": "/items/jacker",
+          "detail": "One-handed blunt, about 0.22%, usual for its kind"
+        },
+        {
+          "name": "Knuckle Mace",
+          "path": "/items/knuckle-mace",
+          "detail": "One-handed blunt, about 0.22%, usual for its kind"
+        },
+        {
+          "name": "Opal Ore",
+          "path": "/items/opal-ore",
+          "detail": "Gems & gem ores, about 1.2%, usual for its kind"
+        },
+        {
+          "name": "Red Moonlight",
+          "path": "/items/red-moonlight",
+          "detail": "Overall, about 0.22%, usual for its kind"
+        },
+        {
+          "name": "Traus",
+          "path": "/items/traus",
+          "detail": "One-handed sword, about 0.22%, usual for its kind"
+        },
+        {
+          "name": "White Potion",
+          "path": "/items/white-potion",
+          "detail": "Potions, about 2.4%, usual for its kind"
+        }
+      ],
+      "total": 10
+    },
+    {
+      "title": "Quests that need it",
+      "links": [
+        {
+          "name": "The Alligators at the Swamp (Taking Out the Alligators 2)",
+          "path": "/quests/taking-out-the-alligators-2",
+          "detail": "Level 48"
+        }
+      ],
+      "total": 1
+    }
+  ]
+}

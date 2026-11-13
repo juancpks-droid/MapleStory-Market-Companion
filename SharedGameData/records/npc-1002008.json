@@ -7,13 +7,13 @@
     "category": "Equipment"
   },
   "kind": "npc",
-  "checkedAt": "2026-10-15T09:57:44.653Z",
+  "checkedAt": "2026-11-13T17:17:21.248Z",
   "data": {
     "sell": 300,
     "buy": 600,
     "source": "CCPLZ",
     "url": "https://ccplz.cc/items/brown-skullcap",
-    "checkedAt": "2026-10-15T09:57:44.653Z"
+    "checkedAt": "2026-11-13T17:17:21.248Z"
   },
   "provenance": {
     "source": "CCPLZ",

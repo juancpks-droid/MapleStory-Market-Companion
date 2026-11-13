@@ -5,7 +5,7 @@
   "name": "Brown Skullcap",
   "source": "CCPLZ",
   "sourceUrl": "https://ccplz.cc/items/brown-skullcap",
-  "checkedAt": "2026-10-15T09:57:44.653Z",
+  "checkedAt": "2026-11-13T17:17:21.248Z",
   "notice": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial.",
   "fields": [
     {
@@ -60,7 +60,7 @@
         {
           "name": "Pig",
           "path": "/monsters/pig",
-          "detail": "Level 7, 0.15% historical rate"
+          "detail": "Level 7, about 0.22%, usual for its kind"
         }
       ],
       "total": 1

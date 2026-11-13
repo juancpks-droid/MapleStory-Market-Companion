@@ -7,13 +7,13 @@
     "category": "Etc"
   },
   "kind": "npc",
-  "checkedAt": "2026-10-15T09:57:41.639Z",
+  "checkedAt": "2026-11-13T17:17:18.214Z",
   "data": {
     "sell": 3,
     "buy": 30,
     "source": "CCPLZ",
     "url": "https://ccplz.cc/items/egg",
-    "checkedAt": "2026-10-15T09:57:41.639Z"
+    "checkedAt": "2026-11-13T17:17:18.214Z"
   },
   "provenance": {
     "source": "CCPLZ",

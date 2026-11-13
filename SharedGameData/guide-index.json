@@ -503,6 +503,11 @@
       "kind": "map"
     },
     {
+      "path": "/monsters/coolie-zombie",
+      "name": "Coolie Zombie",
+      "kind": "monster"
+    },
+    {
       "path": "/items/crescent-polearm",
       "name": "Crescent Polearm",
       "kind": "item"
@@ -510,6 +515,11 @@
     {
       "path": "/monsters/crimson-balrog",
       "name": "Crimson Balrog",
+      "kind": "monster"
+    },
+    {
+      "path": "/monsters/croco",
+      "name": "Croco",
       "kind": "monster"
     },
     {
@@ -555,6 +565,11 @@
     {
       "path": "/monsters/dark-axe-stump",
       "name": "Dark Axe Stump",
+      "kind": "monster"
+    },
+    {
+      "path": "/monsters/dark-jr-yeti",
+      "name": "Dark Jr. Yeti",
       "kind": "monster"
     },
     {
@@ -993,6 +1008,11 @@
       "kind": "item"
     },
     {
+      "path": "/monsters/grupin",
+      "name": "Grupin",
+      "kind": "monster"
+    },
+    {
       "path": "/items/hardwood-wand",
       "name": "Hardwood Wand",
       "kind": "item"
@@ -1006,6 +1026,11 @@
       "path": "/items/heart",
       "name": "Heart",
       "kind": "item"
+    },
+    {
+      "path": "/monsters/hector",
+      "name": "Hector",
+      "kind": "monster"
     },
     {
       "path": "/monsters/helly",
@@ -1091,6 +1116,11 @@
       "path": "/maps/in-a-small-forest",
       "name": "In a Small Forest",
       "kind": "map"
+    },
+    {
+      "path": "/monsters/iron-hog",
+      "name": "Iron Hog",
+      "kind": "monster"
     },
     {
       "path": "/npcs/jane",
@@ -1243,6 +1273,11 @@
       "kind": "shop"
     },
     {
+      "path": "/monsters/lioner",
+      "name": "Lioner",
+      "kind": "monster"
+    },
+    {
       "path": "/items/long-brown-beard",
       "name": "Long Brown Beard",
       "kind": "item"
@@ -1283,6 +1318,11 @@
       "kind": "monster"
     },
     {
+      "path": "/monsters/luster-pixie",
+      "name": "Luster Pixie",
+      "kind": "monster"
+    },
+    {
       "path": "/npcs/magician-job-instructor",
       "name": "Magician Job Instructor (The Forest North of Ellinia)",
       "kind": "npc"
@@ -1296,6 +1336,11 @@
       "path": "/quests/mai-s-final-training",
       "name": "Mai's Training (Mai's Final Training)",
       "kind": "quest"
+    },
+    {
+      "path": "/monsters/malady",
+      "name": "Malady",
+      "kind": "monster"
     },
     {
       "path": "/items/mana-elixir",
@@ -1478,6 +1523,11 @@
       "kind": "map"
     },
     {
+      "path": "/monsters/phantom-watch",
+      "name": "Phantom Watch",
+      "kind": "monster"
+    },
+    {
       "path": "/monsters/pig",
       "name": "Pig",
       "kind": "monster"
@@ -1536,6 +1586,11 @@
       "path": "/items/processed-wood",
       "name": "Processed Wood",
       "kind": "item"
+    },
+    {
+      "path": "/monsters/propelly",
+      "name": "Propelly",
+      "kind": "monster"
     },
     {
       "path": "/items/purple-moonlight",

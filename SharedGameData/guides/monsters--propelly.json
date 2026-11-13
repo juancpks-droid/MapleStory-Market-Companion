@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "path": "/monsters/propelly",
+  "kind": "monster",
+  "name": "Propelly",
+  "source": "CCPLZ",
+  "sourceUrl": "https://ccplz.cc/monsters/propelly",
+  "checkedAt": "2026-11-13T17:18:09.112Z",
+  "notice": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial.",
+  "fields": [
+    {
+      "label": "Level",
+      "value": "37"
+    },
+    {
+      "label": "HP",
+      "value": "1,202"
+    },
+    {
+      "label": "EXP",
+      "value": "82"
+    },
+    {
+      "label": "MP",
+      "value": "0"
+    },
+    {
+      "label": "Attack",
+      "value": "182"
+    },
+    {
+      "label": "Defense",
+      "value": "10"
+    },
+    {
+      "label": "Accuracy",
+      "value": "127"
+    },
+    {
+      "label": "Avoidability",
+      "value": "23"
+    },
+    {
+      "label": "Weak to",
+      "value": "Lightning"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Drops",
+      "links": [
+        {
+          "name": "Motor",
+          "path": "/items/motor",
+          "detail": "Monster drops"
+        }
+      ],
+      "total": 1
+    }
+  ]
+}

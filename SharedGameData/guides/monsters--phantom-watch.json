@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "path": "/monsters/phantom-watch",
+  "kind": "monster",
+  "name": "Phantom Watch",
+  "source": "CCPLZ",
+  "sourceUrl": "https://ccplz.cc/monsters/phantom-watch",
+  "checkedAt": "2026-11-13T17:18:06.068Z",
+  "notice": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial.",
+  "fields": [
+    {
+      "label": "Level",
+      "value": "95"
+    },
+    {
+      "label": "HP",
+      "value": "30,896"
+    },
+    {
+      "label": "EXP",
+      "value": "591"
+    },
+    {
+      "label": "MP",
+      "value": "150"
+    },
+    {
+      "label": "Attack",
+      "value": "417"
+    },
+    {
+      "label": "Defense",
+      "value": "5"
+    },
+    {
+      "label": "Accuracy",
+      "value": "172"
+    },
+    {
+      "label": "Avoidability",
+      "value": "57"
+    },
+    {
+      "label": "Weak to",
+      "value": "Holy, Fire"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Drops",
+      "links": [
+        {
+          "name": "Sealed Bottle",
+          "path": "/items/sealed-bottle",
+          "detail": "Monster drops"
+        }
+      ],
+      "total": 1
+    }
+  ]
+}

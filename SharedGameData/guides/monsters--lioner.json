@@ -1,0 +1,82 @@
+{
+  "schemaVersion": 1,
+  "path": "/monsters/lioner",
+  "kind": "monster",
+  "name": "Lioner",
+  "source": "CCPLZ",
+  "sourceUrl": "https://ccplz.cc/monsters/lioner",
+  "checkedAt": "2026-11-13T17:17:57.107Z",
+  "notice": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial.",
+  "fields": [
+    {
+      "label": "Level",
+      "value": "53"
+    },
+    {
+      "label": "HP",
+      "value": "2,934"
+    },
+    {
+      "label": "EXP",
+      "value": "162"
+    },
+    {
+      "label": "MP",
+      "value": "90"
+    },
+    {
+      "label": "Attack",
+      "value": "275"
+    },
+    {
+      "label": "Defense",
+      "value": "10"
+    },
+    {
+      "label": "Accuracy",
+      "value": "132"
+    },
+    {
+      "label": "Avoidability",
+      "value": "34"
+    },
+    {
+      "label": "Weak to",
+      "value": "Ice"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Where it spawns",
+      "links": [
+        {
+          "name": "Stairway to the Sky I",
+          "path": "/maps/stairway-to-the-sky-i",
+          "detail": "Ossyria, 14 spawn points"
+        },
+        {
+          "name": "Garden of Yellow II",
+          "path": "/maps/garden-of-yellow-ii",
+          "detail": "Ossyria, 11 spawn points"
+        }
+      ],
+      "total": 2
+    },
+    {
+      "title": "Drops",
+      "links": [
+        {
+          "name": "Blue Potion",
+          "path": "/items/blue-potion",
+          "detail": "Potions, about 2.4%, usual for its kind"
+        },
+        {
+          "name": "Lioner Tail",
+          "path": "/items/lioner-tail",
+          "detail": "Monster drops"
+        }
+      ],
+      "total": 2
+    }
+  ]
+}

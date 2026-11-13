@@ -1,0 +1,153 @@
+{
+  "schemaVersion": 1,
+  "path": "/monsters/malady",
+  "kind": "monster",
+  "name": "Malady",
+  "source": "CCPLZ",
+  "sourceUrl": "https://ccplz.cc/monsters/malady",
+  "checkedAt": "2026-11-13T17:18:03.091Z",
+  "notice": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial.",
+  "fields": [
+    {
+      "label": "Level",
+      "value": "55"
+    },
+    {
+      "label": "HP",
+      "value": "2,998"
+    },
+    {
+      "label": "EXP",
+      "value": "167"
+    },
+    {
+      "label": "MP",
+      "value": "90"
+    },
+    {
+      "label": "Attack",
+      "value": "226"
+    },
+    {
+      "label": "Defense",
+      "value": "0"
+    },
+    {
+      "label": "Accuracy",
+      "value": "146"
+    },
+    {
+      "label": "Avoidability",
+      "value": "33"
+    },
+    {
+      "label": "Weak to",
+      "value": "Holy"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Where it spawns",
+      "links": [
+        {
+          "name": "The Forest of Evil II",
+          "path": "/maps/the-forest-of-evil-ii",
+          "detail": "Victoria Island, 23 spawn points"
+        },
+        {
+          "name": "The Forest of Evil I",
+          "path": "/maps/the-forest-of-evil-i",
+          "detail": "Victoria Island, 15 spawn points"
+        }
+      ],
+      "total": 2
+    },
+    {
+      "title": "Drops",
+      "links": [
+        {
+          "name": "Black Cat Gloves",
+          "path": "/items/black-cat-gloves",
+          "detail": "Gloves, about 0.22%, usual for its kind"
+        },
+        {
+          "name": "Black Crystal Ore",
+          "path": "/items/black-crystal-ore",
+          "detail": "Gems & gem ores, about 1.2%, usual for its kind"
+        },
+        {
+          "name": "Black Jangoon Pants",
+          "path": "/items/black-jangoon-pants",
+          "detail": "Bottomwear, about 0.22%, usual for its kind"
+        },
+        {
+          "name": "Blue Shouldermail",
+          "path": "/items/blue-shouldermail",
+          "detail": "Topwear, about 0.22%, usual for its kind"
+        },
+        {
+          "name": "Blue Shouldermail Pants",
+          "path": "/items/blue-shouldermail-pants",
+          "detail": "Bottomwear, about 0.22%, usual for its kind"
+        },
+        {
+          "name": "Blue-Lined Kismet",
+          "path": "/items/blue-lined-kismet",
+          "detail": "Overall, about 0.22%, usual for its kind"
+        },
+        {
+          "name": "Brown China Pants",
+          "path": "/items/brown-china-pants",
+          "detail": "Bottomwear, about 0.22%, usual for its kind"
+        },
+        {
+          "name": "Cromi",
+          "path": "/items/cromi",
+          "detail": "Wand, about 0.22%, usual for its kind"
+        },
+        {
+          "name": "Earring INT Scroll: Intermediate",
+          "path": "/items/earring-int-scroll-intermediate",
+          "detail": "Earring scrolls"
+        },
+        {
+          "name": "Malady's Experimental Frog",
+          "path": "/items/malady-s-experimental-frog",
+          "detail": "Monster drops"
+        },
+        {
+          "name": "Maroon Jangoon Armor",
+          "path": "/items/maroon-jangoon-armor",
+          "detail": "Topwear, about 0.22%, usual for its kind"
+        },
+        {
+          "name": "Maroon Moon",
+          "path": "/items/maroon-moon",
+          "detail": "Topwear, about 0.22%, usual for its kind"
+        },
+        {
+          "name": "Maroon Moon Pants",
+          "path": "/items/maroon-moon-pants",
+          "detail": "Bottomwear, about 0.22%, usual for its kind"
+        },
+        {
+          "name": "Olympus",
+          "path": "/items/olympus",
+          "detail": "Bow, about 0.22%, usual for its kind"
+        }
+      ],
+      "total": 14
+    },
+    {
+      "title": "Quests that need it",
+      "links": [
+        {
+          "name": "Jane the Alchemist (Jane's Second Challenge)",
+          "path": "/quests/jane-s-second-challenge",
+          "detail": "Level 44"
+        }
+      ],
+      "total": 1
+    }
+  ]
+}

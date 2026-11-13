@@ -1,0 +1,112 @@
+{
+  "schemaVersion": 1,
+  "path": "/monsters/grupin",
+  "kind": "monster",
+  "name": "Grupin",
+  "source": "CCPLZ",
+  "sourceUrl": "https://ccplz.cc/monsters/grupin",
+  "checkedAt": "2026-11-13T17:17:48.223Z",
+  "notice": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial.",
+  "fields": [
+    {
+      "label": "Level",
+      "value": "53"
+    },
+    {
+      "label": "HP",
+      "value": "2,934"
+    },
+    {
+      "label": "EXP",
+      "value": "162"
+    },
+    {
+      "label": "MP",
+      "value": "90"
+    },
+    {
+      "label": "Attack",
+      "value": "275"
+    },
+    {
+      "label": "Defense",
+      "value": "10"
+    },
+    {
+      "label": "Accuracy",
+      "value": "132"
+    },
+    {
+      "label": "Avoidability",
+      "value": "34"
+    },
+    {
+      "label": "Weak to",
+      "value": "Fire"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Where it spawns",
+      "links": [
+        {
+          "name": "Garden of Green II",
+          "path": "/maps/garden-of-green-ii",
+          "detail": "Ossyria, 20 spawn points"
+        },
+        {
+          "name": "Stairway to the Sky I",
+          "path": "/maps/stairway-to-the-sky-i",
+          "detail": "Ossyria, 9 spawn points"
+        }
+      ],
+      "total": 2
+    },
+    {
+      "title": "Drops",
+      "links": [
+        {
+          "name": "Arrows for Bows",
+          "path": "/items/arrows-for-bows",
+          "detail": "Arrows for bows, about 1.1%, usual for its kind"
+        },
+        {
+          "name": "Arrows for Crossbows",
+          "path": "/items/arrows-for-crossbows",
+          "detail": "Arrows for crossbows, about 1.1%, usual for its kind"
+        },
+        {
+          "name": "Blue Potion",
+          "path": "/items/blue-potion",
+          "detail": "Potions, about 2.4%, usual for its kind"
+        },
+        {
+          "name": "Deadly Fin",
+          "path": "/items/deadly-fin",
+          "detail": "Dagger, about 0.22%, usual for its kind"
+        },
+        {
+          "name": "Grupin Tail",
+          "path": "/items/grupin-tail",
+          "detail": "Monster drops"
+        },
+        {
+          "name": "Leather",
+          "path": "/items/leather",
+          "detail": "Monster drops"
+        },
+        {
+          "name": "Mithril Ore",
+          "path": "/items/mithril-ore",
+          "detail": "Ores & ingots, about 1.2%, usual for its kind"
+        },
+        {
+          "name": "White Potion",
+          "path": "/items/white-potion",
+          "detail": "Potions, about 2.4%, usual for its kind"
+        }
+      ],
+      "total": 8
+    }
+  ]
+}
