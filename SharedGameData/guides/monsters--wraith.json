@@ -1,0 +1,198 @@
+{
+  "schemaVersion": 1,
+  "path": "/monsters/wraith",
+  "kind": "monster",
+  "name": "Wraith",
+  "source": "CCPLZ",
+  "sourceUrl": "https://ccplz.cc/monsters/wraith",
+  "checkedAt": "2026-11-14T15:55:22.998Z",
+  "notice": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial.",
+  "fields": [
+    {
+      "label": "Level",
+      "value": "48"
+    },
+    {
+      "label": "HP",
+      "value": "2,350"
+    },
+    {
+      "label": "EXP",
+      "value": "122"
+    },
+    {
+      "label": "MP",
+      "value": "80"
+    },
+    {
+      "label": "Attack",
+      "value": "226"
+    },
+    {
+      "label": "Defense",
+      "value": "30"
+    },
+    {
+      "label": "Accuracy",
+      "value": "127"
+    },
+    {
+      "label": "Avoidability",
+      "value": "32"
+    },
+    {
+      "label": "Weak to",
+      "value": "Holy"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Where it spawns",
+      "links": [
+        {
+          "name": "Line 2 <Area 3>",
+          "path": "/maps/line-2-area-3",
+          "detail": "Victoria Island, 68 spawn points"
+        },
+        {
+          "name": "Line 1 <Area 4>",
+          "path": "/maps/line-1-area-4",
+          "detail": "Victoria Island, 59 spawn points"
+        },
+        {
+          "name": "Line 2 <Area 2>",
+          "path": "/maps/line-2-area-2",
+          "detail": "Victoria Island, 57 spawn points"
+        },
+        {
+          "name": "Line 1 <Area 3>",
+          "path": "/maps/line-1-area-3",
+          "detail": "Victoria Island, 48 spawn points"
+        },
+        {
+          "name": "B3 <Subway Depot>",
+          "path": "/maps/b3-subway-depot",
+          "detail": "Victoria Island, 10 spawn points"
+        }
+      ],
+      "total": 5
+    },
+    {
+      "title": "Drops",
+      "links": [
+        {
+          "name": "Black Bandana",
+          "path": "/items/black-bandana",
+          "detail": "Hat, about 0.22%, usual for its kind"
+        },
+        {
+          "name": "Black Jangoon Armor",
+          "path": "/items/black-jangoon-armor",
+          "detail": "Topwear, about 0.22%, usual for its kind"
+        },
+        {
+          "name": "Black Jangoon Skirt",
+          "path": "/items/black-jangoon-skirt",
+          "detail": "Bottomwear, about 0.22%, usual for its kind"
+        },
+        {
+          "name": "Bottomwear DEF Scroll: Intermediate",
+          "path": "/items/bottomwear-def-scroll-intermediate",
+          "detail": "Bottomwear scrolls"
+        },
+        {
+          "name": "Emerald Earrings",
+          "path": "/items/emerald-earrings",
+          "detail": "Earring, about 0.22%, usual for its kind"
+        },
+        {
+          "name": "Garnet Ore",
+          "path": "/items/garnet-ore",
+          "detail": "Gems & gem ores, about 1.2%, usual for its kind"
+        },
+        {
+          "name": "Iron Ore",
+          "path": "/items/iron-ore",
+          "detail": "Ores & ingots, about 1.2%, usual for its kind"
+        },
+        {
+          "name": "Medicine With Weird Vibes",
+          "path": "/items/medicine-with-weird-vibes",
+          "detail": "Monster drops"
+        },
+        {
+          "name": "Overall Armor DEX Scroll: Greater",
+          "path": "/items/overall-armor-dex-scroll-greater",
+          "detail": "Overall scrolls"
+        },
+        {
+          "name": "Pet Equip Speed Scroll: Greater",
+          "path": "/items/pet-equip-speed-scroll-greater",
+          "detail": "Pet equipment scrolls"
+        },
+        {
+          "name": "Red China",
+          "path": "/items/red-china",
+          "detail": "Topwear, about 0.22%, usual for its kind"
+        },
+        {
+          "name": "Red China Pants",
+          "path": "/items/red-china-pants",
+          "detail": "Bottomwear, about 0.22%, usual for its kind"
+        },
+        {
+          "name": "Red Maro",
+          "path": "/items/red-maro",
+          "detail": "Hat, about 0.22%, usual for its kind"
+        },
+        {
+          "name": "Red Moon",
+          "path": "/items/red-moon",
+          "detail": "Topwear, about 0.22%, usual for its kind"
+        },
+        {
+          "name": "Red Moon Pants",
+          "path": "/items/red-moon-pants",
+          "detail": "Bottomwear, about 0.22%, usual for its kind"
+        },
+        {
+          "name": "Red Whip",
+          "path": "/items/red-whip",
+          "detail": "One-handed sword, about 0.22%, usual for its kind"
+        },
+        {
+          "name": "White Napoleon",
+          "path": "/items/white-napoleon",
+          "detail": "Cape, about 0.22%, usual for its kind"
+        },
+        {
+          "name": "White Potion",
+          "path": "/items/white-potion",
+          "detail": "Potions, about 2.4%, usual for its kind"
+        }
+      ],
+      "total": 18
+    },
+    {
+      "title": "Quests that need it",
+      "links": [
+        {
+          "name": "A Grudge That Won't Rest (A Quiet Line of Work)",
+          "path": "/quests/a-quiet-line-of-work",
+          "detail": "Level 47"
+        },
+        {
+          "name": "Jane the Alchemist (Jane's First Challenge)",
+          "path": "/quests/jane-s-first-challenge",
+          "detail": "Level 44"
+        },
+        {
+          "name": "Jane the Alchemist (Jane's Second Challenge)",
+          "path": "/quests/jane-s-second-challenge",
+          "detail": "Level 44"
+        }
+      ],
+      "total": 3
+    }
+  ]
+}

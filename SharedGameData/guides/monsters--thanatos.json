@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "path": "/monsters/thanatos",
+  "kind": "monster",
+  "name": "Thanatos",
+  "source": "CCPLZ",
+  "sourceUrl": "https://ccplz.cc/monsters/thanatos",
+  "checkedAt": "2026-11-14T15:55:17.071Z",
+  "notice": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial.",
+  "fields": [
+    {
+      "label": "Level",
+      "value": "108"
+    },
+    {
+      "label": "HP",
+      "value": "46,092"
+    },
+    {
+      "label": "EXP",
+      "value": "787"
+    },
+    {
+      "label": "MP",
+      "value": "150"
+    },
+    {
+      "label": "Attack",
+      "value": "496"
+    },
+    {
+      "label": "Defense",
+      "value": "5"
+    },
+    {
+      "label": "Accuracy",
+      "value": "178"
+    },
+    {
+      "label": "Avoidability",
+      "value": "58"
+    },
+    {
+      "label": "Weak to",
+      "value": "Holy"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Drops",
+      "links": [
+        {
+          "name": "Tanathos Strap",
+          "path": "/items/tanathos-strap",
+          "detail": "Monster drops"
+        }
+      ],
+      "total": 1
+    }
+  ]
+}

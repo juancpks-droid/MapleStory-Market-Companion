@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "publishedAt": "2026-11-13T17:18:09.200Z",
+  "publishedAt": "2026-11-14T15:55:50.300Z",
   "catalogItems": 12726,
-  "guideRecords": 477,
+  "guideRecords": 489,
   "referenceRecords": 169,
   "entries": [
     {
@@ -15,15 +15,15 @@
     {
       "file": "guides/items--5-starred-red-paint-china.json",
       "bytes": 2138,
-      "sha256": "8e2d53939fbe23ed3074a454d21c273d61cb414d57a9c90a32e0d3b401c989e6",
-      "checkedAt": "2026-10-16T09:56:38.271Z",
+      "sha256": "689d2491b79034a509343464ae40b539c76a9a36a271fb93f39d6afcc2df1c00",
+      "checkedAt": "2026-11-14T15:55:05.161Z",
       "kind": "item"
     },
     {
       "file": "guides/items--6th-anniversary-party-glasses.json",
       "bytes": 2142,
-      "sha256": "a126f6238c1cf82cd0a3ee55b8e68284aaef8155f80c2fb09488ebc13efceeca",
-      "checkedAt": "2026-10-16T09:56:41.195Z",
+      "sha256": "8a9f54f1187de3b93d039af6232d80e5bee5a19102ad5376f85fe0cd3fb6ce60",
+      "checkedAt": "2026-11-14T15:55:08.093Z",
       "kind": "item"
     },
     {
@@ -63,9 +63,9 @@
     },
     {
       "file": "guides/items--armor-crafting-catalyst.json",
-      "bytes": 9423,
-      "sha256": "6d0e2d8ae7bfa0b251cfd7e234292da7b011d535a5df66391f2ed1efd18d9be6",
-      "checkedAt": "2026-10-16T09:56:35.309Z",
+      "bytes": 9876,
+      "sha256": "cfab23b98c2558039a5370244d38e5630affc6f664251c88b1cccb1c00f813e2",
+      "checkedAt": "2026-11-14T15:55:02.212Z",
       "kind": "item"
     },
     {
@@ -911,8 +911,8 @@
     {
       "file": "guides/items--orange-potion.json",
       "bytes": 6647,
-      "sha256": "177df2fad9050d92b50467ee7779d7a6b0cdcc2d00c25f7441a71d128a015f62",
-      "checkedAt": "2026-11-06T10:24:24.278Z",
+      "sha256": "f276fc768a09652aa52ac31a14df1a14f75fb3d30881e2eb0084abc68bd42aa8",
+      "checkedAt": "2026-11-14T15:55:11.058Z",
       "kind": "item"
     },
     {
@@ -1254,8 +1254,8 @@
     {
       "file": "guides/items--spool-of-thread.json",
       "bytes": 8903,
-      "sha256": "250ea3bc525dbeaa9138da3641b0a5cdf1c104295039dc31b5a193241080fafb",
-      "checkedAt": "2026-10-16T09:56:32.294Z",
+      "sha256": "114c04b07d42213962b25ed19a7aca558324a675c6a529550501cc9bb26843fb",
+      "checkedAt": "2026-11-14T15:54:59.093Z",
       "kind": "item"
     },
     {
@@ -1415,8 +1415,8 @@
     {
       "file": "guides/items--white-potion.json",
       "bytes": 9775,
-      "sha256": "f8f973bf660e1061f74c7a87586f7aa5b33ca46d5c02918372584ed93a126860",
-      "checkedAt": "2026-11-06T10:24:27.297Z",
+      "sha256": "984a64be800741beb1a87930e7b1de2b40057138247af0c0b8ca382d26877c88",
+      "checkedAt": "2026-11-14T15:55:14.004Z",
       "kind": "item"
     },
     {
@@ -2498,6 +2498,13 @@
       "kind": "monster"
     },
     {
+      "file": "guides/monsters--grim-phantom-watch.json",
+      "bytes": 1227,
+      "sha256": "995d0d9c38aca1004ae3fc96098366d4df06788af3679da2bac7099aa86c0ec2",
+      "checkedAt": "2026-11-14T15:55:47.190Z",
+      "kind": "monster"
+    },
+    {
       "file": "guides/monsters--grupin.json",
       "bytes": 2701,
       "sha256": "443b777ae9e70ec36b02b2643ef98de26de95786c210e12689c3491955b878a3",
@@ -2876,6 +2883,20 @@
       "kind": "monster"
     },
     {
+      "file": "guides/monsters--taurospear.json",
+      "bytes": 2265,
+      "sha256": "5888bef6adabdcaecd3ed43b90acb60813088a72cca1bc7029f859bbdb509804",
+      "checkedAt": "2026-11-14T15:55:50.233Z",
+      "kind": "monster"
+    },
+    {
+      "file": "guides/monsters--thanatos.json",
+      "bytes": 1202,
+      "sha256": "ef8838721e21a8a155e540434e057174145807c83a3e19afe5365f349c160b02",
+      "checkedAt": "2026-11-14T15:55:17.071Z",
+      "kind": "monster"
+    },
+    {
       "file": "guides/monsters--tick-tock.json",
       "bytes": 1200,
       "sha256": "b6155b459a4557dc7a8517d19e7c3c9930218751d80c41ceeb7390c3450faaf5",
@@ -2925,6 +2946,13 @@
       "kind": "monster"
     },
     {
+      "file": "guides/monsters--white-fang.json",
+      "bytes": 4946,
+      "sha256": "47136a8862ad9af346aa5b78bf648892d3ab2e5b76557af81664ad3b96b27ec9",
+      "checkedAt": "2026-11-14T15:55:20.178Z",
+      "kind": "monster"
+    },
+    {
       "file": "guides/monsters--wild-boar.json",
       "bytes": 5934,
       "sha256": "9c78a1c2a5e3f4c8004c7bff748338bac7e05c31ab477c03ef9f3cd6742c09d9",
@@ -2936,6 +2964,13 @@
       "bytes": 2162,
       "sha256": "3df7c51472fffe395e7fdb1468f90ba1e63918ad1f082e85cca3547227a99ef6",
       "checkedAt": "2026-11-12T17:40:17.724Z",
+      "kind": "monster"
+    },
+    {
+      "file": "guides/monsters--wraith.json",
+      "bytes": 5472,
+      "sha256": "52d30c97591c70c4dd0356d774529e335766d0f32058f8afb3a51bc0875e8319",
+      "checkedAt": "2026-11-14T15:55:22.998Z",
       "kind": "monster"
     },
     {
@@ -3079,6 +3114,27 @@
       "kind": "npc"
     },
     {
+      "file": "guides/quests--a-box-hidden-long-ago.json",
+      "bytes": 1970,
+      "sha256": "f39e4cf171a1d0fcba40235746a05f5a52e3d20521b5982ab9dcf4883318b447",
+      "checkedAt": "2026-11-14T15:55:32.091Z",
+      "kind": "quest"
+    },
+    {
+      "file": "guides/quests--an-old-grudge.json",
+      "bytes": 2091,
+      "sha256": "764d21c51522b8c1f6bc90906a4e420b9ba790bcb4bdca10ce845e6881f8c77a",
+      "checkedAt": "2026-11-14T15:55:35.084Z",
+      "kind": "quest"
+    },
+    {
+      "file": "guides/quests--an-unknown-savior.json",
+      "bytes": 2227,
+      "sha256": "41fd0ce687d0560bd21047b7c1b6d40ae144fd6aba17b537456c5c6a7c74084f",
+      "checkedAt": "2026-11-14T15:55:44.063Z",
+      "kind": "quest"
+    },
+    {
       "file": "guides/quests--biggs-s-collection-of-items.json",
       "bytes": 1844,
       "sha256": "c14ee75b4a4520ebacfb65fc4c6dc2b45eb21f74bd1ee5e0f2a7740563e274b0",
@@ -3090,6 +3146,13 @@
       "bytes": 2195,
       "sha256": "5761479bad38406fc7116ce89339ec055a51f185ffae7d22fdd5c3cfc9e7f26a",
       "checkedAt": "2026-11-08T10:09:21.664Z",
+      "kind": "quest"
+    },
+    {
+      "file": "guides/quests--chief-stan-s-signature.json",
+      "bytes": 2095,
+      "sha256": "48974e2f6e67049d75a55db91e2990e86a25bfc3ed060d93d46bfcc9cde0b6cd",
+      "checkedAt": "2026-11-14T15:55:38.056Z",
       "kind": "quest"
     },
     {
@@ -3160,6 +3223,13 @@
       "bytes": 3029,
       "sha256": "8d2ae74b3d2e6e7eb90f8c45f02cedd9cecdc33ceda9b0a20738a3c2f5fc1881",
       "checkedAt": "2026-10-31T09:59:52.268Z",
+      "kind": "quest"
+    },
+    {
+      "file": "guides/quests--jane-s-first-challenge.json",
+      "bytes": 2268,
+      "sha256": "72af3c1d6924d9a9b4ac87213f8835a5a833b36ac6835cec4dc6304e87162b8e",
+      "checkedAt": "2026-11-14T15:55:41.076Z",
       "kind": "quest"
     },
     {
@@ -3324,6 +3394,13 @@
       "kind": "shop"
     },
     {
+      "file": "guides/shops--max-s-shop.json",
+      "bytes": 3688,
+      "sha256": "317391df5ac3f9ccc5bf4e2dca43aada6edf153429fbdb2910b3dbd17342d2d5",
+      "checkedAt": "2026-11-14T15:55:25.997Z",
+      "kind": "shop"
+    },
+    {
       "file": "guides/shops--mina-s-shop.json",
       "bytes": 3713,
       "sha256": "8c7b4b313a51ca861768c19ad0b9c54e91f35c9fdba426c67dc5a311ef3cf6d0",
@@ -3335,6 +3412,13 @@
       "bytes": 3436,
       "sha256": "6d2ed97977412b04f3823f9e316177059a4426e4ff39b4311c5f98477b04045d",
       "checkedAt": "2026-11-06T10:24:39.240Z",
+      "kind": "shop"
+    },
+    {
+      "file": "guides/shops--raymond-s-shop.json",
+      "bytes": 3897,
+      "sha256": "9318fb80342e67fc392f7699975148eef737cca736ff5cab28fe8c935435dfc8",
+      "checkedAt": "2026-11-14T15:55:29.229Z",
       "kind": "shop"
     },
     {
@@ -4005,15 +4089,15 @@
     {
       "file": "records/npc-2000001.json",
       "bytes": 677,
-      "sha256": "cb9b2ad376cbb82fa9eb8a8902a261d8bf70b539de92efebaa9572bee21d9314",
-      "checkedAt": "2026-11-06T10:24:24.278Z",
+      "sha256": "59d207ef626fc0cf0ae7cb40c57d124200e5b59ef8b1b73d6e1b9b8ddd8c2d2f",
+      "checkedAt": "2026-11-14T15:55:11.058Z",
       "kind": "npc"
     },
     {
       "file": "records/npc-2000002.json",
       "bytes": 674,
-      "sha256": "c01c228800b8a3c6c94ad684ca409c97ad3667867addab0babf191744bae992d",
-      "checkedAt": "2026-11-06T10:24:27.297Z",
+      "sha256": "e77153a985bcac83779f41059fe5cb5b13a2760685672b61fe995ba3ba9b7732",
+      "checkedAt": "2026-11-14T15:55:14.004Z",
       "kind": "npc"
     },
     {

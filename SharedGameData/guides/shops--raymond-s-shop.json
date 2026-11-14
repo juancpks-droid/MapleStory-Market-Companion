@@ -1,0 +1,130 @@
+{
+  "schemaVersion": 1,
+  "path": "/shops/raymond-s-shop",
+  "kind": "shop",
+  "name": "Raymond's Shop",
+  "source": "CCPLZ",
+  "sourceUrl": "https://ccplz.cc/shops/raymond-s-shop",
+  "checkedAt": "2026-11-14T15:55:29.229Z",
+  "notice": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial.",
+  "fields": [
+    {
+      "label": "Shopkeeper",
+      "value": "Raymond"
+    },
+    {
+      "label": "Location",
+      "value": "Henesys Town Hall"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Reported stock",
+      "links": [
+        {
+          "name": "Bronze Arrows for Bows",
+          "path": "/items/bronze-arrows-for-bows",
+          "detail": "Arrows for bows, 2 mesos, Needs citizenship Helpful Stranger+"
+        },
+        {
+          "name": "Bronze Arrows for Crossbows",
+          "path": "/items/bronze-arrows-for-crossbows",
+          "detail": "Arrows for crossbows, 2 mesos, Needs citizenship Helpful Stranger+"
+        },
+        {
+          "name": "Fried Chicken",
+          "path": "/items/fried-chicken",
+          "detail": "Cooked food, 60 mesos"
+        },
+        {
+          "name": "Hot Dog",
+          "path": "/items/hot-dog",
+          "detail": "Cooked food, 180 mesos"
+        },
+        {
+          "name": "Salad",
+          "path": "/items/salad",
+          "detail": "Cooked food, 220 mesos, Needs citizenship Visitor+"
+        },
+        {
+          "name": "Pizza",
+          "path": "/items/pizza",
+          "detail": "Cooked food, 252 mesos, Needs citizenship Recognized Guest+"
+        },
+        {
+          "name": "Hamburger",
+          "path": "/items/hamburger",
+          "detail": "Cooked food, 350 mesos, Needs citizenship Town Resident+"
+        },
+        {
+          "name": "Mrs. Ming Ming's Stew",
+          "path": "/items/mrs-ming-ming-s-stew",
+          "detail": "Cooked food, 480 mesos, Needs citizenship Trusted Neighbor+"
+        },
+        {
+          "name": "Orange Mushroom Daydream",
+          "path": "/items/orange-mushroom-daydream",
+          "detail": "Invasion items, 500 mesos, Needs citizenship Citizen of Honor+"
+        },
+        {
+          "name": "Orange Juice",
+          "path": "/items/orange-juice",
+          "detail": "Cooked food, 540 mesos, Needs citizenship Trusted Neighbor+"
+        },
+        {
+          "name": "Supreme Sniper Potion",
+          "path": "/items/supreme-sniper-potion",
+          "detail": "Buff potions, 600 mesos"
+        },
+        {
+          "name": "Sharpness Potion",
+          "path": "/items/sharpness-potion",
+          "detail": "Buff potions, 750 mesos, Needs citizenship Helpful Stranger+"
+        },
+        {
+          "name": "Fat Sausage",
+          "path": "/items/fat-sausage",
+          "detail": "Cooked food, 800 mesos, Needs citizenship Distinguished Citizen+"
+        },
+        {
+          "name": "Unagi",
+          "path": "/items/unagi",
+          "detail": "Drinks & porridge, 1,000 mesos, Needs citizenship Town Patron+"
+        },
+        {
+          "name": "Grape Juice",
+          "path": "/items/grape-juice",
+          "detail": "Cooked food, 1,260 mesos, Needs citizenship Guardian of the Village+"
+        },
+        {
+          "name": "Elixir",
+          "path": "/items/elixir",
+          "detail": "Potions, 3,000 mesos, Needs citizenship Citizen of Honor+"
+        }
+      ],
+      "total": 16
+    },
+    {
+      "title": "Shopkeeper",
+      "links": [
+        {
+          "name": "Raymond",
+          "path": "/npcs/raymond",
+          "detail": ""
+        }
+      ],
+      "total": 1
+    },
+    {
+      "title": "Location",
+      "links": [
+        {
+          "name": "Henesys Town Hall",
+          "path": "/maps/henesys-town-hall",
+          "detail": ""
+        }
+      ],
+      "total": 1
+    }
+  ]
+}

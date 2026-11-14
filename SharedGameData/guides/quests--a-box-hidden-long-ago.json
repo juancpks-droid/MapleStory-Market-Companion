@@ -1,0 +1,89 @@
+{
+  "schemaVersion": 1,
+  "path": "/quests/a-box-hidden-long-ago",
+  "kind": "quest",
+  "name": "A Gift for a Citizen of Honor (A Box Hidden Long Ago)",
+  "source": "CCPLZ",
+  "sourceUrl": "https://ccplz.cc/quests/a-box-hidden-long-ago",
+  "checkedAt": "2026-11-14T15:55:32.091Z",
+  "notice": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial.",
+  "fields": [
+    {
+      "label": "Minimum level",
+      "value": "57"
+    },
+    {
+      "label": "Category",
+      "value": "Citizenship"
+    },
+    {
+      "label": "EXP reward",
+      "value": "17,800"
+    },
+    {
+      "label": "Meso reward",
+      "value": "1,784"
+    },
+    {
+      "label": "Starts with",
+      "value": "Athena Pierce"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Quest NPCs",
+      "links": [
+        {
+          "name": "Athena Pierce",
+          "path": "/npcs/athena-pierce",
+          "detail": "Starts the quest"
+        }
+      ],
+      "total": 1
+    },
+    {
+      "title": "Complete first",
+      "links": [
+        {
+          "name": "A Gift for a Citizen of Honor (Becoming a Citizen of Honor)",
+          "path": "/quests/becoming-a-citizen-of-honor",
+          "detail": ""
+        }
+      ],
+      "total": 1
+    },
+    {
+      "title": "Items to bring",
+      "links": [
+        {
+          "name": "Athena Pierce's Box",
+          "path": "/items/athena-pierce-s-box",
+          "detail": "x1"
+        }
+      ],
+      "total": 1
+    },
+    {
+      "title": "Item rewards",
+      "links": [
+        {
+          "name": "Elixir",
+          "path": "/items/elixir",
+          "detail": ""
+        }
+      ],
+      "total": 1
+    },
+    {
+      "title": "Where it takes place",
+      "links": [
+        {
+          "name": "Henesys",
+          "path": "/maps/henesys",
+          "detail": ""
+        }
+      ],
+      "total": 1
+    }
+  ]
+}

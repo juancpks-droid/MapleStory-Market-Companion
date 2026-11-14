@@ -1,0 +1,99 @@
+{
+  "schemaVersion": 1,
+  "path": "/quests/an-unknown-savior",
+  "kind": "quest",
+  "name": "Maya and Her Peculiar Savior (An Unknown Savior)",
+  "source": "CCPLZ",
+  "sourceUrl": "https://ccplz.cc/quests/an-unknown-savior",
+  "checkedAt": "2026-11-14T15:55:44.063Z",
+  "notice": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial.",
+  "fields": [
+    {
+      "label": "Minimum level",
+      "value": "47"
+    },
+    {
+      "label": "Category",
+      "value": "Citizenship"
+    },
+    {
+      "label": "EXP reward",
+      "value": "11,400"
+    },
+    {
+      "label": "Meso reward",
+      "value": "1,477"
+    },
+    {
+      "label": "Starts with",
+      "value": "Maya"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Quest NPCs",
+      "links": [
+        {
+          "name": "Maya",
+          "path": "/npcs/maya",
+          "detail": "Starts the quest"
+        }
+      ],
+      "total": 1
+    },
+    {
+      "title": "Complete first",
+      "links": [
+        {
+          "name": "First Greeting with Maya, the Town Resident",
+          "path": "/quests/first-greeting-with-maya-the-town-resident",
+          "detail": ""
+        },
+        {
+          "name": "Maya and the Weird Medicine (Delivering the Weird Medicine)",
+          "path": "/quests/delivering-the-weird-medicine",
+          "detail": ""
+        }
+      ],
+      "total": 2
+    },
+    {
+      "title": "Items to bring",
+      "links": [
+        {
+          "name": "Torn Note",
+          "path": "/items/torn-note",
+          "detail": "x1"
+        }
+      ],
+      "total": 1
+    },
+    {
+      "title": "Item rewards",
+      "links": [
+        {
+          "name": "Elixir",
+          "path": "/items/elixir",
+          "detail": ""
+        }
+      ],
+      "total": 1
+    },
+    {
+      "title": "Where it takes place",
+      "links": [
+        {
+          "name": "Henesys",
+          "path": "/maps/henesys",
+          "detail": ""
+        },
+        {
+          "name": "Someone Else's House",
+          "path": "/maps/someone-else-s-house",
+          "detail": ""
+        }
+      ],
+      "total": 2
+    }
+  ]
+}

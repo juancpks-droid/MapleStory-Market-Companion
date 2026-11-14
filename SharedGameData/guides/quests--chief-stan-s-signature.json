@@ -1,0 +1,98 @@
+{
+  "schemaVersion": 1,
+  "path": "/quests/chief-stan-s-signature",
+  "kind": "quest",
+  "name": "Caretaker's Ledger (Chief Stan's Signature)",
+  "source": "CCPLZ",
+  "sourceUrl": "https://ccplz.cc/quests/chief-stan-s-signature",
+  "checkedAt": "2026-11-14T15:55:38.056Z",
+  "notice": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial.",
+  "fields": [
+    {
+      "label": "Minimum level",
+      "value": "28"
+    },
+    {
+      "label": "Category",
+      "value": "Ellinia"
+    },
+    {
+      "label": "EXP reward",
+      "value": "4,090"
+    },
+    {
+      "label": "Meso reward",
+      "value": "892"
+    },
+    {
+      "label": "Starts with",
+      "value": "Chief Stan"
+    },
+    {
+      "label": "Turn in to",
+      "value": "Manji"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Quest NPCs",
+      "links": [
+        {
+          "name": "Chief Stan",
+          "path": "/npcs/chief-stan",
+          "detail": "Starts the quest"
+        },
+        {
+          "name": "Manji",
+          "path": "/npcs/manji",
+          "detail": "Completes the quest"
+        }
+      ],
+      "total": 2
+    },
+    {
+      "title": "Complete first",
+      "links": [
+        {
+          "name": "Caretaker's Ledger (The Filing Error)",
+          "path": "/quests/the-filing-error",
+          "detail": ""
+        }
+      ],
+      "total": 1
+    },
+    {
+      "title": "Items to bring",
+      "links": [
+        {
+          "name": "Incomplete Ledger",
+          "path": "/items/incomplete-ledger",
+          "detail": "x1"
+        }
+      ],
+      "total": 1
+    },
+    {
+      "title": "Item rewards",
+      "links": [
+        {
+          "name": "Elixir",
+          "path": "/items/elixir",
+          "detail": ""
+        }
+      ],
+      "total": 1
+    },
+    {
+      "title": "Where it takes place",
+      "links": [
+        {
+          "name": "Perion",
+          "path": "/maps/perion",
+          "detail": ""
+        }
+      ],
+      "total": 1
+    }
+  ]
+}

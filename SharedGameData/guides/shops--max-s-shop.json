@@ -1,0 +1,125 @@
+{
+  "schemaVersion": 1,
+  "path": "/shops/max-s-shop",
+  "kind": "shop",
+  "name": "Max's Shop",
+  "source": "CCPLZ",
+  "sourceUrl": "https://ccplz.cc/shops/max-s-shop",
+  "checkedAt": "2026-11-14T15:55:25.997Z",
+  "notice": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial.",
+  "fields": [
+    {
+      "label": "Shopkeeper",
+      "value": "Max"
+    },
+    {
+      "label": "Location",
+      "value": "Kerning City Civic Center"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Reported stock",
+      "links": [
+        {
+          "name": "Fried Chicken",
+          "path": "/items/fried-chicken",
+          "detail": "Cooked food, 60 mesos"
+        },
+        {
+          "name": "Dried Squid",
+          "path": "/items/dried-squid",
+          "detail": "Cooked food, 180 mesos"
+        },
+        {
+          "name": "Salad",
+          "path": "/items/salad",
+          "detail": "Cooked food, 220 mesos, Needs citizenship Visitor+"
+        },
+        {
+          "name": "Pizza",
+          "path": "/items/pizza",
+          "detail": "Cooked food, 252 mesos, Needs citizenship Recognized Guest+"
+        },
+        {
+          "name": "Hamburger",
+          "path": "/items/hamburger",
+          "detail": "Cooked food, 350 mesos, Needs citizenship Town Resident+"
+        },
+        {
+          "name": "Andre's Seafood Soup",
+          "path": "/items/andre-s-seafood-soup",
+          "detail": "Cooked food, 480 mesos, Needs citizenship Trusted Neighbor+"
+        },
+        {
+          "name": "Ribbon Pig Daydream",
+          "path": "/items/ribbon-pig-daydream",
+          "detail": "Invasion items, 500 mesos, Needs citizenship Citizen of Honor+"
+        },
+        {
+          "name": "Orange Juice",
+          "path": "/items/orange-juice",
+          "detail": "Cooked food, 540 mesos, Needs citizenship Trusted Neighbor+"
+        },
+        {
+          "name": "Supreme Dexterity Potion",
+          "path": "/items/supreme-dexterity-potion",
+          "detail": "Buff potions, 600 mesos"
+        },
+        {
+          "name": "Destructive Potion",
+          "path": "/items/destructive-potion",
+          "detail": "Buff potions, 750 mesos, Needs citizenship Helpful Stranger+"
+        },
+        {
+          "name": "Fat Sausage",
+          "path": "/items/fat-sausage",
+          "detail": "Cooked food, 800 mesos, Needs citizenship Distinguished Citizen+"
+        },
+        {
+          "name": "Unagi",
+          "path": "/items/unagi",
+          "detail": "Drinks & porridge, 1,000 mesos, Needs citizenship Town Patron+"
+        },
+        {
+          "name": "Wolbi Throwing Stars",
+          "path": "/items/wolbi-throwing-stars",
+          "detail": "Throwing stars, 1,000 mesos, Needs citizenship Helpful Stranger+"
+        },
+        {
+          "name": "Grape Juice",
+          "path": "/items/grape-juice",
+          "detail": "Cooked food, 1,260 mesos, Needs citizenship Guardian of the Village+"
+        },
+        {
+          "name": "Elixir",
+          "path": "/items/elixir",
+          "detail": "Potions, 3,000 mesos, Needs citizenship Citizen of Honor+"
+        }
+      ],
+      "total": 15
+    },
+    {
+      "title": "Shopkeeper",
+      "links": [
+        {
+          "name": "Max",
+          "path": "/npcs/max",
+          "detail": ""
+        }
+      ],
+      "total": 1
+    },
+    {
+      "title": "Location",
+      "links": [
+        {
+          "name": "Kerning City Civic Center",
+          "path": "/maps/kerning-city-civic-center",
+          "detail": ""
+        }
+      ],
+      "total": 1
+    }
+  ]
+}

@@ -1,0 +1,104 @@
+{
+  "schemaVersion": 1,
+  "path": "/quests/jane-s-first-challenge",
+  "kind": "quest",
+  "name": "Jane the Alchemist (Jane's First Challenge)",
+  "source": "CCPLZ",
+  "sourceUrl": "https://ccplz.cc/quests/jane-s-first-challenge",
+  "checkedAt": "2026-11-14T15:55:41.076Z",
+  "notice": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial.",
+  "fields": [
+    {
+      "label": "Minimum level",
+      "value": "44"
+    },
+    {
+      "label": "Category",
+      "value": "Lith Harbor"
+    },
+    {
+      "label": "EXP reward",
+      "value": "9,940"
+    },
+    {
+      "label": "Meso reward",
+      "value": "1,389"
+    },
+    {
+      "label": "Starts with",
+      "value": "Jane"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Quest NPCs",
+      "links": [
+        {
+          "name": "Jane",
+          "path": "/npcs/jane",
+          "detail": "Starts the quest"
+        }
+      ],
+      "total": 1
+    },
+    {
+      "title": "Complete first",
+      "links": [
+        {
+          "name": "Jane and the Mushroom",
+          "path": "/quests/jane-and-the-mushroom",
+          "detail": ""
+        }
+      ],
+      "total": 1
+    },
+    {
+      "title": "Monsters to defeat",
+      "links": [
+        {
+          "name": "Copper Drake",
+          "path": "/monsters/copper-drake",
+          "detail": "x50"
+        },
+        {
+          "name": "Wraith",
+          "path": "/monsters/wraith",
+          "detail": "x50"
+        }
+      ],
+      "total": 2
+    },
+    {
+      "title": "Items to bring",
+      "links": [
+        {
+          "name": "Drake Skull",
+          "path": "/items/drake-skull",
+          "detail": "x25"
+        },
+        {
+          "name": "Medicine With Weird Vibes",
+          "path": "/items/medicine-with-weird-vibes",
+          "detail": "x25"
+        },
+        {
+          "name": "Pure Water",
+          "path": "/items/pure-water",
+          "detail": "x1"
+        }
+      ],
+      "total": 3
+    },
+    {
+      "title": "Item rewards",
+      "links": [
+        {
+          "name": "Elixir",
+          "path": "/items/elixir",
+          "detail": ""
+        }
+      ],
+      "total": 1
+    }
+  ]
+}

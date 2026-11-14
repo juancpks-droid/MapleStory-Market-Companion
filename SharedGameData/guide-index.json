@@ -28,6 +28,16 @@
       "kind": "item"
     },
     {
+      "path": "/quests/a-box-hidden-long-ago",
+      "name": "A Gift for a Citizen of Honor (A Box Hidden Long Ago)",
+      "kind": "quest"
+    },
+    {
+      "path": "/quests/an-old-grudge",
+      "name": "A Grudge That Won't Rest (An Old Grudge)",
+      "kind": "quest"
+    },
+    {
       "path": "/maps/a-hill-west-of-henesys",
       "name": "A Hill West of Henesys",
       "kind": "map"
@@ -431,6 +441,11 @@
       "path": "/items/cape-magic-def-scroll-intermediate",
       "name": "Cape Magic Def. Scroll: Intermediate",
       "kind": "item"
+    },
+    {
+      "path": "/quests/chief-stan-s-signature",
+      "name": "Caretaker's Ledger (Chief Stan's Signature)",
+      "kind": "quest"
     },
     {
       "path": "/quests/the-filing-error",
@@ -1008,6 +1023,11 @@
       "kind": "item"
     },
     {
+      "path": "/monsters/grim-phantom-watch",
+      "name": "Grim Phantom Watch",
+      "kind": "monster"
+    },
+    {
       "path": "/monsters/grupin",
       "name": "Grupin",
       "kind": "monster"
@@ -1130,6 +1150,11 @@
     {
       "path": "/quests/jane-s-final-challenge",
       "name": "Jane the Alchemist (Jane's Final Challenge)",
+      "kind": "quest"
+    },
+    {
+      "path": "/quests/jane-s-first-challenge",
+      "name": "Jane the Alchemist (Jane's First Challenge)",
       "kind": "quest"
     },
     {
@@ -1368,9 +1393,19 @@
       "kind": "monster"
     },
     {
+      "path": "/shops/max-s-shop",
+      "name": "Max's Shop",
+      "kind": "shop"
+    },
+    {
       "path": "/npcs/maya",
       "name": "Maya",
       "kind": "npc"
+    },
+    {
+      "path": "/quests/an-unknown-savior",
+      "name": "Maya and Her Peculiar Savior (An Unknown Savior)",
+      "kind": "quest"
     },
     {
       "path": "/quests/delivering-the-weird-medicine",
@@ -1611,6 +1646,11 @@
       "path": "/monsters/ratz",
       "name": "Ratz",
       "kind": "monster"
+    },
+    {
+      "path": "/shops/raymond-s-shop",
+      "name": "Raymond's Shop",
+      "kind": "shop"
     },
     {
       "path": "/items/razor",
@@ -2013,6 +2053,16 @@
       "kind": "monster"
     },
     {
+      "path": "/monsters/taurospear",
+      "name": "Taurospear",
+      "kind": "monster"
+    },
+    {
+      "path": "/monsters/thanatos",
+      "name": "Thanatos",
+      "kind": "monster"
+    },
+    {
       "path": "/maps/the-blue-mushroom-forest",
       "name": "The Blue Mushroom Forest",
       "kind": "map"
@@ -2318,6 +2368,11 @@
       "kind": "item"
     },
     {
+      "path": "/monsters/white-fang",
+      "name": "White Fang",
+      "kind": "monster"
+    },
+    {
       "path": "/items/white-fingerless-gloves",
       "name": "White Fingerless Gloves",
       "kind": "item"
@@ -2356,6 +2411,11 @@
       "path": "/items/wisdom-crystal-ore",
       "name": "Wisdom Crystal Ore",
       "kind": "item"
+    },
+    {
+      "path": "/monsters/wraith",
+      "name": "Wraith",
+      "kind": "monster"
     },
     {
       "path": "/items/yakuza-scar",
