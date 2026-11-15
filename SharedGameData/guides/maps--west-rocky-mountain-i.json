@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "path": "/maps/west-rocky-mountain-i",
+  "kind": "map",
+  "name": "West Rocky Mountain I",
+  "source": "CCPLZ",
+  "sourceUrl": "https://ccplz.cc/maps/west-rocky-mountain-i",
+  "checkedAt": "2026-11-15T16:29:17.586Z",
+  "notice": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial.",
+  "fields": [
+    {
+      "label": "Region",
+      "value": "Victoria Island"
+    },
+    {
+      "label": "Street",
+      "value": "Victoria Road"
+    },
+    {
+      "label": "Monster levels",
+      "value": "4 to 17"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Monsters",
+      "links": [
+        {
+          "name": "Red Snail",
+          "path": "/monsters/red-snail",
+          "detail": "Level 4"
+        },
+        {
+          "name": "Stump",
+          "path": "/monsters/stump",
+          "detail": "Level 5"
+        },
+        {
+          "name": "Axe Stump",
+          "path": "/monsters/axe-stump",
+          "detail": "Level 17"
+        }
+      ],
+      "total": 3
+    },
+    {
+      "title": "Connected maps",
+      "links": [
+        {
+          "name": "West Domain of Perion",
+          "path": "/maps/west-domain-of-perion",
+          "detail": "Victoria Road"
+        },
+        {
+          "name": "West Rocky Mountain II",
+          "path": "/maps/west-rocky-mountain-ii",
+          "detail": "Victoria Road"
+        },
+        {
+          "name": "West Street Corner of Perion",
+          "path": "/maps/west-street-corner-of-perion",
+          "detail": "Victoria Road"
+        }
+      ],
+      "total": 3
+    }
+  ]
+}

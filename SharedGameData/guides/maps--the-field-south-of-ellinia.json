@@ -1,0 +1,100 @@
+{
+  "schemaVersion": 1,
+  "path": "/maps/the-field-south-of-ellinia",
+  "kind": "map",
+  "name": "The Field South of Ellinia",
+  "source": "CCPLZ",
+  "sourceUrl": "https://ccplz.cc/maps/the-field-south-of-ellinia",
+  "checkedAt": "2026-11-15T16:29:29.592Z",
+  "notice": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial.",
+  "fields": [
+    {
+      "label": "Region",
+      "value": "Victoria Island"
+    },
+    {
+      "label": "Street",
+      "value": "Victoria Road"
+    },
+    {
+      "label": "Monster levels",
+      "value": "5 to 14"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Monsters",
+      "links": [
+        {
+          "name": "Stump",
+          "path": "/monsters/stump",
+          "detail": "Level 5"
+        },
+        {
+          "name": "Slime",
+          "path": "/monsters/slime",
+          "detail": "Level 6"
+        },
+        {
+          "name": "Dark Stump",
+          "path": "/monsters/dark-stump",
+          "detail": "Level 11"
+        },
+        {
+          "name": "Green Mushroom",
+          "path": "/monsters/green-mushroom",
+          "detail": "Level 14"
+        }
+      ],
+      "total": 4
+    },
+    {
+      "title": "NPCs",
+      "links": [
+        {
+          "name": "Estelle",
+          "path": "/npcs/estelle",
+          "detail": ""
+        }
+      ],
+      "total": 1
+    },
+    {
+      "title": "Connected maps",
+      "links": [
+        {
+          "name": "Ellinia",
+          "path": "/maps/ellinia",
+          "detail": "Victoria Road"
+        },
+        {
+          "name": "The Forest of Wisdom",
+          "path": "/maps/the-forest-of-wisdom",
+          "detail": "Victoria Road"
+        }
+      ],
+      "total": 2
+    },
+    {
+      "title": "Quests set here",
+      "links": [
+        {
+          "name": "Mrs. Ming Ming's Second Worry",
+          "path": "/quests/mrs-ming-ming-s-second-worry",
+          "detail": "Level 15"
+        },
+        {
+          "name": "Mrs. Ming Ming's Second Worry (Estelle's Request)",
+          "path": "/quests/estelle-s-request",
+          "detail": "Level 15"
+        },
+        {
+          "name": "Mrs. Ming Ming's Second Worry (Estelle's Special Sauce)",
+          "path": "/quests/estelle-s-special-sauce",
+          "detail": "Level 15"
+        }
+      ],
+      "total": 3
+    }
+  ]
+}

@@ -1,0 +1,218 @@
+{
+  "schemaVersion": 1,
+  "path": "/monsters/octopus",
+  "kind": "monster",
+  "name": "Octopus",
+  "source": "CCPLZ",
+  "sourceUrl": "https://ccplz.cc/monsters/octopus",
+  "checkedAt": "2026-11-15T16:29:35.599Z",
+  "notice": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial.",
+  "fields": [
+    {
+      "label": "Level",
+      "value": "12"
+    },
+    {
+      "label": "HP",
+      "value": "191"
+    },
+    {
+      "label": "EXP",
+      "value": "23"
+    },
+    {
+      "label": "MP",
+      "value": "50"
+    },
+    {
+      "label": "Attack",
+      "value": "40"
+    },
+    {
+      "label": "Defense",
+      "value": "0"
+    },
+    {
+      "label": "Accuracy",
+      "value": "69"
+    },
+    {
+      "label": "Avoidability",
+      "value": "7"
+    },
+    {
+      "label": "Weak to",
+      "value": "Lightning"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Where it spawns",
+      "links": [
+        {
+          "name": "Damp Tree-Forest",
+          "path": "/maps/damp-tree-forest",
+          "detail": "Victoria Island, 19 spawn points"
+        },
+        {
+          "name": "Damp Forest",
+          "path": "/maps/damp-forest",
+          "detail": "Victoria Island, 15 spawn points"
+        },
+        {
+          "name": "Caution Falling Down",
+          "path": "/maps/caution-falling-down",
+          "detail": "Victoria Island, 12 spawn points"
+        },
+        {
+          "name": "Northern Top of Construction Site",
+          "path": "/maps/northern-top-of-construction-site",
+          "detail": "Victoria Island, 12 spawn points"
+        },
+        {
+          "name": "Kerning City Construction Site",
+          "path": "/maps/kerning-city-construction-site",
+          "detail": "Victoria Island, 10 spawn points"
+        },
+        {
+          "name": "Construction Site North of Kerning City",
+          "path": "/maps/construction-site-north-of-kerning-city",
+          "detail": "Victoria Island, 8 spawn points"
+        },
+        {
+          "name": "Sleepy Dungeon I",
+          "path": "/maps/sleepy-dungeon-i",
+          "detail": "Victoria Island, 2 spawn points"
+        },
+        {
+          "name": "Hunting Ground in the Deep Forest I",
+          "path": "/maps/hunting-ground-in-the-deep-forest-i",
+          "detail": "Victoria Island, 2 spawn points"
+        },
+        {
+          "name": "Swampy Land in a Deep Forest",
+          "path": "/maps/swampy-land-in-a-deep-forest",
+          "detail": "Victoria Island, 2 spawn points"
+        }
+      ],
+      "total": 9
+    },
+    {
+      "title": "Drops",
+      "links": [
+        {
+          "name": "Adamantium Ore",
+          "path": "/items/adamantium-ore",
+          "detail": "Ores & ingots, about 1.2%, usual for its kind"
+        },
+        {
+          "name": "Aquamarine Ore",
+          "path": "/items/aquamarine-ore",
+          "detail": "Gems & gem ores, 4.3% drop rate, 23 kills counted"
+        },
+        {
+          "name": "Arrows for Bows",
+          "path": "/items/arrows-for-bows",
+          "detail": "Arrows for bows, about 1.1%, usual for its kind"
+        },
+        {
+          "name": "Arrows for Crossbows",
+          "path": "/items/arrows-for-crossbows",
+          "detail": "Arrows for crossbows, 4.3% drop rate, 23 kills counted"
+        },
+        {
+          "name": "Brown Winter Hat",
+          "path": "/items/brown-winter-hat",
+          "detail": "Hat, about 0.22%, usual for its kind"
+        },
+        {
+          "name": "Fragment of Magic",
+          "path": "/items/fragment-of-magic",
+          "detail": "Monster drops, 4.3% drop rate, 23 kills counted"
+        },
+        {
+          "name": "Monster Card",
+          "path": "/items/monster-card",
+          "detail": "Quest items"
+        },
+        {
+          "name": "Octopus Leg",
+          "path": "/items/octopus-leg",
+          "detail": "Monster drops, 48% drop rate, 23 kills counted"
+        },
+        {
+          "name": "Old Wisconsin",
+          "path": "/items/old-wisconsin",
+          "detail": "Hat, about 0.22%, usual for its kind"
+        },
+        {
+          "name": "Omok Piece: Octopus (for Maple World's Unique Fun: Omok: Make a Slime & Octopus Omok Set)",
+          "path": "/items/omok-piece-octopus",
+          "detail": "Quest items"
+        },
+        {
+          "name": "One-Handed Sword Attack Scroll: Greater",
+          "path": "/items/one-handed-sword-attack-scroll-greater",
+          "detail": "One-handed sword scrolls"
+        },
+        {
+          "name": "Overall Armor LUK Scroll: Greater",
+          "path": "/items/overall-armor-luk-scroll-greater",
+          "detail": "Overall scrolls"
+        },
+        {
+          "name": "Red Bandana",
+          "path": "/items/red-bandana",
+          "detail": "Hat, about 0.22%, usual for its kind"
+        },
+        {
+          "name": "Red Feather Hat",
+          "path": "/items/red-feather-hat",
+          "detail": "Hat, about 0.22%, usual for its kind"
+        },
+        {
+          "name": "Red Hunter",
+          "path": "/items/red-hunter",
+          "detail": "Hat, about 0.22%, usual for its kind"
+        },
+        {
+          "name": "Red Loosecap",
+          "path": "/items/red-loosecap",
+          "detail": "Hat, about 0.22%, usual for its kind"
+        },
+        {
+          "name": "Red Potion",
+          "path": "/items/red-potion",
+          "detail": "Potions, 4.3% drop rate, 23 kills counted"
+        },
+        {
+          "name": "Red Thief Hood",
+          "path": "/items/red-thief-hood",
+          "detail": "Hat, about 0.22%, usual for its kind"
+        },
+        {
+          "name": "Red Tiberian",
+          "path": "/items/red-tiberian",
+          "detail": "Hat, about 0.22%, usual for its kind"
+        },
+        {
+          "name": "Single Earring",
+          "path": "/items/single-earring",
+          "detail": "Earring, about 0.22%, usual for its kind"
+        }
+      ],
+      "total": 20
+    },
+    {
+      "title": "Quests that need it",
+      "links": [
+        {
+          "name": "Nella & Kerning City Citizen's Request (Andre's Request)",
+          "path": "/quests/andre-s-request",
+          "detail": "Level 10"
+        }
+      ],
+      "total": 1
+    }
+  ]
+}

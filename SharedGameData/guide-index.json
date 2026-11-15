@@ -693,6 +693,11 @@
       "kind": "item"
     },
     {
+      "path": "/maps/downstairs-at-the-forest",
+      "name": "Downstairs at the Forest",
+      "kind": "map"
+    },
+    {
       "path": "/shops/dr-faymus-s-shop",
       "name": "Dr. Faymus's Shop",
       "kind": "shop"
@@ -1168,6 +1173,11 @@
       "kind": "monster"
     },
     {
+      "path": "/monsters/jr-boogie-1",
+      "name": "Jr. Boogie 1",
+      "kind": "monster"
+    },
+    {
       "path": "/monsters/jr-cellion",
       "name": "Jr. Cellion",
       "kind": "monster"
@@ -1270,6 +1280,11 @@
     {
       "path": "/maps/l-forest-iii",
       "name": "L Forest III",
+      "kind": "map"
+    },
+    {
+      "path": "/maps/land-of-wild-boar",
+      "name": "Land of Wild Boar",
       "kind": "map"
     },
     {
@@ -1428,6 +1443,11 @@
       "kind": "item"
     },
     {
+      "path": "/maps/monkey-forest-i",
+      "name": "Monkey Forest I",
+      "kind": "map"
+    },
+    {
       "path": "/items/moon-rock",
       "name": "Moon Rock",
       "kind": "item"
@@ -1493,6 +1513,11 @@
       "kind": "map"
     },
     {
+      "path": "/monsters/octopus",
+      "name": "Octopus",
+      "kind": "monster"
+    },
+    {
       "path": "/quests/olaf-s-second-training",
       "name": "Olaf's Training (Olaf's Second Training)",
       "kind": "quest"
@@ -1546,6 +1571,11 @@
       "path": "/monsters/pepe",
       "name": "Pepe",
       "kind": "monster"
+    },
+    {
+      "path": "/maps/perion",
+      "name": "Perion",
+      "kind": "map"
     },
     {
       "path": "/maps/perion-dungeon-entrance",
@@ -2088,6 +2118,11 @@
       "kind": "map"
     },
     {
+      "path": "/maps/the-field-south-of-ellinia",
+      "name": "The Field South of Ellinia",
+      "kind": "map"
+    },
+    {
       "path": "/maps/the-field-up-north-of-ellinia",
       "name": "The Field Up North of Ellinia",
       "kind": "map"
@@ -2123,6 +2158,11 @@
       "kind": "map"
     },
     {
+      "path": "/maps/the-land-of-wild-boar-ii",
+      "name": "The Land of Wild Boar II",
+      "kind": "map"
+    },
+    {
       "path": "/items/the-magic-rock",
       "name": "The Magic Rock",
       "kind": "item"
@@ -2136,6 +2176,11 @@
       "path": "/quests/test-of-qualification-20102",
       "name": "The Magician's Next Journey (Test of Qualification)",
       "kind": "quest"
+    },
+    {
+      "path": "/maps/the-pig-beach",
+      "name": "The Pig Beach",
+      "kind": "map"
     },
     {
       "path": "/maps/the-rain-forest-east-of-henesys",
@@ -2355,6 +2400,11 @@
     {
       "path": "/maps/west-domain-of-perion",
       "name": "West Domain of Perion",
+      "kind": "map"
+    },
+    {
+      "path": "/maps/west-rocky-mountain-i",
+      "name": "West Rocky Mountain I",
       "kind": "map"
     },
     {

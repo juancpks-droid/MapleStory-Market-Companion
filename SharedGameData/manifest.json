@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "publishedAt": "2026-11-14T15:55:50.300Z",
+  "publishedAt": "2026-11-15T16:29:38.680Z",
   "catalogItems": 12726,
-  "guideRecords": 489,
+  "guideRecords": 499,
   "referenceRecords": 169,
   "entries": [
     {
@@ -29,29 +29,29 @@
     {
       "file": "guides/items--adhesive-bandage.json",
       "bytes": 2129,
-      "sha256": "02bbaeb98efcd4ec04ccc203b4b01100d678c69d9194b11377e351ba6460c72f",
-      "checkedAt": "2026-10-16T09:56:44.183Z",
+      "sha256": "646655a3d9fe86d88d954f6ba8e99e7e907f6177fb1f508e5d5ebfc7b8d8d312",
+      "checkedAt": "2026-11-15T16:28:47.956Z",
       "kind": "item"
     },
     {
       "file": "guides/items--allergic-reaction.json",
       "bytes": 1878,
-      "sha256": "4e0602b0d37cc68bb77c18fa231b5612f01775f90d731cd2bba0e5b7cbf8229d",
-      "checkedAt": "2026-10-16T09:56:47.227Z",
+      "sha256": "0228f4cc7316026946b6a6179e7e7319699e7b1b1cfeab9e7584a18e481565af",
+      "checkedAt": "2026-11-15T16:28:50.760Z",
       "kind": "item"
     },
     {
       "file": "guides/items--animal-face-accessory.json",
       "bytes": 1882,
-      "sha256": "8db94e982dfe8a158d377f7725a3a78d47b6af588127feea3da7199851d7bf82",
-      "checkedAt": "2026-10-16T09:56:50.260Z",
+      "sha256": "14c58e415b9da24f98489dbe45b85557d3b33af68f6ad48fb2c60d4929751336",
+      "checkedAt": "2026-11-15T16:28:53.675Z",
       "kind": "item"
     },
     {
       "file": "guides/items--apple-bubble-gum.json",
       "bytes": 1877,
-      "sha256": "4e56401f6b3eb80d1f01ffdd986f67906c7a0fbcbb2f7c2a1502cc1a9a35e4b6",
-      "checkedAt": "2026-10-16T09:56:53.214Z",
+      "sha256": "5d153b181ae6ac4d543ce401e941ffcecb00189e484fb3e93fcf13f61afc774e",
+      "checkedAt": "2026-11-15T16:28:56.577Z",
       "kind": "item"
     },
     {
@@ -540,8 +540,8 @@
     {
       "file": "guides/items--elixir.json",
       "bytes": 2934,
-      "sha256": "32a362e990f061e98fbb98ea914936e9f910940d4d98f47e7529db34f944c35f",
-      "checkedAt": "2026-11-07T10:08:26.556Z",
+      "sha256": "d4391c082a47a38dde9b8a8fab9aa3ae1fef6ec9762fe88c5952b05ab4c64cd0",
+      "checkedAt": "2026-11-15T16:29:02.575Z",
       "kind": "item"
     },
     {
@@ -841,8 +841,8 @@
     {
       "file": "guides/items--mana-elixir.json",
       "bytes": 1570,
-      "sha256": "80b1adbc9f9e70f4d0dad9a91f8572036e81232bdc556ae150dab623a1fee344",
-      "checkedAt": "2026-11-07T10:08:23.456Z",
+      "sha256": "812c9e2d787f0701df34e7b0050b508bacc8c70abafd4e06ce8104505f5e28c8",
+      "checkedAt": "2026-11-15T16:28:59.565Z",
       "kind": "item"
     },
     {
@@ -967,8 +967,8 @@
     {
       "file": "guides/items--power-elixir.json",
       "bytes": 854,
-      "sha256": "f1160859da681bcc770a2660b2b079b74e8aad1ee1be300e6365a748686fde74",
-      "checkedAt": "2026-11-07T10:08:29.454Z",
+      "sha256": "70661483bfc3ae120643deb30b6735d6e8884c14ab1692a051407a1bef54d2ff",
+      "checkedAt": "2026-11-15T16:29:05.580Z",
       "kind": "item"
     },
     {
@@ -1226,8 +1226,8 @@
     {
       "file": "guides/items--snail-shell.json",
       "bytes": 1594,
-      "sha256": "5002ae83c36552de94349aa3a4099b3cb618504192c5c2f7b81b3b0396a7a40f",
-      "checkedAt": "2026-11-07T10:08:32.433Z",
+      "sha256": "496953b4b21df2484c1c491397b95f934468ae1c061df0ecb1faec4777d62ebb",
+      "checkedAt": "2026-11-15T16:29:08.593Z",
       "kind": "item"
     },
     {
@@ -1532,6 +1532,13 @@
       "kind": "map"
     },
     {
+      "file": "guides/maps--downstairs-at-the-forest.json",
+      "bytes": 1675,
+      "sha256": "0e5eea4d2ffeda08ac258b00b44013d319e89f0588294f8d7e4cf19a14387b9d",
+      "checkedAt": "2026-11-15T16:29:23.619Z",
+      "kind": "map"
+    },
+    {
       "file": "guides/maps--drake-s-meal-table.json",
       "bytes": 1597,
       "sha256": "b0d561e61719636498b0852d71193d773db296ab5375784bdc5b678a32c1bdfc",
@@ -1770,6 +1777,20 @@
       "kind": "map"
     },
     {
+      "file": "guides/maps--land-of-wild-boar.json",
+      "bytes": 1791,
+      "sha256": "b707516e01aa0435779b7c5eb2121aa60df4281841f8d316efc6382bf54e5bf9",
+      "checkedAt": "2026-11-15T16:29:11.583Z",
+      "kind": "map"
+    },
+    {
+      "file": "guides/maps--monkey-forest-i.json",
+      "bytes": 1685,
+      "sha256": "1cec59006d9433c7401de79ceff40d3da0065a3a1bc3bb29f9e8b868f0f4885d",
+      "checkedAt": "2026-11-15T16:29:26.568Z",
+      "kind": "map"
+    },
+    {
       "file": "guides/maps--mushroom-garden-10001021.json",
       "bytes": 1464,
       "sha256": "a3adff64e3b764cdd8ef497770edbf0ed512b97ab9cd4843c2d984038aa0f43b",
@@ -1802,6 +1823,13 @@
       "bytes": 1875,
       "sha256": "a98b556563aba62443a1db2d27b02a36f4fb0f2bbedf3cd35d86296bf3e47bbc",
       "checkedAt": "2026-11-06T10:24:18.244Z",
+      "kind": "map"
+    },
+    {
+      "file": "guides/maps--perion.json",
+      "bytes": 9901,
+      "sha256": "64c97a2960b9839b753969aa90bfbffaf2e09a9bf2dd79b07cb697d34140354b",
+      "checkedAt": "2026-11-15T16:29:14.599Z",
       "kind": "map"
     },
     {
@@ -1973,6 +2001,13 @@
       "kind": "map"
     },
     {
+      "file": "guides/maps--the-field-south-of-ellinia.json",
+      "bytes": 2426,
+      "sha256": "05ad0c7e4a241736d7393779aa6c5f11193a732968ed47a318fcff727f22506a",
+      "checkedAt": "2026-11-15T16:29:29.592Z",
+      "kind": "map"
+    },
+    {
       "file": "guides/maps--the-field-up-north-of-ellinia.json",
       "bytes": 1717,
       "sha256": "6810d612005af966625e655d4784835d7d650833b7654e038367e9fbbec0b30b",
@@ -2019,6 +2054,20 @@
       "bytes": 2196,
       "sha256": "4a25c3ee27f2d4502accc1309246907b8b15abd7b008df22b6e50718b3980e75",
       "checkedAt": "2026-10-24T09:53:41.091Z",
+      "kind": "map"
+    },
+    {
+      "file": "guides/maps--the-land-of-wild-boar-ii.json",
+      "bytes": 1532,
+      "sha256": "bf81196a072078a7e7599ad8e056d9cca932a6c87e976699abd03d3b2e534392",
+      "checkedAt": "2026-11-15T16:29:32.740Z",
+      "kind": "map"
+    },
+    {
+      "file": "guides/maps--the-pig-beach.json",
+      "bytes": 1822,
+      "sha256": "bbd37e32508c4c73df5b1e6cb47e6addc565db6b100dead98eca1a465e57dcba",
+      "checkedAt": "2026-11-15T16:29:20.631Z",
       "kind": "map"
     },
     {
@@ -2180,6 +2229,13 @@
       "bytes": 2086,
       "sha256": "550d2745c4f32a24f90cc132241dfc4732575f93ab470bfd93855ef20fccce19",
       "checkedAt": "2026-11-06T10:24:21.218Z",
+      "kind": "map"
+    },
+    {
+      "file": "guides/maps--west-rocky-mountain-i.json",
+      "bytes": 1690,
+      "sha256": "822ed9218c08d7eb35385654631ac8a67168928d417a87c9950cd0a05db76a6b",
+      "checkedAt": "2026-11-15T16:29:17.586Z",
       "kind": "map"
     },
     {
@@ -2554,6 +2610,13 @@
       "kind": "monster"
     },
     {
+      "file": "guides/monsters--jr-boogie-1.json",
+      "bytes": 2846,
+      "sha256": "77b811b720800523b7edf4c7743a7c3bbc2328b4c995bd00f79a798ff26581f2",
+      "checkedAt": "2026-11-15T16:29:38.574Z",
+      "kind": "monster"
+    },
+    {
       "file": "guides/monsters--jr-cellion.json",
       "bytes": 4692,
       "sha256": "ef70504c3b0bcd91e16334854d5cc0b14eac4b91edd9ff03b6a8249956c2a425",
@@ -2705,6 +2768,13 @@
       "bytes": 3144,
       "sha256": "992ef7cd12782f600126ffac557284943cbfc5e659c6196498e02262e3eab658",
       "checkedAt": "2026-10-30T10:13:06.129Z",
+      "kind": "monster"
+    },
+    {
+      "file": "guides/monsters--octopus.json",
+      "bytes": 6330,
+      "sha256": "132f9f62b2ffe85800d9f848473cf5f3f5b7bcffe8c5c8be9889c5035287ba27",
+      "checkedAt": "2026-11-15T16:29:35.599Z",
       "kind": "monster"
     },
     {
@@ -4110,22 +4180,22 @@
     {
       "file": "records/npc-2000004.json",
       "bytes": 658,
-      "sha256": "017f77c515d4bada109306be5245b0a783386276df1a11c9599eed26b4d285cf",
-      "checkedAt": "2026-11-07T10:08:26.556Z",
+      "sha256": "66e86ab681a2cb0243d95b1bb267af8f2472127a510a0048e787fe756011f6ff",
+      "checkedAt": "2026-11-15T16:29:02.575Z",
       "kind": "npc"
     },
     {
       "file": "records/npc-2000005.json",
       "bytes": 677,
-      "sha256": "6663617b0184f97f81592379746f5cbf7e1209993fb1446461e748f5dd260bba",
-      "checkedAt": "2026-11-07T10:08:29.454Z",
+      "sha256": "49fb2a5dc3c41ace05046da1030bff21a7e364e4603f0d5108c361bea8227816",
+      "checkedAt": "2026-11-15T16:29:05.580Z",
       "kind": "npc"
     },
     {
       "file": "records/npc-2000006.json",
       "bytes": 674,
-      "sha256": "b4ecd617b81974834a4b58cc67968cee0f263e8dfe1dc247ca65545a63e385e1",
-      "checkedAt": "2026-11-07T10:08:23.456Z",
+      "sha256": "a109f77086903be2e7ba4b69c052c62c40e2423086f8bdf4c437919502679fe6",
+      "checkedAt": "2026-11-15T16:28:59.565Z",
       "kind": "npc"
     },
     {
@@ -4257,8 +4327,8 @@
     {
       "file": "records/npc-4000019.json",
       "bytes": 671,
-      "sha256": "71586bb78640c12a03fb2efcd2cc140b85dfaca2eef50a9d8cc899ce434c72a2",
-      "checkedAt": "2026-11-07T10:08:32.433Z",
+      "sha256": "d3057ce68bf7550db79fea4cac3bbdb79922cf8cb54533dee733960922e1dea7",
+      "checkedAt": "2026-11-15T16:29:08.593Z",
       "kind": "npc"
     },
     {

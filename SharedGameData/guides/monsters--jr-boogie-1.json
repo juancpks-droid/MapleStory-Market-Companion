@@ -1,0 +1,113 @@
+{
+  "schemaVersion": 1,
+  "path": "/monsters/jr-boogie-1",
+  "kind": "monster",
+  "name": "Jr. Boogie 1",
+  "source": "CCPLZ",
+  "sourceUrl": "https://ccplz.cc/monsters/jr-boogie-1",
+  "checkedAt": "2026-11-15T16:29:38.574Z",
+  "notice": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial.",
+  "fields": [
+    {
+      "label": "Level",
+      "value": "35"
+    },
+    {
+      "label": "HP",
+      "value": "1,395"
+    },
+    {
+      "label": "EXP",
+      "value": "69"
+    },
+    {
+      "label": "MP",
+      "value": "300"
+    },
+    {
+      "label": "Attack",
+      "value": "154"
+    },
+    {
+      "label": "Defense",
+      "value": "50"
+    },
+    {
+      "label": "Accuracy",
+      "value": "125"
+    },
+    {
+      "label": "Avoidability",
+      "value": "26"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Where it spawns",
+      "links": [
+        {
+          "name": "Sleepy Dungeon V",
+          "path": "/maps/sleepy-dungeon-v",
+          "detail": "Victoria Island, 5 spawn points"
+        },
+        {
+          "name": "Sleepy Dungeon IV",
+          "path": "/maps/sleepy-dungeon-iv",
+          "detail": "Victoria Island, 3 spawn points"
+        },
+        {
+          "name": "Land of Wild Boar",
+          "path": "/maps/land-of-wild-boar",
+          "detail": "Victoria Island, 3 spawn points"
+        },
+        {
+          "name": "Parched Land",
+          "path": "/maps/parched-land",
+          "detail": "Victoria Island, 1 spawn point"
+        },
+        {
+          "name": "Hunting Ground in the Deep Forest I",
+          "path": "/maps/hunting-ground-in-the-deep-forest-i",
+          "detail": "Victoria Island, 1 spawn point"
+        },
+        {
+          "name": "Sleepy Dungeon III",
+          "path": "/maps/sleepy-dungeon-iii",
+          "detail": "Victoria Island, 1 spawn point"
+        },
+        {
+          "name": "B3 <Subway Depot>",
+          "path": "/maps/b3-subway-depot",
+          "detail": "Victoria Island, 1 spawn point"
+        },
+        {
+          "name": "B2 <Subway Depot>",
+          "path": "/maps/b2-subway-depot",
+          "detail": "Victoria Island, 1 spawn point"
+        }
+      ],
+      "total": 8
+    },
+    {
+      "title": "Drops",
+      "links": [
+        {
+          "name": "Garnet Ore",
+          "path": "/items/garnet-ore",
+          "detail": "Gems & gem ores, about 1.2%, usual for its kind"
+        },
+        {
+          "name": "Iron Ore",
+          "path": "/items/iron-ore",
+          "detail": "Ores & ingots, about 1.2%, usual for its kind"
+        },
+        {
+          "name": "Jr. Boogie Horn",
+          "path": "/items/jr-boogie-horn",
+          "detail": "Monster drops"
+        }
+      ],
+      "total": 3
+    }
+  ]
+}

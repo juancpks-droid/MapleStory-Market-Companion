@@ -1,0 +1,329 @@
+{
+  "schemaVersion": 1,
+  "path": "/maps/perion",
+  "kind": "map",
+  "name": "Perion",
+  "source": "CCPLZ",
+  "sourceUrl": "https://ccplz.cc/maps/perion",
+  "checkedAt": "2026-11-15T16:29:14.599Z",
+  "notice": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial.",
+  "fields": [
+    {
+      "label": "Region",
+      "value": "Victoria Island"
+    },
+    {
+      "label": "Street",
+      "value": "Victoria Road"
+    },
+    {
+      "label": "Type",
+      "value": "Town"
+    }
+  ],
+  "sections": [
+    {
+      "title": "NPCs",
+      "links": [
+        {
+          "name": "Anvil",
+          "path": "/npcs/anvil",
+          "detail": ""
+        },
+        {
+          "name": "Ayan",
+          "path": "/npcs/ayan",
+          "detail": ""
+        },
+        {
+          "name": "Blackbull",
+          "path": "/npcs/blackbull",
+          "detail": ""
+        },
+        {
+          "name": "Manji",
+          "path": "/npcs/manji",
+          "detail": ""
+        },
+        {
+          "name": "Mr. Thunder",
+          "path": "/npcs/mr-thunder",
+          "detail": "Weaponcrafter"
+        },
+        {
+          "name": "Mr. Wang (Perion)",
+          "path": "/npcs/mr-wang",
+          "detail": "Storage Keeper"
+        },
+        {
+          "name": "Regular Cab",
+          "path": "/npcs/regular-cab",
+          "detail": ""
+        },
+        {
+          "name": "Silas Irons",
+          "path": "/npcs/silas-irons",
+          "detail": "Blacksmith"
+        },
+        {
+          "name": "Weaponcrafting Station",
+          "path": "/npcs/weaponcrafting-station",
+          "detail": ""
+        }
+      ],
+      "total": 9
+    },
+    {
+      "title": "Connected maps",
+      "links": [
+        {
+          "name": "Deep Valley I",
+          "path": "/maps/deep-valley-i",
+          "detail": "Warning Street"
+        },
+        {
+          "name": "Perion",
+          "path": "/maps/perion",
+          "detail": "Victoria Road"
+        },
+        {
+          "name": "Perion Department Store",
+          "path": "/maps/perion-department-store",
+          "detail": "Victoria Road"
+        },
+        {
+          "name": "Perion Street Corner",
+          "path": "/maps/perion-street-corner",
+          "detail": "Victoria Road"
+        },
+        {
+          "name": "Perion Weapon Store",
+          "path": "/maps/perion-weapon-store",
+          "detail": "Victoria Road"
+        },
+        {
+          "name": "Warriors' Sanctuary",
+          "path": "/maps/warriors-sanctuary",
+          "detail": "Victoria Road"
+        },
+        {
+          "name": "West Street Corner of Perion",
+          "path": "/maps/west-street-corner-of-perion",
+          "detail": "Victoria Road"
+        }
+      ],
+      "total": 7
+    },
+    {
+      "title": "Quests set here",
+      "links": [
+        {
+          "name": "[Event] The One Who Sealed the Darkness",
+          "path": "/quests/event-the-one-who-sealed-the-darkness",
+          "detail": "Level 15"
+        },
+        {
+          "name": "A Blacksmith in My Own Right!",
+          "path": "/quests/a-blacksmith-in-my-own-right",
+          "detail": "Level 25"
+        },
+        {
+          "name": "A Family Reunited (A Father's Love for His Daughter)",
+          "path": "/quests/a-father-s-love-for-his-daughter",
+          "detail": "Level 17"
+        },
+        {
+          "name": "A Family Reunited (The Best Dad)",
+          "path": "/quests/the-best-dad",
+          "detail": "Level 17"
+        },
+        {
+          "name": "A Weaponcrafter in My Own Right!",
+          "path": "/quests/a-weaponcrafter-in-my-own-right",
+          "detail": "Level 25"
+        },
+        {
+          "name": "Arwen and the Glass Shoe",
+          "path": "/quests/arwen-and-the-glass-shoe",
+          "detail": "Level 29"
+        },
+        {
+          "name": "Building a New House For Blackbull",
+          "path": "/quests/building-a-new-house-for-blackbull",
+          "detail": "Level 48"
+        },
+        {
+          "name": "Caretaker's Ledger (Chief Stan's Signature)",
+          "path": "/quests/chief-stan-s-signature",
+          "detail": "Level 28"
+        },
+        {
+          "name": "Dr. Betty's Research on Plants (Progress on Fossil Research)",
+          "path": "/quests/progress-on-fossil-research",
+          "detail": "Level 17"
+        },
+        {
+          "name": "Fixing Blackbull's House",
+          "path": "/quests/fixing-blackbull-s-house",
+          "detail": "Level 11"
+        },
+        {
+          "name": "Luke the Security Guy's Wish to Travel",
+          "path": "/quests/luke-the-security-guy-s-wish-to-travel",
+          "detail": "Level 46"
+        },
+        {
+          "name": "Manji's Old Gladius (Old Gladius)",
+          "path": "/quests/old-gladius",
+          "detail": "Level 50"
+        },
+        {
+          "name": "Maya and Her Peculiar Savior (A Man Atoning)",
+          "path": "/quests/a-man-atoning",
+          "detail": "Level 47"
+        },
+        {
+          "name": "Maya and Her Peculiar Savior (A Name Never Given)",
+          "path": "/quests/a-name-never-given",
+          "detail": "Level 47"
+        },
+        {
+          "name": "Maya and Her Peculiar Savior (A Price to Pay)",
+          "path": "/quests/a-price-to-pay",
+          "detail": "Level 47"
+        },
+        {
+          "name": "Maya and the Weird Medicine (Arcon's Blood?)",
+          "path": "/quests/arcon-s-blood",
+          "detail": "Level 21"
+        },
+        {
+          "name": "Maya and the Weird Medicine (Getting Arcon's Blood)",
+          "path": "/quests/getting-arcon-s-blood",
+          "detail": "Level 21"
+        },
+        {
+          "name": "Maya and the Weird Medicine (Making a Sparkling Rock)",
+          "path": "/quests/making-a-sparkling-rock",
+          "detail": "Level 21"
+        },
+        {
+          "name": "Mr. Thunder in Need of an Apprentice",
+          "path": "/quests/mr-thunder-in-need-of-an-apprentice",
+          "detail": "Level 10"
+        },
+        {
+          "name": "Mr. Thunder in Need of Help",
+          "path": "/quests/mr-thunder-in-need-of-help",
+          "detail": "Level 15"
+        },
+        {
+          "name": "Phil's Call",
+          "path": "/quests/phil-s-call",
+          "detail": "Level 8"
+        },
+        {
+          "name": "Ronnie & the Fairies Building a New House (Third Material Delivery for Building a New House)",
+          "path": "/quests/third-material-delivery-for-building-a-new-house",
+          "detail": "Level 41"
+        },
+        {
+          "name": "Silas Irons in Need of an Apprentice",
+          "path": "/quests/silas-irons-in-need-of-an-apprentice",
+          "detail": "Level 10"
+        },
+        {
+          "name": "Silas Irons in Need of Help",
+          "path": "/quests/silas-irons-in-need-of-help",
+          "detail": "Level 15"
+        },
+        {
+          "name": "The Alligators at the Swamp (Taking Out the Alligators 1)",
+          "path": "/quests/taking-out-the-alligators-1",
+          "detail": "Level 48"
+        },
+        {
+          "name": "The Alligators at the Swamp (Taking Out the Alligators 2)",
+          "path": "/quests/taking-out-the-alligators-2",
+          "detail": "Level 48"
+        },
+        {
+          "name": "The Old Tree (A Report for the Doctor)",
+          "path": "/quests/a-report-for-the-doctor",
+          "detail": "Level 34"
+        },
+        {
+          "name": "The Old Tree (Monstrous Tree Stumpy)",
+          "path": "/quests/monstrous-tree-stumpy",
+          "detail": "Level 34"
+        },
+        {
+          "name": "The Old Tree (Stump Research)",
+          "path": "/quests/stump-research",
+          "detail": "Level 34"
+        },
+        {
+          "name": "The Old Tree (Truth of the Rumor- Dances with Balrog)",
+          "path": "/quests/truth-of-the-rumor-dances-with-balrog",
+          "detail": "Level 34"
+        },
+        {
+          "name": "The Old Tree (Truth of the Rumor-Betty)",
+          "path": "/quests/truth-of-the-rumor-betty",
+          "detail": "Level 34"
+        },
+        {
+          "name": "The Old Tree (Truth of the Rumor-Blackbull)",
+          "path": "/quests/truth-of-the-rumor-blackbull",
+          "detail": "Level 34"
+        },
+        {
+          "name": "The Old Tree (Truth of the Rumor-Manji)",
+          "path": "/quests/truth-of-the-rumor-manji",
+          "detail": "Level 34"
+        },
+        {
+          "name": "The Old Tree (Truth of the Rumor)",
+          "path": "/quests/truth-of-the-rumor",
+          "detail": "Level 34"
+        },
+        {
+          "name": "The Stump Horror Story",
+          "path": "/quests/the-stump-horror-story",
+          "detail": "Level 10"
+        },
+        {
+          "name": "The Warrior's Next Journey",
+          "path": "/quests/the-warrior-s-next-journey",
+          "detail": "Level 30"
+        },
+        {
+          "name": "The Warrior's Next Journey (Finding the Instructor)",
+          "path": "/quests/finding-the-instructor",
+          "detail": "Level 30"
+        },
+        {
+          "name": "The Warrior's Next Journey (Proof of Qualification)",
+          "path": "/quests/proof-of-qualification",
+          "detail": "Level 30"
+        },
+        {
+          "name": "Welcome to the Free Market!",
+          "path": "/quests/welcome-to-the-free-market",
+          "detail": "Level 13"
+        },
+        {
+          "name": "Welcome to the Free Market! (Asking Perion for Help)",
+          "path": "/quests/asking-perion-for-help",
+          "detail": "Level 13"
+        },
+        {
+          "name": "Welcome to the Free Market! (Dances with Balrog's Reply)",
+          "path": "/quests/dances-with-balrog-s-reply",
+          "detail": "Level 13"
+        }
+      ],
+      "total": 41
+    }
+  ]
+}
