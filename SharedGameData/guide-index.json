@@ -8,6 +8,11 @@
       "kind": "quest"
     },
     {
+      "path": "/shops/24-hr-mobile-store-s-shop",
+      "name": "24 Hr Mobile Store's Shop",
+      "kind": "shop"
+    },
+    {
       "path": "/maps/3-way-road-split",
       "name": "3-Way Road-Split",
       "kind": "map"
@@ -81,6 +86,11 @@
       "path": "/items/animal-face-accessory",
       "name": "Animal Face Accessory",
       "kind": "item"
+    },
+    {
+      "path": "/maps/another-entrance",
+      "name": "Another Entrance",
+      "kind": "map"
     },
     {
       "path": "/items/apple-bubble-gum",
@@ -416,6 +426,11 @@
       "path": "/items/bruise",
       "name": "Bruise",
       "kind": "item"
+    },
+    {
+      "path": "/monsters/bubbling",
+      "name": "Bubbling",
+      "kind": "monster"
     },
     {
       "path": "/monsters/buffoon",
@@ -1183,6 +1198,11 @@
       "kind": "monster"
     },
     {
+      "path": "/monsters/jr-cerebes",
+      "name": "Jr. Cerebes",
+      "kind": "monster"
+    },
+    {
       "path": "/monsters/jr-lioner",
       "name": "Jr. Lioner",
       "kind": "monster"
@@ -1353,6 +1373,11 @@
       "kind": "shop"
     },
     {
+      "path": "/monsters/lunar-pixie",
+      "name": "Lunar Pixie",
+      "kind": "monster"
+    },
+    {
       "path": "/monsters/lupin",
       "name": "Lupin",
       "kind": "monster"
@@ -1403,8 +1428,18 @@
       "kind": "monster"
     },
     {
+      "path": "/monsters/master-robo",
+      "name": "Master Robo",
+      "kind": "monster"
+    },
+    {
       "path": "/monsters/master-soul-teddy",
       "name": "Master Soul Teddy",
+      "kind": "monster"
+    },
+    {
+      "path": "/monsters/mateon",
+      "name": "Mateon",
       "kind": "monster"
     },
     {
@@ -1791,6 +1826,11 @@
       "path": "/npcs/robin",
       "name": "Robin",
       "kind": "npc"
+    },
+    {
+      "path": "/monsters/robo",
+      "name": "Robo",
+      "kind": "monster"
     },
     {
       "path": "/maps/rocky-road-i",
@@ -2343,6 +2383,11 @@
       "kind": "monster"
     },
     {
+      "path": "/monsters/tweeter",
+      "name": "Tweeter",
+      "kind": "monster"
+    },
+    {
       "path": "/items/two-handed-sword-attack-scroll-intermediate",
       "name": "Two-handed Sword Attack Scroll: Intermediate",
       "kind": "item"
@@ -2456,6 +2501,11 @@
       "path": "/monsters/wild-kargo",
       "name": "Wild Kargo",
       "kind": "monster"
+    },
+    {
+      "path": "/maps/wild-kargo-s-area",
+      "name": "Wild Kargo's Area",
+      "kind": "map"
     },
     {
       "path": "/items/wisdom-crystal-ore",

@@ -1,0 +1,178 @@
+{
+  "schemaVersion": 1,
+  "path": "/monsters/bubbling",
+  "kind": "monster",
+  "name": "Bubbling",
+  "source": "CCPLZ",
+  "sourceUrl": "https://ccplz.cc/monsters/bubbling",
+  "checkedAt": "2026-11-16T19:44:19.920Z",
+  "notice": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial.",
+  "fields": [
+    {
+      "label": "Level",
+      "value": "15"
+    },
+    {
+      "label": "HP",
+      "value": "259"
+    },
+    {
+      "label": "EXP",
+      "value": "28"
+    },
+    {
+      "label": "MP",
+      "value": "30"
+    },
+    {
+      "label": "Attack",
+      "value": "61"
+    },
+    {
+      "label": "Defense",
+      "value": "20"
+    },
+    {
+      "label": "Accuracy",
+      "value": "81"
+    },
+    {
+      "label": "Avoidability",
+      "value": "9"
+    },
+    {
+      "label": "Weak to",
+      "value": "Lightning"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Where it spawns",
+      "links": [
+        {
+          "name": "Line 1 <Area 1>",
+          "path": "/maps/line-1-area-1",
+          "detail": "Victoria Island, 64 spawn points"
+        },
+        {
+          "name": "B1 <Subway Depot>",
+          "path": "/maps/b1-subway-depot",
+          "detail": "Victoria Island, 9 spawn points"
+        }
+      ],
+      "total": 2
+    },
+    {
+      "title": "Drops",
+      "links": [
+        {
+          "name": "Arrows for Bows",
+          "path": "/items/arrows-for-bows",
+          "detail": "Arrows for bows, about 1.1%, usual for its kind"
+        },
+        {
+          "name": "Arrows for Crossbows",
+          "path": "/items/arrows-for-crossbows",
+          "detail": "Arrows for crossbows, about 1.1%, usual for its kind"
+        },
+        {
+          "name": "Battle Axe",
+          "path": "/items/battle-axe",
+          "detail": "One-handed axe, about 0.22%, usual for its kind"
+        },
+        {
+          "name": "Black Pao",
+          "path": "/items/black-pao",
+          "detail": "Topwear, about 0.22%, usual for its kind"
+        },
+        {
+          "name": "Blue Potion",
+          "path": "/items/blue-potion",
+          "detail": "Potions, about 2.4%, usual for its kind"
+        },
+        {
+          "name": "Brown Able Skirt",
+          "path": "/items/brown-able-skirt",
+          "detail": "Bottomwear, about 0.22%, usual for its kind"
+        },
+        {
+          "name": "Bubbling's Huge Bubble",
+          "path": "/items/bubbling-s-huge-bubble",
+          "detail": "Monster drops, 39% drop rate, 18 kills counted"
+        },
+        {
+          "name": "Dagger Attack Scroll: Lesser",
+          "path": "/items/dagger-attack-scroll-lesser",
+          "detail": "Dagger scrolls"
+        },
+        {
+          "name": "Fish Spear",
+          "path": "/items/fish-spear",
+          "detail": "Spear, about 0.22%, usual for its kind"
+        },
+        {
+          "name": "Grey Able Armor",
+          "path": "/items/grey-able-armor",
+          "detail": "Topwear, about 0.22%, usual for its kind"
+        },
+        {
+          "name": "Mithril Ore",
+          "path": "/items/mithril-ore",
+          "detail": "Ores & ingots, about 1.2%, usual for its kind"
+        },
+        {
+          "name": "Monster Card",
+          "path": "/items/monster-card",
+          "detail": "Quest items"
+        },
+        {
+          "name": "Pet Equip Speed Scroll: Intermediate",
+          "path": "/items/pet-equip-speed-scroll-intermediate",
+          "detail": "Pet equipment scrolls"
+        },
+        {
+          "name": "Pet Equip Speed Scroll: Lesser",
+          "path": "/items/pet-equip-speed-scroll-lesser",
+          "detail": "Pet equipment scrolls"
+        },
+        {
+          "name": "Red Apprentice Hat",
+          "path": "/items/red-apprentice-hat",
+          "detail": "Hat, about 0.22%, usual for its kind"
+        },
+        {
+          "name": "Red Potion",
+          "path": "/items/red-potion",
+          "detail": "Potions, about 2.4%, usual for its kind"
+        },
+        {
+          "name": "Sapphire Ore",
+          "path": "/items/sapphire-ore",
+          "detail": "Gems & gem ores, about 1.2%, usual for its kind"
+        },
+        {
+          "name": "Triple-Tipped Zamadar",
+          "path": "/items/triple-tipped-zamadar",
+          "detail": "Dagger, about 0.22%, usual for its kind"
+        }
+      ],
+      "total": 18
+    },
+    {
+      "title": "Quests that need it",
+      "links": [
+        {
+          "name": "Ronnie & the Fairies Building a New House (Second Material Delivery for Building a New House)",
+          "path": "/quests/second-material-delivery-for-building-a-new-house",
+          "detail": "Level 41"
+        },
+        {
+          "name": "Silas Irons in Need of Help",
+          "path": "/quests/silas-irons-in-need-of-help",
+          "detail": "Level 15"
+        }
+      ],
+      "total": 2
+    }
+  ]
+}

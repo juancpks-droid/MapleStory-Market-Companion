@@ -1,0 +1,43 @@
+{
+  "schemaVersion": 1,
+  "path": "/maps/another-entrance",
+  "kind": "map",
+  "name": "Another Entrance",
+  "source": "CCPLZ",
+  "sourceUrl": "https://ccplz.cc/maps/another-entrance",
+  "checkedAt": "2026-11-16T19:44:14.045Z",
+  "notice": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial.",
+  "fields": [
+    {
+      "label": "Region",
+      "value": "Victoria Island"
+    },
+    {
+      "label": "Street",
+      "value": "Dungeon"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Connected maps",
+      "links": [
+        {
+          "name": "Another Path",
+          "path": "/maps/another-path",
+          "detail": "Dungeon"
+        },
+        {
+          "name": "Drake's Meal Table",
+          "path": "/maps/drake-s-meal-table",
+          "detail": "Dungeon"
+        },
+        {
+          "name": "The Tunnel That Lost Light II",
+          "path": "/maps/the-tunnel-that-lost-light-ii",
+          "detail": "Dungeon"
+        }
+      ],
+      "total": 3
+    }
+  ]
+}

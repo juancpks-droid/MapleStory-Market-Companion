@@ -1,0 +1,178 @@
+{
+  "schemaVersion": 1,
+  "path": "/monsters/lunar-pixie",
+  "kind": "monster",
+  "name": "Lunar Pixie",
+  "source": "CCPLZ",
+  "sourceUrl": "https://ccplz.cc/monsters/lunar-pixie",
+  "checkedAt": "2026-11-16T19:44:25.940Z",
+  "notice": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial.",
+  "fields": [
+    {
+      "label": "Level",
+      "value": "45"
+    },
+    {
+      "label": "HP",
+      "value": "1,730"
+    },
+    {
+      "label": "EXP",
+      "value": "117"
+    },
+    {
+      "label": "MP",
+      "value": "80"
+    },
+    {
+      "label": "Attack",
+      "value": "190"
+    },
+    {
+      "label": "Defense",
+      "value": "0"
+    },
+    {
+      "label": "Accuracy",
+      "value": "136"
+    },
+    {
+      "label": "Avoidability",
+      "value": "30"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Where it spawns",
+      "links": [
+        {
+          "name": "Cloud Park IV",
+          "path": "/maps/cloud-park-iv",
+          "detail": "Ossyria, 26 spawn points"
+        },
+        {
+          "name": "Cloud Park VI",
+          "path": "/maps/cloud-park-vi",
+          "detail": "Ossyria, 22 spawn points"
+        },
+        {
+          "name": "Cloud Park III",
+          "path": "/maps/cloud-park-iii",
+          "detail": "Ossyria, 20 spawn points"
+        },
+        {
+          "name": "Cloud Park V",
+          "path": "/maps/cloud-park-v",
+          "detail": "Ossyria, 20 spawn points"
+        },
+        {
+          "name": "Strolling Path II",
+          "path": "/maps/strolling-path-ii",
+          "detail": "Ossyria, 16 spawn points"
+        },
+        {
+          "name": "Disposed Flower Garden",
+          "path": "/maps/disposed-flower-garden",
+          "detail": "Ossyria, 4 spawn points"
+        }
+      ],
+      "total": 6
+    },
+    {
+      "title": "Drops",
+      "links": [
+        {
+          "name": "Arrows for Bows",
+          "path": "/items/arrows-for-bows",
+          "detail": "Arrows for bows, about 1.1%, usual for its kind"
+        },
+        {
+          "name": "Arrows for Crossbows",
+          "path": "/items/arrows-for-crossbows",
+          "detail": "Arrows for crossbows, about 1.1%, usual for its kind"
+        },
+        {
+          "name": "Blue Napoleon",
+          "path": "/items/blue-napoleon",
+          "detail": "Cape, about 0.22%, usual for its kind"
+        },
+        {
+          "name": "Blue Potion",
+          "path": "/items/blue-potion",
+          "detail": "Potions, about 2.4%, usual for its kind"
+        },
+        {
+          "name": "Dark Calaf",
+          "path": "/items/dark-calaf",
+          "detail": "Overall, about 0.22%, usual for its kind"
+        },
+        {
+          "name": "Dark Calas",
+          "path": "/items/dark-calas",
+          "detail": "Overall, about 0.22%, usual for its kind"
+        },
+        {
+          "name": "Dark Matty",
+          "path": "/items/dark-matty",
+          "detail": "Hat, about 0.22%, usual for its kind"
+        },
+        {
+          "name": "Fairy Wing",
+          "path": "/items/fairy-wing",
+          "detail": "Crafting materials"
+        },
+        {
+          "name": "Fragment of Magic",
+          "path": "/items/fragment-of-magic",
+          "detail": "Monster drops"
+        },
+        {
+          "name": "Lunar Pixie's Moonpiece",
+          "path": "/items/lunar-pixie-s-moonpiece",
+          "detail": "Monster drops"
+        },
+        {
+          "name": "Maroon Moon",
+          "path": "/items/maroon-moon",
+          "detail": "Topwear, about 0.22%, usual for its kind"
+        },
+        {
+          "name": "Maroon Moon Pants",
+          "path": "/items/maroon-moon-pants",
+          "detail": "Bottomwear, about 0.22%, usual for its kind"
+        },
+        {
+          "name": "Silver Ore",
+          "path": "/items/silver-ore",
+          "detail": "Ores & ingots, about 1.2%, usual for its kind"
+        },
+        {
+          "name": "Stiff Feather",
+          "path": "/items/stiff-feather",
+          "detail": "Crafting materials"
+        },
+        {
+          "name": "The Magic Rock",
+          "path": "/items/the-magic-rock",
+          "detail": "Magic rocks"
+        },
+        {
+          "name": "White Potion",
+          "path": "/items/white-potion",
+          "detail": "Potions, about 2.4%, usual for its kind"
+        },
+        {
+          "name": "Wisdom Crystal Ore",
+          "path": "/items/wisdom-crystal-ore",
+          "detail": "Crafting materials"
+        },
+        {
+          "name": "Yellow Umbrella",
+          "path": "/items/yellow-umbrella",
+          "detail": "One-handed sword, about 0.22%, usual for its kind"
+        }
+      ],
+      "total": 18
+    }
+  ]
+}

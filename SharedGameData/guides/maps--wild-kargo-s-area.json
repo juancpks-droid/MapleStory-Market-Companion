@@ -1,0 +1,53 @@
+{
+  "schemaVersion": 1,
+  "path": "/maps/wild-kargo-s-area",
+  "kind": "map",
+  "name": "Wild Kargo's Area",
+  "source": "CCPLZ",
+  "sourceUrl": "https://ccplz.cc/maps/wild-kargo-s-area",
+  "checkedAt": "2026-11-16T19:44:17.018Z",
+  "notice": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial.",
+  "fields": [
+    {
+      "label": "Region",
+      "value": "Victoria Island"
+    },
+    {
+      "label": "Street",
+      "value": "Dungeon"
+    },
+    {
+      "label": "Monster levels",
+      "value": "40 to 62"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Monsters",
+      "links": [
+        {
+          "name": "Cold Eye",
+          "path": "/monsters/cold-eye",
+          "detail": "Level 40"
+        },
+        {
+          "name": "Wild Kargo",
+          "path": "/monsters/wild-kargo",
+          "detail": "Level 62"
+        }
+      ],
+      "total": 2
+    },
+    {
+      "title": "Connected maps",
+      "links": [
+        {
+          "name": "Drake's Meal Table",
+          "path": "/maps/drake-s-meal-table",
+          "detail": "Dungeon"
+        }
+      ],
+      "total": 1
+    }
+  ]
+}
