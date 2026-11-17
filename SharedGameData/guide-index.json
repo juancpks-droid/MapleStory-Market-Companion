@@ -113,9 +113,29 @@
       "kind": "item"
     },
     {
+      "path": "/recipes/craft-arrows-for-bows-3-1-1",
+      "name": "Arrows for Bows (makes 5)",
+      "kind": "recipe"
+    },
+    {
+      "path": "/recipes/craft-arrows-for-bows",
+      "name": "Arrows for Bows (makes 500)",
+      "kind": "recipe"
+    },
+    {
       "path": "/items/arrows-for-crossbows",
       "name": "Arrows for Crossbows",
       "kind": "item"
+    },
+    {
+      "path": "/recipes/craft-arrows-for-crossbows-3-1-3",
+      "name": "Arrows for Crossbows (makes 5)",
+      "kind": "recipe"
+    },
+    {
+      "path": "/recipes/craft-arrows-for-crossbows",
+      "name": "Arrows for Crossbows (makes 500)",
+      "kind": "recipe"
     },
     {
       "path": "/npcs/arthur",
@@ -261,6 +281,11 @@
       "path": "/items/blue-anakarune",
       "name": "Blue Anakarune",
       "kind": "item"
+    },
+    {
+      "path": "/recipes/craft-blue-apprentice-hat",
+      "name": "Blue Apprentice Hat",
+      "kind": "recipe"
     },
     {
       "path": "/items/blue-lumati",
@@ -890,6 +915,11 @@
     {
       "path": "/items/general-s-mustache-2",
       "name": "General's Mustache (2)",
+      "kind": "item"
+    },
+    {
+      "path": "/items/gentleman-s-mustache",
+      "name": "Gentleman's Mustache",
       "kind": "item"
     },
     {
@@ -1753,6 +1783,11 @@
       "kind": "item"
     },
     {
+      "path": "/items/red-kabuki-mask",
+      "name": "Red Kabuki Mask",
+      "kind": "item"
+    },
+    {
       "path": "/items/red-moonlight",
       "name": "Red Moonlight",
       "kind": "item"
@@ -2478,6 +2513,11 @@
       "kind": "item"
     },
     {
+      "path": "/items/white-kabuki-mask",
+      "name": "White Kabuki Mask",
+      "kind": "item"
+    },
+    {
       "path": "/items/white-nightfox",
       "name": "White Nightfox",
       "kind": "item"
@@ -2520,6 +2560,11 @@
     {
       "path": "/items/yakuza-scar",
       "name": "Yakuza Scar",
+      "kind": "item"
+    },
+    {
+      "path": "/items/yellow-kabuki-mask",
+      "name": "Yellow Kabuki Mask",
       "kind": "item"
     },
     {

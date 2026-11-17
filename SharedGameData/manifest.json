@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "publishedAt": "2026-11-16T19:44:41.041Z",
+  "publishedAt": "2026-11-17T18:41:24.646Z",
   "catalogItems": 12726,
-  "guideRecords": 509,
+  "guideRecords": 518,
   "referenceRecords": 169,
   "entries": [
     {
@@ -85,8 +85,8 @@
     {
       "file": "guides/items--australia-face-painting.json",
       "bytes": 2136,
-      "sha256": "23e3aedd200c93ab206bdd2021f6729752b5f6b1901bf734be0e9b053811bc92",
-      "checkedAt": "2026-10-16T09:57:08.212Z",
+      "sha256": "3bc0c99ef572573ba893a41678fb62b777f842ae9134931ac3300aeb5f930b8c",
+      "checkedAt": "2026-11-17T18:40:33.581Z",
       "kind": "item"
     },
     {
@@ -587,6 +587,13 @@
       "kind": "item"
     },
     {
+      "file": "guides/items--gentleman-s-mustache.json",
+      "bytes": 2127,
+      "sha256": "b001a0c0ef663ee7311b086fcde7bc7bbb4c4f60155b7335f15691be22eb83cd",
+      "checkedAt": "2026-11-17T18:41:18.489Z",
+      "kind": "item"
+    },
+    {
       "file": "guides/items--gigantic-sledge.json",
       "bytes": 2219,
       "sha256": "00f18b6824417d993fb26960dc2f6b003aae52aa287a61ac2ca10c8144a210c6",
@@ -596,29 +603,29 @@
     {
       "file": "guides/items--gloves-attack-scroll-chaos.json",
       "bytes": 1325,
-      "sha256": "8867f104623b94c1e8936423a56066b15b3bbcb48f93a9abf30f439c5f8ce967",
-      "checkedAt": "2026-11-09T10:19:55.549Z",
+      "sha256": "e4d6e80dba6adcb9c7673fcd77f75e62cd5c8d1a1129895789c86c358fb50100",
+      "checkedAt": "2026-11-17T18:40:54.488Z",
       "kind": "item"
     },
     {
       "file": "guides/items--gloves-attack-scroll-greater.json",
       "bytes": 1583,
-      "sha256": "857787c899c48ade8e46db51e3b8555f0594a86a7a92eab6c2d0a928292721c8",
-      "checkedAt": "2026-11-09T10:19:52.541Z",
+      "sha256": "e0c7a829684ae005d71bd4a9b9acfbab43c90b809c74bb5c366c47c650ebe6cc",
+      "checkedAt": "2026-11-17T18:40:51.591Z",
       "kind": "item"
     },
     {
       "file": "guides/items--gloves-attack-scroll-intermediate.json",
       "bytes": 1988,
-      "sha256": "7c47cac9417aa378f28e9723646047edd3a29871562d72d74743ad56f1a390f7",
-      "checkedAt": "2026-11-05T10:26:14.776Z",
+      "sha256": "decba80bfa574a06267f9009b97e4752f6da1ab727e133cf285d9af6379458d3",
+      "checkedAt": "2026-11-17T18:40:48.460Z",
       "kind": "item"
     },
     {
       "file": "guides/items--gloves-attack-scroll-lesser.json",
       "bytes": 1818,
-      "sha256": "455dff934cc72336fc002880233dbf2f3e6ef1b19d16090769c380fdf279bcfc",
-      "checkedAt": "2026-11-09T10:19:49.520Z",
+      "sha256": "618306936ac48150a729aaba947b3d20bf58bcd54fe2c35ed1a9eb62b417b34a",
+      "checkedAt": "2026-11-17T18:40:45.783Z",
       "kind": "item"
     },
     {
@@ -1056,6 +1063,13 @@
       "kind": "item"
     },
     {
+      "file": "guides/items--red-kabuki-mask.json",
+      "bytes": 2112,
+      "sha256": "6656330a476b5de42c2242e5a0d53bb3efce281271761cf312cd91c64fd30203",
+      "checkedAt": "2026-11-17T18:41:12.592Z",
+      "kind": "item"
+    },
+    {
       "file": "guides/items--red-moonlight.json",
       "bytes": 2677,
       "sha256": "6ff761b258f141e4bf31bfb21db0a9015f965c1493be52fac68dfdbdae878198",
@@ -1406,6 +1420,13 @@
       "kind": "item"
     },
     {
+      "file": "guides/items--white-kabuki-mask.json",
+      "bytes": 2118,
+      "sha256": "745e2669dd1556a0235e6586610b3a974e0af53f18f3af857bec8feb4d9ae737",
+      "checkedAt": "2026-11-17T18:41:09.673Z",
+      "kind": "item"
+    },
+    {
       "file": "guides/items--white-nightfox.json",
       "bytes": 2323,
       "sha256": "3345012ec451013be462ae259cfce5112bff0fca21cafa49198801a9cfe05fd5",
@@ -1438,6 +1459,13 @@
       "bytes": 1848,
       "sha256": "5bacd9307aedf6e5b1fd5b132958d2fae4a2a53184c2af30db5b853b69b2c8af",
       "checkedAt": "2026-10-19T10:00:55.744Z",
+      "kind": "item"
+    },
+    {
+      "file": "guides/items--yellow-kabuki-mask.json",
+      "bytes": 2121,
+      "sha256": "d5d6c514eb6923f076c68b9044346989125f9fd4e59ec295b87714cc1c29977d",
+      "checkedAt": "2026-11-17T18:41:15.489Z",
       "kind": "item"
     },
     {
@@ -1891,8 +1919,8 @@
     {
       "file": "guides/maps--sleepy-dungeon-iii.json",
       "bytes": 1751,
-      "sha256": "990caf3d32c0221c2d7906ed044324e7d6081fe26bd76892695cdbbd96eb37c1",
-      "checkedAt": "2026-10-16T09:57:17.179Z",
+      "sha256": "fe6b8e5ffbe898cff68af036f46421512495c8cea12d3b0db377e621abb94f5b",
+      "checkedAt": "2026-11-17T18:40:42.510Z",
       "kind": "map"
     },
     {
@@ -1905,8 +1933,8 @@
     {
       "file": "guides/maps--sleepy-dungeon-v.json",
       "bytes": 1853,
-      "sha256": "33fb811847d3ccfc781b9ba279dc663c370c19db99b57b445f07ee21ce422492",
-      "checkedAt": "2026-10-16T09:57:11.202Z",
+      "sha256": "1b60404ee15ead21d3ee8808be5182f8a76a5c634c5f457ec747ca746c1910ad",
+      "checkedAt": "2026-11-17T18:40:36.456Z",
       "kind": "map"
     },
     {
@@ -2164,8 +2192,8 @@
     {
       "file": "guides/maps--tree-dungeon-forest-up-north-ix.json",
       "bytes": 1176,
-      "sha256": "be2d15f525d427878de9126dcb10bf41ae13b1cbe2b93e9bdd87f1195a9f14d5",
-      "checkedAt": "2026-10-16T09:57:14.195Z",
+      "sha256": "015a67aee4df0f8ab3f3fd9c45ad4815a4471c451a90c54efe83aab01edc138b",
+      "checkedAt": "2026-11-17T18:40:39.519Z",
       "kind": "map"
     },
     {
@@ -3429,6 +3457,41 @@
       "kind": "quest"
     },
     {
+      "file": "guides/recipes--craft-arrows-for-bows-3-1-1.json",
+      "bytes": 1558,
+      "sha256": "f2a5d047422fbf18e9e52712be560963daf373630f14aaf21a4dd64cd1c6b68d",
+      "checkedAt": "2026-11-17T18:40:57.442Z",
+      "kind": "recipe"
+    },
+    {
+      "file": "guides/recipes--craft-arrows-for-bows.json",
+      "bytes": 1666,
+      "sha256": "cdd728deb300f26e7ebbedb781ecbb2fde2ec9b914701b0131450b4dd35b67ae",
+      "checkedAt": "2026-11-17T18:41:00.484Z",
+      "kind": "recipe"
+    },
+    {
+      "file": "guides/recipes--craft-arrows-for-crossbows-3-1-3.json",
+      "bytes": 1583,
+      "sha256": "7d62f5716a21e4d51f19ed2e155e40af74f214b722ab716ed6c6378e90400b1e",
+      "checkedAt": "2026-11-17T18:41:03.650Z",
+      "kind": "recipe"
+    },
+    {
+      "file": "guides/recipes--craft-arrows-for-crossbows.json",
+      "bytes": 1701,
+      "sha256": "14b0b77d993effe5ba1c81ed3e137d8c8ffb2ac53a36b4a57cef2ff3dd78e935",
+      "checkedAt": "2026-11-17T18:41:06.935Z",
+      "kind": "recipe"
+    },
+    {
+      "file": "guides/recipes--craft-blue-apprentice-hat.json",
+      "bytes": 2407,
+      "sha256": "c3b0d5667f6311115b2eda91114b23ca35f17917dc0601114ecfc8696454b175",
+      "checkedAt": "2026-11-17T18:41:24.526Z",
+      "kind": "recipe"
+    },
+    {
       "file": "guides/recipes--craft-brown-apprentice-hat.json",
       "bytes": 2420,
       "sha256": "4dec0f800dbc17fa3b4c906056bffc75835489ad19c9fcd36f2643d8fd147cd9",
@@ -4642,29 +4705,29 @@
     {
       "file": "records/npc-classic-2040800.json",
       "bytes": 723,
-      "sha256": "ec6aa916359cdd20f8ffde5928dc7df156f4d42ab008431a021154f02b83eb4a",
-      "checkedAt": "2026-11-09T10:19:49.520Z",
+      "sha256": "6a21c0078a8c13d8ea9d1ac3d2435cc95f9cb0f047635195d623516bf5e461d7",
+      "checkedAt": "2026-11-17T18:40:45.783Z",
       "kind": "npc"
     },
     {
       "file": "records/npc-classic-2040801.json",
       "bytes": 740,
-      "sha256": "88ab631c8ae32303a542ad9ae7e1b65430310e9619be7f5478bbac78f5e64e31",
-      "checkedAt": "2026-11-05T10:26:14.776Z",
+      "sha256": "2d92cbfe29fb74bb9af41f544e12c5a8288383931756f2319a37487e040cacde",
+      "checkedAt": "2026-11-17T18:40:48.460Z",
       "kind": "npc"
     },
     {
       "file": "records/npc-classic-2040802.json",
       "bytes": 725,
-      "sha256": "37e31836579bc6754b0d06db704261fe8bd8f267ad7a11ed34258fcf04c58a1b",
-      "checkedAt": "2026-11-09T10:19:52.541Z",
+      "sha256": "919fc87c43fcd2506132d57527e3bbcfd2db19814d2073dc3f749adcbb767abf",
+      "checkedAt": "2026-11-17T18:40:51.591Z",
       "kind": "npc"
     },
     {
       "file": "records/npc-classic-2040803.json",
       "bytes": 719,
-      "sha256": "b19d72fa04efad3081d9b5879a0ac8b9279f439ae9a0f7f4e2268d4ec44d5f40",
-      "checkedAt": "2026-11-09T10:19:55.549Z",
+      "sha256": "dc5666caf63a68704d32e4375ed0602940d2ab1c39243cd92c8a9182addb2625",
+      "checkedAt": "2026-11-17T18:40:54.488Z",
       "kind": "npc"
     },
     {

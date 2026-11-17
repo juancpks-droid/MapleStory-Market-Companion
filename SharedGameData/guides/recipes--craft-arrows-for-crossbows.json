@@ -1,0 +1,76 @@
+{
+  "schemaVersion": 1,
+  "path": "/recipes/craft-arrows-for-crossbows",
+  "kind": "recipe",
+  "name": "Arrows for Crossbows (makes 500)",
+  "source": "CCPLZ",
+  "sourceUrl": "https://ccplz.cc/recipes/craft-arrows-for-crossbows",
+  "checkedAt": "2026-11-17T18:41:06.935Z",
+  "notice": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial.",
+  "fields": [
+    {
+      "label": "Crafting skill",
+      "value": "Woodcrafting"
+    },
+    {
+      "label": "Crafting skill level",
+      "value": "1"
+    },
+    {
+      "label": "Crafts",
+      "value": "500"
+    },
+    {
+      "label": "Crafting EXP",
+      "value": "3"
+    },
+    {
+      "label": "Result quantity",
+      "value": "500"
+    },
+    {
+      "label": "Required skill level",
+      "value": "1"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Makes",
+      "links": [
+        {
+          "name": "Arrows for Crossbows",
+          "path": "/items/arrows-for-crossbows",
+          "detail": "x500"
+        }
+      ],
+      "total": 1
+    },
+    {
+      "title": "Ingredients",
+      "links": [
+        {
+          "name": "Processed Wood",
+          "path": "/items/processed-wood",
+          "detail": "x1"
+        },
+        {
+          "name": "Stiff Feather",
+          "path": "/items/stiff-feather",
+          "detail": "x1"
+        }
+      ],
+      "total": 2
+    },
+    {
+      "title": "Result",
+      "links": [
+        {
+          "name": "Arrows for Crossbows",
+          "path": "/items/arrows-for-crossbows",
+          "detail": "Quantity: 500"
+        }
+      ],
+      "total": 1
+    }
+  ]
+}
