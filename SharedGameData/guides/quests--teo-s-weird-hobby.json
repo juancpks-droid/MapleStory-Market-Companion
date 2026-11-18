@@ -1,0 +1,89 @@
+{
+  "schemaVersion": 1,
+  "path": "/quests/teo-s-weird-hobby",
+  "kind": "quest",
+  "name": "Teo's Collection (Teo's Weird Hobby)",
+  "source": "CCPLZ",
+  "sourceUrl": "https://ccplz.cc/quests/teo-s-weird-hobby",
+  "checkedAt": "2026-11-18T18:15:06.428Z",
+  "notice": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial.",
+  "fields": [
+    {
+      "label": "Minimum level",
+      "value": "8"
+    },
+    {
+      "label": "Category",
+      "value": "Lith Harbor"
+    },
+    {
+      "label": "EXP reward",
+      "value": "124"
+    },
+    {
+      "label": "Meso reward",
+      "value": "277"
+    },
+    {
+      "label": "Starts with",
+      "value": "Teo"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Quest NPCs",
+      "links": [
+        {
+          "name": "Teo",
+          "path": "/npcs/teo",
+          "detail": "Starts the quest"
+        }
+      ],
+      "total": 1
+    },
+    {
+      "title": "Monsters to defeat",
+      "links": [
+        {
+          "name": "Slime",
+          "path": "/monsters/slime",
+          "detail": "x10"
+        }
+      ],
+      "total": 1
+    },
+    {
+      "title": "Items to bring",
+      "links": [
+        {
+          "name": "Slime Bubble",
+          "path": "/items/slime-bubble",
+          "detail": "x1"
+        }
+      ],
+      "total": 1
+    },
+    {
+      "title": "Item rewards",
+      "links": [
+        {
+          "name": "Fried Chicken",
+          "path": "/items/fried-chicken",
+          "detail": ""
+        }
+      ],
+      "total": 1
+    },
+    {
+      "title": "Where it takes place",
+      "links": [
+        {
+          "name": "Lith Harbor",
+          "path": "/maps/lith-harbor",
+          "detail": ""
+        }
+      ],
+      "total": 1
+    }
+  ]
+}

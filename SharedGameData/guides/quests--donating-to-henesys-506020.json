@@ -1,0 +1,96 @@
+{
+  "schemaVersion": 1,
+  "path": "/quests/donating-to-henesys-506020",
+  "kind": "quest",
+  "name": "Donating to Henesys (Mushroom Spore)",
+  "source": "CCPLZ",
+  "sourceUrl": "https://ccplz.cc/quests/donating-to-henesys-506020",
+  "checkedAt": "2026-11-18T18:15:09.357Z",
+  "notice": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial.",
+  "fields": [
+    {
+      "label": "Minimum level",
+      "value": "12"
+    },
+    {
+      "label": "Category",
+      "value": "Citizenship"
+    },
+    {
+      "label": "Repeats",
+      "value": "Weekly, one of 17 in its rotation"
+    },
+    {
+      "label": "EXP reward",
+      "value": "334"
+    },
+    {
+      "label": "Meso reward",
+      "value": "409"
+    },
+    {
+      "label": "Starts with",
+      "value": "Community Board (Henesys)"
+    },
+    {
+      "label": "Turn in to",
+      "value": "Arthur"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Quest NPCs",
+      "links": [
+        {
+          "name": "Community Board (Henesys)",
+          "path": "/npcs/community-board",
+          "detail": "Starts the quest"
+        },
+        {
+          "name": "Arthur",
+          "path": "/npcs/arthur",
+          "detail": "Completes the quest"
+        }
+      ],
+      "total": 2
+    },
+    {
+      "title": "Items to bring",
+      "links": [
+        {
+          "name": "Mushroom Spore",
+          "path": "/items/mushroom-spore",
+          "detail": "x30"
+        }
+      ],
+      "total": 1
+    },
+    {
+      "title": "Item rewards",
+      "links": [
+        {
+          "name": "Blue Potion",
+          "path": "/items/blue-potion",
+          "detail": ""
+        }
+      ],
+      "total": 1
+    },
+    {
+      "title": "Where it takes place",
+      "links": [
+        {
+          "name": "Henesys",
+          "path": "/maps/henesys",
+          "detail": ""
+        },
+        {
+          "name": "Henesys Town Hall",
+          "path": "/maps/henesys-town-hall",
+          "detail": ""
+        }
+      ],
+      "total": 2
+    }
+  ]
+}

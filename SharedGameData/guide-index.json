@@ -288,6 +288,11 @@
       "kind": "recipe"
     },
     {
+      "path": "/recipes/craft-blue-bandana",
+      "name": "Blue Bandana",
+      "kind": "recipe"
+    },
+    {
       "path": "/items/blue-lumati",
       "name": "Blue Lumati",
       "kind": "item"
@@ -351,6 +356,11 @@
       "path": "/items/bow-attack-scroll-greater",
       "name": "Bow Attack Scroll: Greater",
       "kind": "item"
+    },
+    {
+      "path": "/recipes/craft-bronze-ingot",
+      "name": "Bronze Ingot",
+      "kind": "recipe"
     },
     {
       "path": "/items/bronze-koif",
@@ -718,6 +728,11 @@
       "kind": "item"
     },
     {
+      "path": "/quests/donating-to-henesys-506020",
+      "name": "Donating to Henesys (Mushroom Spore)",
+      "kind": "quest"
+    },
+    {
       "path": "/quests/donating-to-henesys-506023",
       "name": "Donating to Henesys (Orange Mushroom Cap)",
       "kind": "quest"
@@ -846,6 +861,11 @@
       "path": "/monsters/evil-eye",
       "name": "Evil Eye",
       "kind": "monster"
+    },
+    {
+      "path": "/quests/how-to-enjoy-mushrooms",
+      "name": "Father's Mushroom Stew (How to Enjoy Mushrooms)",
+      "kind": "quest"
     },
     {
       "path": "/monsters/fire-boar",
@@ -1161,6 +1181,11 @@
       "path": "/maps/hunting-ground-middle-of-the-forest-ii",
       "name": "Hunting Ground Middle of the Forest II",
       "kind": "map"
+    },
+    {
+      "path": "/quests/i-need-help-on-my-homework",
+      "name": "I Need Help on My Homework!",
+      "kind": "quest"
     },
     {
       "path": "/monsters/ice-sentinel",
@@ -1523,6 +1548,11 @@
       "kind": "shop"
     },
     {
+      "path": "/quests/mrs-ming-ming-s-first-worry",
+      "name": "Mrs. Ming Ming's First Worry",
+      "kind": "quest"
+    },
+    {
       "path": "/monsters/mushmom",
       "name": "Mushmom",
       "kind": "monster"
@@ -1733,6 +1763,11 @@
       "kind": "item"
     },
     {
+      "path": "/monsters/rafflesia",
+      "name": "Rafflesia",
+      "kind": "monster"
+    },
+    {
       "path": "/items/rainbow-colored-snail-shell",
       "name": "Rainbow-colored Snail Shell",
       "kind": "item"
@@ -1898,6 +1933,11 @@
       "kind": "item"
     },
     {
+      "path": "/monsters/rotten-mushroom",
+      "name": "Rotten Mushroom",
+      "kind": "monster"
+    },
+    {
       "path": "/npcs/rowen-the-fairy",
       "name": "Rowen the Fairy",
       "kind": "npc"
@@ -1910,6 +1950,11 @@
     {
       "path": "/quests/collecting-150-cursed-dolls",
       "name": "Rowen the Fairy and the Cursed Doll (Collecting 150 Cursed Dolls)",
+      "kind": "quest"
+    },
+    {
+      "path": "/quests/collecting-50-cursed-dolls",
+      "name": "Rowen the Fairy and the Cursed Doll (Collecting 50 Cursed Dolls)",
       "kind": "quest"
     },
     {
@@ -1996,6 +2041,11 @@
       "path": "/monsters/shroom",
       "name": "Shroom",
       "kind": "monster"
+    },
+    {
+      "path": "/quests/silas-irons-in-need-of-an-apprentice",
+      "name": "Silas Irons in Need of an Apprentice",
+      "kind": "quest"
     },
     {
       "path": "/maps/sleepy-dungeon-i",
@@ -2161,6 +2211,11 @@
       "path": "/monsters/taurospear",
       "name": "Taurospear",
       "kind": "monster"
+    },
+    {
+      "path": "/quests/teo-s-weird-hobby",
+      "name": "Teo's Collection (Teo's Weird Hobby)",
+      "kind": "quest"
     },
     {
       "path": "/monsters/thanatos",
@@ -2461,6 +2516,11 @@
       "path": "/items/wand-magic-attack-scroll-intermediate",
       "name": "Wand Magic Attack Scroll: Intermediate",
       "kind": "item"
+    },
+    {
+      "path": "/recipes/craft-war-bow",
+      "name": "War Bow",
+      "kind": "recipe"
     },
     {
       "path": "/maps/watch-out-for-icy-path-i",

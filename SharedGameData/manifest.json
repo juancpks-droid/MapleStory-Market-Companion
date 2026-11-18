@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "publishedAt": "2026-11-17T18:41:24.646Z",
+  "publishedAt": "2026-11-18T18:15:27.466Z",
   "catalogItems": 12726,
-  "guideRecords": 518,
+  "guideRecords": 530,
   "referenceRecords": 169,
   "entries": [
     {
@@ -217,9 +217,9 @@
     },
     {
       "file": "guides/items--blue-potion.json",
-      "bytes": 21228,
-      "sha256": "f2edc68d88972a879cccec2f6a3f9eeabea1579ca22d5c1ecbf4b8a4fb2e22e9",
-      "checkedAt": "2026-11-10T10:16:37.972Z",
+      "bytes": 21239,
+      "sha256": "33356fb5b710ca540cf071a7655f9d6035da48146216f8257d5b3822dae8b3b4",
+      "checkedAt": "2026-11-18T18:14:51.410Z",
       "kind": "item"
     },
     {
@@ -1085,9 +1085,9 @@
     },
     {
       "file": "guides/items--red-potion.json",
-      "bytes": 5525,
-      "sha256": "8c7fe62dcd0e18fb1f486664fc55ead743121b5180e736657f814ddf56afa015",
-      "checkedAt": "2026-11-10T10:16:34.898Z",
+      "bytes": 5843,
+      "sha256": "012e6a4a03729c906f21babf5abc37f42cbc4f05cebc5f57372db5167f4956f5",
+      "checkedAt": "2026-11-18T18:14:48.393Z",
       "kind": "item"
     },
     {
@@ -1926,8 +1926,8 @@
     {
       "file": "guides/maps--sleepy-dungeon-iv.json",
       "bytes": 1761,
-      "sha256": "873fec590a6a7438787ab95ca51d8c258cd6b3a44c5c7b4d50b3bd7fca7d3046",
-      "checkedAt": "2026-10-17T09:50:17.890Z",
+      "sha256": "d3c1852bdb4528b46a60084c7924e74a55394347e47a6dbf6440b644bc561044",
+      "checkedAt": "2026-11-18T18:14:42.349Z",
       "kind": "map"
     },
     {
@@ -2205,23 +2205,23 @@
     },
     {
       "file": "guides/maps--tree-dungeon-forest-up-north-vi.json",
-      "bytes": 1302,
-      "sha256": "ae27fc819c15bb4ce05349503196cb8ef1ba5b71f37c84f9c05a0f22b7222f78",
-      "checkedAt": "2026-10-17T09:50:14.981Z",
+      "bytes": 1548,
+      "sha256": "743d5abc8fcb1c761e95ec1a619c2ec3800f872d7cb22edca8ca97759d3eaf08",
+      "checkedAt": "2026-11-18T18:14:39.375Z",
       "kind": "map"
     },
     {
       "file": "guides/maps--tree-dungeon-forest-up-north-vii.json",
-      "bytes": 1427,
-      "sha256": "e47c851d9b86f47bab02e87cc5d9afd6f7c0c1c017e37635dbf35c1d241debdf",
-      "checkedAt": "2026-10-17T09:50:20.918Z",
+      "bytes": 1673,
+      "sha256": "0cb3eecc025bf2abdc513cb51b7bc210595d3336df4a5feb3bd5a6ecb10db0d2",
+      "checkedAt": "2026-11-18T18:14:45.358Z",
       "kind": "map"
     },
     {
       "file": "guides/maps--tree-dungeon-forest-up-north-viii.json",
       "bytes": 1182,
-      "sha256": "374fd9359fa56e6fffc3ca970a731fb9555e5c703bacc68f2611e7e549e95a4f",
-      "checkedAt": "2026-10-16T09:57:20.240Z",
+      "sha256": "ea2a0dba5213b1f96adcc4911c9ea4f74fd515c4abf4506d5e1e2923a51f462e",
+      "checkedAt": "2026-11-18T18:14:36.370Z",
       "kind": "map"
     },
     {
@@ -2925,6 +2925,13 @@
       "kind": "monster"
     },
     {
+      "file": "guides/monsters--rafflesia.json",
+      "bytes": 2537,
+      "sha256": "70a5f96bcef67b279ba348641c702c50988f68f021cf2188b159720c32233701",
+      "checkedAt": "2026-11-18T18:15:12.372Z",
+      "kind": "monster"
+    },
+    {
       "file": "guides/monsters--ratz.json",
       "bytes": 1177,
       "sha256": "e81c614ef7988324a3fb6776d11589db179b3f2f2c61f7f9d5a0d306ab0e8caa",
@@ -2964,6 +2971,13 @@
       "bytes": 1131,
       "sha256": "ecbcf9d77018b2492646068de6e4b2d4c32608607d061633188d9a3452a5f08e",
       "checkedAt": "2026-11-11T10:22:24.647Z",
+      "kind": "monster"
+    },
+    {
+      "file": "guides/monsters--rotten-mushroom.json",
+      "bytes": 2946,
+      "sha256": "8504d2df48fde84752cb7fb7858600fe49476b64995e9cd062662f5ae432d3f4",
+      "checkedAt": "2026-11-18T18:15:15.338Z",
       "kind": "monster"
     },
     {
@@ -3331,6 +3345,13 @@
       "kind": "quest"
     },
     {
+      "file": "guides/quests--collecting-50-cursed-dolls.json",
+      "bytes": 2773,
+      "sha256": "3c5b35b3c61c791bb83e9b76574b7400fa2cea1a3d19cd1e178889d1ffa00378",
+      "checkedAt": "2026-11-18T18:15:21.383Z",
+      "kind": "quest"
+    },
+    {
       "file": "guides/quests--construction-site-b3-shumi-s-lost-sack-of-cash.json",
       "bytes": 2104,
       "sha256": "5d301aafaea200c1b18c9ec933563ed513d301c467907348753773651f03f73e",
@@ -3349,6 +3370,13 @@
       "bytes": 2333,
       "sha256": "661d8f3e81f5ad1c66664db961b0b92393b5e125aff0d851630150d5df6bed63",
       "checkedAt": "2026-10-29T10:12:47.981Z",
+      "kind": "quest"
+    },
+    {
+      "file": "guides/quests--donating-to-henesys-506020.json",
+      "bytes": 2124,
+      "sha256": "b8c4f490bcda56b9cae69bc340fac439809db5f1f93a6451d13dcb61f42c9faf",
+      "checkedAt": "2026-11-18T18:15:09.357Z",
       "kind": "quest"
     },
     {
@@ -3377,6 +3405,20 @@
       "bytes": 2830,
       "sha256": "1d11225aa020390bfbad928b5d491ca8552d52a52ab22ed042bbd86cdd8c1333",
       "checkedAt": "2026-10-18T09:51:20.409Z",
+      "kind": "quest"
+    },
+    {
+      "file": "guides/quests--how-to-enjoy-mushrooms.json",
+      "bytes": 1891,
+      "sha256": "91355c055d7e3276dead6f7ccdf5864530560d21c84742d3349abcb45e79fb3b",
+      "checkedAt": "2026-11-18T18:15:18.368Z",
+      "kind": "quest"
+    },
+    {
+      "file": "guides/quests--i-need-help-on-my-homework.json",
+      "bytes": 2049,
+      "sha256": "02926ba66b9b0ab368dc835cddea267273e4b8b77df093681b3a88e0230fab28",
+      "checkedAt": "2026-11-18T18:15:00.357Z",
       "kind": "quest"
     },
     {
@@ -3415,6 +3457,13 @@
       "kind": "quest"
     },
     {
+      "file": "guides/quests--mrs-ming-ming-s-first-worry.json",
+      "bytes": 1787,
+      "sha256": "f492a7dd801fadee218450efce6bb9b408583f8174221d0c0130a6521a5419ab",
+      "checkedAt": "2026-11-18T18:15:03.366Z",
+      "kind": "quest"
+    },
+    {
       "file": "guides/quests--olaf-s-second-training.json",
       "bytes": 2055,
       "sha256": "acbea72704fa228d81acb75e37a1ffe568c05c59a70148ab66f8f23a6986362c",
@@ -3426,6 +3475,20 @@
       "bytes": 1557,
       "sha256": "5ba0f01fa5294cff4aa7c3c6b3abe335bbdc34a40e178590dbd00f6232c7bef0",
       "checkedAt": "2026-10-22T09:59:15.544Z",
+      "kind": "quest"
+    },
+    {
+      "file": "guides/quests--silas-irons-in-need-of-an-apprentice.json",
+      "bytes": 1810,
+      "sha256": "492dd18fb9a319e81acc6a581987553b0b1d3ad3cf1f3402acd4e5b9931e7208",
+      "checkedAt": "2026-11-18T18:15:24.409Z",
+      "kind": "quest"
+    },
+    {
+      "file": "guides/quests--teo-s-weird-hobby.json",
+      "bytes": 1850,
+      "sha256": "16610022604db445103d9b7e5f09ad18949c9aec9ba1cccee5f23f4637138a99",
+      "checkedAt": "2026-11-18T18:15:06.428Z",
       "kind": "quest"
     },
     {
@@ -3492,6 +3555,20 @@
       "kind": "recipe"
     },
     {
+      "file": "guides/recipes--craft-blue-bandana.json",
+      "bytes": 2358,
+      "sha256": "589d67515fc4f9285ad10a74b234e68d9fa9c96f617e3a7c1ed35d97cdd83a63",
+      "checkedAt": "2026-11-18T18:14:54.369Z",
+      "kind": "recipe"
+    },
+    {
+      "file": "guides/recipes--craft-bronze-ingot.json",
+      "bytes": 1623,
+      "sha256": "39acec3d36cbd96cbd55f0358ec2b84e4db76faa3dca747a04c4506ce8d55ddc",
+      "checkedAt": "2026-11-18T18:15:27.394Z",
+      "kind": "recipe"
+    },
+    {
       "file": "guides/recipes--craft-brown-apprentice-hat.json",
       "bytes": 2420,
       "sha256": "4dec0f800dbc17fa3b4c906056bffc75835489ad19c9fcd36f2643d8fd147cd9",
@@ -3531,6 +3608,13 @@
       "bytes": 2277,
       "sha256": "b7fc1fe1902e6d47c8499612994ab6a7abb633d30f7295e5784bd0fdb68016ca",
       "checkedAt": "2026-10-30T10:13:03.164Z",
+      "kind": "recipe"
+    },
+    {
+      "file": "guides/recipes--craft-war-bow.json",
+      "bytes": 2355,
+      "sha256": "eee1dceb1ad02639e22f37b777408f3c588df51ea9af19fffed5580702f0478c",
+      "checkedAt": "2026-11-18T18:14:57.587Z",
       "kind": "recipe"
     },
     {
@@ -4285,8 +4369,8 @@
     {
       "file": "records/npc-2000000.json",
       "bytes": 666,
-      "sha256": "49c3d5e57fa390add01f451e2532e378d59e256e4a3424b69b2f9c2c2ec8f332",
-      "checkedAt": "2026-11-10T10:16:34.898Z",
+      "sha256": "17d4431cedf2891cf4900e48494fef829ffa1246b1518c6844f67d751d9108ba",
+      "checkedAt": "2026-11-18T18:14:48.393Z",
       "kind": "npc"
     },
     {
@@ -4306,8 +4390,8 @@
     {
       "file": "records/npc-2000003.json",
       "bytes": 671,
-      "sha256": "2503e559368bb055495a9e507b33ccaf93978a8b17759cd2a4c63c43d7dbfecf",
-      "checkedAt": "2026-11-10T10:16:37.972Z",
+      "sha256": "980c9c269b8e813ea064742d8139db787606b642d44be62c6cc31629e8911899",
+      "checkedAt": "2026-11-18T18:14:51.410Z",
       "kind": "npc"
     },
     {
