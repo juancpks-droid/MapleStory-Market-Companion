@@ -1,0 +1,123 @@
+{
+  "schemaVersion": 1,
+  "path": "/items/black-swimming-cap",
+  "kind": "item",
+  "name": "Black Swimming Cap",
+  "source": "CCPLZ",
+  "sourceUrl": "https://ccplz.cc/items/black-swimming-cap",
+  "checkedAt": "2026-11-19T18:26:01.654Z",
+  "notice": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial.",
+  "fields": [
+    {
+      "label": "Type",
+      "value": "Hat"
+    },
+    {
+      "label": "Required level",
+      "value": "8"
+    },
+    {
+      "label": "Class",
+      "value": "All classes"
+    },
+    {
+      "label": "Weapon defense",
+      "value": "+8"
+    },
+    {
+      "label": "Max HP",
+      "value": "+4"
+    },
+    {
+      "label": "Max MP",
+      "value": "+4"
+    },
+    {
+      "label": "Upgrade slots",
+      "value": "7"
+    },
+    {
+      "label": "NPC sell price",
+      "value": "450 mesos"
+    },
+    {
+      "label": "NPC buy price (lowest recorded)",
+      "value": "900 mesos"
+    },
+    {
+      "label": "Required STR",
+      "value": "0"
+    },
+    {
+      "label": "Required DEX",
+      "value": "0"
+    },
+    {
+      "label": "Required INT",
+      "value": "0"
+    },
+    {
+      "label": "Required LUK",
+      "value": "0"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Sold in",
+      "links": [
+        {
+          "name": "Natasha's Shop",
+          "path": "/shops/natasha-s-shop",
+          "detail": ""
+        }
+      ],
+      "total": 1
+    },
+    {
+      "title": "Similar equipment",
+      "links": [
+        {
+          "name": "Blue Swimming Cap",
+          "path": "/items/blue-swimming-cap",
+          "detail": "Level 8"
+        },
+        {
+          "name": "Red Swimming Cap",
+          "path": "/items/red-swimming-cap",
+          "detail": "Level 8"
+        },
+        {
+          "name": "Black Bandana",
+          "path": "/items/black-bandana",
+          "detail": "Level 10"
+        },
+        {
+          "name": "Black Ghetto Beanie",
+          "path": "/items/black-ghetto-beanie",
+          "detail": "Level 10"
+        },
+        {
+          "name": "Blue Apprentice Hat",
+          "path": "/items/blue-apprentice-hat",
+          "detail": "Level 10"
+        },
+        {
+          "name": "Blue Bandana",
+          "path": "/items/blue-bandana",
+          "detail": "Level 10"
+        },
+        {
+          "name": "Blue Ghetto Beanie",
+          "path": "/items/blue-ghetto-beanie",
+          "detail": "Level 10"
+        },
+        {
+          "name": "Bronze Koif",
+          "path": "/items/bronze-koif",
+          "detail": "Level 10"
+        }
+      ],
+      "total": 8
+    }
+  ]
+}

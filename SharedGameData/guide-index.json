@@ -223,6 +223,11 @@
       "kind": "item"
     },
     {
+      "path": "/items/black-headband",
+      "name": "Black Headband",
+      "kind": "item"
+    },
+    {
       "path": "/items/black-hunter",
       "name": "Black Hunter",
       "kind": "item"
@@ -263,6 +268,11 @@
       "kind": "item"
     },
     {
+      "path": "/items/black-swimming-cap",
+      "name": "Black Swimming Cap",
+      "kind": "item"
+    },
+    {
       "path": "/monsters/block-golem",
       "name": "Block Golem",
       "kind": "monster"
@@ -291,6 +301,11 @@
       "path": "/recipes/craft-blue-bandana",
       "name": "Blue Bandana",
       "kind": "recipe"
+    },
+    {
+      "path": "/items/blue-headband",
+      "name": "Blue Headband",
+      "kind": "item"
     },
     {
       "path": "/items/blue-lumati",
@@ -526,6 +541,11 @@
       "path": "/monsters/chirppy",
       "name": "Chirppy",
       "kind": "monster"
+    },
+    {
+      "path": "/quests/chrishrama-in-need-of-an-apprentice",
+      "name": "Chrishrama in Need of an Apprentice",
+      "kind": "quest"
     },
     {
       "path": "/monsters/chronos",
@@ -918,6 +938,11 @@
       "kind": "npc"
     },
     {
+      "path": "/recipes/craft-garnet",
+      "name": "Garnet",
+      "kind": "recipe"
+    },
+    {
       "path": "/items/garnet-ore",
       "name": "Garnet Ore",
       "kind": "item"
@@ -1090,6 +1115,11 @@
     {
       "path": "/items/green-winter-hat",
       "name": "Green Winter Hat",
+      "kind": "item"
+    },
+    {
+      "path": "/items/grey-t-shirt",
+      "name": "Grey T-Shirt",
       "kind": "item"
     },
     {
@@ -1583,6 +1613,11 @@
       "kind": "item"
     },
     {
+      "path": "/shops/natasha-s-shop",
+      "name": "Natasha's Shop",
+      "kind": "shop"
+    },
+    {
       "path": "/npcs/nella",
       "name": "Nella (Kerning City)",
       "kind": "npc"
@@ -1658,6 +1693,11 @@
       "kind": "item"
     },
     {
+      "path": "/shops/pan-s-shop",
+      "name": "Pan's Shop",
+      "kind": "shop"
+    },
+    {
       "path": "/monsters/panda-teddy",
       "name": "Panda Teddy",
       "kind": "monster"
@@ -1721,6 +1761,11 @@
       "path": "/monsters/platoon-chronos",
       "name": "Platoon Chronos",
       "kind": "monster"
+    },
+    {
+      "path": "/quests/lucas-s-reply",
+      "name": "Please bring this letter to Lucas (Lucas's Reply)",
+      "kind": "quest"
     },
     {
       "path": "/items/power-crystal-ore",
@@ -1808,6 +1853,11 @@
       "kind": "item"
     },
     {
+      "path": "/items/red-headband",
+      "name": "Red Headband",
+      "kind": "item"
+    },
+    {
       "path": "/items/red-hwarang-shirt",
       "name": "Red Hwarang Shirt",
       "kind": "item"
@@ -1845,6 +1895,11 @@
     {
       "path": "/items/red-shark",
       "name": "Red Shark",
+      "kind": "item"
+    },
+    {
+      "path": "/items/red-skullcap",
+      "name": "Red Skullcap",
       "kind": "item"
     },
     {
@@ -1955,6 +2010,11 @@
     {
       "path": "/quests/collecting-50-cursed-dolls",
       "name": "Rowen the Fairy and the Cursed Doll (Collecting 50 Cursed Dolls)",
+      "kind": "quest"
+    },
+    {
+      "path": "/quests/collecting-70-cursed-dolls",
+      "name": "Rowen the Fairy and the Cursed Doll (Collecting 70 Cursed Dolls)",
       "kind": "quest"
     },
     {
@@ -2620,6 +2680,11 @@
     {
       "path": "/items/yakuza-scar",
       "name": "Yakuza Scar",
+      "kind": "item"
+    },
+    {
+      "path": "/items/yellow-headband",
+      "name": "Yellow Headband",
       "kind": "item"
     },
     {

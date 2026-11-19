@@ -1,0 +1,185 @@
+{
+  "schemaVersion": 1,
+  "path": "/shops/natasha-s-shop",
+  "kind": "shop",
+  "name": "Natasha's Shop",
+  "source": "CCPLZ",
+  "sourceUrl": "https://ccplz.cc/shops/natasha-s-shop",
+  "checkedAt": "2026-11-19T18:25:40.717Z",
+  "notice": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial.",
+  "fields": [
+    {
+      "label": "Shopkeeper",
+      "value": "Natasha"
+    },
+    {
+      "label": "Location",
+      "value": "Lith Harbor Armor Shop"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Reported stock",
+      "links": [
+        {
+          "name": "Blue Rubber Boots",
+          "path": "/items/blue-rubber-boots",
+          "detail": "Shoes, 50 mesos"
+        },
+        {
+          "name": "Leather Sandals",
+          "path": "/items/leather-sandals",
+          "detail": "Shoes, 50 mesos"
+        },
+        {
+          "name": "Red Rubber Boots",
+          "path": "/items/red-rubber-boots",
+          "detail": "Shoes, 50 mesos"
+        },
+        {
+          "name": "Yellow Rubber Boots",
+          "path": "/items/yellow-rubber-boots",
+          "detail": "Shoes, 50 mesos"
+        },
+        {
+          "name": "Black Headband",
+          "path": "/items/black-headband",
+          "detail": "Hat, 600 mesos"
+        },
+        {
+          "name": "Blue Headband",
+          "path": "/items/blue-headband",
+          "detail": "Hat, 600 mesos"
+        },
+        {
+          "name": "Brown Skullcap",
+          "path": "/items/brown-skullcap",
+          "detail": "Hat, 600 mesos"
+        },
+        {
+          "name": "Green Headband",
+          "path": "/items/green-headband",
+          "detail": "Hat, 600 mesos"
+        },
+        {
+          "name": "Red Headband",
+          "path": "/items/red-headband",
+          "detail": "Hat, 600 mesos"
+        },
+        {
+          "name": "Yellow Headband",
+          "path": "/items/yellow-headband",
+          "detail": "Hat, 600 mesos"
+        },
+        {
+          "name": "Jean Capris",
+          "path": "/items/jean-capris",
+          "detail": "Bottomwear, 800 mesos"
+        },
+        {
+          "name": "Black Swimming Cap",
+          "path": "/items/black-swimming-cap",
+          "detail": "Hat, 900 mesos"
+        },
+        {
+          "name": "Blue Swimming Cap",
+          "path": "/items/blue-swimming-cap",
+          "detail": "Hat, 900 mesos"
+        },
+        {
+          "name": "Red Swimming Cap",
+          "path": "/items/red-swimming-cap",
+          "detail": "Hat, 900 mesos"
+        },
+        {
+          "name": "White Bandana",
+          "path": "/items/white-bandana",
+          "detail": "Hat, 1,200 mesos"
+        },
+        {
+          "name": "Metal Gear",
+          "path": "/items/metal-gear",
+          "detail": "Hat, 1,800 mesos"
+        },
+        {
+          "name": "Bronze Aroa Boots",
+          "path": "/items/bronze-aroa-boots",
+          "detail": "Shoes, 1,920 mesos"
+        },
+        {
+          "name": "Brown Aroa Boots",
+          "path": "/items/brown-aroa-boots",
+          "detail": "Shoes, 1,920 mesos"
+        },
+        {
+          "name": "Green Aroa Boots",
+          "path": "/items/green-aroa-boots",
+          "detail": "Shoes, 1,920 mesos"
+        },
+        {
+          "name": "Grey Thick Sweat Pants",
+          "path": "/items/grey-thick-sweat-pants",
+          "detail": "Bottomwear, 1,920 mesos"
+        },
+        {
+          "name": "Blue One-lined T-Shirt",
+          "path": "/items/blue-one-lined-t-shirt",
+          "detail": "Topwear, 2,400 mesos"
+        },
+        {
+          "name": "Orange Sporty T-Shirt",
+          "path": "/items/orange-sporty-t-shirt",
+          "detail": "Topwear, 2,400 mesos"
+        },
+        {
+          "name": "Pink Starry Shirt",
+          "path": "/items/pink-starry-shirt",
+          "detail": "Topwear, 2,400 mesos"
+        },
+        {
+          "name": "Red Striped T-Shirt",
+          "path": "/items/red-striped-t-shirt",
+          "detail": "Topwear, 2,400 mesos"
+        },
+        {
+          "name": "Blue Ankle-strap Sandals",
+          "path": "/items/blue-ankle-strap-sandals",
+          "detail": "Shoes, 3,780 mesos"
+        },
+        {
+          "name": "Brown Ankle-strap Sandals",
+          "path": "/items/brown-ankle-strap-sandals",
+          "detail": "Shoes, 3,780 mesos"
+        },
+        {
+          "name": "Red Ankle-strap Sandals",
+          "path": "/items/red-ankle-strap-sandals",
+          "detail": "Shoes, 3,780 mesos"
+        }
+      ],
+      "total": 27
+    },
+    {
+      "title": "Shopkeeper",
+      "links": [
+        {
+          "name": "Natasha",
+          "path": "/npcs/natasha",
+          "detail": ""
+        }
+      ],
+      "total": 1
+    },
+    {
+      "title": "Location",
+      "links": [
+        {
+          "name": "Lith Harbor Armor Shop",
+          "path": "/maps/lith-harbor-armor-shop",
+          "detail": ""
+        }
+      ],
+      "total": 1
+    }
+  ]
+}

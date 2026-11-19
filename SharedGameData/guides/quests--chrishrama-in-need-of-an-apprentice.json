@@ -1,0 +1,78 @@
+{
+  "schemaVersion": 1,
+  "path": "/quests/chrishrama-in-need-of-an-apprentice",
+  "kind": "quest",
+  "name": "Chrishrama in Need of an Apprentice",
+  "source": "CCPLZ",
+  "sourceUrl": "https://ccplz.cc/quests/chrishrama-in-need-of-an-apprentice",
+  "checkedAt": "2026-11-19T18:25:34.486Z",
+  "notice": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial.",
+  "fields": [
+    {
+      "label": "Minimum level",
+      "value": "10"
+    },
+    {
+      "label": "Category",
+      "value": "Crafting"
+    },
+    {
+      "label": "EXP reward",
+      "value": "188"
+    },
+    {
+      "label": "Meso reward",
+      "value": "351"
+    },
+    {
+      "label": "Starts with",
+      "value": "Chrishrama"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Quest NPCs",
+      "links": [
+        {
+          "name": "Chrishrama",
+          "path": "/npcs/chrishrama",
+          "detail": "Starts the quest"
+        }
+      ],
+      "total": 1
+    },
+    {
+      "title": "Monsters to defeat",
+      "links": [
+        {
+          "name": "Dark Stump",
+          "path": "/monsters/dark-stump",
+          "detail": "x30"
+        }
+      ],
+      "total": 1
+    },
+    {
+      "title": "Items to bring",
+      "links": [
+        {
+          "name": "Garnet Ore",
+          "path": "/items/garnet-ore",
+          "detail": "x1"
+        }
+      ],
+      "total": 1
+    },
+    {
+      "title": "Where it takes place",
+      "links": [
+        {
+          "name": "Sleepywood",
+          "path": "/maps/sleepywood",
+          "detail": ""
+        }
+      ],
+      "total": 1
+    }
+  ]
+}

@@ -1,0 +1,115 @@
+{
+  "schemaVersion": 1,
+  "path": "/shops/pan-s-shop",
+  "kind": "shop",
+  "name": "Pan's Shop",
+  "source": "CCPLZ",
+  "sourceUrl": "https://ccplz.cc/shops/pan-s-shop",
+  "checkedAt": "2026-11-19T18:26:04.639Z",
+  "notice": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial.",
+  "fields": [
+    {
+      "label": "Shopkeeper",
+      "value": "Pan"
+    },
+    {
+      "label": "Location",
+      "value": "Southperry Armor Store"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Reported stock",
+      "links": [
+        {
+          "name": "Blue Jean Shorts",
+          "path": "/items/blue-jean-shorts",
+          "detail": "Bottomwear, 50 mesos"
+        },
+        {
+          "name": "Brown Cotton Shorts",
+          "path": "/items/brown-cotton-shorts",
+          "detail": "Bottomwear, 50 mesos"
+        },
+        {
+          "name": "Green T-Shirt",
+          "path": "/items/green-t-shirt",
+          "detail": "Topwear, 50 mesos"
+        },
+        {
+          "name": "Grey T-Shirt",
+          "path": "/items/grey-t-shirt",
+          "detail": "Topwear, 50 mesos"
+        },
+        {
+          "name": "Indigo Miniskirt",
+          "path": "/items/indigo-miniskirt",
+          "detail": "Bottomwear, 50 mesos"
+        },
+        {
+          "name": "Leather Sandals",
+          "path": "/items/leather-sandals",
+          "detail": "Shoes, 50 mesos"
+        },
+        {
+          "name": "Red Miniskirt",
+          "path": "/items/red-miniskirt",
+          "detail": "Bottomwear, 50 mesos"
+        },
+        {
+          "name": "Red Rubber Boots",
+          "path": "/items/red-rubber-boots",
+          "detail": "Shoes, 50 mesos"
+        },
+        {
+          "name": "Red Striped Top",
+          "path": "/items/red-striped-top",
+          "detail": "Topwear, 50 mesos"
+        },
+        {
+          "name": "Undershirt",
+          "path": "/items/undershirt",
+          "detail": "Topwear, 50 mesos"
+        },
+        {
+          "name": "White Tube Top",
+          "path": "/items/white-tube-top",
+          "detail": "Topwear, 50 mesos"
+        },
+        {
+          "name": "White Undershirt",
+          "path": "/items/white-undershirt",
+          "detail": "Topwear, 50 mesos"
+        },
+        {
+          "name": "Yellow T-Shirt",
+          "path": "/items/yellow-t-shirt",
+          "detail": "Topwear, 50 mesos"
+        }
+      ],
+      "total": 13
+    },
+    {
+      "title": "Shopkeeper",
+      "links": [
+        {
+          "name": "Pan",
+          "path": "/npcs/pan",
+          "detail": ""
+        }
+      ],
+      "total": 1
+    },
+    {
+      "title": "Location",
+      "links": [
+        {
+          "name": "Southperry Armor Store",
+          "path": "/maps/southperry-armor-store",
+          "detail": ""
+        }
+      ],
+      "total": 1
+    }
+  ]
+}

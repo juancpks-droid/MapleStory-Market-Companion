@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "publishedAt": "2026-11-18T18:15:27.466Z",
+  "publishedAt": "2026-11-19T18:26:10.690Z",
   "catalogItems": 12726,
-  "guideRecords": 530,
-  "referenceRecords": 169,
+  "guideRecords": 543,
+  "referenceRecords": 175,
   "entries": [
     {
       "file": "guides/items--5-o-clock-shadow.json",
@@ -132,6 +132,13 @@
       "kind": "item"
     },
     {
+      "file": "guides/items--black-headband.json",
+      "bytes": 2839,
+      "sha256": "c798b5e93e7e529d4ca21fd9a50de99c1793cddbb837d47aa62f5fdf1091d610",
+      "checkedAt": "2026-11-19T18:25:46.706Z",
+      "kind": "item"
+    },
+    {
       "file": "guides/items--black-hunter.json",
       "bytes": 2869,
       "sha256": "6141f1be977b587d5e242604c037155619a8f6b8b1c7bc23a6472e4d0eaf1308",
@@ -181,6 +188,13 @@
       "kind": "item"
     },
     {
+      "file": "guides/items--black-swimming-cap.json",
+      "bytes": 2694,
+      "sha256": "ab7002a6ce10933498989cfaa59928ea0b0b3987fc173b670d22e66d0faf44eb",
+      "checkedAt": "2026-11-19T18:26:01.654Z",
+      "kind": "item"
+    },
+    {
       "file": "guides/items--blood-moss-boots.json",
       "bytes": 3120,
       "sha256": "63750d64fd9a7546b2c7fd03ce8f1522363a3b535cfd6d5c6ee3676871cf291b",
@@ -192,6 +206,13 @@
       "bytes": 2344,
       "sha256": "d939df1fb4eb8e4eb5b1660df8dadfb8b79973659e0535b02b4747cc100e80d2",
       "checkedAt": "2026-10-30T10:13:24.163Z",
+      "kind": "item"
+    },
+    {
+      "file": "guides/items--blue-headband.json",
+      "bytes": 3078,
+      "sha256": "3a85b6532e8c5a95edc67f21735b24f2a52270ce8b69baadc0026c106de67834",
+      "checkedAt": "2026-11-19T18:25:49.619Z",
       "kind": "item"
     },
     {
@@ -762,6 +783,13 @@
       "kind": "item"
     },
     {
+      "file": "guides/items--grey-t-shirt.json",
+      "bytes": 2802,
+      "sha256": "b22f3726daf457a36864c73cce52ab3938378c9349dfb6711ef44cb053e8001d",
+      "checkedAt": "2026-11-19T18:26:10.560Z",
+      "kind": "item"
+    },
+    {
       "file": "guides/items--hardwood-wand.json",
       "bytes": 2826,
       "sha256": "e3723ae7630419c16394bf983667344b3e43876c80ca9d3c3cb0b7e7a688a737",
@@ -1049,6 +1077,13 @@
       "kind": "item"
     },
     {
+      "file": "guides/items--red-headband.json",
+      "bytes": 3075,
+      "sha256": "c68d21272247ab62ffddadee5c334e833bf0f017986c15df98917cb7e361ad96",
+      "checkedAt": "2026-11-19T18:25:52.651Z",
+      "kind": "item"
+    },
+    {
       "file": "guides/items--red-hwarang-shirt.json",
       "bytes": 3326,
       "sha256": "55b5d4bf6cd3726583719d83ee142b954f1066045f31cca2231984064742da91",
@@ -1102,6 +1137,13 @@
       "bytes": 2677,
       "sha256": "a36faad6f203604923a0b2ad94cc2923f3ac517a6610ad52d8a0471abf61c54b",
       "checkedAt": "2026-10-22T09:59:30.640Z",
+      "kind": "item"
+    },
+    {
+      "file": "guides/items--red-skullcap.json",
+      "bytes": 2716,
+      "sha256": "3047843890cf24fff5afe65628169770176bac973e49f8ff40d16bd473eb0064",
+      "checkedAt": "2026-11-19T18:25:55.617Z",
       "kind": "item"
     },
     {
@@ -1459,6 +1501,13 @@
       "bytes": 1848,
       "sha256": "5bacd9307aedf6e5b1fd5b132958d2fae4a2a53184c2af30db5b853b69b2c8af",
       "checkedAt": "2026-10-19T10:00:55.744Z",
+      "kind": "item"
+    },
+    {
+      "file": "guides/items--yellow-headband.json",
+      "bytes": 3074,
+      "sha256": "109995b10a481361a74b7de12594c22a2d49b6c786286a0057b8079d14b75f17",
+      "checkedAt": "2026-11-19T18:25:58.632Z",
       "kind": "item"
     },
     {
@@ -1905,15 +1954,15 @@
     {
       "file": "guides/maps--sleepy-dungeon-i.json",
       "bytes": 2162,
-      "sha256": "fa98d7958ba49e2bcd214015682411806c254dfbd7e29602d62156941bff8e76",
-      "checkedAt": "2026-10-17T09:50:29.894Z",
+      "sha256": "f1574809297f3db4f671be32b82a68417f90d3410c2e299e3818cd4db2c06762",
+      "checkedAt": "2026-11-19T18:25:25.734Z",
       "kind": "map"
     },
     {
       "file": "guides/maps--sleepy-dungeon-ii.json",
       "bytes": 1997,
-      "sha256": "84a277df69419baa5ac7ec5d14f985df2269a505c5f55cf0682154cf67af796b",
-      "checkedAt": "2026-10-17T09:50:32.874Z",
+      "sha256": "2a35825f102904e09a63ee704dcc718f522d1a2015ad402501e18307f3e460c3",
+      "checkedAt": "2026-11-19T18:25:28.589Z",
       "kind": "map"
     },
     {
@@ -2227,15 +2276,15 @@
     {
       "file": "guides/maps--tree-dungeon-monkey-forest-i.json",
       "bytes": 1279,
-      "sha256": "bd6bf54e6d2964a8cfe9598ad13dd10b5dd7e0cd578f9f9a3b5ca8d3e823399f",
-      "checkedAt": "2026-10-17T09:50:24.029Z",
+      "sha256": "1a47d8e963ea756f1f2f988c9bfd4f49cff728fcc78ab14a4f7a62b97e5220ab",
+      "checkedAt": "2026-11-19T18:25:19.656Z",
       "kind": "map"
     },
     {
       "file": "guides/maps--tree-dungeon-monkey-forest-ii.json",
       "bytes": 1284,
-      "sha256": "22b7f6a7d1b2f85204573a2c66e60e50f4bad358cf18d5c7977c1390c0bf5613",
-      "checkedAt": "2026-10-17T09:50:26.928Z",
+      "sha256": "7348962761272301cb91a0cd27febac4c2897c8acb4d19bce1a2a028a3e4e924",
+      "checkedAt": "2026-11-19T18:25:22.627Z",
       "kind": "map"
     },
     {
@@ -3331,6 +3380,13 @@
       "kind": "quest"
     },
     {
+      "file": "guides/quests--chrishrama-in-need-of-an-apprentice.json",
+      "bytes": 1701,
+      "sha256": "b004eb4977d5165848d123713468a0bd9e358a798a1f076254e7e67349db0745",
+      "checkedAt": "2026-11-19T18:25:34.486Z",
+      "kind": "quest"
+    },
+    {
       "file": "guides/quests--collecting-100-cursed-dolls.json",
       "bytes": 2324,
       "sha256": "0677f5b95263c6c6917763942497311ced6ef7e8225588ee253e4a87bda490ad",
@@ -3349,6 +3405,13 @@
       "bytes": 2773,
       "sha256": "3c5b35b3c61c791bb83e9b76574b7400fa2cea1a3d19cd1e178889d1ffa00378",
       "checkedAt": "2026-11-18T18:15:21.383Z",
+      "kind": "quest"
+    },
+    {
+      "file": "guides/quests--collecting-70-cursed-dolls.json",
+      "bytes": 2908,
+      "sha256": "4ac46aac6e95bc549a7a997df2e62c449017ba17caba3d69f4004dd1adab346b",
+      "checkedAt": "2026-11-19T18:25:31.599Z",
       "kind": "quest"
     },
     {
@@ -3440,6 +3503,13 @@
       "bytes": 2453,
       "sha256": "4e98907b75f7b2a88a793d937dcd3570688eebd14dd2529f7e262df79fe7043a",
       "checkedAt": "2026-11-01T10:05:06.735Z",
+      "kind": "quest"
+    },
+    {
+      "file": "guides/quests--lucas-s-reply.json",
+      "bytes": 2703,
+      "sha256": "eebfb3d8ba2bb0d7a3c690d22277b63e719e28b8177978ce8dc7612b44b53113",
+      "checkedAt": "2026-11-19T18:25:43.660Z",
       "kind": "quest"
     },
     {
@@ -3597,6 +3667,13 @@
       "kind": "recipe"
     },
     {
+      "file": "guides/recipes--craft-garnet.json",
+      "bytes": 1581,
+      "sha256": "c9ecb950c185a09754e458df84f01d91901e57d00436f927b16eb0b1b265c75a",
+      "checkedAt": "2026-11-19T18:25:37.450Z",
+      "kind": "recipe"
+    },
+    {
       "file": "guides/recipes--craft-green-skullcap.json",
       "bytes": 2371,
       "sha256": "03a57dbfd0e9349e6c98133d428bd016bfbe0e73ff266357485b5025b33081c5",
@@ -3702,6 +3779,20 @@
       "kind": "shop"
     },
     {
+      "file": "guides/shops--natasha-s-shop.json",
+      "bytes": 5041,
+      "sha256": "796335bc3d4fa41622c603a655cc74abaffca69a03046a1be0c01d5fe9292d90",
+      "checkedAt": "2026-11-19T18:25:40.717Z",
+      "kind": "shop"
+    },
+    {
+      "file": "guides/shops--pan-s-shop.json",
+      "bytes": 2932,
+      "sha256": "9c64527bb2acd8daabb7a2ca35b6a97151f59a1c3944c7e96d356ad496c71421",
+      "checkedAt": "2026-11-19T18:26:04.639Z",
+      "kind": "shop"
+    },
+    {
       "file": "guides/shops--raymond-s-shop.json",
       "bytes": 3897,
       "sha256": "9318fb80342e67fc392f7699975148eef737cca736ff5cab28fe8c935435dfc8",
@@ -3751,6 +3842,13 @@
       "kind": "npc"
     },
     {
+      "file": "records/npc-1002014.json",
+      "bytes": 681,
+      "sha256": "742ca9f8a08f63a630763669af760a796bae023eab7679d472ca9dfdba595456",
+      "checkedAt": "2026-11-19T18:25:52.651Z",
+      "kind": "npc"
+    },
+    {
       "file": "records/npc-1002017.json",
       "bytes": 706,
       "sha256": "0b6bf6967b64dc520117911f657483197a5ab2252b9ed390733f810f231923ec",
@@ -3779,6 +3877,13 @@
       "kind": "npc"
     },
     {
+      "file": "records/npc-1002054.json",
+      "bytes": 682,
+      "sha256": "403077224c080e9dda092dfa3a30a9fad52939358693b5fa8fbeb866760966d5",
+      "checkedAt": "2026-11-19T18:25:55.617Z",
+      "kind": "npc"
+    },
+    {
       "file": "records/npc-1002057.json",
       "bytes": 694,
       "sha256": "7f4dd27c7a799649d702b05e05953eddb7120235423cbb223c516be1d0be2097",
@@ -3793,10 +3898,31 @@
       "kind": "npc"
     },
     {
+      "file": "records/npc-1002066.json",
+      "bytes": 687,
+      "sha256": "c31df7a905bb51f32764d566a935100c92e80ff96f96095f8e1364712c5f157e",
+      "checkedAt": "2026-11-19T18:25:46.706Z",
+      "kind": "npc"
+    },
+    {
       "file": "records/npc-1002067.json",
       "bytes": 687,
       "sha256": "35a358d846700ccf78b1b73b13a92addfb7a823761ce2205fc450b4685c8f68e",
       "checkedAt": "2026-11-10T10:16:31.900Z",
+      "kind": "npc"
+    },
+    {
+      "file": "records/npc-1002068.json",
+      "bytes": 690,
+      "sha256": "274b477c20a3a4213da958cf651ba986e2c849a2f9cd9ba942e9e3a42b99c227",
+      "checkedAt": "2026-11-19T18:25:58.632Z",
+      "kind": "npc"
+    },
+    {
+      "file": "records/npc-1002069.json",
+      "bytes": 684,
+      "sha256": "2b130d5d512c5b55dc887a03412c05ec6b0a340dbc5b6e934b15714775686876",
+      "checkedAt": "2026-11-19T18:25:49.619Z",
       "kind": "npc"
     },
     {
@@ -3811,6 +3937,13 @@
       "bytes": 703,
       "sha256": "6ed13044e51c0e55d068c21940c843c04883c6e4e00a73284d1f5e70c8f10094",
       "checkedAt": "2026-10-27T10:03:53.927Z",
+      "kind": "npc"
+    },
+    {
+      "file": "records/npc-1002132.json",
+      "bytes": 699,
+      "sha256": "0e3b2f43b1c3eef4a36531405ded2abc4b1b8289bddaae7b42d2563166933d5b",
+      "checkedAt": "2026-11-19T18:26:01.654Z",
       "kind": "npc"
     },
     {

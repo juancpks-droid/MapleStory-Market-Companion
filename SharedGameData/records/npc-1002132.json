@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "item": {
+    "key": "gms83:1002132",
+    "name": "Black Swimming Cap",
+    "id": "1002132",
+    "category": "Equipment"
+  },
+  "kind": "npc",
+  "checkedAt": "2026-11-19T18:26:01.654Z",
+  "data": {
+    "sell": 450,
+    "buy": 900,
+    "source": "CCPLZ",
+    "url": "https://ccplz.cc/items/black-swimming-cap",
+    "checkedAt": "2026-11-19T18:26:01.654Z"
+  },
+  "provenance": {
+    "source": "CCPLZ",
+    "sourceUrl": "https://ccplz.cc/items/black-swimming-cap",
+    "coverage": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial."
+  }
+}

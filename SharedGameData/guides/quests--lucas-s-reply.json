@@ -1,0 +1,120 @@
+{
+  "schemaVersion": 1,
+  "path": "/quests/lucas-s-reply",
+  "kind": "quest",
+  "name": "Please bring this letter to Lucas (Lucas's Reply)",
+  "source": "CCPLZ",
+  "sourceUrl": "https://ccplz.cc/quests/lucas-s-reply",
+  "checkedAt": "2026-11-19T18:25:43.660Z",
+  "notice": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial.",
+  "fields": [
+    {
+      "label": "Category",
+      "value": "Maple Island"
+    },
+    {
+      "label": "EXP reward",
+      "value": "120"
+    },
+    {
+      "label": "Starts with",
+      "value": "Lucas"
+    },
+    {
+      "label": "Turn in to",
+      "value": "Maria"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Quest NPCs",
+      "links": [
+        {
+          "name": "Lucas",
+          "path": "/npcs/lucas",
+          "detail": "Starts the quest"
+        },
+        {
+          "name": "Maria",
+          "path": "/npcs/maria",
+          "detail": "Completes the quest"
+        }
+      ],
+      "total": 2
+    },
+    {
+      "title": "Complete first",
+      "links": [
+        {
+          "name": "Please bring this letter to Lucas (Letter for Lucas)",
+          "path": "/quests/letter-for-lucas",
+          "detail": ""
+        }
+      ],
+      "total": 1
+    },
+    {
+      "title": "Items to bring",
+      "links": [
+        {
+          "name": "Lucas's Letter",
+          "path": "/items/lucas-s-letter",
+          "detail": "x1"
+        }
+      ],
+      "total": 1
+    },
+    {
+      "title": "Item rewards",
+      "links": [
+        {
+          "name": "Black Headband",
+          "path": "/items/black-headband",
+          "detail": ""
+        },
+        {
+          "name": "Blue Headband",
+          "path": "/items/blue-headband",
+          "detail": ""
+        },
+        {
+          "name": "Brown Skullcap",
+          "path": "/items/brown-skullcap",
+          "detail": ""
+        },
+        {
+          "name": "Green Headband",
+          "path": "/items/green-headband",
+          "detail": ""
+        },
+        {
+          "name": "Green Skullcap",
+          "path": "/items/green-skullcap",
+          "detail": ""
+        },
+        {
+          "name": "Red Headband",
+          "path": "/items/red-headband",
+          "detail": ""
+        },
+        {
+          "name": "Yellow Headband",
+          "path": "/items/yellow-headband",
+          "detail": ""
+        }
+      ],
+      "total": 7
+    },
+    {
+      "title": "Where it takes place",
+      "links": [
+        {
+          "name": "Amherst",
+          "path": "/maps/amherst",
+          "detail": ""
+        }
+      ],
+      "total": 1
+    }
+  ]
+}
