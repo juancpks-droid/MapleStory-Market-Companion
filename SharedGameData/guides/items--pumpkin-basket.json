@@ -1,0 +1,104 @@
+{
+  "schemaVersion": 1,
+  "path": "/items/pumpkin-basket",
+  "kind": "item",
+  "name": "Pumpkin Basket",
+  "source": "CCPLZ",
+  "sourceUrl": "https://ccplz.cc/items/pumpkin-basket",
+  "checkedAt": "2026-11-20T17:55:29.755Z",
+  "notice": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial.",
+  "fields": [
+    {
+      "label": "Type",
+      "value": "One-handed sword"
+    },
+    {
+      "label": "Required level",
+      "value": "10"
+    },
+    {
+      "label": "Class",
+      "value": "All classes"
+    },
+    {
+      "label": "Weapon attack",
+      "value": "+27"
+    },
+    {
+      "label": "Speed",
+      "value": "+3"
+    },
+    {
+      "label": "Upgrade slots",
+      "value": "7"
+    },
+    {
+      "label": "NPC sell price",
+      "value": "1 meso"
+    },
+    {
+      "label": "Required STR",
+      "value": "0"
+    },
+    {
+      "label": "Required DEX",
+      "value": "0"
+    },
+    {
+      "label": "Required INT",
+      "value": "0"
+    },
+    {
+      "label": "Required LUK",
+      "value": "0"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Similar equipment",
+      "links": [
+        {
+          "name": "Beginner's Long Sword",
+          "path": "/items/beginner-s-long-sword",
+          "detail": "Level 10"
+        },
+        {
+          "name": "Long Sword",
+          "path": "/items/long-sword",
+          "detail": "Level 10"
+        },
+        {
+          "name": "Sabre",
+          "path": "/items/sabre",
+          "detail": "Level 15"
+        },
+        {
+          "name": "Saw",
+          "path": "/items/saw",
+          "detail": "Level 15"
+        },
+        {
+          "name": "Old Gladius",
+          "path": "/items/old-gladius",
+          "detail": ""
+        },
+        {
+          "name": "Sword",
+          "path": "/items/sword",
+          "detail": ""
+        },
+        {
+          "name": "Machete",
+          "path": "/items/machete",
+          "detail": "Level 20"
+        },
+        {
+          "name": "Viking Sword",
+          "path": "/items/viking-sword",
+          "detail": "Level 20"
+        }
+      ],
+      "total": 8
+    }
+  ]
+}

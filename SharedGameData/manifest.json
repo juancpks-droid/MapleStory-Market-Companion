@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "publishedAt": "2026-11-19T18:26:10.690Z",
+  "publishedAt": "2026-11-20T17:55:44.798Z",
   "catalogItems": 12726,
-  "guideRecords": 543,
-  "referenceRecords": 175,
+  "guideRecords": 557,
+  "referenceRecords": 182,
   "entries": [
     {
       "file": "guides/items--5-o-clock-shadow.json",
@@ -91,9 +91,9 @@
     },
     {
       "file": "guides/items--axe-pole-arm.json",
-      "bytes": 2667,
-      "sha256": "8b8a1c2277a1f3d48fd45a5db597258a95ad550924c8863b148dbee981fd4906",
-      "checkedAt": "2026-10-17T09:50:35.914Z",
+      "bytes": 3015,
+      "sha256": "5c514071bf83d582b7eab9a440264961c18fdbff665d8537808dd109caeca17f",
+      "checkedAt": "2026-11-20T17:54:53.612Z",
       "kind": "item"
     },
     {
@@ -112,9 +112,16 @@
     },
     {
       "file": "guides/items--battle-shield.json",
-      "bytes": 3075,
-      "sha256": "f840992f806b2ac1260b0191a972abe0d01b8eae63ce43eb693f1c856f44f177",
-      "checkedAt": "2026-10-17T09:50:38.909Z",
+      "bytes": 2551,
+      "sha256": "847c18022e337d2d8b796a972ee9a501d706c55d82e6ddeb3b129e566f77f594",
+      "checkedAt": "2026-11-20T17:54:56.631Z",
+      "kind": "item"
+    },
+    {
+      "file": "guides/items--beginner-s-long-sword.json",
+      "bytes": 2178,
+      "sha256": "8ffab757bc2865dd62e93084f392f69454f5869154630238463451b5ea114d98",
+      "checkedAt": "2026-11-20T17:55:32.739Z",
       "kind": "item"
     },
     {
@@ -154,9 +161,9 @@
     },
     {
       "file": "guides/items--black-knucklevest.json",
-      "bytes": 2597,
-      "sha256": "77a29463bb35b6adcffa2322f08b277aa9a165c99c82c53bbf381b92966f7843",
-      "checkedAt": "2026-10-17T09:50:41.886Z",
+      "bytes": 2607,
+      "sha256": "85315b65e5be79e38cf238c09672ad2a94cbbbe18d1b478b6dd1b32c9d77870e",
+      "checkedAt": "2026-11-20T17:54:59.638Z",
       "kind": "item"
     },
     {
@@ -308,9 +315,9 @@
     },
     {
       "file": "guides/items--bronze-pride.json",
-      "bytes": 3438,
-      "sha256": "5a745365b75c6d1b9aa735d4ab6eacb42c68d6bfb49aa5f2d925b91d96d31ef9",
-      "checkedAt": "2026-10-17T09:50:44.892Z",
+      "bytes": 3365,
+      "sha256": "e04954e87357bf0e09fdf6d5d87b27dbe2f23bc25c8707dbce53a0ce033aedfd",
+      "checkedAt": "2026-11-20T17:55:02.660Z",
       "kind": "item"
     },
     {
@@ -874,6 +881,13 @@
       "kind": "item"
     },
     {
+      "file": "guides/items--machete.json",
+      "bytes": 3055,
+      "sha256": "7d4991049c896be0d0f347183fd638979a4a83f64b664522465195828699b153",
+      "checkedAt": "2026-11-20T17:55:41.736Z",
+      "kind": "item"
+    },
+    {
       "file": "guides/items--mana-elixir.json",
       "bytes": 1570,
       "sha256": "812c9e2d787f0701df34e7b0050b508bacc8c70abafd4e06ce8104505f5e28c8",
@@ -927,6 +941,13 @@
       "bytes": 1840,
       "sha256": "bf6ed75931af23c97149e6a230206a2550932a8ac3f9784257d0ffffe1cd9bb3",
       "checkedAt": "2026-11-16T19:43:56.089Z",
+      "kind": "item"
+    },
+    {
+      "file": "guides/items--old-gladius.json",
+      "bytes": 2639,
+      "sha256": "de0572f108551378120daf56c06c1deaf2186b981fd90a4d1f8285d78a8937ab",
+      "checkedAt": "2026-11-20T17:55:26.620Z",
       "kind": "item"
     },
     {
@@ -986,6 +1007,13 @@
       "kind": "item"
     },
     {
+      "file": "guides/items--pink-tank-top.json",
+      "bytes": 2196,
+      "sha256": "f847dcbd3d66122a6c79065cef207e04238f8193f0148de86b687c0bfa3968f0",
+      "checkedAt": "2026-11-20T17:55:05.652Z",
+      "kind": "item"
+    },
+    {
       "file": "guides/items--plateon-s-helmet.json",
       "bytes": 871,
       "sha256": "83d2d230cfb7950459af1fb69316fb4d24e669363a59bd372bb541ec517e9b81",
@@ -1025,6 +1053,13 @@
       "bytes": 9361,
       "sha256": "b29a40a34e4cf404e3ca79273d550ad5afdff7c453df43b510e8d3762e6d8be3",
       "checkedAt": "2026-10-28T10:10:33.154Z",
+      "kind": "item"
+    },
+    {
+      "file": "guides/items--pumpkin-basket.json",
+      "bytes": 2224,
+      "sha256": "db8a1ff93b53b9ffae7452184baf345e23ab09737d2a569bdbd398ad45da4829",
+      "checkedAt": "2026-11-20T17:55:29.755Z",
       "kind": "item"
     },
     {
@@ -1203,6 +1238,13 @@
       "kind": "item"
     },
     {
+      "file": "guides/items--sabre.json",
+      "bytes": 2480,
+      "sha256": "ba93834749819afa65c1a89046c2fa8bd143e578f864a439adaabf8b92c01e7b",
+      "checkedAt": "2026-11-20T17:55:35.607Z",
+      "kind": "item"
+    },
+    {
       "file": "guides/items--sai.json",
       "bytes": 2991,
       "sha256": "e12dd0167b2cf291a72c40a994cec60e6a7590a2df3b415f72ee97a475abc308",
@@ -1228,6 +1270,13 @@
       "bytes": 2477,
       "sha256": "64dc2605875866e62cbb4e57414d8f92c0ff47974f798a3575801f6d46a40539",
       "checkedAt": "2026-11-01T10:04:48.648Z",
+      "kind": "item"
+    },
+    {
+      "file": "guides/items--saw.json",
+      "bytes": 2410,
+      "sha256": "e2a86400292f78e937ed36bcdeab5e180a54e917c4f02582d529ccbe006aab95",
+      "checkedAt": "2026-11-20T17:55:38.598Z",
       "kind": "item"
     },
     {
@@ -1420,6 +1469,20 @@
       "kind": "item"
     },
     {
+      "file": "guides/items--undershirt.json",
+      "bytes": 2650,
+      "sha256": "c1f4d7442d89bb2f08c00b0fe341a772cc7fbe612a81220f650098d7c6807b69",
+      "checkedAt": "2026-11-20T17:55:08.752Z",
+      "kind": "item"
+    },
+    {
+      "file": "guides/items--viking-sword.json",
+      "bytes": 2733,
+      "sha256": "db42afe01b3e5d05cb372ee89d0a932677543cfe46bff7d3e06347e47fb2f5fc",
+      "checkedAt": "2026-11-20T17:55:44.701Z",
+      "kind": "item"
+    },
+    {
       "file": "guides/items--wand-magic-attack-scroll-greater.json",
       "bytes": 1807,
       "sha256": "8d3eb62e93087e4481cdf5a9acb645573a91d708d05f7ee3887cf0b5ea4596d0",
@@ -1483,6 +1546,13 @@
       "kind": "item"
     },
     {
+      "file": "guides/items--white-tube-top.json",
+      "bytes": 2654,
+      "sha256": "de5e55b2c8bbd6a27cc64a94a769cd421a60c9d5a72630c254a5c5d1ab3ebc0e",
+      "checkedAt": "2026-11-20T17:55:11.713Z",
+      "kind": "item"
+    },
+    {
       "file": "guides/items--white-undershirt.json",
       "bytes": 2646,
       "sha256": "83fef79ae552263f2c1ecab4743325454f0a08aae8cb7c351396b8956d2108fd",
@@ -1494,6 +1564,13 @@
       "bytes": 1656,
       "sha256": "6ff0f00ba1a20e853a1ee29bf852e14903ff37eaadf9ca6557eeed9b447018a0",
       "checkedAt": "2026-11-01T10:05:00.653Z",
+      "kind": "item"
+    },
+    {
+      "file": "guides/items--wizet-plain-suit.json",
+      "bytes": 2142,
+      "sha256": "8e7f9cf9d37577817fe14fd51ec48cfee408cbceab20721785f47f7e889e284b",
+      "checkedAt": "2026-11-20T17:55:14.793Z",
       "kind": "item"
     },
     {
@@ -3730,6 +3807,13 @@
       "kind": "shop"
     },
     {
+      "file": "guides/shops--karl-s-shop.json",
+      "bytes": 3156,
+      "sha256": "f692ea3ad9cc26d33c223456acbf0957058e0a9072bd9f8de05e72cef855ded5",
+      "checkedAt": "2026-11-20T17:55:17.754Z",
+      "kind": "shop"
+    },
+    {
       "file": "guides/shops--len-the-fairy-s-shop.json",
       "bytes": 4303,
       "sha256": "ff273ff9efc91bd928fde17b07d4b1ac315fe9632108729c078f4bbfd17a5934",
@@ -3797,6 +3881,20 @@
       "bytes": 3897,
       "sha256": "9318fb80342e67fc392f7699975148eef737cca736ff5cab28fe8c935435dfc8",
       "checkedAt": "2026-11-14T15:55:29.229Z",
+      "kind": "shop"
+    },
+    {
+      "file": "guides/shops--sid-s-shop.json",
+      "bytes": 1614,
+      "sha256": "2e76425ef1191fc79b029b58bf0ecd27a59a31cb08ff7e209eb278ddeebd6dee",
+      "checkedAt": "2026-11-20T17:55:20.604Z",
+      "kind": "shop"
+    },
+    {
+      "file": "guides/shops--silver-s-shop.json",
+      "bytes": 2365,
+      "sha256": "698fbc946aad00cc7d7d9e850bdcfe42c10a4f0b1e57e76b64d542072dddc501",
+      "checkedAt": "2026-11-20T17:55:23.686Z",
       "kind": "shop"
     },
     {
@@ -3893,8 +3991,8 @@
     {
       "file": "records/npc-1002064.json",
       "bytes": 683,
-      "sha256": "fb4e829f00b2f2850ce4974cee05dc9e055a5e96979dc544165a59f3c49c04d3",
-      "checkedAt": "2026-10-17T09:50:44.892Z",
+      "sha256": "2e72a8fd1bdfe392f8f11708fe16e9593d394b04c97d4801d7774baa4ac8c3b3",
+      "checkedAt": "2026-11-20T17:55:02.660Z",
       "kind": "npc"
     },
     {
@@ -4047,8 +4145,8 @@
     {
       "file": "records/npc-1040063.json",
       "bytes": 698,
-      "sha256": "88aac8c589ad3545312f14df7721b9abfcbc356a4042d4bf2ee9e99c6d581e82",
-      "checkedAt": "2026-10-17T09:50:41.886Z",
+      "sha256": "8d38511fefb718dea82b4c576fc271f526791d39bc097d1b71447ed5b687054e",
+      "checkedAt": "2026-11-20T17:54:59.638Z",
       "kind": "npc"
     },
     {
@@ -4084,6 +4182,13 @@
       "bytes": 684,
       "sha256": "a604f93100c48cc6beae42f8e7dd4af6dee0875c8931dd5966466431dad4e621",
       "checkedAt": "2026-10-31T10:00:19.131Z",
+      "kind": "npc"
+    },
+    {
+      "file": "records/npc-1042003.json",
+      "bytes": 692,
+      "sha256": "91444dabd0128433c7219fbff35d15840343ab40c0aff6d6fcf64832391f1596",
+      "checkedAt": "2026-11-20T17:55:14.793Z",
       "kind": "npc"
     },
     {
@@ -4369,8 +4474,8 @@
     {
       "file": "records/npc-1092007.json",
       "bytes": 687,
-      "sha256": "5c9ad3d336fe97ad4d3abc320a67cb9430d74e969b693d4db6efecb7d0a36fff",
-      "checkedAt": "2026-10-17T09:50:38.909Z",
+      "sha256": "15b980d8881ff8c025e2f53b5f3a4ba21c228b936c10e8df92b91e0181cec6cf",
+      "checkedAt": "2026-11-20T17:54:56.631Z",
       "kind": "npc"
     },
     {
@@ -4378,6 +4483,34 @@
       "bytes": 702,
       "sha256": "5fb92d8bee0c658f757f17e0c123be81ccb3b73bca7f1ffc8ded48a3ac025e92",
       "checkedAt": "2026-10-29T10:13:11.966Z",
+      "kind": "npc"
+    },
+    {
+      "file": "records/npc-1302001.json",
+      "bytes": 656,
+      "sha256": "d332310a58530b6ffbe1e1ca22ce4d5cce9788f2ac08f455f5bc0697012bdd87",
+      "checkedAt": "2026-11-20T17:55:38.598Z",
+      "kind": "npc"
+    },
+    {
+      "file": "records/npc-1302002.json",
+      "bytes": 684,
+      "sha256": "72083941fbad026431a7e399118794399e88c8cabfe1e1810c80b3a38420d9ab",
+      "checkedAt": "2026-11-20T17:55:44.701Z",
+      "kind": "npc"
+    },
+    {
+      "file": "records/npc-1302005.json",
+      "bytes": 662,
+      "sha256": "238e319d435390d46f2a88a6affcb45414149ad98e7b4692e69e4dccaf38f1be",
+      "checkedAt": "2026-11-20T17:55:35.607Z",
+      "kind": "npc"
+    },
+    {
+      "file": "records/npc-1302006.json",
+      "bytes": 669,
+      "sha256": "824ed92cabea08fd414d3bdd9fcfc1d1f9bfe68bc685368f922017ded7960644",
+      "checkedAt": "2026-11-20T17:55:41.736Z",
       "kind": "npc"
     },
     {
@@ -4392,6 +4525,20 @@
       "bytes": 662,
       "sha256": "24c46c10bff5905e808c44d15ff39a44516e89f27c12dfcbe4135a41279224ab",
       "checkedAt": "2026-10-19T10:00:46.871Z",
+      "kind": "npc"
+    },
+    {
+      "file": "records/npc-1302014.json",
+      "bytes": 677,
+      "sha256": "d8cf4234babdde50d3b7b1ea498d39be2dfae54bc8aeb8b0a516873930a01a1a",
+      "checkedAt": "2026-11-20T17:55:26.620Z",
+      "kind": "npc"
+    },
+    {
+      "file": "records/npc-1302034.json",
+      "bytes": 686,
+      "sha256": "b6b8b58ddea2f38da20ba9cd087e24249c151b65d0deec5f1fa84370b561c640",
+      "checkedAt": "2026-11-20T17:55:29.755Z",
       "kind": "npc"
     },
     {
@@ -4474,8 +4621,8 @@
     {
       "file": "records/npc-1442003.json",
       "bytes": 683,
-      "sha256": "9ea60508e7bc07106f42d61f78b3351cd5ff953b1635db55ae8103e8d41c47be",
-      "checkedAt": "2026-10-17T09:50:35.914Z",
+      "sha256": "7d3c3468b3cc4f6af200ef72730cb95746309738df4496c685da0cafa06dbd53",
+      "checkedAt": "2026-11-20T17:54:53.612Z",
       "kind": "npc"
     },
     {

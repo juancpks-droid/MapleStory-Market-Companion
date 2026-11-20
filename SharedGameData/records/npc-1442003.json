@@ -7,13 +7,13 @@
     "category": "Equipment"
   },
   "kind": "npc",
-  "checkedAt": "2026-10-17T09:50:35.914Z",
+  "checkedAt": "2026-11-20T17:54:53.612Z",
   "data": {
     "sell": 9000,
     "buy": null,
     "source": "CCPLZ",
     "url": "https://ccplz.cc/items/axe-pole-arm",
-    "checkedAt": "2026-10-17T09:50:35.914Z"
+    "checkedAt": "2026-11-20T17:54:53.612Z"
   },
   "provenance": {
     "source": "CCPLZ",

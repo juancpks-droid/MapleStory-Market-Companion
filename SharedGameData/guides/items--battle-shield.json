@@ -5,7 +5,7 @@
   "name": "Battle Shield",
   "source": "CCPLZ",
   "sourceUrl": "https://ccplz.cc/items/battle-shield",
-  "checkedAt": "2026-10-17T09:50:38.909Z",
+  "checkedAt": "2026-11-20T17:54:56.631Z",
   "notice": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial.",
   "fields": [
     {
@@ -56,31 +56,10 @@
         {
           "name": "Curse Eye",
           "path": "/monsters/curse-eye",
-          "detail": "Level 33"
+          "detail": "Level 33, about 0.22%, usual for its kind"
         }
       ],
       "total": 1
-    },
-    {
-      "title": "Also dropped by, in older versions",
-      "links": [
-        {
-          "name": "Axe Stump",
-          "path": "/monsters/axe-stump",
-          "detail": "Level 17, 0.07% historical rate"
-        },
-        {
-          "name": "Luster Pixie",
-          "path": "/monsters/luster-pixie",
-          "detail": "Level 52, 0.07% historical rate"
-        },
-        {
-          "name": "Star Pixie",
-          "path": "/monsters/star-pixie",
-          "detail": "Level 35, 0.07% historical rate"
-        }
-      ],
-      "total": 3
     },
     {
       "title": "Similar equipment",

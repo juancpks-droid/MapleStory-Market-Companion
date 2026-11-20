@@ -1,0 +1,95 @@
+{
+  "schemaVersion": 1,
+  "path": "/shops/silver-s-shop",
+  "kind": "shop",
+  "name": "Silver's Shop",
+  "source": "CCPLZ",
+  "sourceUrl": "https://ccplz.cc/shops/silver-s-shop",
+  "checkedAt": "2026-11-20T17:55:23.686Z",
+  "notice": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial.",
+  "fields": [
+    {
+      "label": "Shopkeeper",
+      "value": "Silver"
+    },
+    {
+      "label": "Location",
+      "value": "Lith Harbor Weapon Shop"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Reported stock",
+      "links": [
+        {
+          "name": "Hand Axe",
+          "path": "/items/hand-axe",
+          "detail": "One-handed axe, 50 mesos"
+        },
+        {
+          "name": "Sword",
+          "path": "/items/sword",
+          "detail": "One-handed sword, 50 mesos"
+        },
+        {
+          "name": "Wooden Club",
+          "path": "/items/wooden-club",
+          "detail": "One-handed blunt, 50 mesos"
+        },
+        {
+          "name": "Fruit Knife",
+          "path": "/items/fruit-knife",
+          "detail": "Dagger, 1,500 mesos"
+        },
+        {
+          "name": "Stolen Fence",
+          "path": "/items/stolen-fence",
+          "detail": "Shield, 2,000 mesos"
+        },
+        {
+          "name": "Double Axe",
+          "path": "/items/double-axe",
+          "detail": "One-handed axe, 3,000 mesos"
+        },
+        {
+          "name": "Long Sword",
+          "path": "/items/long-sword",
+          "detail": "One-handed sword, 3,000 mesos"
+        },
+        {
+          "name": "Steel Pipe",
+          "path": "/items/steel-pipe",
+          "detail": "One-handed blunt, 3,000 mesos"
+        },
+        {
+          "name": "Wooden Buckler",
+          "path": "/items/wooden-buckler",
+          "detail": "Shield, 4,000 mesos"
+        }
+      ],
+      "total": 9
+    },
+    {
+      "title": "Shopkeeper",
+      "links": [
+        {
+          "name": "Silver",
+          "path": "/npcs/silver",
+          "detail": ""
+        }
+      ],
+      "total": 1
+    },
+    {
+      "title": "Location",
+      "links": [
+        {
+          "name": "Lith Harbor Weapon Shop",
+          "path": "/maps/lith-harbor-weapon-shop",
+          "detail": ""
+        }
+      ],
+      "total": 1
+    }
+  ]
+}

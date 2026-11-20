@@ -1,0 +1,122 @@
+{
+  "schemaVersion": 1,
+  "path": "/items/old-gladius",
+  "kind": "item",
+  "name": "Old Gladius",
+  "source": "CCPLZ",
+  "sourceUrl": "https://ccplz.cc/items/old-gladius",
+  "checkedAt": "2026-11-20T17:55:26.620Z",
+  "notice": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial.",
+  "fields": [
+    {
+      "label": "Type",
+      "value": "One-handed sword"
+    },
+    {
+      "label": "Class",
+      "value": "All classes"
+    },
+    {
+      "label": "Weapon attack",
+      "value": "+10"
+    },
+    {
+      "label": "Upgrade slots",
+      "value": "0"
+    },
+    {
+      "label": "NPC sell price",
+      "value": "1 meso"
+    },
+    {
+      "label": "Required level",
+      "value": "0"
+    },
+    {
+      "label": "Required STR",
+      "value": "0"
+    },
+    {
+      "label": "Required DEX",
+      "value": "0"
+    },
+    {
+      "label": "Required INT",
+      "value": "0"
+    },
+    {
+      "label": "Required LUK",
+      "value": "0"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Needed for quests",
+      "links": [
+        {
+          "name": "Manji's Old Gladius (Old Gladius)",
+          "path": "/quests/old-gladius",
+          "detail": "Level 50"
+        }
+      ],
+      "total": 1
+    },
+    {
+      "title": "Given by quests",
+      "links": [
+        {
+          "name": "Manji's Old Gladius (Old Gladius)",
+          "path": "/quests/old-gladius",
+          "detail": ""
+        }
+      ],
+      "total": 1
+    },
+    {
+      "title": "Similar equipment",
+      "links": [
+        {
+          "name": "Sword",
+          "path": "/items/sword",
+          "detail": ""
+        },
+        {
+          "name": "Beginner's Long Sword",
+          "path": "/items/beginner-s-long-sword",
+          "detail": "Level 10"
+        },
+        {
+          "name": "Long Sword",
+          "path": "/items/long-sword",
+          "detail": "Level 10"
+        },
+        {
+          "name": "Pumpkin Basket",
+          "path": "/items/pumpkin-basket",
+          "detail": "Level 10"
+        },
+        {
+          "name": "Sabre",
+          "path": "/items/sabre",
+          "detail": "Level 15"
+        },
+        {
+          "name": "Saw",
+          "path": "/items/saw",
+          "detail": "Level 15"
+        },
+        {
+          "name": "Machete",
+          "path": "/items/machete",
+          "detail": "Level 20"
+        },
+        {
+          "name": "Viking Sword",
+          "path": "/items/viking-sword",
+          "detail": "Level 20"
+        }
+      ],
+      "total": 8
+    }
+  ]
+}

@@ -5,7 +5,7 @@
   "name": "Axe Pole Arm",
   "source": "CCPLZ",
   "sourceUrl": "https://ccplz.cc/items/axe-pole-arm",
-  "checkedAt": "2026-10-17T09:50:35.914Z",
+  "checkedAt": "2026-11-20T17:54:53.612Z",
   "notice": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial.",
   "fields": [
     {
@@ -56,10 +56,20 @@
         {
           "name": "Curse Eye",
           "path": "/monsters/curse-eye",
-          "detail": "Level 33"
+          "detail": "Level 33, about 0.22%, usual for its kind"
+        },
+        {
+          "name": "Evil Eye",
+          "path": "/monsters/evil-eye",
+          "detail": "Level 27, about 0.22%, usual for its kind"
+        },
+        {
+          "name": "Jr. Lioner",
+          "path": "/monsters/jr-lioner",
+          "detail": "about 0.22%, usual for its kind"
         }
       ],
-      "total": 1
+      "total": 3
     },
     {
       "title": "How to craft it",
@@ -91,6 +101,21 @@
           "detail": "Level 25"
         },
         {
+          "name": "Indigo Mop",
+          "path": "/items/indigo-mop",
+          "detail": "Level 45"
+        },
+        {
+          "name": "White Mop",
+          "path": "/items/white-mop",
+          "detail": "Level 45"
+        },
+        {
+          "name": "Yellow Mop",
+          "path": "/items/yellow-mop",
+          "detail": "Level 45"
+        },
+        {
           "name": "Studded Polearm",
           "path": "/items/studded-polearm",
           "detail": "Level 20"
@@ -99,21 +124,6 @@
           "name": "The Nine Dragons",
           "path": "/items/the-nine-dragons",
           "detail": "Level 50"
-        },
-        {
-          "name": "Iron Ball",
-          "path": "/items/iron-ball",
-          "detail": "Level 15"
-        },
-        {
-          "name": "Pole Arm",
-          "path": "/items/pole-arm",
-          "detail": "Level 10"
-        },
-        {
-          "name": "Skylar",
-          "path": "/items/skylar",
-          "detail": "Level 60"
         }
       ],
       "total": 8

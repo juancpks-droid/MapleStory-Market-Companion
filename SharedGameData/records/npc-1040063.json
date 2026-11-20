@@ -7,13 +7,13 @@
     "category": "Equipment"
   },
   "kind": "npc",
-  "checkedAt": "2026-10-17T09:50:41.886Z",
+  "checkedAt": "2026-11-20T17:54:59.638Z",
   "data": {
     "sell": 5000,
     "buy": null,
     "source": "CCPLZ",
     "url": "https://ccplz.cc/items/black-knucklevest",
-    "checkedAt": "2026-10-17T09:50:41.886Z"
+    "checkedAt": "2026-11-20T17:54:59.638Z"
   },
   "provenance": {
     "source": "CCPLZ",

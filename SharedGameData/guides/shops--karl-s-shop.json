@@ -1,0 +1,125 @@
+{
+  "schemaVersion": 1,
+  "path": "/shops/karl-s-shop",
+  "kind": "shop",
+  "name": "Karl's Shop",
+  "source": "CCPLZ",
+  "sourceUrl": "https://ccplz.cc/shops/karl-s-shop",
+  "checkedAt": "2026-11-20T17:55:17.754Z",
+  "notice": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial.",
+  "fields": [
+    {
+      "label": "Shopkeeper",
+      "value": "Karl"
+    },
+    {
+      "label": "Location",
+      "value": "Henesys Weapon Store"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Reported stock",
+      "links": [
+        {
+          "name": "Sword",
+          "path": "/items/sword",
+          "detail": "One-handed sword, 50 mesos"
+        },
+        {
+          "name": "Leather Purse",
+          "path": "/items/leather-purse",
+          "detail": "One-handed blunt, 3,800 mesos"
+        },
+        {
+          "name": "Crossbow",
+          "path": "/items/crossbow",
+          "detail": "Crossbow, 5,000 mesos"
+        },
+        {
+          "name": "Red Brick",
+          "path": "/items/red-brick",
+          "detail": "One-handed blunt, 5,000 mesos"
+        },
+        {
+          "name": "War Bow",
+          "path": "/items/war-bow",
+          "detail": "Bow, 5,000 mesos"
+        },
+        {
+          "name": "Battle Crossbow",
+          "path": "/items/battle-crossbow",
+          "detail": "Crossbow, 7,000 mesos"
+        },
+        {
+          "name": "Composite Bow",
+          "path": "/items/composite-bow",
+          "detail": "Bow, 7,000 mesos"
+        },
+        {
+          "name": "Hard Briefcase",
+          "path": "/items/hard-briefcase",
+          "detail": "One-handed blunt, 10,500 mesos"
+        },
+        {
+          "name": "Balanche",
+          "path": "/items/balanche",
+          "detail": "Crossbow, 13,500 mesos"
+        },
+        {
+          "name": "Hunter's Bow",
+          "path": "/items/hunter-s-bow",
+          "detail": "Bow, 13,500 mesos"
+        },
+        {
+          "name": "Plunger",
+          "path": "/items/plunger",
+          "detail": "One-handed blunt, 13,500 mesos"
+        },
+        {
+          "name": "Battle Bow",
+          "path": "/items/battle-bow",
+          "detail": "Bow, 16,500 mesos"
+        },
+        {
+          "name": "Mountain Crossbow",
+          "path": "/items/mountain-crossbow",
+          "detail": "Crossbow, 16,500 mesos"
+        },
+        {
+          "name": "Eagle Crow",
+          "path": "/items/eagle-crow",
+          "detail": "Crossbow, 26,000 mesos"
+        },
+        {
+          "name": "Ryden",
+          "path": "/items/ryden",
+          "detail": "Bow, 26,000 mesos"
+        }
+      ],
+      "total": 15
+    },
+    {
+      "title": "Shopkeeper",
+      "links": [
+        {
+          "name": "Karl",
+          "path": "/npcs/karl",
+          "detail": ""
+        }
+      ],
+      "total": 1
+    },
+    {
+      "title": "Location",
+      "links": [
+        {
+          "name": "Henesys Weapon Store",
+          "path": "/maps/henesys-weapon-store",
+          "detail": ""
+        }
+      ],
+      "total": 1
+    }
+  ]
+}

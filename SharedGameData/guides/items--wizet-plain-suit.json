@@ -1,0 +1,96 @@
+{
+  "schemaVersion": 1,
+  "path": "/items/wizet-plain-suit",
+  "kind": "item",
+  "name": "Wizet Plain Suit",
+  "source": "CCPLZ",
+  "sourceUrl": "https://ccplz.cc/items/wizet-plain-suit",
+  "checkedAt": "2026-11-20T17:55:14.793Z",
+  "notice": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial.",
+  "fields": [
+    {
+      "label": "Type",
+      "value": "Topwear"
+    },
+    {
+      "label": "Class",
+      "value": "All classes"
+    },
+    {
+      "label": "NPC sell price",
+      "value": "1 meso"
+    },
+    {
+      "label": "Required level",
+      "value": "0"
+    },
+    {
+      "label": "Required STR",
+      "value": "0"
+    },
+    {
+      "label": "Required DEX",
+      "value": "0"
+    },
+    {
+      "label": "Required INT",
+      "value": "0"
+    },
+    {
+      "label": "Required LUK",
+      "value": "0"
+    },
+    {
+      "label": "Trade restriction flag",
+      "value": "1"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Similar equipment",
+      "links": [
+        {
+          "name": "Blue Striped Undershirt",
+          "path": "/items/blue-striped-undershirt",
+          "detail": ""
+        },
+        {
+          "name": "Green T-Shirt",
+          "path": "/items/green-t-shirt",
+          "detail": ""
+        },
+        {
+          "name": "Grey T-Shirt",
+          "path": "/items/grey-t-shirt",
+          "detail": ""
+        },
+        {
+          "name": "Pink Tank Top",
+          "path": "/items/pink-tank-top",
+          "detail": ""
+        },
+        {
+          "name": "Red Striped Top",
+          "path": "/items/red-striped-top",
+          "detail": ""
+        },
+        {
+          "name": "Undershirt",
+          "path": "/items/undershirt",
+          "detail": ""
+        },
+        {
+          "name": "White Tube Top",
+          "path": "/items/white-tube-top",
+          "detail": ""
+        },
+        {
+          "name": "White Undershirt",
+          "path": "/items/white-undershirt",
+          "detail": ""
+        }
+      ],
+      "total": 8
+    }
+  ]
+}

@@ -198,6 +198,11 @@
       "kind": "map"
     },
     {
+      "path": "/items/beginner-s-long-sword",
+      "name": "Beginner's Long Sword",
+      "kind": "item"
+    },
+    {
       "path": "/shops/ben-s-shop",
       "name": "Ben's Shop",
       "kind": "shop"
@@ -1318,6 +1323,11 @@
       "kind": "item"
     },
     {
+      "path": "/shops/karl-s-shop",
+      "name": "Karl's Shop",
+      "kind": "shop"
+    },
+    {
       "path": "/maps/kerning-city",
       "name": "Kerning City",
       "kind": "map"
@@ -1471,6 +1481,11 @@
       "path": "/monsters/luster-pixie",
       "name": "Luster Pixie",
       "kind": "monster"
+    },
+    {
+      "path": "/items/machete",
+      "name": "Machete",
+      "kind": "item"
     },
     {
       "path": "/npcs/magician-job-instructor",
@@ -1653,6 +1668,11 @@
       "kind": "quest"
     },
     {
+      "path": "/items/old-gladius",
+      "name": "Old Gladius",
+      "kind": "item"
+    },
+    {
       "path": "/items/one-handed-weapon-crafting-catalyst",
       "name": "One-Handed Weapon Crafting Catalyst",
       "kind": "item"
@@ -1738,6 +1758,11 @@
       "kind": "item"
     },
     {
+      "path": "/items/pink-tank-top",
+      "name": "Pink Tank Top",
+      "kind": "item"
+    },
+    {
       "path": "/monsters/pink-teddy",
       "name": "Pink Teddy",
       "kind": "monster"
@@ -1796,6 +1821,11 @@
       "path": "/monsters/propelly",
       "name": "Propelly",
       "kind": "monster"
+    },
+    {
+      "path": "/items/pumpkin-basket",
+      "name": "Pumpkin Basket",
+      "kind": "item"
     },
     {
       "path": "/items/purple-moonlight",
@@ -2028,6 +2058,11 @@
       "kind": "item"
     },
     {
+      "path": "/items/sabre",
+      "name": "Sabre",
+      "kind": "item"
+    },
+    {
       "path": "/items/sai",
       "name": "Sai",
       "kind": "item"
@@ -2055,6 +2090,11 @@
     {
       "path": "/items/sapphire-camel-boots",
       "name": "Sapphire Camel Boots",
+      "kind": "item"
+    },
+    {
+      "path": "/items/saw",
+      "name": "Saw",
       "kind": "item"
     },
     {
@@ -2103,9 +2143,19 @@
       "kind": "monster"
     },
     {
+      "path": "/shops/sid-s-shop",
+      "name": "Sid's Shop",
+      "kind": "shop"
+    },
+    {
       "path": "/quests/silas-irons-in-need-of-an-apprentice",
       "name": "Silas Irons in Need of an Apprentice",
       "kind": "quest"
+    },
+    {
+      "path": "/shops/silver-s-shop",
+      "name": "Silver's Shop",
+      "kind": "shop"
     },
     {
       "path": "/maps/sleepy-dungeon-i",
@@ -2558,6 +2608,11 @@
       "kind": "item"
     },
     {
+      "path": "/items/undershirt",
+      "name": "Undershirt",
+      "kind": "item"
+    },
+    {
       "path": "/maps/utah-s-pig-farm",
       "name": "Utah's Pig Farm",
       "kind": "map"
@@ -2566,6 +2621,11 @@
       "path": "/shops/valen-s-shop",
       "name": "Valen's Shop",
       "kind": "shop"
+    },
+    {
+      "path": "/items/viking-sword",
+      "name": "Viking Sword",
+      "kind": "item"
     },
     {
       "path": "/items/wand-magic-attack-scroll-greater",
@@ -2648,6 +2708,11 @@
       "kind": "item"
     },
     {
+      "path": "/items/white-tube-top",
+      "name": "White Tube Top",
+      "kind": "item"
+    },
+    {
       "path": "/items/white-undershirt",
       "name": "White Undershirt",
       "kind": "item"
@@ -2670,6 +2735,11 @@
     {
       "path": "/items/wisdom-crystal-ore",
       "name": "Wisdom Crystal Ore",
+      "kind": "item"
+    },
+    {
+      "path": "/items/wizet-plain-suit",
+      "name": "Wizet Plain Suit",
       "kind": "item"
     },
     {
