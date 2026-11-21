@@ -1,0 +1,350 @@
+{
+  "schemaVersion": 1,
+  "path": "/shops/sam-s-shop",
+  "kind": "shop",
+  "name": "Sam's Shop",
+  "source": "CCPLZ",
+  "sourceUrl": "https://ccplz.cc/shops/sam-s-shop",
+  "checkedAt": "2026-11-21T16:52:36.184Z",
+  "notice": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial.",
+  "fields": [
+    {
+      "label": "Shopkeeper",
+      "value": "Sam (Henesys Weapon Store)"
+    },
+    {
+      "label": "Location",
+      "value": "Henesys Weapon Store"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Reported stock",
+      "links": [
+        {
+          "name": "Brown Skullcap",
+          "path": "/items/brown-skullcap",
+          "detail": "Hat, 600 mesos"
+        },
+        {
+          "name": "Brown Hard Leather Boots",
+          "path": "/items/brown-hard-leather-boots",
+          "detail": "Shoes, 1,200 mesos"
+        },
+        {
+          "name": "Brown Winter Hat",
+          "path": "/items/brown-winter-hat",
+          "detail": "Hat, 1,200 mesos"
+        },
+        {
+          "name": "Green Hard Leather Boots",
+          "path": "/items/green-hard-leather-boots",
+          "detail": "Shoes, 1,200 mesos"
+        },
+        {
+          "name": "Green Winter Hat",
+          "path": "/items/green-winter-hat",
+          "detail": "Hat, 1,200 mesos"
+        },
+        {
+          "name": "Archer Pants",
+          "path": "/items/archer-pants",
+          "detail": "Bottomwear, 1,600 mesos"
+        },
+        {
+          "name": "Green Avelin Skirt",
+          "path": "/items/green-avelin-skirt",
+          "detail": "Bottomwear, 1,600 mesos"
+        },
+        {
+          "name": "Yellow Avelin Skirt",
+          "path": "/items/yellow-avelin-skirt",
+          "detail": "Bottomwear, 1,600 mesos"
+        },
+        {
+          "name": "Black Feather Hat",
+          "path": "/items/black-feather-hat",
+          "detail": "Hat, 1,800 mesos"
+        },
+        {
+          "name": "Blue Feather Hat",
+          "path": "/items/blue-feather-hat",
+          "detail": "Hat, 1,800 mesos"
+        },
+        {
+          "name": "Blue Woodsman Boots",
+          "path": "/items/blue-woodsman-boots",
+          "detail": "Shoes, 1,800 mesos"
+        },
+        {
+          "name": "Brown Feather Hat",
+          "path": "/items/brown-feather-hat",
+          "detail": "Hat, 1,800 mesos"
+        },
+        {
+          "name": "Brown Woodsman Boots",
+          "path": "/items/brown-woodsman-boots",
+          "detail": "Shoes, 1,800 mesos"
+        },
+        {
+          "name": "Green Feather Hat",
+          "path": "/items/green-feather-hat",
+          "detail": "Hat, 1,800 mesos"
+        },
+        {
+          "name": "Green Woodsman Boots",
+          "path": "/items/green-woodsman-boots",
+          "detail": "Shoes, 1,800 mesos"
+        },
+        {
+          "name": "Red Feather Hat",
+          "path": "/items/red-feather-hat",
+          "detail": "Hat, 1,800 mesos"
+        },
+        {
+          "name": "Brown Archer Top",
+          "path": "/items/brown-archer-top",
+          "detail": "Topwear, 2,000 mesos"
+        },
+        {
+          "name": "Green Archer Top",
+          "path": "/items/green-archer-top",
+          "detail": "Topwear, 2,000 mesos"
+        },
+        {
+          "name": "Green Avelin",
+          "path": "/items/green-avelin",
+          "detail": "Topwear, 2,000 mesos"
+        },
+        {
+          "name": "Old Wisconsin",
+          "path": "/items/old-wisconsin",
+          "detail": "Hat, 2,000 mesos"
+        },
+        {
+          "name": "Yellow Avelin",
+          "path": "/items/yellow-avelin",
+          "detail": "Topwear, 2,000 mesos"
+        },
+        {
+          "name": "Brown Able Skirt",
+          "path": "/items/brown-able-skirt",
+          "detail": "Bottomwear, 2,400 mesos"
+        },
+        {
+          "name": "Green Able Armor Skirt",
+          "path": "/items/green-able-armor-skirt",
+          "detail": "Bottomwear, 2,400 mesos"
+        },
+        {
+          "name": "Grey Able Skirt",
+          "path": "/items/grey-able-skirt",
+          "detail": "Bottomwear, 2,400 mesos"
+        },
+        {
+          "name": "Green Able Armor",
+          "path": "/items/green-able-armor",
+          "detail": "Topwear, 3,000 mesos"
+        },
+        {
+          "name": "Green Leather Hoodwear",
+          "path": "/items/green-leather-hoodwear",
+          "detail": "Topwear, 3,000 mesos"
+        },
+        {
+          "name": "Grey Able Armor",
+          "path": "/items/grey-able-armor",
+          "detail": "Topwear, 3,000 mesos"
+        },
+        {
+          "name": "Silver Leather Hoodwear",
+          "path": "/items/silver-leather-hoodwear",
+          "detail": "Topwear, 3,000 mesos"
+        },
+        {
+          "name": "Yellow Able Armor",
+          "path": "/items/yellow-able-armor",
+          "detail": "Topwear, 3,000 mesos"
+        },
+        {
+          "name": "Bear Huntertop",
+          "path": "/items/bear-huntertop",
+          "detail": "Shoes, 3,600 mesos"
+        },
+        {
+          "name": "Black Robin Hat",
+          "path": "/items/black-robin-hat",
+          "detail": "Hat, 3,600 mesos"
+        },
+        {
+          "name": "Blue Robin Hat",
+          "path": "/items/blue-robin-hat",
+          "detail": "Hat, 3,600 mesos"
+        },
+        {
+          "name": "Brown Robin Hat",
+          "path": "/items/brown-robin-hat",
+          "detail": "Hat, 3,600 mesos"
+        },
+        {
+          "name": "Deer Huntertop",
+          "path": "/items/deer-huntertop",
+          "detail": "Shoes, 3,600 mesos"
+        },
+        {
+          "name": "Green Robin Hat",
+          "path": "/items/green-robin-hat",
+          "detail": "Hat, 3,600 mesos"
+        },
+        {
+          "name": "Lion Huntertop",
+          "path": "/items/lion-huntertop",
+          "detail": "Shoes, 3,600 mesos"
+        },
+        {
+          "name": "Rabbit Huntertop",
+          "path": "/items/rabbit-huntertop",
+          "detail": "Shoes, 3,600 mesos"
+        },
+        {
+          "name": "Red Robin Hat",
+          "path": "/items/red-robin-hat",
+          "detail": "Hat, 3,600 mesos"
+        },
+        {
+          "name": "Black Baseball Cap",
+          "path": "/items/black-baseball-cap",
+          "detail": "Hat, 3,900 mesos"
+        },
+        {
+          "name": "Blue Baseball Cap",
+          "path": "/items/blue-baseball-cap",
+          "detail": "Hat, 3,900 mesos"
+        },
+        {
+          "name": "Brown Baseball Cap",
+          "path": "/items/brown-baseball-cap",
+          "detail": "Hat, 3,900 mesos"
+        },
+        {
+          "name": "Red Baseball Cap",
+          "path": "/items/red-baseball-cap",
+          "detail": "Hat, 3,900 mesos"
+        },
+        {
+          "name": "Yellow Baseball Cap",
+          "path": "/items/yellow-baseball-cap",
+          "detail": "Hat, 3,900 mesos"
+        },
+        {
+          "name": "Amethyst Earrings",
+          "path": "/items/amethyst-earrings",
+          "detail": "Earring, 4,500 mesos"
+        },
+        {
+          "name": "Black Hunter",
+          "path": "/items/black-hunter",
+          "detail": "Hat, 4,500 mesos"
+        },
+        {
+          "name": "Blue Hunter",
+          "path": "/items/blue-hunter",
+          "detail": "Hat, 4,500 mesos"
+        },
+        {
+          "name": "Brown Hunter",
+          "path": "/items/brown-hunter",
+          "detail": "Hat, 4,500 mesos"
+        },
+        {
+          "name": "Green Hunter",
+          "path": "/items/green-hunter",
+          "detail": "Hat, 4,500 mesos"
+        },
+        {
+          "name": "Red Hunter",
+          "path": "/items/red-hunter",
+          "detail": "Hat, 4,500 mesos"
+        },
+        {
+          "name": "Single Earring",
+          "path": "/items/single-earring",
+          "detail": "Earring, 4,500 mesos"
+        },
+        {
+          "name": "Blue Whitebottom Boots",
+          "path": "/items/blue-whitebottom-boots",
+          "detail": "Shoes, 4,680 mesos"
+        },
+        {
+          "name": "Orange Whitebottom Boots",
+          "path": "/items/orange-whitebottom-boots",
+          "detail": "Shoes, 4,680 mesos"
+        },
+        {
+          "name": "Pink Whitebottom Boots",
+          "path": "/items/pink-whitebottom-boots",
+          "detail": "Shoes, 4,680 mesos"
+        },
+        {
+          "name": "Red Whitebottom Boots",
+          "path": "/items/red-whitebottom-boots",
+          "detail": "Shoes, 4,680 mesos"
+        },
+        {
+          "name": "Brown Hard Leather Pants",
+          "path": "/items/brown-hard-leather-pants",
+          "detail": "Bottomwear, 4,800 mesos"
+        },
+        {
+          "name": "Green Shivermail Skirt",
+          "path": "/items/green-shivermail-skirt",
+          "detail": "Bottomwear, 4,800 mesos"
+        },
+        {
+          "name": "Purple Shivermail Skirt",
+          "path": "/items/purple-shivermail-skirt",
+          "detail": "Bottomwear, 4,800 mesos"
+        },
+        {
+          "name": "Red Shivermail Skirt",
+          "path": "/items/red-shivermail-skirt",
+          "detail": "Bottomwear, 4,800 mesos"
+        },
+        {
+          "name": "Bennis Chain Pants",
+          "path": "/items/bennis-chain-pants",
+          "detail": "Bottomwear, 6,000 mesos"
+        },
+        {
+          "name": "Brown Hard Leather Top",
+          "path": "/items/brown-hard-leather-top",
+          "detail": "Topwear, 6,000 mesos"
+        }
+      ],
+      "total": 81
+    },
+    {
+      "title": "Shopkeeper",
+      "links": [
+        {
+          "name": "Sam (Henesys Weapon Store)",
+          "path": "/npcs/sam-211",
+          "detail": ""
+        }
+      ],
+      "total": 1
+    },
+    {
+      "title": "Location",
+      "links": [
+        {
+          "name": "Henesys Weapon Store",
+          "path": "/maps/henesys-weapon-store",
+          "detail": ""
+        }
+      ],
+      "total": 1
+    }
+  ]
+}

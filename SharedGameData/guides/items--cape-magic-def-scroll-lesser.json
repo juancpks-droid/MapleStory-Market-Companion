@@ -1,0 +1,88 @@
+{
+  "schemaVersion": 1,
+  "path": "/items/cape-magic-def-scroll-lesser",
+  "kind": "item",
+  "name": "Cape Magic Def. Scroll: Lesser",
+  "source": "CCPLZ",
+  "sourceUrl": "https://ccplz.cc/items/cape-magic-def-scroll-lesser",
+  "checkedAt": "2026-11-21T16:52:15.138Z",
+  "notice": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial.",
+  "fields": [
+    {
+      "label": "Type",
+      "value": "Cape scrolls"
+    },
+    {
+      "label": "Magic defense",
+      "value": "+2"
+    },
+    {
+      "label": "NPC sell price",
+      "value": "1 meso"
+    },
+    {
+      "label": "NPC buy price (lowest recorded)",
+      "value": "15000 mesos"
+    },
+    {
+      "label": "Success rate (%)",
+      "value": "100"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Dropped by",
+      "links": [
+        {
+          "name": "Red Snail",
+          "path": "/monsters/red-snail",
+          "detail": "Level 4"
+        }
+      ],
+      "total": 1
+    },
+    {
+      "title": "Sold in",
+      "links": [
+        {
+          "name": "Tulcus's Shop",
+          "path": "/shops/tulcus-s-shop",
+          "detail": ""
+        }
+      ],
+      "total": 1
+    },
+    {
+      "title": "How to craft it",
+      "links": [
+        {
+          "name": "Cape Magic Def. Scroll: Lesser",
+          "path": "/recipes/craft-cape-magic-def-scroll-lesser",
+          "detail": "Crafting skill level 7"
+        }
+      ],
+      "total": 1
+    },
+    {
+      "title": "Related items",
+      "links": [
+        {
+          "name": "Cape Magic Def. Scroll: Intermediate",
+          "path": "/items/cape-magic-def-scroll-intermediate",
+          "detail": ""
+        },
+        {
+          "name": "Cape Magic Def. Scroll: Greater",
+          "path": "/items/cape-magic-def-scroll-greater",
+          "detail": ""
+        },
+        {
+          "name": "Cape Magic Def. Scroll: Chaos",
+          "path": "/items/cape-magic-def-scroll-chaos",
+          "detail": ""
+        }
+      ],
+      "total": 3
+    }
+  ]
+}

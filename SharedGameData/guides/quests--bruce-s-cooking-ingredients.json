@@ -1,0 +1,104 @@
+{
+  "schemaVersion": 1,
+  "path": "/quests/bruce-s-cooking-ingredients",
+  "kind": "quest",
+  "name": "A Family Reunited (Bruce's Cooking Ingredients)",
+  "source": "CCPLZ",
+  "sourceUrl": "https://ccplz.cc/quests/bruce-s-cooking-ingredients",
+  "checkedAt": "2026-11-21T16:52:33.139Z",
+  "notice": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial.",
+  "fields": [
+    {
+      "label": "Minimum level",
+      "value": "17"
+    },
+    {
+      "label": "Category",
+      "value": "Citizenship"
+    },
+    {
+      "label": "EXP reward",
+      "value": "982"
+    },
+    {
+      "label": "Meso reward",
+      "value": "555"
+    },
+    {
+      "label": "Starts with",
+      "value": "Bruce"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Quest NPCs",
+      "links": [
+        {
+          "name": "Bruce",
+          "path": "/npcs/bruce",
+          "detail": "Starts the quest"
+        }
+      ],
+      "total": 1
+    },
+    {
+      "title": "Complete first",
+      "links": [
+        {
+          "name": "A Family Reunited (Mrs. Ming Ming's Advice)",
+          "path": "/quests/mrs-ming-ming-s-advice",
+          "detail": ""
+        }
+      ],
+      "total": 1
+    },
+    {
+      "title": "Items to bring",
+      "links": [
+        {
+          "name": "Apple",
+          "path": "/items/apple",
+          "detail": "x3"
+        },
+        {
+          "name": "Egg",
+          "path": "/items/egg",
+          "detail": "x3"
+        },
+        {
+          "name": "Firewood",
+          "path": "/items/firewood",
+          "detail": "x15"
+        },
+        {
+          "name": "Orange",
+          "path": "/items/orange",
+          "detail": "x3"
+        }
+      ],
+      "total": 4
+    },
+    {
+      "title": "Item rewards",
+      "links": [
+        {
+          "name": "Blue Potion",
+          "path": "/items/blue-potion",
+          "detail": ""
+        }
+      ],
+      "total": 1
+    },
+    {
+      "title": "Where it takes place",
+      "links": [
+        {
+          "name": "Henesys",
+          "path": "/maps/henesys",
+          "detail": ""
+        }
+      ],
+      "total": 1
+    }
+  ]
+}

@@ -1,0 +1,100 @@
+{
+  "schemaVersion": 1,
+  "path": "/quests/mai-s-training",
+  "kind": "quest",
+  "name": "Mai's Training",
+  "source": "CCPLZ",
+  "sourceUrl": "https://ccplz.cc/quests/mai-s-training",
+  "checkedAt": "2026-11-21T16:52:24.142Z",
+  "notice": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial.",
+  "fields": [
+    {
+      "label": "Minimum level",
+      "value": "3"
+    },
+    {
+      "label": "Category",
+      "value": "Maple Island"
+    },
+    {
+      "label": "EXP reward",
+      "value": "80"
+    },
+    {
+      "label": "Starts with",
+      "value": "Mai"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Quest NPCs",
+      "links": [
+        {
+          "name": "Mai",
+          "path": "/npcs/mai",
+          "detail": "Starts the quest"
+        }
+      ],
+      "total": 1
+    },
+    {
+      "title": "Complete first",
+      "links": [
+        {
+          "name": "Sam's Suggestion",
+          "path": "/quests/sam-s-suggestion",
+          "detail": ""
+        }
+      ],
+      "total": 1
+    },
+    {
+      "title": "Monsters to defeat",
+      "links": [
+        {
+          "name": "Blue Snail",
+          "path": "/monsters/blue-snail",
+          "detail": "x10"
+        },
+        {
+          "name": "Red Snail",
+          "path": "/monsters/red-snail",
+          "detail": "x5"
+        },
+        {
+          "name": "Shroom",
+          "path": "/monsters/shroom",
+          "detail": "x10"
+        }
+      ],
+      "total": 3
+    },
+    {
+      "title": "Item rewards",
+      "links": [
+        {
+          "name": "Egg",
+          "path": "/items/egg",
+          "detail": ""
+        }
+      ],
+      "total": 1
+    },
+    {
+      "title": "Where it takes place",
+      "links": [
+        {
+          "name": "A Split Road",
+          "path": "/maps/a-split-road",
+          "detail": ""
+        },
+        {
+          "name": "Southperry",
+          "path": "/maps/southperry",
+          "detail": ""
+        }
+      ],
+      "total": 2
+    }
+  ]
+}

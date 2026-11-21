@@ -1,0 +1,103 @@
+{
+  "schemaVersion": 1,
+  "path": "/quests/delivering-a-box-of-fossils",
+  "kind": "quest",
+  "name": "Winston's Fossil Dig-up (Delivering a Box of Fossils)",
+  "source": "CCPLZ",
+  "sourceUrl": "https://ccplz.cc/quests/delivering-a-box-of-fossils",
+  "checkedAt": "2026-11-21T16:52:30.137Z",
+  "notice": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial.",
+  "fields": [
+    {
+      "label": "Minimum level",
+      "value": "17"
+    },
+    {
+      "label": "Category",
+      "value": "Perion"
+    },
+    {
+      "label": "EXP reward",
+      "value": "982"
+    },
+    {
+      "label": "Meso reward",
+      "value": "555"
+    },
+    {
+      "label": "Starts with",
+      "value": "Winston"
+    },
+    {
+      "label": "Turn in to",
+      "value": "Betty"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Quest NPCs",
+      "links": [
+        {
+          "name": "Winston",
+          "path": "/npcs/winston",
+          "detail": "Starts the quest"
+        },
+        {
+          "name": "Betty",
+          "path": "/npcs/betty",
+          "detail": "Completes the quest"
+        }
+      ],
+      "total": 2
+    },
+    {
+      "title": "Complete first",
+      "links": [
+        {
+          "name": "Winston's Fossil Dig-up (Searching for Fossils)",
+          "path": "/quests/searching-for-fossils",
+          "detail": ""
+        }
+      ],
+      "total": 1
+    },
+    {
+      "title": "Items to bring",
+      "links": [
+        {
+          "name": "Fossil Box",
+          "path": "/items/fossil-box",
+          "detail": "x1"
+        },
+        {
+          "name": "Winston's Recommendation",
+          "path": "/items/winston-s-recommendation",
+          "detail": "x1"
+        }
+      ],
+      "total": 2
+    },
+    {
+      "title": "Item rewards",
+      "links": [
+        {
+          "name": "Egg",
+          "path": "/items/egg",
+          "detail": ""
+        }
+      ],
+      "total": 1
+    },
+    {
+      "title": "Where it takes place",
+      "links": [
+        {
+          "name": "Ellinia",
+          "path": "/maps/ellinia",
+          "detail": ""
+        }
+      ],
+      "total": 1
+    }
+  ]
+}

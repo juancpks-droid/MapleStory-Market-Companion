@@ -7,13 +7,13 @@
     "category": "Equipment"
   },
   "kind": "npc",
-  "checkedAt": "2026-10-17T09:50:57.007Z",
+  "checkedAt": "2026-11-21T16:52:06.125Z",
   "data": {
     "sell": 3000,
     "buy": null,
     "source": "CCPLZ",
     "url": "https://ccplz.cc/items/green-matty",
-    "checkedAt": "2026-10-17T09:50:57.007Z"
+    "checkedAt": "2026-11-21T16:52:06.125Z"
   },
   "provenance": {
     "source": "CCPLZ",

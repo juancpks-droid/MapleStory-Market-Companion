@@ -5,7 +5,7 @@
   "name": "Green Distinction",
   "source": "CCPLZ",
   "sourceUrl": "https://ccplz.cc/items/green-distinction",
-  "checkedAt": "2026-10-17T09:50:53.879Z",
+  "checkedAt": "2026-11-21T16:52:03.165Z",
   "notice": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial.",
   "fields": [
     {
@@ -60,21 +60,15 @@
         {
           "name": "Curse Eye",
           "path": "/monsters/curse-eye",
-          "detail": "Level 33"
-        }
-      ],
-      "total": 1
-    },
-    {
-      "title": "Also dropped by, in older versions",
-      "links": [
+          "detail": "Level 33, about 0.22%, usual for its kind"
+        },
         {
-          "name": "Malady",
-          "path": "/monsters/malady",
-          "detail": "Level 55, 0.15% historical rate"
+          "name": "Lupin",
+          "path": "/monsters/lupin",
+          "detail": "Level 37, about 0.22%, usual for its kind"
         }
       ],
-      "total": 1
+      "total": 2
     },
     {
       "title": "Similar equipment",

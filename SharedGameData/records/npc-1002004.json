@@ -7,13 +7,13 @@
     "category": "Equipment"
   },
   "kind": "npc",
-  "checkedAt": "2026-10-17T09:50:50.937Z",
+  "checkedAt": "2026-11-21T16:52:00.149Z",
   "data": {
     "sell": 3000,
     "buy": null,
     "source": "CCPLZ",
     "url": "https://ccplz.cc/items/great-brown-helmet",
-    "checkedAt": "2026-10-17T09:50:50.937Z"
+    "checkedAt": "2026-11-21T16:52:00.149Z"
   },
   "provenance": {
     "source": "CCPLZ",

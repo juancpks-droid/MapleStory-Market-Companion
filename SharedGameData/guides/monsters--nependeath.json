@@ -1,0 +1,102 @@
+{
+  "schemaVersion": 1,
+  "path": "/monsters/nependeath",
+  "kind": "monster",
+  "name": "Nependeath",
+  "source": "CCPLZ",
+  "sourceUrl": "https://ccplz.cc/monsters/nependeath",
+  "checkedAt": "2026-11-21T16:52:12.163Z",
+  "notice": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial.",
+  "fields": [
+    {
+      "label": "Level",
+      "value": "42"
+    },
+    {
+      "label": "HP",
+      "value": "1,827"
+    },
+    {
+      "label": "EXP",
+      "value": "103"
+    },
+    {
+      "label": "MP",
+      "value": "50"
+    },
+    {
+      "label": "Attack",
+      "value": "225"
+    },
+    {
+      "label": "Defense",
+      "value": "15"
+    },
+    {
+      "label": "Accuracy",
+      "value": "133"
+    },
+    {
+      "label": "Avoidability",
+      "value": "22"
+    },
+    {
+      "label": "Weak to",
+      "value": "Fire"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Where it spawns",
+      "links": [
+        {
+          "name": "Disposed Flower Garden",
+          "path": "/maps/disposed-flower-garden",
+          "detail": "Ossyria, 29 spawn points"
+        },
+        {
+          "name": "Strolling Path",
+          "path": "/maps/strolling-path",
+          "detail": "Ossyria, 20 spawn points"
+        },
+        {
+          "name": "Cloud Park II",
+          "path": "/maps/cloud-park-ii",
+          "detail": "Ossyria, 9 spawn points"
+        }
+      ],
+      "total": 3
+    },
+    {
+      "title": "Drops",
+      "links": [
+        {
+          "name": "Arrows for Bows",
+          "path": "/items/arrows-for-bows",
+          "detail": "Arrows for bows, about 1.1%, usual for its kind"
+        },
+        {
+          "name": "Arrows for Crossbows",
+          "path": "/items/arrows-for-crossbows",
+          "detail": "Arrows for crossbows, about 1.1%, usual for its kind"
+        },
+        {
+          "name": "Nependeath Seed (from Nependeath)",
+          "path": "/items/nependeath-seed",
+          "detail": "Monster drops, about 41%, usual for its kind"
+        },
+        {
+          "name": "White Potion",
+          "path": "/items/white-potion",
+          "detail": "Potions, about 2.4%, usual for its kind"
+        },
+        {
+          "name": "Wisdom Crystal Ore",
+          "path": "/items/wisdom-crystal-ore",
+          "detail": "Crafting materials, about 3.2%, usual for its kind"
+        }
+      ],
+      "total": 5
+    }
+  ]
+}

@@ -33,6 +33,11 @@
       "kind": "item"
     },
     {
+      "path": "/quests/bruce-s-cooking-ingredients",
+      "name": "A Family Reunited (Bruce's Cooking Ingredients)",
+      "kind": "quest"
+    },
+    {
       "path": "/quests/a-box-hidden-long-ago",
       "name": "A Gift for a Citizen of Honor (A Box Hidden Long Ago)",
       "kind": "quest"
@@ -508,8 +513,23 @@
       "kind": "item"
     },
     {
+      "path": "/items/cape-magic-def-scroll-chaos",
+      "name": "Cape Magic Def. Scroll: Chaos",
+      "kind": "item"
+    },
+    {
+      "path": "/items/cape-magic-def-scroll-greater",
+      "name": "Cape Magic Def. Scroll: Greater",
+      "kind": "item"
+    },
+    {
       "path": "/items/cape-magic-def-scroll-intermediate",
       "name": "Cape Magic Def. Scroll: Intermediate",
+      "kind": "item"
+    },
+    {
+      "path": "/items/cape-magic-def-scroll-lesser",
+      "name": "Cape Magic Def. Scroll: Lesser",
       "kind": "item"
     },
     {
@@ -1498,6 +1518,11 @@
       "kind": "npc"
     },
     {
+      "path": "/quests/mai-s-training",
+      "name": "Mai's Training",
+      "kind": "quest"
+    },
+    {
       "path": "/quests/mai-s-final-training",
       "name": "Mai's Training (Mai's Final Training)",
       "kind": "quest"
@@ -1641,6 +1666,11 @@
       "path": "/quests/don-hwang-s-request",
       "name": "Nella & Kerning City Citizen's Request (Don Hwang's Request)",
       "kind": "quest"
+    },
+    {
+      "path": "/monsters/nependeath",
+      "name": "Nependeath",
+      "kind": "monster"
     },
     {
       "path": "/items/ninja-mask-for-men",
@@ -1811,6 +1841,26 @@
       "path": "/items/processed-leather",
       "name": "Processed Leather",
       "kind": "item"
+    },
+    {
+      "path": "/recipes/craft-processed-leather-4-9-0",
+      "name": "Processed Leather (from Croco Skin + Croco Skin)",
+      "kind": "recipe"
+    },
+    {
+      "path": "/recipes/craft-processed-leather-4-4-0",
+      "name": "Processed Leather (from Jr. Necki Skin + Jr. Necki Skin)",
+      "kind": "recipe"
+    },
+    {
+      "path": "/recipes/craft-processed-leather",
+      "name": "Processed Leather (from Leather + Leather)",
+      "kind": "recipe"
+    },
+    {
+      "path": "/recipes/craft-processed-leather-4-6-0",
+      "name": "Processed Leather (from Ligator Skin + Ligator Skin)",
+      "kind": "recipe"
     },
     {
       "path": "/items/processed-wood",
@@ -2071,6 +2121,11 @@
       "path": "/npcs/sam",
       "name": "Sam (Snail Hunting Ground I)",
       "kind": "npc"
+    },
+    {
+      "path": "/shops/sam-s-shop",
+      "name": "Sam's Shop",
+      "kind": "shop"
     },
     {
       "path": "/quests/sam-s-suggestion",
@@ -2483,6 +2538,11 @@
       "kind": "monster"
     },
     {
+      "path": "/quests/todd-s-how-to-hunt",
+      "name": "Todd's How-to-Hunt",
+      "kind": "quest"
+    },
+    {
       "path": "/maps/tomato-field",
       "name": "Tomato Field",
       "kind": "map"
@@ -2731,6 +2791,11 @@
       "path": "/maps/wild-kargo-s-area",
       "name": "Wild Kargo's Area",
       "kind": "map"
+    },
+    {
+      "path": "/quests/delivering-a-box-of-fossils",
+      "name": "Winston's Fossil Dig-up (Delivering a Box of Fossils)",
+      "kind": "quest"
     },
     {
       "path": "/items/wisdom-crystal-ore",
