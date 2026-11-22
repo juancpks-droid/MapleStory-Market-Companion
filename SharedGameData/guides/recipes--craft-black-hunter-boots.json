@@ -1,0 +1,111 @@
+{
+  "schemaVersion": 1,
+  "path": "/recipes/craft-black-hunter-boots",
+  "kind": "recipe",
+  "name": "Black Hunter Boots",
+  "source": "CCPLZ",
+  "sourceUrl": "https://ccplz.cc/recipes/craft-black-hunter-boots",
+  "checkedAt": "2026-11-22T17:16:10.003Z",
+  "notice": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial.",
+  "fields": [
+    {
+      "label": "Crafting skill",
+      "value": "Leatherworking"
+    },
+    {
+      "label": "Crafting skill level",
+      "value": "6"
+    },
+    {
+      "label": "Meso cost",
+      "value": "1,800"
+    },
+    {
+      "label": "Crafts",
+      "value": "1"
+    },
+    {
+      "label": "Crafting EXP",
+      "value": "120"
+    },
+    {
+      "label": "Crafting fee (mesos)",
+      "value": "1800"
+    },
+    {
+      "label": "Result quantity",
+      "value": "1"
+    },
+    {
+      "label": "Required skill level",
+      "value": "6"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Makes",
+      "links": [
+        {
+          "name": "Black Hunter Boots",
+          "path": "/items/black-hunter-boots",
+          "detail": ""
+        }
+      ],
+      "total": 1
+    },
+    {
+      "title": "Ingredients",
+      "links": [
+        {
+          "name": "Opal",
+          "path": "/items/opal",
+          "detail": "x4"
+        },
+        {
+          "name": "Processed Leather",
+          "path": "/items/processed-leather",
+          "detail": "x6"
+        },
+        {
+          "name": "Screw",
+          "path": "/items/screw",
+          "detail": "x18"
+        }
+      ],
+      "total": 3
+    },
+    {
+      "title": "Optional catalyst",
+      "links": [
+        {
+          "name": "Armor Crafting Catalyst",
+          "path": "/items/armor-crafting-catalyst",
+          "detail": ""
+        }
+      ],
+      "total": 1
+    },
+    {
+      "title": "Result",
+      "links": [
+        {
+          "name": "Black Hunter Boots",
+          "path": "/items/black-hunter-boots",
+          "detail": "Quantity: 1"
+        }
+      ],
+      "total": 1
+    },
+    {
+      "title": "Catalyst",
+      "links": [
+        {
+          "name": "Armor Crafting Catalyst",
+          "path": "/items/armor-crafting-catalyst",
+          "detail": "Quantity: 1"
+        }
+      ],
+      "total": 1
+    }
+  ]
+}

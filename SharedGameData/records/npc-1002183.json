@@ -7,13 +7,13 @@
     "category": "Equipment"
   },
   "kind": "npc",
-  "checkedAt": "2026-10-17T09:50:59.912Z",
+  "checkedAt": "2026-11-22T17:15:33.948Z",
   "data": {
     "sell": 4200,
     "buy": null,
     "source": "CCPLZ",
     "url": "https://ccplz.cc/items/green-pilfer",
-    "checkedAt": "2026-10-17T09:50:59.912Z"
+    "checkedAt": "2026-11-22T17:15:33.948Z"
   },
   "provenance": {
     "source": "CCPLZ",

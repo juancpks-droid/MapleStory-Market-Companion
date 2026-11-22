@@ -7,13 +7,13 @@
     "category": "Use"
   },
   "kind": "npc",
-  "checkedAt": "2026-10-18T09:50:47.379Z",
+  "checkedAt": "2026-11-22T17:15:42.951Z",
   "data": {
     "sell": 250,
     "buy": 500,
     "source": "CCPLZ",
     "url": "https://ccplz.cc/items/sniper-potion",
-    "checkedAt": "2026-10-18T09:50:47.379Z"
+    "checkedAt": "2026-11-22T17:15:42.951Z"
   },
   "provenance": {
     "source": "CCPLZ",

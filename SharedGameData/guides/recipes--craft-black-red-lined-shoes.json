@@ -1,0 +1,111 @@
+{
+  "schemaVersion": 1,
+  "path": "/recipes/craft-black-red-lined-shoes",
+  "kind": "recipe",
+  "name": "Black Red-Lined Shoes",
+  "source": "CCPLZ",
+  "sourceUrl": "https://ccplz.cc/recipes/craft-black-red-lined-shoes",
+  "checkedAt": "2026-11-22T17:16:18.961Z",
+  "notice": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial.",
+  "fields": [
+    {
+      "label": "Crafting skill",
+      "value": "Leatherworking"
+    },
+    {
+      "label": "Crafting skill level",
+      "value": "8"
+    },
+    {
+      "label": "Meso cost",
+      "value": "4,200"
+    },
+    {
+      "label": "Crafts",
+      "value": "1"
+    },
+    {
+      "label": "Crafting EXP",
+      "value": "160"
+    },
+    {
+      "label": "Crafting fee (mesos)",
+      "value": "4200"
+    },
+    {
+      "label": "Result quantity",
+      "value": "1"
+    },
+    {
+      "label": "Required skill level",
+      "value": "8"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Makes",
+      "links": [
+        {
+          "name": "Black Red-Lined Shoes",
+          "path": "/items/black-red-lined-shoes",
+          "detail": ""
+        }
+      ],
+      "total": 1
+    },
+    {
+      "title": "Ingredients",
+      "links": [
+        {
+          "name": "Garnet",
+          "path": "/items/garnet",
+          "detail": "x6"
+        },
+        {
+          "name": "Processed Leather",
+          "path": "/items/processed-leather",
+          "detail": "x8"
+        },
+        {
+          "name": "Screw",
+          "path": "/items/screw",
+          "detail": "x24"
+        }
+      ],
+      "total": 3
+    },
+    {
+      "title": "Optional catalyst",
+      "links": [
+        {
+          "name": "Armor Crafting Catalyst",
+          "path": "/items/armor-crafting-catalyst",
+          "detail": ""
+        }
+      ],
+      "total": 1
+    },
+    {
+      "title": "Result",
+      "links": [
+        {
+          "name": "Black Red-Lined Shoes",
+          "path": "/items/black-red-lined-shoes",
+          "detail": "Quantity: 1"
+        }
+      ],
+      "total": 1
+    },
+    {
+      "title": "Catalyst",
+      "links": [
+        {
+          "name": "Armor Crafting Catalyst",
+          "path": "/items/armor-crafting-catalyst",
+          "detail": "Quantity: 1"
+        }
+      ],
+      "total": 1
+    }
+  ]
+}

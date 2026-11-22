@@ -5,7 +5,7 @@
   "name": "Scimitar",
   "source": "CCPLZ",
   "sourceUrl": "https://ccplz.cc/items/scimitar",
-  "checkedAt": "2026-10-18T09:50:44.376Z",
+  "checkedAt": "2026-11-22T17:15:40.006Z",
   "notice": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial.",
   "fields": [
     {
@@ -60,18 +60,7 @@
         {
           "name": "Curse Eye",
           "path": "/monsters/curse-eye",
-          "detail": "Level 33"
-        }
-      ],
-      "total": 1
-    },
-    {
-      "title": "Also dropped by, in older versions",
-      "links": [
-        {
-          "name": "Dark Leatty",
-          "path": "/monsters/dark-leatty",
-          "detail": "Level 33, 0.07% historical rate"
+          "detail": "Level 33, about 0.22%, usual for its kind"
         }
       ],
       "total": 1
@@ -121,14 +110,14 @@
           "detail": "Level 15"
         },
         {
+          "name": "Blade of Harmony",
+          "path": "/items/blade-of-harmony",
+          "detail": "Level 45"
+        },
+        {
           "name": "Wooden Sword",
           "path": "/items/wooden-sword",
           "detail": "Level 10"
-        },
-        {
-          "name": "Lion's Fang",
-          "path": "/items/lion-s-fang",
-          "detail": "Level 50"
         }
       ],
       "total": 8

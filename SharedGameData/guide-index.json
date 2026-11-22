@@ -103,6 +103,11 @@
       "kind": "item"
     },
     {
+      "path": "/recipes/craft-aqua-brace",
+      "name": "Aqua Brace",
+      "kind": "recipe"
+    },
+    {
       "path": "/items/armillary-shield-paint-portugal",
       "name": "Armillary Shield Paint (Portugal)",
       "kind": "item"
@@ -183,6 +188,11 @@
       "kind": "item"
     },
     {
+      "path": "/recipes/craft-basic-archer-gloves",
+      "name": "Basic Archer Gloves",
+      "kind": "recipe"
+    },
+    {
       "path": "/recipes/craft-hardwood-wand",
       "name": "Battle Crossbow",
       "kind": "recipe"
@@ -233,6 +243,26 @@
       "kind": "item"
     },
     {
+      "path": "/recipes/craft-black-blue-lined-shoes",
+      "name": "Black Blue-Lined Shoes",
+      "kind": "recipe"
+    },
+    {
+      "path": "/recipes/craft-black-cat-gloves",
+      "name": "Black Cat Gloves",
+      "kind": "recipe"
+    },
+    {
+      "path": "/recipes/craft-black-duo",
+      "name": "Black Duo",
+      "kind": "recipe"
+    },
+    {
+      "path": "/recipes/craft-black-green-lined-shoes",
+      "name": "Black Green-Lined Shoes",
+      "kind": "recipe"
+    },
+    {
       "path": "/items/black-headband",
       "name": "Black Headband",
       "kind": "item"
@@ -241,6 +271,11 @@
       "path": "/items/black-hunter",
       "name": "Black Hunter",
       "kind": "item"
+    },
+    {
+      "path": "/recipes/craft-black-hunter-boots",
+      "name": "Black Hunter Boots",
+      "kind": "recipe"
     },
     {
       "path": "/items/black-knucklevest",
@@ -258,6 +293,16 @@
       "kind": "item"
     },
     {
+      "path": "/recipes/craft-black-lappy-boots",
+      "name": "Black Lappy Boots",
+      "kind": "recipe"
+    },
+    {
+      "path": "/recipes/craft-black-marker",
+      "name": "Black Marker",
+      "kind": "recipe"
+    },
+    {
       "path": "/items/black-maro",
       "name": "Black Maro",
       "kind": "item"
@@ -273,6 +318,11 @@
       "kind": "monster"
     },
     {
+      "path": "/recipes/craft-black-red-lined-shoes",
+      "name": "Black Red-Lined Shoes",
+      "kind": "recipe"
+    },
+    {
       "path": "/items/black-sneak",
       "name": "Black Sneak",
       "kind": "item"
@@ -281,6 +331,11 @@
       "path": "/items/black-swimming-cap",
       "name": "Black Swimming Cap",
       "kind": "item"
+    },
+    {
+      "path": "/recipes/craft-black-yellow-lined-shoes",
+      "name": "Black Yellow-Lined Shoes",
+      "kind": "recipe"
     },
     {
       "path": "/monsters/block-golem",
@@ -310,6 +365,11 @@
     {
       "path": "/recipes/craft-blue-bandana",
       "name": "Blue Bandana",
+      "kind": "recipe"
+    },
+    {
+      "path": "/recipes/craft-blue-diros",
+      "name": "Blue Diros",
       "kind": "recipe"
     },
     {

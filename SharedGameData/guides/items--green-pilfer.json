@@ -5,7 +5,7 @@
   "name": "Green Pilfer",
   "source": "CCPLZ",
   "sourceUrl": "https://ccplz.cc/items/green-pilfer",
-  "checkedAt": "2026-10-17T09:50:59.912Z",
+  "checkedAt": "2026-11-22T17:15:33.948Z",
   "notice": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial.",
   "fields": [
     {
@@ -60,18 +60,7 @@
         {
           "name": "Curse Eye",
           "path": "/monsters/curse-eye",
-          "detail": "Level 33"
-        }
-      ],
-      "total": 1
-    },
-    {
-      "title": "Also dropped by, in older versions",
-      "links": [
-        {
-          "name": "Tortie",
-          "path": "/monsters/tortie",
-          "detail": "Level 46, 0.15% historical rate"
+          "detail": "Level 33, about 0.22%, usual for its kind"
         }
       ],
       "total": 1

@@ -7,13 +7,13 @@
     "category": "Etc"
   },
   "kind": "npc",
-  "checkedAt": "2026-10-18T09:50:41.446Z",
+  "checkedAt": "2026-11-22T17:15:36.962Z",
   "data": {
     "sell": 100,
     "buy": null,
     "source": "CCPLZ",
     "url": "https://ccplz.cc/items/orihalcon-ore",
-    "checkedAt": "2026-10-18T09:50:41.446Z"
+    "checkedAt": "2026-11-22T17:15:36.962Z"
   },
   "provenance": {
     "source": "CCPLZ",

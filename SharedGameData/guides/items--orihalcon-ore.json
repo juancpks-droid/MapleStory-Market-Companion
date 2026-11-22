@@ -5,7 +5,7 @@
   "name": "Orihalcon Ore",
   "source": "CCPLZ",
   "sourceUrl": "https://ccplz.cc/items/orihalcon-ore",
-  "checkedAt": "2026-10-18T09:50:41.446Z",
+  "checkedAt": "2026-11-22T17:15:36.962Z",
   "notice": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial.",
   "fields": [
     {
@@ -24,40 +24,110 @@
         {
           "name": "Axe Stump",
           "path": "/monsters/axe-stump",
-          "detail": "Level 17"
+          "detail": "Level 17, 2.7% drop rate, 37 kills counted"
+        },
+        {
+          "name": "Blue Mushroom",
+          "path": "/monsters/blue-mushroom",
+          "detail": "Level 19, about 1.2%, usual for its kind"
+        },
+        {
+          "name": "Cellion",
+          "path": "/monsters/cellion",
+          "detail": "about 1.2%, usual for its kind"
+        },
+        {
+          "name": "Commander Skeleton",
+          "path": "/monsters/commander-skeleton",
+          "detail": "Level 73, about 1.2%, usual for its kind"
+        },
+        {
+          "name": "Copper Drake",
+          "path": "/monsters/copper-drake",
+          "detail": "Level 45, about 1.2%, usual for its kind"
         },
         {
           "name": "Curse Eye",
           "path": "/monsters/curse-eye",
-          "detail": "Level 33"
+          "detail": "Level 33, about 1.2%, usual for its kind"
         },
         {
           "name": "Dark Axe Stump",
           "path": "/monsters/dark-axe-stump",
-          "detail": "Level 23"
+          "detail": "Level 23, about 1.2%, usual for its kind"
         },
         {
           "name": "Echopus",
           "path": "/monsters/echopus",
-          "detail": "Level 45"
+          "detail": "Level 45, about 1.2%, usual for its kind"
         },
         {
           "name": "Fairy 1",
           "path": "/monsters/fairy-1",
-          "detail": "Level 29"
+          "detail": "Level 29, about 1.2%, usual for its kind"
+        },
+        {
+          "name": "Fairy 2",
+          "path": "/monsters/fairy-2",
+          "detail": "Level 29, about 1.2%, usual for its kind"
+        },
+        {
+          "name": "Fairy 3",
+          "path": "/monsters/fairy-3",
+          "detail": "Level 29, about 1.2%, usual for its kind"
+        },
+        {
+          "name": "Fairy 4",
+          "path": "/monsters/fairy-4",
+          "detail": "Level 29, about 1.2%, usual for its kind"
+        },
+        {
+          "name": "Green Mushroom",
+          "path": "/monsters/green-mushroom",
+          "detail": "Level 14, about 1.2%, usual for its kind"
+        },
+        {
+          "name": "Jr. Grupin",
+          "path": "/monsters/jr-grupin",
+          "detail": "about 1.2%, usual for its kind"
+        },
+        {
+          "name": "Jr. Necki",
+          "path": "/monsters/jr-necki",
+          "detail": "Level 21, about 1.2%, usual for its kind"
         },
         {
           "name": "Lorang",
           "path": "/monsters/lorang",
-          "detail": "Level 38"
+          "detail": "Level 38, about 1.2%, usual for its kind"
+        },
+        {
+          "name": "Pig",
+          "path": "/monsters/pig",
+          "detail": "Level 7, about 1.2%, usual for its kind"
+        },
+        {
+          "name": "Red Drake",
+          "path": "/monsters/red-drake",
+          "detail": "Level 60, about 1.2%, usual for its kind"
         },
         {
           "name": "Slime",
           "path": "/monsters/slime",
-          "detail": "Level 6"
+          "detail": "Level 6, 2% drop rate, 769 kills counted"
+        },
+        {
+          "name": "Transformed Dark Yeti",
+          "path": "/monsters/transformed-dark-yeti",
+          "detail": "about 1.2%, usual for its kind"
+        },
+        {
+          "name": "Zombie Lupin",
+          "path": "/monsters/zombie-lupin",
+          "detail": "Level 41, about 1.2%, usual for its kind"
         }
       ],
-      "total": 7
+      "total": 21
     },
     {
       "title": "Quest rewards",

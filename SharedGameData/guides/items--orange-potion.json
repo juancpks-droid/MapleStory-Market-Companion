@@ -5,7 +5,7 @@
   "name": "Orange Potion",
   "source": "CCPLZ",
   "sourceUrl": "https://ccplz.cc/items/orange-potion",
-  "checkedAt": "2026-11-14T15:55:11.058Z",
+  "checkedAt": "2026-11-22T17:15:45.929Z",
   "notice": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial.",
   "fields": [
     {
@@ -46,6 +46,16 @@
           "detail": "Level 27, 6.6% drop rate, 61 kills counted"
         },
         {
+          "name": "Fairy 2",
+          "path": "/monsters/fairy-2",
+          "detail": "Level 29, about 2.4%, usual for its kind"
+        },
+        {
+          "name": "Fairy 4",
+          "path": "/monsters/fairy-4",
+          "detail": "Level 29, about 2.4%, usual for its kind"
+        },
+        {
           "name": "Fire Boar",
           "path": "/monsters/fire-boar",
           "detail": "Level 32, about 2.4%, usual for its kind"
@@ -69,6 +79,16 @@
           "name": "Iron Hog",
           "path": "/monsters/iron-hog",
           "detail": "Level 28, about 2.4%, usual for its kind"
+        },
+        {
+          "name": "Jr. Boogie 1",
+          "path": "/monsters/jr-boogie-1",
+          "detail": "Level 35, about 2.4%, usual for its kind"
+        },
+        {
+          "name": "Jr. Boogie 2",
+          "path": "/monsters/jr-boogie-2",
+          "detail": "Level 35, about 2.4%, usual for its kind"
         },
         {
           "name": "Jr. Cellion",
@@ -131,6 +151,11 @@
           "detail": "Level 40"
         },
         {
+          "name": "Rocky Mask",
+          "path": "/monsters/rocky-mask",
+          "detail": "Level 24, about 2.4%, usual for its kind"
+        },
+        {
           "name": "Sentinel",
           "path": "/monsters/sentinel",
           "detail": "about 2.4%, usual for its kind"
@@ -161,7 +186,7 @@
           "detail": "Level 24, about 2.4%, usual for its kind"
         }
       ],
-      "total": 27
+      "total": 32
     },
     {
       "title": "Sold in",
@@ -228,12 +253,17 @@
           "detail": "Level 30"
         },
         {
+          "name": "Shadow of the World Tree (The Roots of Regret)",
+          "path": "/quests/the-roots-of-regret",
+          "detail": "Level 39"
+        },
+        {
           "name": "The Old Tree (A Report for the Doctor)",
           "path": "/quests/a-report-for-the-doctor",
           "detail": "Level 34"
         }
       ],
-      "total": 3
+      "total": 4
     }
   ]
 }

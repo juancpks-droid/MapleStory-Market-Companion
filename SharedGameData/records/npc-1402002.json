@@ -7,13 +7,13 @@
     "category": "Equipment"
   },
   "kind": "npc",
-  "checkedAt": "2026-10-18T09:50:44.376Z",
+  "checkedAt": "2026-11-22T17:15:40.006Z",
   "data": {
     "sell": 6500,
     "buy": 26000,
     "source": "CCPLZ",
     "url": "https://ccplz.cc/items/scimitar",
-    "checkedAt": "2026-10-18T09:50:44.376Z"
+    "checkedAt": "2026-11-22T17:15:40.006Z"
   },
   "provenance": {
     "source": "CCPLZ",
