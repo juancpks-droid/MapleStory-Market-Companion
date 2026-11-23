@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "publishedAt": "2026-11-22T17:16:25.089Z",
+  "publishedAt": "2026-11-23T21:34:55.563Z",
   "catalogItems": 12726,
-  "guideRecords": 582,
+  "guideRecords": 592,
   "referenceRecords": 185,
   "entries": [
     {
@@ -154,9 +154,9 @@
     },
     {
       "file": "guides/items--black-knucklevest-pants.json",
-      "bytes": 2944,
-      "sha256": "5c636fc041319a143b78723dc9ff859a9b5e5921bf5021a43854dd583db5fde1",
-      "checkedAt": "2026-10-18T09:50:56.398Z",
+      "bytes": 2885,
+      "sha256": "274fe937167e5bd910a46230774802ee95a3ba765e2473278a936909a091e582",
+      "checkedAt": "2026-11-23T21:34:10.395Z",
       "kind": "item"
     },
     {
@@ -182,9 +182,9 @@
     },
     {
       "file": "guides/items--black-martial-arts-pants.json",
-      "bytes": 3005,
-      "sha256": "d422efb555f9d59e51244efb40a5c2c5a6587a7dda7d821d4fbb36d91016b265",
-      "checkedAt": "2026-10-18T09:50:59.400Z",
+      "bytes": 2774,
+      "sha256": "4aa71f1c0deafe371b621c154f6467eef099381056028508018a28380480b10d",
+      "checkedAt": "2026-11-23T21:34:13.361Z",
       "kind": "item"
     },
     {
@@ -588,9 +588,9 @@
     },
     {
       "file": "guides/items--elixir.json",
-      "bytes": 2934,
-      "sha256": "d4391c082a47a38dde9b8a8fab9aa3ae1fef6ec9762fe88c5952b05ab4c64cd0",
-      "checkedAt": "2026-11-15T16:29:02.575Z",
+      "bytes": 2986,
+      "sha256": "92c3c53775c6e642e5934dcdb19d1a673c018abdcba9f2e9ca3788e8723f683c",
+      "checkedAt": "2026-11-23T21:34:19.374Z",
       "kind": "item"
     },
     {
@@ -910,9 +910,9 @@
     },
     {
       "file": "guides/items--mana-elixir.json",
-      "bytes": 1570,
-      "sha256": "812c9e2d787f0701df34e7b0050b508bacc8c70abafd4e06ce8104505f5e28c8",
-      "checkedAt": "2026-11-15T16:28:59.565Z",
+      "bytes": 1703,
+      "sha256": "50d05afa40788adbccdb3285b22f0f1b586eb7a2349a0bb41ae25d0b0df84a8d",
+      "checkedAt": "2026-11-23T21:34:16.381Z",
       "kind": "item"
     },
     {
@@ -1050,9 +1050,9 @@
     },
     {
       "file": "guides/items--power-elixir.json",
-      "bytes": 854,
-      "sha256": "70661483bfc3ae120643deb30b6735d6e8884c14ab1692a051407a1bef54d2ff",
-      "checkedAt": "2026-11-15T16:29:05.580Z",
+      "bytes": 1012,
+      "sha256": "1867006edea39308cc1f66462d25f0d5fc1a1b93fa0fa116c553b0bfddfbd1e5",
+      "checkedAt": "2026-11-23T21:34:22.395Z",
       "kind": "item"
     },
     {
@@ -1352,8 +1352,8 @@
     {
       "file": "guides/items--snail-shell.json",
       "bytes": 1594,
-      "sha256": "496953b4b21df2484c1c491397b95f934468ae1c061df0ecb1faec4777d62ebb",
-      "checkedAt": "2026-11-15T16:29:08.593Z",
+      "sha256": "542de631c2534f225be9679886bcab8a16e0b8b059d27e6883c7e13d4a34cfc3",
+      "checkedAt": "2026-11-23T21:34:25.348Z",
       "kind": "item"
     },
     {
@@ -1435,9 +1435,9 @@
     },
     {
       "file": "guides/items--topaz-ore.json",
-      "bytes": 1554,
-      "sha256": "4e78f469966797f58401a222d5db35fa54d4f3a56d0da1675c8e90520ba14822",
-      "checkedAt": "2026-10-18T09:50:50.423Z",
+      "bytes": 2884,
+      "sha256": "7a4d76a9e3cc51d2288fe32b510ea46125f5537d7cad4744d2df0423f96fc8a5",
+      "checkedAt": "2026-11-23T21:34:04.388Z",
       "kind": "item"
     },
     {
@@ -1457,8 +1457,8 @@
     {
       "file": "guides/items--topwear-mp-scroll-greater.json",
       "bytes": 1503,
-      "sha256": "f1f300e305d71cb4ed0e767f097172f54e3abdc1f15fe03ce714c2533fcdc74b",
-      "checkedAt": "2026-10-18T09:50:53.412Z",
+      "sha256": "21b71731a642c1261d8b975ed83e74ae665efa469de8ee790e035a633427c2b6",
+      "checkedAt": "2026-11-23T21:34:07.406Z",
       "kind": "item"
     },
     {
@@ -3849,6 +3849,76 @@
       "kind": "recipe"
     },
     {
+      "file": "guides/recipes--craft-blue-duo.json",
+      "bytes": 2344,
+      "sha256": "72d7899f2d01e4aff0d9587ae2ea75b882a4149fb60465bdbed2f790834efa33",
+      "checkedAt": "2026-11-23T21:34:28.416Z",
+      "kind": "recipe"
+    },
+    {
+      "file": "guides/recipes--craft-blue-goni-shoes.json",
+      "bytes": 2479,
+      "sha256": "ed592bad8c5f9fb04e1f687d7bc2c850c014eb3a4d1a101c5cae81b189e8318b",
+      "checkedAt": "2026-11-23T21:34:31.391Z",
+      "kind": "recipe"
+    },
+    {
+      "file": "guides/recipes--craft-blue-hunter-boots.json",
+      "bytes": 2370,
+      "sha256": "7afd964066257b144876fb6d37e0d237b450ac7f1b46d8e4f231ba44ff19e571",
+      "checkedAt": "2026-11-23T21:34:34.361Z",
+      "kind": "recipe"
+    },
+    {
+      "file": "guides/recipes--craft-blue-jangoon-shoes.json",
+      "bytes": 2498,
+      "sha256": "1dcb05debe0e55c9a6cb520e669377be60d720247e3392408ab1d814fe9b346c",
+      "checkedAt": "2026-11-23T21:34:37.351Z",
+      "kind": "recipe"
+    },
+    {
+      "file": "guides/recipes--craft-blue-lappy-boots.json",
+      "bytes": 2363,
+      "sha256": "f8f278de0447e55adb301e5054f532e95016b0c4e1a3807df9dbdb8a140fcdcb",
+      "checkedAt": "2026-11-23T21:34:40.564Z",
+      "kind": "recipe"
+    },
+    {
+      "file": "guides/recipes--craft-blue-moon-gloves.json",
+      "bytes": 2508,
+      "sha256": "dd15ba3be809a615f4a027838b96eff1d58b3cfceb560729600edb9ef5f77df5",
+      "checkedAt": "2026-11-23T21:34:43.364Z",
+      "kind": "recipe"
+    },
+    {
+      "file": "guides/recipes--craft-blue-pierre-shoes.json",
+      "bytes": 2374,
+      "sha256": "45f2a0b2c148fbdfa6f1187e37a8901dd29fd54311d9195e329f2293467f8de8",
+      "checkedAt": "2026-11-23T21:34:46.508Z",
+      "kind": "recipe"
+    },
+    {
+      "file": "guides/recipes--craft-blue-savata.json",
+      "bytes": 2348,
+      "sha256": "0198ceee37113c6053e18ea75935509fc14cc99503c8c420b4f8e19c5eadc95f",
+      "checkedAt": "2026-11-23T21:34:49.473Z",
+      "kind": "recipe"
+    },
+    {
+      "file": "guides/recipes--craft-blue-silky-boots.json",
+      "bytes": 2367,
+      "sha256": "9e5398edddd1f988716f0ee4cdbcc0039ef5e13626e3dca27f7ebc74299d2c4b",
+      "checkedAt": "2026-11-23T21:34:52.522Z",
+      "kind": "recipe"
+    },
+    {
+      "file": "guides/recipes--craft-blue-steel-tip-boots.json",
+      "bytes": 2514,
+      "sha256": "2889353bf6626dc7a212cb5bc923564e66d11d4e41f00f03c9265a968c8ac40d",
+      "checkedAt": "2026-11-23T21:34:55.489Z",
+      "kind": "recipe"
+    },
+    {
       "file": "guides/recipes--craft-bronze-ingot.json",
       "bytes": 1623,
       "sha256": "39acec3d36cbd96cbd55f0358ec2b84e4db76faa3dca747a04c4506ce8d55ddc",
@@ -4481,15 +4551,15 @@
     {
       "file": "records/npc-1060016.json",
       "bytes": 719,
-      "sha256": "cf0368ab8741f4d5eec2e1da7e12c0c214cc58ae68813cbab60bec78d429ac62",
-      "checkedAt": "2026-10-18T09:50:59.400Z",
+      "sha256": "ebf907e6cb77dca432cd97ff9f97a518c35b892525adedc567d4e0121cdd93d3",
+      "checkedAt": "2026-11-23T21:34:13.361Z",
       "kind": "npc"
     },
     {
       "file": "records/npc-1060052.json",
       "bytes": 716,
-      "sha256": "9447b46455bb1f00bc2fa4e9f1308ad06149892328831de0bc7734789cb23386",
-      "checkedAt": "2026-10-18T09:50:56.398Z",
+      "sha256": "25bfd4e81d229026e4c6805d9e20f24fdb208df203bd85df426ca073acdff803",
+      "checkedAt": "2026-11-23T21:34:10.395Z",
       "kind": "npc"
     },
     {
@@ -4852,22 +4922,22 @@
     {
       "file": "records/npc-2000004.json",
       "bytes": 658,
-      "sha256": "66e86ab681a2cb0243d95b1bb267af8f2472127a510a0048e787fe756011f6ff",
-      "checkedAt": "2026-11-15T16:29:02.575Z",
+      "sha256": "c34914770771366b38e67f8671d1a35e1a59e3d7b57af9baa9d2a7cbf24d264c",
+      "checkedAt": "2026-11-23T21:34:19.374Z",
       "kind": "npc"
     },
     {
       "file": "records/npc-2000005.json",
       "bytes": 677,
-      "sha256": "49fb2a5dc3c41ace05046da1030bff21a7e364e4603f0d5108c361bea8227816",
-      "checkedAt": "2026-11-15T16:29:05.580Z",
+      "sha256": "73fa3a47b4a0bf60b3c6fc08fe5276b0c55020d68519b99206bf4dec19d90af0",
+      "checkedAt": "2026-11-23T21:34:22.395Z",
       "kind": "npc"
     },
     {
       "file": "records/npc-2000006.json",
       "bytes": 674,
-      "sha256": "a109f77086903be2e7ba4b69c052c62c40e2423086f8bdf4c437919502679fe6",
-      "checkedAt": "2026-11-15T16:28:59.565Z",
+      "sha256": "47b180852841d38c74cf7fdec025039965d0264a2290fd03daf4cd23a6622f96",
+      "checkedAt": "2026-11-23T21:34:16.381Z",
       "kind": "npc"
     },
     {
@@ -4999,8 +5069,8 @@
     {
       "file": "records/npc-4000019.json",
       "bytes": 671,
-      "sha256": "d3057ce68bf7550db79fea4cac3bbdb79922cf8cb54533dee733960922e1dea7",
-      "checkedAt": "2026-11-15T16:29:08.593Z",
+      "sha256": "0e485d123da257aaf1c4692ed6862b5ceb0e59380c3ae8dc72b838797906bf5d",
+      "checkedAt": "2026-11-23T21:34:25.348Z",
       "kind": "npc"
     },
     {
@@ -5125,8 +5195,8 @@
     {
       "file": "records/npc-4020006.json",
       "bytes": 666,
-      "sha256": "fb907468b5d62d83b7085f376b518b1fe7b70969415386f9a5459121caa3fd58",
-      "checkedAt": "2026-10-18T09:50:50.423Z",
+      "sha256": "7f2600b38dcd73ec5c2eb7a0ff5a15e0ea5963407297210ad3b08f3bba03a6cb",
+      "checkedAt": "2026-11-23T21:34:04.388Z",
       "kind": "npc"
     },
     {
@@ -5188,8 +5258,8 @@
     {
       "file": "records/npc-classic-2040410.json",
       "bytes": 716,
-      "sha256": "ef238093576df892afc2c701e35a9f369aa88253e76823c54c9b019bee98ff2f",
-      "checkedAt": "2026-10-18T09:50:53.412Z",
+      "sha256": "d1e0e6893c994912941d078d64d41478cf128d15501460bd446e7e24e1eb88e7",
+      "checkedAt": "2026-11-23T21:34:07.406Z",
       "kind": "npc"
     },
     {

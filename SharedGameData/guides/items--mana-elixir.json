@@ -5,7 +5,7 @@
   "name": "Mana Elixir",
   "source": "CCPLZ",
   "sourceUrl": "https://ccplz.cc/items/mana-elixir",
-  "checkedAt": "2026-11-15T16:28:59.565Z",
+  "checkedAt": "2026-11-23T21:34:16.381Z",
   "notice": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial.",
   "fields": [
     {
@@ -27,11 +27,6 @@
           "detail": "Level 35"
         },
         {
-          "name": "A Fragile Sanctuary (The Sage's Burden) (2 of 2)",
-          "path": "/quests/the-sage-s-burden-10620",
-          "detail": "Level 50"
-        },
-        {
           "name": "A Task for a Citizen of Honor (What It Takes)",
           "path": "/quests/what-it-takes",
           "detail": "Level 57"
@@ -42,12 +37,22 @@
           "detail": "Level 28"
         },
         {
+          "name": "Light Fingers (No Questions Asked)",
+          "path": "/quests/no-questions-asked",
+          "detail": "Level 55"
+        },
+        {
+          "name": "Myra's Wish (Myra's Old Friend)",
+          "path": "/quests/myra-s-old-friend",
+          "detail": "Level 49"
+        },
+        {
           "name": "The Lantern Rite (The Dilapidated Tomb)",
           "path": "/quests/the-dilapidated-tomb",
-          "detail": "Level 55"
+          "detail": "Level 53"
         }
       ],
-      "total": 5
+      "total": 6
     }
   ]
 }

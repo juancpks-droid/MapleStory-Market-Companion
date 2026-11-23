@@ -1,0 +1,116 @@
+{
+  "schemaVersion": 1,
+  "path": "/recipes/craft-blue-jangoon-shoes",
+  "kind": "recipe",
+  "name": "Blue Jangoon Shoes",
+  "source": "CCPLZ",
+  "sourceUrl": "https://ccplz.cc/recipes/craft-blue-jangoon-shoes",
+  "checkedAt": "2026-11-23T21:34:37.351Z",
+  "notice": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial.",
+  "fields": [
+    {
+      "label": "Crafting skill",
+      "value": "Smithing"
+    },
+    {
+      "label": "Crafting skill level",
+      "value": "8"
+    },
+    {
+      "label": "Meso cost",
+      "value": "4,200"
+    },
+    {
+      "label": "Crafts",
+      "value": "1"
+    },
+    {
+      "label": "Crafting EXP",
+      "value": "160"
+    },
+    {
+      "label": "Crafting fee (mesos)",
+      "value": "4200"
+    },
+    {
+      "label": "Result quantity",
+      "value": "1"
+    },
+    {
+      "label": "Required skill level",
+      "value": "8"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Makes",
+      "links": [
+        {
+          "name": "Blue Jangoon Shoes",
+          "path": "/items/blue-jangoon-shoes",
+          "detail": ""
+        }
+      ],
+      "total": 1
+    },
+    {
+      "title": "Ingredients",
+      "links": [
+        {
+          "name": "Gold Ingot",
+          "path": "/items/gold-ingot",
+          "detail": "x2"
+        },
+        {
+          "name": "Mithril Ingot",
+          "path": "/items/mithril-ingot",
+          "detail": "x4"
+        },
+        {
+          "name": "Processed Leather",
+          "path": "/items/processed-leather",
+          "detail": "x5"
+        },
+        {
+          "name": "Screw",
+          "path": "/items/screw",
+          "detail": "x24"
+        }
+      ],
+      "total": 4
+    },
+    {
+      "title": "Optional catalyst",
+      "links": [
+        {
+          "name": "Armor Crafting Catalyst",
+          "path": "/items/armor-crafting-catalyst",
+          "detail": ""
+        }
+      ],
+      "total": 1
+    },
+    {
+      "title": "Result",
+      "links": [
+        {
+          "name": "Blue Jangoon Shoes",
+          "path": "/items/blue-jangoon-shoes",
+          "detail": "Quantity: 1"
+        }
+      ],
+      "total": 1
+    },
+    {
+      "title": "Catalyst",
+      "links": [
+        {
+          "name": "Armor Crafting Catalyst",
+          "path": "/items/armor-crafting-catalyst",
+          "detail": "Quantity: 1"
+        }
+      ],
+      "total": 1
+    }
+  ]
+}

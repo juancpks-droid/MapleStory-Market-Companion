@@ -373,14 +373,44 @@
       "kind": "recipe"
     },
     {
+      "path": "/recipes/craft-blue-duo",
+      "name": "Blue Duo",
+      "kind": "recipe"
+    },
+    {
+      "path": "/recipes/craft-blue-goni-shoes",
+      "name": "Blue Goni Shoes",
+      "kind": "recipe"
+    },
+    {
       "path": "/items/blue-headband",
       "name": "Blue Headband",
       "kind": "item"
     },
     {
+      "path": "/recipes/craft-blue-hunter-boots",
+      "name": "Blue Hunter Boots",
+      "kind": "recipe"
+    },
+    {
+      "path": "/recipes/craft-blue-jangoon-shoes",
+      "name": "Blue Jangoon Shoes",
+      "kind": "recipe"
+    },
+    {
+      "path": "/recipes/craft-blue-lappy-boots",
+      "name": "Blue Lappy Boots",
+      "kind": "recipe"
+    },
+    {
       "path": "/items/blue-lumati",
       "name": "Blue Lumati",
       "kind": "item"
+    },
+    {
+      "path": "/recipes/craft-blue-moon-gloves",
+      "name": "Blue Moon Gloves",
+      "kind": "recipe"
     },
     {
       "path": "/items/blue-moonlight",
@@ -398,9 +428,19 @@
       "kind": "item"
     },
     {
+      "path": "/recipes/craft-blue-pierre-shoes",
+      "name": "Blue Pierre Shoes",
+      "kind": "recipe"
+    },
+    {
       "path": "/items/blue-potion",
       "name": "Blue Potion",
       "kind": "item"
+    },
+    {
+      "path": "/recipes/craft-blue-savata",
+      "name": "Blue Savata",
+      "kind": "recipe"
     },
     {
       "path": "/items/blue-shouldermail",
@@ -411,6 +451,11 @@
       "path": "/items/blue-shouldermail-pants",
       "name": "Blue Shouldermail Pants",
       "kind": "item"
+    },
+    {
+      "path": "/recipes/craft-blue-silky-boots",
+      "name": "Blue Silky Boots",
+      "kind": "recipe"
     },
     {
       "path": "/monsters/blue-snail",
@@ -426,6 +471,11 @@
       "path": "/items/blue-starlight",
       "name": "Blue Starlight",
       "kind": "item"
+    },
+    {
+      "path": "/recipes/craft-blue-steel-tip-boots",
+      "name": "Blue Steel-Tip Boots",
+      "kind": "recipe"
     },
     {
       "path": "/items/blush",

@@ -7,13 +7,13 @@
     "category": "Equipment"
   },
   "kind": "npc",
-  "checkedAt": "2026-10-18T09:50:59.400Z",
+  "checkedAt": "2026-11-23T21:34:13.361Z",
   "data": {
     "sell": 2400,
     "buy": 9600,
     "source": "CCPLZ",
     "url": "https://ccplz.cc/items/black-martial-arts-pants",
-    "checkedAt": "2026-10-18T09:50:59.400Z"
+    "checkedAt": "2026-11-23T21:34:13.361Z"
   },
   "provenance": {
     "source": "CCPLZ",

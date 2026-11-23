@@ -7,13 +7,13 @@
     "category": "Etc"
   },
   "kind": "npc",
-  "checkedAt": "2026-10-18T09:50:50.423Z",
+  "checkedAt": "2026-11-23T21:34:04.388Z",
   "data": {
     "sell": 80,
     "buy": null,
     "source": "CCPLZ",
     "url": "https://ccplz.cc/items/topaz-ore",
-    "checkedAt": "2026-10-18T09:50:50.423Z"
+    "checkedAt": "2026-11-23T21:34:04.388Z"
   },
   "provenance": {
     "source": "CCPLZ",

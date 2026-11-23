@@ -1,16 +1,6 @@
 {
-  "cursor": 264,
+  "cursor": 270,
   "queue": [
-    "/recipes/craft-blue-duo",
-    "/recipes/craft-blue-goni-shoes",
-    "/recipes/craft-blue-hunter-boots",
-    "/recipes/craft-blue-jangoon-shoes",
-    "/recipes/craft-blue-lappy-boots",
-    "/recipes/craft-blue-moon-gloves",
-    "/recipes/craft-blue-pierre-shoes",
-    "/recipes/craft-blue-savata",
-    "/recipes/craft-blue-silky-boots",
-    "/recipes/craft-blue-steel-tip-boots",
     "/recipes/craft-blue-white-lined-boots",
     "/recipes/craft-blue-willow",
     "/recipes/craft-bronze-chain-boots",
@@ -639,8 +629,6 @@
     "/items/bow-attack-scroll-greater",
     "/items/green-hawkeye",
     "/items/monster-card",
-    "/items/topaz-ore",
-    "/items/topwear-mp-scroll-greater",
     "/quests/first-material-delivery-for-building-a-new-house",
     "/maps/the-cave-of-trial-iii",
     "/maps/the-cave-of-trial-i",
@@ -1624,7 +1612,6 @@
     "/items/hard-walnut",
     "/maps/the-entrance-of-golem-s-temple",
     "/maps/golem-s-temple-iv",
-    "/items/black-knucklevest-pants",
     "/items/brown-lamelle",
     "/items/gloves-crit-rate-scroll-greater",
     "/items/green-loosecap",
@@ -2000,7 +1987,16 @@
     "/items/gold-ingot",
     "/items/black-red-lined-shoes",
     "/items/black-yellow-lined-shoes",
-    "/items/blue-diros"
+    "/items/blue-diros",
+    "/items/cecelia-s-earrings",
+    "/items/moonstar-earrings",
+    "/items/celestial-earrings",
+    "/items/spider-venom-earrings",
+    "/items/blue-goni-shoes",
+    "/items/blue-hunter-boots",
+    "/items/blue-jangoon-shoes",
+    "/items/blue-moon-gloves",
+    "/items/blue-steel-tip-boots"
   ],
-  "priorityCursor": 4
+  "priorityCursor": 8
 }

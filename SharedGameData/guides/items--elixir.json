@@ -5,7 +5,7 @@
   "name": "Elixir",
   "source": "CCPLZ",
   "sourceUrl": "https://ccplz.cc/items/elixir",
-  "checkedAt": "2026-11-15T16:29:02.575Z",
+  "checkedAt": "2026-11-23T21:34:19.374Z",
   "notice": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial.",
   "fields": [
     {
@@ -39,9 +39,19 @@
           "name": "Mushmom",
           "path": "/monsters/mushmom",
           "detail": "Level 40"
+        },
+        {
+          "name": "Shade",
+          "path": "/monsters/shade",
+          "detail": "Level 48"
+        },
+        {
+          "name": "Stumpy",
+          "path": "/monsters/stumpy",
+          "detail": "Level 35"
         }
       ],
-      "total": 3
+      "total": 5
     },
     {
       "title": "Sold in",
@@ -63,11 +73,6 @@
       "title": "Quest rewards",
       "links": [
         {
-          "name": "A Fragile Sanctuary (The Sage's Burden) (2 of 2)",
-          "path": "/quests/the-sage-s-burden-10620",
-          "detail": "Level 50"
-        },
-        {
           "name": "A Gift for a Citizen of Honor (A Box Hidden Long Ago)",
           "path": "/quests/a-box-hidden-long-ago",
           "detail": "Level 57"
@@ -88,6 +93,11 @@
           "detail": "Level 44"
         },
         {
+          "name": "Light Fingers (Missing Pieces)",
+          "path": "/quests/missing-pieces",
+          "detail": "Level 55"
+        },
+        {
           "name": "Maya and Her Peculiar Savior (An Unknown Savior)",
           "path": "/quests/an-unknown-savior",
           "detail": "Level 47"
@@ -95,15 +105,10 @@
         {
           "name": "The Lantern Rite (Charms Gone Gray)",
           "path": "/quests/charms-gone-gray",
-          "detail": "Level 55"
-        },
-        {
-          "name": "The Lantern Rite (The Last Lantern)",
-          "path": "/quests/the-last-lantern",
-          "detail": "Level 55"
+          "detail": "Level 53"
         }
       ],
-      "total": 8
+      "total": 7
     }
   ]
 }
