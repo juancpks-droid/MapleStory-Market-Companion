@@ -478,6 +478,16 @@
       "kind": "recipe"
     },
     {
+      "path": "/recipes/craft-blue-white-lined-boots",
+      "name": "Blue White-Lined Boots",
+      "kind": "recipe"
+    },
+    {
+      "path": "/recipes/craft-blue-willow",
+      "name": "Blue Willow",
+      "kind": "recipe"
+    },
+    {
       "path": "/items/blush",
       "name": "Blush",
       "kind": "item"
@@ -493,6 +503,21 @@
       "kind": "item"
     },
     {
+      "path": "/recipes/craft-bronze-chain-boots",
+      "name": "Bronze Chain Boots",
+      "kind": "recipe"
+    },
+    {
+      "path": "/recipes/craft-bronze-guardian",
+      "name": "Bronze Guardian",
+      "kind": "recipe"
+    },
+    {
+      "path": "/recipes/craft-bronze-igor",
+      "name": "Bronze Igor",
+      "kind": "recipe"
+    },
+    {
       "path": "/recipes/craft-bronze-ingot",
       "name": "Bronze Ingot",
       "kind": "recipe"
@@ -501,6 +526,11 @@
       "path": "/items/bronze-koif",
       "name": "Bronze Koif",
       "kind": "item"
+    },
+    {
+      "path": "/recipes/craft-bronze-mischief",
+      "name": "Bronze Mischief",
+      "kind": "recipe"
     },
     {
       "path": "/items/bronze-ore",
@@ -513,6 +543,16 @@
       "kind": "item"
     },
     {
+      "path": "/recipes/craft-bronze-scaler",
+      "name": "Bronze Scaler",
+      "kind": "recipe"
+    },
+    {
+      "path": "/recipes/craft-bronze-wolfskin",
+      "name": "Bronze Wolfskin",
+      "kind": "recipe"
+    },
+    {
       "path": "/items/brown-apprentice-hat",
       "name": "Brown Apprentice Hat",
       "kind": "item"
@@ -520,6 +560,11 @@
     {
       "path": "/recipes/craft-brown-apprentice-hat",
       "name": "Brown Apprentice Hat",
+      "kind": "recipe"
+    },
+    {
+      "path": "/recipes/craft-brown-duo",
+      "name": "Brown Duo",
       "kind": "recipe"
     },
     {
@@ -536,6 +581,11 @@
       "path": "/items/brown-hard-leather-boots",
       "name": "Brown Hard Leather Boots",
       "kind": "item"
+    },
+    {
+      "path": "/recipes/craft-brown-hunter-boots",
+      "name": "Brown Hunter Boots",
+      "kind": "recipe"
     },
     {
       "path": "/items/brown-moonlight",

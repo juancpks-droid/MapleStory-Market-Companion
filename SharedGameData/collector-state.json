@@ -1,16 +1,6 @@
 {
-  "cursor": 270,
+  "cursor": 276,
   "queue": [
-    "/recipes/craft-blue-white-lined-boots",
-    "/recipes/craft-blue-willow",
-    "/recipes/craft-bronze-chain-boots",
-    "/recipes/craft-bronze-guardian",
-    "/recipes/craft-bronze-igor",
-    "/recipes/craft-bronze-mischief",
-    "/recipes/craft-bronze-scaler",
-    "/recipes/craft-bronze-wolfskin",
-    "/recipes/craft-brown-duo",
-    "/recipes/craft-brown-hunter-boots",
     "/recipes/craft-brown-jack-boots",
     "/recipes/craft-brown-jangoon-shoes",
     "/recipes/craft-brown-marker",
@@ -626,7 +616,6 @@
     "/items/cherry-bubblegum",
     "/items/5-o-clock-shadow",
     "/items/blackbull-s-deed-to-the-land",
-    "/items/bow-attack-scroll-greater",
     "/items/green-hawkeye",
     "/items/monster-card",
     "/quests/first-material-delivery-for-building-a-new-house",
@@ -759,7 +748,6 @@
     "/quests/first-greeting-with-chun-ji",
     "/quests/first-greeting-with-dark-lord",
     "/quests/i-need-to-find-my-daughter-2",
-    "/items/nakamaki",
     "/items/brown-hard-leather-boots",
     "/items/black-duo",
     "/items/blue-duo",
@@ -1996,7 +1984,19 @@
     "/items/blue-hunter-boots",
     "/items/blue-jangoon-shoes",
     "/items/blue-moon-gloves",
-    "/items/blue-steel-tip-boots"
+    "/items/blue-steel-tip-boots",
+    "/items/crystal-leaf-earrings",
+    "/items/dark-shards",
+    "/items/snail-s-eye",
+    "/items/diamond-earrings",
+    "/items/slime-earrings",
+    "/quests/donating-to-henesys-506020",
+    "/items/silver-ingot",
+    "/items/bronze-guardian",
+    "/items/iron-ingot",
+    "/items/bronze-igor",
+    "/items/bronze-mischief",
+    "/items/bronze-scaler"
   ],
-  "priorityCursor": 8
+  "priorityCursor": 12
 }

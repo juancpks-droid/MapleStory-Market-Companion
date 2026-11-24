@@ -5,7 +5,7 @@
   "name": "Brown Piette Pants",
   "source": "CCPLZ",
   "sourceUrl": "https://ccplz.cc/items/brown-piette-pants",
-  "checkedAt": "2026-10-18T09:51:08.379Z",
+  "checkedAt": "2026-11-24T20:15:56.874Z",
   "notice": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial.",
   "fields": [
     {
@@ -54,43 +54,6 @@
     }
   ],
   "sections": [
-    {
-      "title": "Dropped by",
-      "links": [
-        {
-          "name": "Rafflesia",
-          "path": "/monsters/rafflesia",
-          "detail": "Level 47"
-        }
-      ],
-      "total": 1
-    },
-    {
-      "title": "Also dropped by, in older versions",
-      "links": [
-        {
-          "name": "Black Ratz",
-          "path": "/monsters/black-ratz",
-          "detail": "Level 34, 0.08% historical rate"
-        },
-        {
-          "name": "Copper Drake",
-          "path": "/monsters/copper-drake",
-          "detail": "Level 45, 0.08% historical rate"
-        },
-        {
-          "name": "Curse Eye",
-          "path": "/monsters/curse-eye",
-          "detail": "Level 33, 0.08% historical rate"
-        },
-        {
-          "name": "Wild Boar",
-          "path": "/monsters/wild-boar",
-          "detail": "Level 25, 0.08% historical rate"
-        }
-      ],
-      "total": 4
-    },
     {
       "title": "Similar equipment",
       "links": [

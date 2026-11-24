@@ -5,7 +5,7 @@
   "name": "Bow Attack Scroll: Greater",
   "source": "CCPLZ",
   "sourceUrl": "https://ccplz.cc/items/bow-attack-scroll-greater",
-  "checkedAt": "2026-10-18T09:51:02.428Z",
+  "checkedAt": "2026-11-24T20:15:50.896Z",
   "notice": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial.",
   "fields": [
     {
@@ -30,14 +30,14 @@
       "title": "Dropped by",
       "links": [
         {
-          "name": "Crimson Balrog",
-          "path": "/monsters/crimson-balrog",
-          "detail": "Level 100, 0.3% historical rate"
+          "name": "Cold Eye",
+          "path": "/monsters/cold-eye",
+          "detail": "Level 40"
         },
         {
           "name": "Curse Eye",
           "path": "/monsters/curse-eye",
-          "detail": "Level 33, 0.03% historical rate"
+          "detail": "Level 33"
         }
       ],
       "total": 2
@@ -51,12 +51,17 @@
           "detail": "Level 48"
         },
         {
+          "name": "Shadow of the World Tree (Welcome to the Hollow)",
+          "path": "/quests/welcome-to-the-hollow",
+          "detail": "Level 39"
+        },
+        {
           "name": "The Alligators at the Swamp (Taking Out the Alligators 1)",
           "path": "/quests/taking-out-the-alligators-1",
           "detail": "Level 48"
         }
       ],
-      "total": 2
+      "total": 3
     },
     {
       "title": "Related items",

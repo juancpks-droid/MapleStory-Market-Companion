@@ -5,7 +5,7 @@
   "name": "Nakamaki",
   "source": "CCPLZ",
   "sourceUrl": "https://ccplz.cc/items/nakamaki",
-  "checkedAt": "2026-10-18T09:51:11.430Z",
+  "checkedAt": "2026-11-24T20:15:59.857Z",
   "notice": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial.",
   "fields": [
     {
@@ -56,26 +56,10 @@
         {
           "name": "Zombie Mushroom",
           "path": "/monsters/zombie-mushroom",
-          "detail": "Level 24, 0.05% historical rate"
+          "detail": "Level 24, about 0.22%, usual for its kind"
         }
       ],
       "total": 1
-    },
-    {
-      "title": "Also dropped by, in older versions",
-      "links": [
-        {
-          "name": "Curse Eye",
-          "path": "/monsters/curse-eye",
-          "detail": "Level 33, 0.05% historical rate"
-        },
-        {
-          "name": "Wild Boar",
-          "path": "/monsters/wild-boar",
-          "detail": "Level 25, 0.05% historical rate"
-        }
-      ],
-      "total": 2
     },
     {
       "title": "Similar equipment",
@@ -89,6 +73,11 @@
           "name": "Zeco",
           "path": "/items/zeco",
           "detail": "Level 40"
+        },
+        {
+          "name": "Bamboo Spear",
+          "path": "/items/bamboo-spear",
+          "detail": "Level 45"
         },
         {
           "name": "Fish Spear",
@@ -114,11 +103,6 @@
           "name": "Holy Spear",
           "path": "/items/holy-spear",
           "detail": "Level 60"
-        },
-        {
-          "name": "Redemption",
-          "path": "/items/redemption",
-          "detail": "Level 70"
         }
       ],
       "total": 8
