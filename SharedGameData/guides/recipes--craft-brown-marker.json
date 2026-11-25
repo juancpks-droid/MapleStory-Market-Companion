@@ -1,0 +1,116 @@
+{
+  "schemaVersion": 1,
+  "path": "/recipes/craft-brown-marker",
+  "kind": "recipe",
+  "name": "Brown Marker",
+  "source": "CCPLZ",
+  "sourceUrl": "https://ccplz.cc/recipes/craft-brown-marker",
+  "checkedAt": "2026-11-25T19:28:21.601Z",
+  "notice": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial.",
+  "fields": [
+    {
+      "label": "Crafting skill",
+      "value": "Leatherworking"
+    },
+    {
+      "label": "Crafting skill level",
+      "value": "6"
+    },
+    {
+      "label": "Meso cost",
+      "value": "3,600"
+    },
+    {
+      "label": "Crafts",
+      "value": "1"
+    },
+    {
+      "label": "Crafting EXP",
+      "value": "120"
+    },
+    {
+      "label": "Crafting fee (mesos)",
+      "value": "3600"
+    },
+    {
+      "label": "Result quantity",
+      "value": "1"
+    },
+    {
+      "label": "Required skill level",
+      "value": "6"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Makes",
+      "links": [
+        {
+          "name": "Brown Marker",
+          "path": "/items/brown-marker",
+          "detail": ""
+        }
+      ],
+      "total": 1
+    },
+    {
+      "title": "Ingredients",
+      "links": [
+        {
+          "name": "Fairy's Tentacle",
+          "path": "/items/fairy-s-tentacle",
+          "detail": "x30"
+        },
+        {
+          "name": "Gold Ingot",
+          "path": "/items/gold-ingot",
+          "detail": "x1"
+        },
+        {
+          "name": "Processed Leather",
+          "path": "/items/processed-leather",
+          "detail": "x6"
+        },
+        {
+          "name": "Spool of Thread",
+          "path": "/items/spool-of-thread",
+          "detail": "x18"
+        }
+      ],
+      "total": 4
+    },
+    {
+      "title": "Optional catalyst",
+      "links": [
+        {
+          "name": "Armor Crafting Catalyst",
+          "path": "/items/armor-crafting-catalyst",
+          "detail": ""
+        }
+      ],
+      "total": 1
+    },
+    {
+      "title": "Result",
+      "links": [
+        {
+          "name": "Brown Marker",
+          "path": "/items/brown-marker",
+          "detail": "Quantity: 1"
+        }
+      ],
+      "total": 1
+    },
+    {
+      "title": "Catalyst",
+      "links": [
+        {
+          "name": "Armor Crafting Catalyst",
+          "path": "/items/armor-crafting-catalyst",
+          "detail": "Quantity: 1"
+        }
+      ],
+      "total": 1
+    }
+  ]
+}

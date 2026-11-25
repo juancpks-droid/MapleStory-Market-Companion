@@ -5,7 +5,7 @@
   "name": "Gloves Attack Scroll: Greater",
   "source": "CCPLZ",
   "sourceUrl": "https://ccplz.cc/items/gloves-attack-scroll-greater",
-  "checkedAt": "2026-11-17T18:40:51.591Z",
+  "checkedAt": "2026-11-25T19:28:09.777Z",
   "notice": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial.",
   "fields": [
     {
@@ -27,15 +27,31 @@
   ],
   "sections": [
     {
+      "title": "Dropped by",
+      "links": [
+        {
+          "name": "Tortie",
+          "path": "/monsters/tortie",
+          "detail": "Level 46"
+        }
+      ],
+      "total": 1
+    },
+    {
       "title": "Quest rewards",
       "links": [
         {
           "name": "Jane the Alchemist (Jane's Final Challenge)",
           "path": "/quests/jane-s-final-challenge",
           "detail": "Level 44"
+        },
+        {
+          "name": "Notice from the Excavation Team",
+          "path": "/quests/notice-from-the-excavation-team",
+          "detail": "Level 45"
         }
       ],
-      "total": 1
+      "total": 2
     },
     {
       "title": "Related items",
@@ -54,9 +70,14 @@
           "name": "Gloves Attack Scroll: Chaos",
           "path": "/items/gloves-attack-scroll-chaos",
           "detail": ""
+        },
+        {
+          "name": "Gloves Attack Scroll: Lesser (Account-shared)",
+          "path": "/items/gloves-attack-scroll-lesser-2040816",
+          "detail": ""
         }
       ],
-      "total": 3
+      "total": 4
     }
   ]
 }

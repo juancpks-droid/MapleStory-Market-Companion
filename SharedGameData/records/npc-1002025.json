@@ -7,13 +7,13 @@
     "category": "Equipment"
   },
   "kind": "npc",
-  "checkedAt": "2026-10-18T09:51:14.377Z",
+  "checkedAt": "2026-11-25T19:27:51.797Z",
   "data": {
     "sell": 4200,
     "buy": null,
     "source": "CCPLZ",
     "url": "https://ccplz.cc/items/red-duke",
-    "checkedAt": "2026-10-18T09:51:14.377Z"
+    "checkedAt": "2026-11-25T19:27:51.797Z"
   },
   "provenance": {
     "source": "CCPLZ",

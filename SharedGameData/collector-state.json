@@ -1,16 +1,6 @@
 {
-  "cursor": 276,
+  "cursor": 282,
   "queue": [
-    "/recipes/craft-brown-jack-boots",
-    "/recipes/craft-brown-jangoon-shoes",
-    "/recipes/craft-brown-marker",
-    "/recipes/craft-brown-moon-gloves",
-    "/recipes/craft-brown-pierre-shoes",
-    "/recipes/craft-brown-steel-tip-boots",
-    "/recipes/craft-dark-brace",
-    "/recipes/craft-dark-cleave",
-    "/recipes/craft-dark-mischief",
-    "/recipes/craft-dark-savata",
     "/recipes/craft-dark-willow",
     "/recipes/craft-dark-wolfskin",
     "/recipes/craft-gold-arbion",
@@ -618,8 +608,6 @@
     "/items/blackbull-s-deed-to-the-land",
     "/items/green-hawkeye",
     "/items/monster-card",
-    "/quests/first-material-delivery-for-building-a-new-house",
-    "/maps/the-cave-of-trial-iii",
     "/maps/the-cave-of-trial-i",
     "/items/firebomb-flame",
     "/items/gold-ore",
@@ -1593,7 +1581,6 @@
     "/items/charm-of-the-undead",
     "/items/dexterity-potion",
     "/items/pink-jester",
-    "/items/red-hwarang-shirt",
     "/items/spear-attack-scroll-greater",
     "/items/white-chaos-robe",
     "/quests/stranger-s-identity",
@@ -1996,7 +1983,21 @@
     "/items/iron-ingot",
     "/items/bronze-igor",
     "/items/bronze-mischief",
-    "/items/bronze-scaler"
+    "/items/bronze-scaler",
+    "/items/clover-earrings",
+    "/items/rainbow-earrings",
+    "/items/agent-c-s-old-receiver",
+    "/items/agent-c-s-titanium-receiver",
+    "/items/gloves-attack-scroll-lesser",
+    "/quests/notice-from-the-excavation-team",
+    "/items/gloves-attack-scroll-intermediate",
+    "/items/brown-jangoon-shoes",
+    "/items/adamantium-ingot",
+    "/items/brown-marker",
+    "/items/topaz",
+    "/items/brown-steel-tip-boots",
+    "/items/dark-brace",
+    "/items/dark-mischief"
   ],
-  "priorityCursor": 12
+  "priorityCursor": 0
 }

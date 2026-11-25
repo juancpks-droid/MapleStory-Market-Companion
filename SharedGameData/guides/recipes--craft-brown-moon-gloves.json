@@ -1,0 +1,116 @@
+{
+  "schemaVersion": 1,
+  "path": "/recipes/craft-brown-moon-gloves",
+  "kind": "recipe",
+  "name": "Brown Moon Gloves",
+  "source": "CCPLZ",
+  "sourceUrl": "https://ccplz.cc/recipes/craft-brown-moon-gloves",
+  "checkedAt": "2026-11-25T19:28:24.779Z",
+  "notice": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial.",
+  "fields": [
+    {
+      "label": "Crafting skill",
+      "value": "Leatherworking"
+    },
+    {
+      "label": "Crafting skill level",
+      "value": "10"
+    },
+    {
+      "label": "Meso cost",
+      "value": "13,200"
+    },
+    {
+      "label": "Crafts",
+      "value": "1"
+    },
+    {
+      "label": "Crafting EXP",
+      "value": "200"
+    },
+    {
+      "label": "Crafting fee (mesos)",
+      "value": "13200"
+    },
+    {
+      "label": "Result quantity",
+      "value": "1"
+    },
+    {
+      "label": "Required skill level",
+      "value": "10"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Makes",
+      "links": [
+        {
+          "name": "Brown Moon Gloves",
+          "path": "/items/brown-moon-gloves",
+          "detail": ""
+        }
+      ],
+      "total": 1
+    },
+    {
+      "title": "Ingredients",
+      "links": [
+        {
+          "name": "Dragon Skin",
+          "path": "/items/dragon-skin",
+          "detail": "x30"
+        },
+        {
+          "name": "Processed Leather",
+          "path": "/items/processed-leather",
+          "detail": "x10"
+        },
+        {
+          "name": "Spool of Thread",
+          "path": "/items/spool-of-thread",
+          "detail": "x30"
+        },
+        {
+          "name": "Topaz",
+          "path": "/items/topaz",
+          "detail": "x8"
+        }
+      ],
+      "total": 4
+    },
+    {
+      "title": "Optional catalyst",
+      "links": [
+        {
+          "name": "Armor Crafting Catalyst",
+          "path": "/items/armor-crafting-catalyst",
+          "detail": ""
+        }
+      ],
+      "total": 1
+    },
+    {
+      "title": "Result",
+      "links": [
+        {
+          "name": "Brown Moon Gloves",
+          "path": "/items/brown-moon-gloves",
+          "detail": "Quantity: 1"
+        }
+      ],
+      "total": 1
+    },
+    {
+      "title": "Catalyst",
+      "links": [
+        {
+          "name": "Armor Crafting Catalyst",
+          "path": "/items/armor-crafting-catalyst",
+          "detail": "Quantity: 1"
+        }
+      ],
+      "total": 1
+    }
+  ]
+}

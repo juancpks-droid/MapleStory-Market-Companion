@@ -1,0 +1,111 @@
+{
+  "schemaVersion": 1,
+  "path": "/recipes/craft-brown-jack-boots",
+  "kind": "recipe",
+  "name": "Brown Jack Boots",
+  "source": "CCPLZ",
+  "sourceUrl": "https://ccplz.cc/recipes/craft-brown-jack-boots",
+  "checkedAt": "2026-11-25T19:28:15.668Z",
+  "notice": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial.",
+  "fields": [
+    {
+      "label": "Crafting skill",
+      "value": "Leatherworking"
+    },
+    {
+      "label": "Crafting skill level",
+      "value": "5"
+    },
+    {
+      "label": "Meso cost",
+      "value": "1,500"
+    },
+    {
+      "label": "Crafts",
+      "value": "1"
+    },
+    {
+      "label": "Crafting EXP",
+      "value": "100"
+    },
+    {
+      "label": "Crafting fee (mesos)",
+      "value": "1500"
+    },
+    {
+      "label": "Result quantity",
+      "value": "1"
+    },
+    {
+      "label": "Required skill level",
+      "value": "5"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Makes",
+      "links": [
+        {
+          "name": "Brown Jack Boots",
+          "path": "/items/brown-jack-boots",
+          "detail": ""
+        }
+      ],
+      "total": 1
+    },
+    {
+      "title": "Ingredients",
+      "links": [
+        {
+          "name": "Bronze Ingot",
+          "path": "/items/bronze-ingot",
+          "detail": "x3"
+        },
+        {
+          "name": "Processed Leather",
+          "path": "/items/processed-leather",
+          "detail": "x5"
+        },
+        {
+          "name": "Screw",
+          "path": "/items/screw",
+          "detail": "x15"
+        }
+      ],
+      "total": 3
+    },
+    {
+      "title": "Optional catalyst",
+      "links": [
+        {
+          "name": "Armor Crafting Catalyst",
+          "path": "/items/armor-crafting-catalyst",
+          "detail": ""
+        }
+      ],
+      "total": 1
+    },
+    {
+      "title": "Result",
+      "links": [
+        {
+          "name": "Brown Jack Boots",
+          "path": "/items/brown-jack-boots",
+          "detail": "Quantity: 1"
+        }
+      ],
+      "total": 1
+    },
+    {
+      "title": "Catalyst",
+      "links": [
+        {
+          "name": "Armor Crafting Catalyst",
+          "path": "/items/armor-crafting-catalyst",
+          "detail": "Quantity: 1"
+        }
+      ],
+      "total": 1
+    }
+  ]
+}

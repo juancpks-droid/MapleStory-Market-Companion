@@ -588,9 +588,34 @@
       "kind": "recipe"
     },
     {
+      "path": "/recipes/craft-brown-jack-boots",
+      "name": "Brown Jack Boots",
+      "kind": "recipe"
+    },
+    {
+      "path": "/recipes/craft-brown-jangoon-shoes",
+      "name": "Brown Jangoon Shoes",
+      "kind": "recipe"
+    },
+    {
+      "path": "/recipes/craft-brown-marker",
+      "name": "Brown Marker",
+      "kind": "recipe"
+    },
+    {
+      "path": "/recipes/craft-brown-moon-gloves",
+      "name": "Brown Moon Gloves",
+      "kind": "recipe"
+    },
+    {
       "path": "/items/brown-moonlight",
       "name": "Brown Moonlight",
       "kind": "item"
+    },
+    {
+      "path": "/recipes/craft-brown-pierre-shoes",
+      "name": "Brown Pierre Shoes",
+      "kind": "recipe"
     },
     {
       "path": "/items/brown-piette",
@@ -621,6 +646,11 @@
       "path": "/items/brown-starlight",
       "name": "Brown Starlight",
       "kind": "item"
+    },
+    {
+      "path": "/recipes/craft-brown-steel-tip-boots",
+      "name": "Brown Steel-Tip Boots",
+      "kind": "recipe"
     },
     {
       "path": "/monsters/brown-teddy",
@@ -838,6 +868,16 @@
       "kind": "monster"
     },
     {
+      "path": "/recipes/craft-dark-brace",
+      "name": "Dark Brace",
+      "kind": "recipe"
+    },
+    {
+      "path": "/recipes/craft-dark-cleave",
+      "name": "Dark Cleave",
+      "kind": "recipe"
+    },
+    {
       "path": "/monsters/dark-jr-yeti",
       "name": "Dark Jr. Yeti",
       "kind": "monster"
@@ -858,6 +898,11 @@
       "kind": "item"
     },
     {
+      "path": "/recipes/craft-dark-mischief",
+      "name": "Dark Mischief",
+      "kind": "recipe"
+    },
+    {
       "path": "/items/dark-moonlight",
       "name": "Dark Moonlight",
       "kind": "item"
@@ -876,6 +921,11 @@
       "path": "/items/dark-savata",
       "name": "Dark Savata",
       "kind": "item"
+    },
+    {
+      "path": "/recipes/craft-dark-savata",
+      "name": "Dark Savata",
+      "kind": "recipe"
     },
     {
       "path": "/items/dark-starlight",
