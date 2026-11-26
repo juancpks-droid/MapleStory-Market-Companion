@@ -1,0 +1,111 @@
+{
+  "schemaVersion": 1,
+  "path": "/recipes/craft-dark-wolfskin",
+  "kind": "recipe",
+  "name": "Dark Wolfskin",
+  "source": "CCPLZ",
+  "sourceUrl": "https://ccplz.cc/recipes/craft-dark-wolfskin",
+  "checkedAt": "2026-11-26T19:10:23.930Z",
+  "notice": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial.",
+  "fields": [
+    {
+      "label": "Crafting skill",
+      "value": "Leatherworking"
+    },
+    {
+      "label": "Crafting skill level",
+      "value": "5"
+    },
+    {
+      "label": "Meso cost",
+      "value": "3,000"
+    },
+    {
+      "label": "Crafts",
+      "value": "1"
+    },
+    {
+      "label": "Crafting EXP",
+      "value": "100"
+    },
+    {
+      "label": "Crafting fee (mesos)",
+      "value": "3000"
+    },
+    {
+      "label": "Result quantity",
+      "value": "1"
+    },
+    {
+      "label": "Required skill level",
+      "value": "5"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Makes",
+      "links": [
+        {
+          "name": "Dark Wolfskin",
+          "path": "/items/dark-wolfskin",
+          "detail": ""
+        }
+      ],
+      "total": 1
+    },
+    {
+      "title": "Ingredients",
+      "links": [
+        {
+          "name": "Processed Leather",
+          "path": "/items/processed-leather",
+          "detail": "x5"
+        },
+        {
+          "name": "Spool of Thread",
+          "path": "/items/spool-of-thread",
+          "detail": "x15"
+        },
+        {
+          "name": "Stirge Wing",
+          "path": "/items/stirge-wing",
+          "detail": "x25"
+        }
+      ],
+      "total": 3
+    },
+    {
+      "title": "Optional catalyst",
+      "links": [
+        {
+          "name": "Armor Crafting Catalyst",
+          "path": "/items/armor-crafting-catalyst",
+          "detail": ""
+        }
+      ],
+      "total": 1
+    },
+    {
+      "title": "Result",
+      "links": [
+        {
+          "name": "Dark Wolfskin",
+          "path": "/items/dark-wolfskin",
+          "detail": "Quantity: 1"
+        }
+      ],
+      "total": 1
+    },
+    {
+      "title": "Catalyst",
+      "links": [
+        {
+          "name": "Armor Crafting Catalyst",
+          "path": "/items/armor-crafting-catalyst",
+          "detail": "Quantity: 1"
+        }
+      ],
+      "total": 1
+    }
+  ]
+}

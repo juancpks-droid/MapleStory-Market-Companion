@@ -953,9 +953,19 @@
       "kind": "item"
     },
     {
+      "path": "/recipes/craft-dark-willow",
+      "name": "Dark Willow",
+      "kind": "recipe"
+    },
+    {
       "path": "/items/dark-wolfskin",
       "name": "Dark Wolfskin",
       "kind": "item"
+    },
+    {
+      "path": "/recipes/craft-dark-wolfskin",
+      "name": "Dark Wolfskin",
+      "kind": "recipe"
     },
     {
       "path": "/monsters/dark-yeti-and-pepe",
@@ -1258,14 +1268,44 @@
       "kind": "item"
     },
     {
+      "path": "/recipes/craft-gold-arbion",
+      "name": "Gold Arbion",
+      "kind": "recipe"
+    },
+    {
+      "path": "/recipes/craft-gold-brace",
+      "name": "Gold Brace",
+      "kind": "recipe"
+    },
+    {
+      "path": "/recipes/craft-gold-chain-boots",
+      "name": "Gold Chain Boots",
+      "kind": "recipe"
+    },
+    {
+      "path": "/recipes/craft-gold-cleave",
+      "name": "Gold Cleave",
+      "kind": "recipe"
+    },
+    {
       "path": "/items/gold-moss-boots",
       "name": "Gold Moss Boots",
       "kind": "item"
     },
     {
+      "path": "/recipes/craft-gold-scaler",
+      "name": "Gold Scaler",
+      "kind": "recipe"
+    },
+    {
       "path": "/items/gold-sneak",
       "name": "Gold Sneak",
       "kind": "item"
+    },
+    {
+      "path": "/recipes/craft-gold-sylvia",
+      "name": "Gold Sylvia",
+      "kind": "recipe"
     },
     {
       "path": "/items/great-brown-helmet",
@@ -1278,6 +1318,11 @@
       "kind": "item"
     },
     {
+      "path": "/recipes/craft-green-diros",
+      "name": "Green Diros",
+      "kind": "recipe"
+    },
+    {
       "path": "/items/green-distinction",
       "name": "Green Distinction",
       "kind": "item"
@@ -1288,14 +1333,29 @@
       "kind": "item"
     },
     {
+      "path": "/recipes/craft-green-goni-shoes",
+      "name": "Green Goni Shoes",
+      "kind": "recipe"
+    },
+    {
       "path": "/items/green-headband",
       "name": "Green Headband",
       "kind": "item"
     },
     {
+      "path": "/recipes/craft-green-hunter-boots",
+      "name": "Green Hunter Boots",
+      "kind": "recipe"
+    },
+    {
       "path": "/items/green-ice-queen-skirt",
       "name": "Green Ice Queen Skirt",
       "kind": "item"
+    },
+    {
+      "path": "/recipes/craft-green-jack-boots",
+      "name": "Green Jack Boots",
+      "kind": "recipe"
     },
     {
       "path": "/items/green-matty",

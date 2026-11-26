@@ -7,13 +7,13 @@
     "category": "Equipment"
   },
   "kind": "npc",
-  "checkedAt": "2026-10-18T09:51:29.530Z",
+  "checkedAt": "2026-11-26T19:10:05.890Z",
   "data": {
     "sell": 6600,
     "buy": null,
     "source": "CCPLZ",
     "url": "https://ccplz.cc/items/black-maro",
-    "checkedAt": "2026-10-18T09:51:29.530Z"
+    "checkedAt": "2026-11-26T19:10:05.890Z"
   },
   "provenance": {
     "source": "CCPLZ",

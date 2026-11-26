@@ -1,0 +1,116 @@
+{
+  "schemaVersion": 1,
+  "path": "/recipes/craft-gold-cleave",
+  "kind": "recipe",
+  "name": "Gold Cleave",
+  "source": "CCPLZ",
+  "sourceUrl": "https://ccplz.cc/recipes/craft-gold-cleave",
+  "checkedAt": "2026-11-26T19:10:35.813Z",
+  "notice": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial.",
+  "fields": [
+    {
+      "label": "Crafting skill",
+      "value": "Leatherworking"
+    },
+    {
+      "label": "Crafting skill level",
+      "value": "8"
+    },
+    {
+      "label": "Meso cost",
+      "value": "8,400"
+    },
+    {
+      "label": "Crafts",
+      "value": "1"
+    },
+    {
+      "label": "Crafting EXP",
+      "value": "160"
+    },
+    {
+      "label": "Crafting fee (mesos)",
+      "value": "8400"
+    },
+    {
+      "label": "Result quantity",
+      "value": "1"
+    },
+    {
+      "label": "Required skill level",
+      "value": "8"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Makes",
+      "links": [
+        {
+          "name": "Gold Cleave",
+          "path": "/items/gold-cleave",
+          "detail": ""
+        }
+      ],
+      "total": 1
+    },
+    {
+      "title": "Ingredients",
+      "links": [
+        {
+          "name": "Drake Skull",
+          "path": "/items/drake-skull",
+          "detail": "x40"
+        },
+        {
+          "name": "Gold Ingot",
+          "path": "/items/gold-ingot",
+          "detail": "x6"
+        },
+        {
+          "name": "Processed Leather",
+          "path": "/items/processed-leather",
+          "detail": "x8"
+        },
+        {
+          "name": "Spool of Thread",
+          "path": "/items/spool-of-thread",
+          "detail": "x24"
+        }
+      ],
+      "total": 4
+    },
+    {
+      "title": "Optional catalyst",
+      "links": [
+        {
+          "name": "Armor Crafting Catalyst",
+          "path": "/items/armor-crafting-catalyst",
+          "detail": ""
+        }
+      ],
+      "total": 1
+    },
+    {
+      "title": "Result",
+      "links": [
+        {
+          "name": "Gold Cleave",
+          "path": "/items/gold-cleave",
+          "detail": "Quantity: 1"
+        }
+      ],
+      "total": 1
+    },
+    {
+      "title": "Catalyst",
+      "links": [
+        {
+          "name": "Armor Crafting Catalyst",
+          "path": "/items/armor-crafting-catalyst",
+          "detail": "Quantity: 1"
+        }
+      ],
+      "total": 1
+    }
+  ]
+}

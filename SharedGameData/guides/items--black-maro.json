@@ -5,7 +5,7 @@
   "name": "Black Maro",
   "source": "CCPLZ",
   "sourceUrl": "https://ccplz.cc/items/black-maro",
-  "checkedAt": "2026-10-18T09:51:29.530Z",
+  "checkedAt": "2026-11-26T19:10:05.890Z",
   "notice": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial.",
   "fields": [
     {
@@ -62,22 +62,17 @@
       "title": "Dropped by",
       "links": [
         {
-          "name": "Dark Stone Golem",
-          "path": "/monsters/dark-stone-golem",
-          "detail": "Level 58, 0.15% historical rate"
+          "name": "Commander Skeleton",
+          "path": "/monsters/commander-skeleton",
+          "detail": "Level 73, about 0.22%, usual for its kind"
         },
         {
-          "name": "Firebomb",
-          "path": "/monsters/firebomb",
-          "detail": "Level 51, 0.15% historical rate"
-        },
-        {
-          "name": "Master Robo",
-          "path": "/monsters/master-robo",
-          "detail": "Level 44, 0.15% historical rate"
+          "name": "White Fang",
+          "path": "/monsters/white-fang",
+          "detail": "about 0.22%, usual for its kind"
         }
       ],
-      "total": 3
+      "total": 2
     },
     {
       "title": "Similar equipment",

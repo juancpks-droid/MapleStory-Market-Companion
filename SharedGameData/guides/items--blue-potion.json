@@ -5,7 +5,7 @@
   "name": "Blue Potion",
   "source": "CCPLZ",
   "sourceUrl": "https://ccplz.cc/items/blue-potion",
-  "checkedAt": "2026-11-18T18:14:51.410Z",
+  "checkedAt": "2026-11-26T19:10:17.799Z",
   "notice": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial.",
   "fields": [
     {
@@ -403,6 +403,11 @@
           "detail": "Level 47"
         },
         {
+          "name": "A Light In The Dark (Stores Before the Frost)",
+          "path": "/quests/nyroth-s-fragile-hope",
+          "detail": "Level 40"
+        },
+        {
           "name": "A Marble of Friendship (A Marble Made With Care)",
           "path": "/quests/a-marble-made-with-care",
           "detail": "Level 37"
@@ -411,6 +416,11 @@
           "name": "A Marble of Friendship (Materials for a Special Marble)",
           "path": "/quests/materials-for-a-special-marble",
           "detail": "Level 37"
+        },
+        {
+          "name": "A Thief's Choice (Word from the Hideout)",
+          "path": "/quests/word-from-the-hideout",
+          "detail": "Level 55"
         },
         {
           "name": "After the Festival Ends... (Chief Stan's Hammer)",
@@ -446,6 +456,11 @@
           "name": "Asking After Dark Lord",
           "path": "/quests/asking-after-dark-lord",
           "detail": "Level 12"
+        },
+        {
+          "name": "Bad for Business",
+          "path": "/quests/bad-for-business",
+          "detail": "Level 26"
         },
         {
           "name": "Caretaker's Ledger (Repairing the Book)",
@@ -648,6 +663,11 @@
           "detail": "Level 17"
         },
         {
+          "name": "Echoes of the Past (Zelya's Map)",
+          "path": "/quests/zelya-s-map",
+          "detail": "Level 39"
+        },
+        {
           "name": "First Greeting with Athena Pierce",
           "path": "/quests/first-greeting-with-athena-pierce",
           "detail": "Level 12"
@@ -656,26 +676,6 @@
           "name": "First Greeting with Chief Stan",
           "path": "/quests/first-greeting-with-chief-stan",
           "detail": "Level 12"
-        },
-        {
-          "name": "First Greeting with Chun Ji",
-          "path": "/quests/first-greeting-with-chun-ji",
-          "detail": "Level 12"
-        },
-        {
-          "name": "First Greeting with Dark Lord",
-          "path": "/quests/first-greeting-with-dark-lord",
-          "detail": "Level 12"
-        },
-        {
-          "name": "I Need Help on My Homework!",
-          "path": "/quests/i-need-help-on-my-homework",
-          "detail": "Level 10"
-        },
-        {
-          "name": "I Need to Find My Daughter (I Need to Find My Daughter 2)",
-          "path": "/quests/i-need-to-find-my-daughter-2",
-          "detail": "Level 11"
         }
       ],
       "total": 60
