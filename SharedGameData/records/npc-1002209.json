@@ -7,13 +7,13 @@
     "category": "Equipment"
   },
   "kind": "npc",
-  "checkedAt": "2026-10-19T10:00:28.900Z",
+  "checkedAt": "2026-11-27T19:05:28.060Z",
   "data": {
     "sell": 6600,
     "buy": null,
     "source": "CCPLZ",
     "url": "https://ccplz.cc/items/green-sonata",
-    "checkedAt": "2026-10-19T10:00:28.900Z"
+    "checkedAt": "2026-11-27T19:05:28.060Z"
   },
   "provenance": {
     "source": "CCPLZ",

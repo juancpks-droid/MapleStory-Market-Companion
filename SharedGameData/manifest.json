@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "publishedAt": "2026-11-26T19:10:53.926Z",
+  "publishedAt": "2026-11-27T19:06:13.143Z",
   "catalogItems": 12726,
-  "guideRecords": 624,
+  "guideRecords": 637,
   "referenceRecords": 185,
   "entries": [
     {
@@ -94,6 +94,13 @@
       "bytes": 3015,
       "sha256": "5c514071bf83d582b7eab9a440264961c18fdbff665d8537808dd109caeca17f",
       "checkedAt": "2026-11-20T17:54:53.612Z",
+      "kind": "item"
+    },
+    {
+      "file": "guides/items--bandage-strip.json",
+      "bytes": 2106,
+      "sha256": "c901425c28555fcb35d383bb179691eccd1283c89291e5a27fa6cb23eb4e883b",
+      "checkedAt": "2026-11-27T19:05:49.139Z",
       "kind": "item"
     },
     {
@@ -252,9 +259,9 @@
     },
     {
       "file": "guides/items--blue-shouldermail-pants.json",
-      "bytes": 2771,
-      "sha256": "d13b4a4bf8d465c2627064869661c087115829e52217c49ad565e2ac74e134bf",
-      "checkedAt": "2026-10-19T10:00:22.756Z",
+      "bytes": 2640,
+      "sha256": "81c0a14801afe306e6aa8f61ab00a08659459ff8c11009a47f92cfa8eeabbae4",
+      "checkedAt": "2026-11-27T19:05:22.069Z",
       "kind": "item"
     },
     {
@@ -594,10 +601,17 @@
       "kind": "item"
     },
     {
+      "file": "guides/items--eye-scar.json",
+      "bytes": 1839,
+      "sha256": "39d61fdfba8a8b559b130b0fef327a426ef222443d56efd4fabd2b4f1b36bed4",
+      "checkedAt": "2026-11-27T19:05:55.262Z",
+      "kind": "item"
+    },
+    {
       "file": "guides/items--firebomb-flame.json",
       "bytes": 896,
-      "sha256": "4936aa89e65d404c9ea2ad2ce9d4a3a9f3fd060d0bdb74a9d1b3e074f221f075",
-      "checkedAt": "2026-10-19T10:00:25.867Z",
+      "sha256": "5aca006102535b9f83eb558434b6d0c0367dbf2e080eefee0a9cc8e728ae75dd",
+      "checkedAt": "2026-11-27T19:05:25.014Z",
       "kind": "item"
     },
     {
@@ -784,9 +798,9 @@
     },
     {
       "file": "guides/items--green-sonata.json",
-      "bytes": 3147,
-      "sha256": "533448cd0c1f3bba336990d5f5e20e0823330de1b27c23e8188ec5877f12c487",
-      "checkedAt": "2026-10-19T10:00:28.900Z",
+      "bytes": 2556,
+      "sha256": "a17d9335e547f79d076a869411ef29e5bfdbab1cc49745f0048c6fba1e46fab6",
+      "checkedAt": "2026-11-27T19:05:28.060Z",
       "kind": "item"
     },
     {
@@ -818,6 +832,13 @@
       "kind": "item"
     },
     {
+      "file": "guides/items--guan-yu-beard.json",
+      "bytes": 1854,
+      "sha256": "e8f9052e0566cce6db3e884d8c2beab86eaa483086833046739094d37a4a3733",
+      "checkedAt": "2026-11-27T19:05:46.192Z",
+      "kind": "item"
+    },
+    {
       "file": "guides/items--hardwood-wand.json",
       "bytes": 2826,
       "sha256": "e3723ae7630419c16394bf983667344b3e43876c80ca9d3c3cb0b7e7a688a737",
@@ -846,6 +867,13 @@
       "kind": "item"
     },
     {
+      "file": "guides/items--jester-mask.json",
+      "bytes": 2100,
+      "sha256": "b7810504d75a1f7aeb623c6f334af5674f14a932898360c1c2feeb188379e5fa",
+      "checkedAt": "2026-11-27T19:05:52.200Z",
+      "kind": "item"
+    },
+    {
       "file": "guides/items--jr-yeti-skin.json",
       "bytes": 861,
       "sha256": "c84d4a430f4c9a9560841cfcaa0d893adadf23ab30429c369058fa219afdbbd5",
@@ -861,9 +889,9 @@
     },
     {
       "file": "guides/items--knuckle-mace.json",
-      "bytes": 2574,
-      "sha256": "20cae4ff097cd661ff35da5fca65e46ef58aae4260145a93a2996d78fb4ffd98",
-      "checkedAt": "2026-10-19T10:00:31.890Z",
+      "bytes": 2459,
+      "sha256": "7b3508b780146471ec5ea3fe938e22f11623b24652227e12c91ec9c6dabe00b3",
+      "checkedAt": "2026-11-27T19:05:30.995Z",
       "kind": "item"
     },
     {
@@ -3562,6 +3590,13 @@
       "kind": "quest"
     },
     {
+      "file": "guides/quests--donating-to-henesys-506021.json",
+      "bytes": 2127,
+      "sha256": "d76e477a9895f7c9f8a996ff838ac257fd0e4f9078a4f3a9a6dac95dd949ec14",
+      "checkedAt": "2026-11-27T19:05:58.029Z",
+      "kind": "quest"
+    },
+    {
       "file": "guides/quests--donating-to-henesys-506023.json",
       "bytes": 2139,
       "sha256": "d6ec1b17a509e933f069c66ba3a47f2a5179946f1e66d4896389efcf34fd9f93",
@@ -3573,6 +3608,13 @@
       "bytes": 2188,
       "sha256": "9900fa1f8f2066fef77387e11b9de4b5ff6952bc4561f6ef8acc086c02ae3493",
       "checkedAt": "2026-10-28T10:10:18.115Z",
+      "kind": "quest"
+    },
+    {
+      "file": "guides/quests--donating-to-kerning-city.json",
+      "bytes": 2162,
+      "sha256": "c002f71b9a4bc1fb925c9c60792323c378dfe29f5cb1a354415af1042894462b",
+      "checkedAt": "2026-11-27T19:06:01.061Z",
       "kind": "quest"
     },
     {
@@ -4185,6 +4227,27 @@
       "kind": "recipe"
     },
     {
+      "file": "guides/recipes--craft-green-lappy-boots.json",
+      "bytes": 2382,
+      "sha256": "8e9e037cefd2f7f17673ecb10e826dc7fabc3098a96f7638a5dee47424856877",
+      "checkedAt": "2026-11-27T19:05:34.150Z",
+      "kind": "recipe"
+    },
+    {
+      "file": "guides/recipes--craft-green-marker.json",
+      "bytes": 2493,
+      "sha256": "fa6d66915e5b0c4acdded426f8f1399d5100f8bf175d2dcd5d34cb0d512130a4",
+      "checkedAt": "2026-11-27T19:05:37.122Z",
+      "kind": "recipe"
+    },
+    {
+      "file": "guides/recipes--craft-green-silky-boots.json",
+      "bytes": 2383,
+      "sha256": "56f05b3ffa01d483a888d54db1849c44c06ae59cc2829d88e8a01905a268cbb1",
+      "checkedAt": "2026-11-27T19:05:40.056Z",
+      "kind": "recipe"
+    },
+    {
       "file": "guides/recipes--craft-green-skullcap.json",
       "bytes": 2371,
       "sha256": "03a57dbfd0e9349e6c98133d428bd016bfbe0e73ff266357485b5025b33081c5",
@@ -4196,6 +4259,13 @@
       "bytes": 2277,
       "sha256": "b7fc1fe1902e6d47c8499612994ab6a7abb633d30f7295e5784bd0fdb68016ca",
       "checkedAt": "2026-10-30T10:13:03.164Z",
+      "kind": "recipe"
+    },
+    {
+      "file": "guides/recipes--craft-hunter-s-bow.json",
+      "bytes": 2389,
+      "sha256": "7d232eb67fedd77a61e948361bd2881d489f3e791976e0bb91a84c7a2e620829",
+      "checkedAt": "2026-11-27T19:06:04.139Z",
       "kind": "recipe"
     },
     {
@@ -4224,6 +4294,27 @@
       "bytes": 1683,
       "sha256": "c5ec7220638dde5d17da9f643ded244764411879c18b66f815077d53a16a241b",
       "checkedAt": "2026-11-21T16:52:39.190Z",
+      "kind": "recipe"
+    },
+    {
+      "file": "guides/recipes--craft-red-apprentice-hat.json",
+      "bytes": 2398,
+      "sha256": "8f8f1b4545668f31871e8f4b0b73ec43dd1369885d8b3d4390bce445a3dc2720",
+      "checkedAt": "2026-11-27T19:06:07.141Z",
+      "kind": "recipe"
+    },
+    {
+      "file": "guides/recipes--craft-red-bandana.json",
+      "bytes": 2349,
+      "sha256": "83083060861ace6a8d2f3f1bce83cb3ab5e894d4473c2d2fb2fd39034a06e94e",
+      "checkedAt": "2026-11-27T19:06:10.051Z",
+      "kind": "recipe"
+    },
+    {
+      "file": "guides/recipes--craft-red-skullcap.json",
+      "bytes": 2365,
+      "sha256": "a1330012877524670d70d7cfa254b5dcdb397e5807490a8462b52248b53c883f",
+      "checkedAt": "2026-11-27T19:06:13.039Z",
       "kind": "recipe"
     },
     {
@@ -4551,8 +4642,8 @@
     {
       "file": "records/npc-1002209.json",
       "bytes": 683,
-      "sha256": "515e8bfe4737b7b0ff6befa4e7792e82f9bf1f3d36cd73de1e13a0535f914a41",
-      "checkedAt": "2026-10-19T10:00:28.900Z",
+      "sha256": "cb6cea965e2377f98e7fb085c340020a00bd128b6e4c5b3aac2889cba7e587cd",
+      "checkedAt": "2026-11-27T19:05:28.060Z",
       "kind": "npc"
     },
     {
@@ -4796,8 +4887,8 @@
     {
       "file": "records/npc-1060076.json",
       "bytes": 716,
-      "sha256": "95bb9c3626aaa96fc7db8698796b8bd98de038e2b80641f7c22621023bf36cb6",
-      "checkedAt": "2026-10-19T10:00:22.756Z",
+      "sha256": "3db51ab64eebd952e9d226afc9767621f388aca44bdd1c67ce5d665a41fc06df",
+      "checkedAt": "2026-11-27T19:05:22.069Z",
       "kind": "npc"
     },
     {
@@ -5020,8 +5111,8 @@
     {
       "file": "records/npc-1322017.json",
       "bytes": 684,
-      "sha256": "3b230da1f4daf8895d282c0ddd9e6ce26a238e9c8ecc7ec30d20b00c33cb2227",
-      "checkedAt": "2026-10-19T10:00:31.890Z",
+      "sha256": "c0defb180507bb5d87fe9dc0e20ef2e478df72cbd3fb563f0aa08416abad90b2",
+      "checkedAt": "2026-11-27T19:05:30.995Z",
       "kind": "npc"
     },
     {
@@ -5335,8 +5426,8 @@
     {
       "file": "records/npc-4000081.json",
       "bytes": 681,
-      "sha256": "7440e0c16c1737a8f97b6cd4accc902f86bd45a1ff27983c6be40fa9a49d4095",
-      "checkedAt": "2026-10-19T10:00:25.867Z",
+      "sha256": "429e191626f39dddb4e49f6cab931dfdc4d8eb80b94db0a7e0a8819593e24c73",
+      "checkedAt": "2026-11-27T19:05:25.014Z",
       "kind": "npc"
     },
     {

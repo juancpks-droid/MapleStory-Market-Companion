@@ -1,0 +1,111 @@
+{
+  "schemaVersion": 1,
+  "path": "/recipes/craft-green-lappy-boots",
+  "kind": "recipe",
+  "name": "Green Lappy Boots",
+  "source": "CCPLZ",
+  "sourceUrl": "https://ccplz.cc/recipes/craft-green-lappy-boots",
+  "checkedAt": "2026-11-27T19:05:34.150Z",
+  "notice": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial.",
+  "fields": [
+    {
+      "label": "Crafting skill",
+      "value": "Leatherworking"
+    },
+    {
+      "label": "Crafting skill level",
+      "value": "5"
+    },
+    {
+      "label": "Meso cost",
+      "value": "1,500"
+    },
+    {
+      "label": "Crafts",
+      "value": "1"
+    },
+    {
+      "label": "Crafting EXP",
+      "value": "100"
+    },
+    {
+      "label": "Crafting fee (mesos)",
+      "value": "1500"
+    },
+    {
+      "label": "Result quantity",
+      "value": "1"
+    },
+    {
+      "label": "Required skill level",
+      "value": "5"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Makes",
+      "links": [
+        {
+          "name": "Green Lappy Boots",
+          "path": "/items/green-lappy-boots",
+          "detail": ""
+        }
+      ],
+      "total": 1
+    },
+    {
+      "title": "Ingredients",
+      "links": [
+        {
+          "name": "Jr. Necki Skin",
+          "path": "/items/jr-necki-skin",
+          "detail": "x25"
+        },
+        {
+          "name": "Processed Leather",
+          "path": "/items/processed-leather",
+          "detail": "x5"
+        },
+        {
+          "name": "Screw",
+          "path": "/items/screw",
+          "detail": "x15"
+        }
+      ],
+      "total": 3
+    },
+    {
+      "title": "Optional catalyst",
+      "links": [
+        {
+          "name": "Armor Crafting Catalyst",
+          "path": "/items/armor-crafting-catalyst",
+          "detail": ""
+        }
+      ],
+      "total": 1
+    },
+    {
+      "title": "Result",
+      "links": [
+        {
+          "name": "Green Lappy Boots",
+          "path": "/items/green-lappy-boots",
+          "detail": "Quantity: 1"
+        }
+      ],
+      "total": 1
+    },
+    {
+      "title": "Catalyst",
+      "links": [
+        {
+          "name": "Armor Crafting Catalyst",
+          "path": "/items/armor-crafting-catalyst",
+          "detail": "Quantity: 1"
+        }
+      ],
+      "total": 1
+    }
+  ]
+}

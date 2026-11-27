@@ -178,6 +178,11 @@
       "kind": "monster"
     },
     {
+      "path": "/items/bandage-strip",
+      "name": "Bandage Strip",
+      "kind": "item"
+    },
+    {
       "path": "/monsters/barnard-gray",
       "name": "Barnard Gray",
       "kind": "monster"
@@ -1003,8 +1008,18 @@
       "kind": "quest"
     },
     {
+      "path": "/quests/donating-to-henesys-506021",
+      "name": "Donating to Henesys (Red Snail Shell)",
+      "kind": "quest"
+    },
+    {
       "path": "/quests/donating-to-kerning-city-506120",
       "name": "Donating to Kerning City (Orange Mushroom Cap)",
+      "kind": "quest"
+    },
+    {
+      "path": "/quests/donating-to-kerning-city",
+      "name": "Donating to Kerning City (Red Snail Shell)",
       "kind": "quest"
     },
     {
@@ -1126,6 +1141,11 @@
       "path": "/monsters/evil-eye",
       "name": "Evil Eye",
       "kind": "monster"
+    },
+    {
+      "path": "/items/eye-scar",
+      "name": "Eye Scar",
+      "kind": "item"
     },
     {
       "path": "/quests/how-to-enjoy-mushrooms",
@@ -1358,6 +1378,16 @@
       "kind": "recipe"
     },
     {
+      "path": "/recipes/craft-green-lappy-boots",
+      "name": "Green Lappy Boots",
+      "kind": "recipe"
+    },
+    {
+      "path": "/recipes/craft-green-marker",
+      "name": "Green Marker",
+      "kind": "recipe"
+    },
+    {
       "path": "/items/green-matty",
       "name": "Green Matty",
       "kind": "item"
@@ -1376,6 +1406,11 @@
       "path": "/items/green-pilfer",
       "name": "Green Pilfer",
       "kind": "item"
+    },
+    {
+      "path": "/recipes/craft-green-silky-boots",
+      "name": "Green Silky Boots",
+      "kind": "recipe"
     },
     {
       "path": "/items/green-skullcap",
@@ -1426,6 +1461,11 @@
       "path": "/monsters/grupin",
       "name": "Grupin",
       "kind": "monster"
+    },
+    {
+      "path": "/items/guan-yu-beard",
+      "name": "Guan Yu Beard",
+      "kind": "item"
     },
     {
       "path": "/items/hardwood-wand",
@@ -1486,6 +1526,11 @@
       "path": "/items/horny-mushroom-cap",
       "name": "Horny Mushroom Cap",
       "kind": "item"
+    },
+    {
+      "path": "/recipes/craft-hunter-s-bow",
+      "name": "Hunter's Bow",
+      "kind": "recipe"
     },
     {
       "path": "/maps/hunting-ground-in-the-deep-forest-i",
@@ -1561,6 +1606,11 @@
       "path": "/quests/jane-s-second-challenge",
       "name": "Jane the Alchemist (Jane's Second Challenge)",
       "kind": "quest"
+    },
+    {
+      "path": "/items/jester-mask",
+      "name": "Jester Mask",
+      "kind": "item"
     },
     {
       "path": "/monsters/jr-balrog",
@@ -2188,6 +2238,16 @@
       "kind": "item"
     },
     {
+      "path": "/recipes/craft-red-apprentice-hat",
+      "name": "Red Apprentice Hat",
+      "kind": "recipe"
+    },
+    {
+      "path": "/recipes/craft-red-bandana",
+      "name": "Red Bandana",
+      "kind": "recipe"
+    },
+    {
       "path": "/items/red-doroness-robe",
       "name": "Red Doroness Robe",
       "kind": "item"
@@ -2251,6 +2311,11 @@
       "path": "/items/red-skullcap",
       "name": "Red Skullcap",
       "kind": "item"
+    },
+    {
+      "path": "/recipes/craft-red-skullcap",
+      "name": "Red Skullcap",
+      "kind": "recipe"
     },
     {
       "path": "/monsters/red-snail",

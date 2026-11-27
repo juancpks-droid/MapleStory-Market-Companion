@@ -5,7 +5,7 @@
   "name": "Knuckle Mace",
   "source": "CCPLZ",
   "sourceUrl": "https://ccplz.cc/items/knuckle-mace",
-  "checkedAt": "2026-10-19T10:00:31.890Z",
+  "checkedAt": "2026-11-27T19:05:30.995Z",
   "notice": "CCPLZ reference; game versions may differ. Reported and historical drops are not independently confirmed Classic drops. Missing information is not proof of absence. Lists may be partial.",
   "fields": [
     {
@@ -54,17 +54,12 @@
       "title": "Dropped by",
       "links": [
         {
-          "name": "Firebomb",
-          "path": "/monsters/firebomb",
-          "detail": "Level 51, 0.07% historical rate"
-        },
-        {
-          "name": "Iron Hog",
-          "path": "/monsters/iron-hog",
-          "detail": "Level 28, 0.07% historical rate"
+          "name": "Croco",
+          "path": "/monsters/croco",
+          "detail": "Level 52, about 0.22%, usual for its kind"
         }
       ],
-      "total": 2
+      "total": 1
     },
     {
       "title": "Similar equipment",
@@ -73,6 +68,16 @@
           "name": "Black Tube",
           "path": "/items/black-tube",
           "detail": "Level 50"
+        },
+        {
+          "name": "Red Flowery Tube",
+          "path": "/items/red-flowery-tube",
+          "detail": "Level 45"
+        },
+        {
+          "name": "Frying Pan",
+          "path": "/items/frying-pan",
+          "detail": "Level 55"
         },
         {
           "name": "Jacker",
@@ -95,19 +100,9 @@
           "detail": "Level 60"
         },
         {
-          "name": "Heavy Hammer",
-          "path": "/items/heavy-hammer",
+          "name": "Blue Flowery Tube",
+          "path": "/items/blue-flowery-tube",
           "detail": "Level 35"
-        },
-        {
-          "name": "Lollipop",
-          "path": "/items/lollipop",
-          "detail": "Level 30"
-        },
-        {
-          "name": "War Hammer",
-          "path": "/items/war-hammer",
-          "detail": "Level 30"
         }
       ],
       "total": 8
